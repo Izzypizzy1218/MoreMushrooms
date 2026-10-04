@@ -104,7 +104,7 @@ namespace RimMushroomsTests
             var memory = Bonuses(pawn).Single();
             check(memory.def.defName == "RMush_AteMatsutake" && memory.MoodOffset() == 10f, "saved mushroom memory class and value restored");
             check(memory.age == 5000 && memory.DurationTicks == 15000, "saved remaining duration restored");
-            check(LanguageDatabase.activeLanguage.folderName.StartsWith("Korean") ? memory.LabelCap.Contains("송이버섯") : memory.LabelCap.Contains("matsutake"), "translated mushroom memory label");
+            check(LanguageDatabase.activeLanguage.folderName.StartsWith("Korean") ? memory.LabelCap == "송이의 솔숲 향" : memory.LabelCap == "Pine-scented matsutake", "translated mushroom memory label");
             memory.age = 15000;
             pawn.needs.mood.thoughts.memories.MemoryThoughtInterval();
             check(Bonuses(pawn).Length == 0, "loaded memory expires normally");

@@ -9,8 +9,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed button mushroom</label>
-        <description>That button mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>subtle button mushroom flavor</label>
+        <description>I ate button mushrooms. Their subtle aroma and mild flavor were nice.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -24,8 +24,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed shiitake mushroom</label>
-        <description>That shiitake mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>rich shiitake umami</label>
+        <description>I ate some fragrant shiitake. The savory flavor was really good.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -39,8 +39,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed oyster mushroom</label>
-        <description>That oyster mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>subtle oyster mushroom umami</label>
+        <description>The oyster mushrooms were soft and subtly tasty. Quite nice, really.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -54,8 +54,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed king oyster mushroom</label>
-        <description>That king oyster mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>springy king oyster mushrooms</label>
+        <description>I ate king oyster mushrooms. I liked chewing their thick flesh.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -69,8 +69,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed enoki mushroom</label>
-        <description>That enoki mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>crisp enoki</label>
+        <description>I liked the crisp enoki stems. They were nice to chew.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -84,8 +84,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed wood ear mushroom</label>
-        <description>That wood ear mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>chewy wood ear mushrooms</label>
+        <description>I ate wood ear mushrooms. Their chewy texture was really nice.</description>
         <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
@@ -99,8 +99,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed beech mushroom</label>
-        <description>That beech mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>crunchy beech mushrooms</label>
+        <description>The beech mushrooms were subtly nutty. I liked their crunch, too.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -114,8 +114,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed maitake mushroom</label>
-        <description>That maitake mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>rich maitake flavor</label>
+        <description>The maitake had a rich, nutty flavor. I really enjoyed them.</description>
         <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
@@ -129,8 +129,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed lion's mane mushroom</label>
-        <description>That lion's mane mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>tender lion's mane</label>
+        <description>I liked the tender flesh of the lion's mane mushroom. Its subtle sweetness was nice, too.</description>
         <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
@@ -144,8 +144,8 @@
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
-        <label>enjoyed matsutake mushroom</label>
-        <description>That matsutake mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <label>pine-scented matsutake</label>
+        <description>I ate some wonderfully fragrant matsutake. The pine aroma filling my mouth was fantastic.</description>
         <baseMoodEffect>10</baseMoodEffect>
       </li>
     </stages>

@@ -1,0 +1,128 @@
+PASS all cultivation, harvest, item and mood balance unchanged from v0.2.0
+PASS runtime C# unchanged AssortedMushrooms.cs
+PASS runtime C# unchanged Graphic_MushroomStack.cs
+PASS runtime C# unchanged MushroomSaveCompatibility.cs
+PASS runtime C# unchanged Plant_Mushroom.cs
+PASS runtime C# unchanged Thought_MushroomEnjoyment.cs
+PASS other runtime asset unchanged Defs/ThingDefs_Plants/Mushrooms.xml
+PASS other runtime asset unchanged Defs/ThingDefs_Items/RawMushrooms.xml
+PASS other runtime asset unchanged Patches/AssortedMushroomWork.xml
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Beech/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Beech/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Beech/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Button/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Button/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Button/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Enoki/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Enoki/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Enoki/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/KingOyster/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/KingOyster/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/KingOyster/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/LionsMane/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/LionsMane/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/LionsMane/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Maitake/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Maitake/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Maitake/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Matsutake/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Matsutake/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Matsutake/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Oyster/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Oyster/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Oyster/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Shiitake/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Shiitake/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/Shiitake/03Full.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/WoodEar/01Low.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/WoodEar/02Medium.png
+PASS other runtime asset unchanged Textures/Things/Item/RimMushrooms/WoodEar/03Full.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Beech/BeechA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Beech/BeechB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Button/ButtonA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Button/ButtonB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Enoki/EnokiA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Enoki/EnokiB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/EnokiWild/EnokiWildA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/EnokiWild/EnokiWildB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/KingOyster/KingOysterA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/KingOyster/KingOysterB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/LionsMane/LionsManeA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/LionsMane/LionsManeB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Maitake/MaitakeA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Maitake/MaitakeB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Matsutake/MatsutakeA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Matsutake/MatsutakeB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Oyster/OysterA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Oyster/OysterB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Shiitake/ShiitakeA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/Shiitake/ShiitakeB.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/WoodEar/WoodEarA.png
+PASS other runtime asset unchanged Textures/Things/Plant/RimMushrooms/WoodEar/WoodEarB.png
+PASS other runtime asset unchanged Languages/English/DefInjected/ThingDef/Mushrooms.xml
+PASS other runtime asset unchanged Languages/Korean/DefInjected/ThingDef/Mushrooms.xml
+PASS other runtime asset unchanged Languages/English/Keyed/Mushrooms.xml
+PASS other runtime asset unchanged Languages/Korean/Keyed/Mushrooms.xml
+PASS ThoughtDef IDs, classes, duration, mood and stack settings unchanged
+PASS ten localized mushroom memories configured
+PASS Korean configured label generated for Button
+PASS Korean configured description generated for Button
+PASS Korean configured label generated for Shiitake
+PASS Korean configured description generated for Shiitake
+PASS Korean configured label generated for Oyster
+PASS Korean configured description generated for Oyster
+PASS Korean configured label generated for KingOyster
+PASS Korean configured description generated for KingOyster
+PASS Korean configured label generated for Enoki
+PASS Korean configured description generated for Enoki
+PASS Korean configured label generated for WoodEar
+PASS Korean configured description generated for WoodEar
+PASS Korean configured label generated for Beech
+PASS Korean configured description generated for Beech
+PASS Korean configured label generated for Maitake
+PASS Korean configured description generated for Maitake
+PASS Korean configured label generated for LionsMane
+PASS Korean configured description generated for LionsMane
+PASS Korean configured label generated for Matsutake
+PASS Korean configured description generated for Matsutake
+PASS English configured label generated for Button
+PASS English configured description generated for Button
+PASS English configured label generated for Shiitake
+PASS English configured description generated for Shiitake
+PASS English configured label generated for Oyster
+PASS English configured description generated for Oyster
+PASS English configured label generated for KingOyster
+PASS English configured description generated for KingOyster
+PASS English configured label generated for Enoki
+PASS English configured description generated for Enoki
+PASS English configured label generated for WoodEar
+PASS English configured description generated for WoodEar
+PASS English configured label generated for Beech
+PASS English configured description generated for Beech
+PASS English configured label generated for Maitake
+PASS English configured description generated for Maitake
+PASS English configured label generated for LionsMane
+PASS English configured description generated for LionsMane
+PASS English configured label generated for Matsutake
+PASS English configured description generated for Matsutake
+PASS English fallback label matches Button
+PASS English fallback description matches Button
+PASS English fallback label matches Shiitake
+PASS English fallback description matches Shiitake
+PASS English fallback label matches Oyster
+PASS English fallback description matches Oyster
+PASS English fallback label matches KingOyster
+PASS English fallback description matches KingOyster
+PASS English fallback label matches Enoki
+PASS English fallback description matches Enoki
+PASS English fallback label matches WoodEar
+PASS English fallback description matches WoodEar
+PASS English fallback label matches Beech
+PASS English fallback description matches Beech
+PASS English fallback label matches Maitake
+PASS English fallback description matches Maitake
+PASS English fallback label matches LionsMane
+PASS English fallback description matches LionsMane
+PASS English fallback label matches Matsutake
+PASS English fallback description matches Matsutake
+RESULT PASS 127 checks

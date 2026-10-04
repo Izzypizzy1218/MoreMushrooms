@@ -20,6 +20,7 @@ def write_xml(path, root):
 
 def generate(handoff):
     config = json.loads((ROOT / "Balance/mushrooms.json").read_text(encoding="utf-8"))
+    mood_text = json.loads((ROOT / "Balance/mood_text.json").read_text(encoding="utf-8"))
     c = config["common"]
     assert 0 < c["lowMaxCount"] < c["mediumMaxCount"] < c["stackLimit"]
     plants, items, ko, en = [ET.Element(tag) for tag in ("Defs", "Defs", "LanguageData", "LanguageData")]
@@ -73,10 +74,11 @@ def generate(handoff):
         node(thought, "showBubble", True)
         node(thought, "icon", "Things/Mote/ThoughtSymbol/Food")
         stage = node(node(thought, "stages"), "li")
-        mood_label_en = "enjoyed " + m["en"]
-        mood_label_ko = m["ko"] + "의 맛"
-        mood_desc_en = "That " + m["en"] + " had a satisfying flavor. A little pleasure from a good ingredient."
-        mood_desc_ko = m["ko"] + "의 맛을 즐겼다. 좋은 식재료가 주는 작은 즐거움이다."
+        wording = mood_text[m["id"]]
+        mood_label_en = wording["en"]["label"]
+        mood_label_ko = wording["ko"]["label"]
+        mood_desc_en = wording["en"]["description"]
+        mood_desc_ko = wording["ko"]["description"]
         node(stage, "label", mood_label_en)
         node(stage, "description", mood_desc_en)
         node(stage, "baseMoodEffect", m["mood"])
