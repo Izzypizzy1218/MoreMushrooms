@@ -27,7 +27,9 @@ $version = (Get-Content -LiteralPath (Join-Path $GameDir 'Version.txt') -Raw).Tr
 $modsXml = '<ModsConfigData><version>' + $version + '</version><activeMods>' + $modList + '</activeMods><knownExpansions><li>ludeon.rimworld</li><li>ludeon.rimworld.royalty</li><li>ludeon.rimworld.ideology</li><li>ludeon.rimworld.biotech</li><li>ludeon.rimworld.anomaly</li><li>ludeon.rimworld.odyssey</li></knownExpansions></ModsConfigData>'
 Set-Content -LiteralPath (Join-Path $configRoot 'ModsConfig.xml') -Value $modsXml -Encoding utf8
 $langFolder = if ($Language -eq 'Korean') { 'Korean (한국어)' } else { 'English' }
-$prefs = '<PrefsData><langFolderName>' + $langFolder + '</langFolderName><devMode>True</devMode><logVerbose>False</logVerbose><volumeMaster>0</volumeMaster><screenWidth>1600</screenWidth><screenHeight>1000</screenHeight><fullscreen>False</fullscreen><runInBackground>True</runInBackground><pauseOnError>False</pauseOnError><adaptiveTrainingEnabled>False</adaptiveTrainingEnabled></PrefsData>'
+# Native pause-on-load advances one tick first. The harness pauses in LoadedGame
+# so persistence checks compare the saved values before that simulation step.
+$prefs = '<PrefsData><langFolderName>' + $langFolder + '</langFolderName><devMode>True</devMode><logVerbose>False</logVerbose><volumeMaster>0</volumeMaster><screenWidth>1600</screenWidth><screenHeight>1000</screenHeight><fullscreen>False</fullscreen><runInBackground>True</runInBackground><pauseOnLoad>False</pauseOnLoad><pauseOnError>False</pauseOnError><adaptiveTrainingEnabled>False</adaptiveTrainingEnabled></PrefsData>'
 Set-Content -LiteralPath (Join-Path $configRoot 'Prefs.xml') -Value $prefs -Encoding utf8
 $logPath = Join-Path $testRoot 'Player.log'
 $arguments = @('-batchmode','-screen-fullscreen','0','-screen-width','1600','-screen-height','1000','-quicktest','-mushroomSmoke',('-mushroomLanguage=' + $Language),('-savedatafolder="' + $testRoot + '"'),'-logFile',('"' + $logPath + '"'))

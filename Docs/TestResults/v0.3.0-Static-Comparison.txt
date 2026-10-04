@@ -1,0 +1,157 @@
+More Mushrooms v0.3.0 static comparison against immutable v0.2.1 source ZIP
+Client date: 2026-10-04 Asia/Seoul
+Comparison target: current development tree; generated definitions and support code. This report is static evidence, not a runtime or UI test.
+Baseline: C:\Users\집\Desktop\codex\MoreMushrooms\Releases\v0.2.1\MoreMushrooms-v0.2.1-source.zip
+
+Checks
+PASS: Prior archive unchanged: MoreMushrooms-v0.2.1-source.zip; SHA256=686a7595510446e5128b0e46fcdf5ff9b58a564123002069692228fa6f9792ae
+PASS: Prior archive unchanged: MoreMushrooms-v0.2.1.zip; SHA256=c9ab4624fde76dbb60e4952719545f9b09907b607e92a4412f57a591b52a5fe4
+PASS: Baseline source ZIP has exactly 107 files, matching its manifest.
+PASS: All 72 runtime-file hashes in the v0.2.1 manifest match bytes inside its source archive.
+PASS: Balance version changed from 0.2.1 to 0.3.0.
+PASS: Common settings and status unchanged, including nutrition 0.05, fertility sensitivity 0.3, shade policy and mood duration 6 hours.
+PASS: All ten species IDs and order preserved.
+PASS: Button: growDays 6 -> 6, as expected.
+PASS: Button: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: Shiitake: growDays 8 -> 7, as expected.
+PASS: Shiitake: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: Oyster: growDays 5.5 -> 5.5, as expected.
+PASS: Oyster: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: KingOyster: growDays 7 -> 6.5, as expected.
+PASS: KingOyster: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: Enoki: growDays 5 -> 5, as expected.
+PASS: Enoki: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: WoodEar: growDays 7 -> 6.5, as expected.
+PASS: WoodEar: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: Beech: growDays 7 -> 6.5, as expected.
+PASS: Beech: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: Maitake: growDays 9 -> 8, as expected.
+PASS: Maitake: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: LionsMane: growDays 9 -> 8, as expected.
+PASS: LionsMane: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: Matsutake: growDays 12 -> 12, as expected.
+PASS: Matsutake: yield, skill, market value, mood bonus, rot duration, labels, asset and biome weights unchanged.
+PASS: All three cultivated species with prior growDays <=6 unchanged (6, 5.5, 5).
+PASS: Wild-only matsutake balance entirely unchanged (12 growDays, yield 6).
+PASS: All plant Def IDs and abstract-base identity preserved; no plant definitions added or removed.
+PASS: Plant abstract base unchanged: class, light settings, graphics, temperature, fertility, lifespan ratio and other inherited fields.
+PASS: RMush_PlantButton: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantButton: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantButton: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantButton: generated growDays matches new balance JSON.
+PASS: RMush_PlantShiitake: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantShiitake: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantShiitake: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantShiitake: generated growDays matches new balance JSON.
+PASS: RMush_PlantOyster: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantOyster: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantOyster: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantOyster: generated growDays matches new balance JSON.
+PASS: RMush_PlantKingOyster: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantKingOyster: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantKingOyster: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantKingOyster: generated growDays matches new balance JSON.
+PASS: RMush_PlantEnoki: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantEnoki: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantEnoki: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantEnoki: generated growDays matches new balance JSON.
+PASS: RMush_PlantWoodEar: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantWoodEar: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantWoodEar: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantWoodEar: generated growDays matches new balance JSON.
+PASS: RMush_PlantBeech: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantBeech: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantBeech: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantBeech: generated growDays matches new balance JSON.
+PASS: RMush_PlantMaitake: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantMaitake: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantMaitake: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantMaitake: generated growDays matches new balance JSON.
+PASS: RMush_PlantLionsMane: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantLionsMane: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantLionsMane: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantLionsMane: generated growDays matches new balance JSON.
+PASS: RMush_PlantAssorted: native Hydroponic tag appended; Ground tag retained.
+PASS: RMush_PlantAssorted: label, graphic, mod extensions and all other non-plant fields unchanged.
+PASS: RMush_PlantAssorted: all plant fields except sowTags/growDays unchanged, including yield and sow skill.
+PASS: RMush_PlantEnokiWild: entire definition unchanged and no sow tags introduced.
+PASS: RMush_PlantMatsutake: entire definition unchanged and no sow tags introduced.
+PASS: Assorted menu summary growDays updated to the arithmetic mean: 6.555555555556.
+PASS: Assorted varieties remain the same nine real cultivated species in the same order.
+PASS: Byte-identical to v0.2.1: Defs/ThingDefs_Items/RawMushrooms.xml
+PASS: Byte-identical to v0.2.1: Defs/ThoughtDefs/MushroomEnjoyment.xml
+PASS: Byte-identical to v0.2.1: Languages/English/DefInjected/ThoughtDef/MushroomEnjoyment.xml
+PASS: Byte-identical to v0.2.1: Languages/Korean/DefInjected/ThoughtDef/MushroomEnjoyment.xml
+PASS: Byte-identical to v0.2.1: Languages/English/Keyed/Mushrooms.xml
+PASS: Byte-identical to v0.2.1: Languages/Korean/Keyed/Mushrooms.xml
+PASS: Byte-identical to v0.2.1: Patches/AssortedMushroomWork.xml
+PASS: Byte-identical to v0.2.1: Source/Thought_MushroomEnjoyment.cs
+PASS: Byte-identical to v0.2.1: Source/Plant_Mushroom.cs
+PASS: Byte-identical to v0.2.1: Source/MushroomSaveCompatibility.cs
+PASS: Byte-identical to v0.2.1: Source/Graphic_MushroomStack.cs
+PASS: English ThingDef translations: only the nine cultivated and assorted descriptions changed; raw descriptions and all labels unchanged.
+PASS: Korean ThingDef translations: only the nine cultivated and assorted descriptions changed; raw descriptions and all labels unchanged.
+PASS: About version matches 0.3.0.
+PASS: About identity metadata excluding version/release description unchanged, including name, author, supported game version and packageId izzypizzy.rimmushrooms.
+PASS: About description change is limited to the bilingual v0.3.0 hydroponic/shorter-growth release note.
+PASS: All 53 PNG files byte-identical: 52 approved item/plant sprites plus About/Preview.png; no new PNGs.
+PASS: All credit files unchanged.
+PASS: Assorted support code changed in exactly two intended places: resolve any native grow settable; respect native CanAcceptSowNow plus zone allowSow. Random selection, existing-variety recognition, skill and harvest logic otherwise unchanged.
+PASS: Preserved compatibility source/build identity: Source/Graphic_MushroomStack.cs
+PASS: Preserved compatibility source/build identity: Source/MushroomSaveCompatibility.cs
+PASS: Preserved compatibility source/build identity: Source/Plant_Mushroom.cs
+PASS: Preserved compatibility source/build identity: Source/Thought_MushroomEnjoyment.cs
+PASS: Preserved compatibility source/build identity: MoreMushrooms.csproj
+PASS: No previously distributed source files missing.
+PASS: All changed prior files are within intended balance/hydro code/generated descriptions/version/docs/tests scope.
+PASS: Assorted equal-chance cycle totals independently verified: yield 100; old growDays sum 63.5; new sum 59.
+PASS: Hydroponic fertility multiplier independently recalculated: 2.8*0.3+0.7 = 1.54.
+
+Growth and production calculations (items per growDay, not calendar-day harvest throughput)
+Button           6 -> 6     | yield 10 | items/growDay 1.666667 -> 1.666667 | gain 0.000000%
+Shiitake         8 -> 7     | yield 12 | items/growDay 1.500000 -> 1.714286 | gain 14.285714%
+Oyster         5.5 -> 5.5   | yield 10 | items/growDay 1.818182 -> 1.818182 | gain 0.000000%
+KingOyster       7 -> 6.5   | yield 11 | items/growDay 1.571429 -> 1.692308 | gain 7.692308%
+Enoki            5 -> 5     | yield  9 | items/growDay 1.800000 -> 1.800000 | gain 0.000000%
+WoodEar          7 -> 6.5   | yield 10 | items/growDay 1.428571 -> 1.538462 | gain 7.692308%
+Beech            7 -> 6.5   | yield 12 | items/growDay 1.714286 -> 1.846154 | gain 7.692308%
+Maitake          9 -> 8     | yield 14 | items/growDay 1.555556 -> 1.750000 | gain 12.500000%
+LionsMane        9 -> 8     | yield 12 | items/growDay 1.333333 -> 1.500000 | gain 12.500000%
+Matsutake       12 -> 12    | yield  6 | items/growDay 0.500000 -> 0.500000 | gain 0.000000%
+
+Equal-chance assorted long-run ratio: old 100/63.5 = 1.574803150; new 100/59.0 = 1.694915254; gain 7.627119%.
+Fertility sensitivity remains 0.3: 100% soil factor 1.00; 280% hydroponics factor 1.54; growth time at fixed conditions is 64.935065% of soil.
+Native nutrifungus comparator: growDays 6, yield 11, fertility sensitivity 0.15; soil ratio 1.833333; hydro factor 1.27; hydro ratio 2.328333.
+Hydroponic ratios and comparison against native nutrifungus:
+Button       2.566667 items/growDay; +10.236220%
+Shiitake     2.640000 items/growDay; +13.385827%
+Oyster       2.800000 items/growDay; +20.257695%
+KingOyster   2.606154 items/growDay; +11.932162%
+Enoki        2.772000 items/growDay; +19.055118%
+WoodEar      2.369231 items/growDay; +1.756511%
+Beech        2.843077 items/growDay; +22.107813%
+Maitake      2.695000 items/growDay; +15.748031%
+LionsMane    2.310000 items/growDay; -0.787402%
+
+Time/light interpretation
+growDays is an XML growth-work duration. Native Plant rests outside day fraction 0.25 through 0.8, leaving about 55% of each day for growth.
+Under ideal constant temperature, no other penalties, light <=50%, and immediate tending: approximate calendar time = growDays / 0.55 / fertility factor. This excludes sowing/harvest delay.
+Current shade code is byte-identical: <=50% glow factor 1.0, 75% glow factor 0.75, 100% glow factor 0.5. Full-light hydro factor is 1.54*0.5=0.77 versus shaded ordinary soil factor 1.0.
+Installed game XML and direct Assembly-CSharp.dll decompilation verified HydroponicsBasin fertility 2.8; native FertilityGrid uses the building fertility; PlantUtility formula fertility*sensitivity+(1-sensitivity). No vanilla game files were changed.
+
+Changed prior archive files at this comparison snapshot:
+CHANGELOG.md
+README.md
+About/About.xml
+Assemblies/RimMushrooms.dll
+Balance/mushrooms.json
+Defs/ThingDefs_Plants/Mushrooms.xml
+Languages/English/DefInjected/ThingDef/Mushrooms.xml
+Languages/Korean/DefInjected/ThingDef/Mushrooms.xml
+Scripts/generate_defs.py
+Source/AssortedMushrooms.cs
+Tests/validate_assets.py
+Tests/Harness/SmokeTests.cs
+Tests/Harness/SmokeTests.csproj
+
+RESULT: PASS; 102 passed, 0 failed checks.

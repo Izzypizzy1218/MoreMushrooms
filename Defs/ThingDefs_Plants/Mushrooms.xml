@@ -47,7 +47,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantButton</defName>
     <label>button mushroom cluster</label>
-    <description>A cluster of button mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of button mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Button</texPath>
     </graphicData>
@@ -57,6 +57,7 @@
       <harvestedThingDef>RMush_RawButton</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>0</sowMinSkill>
       <wildBiomes>
@@ -68,16 +69,17 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantShiitake</defName>
     <label>shiitake mushroom cluster</label>
-    <description>A cluster of shiitake mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of shiitake mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Shiitake</texPath>
     </graphicData>
     <plant>
-      <growDays>8</growDays>
+      <growDays>7</growDays>
       <harvestYield>12</harvestYield>
       <harvestedThingDef>RMush_RawShiitake</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>4</sowMinSkill>
       <wildBiomes>
@@ -89,7 +91,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantOyster</defName>
     <label>oyster mushroom cluster</label>
-    <description>A cluster of oyster mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of oyster mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Oyster</texPath>
     </graphicData>
@@ -99,6 +101,7 @@
       <harvestedThingDef>RMush_RawOyster</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>0</sowMinSkill>
       <wildBiomes>
@@ -111,16 +114,17 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantKingOyster</defName>
     <label>king oyster mushroom cluster</label>
-    <description>A cluster of king oyster mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of king oyster mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/KingOyster</texPath>
     </graphicData>
     <plant>
-      <growDays>7</growDays>
+      <growDays>6.5</growDays>
       <harvestYield>11</harvestYield>
       <harvestedThingDef>RMush_RawKingOyster</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>3</sowMinSkill>
       <wildBiomes>
@@ -132,7 +136,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantEnoki</defName>
     <label>enoki mushroom cluster</label>
-    <description>A cluster of enoki mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of enoki mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Enoki</texPath>
     </graphicData>
@@ -142,6 +146,7 @@
       <harvestedThingDef>RMush_RawEnoki</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>2</sowMinSkill>
     </plant>
@@ -166,16 +171,17 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantWoodEar</defName>
     <label>wood ear mushroom cluster</label>
-    <description>A cluster of wood ear mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of wood ear mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/WoodEar</texPath>
     </graphicData>
     <plant>
-      <growDays>7</growDays>
+      <growDays>6.5</growDays>
       <harvestYield>10</harvestYield>
       <harvestedThingDef>RMush_RawWoodEar</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>3</sowMinSkill>
       <wildBiomes>
@@ -188,16 +194,17 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantBeech</defName>
     <label>beech mushroom cluster</label>
-    <description>A cluster of beech mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of beech mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Beech</texPath>
     </graphicData>
     <plant>
-      <growDays>7</growDays>
+      <growDays>6.5</growDays>
       <harvestYield>12</harvestYield>
       <harvestedThingDef>RMush_RawBeech</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>4</sowMinSkill>
       <wildBiomes>
@@ -209,16 +216,17 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantMaitake</defName>
     <label>maitake mushroom cluster</label>
-    <description>A cluster of maitake mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of maitake mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Maitake</texPath>
     </graphicData>
     <plant>
-      <growDays>9</growDays>
+      <growDays>8</growDays>
       <harvestYield>14</harvestYield>
       <harvestedThingDef>RMush_RawMaitake</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>6</sowMinSkill>
       <wildBiomes>
@@ -230,16 +238,17 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantLionsMane</defName>
     <label>lion's mane mushroom cluster</label>
-    <description>A cluster of lion's mane mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
+    <description>A cluster of lion's mane mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/LionsMane</texPath>
     </graphicData>
     <plant>
-      <growDays>9</growDays>
+      <growDays>8</growDays>
       <harvestYield>12</harvestYield>
       <harvestedThingDef>RMush_RawLionsMane</harvestedThingDef>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>6</sowMinSkill>
       <wildBiomes>
@@ -268,7 +277,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantAssorted</defName>
     <label>assorted mushrooms</label>
-    <description>Sow one of nine cultivated mushroom varieties at random, each with an equal chance. Excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6.</description>
+    <description>Sow one of nine cultivated mushroom varieties at random in growing zones or hydroponics basins, each with an equal chance. Excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6. Native hydroponics power requirements apply.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Button</texPath>
     </graphicData>
@@ -290,9 +299,10 @@
     <plant>
       <sowTags>
         <li>Ground</li>
+        <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>6</sowMinSkill>
-      <growDays>7.055555555555555</growDays>
+      <growDays>6.555555555555555</growDays>
       <harvestYield>0</harvestYield>
       <harvestTag>None</harvestTag>
     </plant>

@@ -21,9 +21,15 @@ namespace RimMushroomsTests
         private int baseline;
         private bool originalHarvestFailable;
         private Zone_Growing growingZone;
+        private HydroponicsTests hydroTests;
         private string Report => Path.Combine(GenFilePaths.SaveDataFolderPath, "smoke-report.txt");
         public SmokeTests(Game game) { }
-        public override void LoadedGame() { phase = 100; }
+        public override void LoadedGame()
+        {
+            // Inspect saved values before the simulation advances on reload.
+            Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
+            phase = 100;
+        }
 
         private void Check(bool valid, string message)
         {
@@ -40,7 +46,7 @@ namespace RimMushroomsTests
             if (map == null) return;
             try
             {
-                if ((phase >= 1 && phase <= 3) || (phase >= 10 && phase <= 13))
+                if ((phase >= 1 && phase <= 3) || (phase >= 10 && phase <= 13) || phase == 20)
                 {
                     foreach (var window in Find.WindowStack.Windows.ToList()) window.Close(false);
                     Find.TickManager.CurTimeSpeed = TimeSpeed.Superfast;
@@ -56,7 +62,11 @@ namespace RimMushroomsTests
                     bool legacyLoaded = File.Exists(Path.Combine(GenFilePaths.SaveDataFolderPath, "new-save-verified.flag"));
                     LightTests.VerifyLoaded(map, legacyLoaded, Check);
                     MoodTests.VerifyLoaded(map, Check);
-                    if (!legacyLoaded) AssortedTests.VerifyLoaded(map, Check);
+                    if (!legacyLoaded)
+                    {
+                        AssortedTests.VerifyLoaded(map, Check);
+                        HydroponicsTests.VerifyLoaded(map, Check);
+                    }
                     Check(map.listerThings.AllThings.Count(t => t.def.defName.StartsWith("RMush_Plant")) >= 33, "plant growth fixtures survive save/load");
                     foreach (var t in map.listerThings.AllThings.Where(t => t.def.defName.StartsWith("RMush_Raw")))
                         Check(Texture(t) == (t.stackCount <= 25 ? "01Low" : t.stackCount <= 50 ? "02Medium" : "03Full"), "saved stack graphic " + t.def.defName + ":" + t.stackCount);
@@ -81,7 +91,7 @@ namespace RimMushroomsTests
                 if (phase == 0) { Setup(map); phase = 1; if (GenCommandLine.CommandLineArgPassed("mushroomMoodOnly")) cropIndex = plants.Length; }
                 if (phase == 10)
                 {
-                    farmer.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                    farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
                     var job = AssortedTests.Sower.JobOnCell(farmer, workCell);
                     if (job != null && job.def == JobDefOf.HaulToCell)
                     {
@@ -91,7 +101,10 @@ namespace RimMushroomsTests
                         phase = 13;
                         return;
                     }
-                    Check(job != null && job.def == JobDefOf.Sow && job.plantDefToSow != AssortedTests.Selection, "assorted actual sow job selects species cycle=" + assortedCycles);
+                    Check(job != null && job.def == JobDefOf.Sow && job.plantDefToSow != AssortedTests.Selection, "assorted actual sow job selects species cycle=" + assortedCycles
+                        + " job=" + job + " selection=" + AssortedMushrooms.SelectionAt(workCell, map) + " allowSow=" + growingZone.allowSow
+                        + " skill=" + farmer.skills.GetSkill(SkillDefOf.Plants).Level + " temperature=" + workCell.GetTemperature(map)
+                        + " things=" + string.Join(",", workCell.GetThingList(map).Select(t => t.def.defName)));
                     job.playerForced = true;
                     farmer.jobs.TryTakeOrderedJob(job, JobTag.Misc);
                     deadline = Time.realtimeSinceStartup + 40f;
@@ -109,9 +122,9 @@ namespace RimMushroomsTests
                     {
                         currentPlant.Growth = 0.37f;
                         Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
-                        farmer.jobs.EndCurrentJob(JobCondition.InterruptForced);
-                        MoodTests.Run(farmer, Check);
-                        phase = 4; frames = 0;
+                        farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
+                        hydroTests = new HydroponicsTests(map, farmer, Check);
+                        phase = 20;
                         return;
                     }
                     currentPlant.Growth = 1f;
@@ -141,6 +154,18 @@ namespace RimMushroomsTests
                     if (farmer.CurJobDef == JobDefOf.HaulToCell) return;
                     Check(true, "actual automatic hauling clears harvested pile for assorted replanting");
                     phase = 10;
+                    return;
+                }
+                if (phase == 20)
+                {
+                    if (!hydroTests.Update()) return;
+                    Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
+                    farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
+                    // The ground fixture grew while the hydroponics jobs ran.
+                    // Restore its documented value before save/load assertions.
+                    workCell.GetPlant(map).Growth = 0.37f;
+                    MoodTests.Run(farmer, Check);
+                    phase = 4; frames = 0;
                     return;
                 }
                 if (phase == 1) { StartCrop(map); return; }
@@ -221,6 +246,9 @@ namespace RimMushroomsTests
             Check(!DefDatabase<ThingDef>.GetNamed("RMush_PlantMatsutake").plant.Sowable, "matsutake wild only");
             foreach (var d in plants.Concat(items)) Check(!d.ConfigErrors().Any(), "resolved def config " + d.defName);
             farmer = map.mapPawns.FreeColonistsSpawned.First(p => !p.Downed && !p.WorkTypeIsDisabled(WorkTypeDefOf.Growing));
+            // Keep ordered fixture jobs from competing with automatic farming.
+            // Automatic sow/harvest scans are checked separately in the suites.
+            farmer.workSettings.SetPriority(WorkTypeDefOf.Growing, 0);
             foreach (var pawn in map.mapPawns.FreeColonistsSpawned)
             {
                 pawn.needs.food.CurLevelPercentage = 1f;
@@ -228,7 +256,7 @@ namespace RimMushroomsTests
                 if (pawn != farmer) pawn.drafter.Drafted = true;
             }
             farmer.skills.GetSkill(SkillDefOf.Plants).Level = 20;
-            farmer.jobs.EndCurrentJob(JobCondition.InterruptForced);
+            farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
             workCell = map.Center + new IntVec3(18, 0, 0);
             foreach (var cell in CellRect.CenteredOn(map.Center, 47, 35))
             {
@@ -277,7 +305,7 @@ namespace RimMushroomsTests
                 var split = t.SplitOff(25);
                 Check(t.stackCount == 50 && Texture(t) == "02Medium" && Texture(split) == "01Low", "split 75 into 50+25 " + d.defName);
                 Check(t.TryAbsorbStack(split, true) && Texture(t) == "03Full", "merge 50+25 " + d.defName);
-                Check(farmer.carryTracker.TryStartCarry(t, 25) == 25, "carry split " + d.defName);
+                Check(farmer.carryTracker.TryStartCarry(t, 25, reserve: false) == 25, "carry split " + d.defName);
                 Check(Texture(farmer.carryTracker.CarriedThing) == "01Low", "carried material " + d.defName);
                 Thing dropped;
                 Check(farmer.carryTracker.TryDropCarriedThing(t.Position, ThingPlaceMode.Direct, out dropped), "drop and merge " + d.defName);
@@ -304,14 +332,14 @@ namespace RimMushroomsTests
             {
                 growingZone.SetPlantDefToGrow(AssortedTests.Selection);
                 growingZone.allowCut = false;
-                farmer.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
                 foreach (var t in workCell.GetThingList(map).ToList()) if (!(t is Pawn)) t.Destroy(DestroyMode.Vanish);
                 phase = 10;
                 return;
             }
             var d = plants[cropIndex];
             foreach (var t in workCell.GetThingList(map).ToList()) if (!(t is Pawn)) t.Destroy(DestroyMode.Vanish);
-            farmer.jobs.EndCurrentJob(JobCondition.InterruptForced);
+            farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
             farmer.pather.StopDead();
             farmer.Position = workCell + IntVec3.West;
             farmer.Notify_Teleported();

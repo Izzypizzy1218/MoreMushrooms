@@ -29,6 +29,14 @@ def main():
     check(len(choices) == len(set(choices)) == 9 and set(choices) == {"RMush_Plant" + m["id"] for m in balance["mushrooms"] if not m.get("wildOnly", False)}, "assorted chooses exactly nine cultivable species")
     check(int(assorted.findtext("plant/sowMinSkill")) == max(m["skill"] for m in balance["mushrooms"] if not m.get("wildOnly", False)), "assorted requires skill for all nine species")
     check(assorted.find("plant/wildBiomes") is None, "assorted menu selection never spawns wild")
+    check({n.text for n in assorted.findall("plant/sowTags/li")} == {"Ground", "Hydroponic"}, "assorted supports soil and hydroponics")
+    for m in balance["mushrooms"]:
+        p = next(n for n in defs if n.findtext("defName") == "RMush_Plant" + m["id"])
+        tags = {n.text for n in p.findall("plant/sowTags/li")}
+        check(tags == (set() if m.get("wildOnly", False) else {"Ground", "Hydroponic"}), "cultivation tags " + m["id"])
+        check(float(p.findtext("plant/growDays")) == m["growDays"] and int(p.findtext("plant/harvestYield")) == m["yield"], "configured growth days and yield " + m["id"])
+    wild_enoki = next(n for n in defs if n.findtext("defName") == "RMush_PlantEnokiWild")
+    check(wild_enoki.find("plant/sowTags") is None, "wild enoki stays unsowable")
     patch = ET.parse(ROOT / "Patches/AssortedMushroomWork.xml")
     check(len(patch.findall("Operation/match/value/giverClass")) == 2, "scoped native sow and harvest workers shipped")
     plant_base = ET.parse(ROOT / "Defs/ThingDefs_Plants/Mushrooms.xml").find("ThingDef[@Name='RMush_PlantBase']")

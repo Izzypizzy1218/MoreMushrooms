@@ -116,16 +116,16 @@ def generate(handoff):
             node(p, "defName", def_id)
             label_en = ("wild " if plant_id == "EnokiWild" else "") + m["en"] + " cluster"
             label_ko = ("야생 " if plant_id == "EnokiWild" else "") + m["ko"] + " 군락"
-            desc_en = "A cluster of " + m["en"] + "s growing directly from the soil. "
+            desc_en = "A cluster of " + m["en"] + ("s growing directly from the soil. " if wild_only else "s grown in soil or a hydroponics basin. ")
             desc_en += f"Grows normally at light levels up to {c['shadeMaxGlow']:.0%}. Stronger light gradually slows growth to {c['fullLightGrowthFactor']:.0%} speed at 100% light, without direct light damage. "
-            desc_ko = "흙에서 올라오는 " + m["ko"] + " 군락입니다. "
+            desc_ko = ("흙에서 올라오는 " if wild_only else "흙이나 수경분지에서 재배하는 ") + m["ko"] + " 군락입니다. "
             desc_ko += f"광량 {c['shadeMaxGlow']:.0%} 이하에서는 정상 성장하며, 그보다 강한 빛에서는 점차 느려져 광량 100%에서 성장 속도가 {c['fullLightGrowthFactor']:.0%}가 됩니다. 빛으로 직접 피해를 받지는 않습니다. "
             if wild_only:
                 desc_en += "Gathered in the wild; cannot be sown."
                 desc_ko += "야생에서 채집할 수 있으며 재배할 수 없습니다."
             else:
-                desc_en += "Can be sown in growing zones."
-                desc_ko += "재배 구역에 심을 수 있습니다."
+                desc_en += "Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply."
+                desc_ko += "재배 구역과 수경분지에 심을 수 있습니다. 수경분지는 기본 게임의 전력 규칙을 따릅니다."
             if plant_id == "EnokiWild":
                 desc_en += " Its golden caps differ from cultivated white enoki. Both yield the same enoki ingredient."
                 desc_ko += "황갈색 갓이 특징입니다. 흰 재배 팽이와 같은 팽이버섯 식재료를 생산합니다."
@@ -135,7 +135,8 @@ def generate(handoff):
             pp = node(p, "plant")
             for key, value in {"growDays":m["growDays"], "harvestYield":m["yield"], "harvestedThingDef":raw_id}.items(): node(pp, key, value)
             if not wild_only:
-                node(node(pp, "sowTags"), "li", "Ground")
+                tags = node(pp, "sowTags")
+                for tag in ("Ground", "Hydroponic"): node(tags, "li", tag)
                 node(pp, "sowMinSkill", m["skill"])
             if plant_id != "Enoki":
                 wb = node(pp, "wildBiomes")
@@ -153,8 +154,8 @@ def generate(handoff):
     assorted = node(plants, "ThingDef", ParentName="RMush_PlantBase")
     node(assorted, "defName", assorted_id)
     label_en, label_ko = "assorted mushrooms", "모둠버섯"
-    desc_en = "Sow one of nine cultivated mushroom varieties at random, each with an equal chance. Excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6."
-    desc_ko = "재배 가능한 버섯 9종 중 하나를 같은 확률로 무작위 파종합니다. 송이와 야생 팽이는 제외하며, 수확 후 다시 심을 때도 새로 뽑습니다. 심어진 종류의 성장·수확·섭취 효과가 그대로 적용됩니다. 식물 기술 6이 필요합니다."
+    desc_en = "Sow one of nine cultivated mushroom varieties at random in growing zones or hydroponics basins, each with an equal chance. Excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6. Native hydroponics power requirements apply."
+    desc_ko = "재배 구역이나 수경분지에서 재배 가능한 버섯 9종 중 하나를 같은 확률로 무작위 파종합니다. 송이와 야생 팽이는 제외하며, 수확 후 다시 심을 때도 새로 뽑습니다. 심어진 종류의 성장·수확·섭취 효과가 그대로 적용됩니다. 식물 기술 6이 필요합니다. 수경분지는 기본 게임의 전력 규칙을 따릅니다."
     node(assorted, "label", label_en)
     node(assorted, "description", desc_en)
     node(node(assorted, "graphicData"), "texPath", "Things/Plant/RimMushrooms/Button")
@@ -162,7 +163,8 @@ def generate(handoff):
     varieties = node(settings, "varieties")
     for m in cultivable: node(varieties, "li", "RMush_Plant" + m["id"])
     pp = node(assorted, "plant")
-    node(node(pp, "sowTags"), "li", "Ground")
+    tags = node(pp, "sowTags")
+    for tag in ("Ground", "Hydroponic"): node(tags, "li", tag)
     node(pp, "sowMinSkill", max(m["skill"] for m in cultivable))
     # Menu summary only; jobs always plant the chosen species' actual def.
     node(pp, "growDays", sum(m["growDays"] for m in cultivable) / len(cultivable))

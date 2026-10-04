@@ -25,8 +25,7 @@ namespace RimMushrooms
     {
         public static ThingDef SelectionAt(IntVec3 cell, Map map)
         {
-            var zone = cell.GetZone(map) as Zone_Growing;
-            var selected = zone?.GetPlantDefToGrow();
+            var selected = cell.GetPlantToGrowSettable(map)?.GetPlantDefToGrow();
             return selected?.GetModExtension<AssortedMushroomSettings>() == null ? null : selected;
         }
 
@@ -59,7 +58,9 @@ namespace RimMushrooms
         {
             var selection = AssortedMushrooms.SelectionAt(cell, pawn.Map);
             if (selection == null) return base.JobOnCell(pawn, cell, forced);
-            if (!AssortedMushrooms.CanSow(pawn, selection) || !((Zone_Growing)cell.GetZone(pawn.Map)).allowSow) return null;
+            var settable = cell.GetPlantToGrowSettable(pawn.Map);
+            if (!AssortedMushrooms.CanSow(pawn, selection) || !settable.CanAcceptSowNow()
+                || (settable is Zone_Growing zone && !zone.allowSow)) return null;
             var previous = wantedPlantDef;
             try
             {
