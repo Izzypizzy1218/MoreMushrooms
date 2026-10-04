@@ -159,6 +159,10 @@ def generate(handoff):
     node(assorted, "label", label_en)
     node(assorted, "description", desc_en)
     node(node(assorted, "graphicData"), "texPath", "Things/Plant/RimMushrooms/Button")
+    node(assorted, "uiIconPath", "UI/Icons/AssortedMushrooms")
+    icon = ROOT / "Textures/UI/Icons/AssortedMushrooms.png"
+    icon.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(ROOT / "Art/Icons/AssortedMushrooms.png", icon)
     settings = node(node(assorted, "modExtensions"), "li", Class="RimMushrooms.AssortedMushroomSettings")
     varieties = node(settings, "varieties")
     for m in cultivable: node(varieties, "li", "RMush_Plant" + m["id"])
@@ -194,7 +198,7 @@ def generate(handoff):
         ("mushrooms-growing/CREDITS.txt","GROWING-CREDITS.txt")):
         shutil.copy2(handoff / "outputs" / source, credits / dest)
     shutil.copy2(handoff / "outputs/mushrooms-boxed/boxed-preview.png", ROOT / "About/Preview.png")
-    print("Generated 11 species plants plus assorted sowing selection, 10 ingredients, 10 memories, 52 unchanged PNGs, and EN/KO translations.")
+    print("Generated 11 species plants plus assorted sowing selection, 10 ingredients, 10 memories, 52 unchanged PNGs plus 1 assorted UI icon, and EN/KO translations.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

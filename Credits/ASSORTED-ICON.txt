@@ -1,0 +1,11 @@
+More Mushrooms assorted crop-selection icon
+Added in v0.3.1 on 2026-10-04 at the user's request.
+
+Created with built-in OpenAI image_gen by composing references to the existing
+button, lion's mane, shiitake and beech mushroom plant sprites.
+Existing original sprites and their attribution/license records remain unchanged.
+See GROWING-CREDITS.txt and RIMSHARE-LICENSE.txt for reference asset provenance.
+
+Runtime asset: Textures/UI/Icons/AssortedMushrooms.png
+Preserved source and exact generation prompt: Art/Icons/AssortedMushrooms.png
+and Art/Icons/AssortedMushrooms.json in the source release.

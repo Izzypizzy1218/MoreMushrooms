@@ -281,6 +281,7 @@
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Button</texPath>
     </graphicData>
+    <uiIconPath>UI/Icons/AssortedMushrooms</uiIconPath>
     <modExtensions>
       <li Class="RimMushrooms.AssortedMushroomSettings">
         <varieties>

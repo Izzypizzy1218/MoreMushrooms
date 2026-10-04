@@ -4,8 +4,10 @@
   <author>izzy_pizzy</author>
   <packageId>izzypizzy.rimmushrooms</packageId>
   <supportedVersions><li>1.6</li></supportedVersions>
-  <modVersion>0.3.0</modVersion>
+  <modVersion>0.3.1</modVersion>
   <description>Ten familiar edible mushrooms for the rim. Grow nine varieties in soil, gather rare wild matsutake, and watch mushroom clusters fill out as they grow. Harvested mushrooms appear in three container fill levels according to their stack count.
+v0.3.1: A dedicated assorted crop icon combines button, lion's mane, shiitake and beech mushrooms in one image.
+v0.3.1: 모둠버섯 선택 아이콘에 양송이·노루궁뎅이·표고·느티만가닥을 한 장으로 담았습니다.
 v0.3.0: Grow all nine cultivated varieties, including the assorted selection, in hydroponics basins. Six slower varieties have slightly shorter growth periods; harvest yields are unchanged.
 v0.3.0: 재배 가능한 9종과 모둠버섯의 수경재배를 지원합니다. 기본 성장일수가 6일보다 길던 6종은 0.5~1일 단축하고 수확량은 유지했습니다.
 

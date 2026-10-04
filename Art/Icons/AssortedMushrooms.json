@@ -1,0 +1,57 @@
+{
+  "asset": "Textures/UI/Icons/AssortedMushrooms.png",
+  "source": "Art/Icons/AssortedMushrooms.png",
+  "version": "0.3.1",
+  "createdDate": "2026-10-04",
+  "generator": "built-in OpenAI image_gen",
+  "transparentBackground": true,
+  "species": [
+    "Button",
+    "LionsMane",
+    "Shiitake",
+    "Beech"
+  ],
+  "sha256": "905e0825c6b14c595a2f5d0bb45e6ed2c6b4914e9ea60b3f83b85985c939f21c",
+  "pixelSize": [
+    1254,
+    1254
+  ],
+  "pixelMode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "cornerAlpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "references": [
+    {
+      "role": "supporting compositing input",
+      "species": "Button",
+      "path": "Textures/Things/Plant/RimMushrooms/Button/ButtonA.png",
+      "sha256": "9aaf0eb23a079a3f668e9266d2d60be3667d6c82e45f28af0c701de0d9d6d374"
+    },
+    {
+      "role": "supporting compositing input",
+      "species": "LionsMane",
+      "path": "Textures/Things/Plant/RimMushrooms/LionsMane/LionsManeA.png",
+      "sha256": "3878ac8faf0dc43e0b99d328e8aee1b65a9aa7dcb04f24f7db1971a2783ff7dd"
+    },
+    {
+      "role": "supporting compositing input",
+      "species": "Shiitake",
+      "path": "Textures/Things/Plant/RimMushrooms/Shiitake/ShiitakeA.png",
+      "sha256": "18f595ad32cca519f5e2fcf139ba4757b09737e699e0289000fa20003133a48b"
+    },
+    {
+      "role": "supporting compositing input",
+      "species": "Beech",
+      "path": "Textures/Things/Plant/RimMushrooms/Beech/BeechA.png",
+      "sha256": "263842c6a5e6f9f27dcf6c2961170807cf5a637e7988e31e06a26182ea75a2c2"
+    }
+  ],
+  "prompt": "Use case: compositing. Asset type: square transparent PNG crop-selection icon for the existing More Mushrooms RimWorld mod. Combine the FOUR supplied mushroom sprite references in one compact, harmonious icon. Image 1 is button mushroom: pale cream rounded cap and stout stem. Image 2 is lion's mane: pale cream shaggy ball with pointed hanging tufts. Image 3 is shiitake: brown cap with conspicuous cream cracking and short stem. Image 4 is beech mushroom: two tan-brown rounded caps on long pale stems; keep this recognizable paired cluster. Preserve each supplied sprite's flat hand-painted colors, clean thick dark brown outline, simple shading, distinct silhouette and identity. Arrange button upper left, shiitake upper right, lion's mane lower left, and paired beech cluster lower right, as FOUR recognizable groups within ONE square canvas, not separate image panels. Give every variety comparable visual weight. Keep their entire outlines visible, with a little breathing room and at most very slight overlaps so all four remain identifiable at small 48px menu-icon scale. Center the combined group and use most of the square, retaining an approximately 5 percent transparent margin. This is a cultivation selection icon, so no food box, tray, soil, ground, field, container, background scene, captions, labels, text, grid lines, border or watermark. Actual transparent background and clean alpha edges; no checkerboard pattern or opaque background. Output one single square final composite game icon, not a reference sheet, preserving the visual style of these specific original mushroom images."
+}

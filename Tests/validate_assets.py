@@ -30,6 +30,14 @@ def main():
     check(int(assorted.findtext("plant/sowMinSkill")) == max(m["skill"] for m in balance["mushrooms"] if not m.get("wildOnly", False)), "assorted requires skill for all nine species")
     check(assorted.find("plant/wildBiomes") is None, "assorted menu selection never spawns wild")
     check({n.text for n in assorted.findall("plant/sowTags/li")} == {"Ground", "Hydroponic"}, "assorted supports soil and hydroponics")
+    icon = ROOT / "Textures/UI/Icons/AssortedMushrooms.png"
+    check(assorted.findtext("uiIconPath") == "UI/Icons/AssortedMushrooms" and icon.is_file(), "dedicated assorted crop selection icon")
+    check(icon.read_bytes() == (ROOT / "Art/Icons/AssortedMushrooms.png").read_bytes(), "assorted icon matches preserved generated source")
+    record = json.loads((ROOT / "Art/Icons/AssortedMushrooms.json").read_text(encoding="utf-8"))
+    check(sha(icon) == record["sha256"] and record["species"] == ["Button", "LionsMane", "Shiitake", "Beech"], "assorted icon provenance and four requested species")
+    icon_data = icon.read_bytes()
+    icon_size = struct.unpack(">II", icon_data[16:24])
+    check(icon_data[:8] == b"\x89PNG\r\n\x1a\n" and icon_size[0] == icon_size[1] and 256 <= icon_size[0] <= 2048 and icon_data[24:26] == b"\x08\x06", "square RGBA assorted icon")
     for m in balance["mushrooms"]:
         p = next(n for n in defs if n.findtext("defName") == "RMush_Plant" + m["id"])
         tags = {n.text for n in p.findall("plant/sowTags/li")}
@@ -69,9 +77,9 @@ def main():
         check(len(mood_tags) == len(set(mood_tags)) == 20 and all(n+suffix in mood_tags for n in thought_by_name for suffix in (".stages.0.label", ".stages.0.description")), lang + " memory translations")
         check("{0}" in ET.parse(ROOT / "Languages" / lang / "Keyed/Mushrooms.xml").findtext("MM_BrightLightGrowthFactor"), lang + " growth tooltip translation")
     pngs = list((ROOT / "Textures").rglob("*.png"))
-    check(len(pngs) == 52, "52 shipped textures")
+    check(len(pngs) == 53, "52 original textures plus assorted selection icon")
     sources = {sha(p) for folder in ("mushrooms-boxed/sprites-256", "mushrooms-growing/textures-256") for p in (HANDOFF / "outputs" / folder).glob("*.png")}
-    for p in pngs:
+    for p in (p for p in pngs if p != icon):
         data = p.read_bytes()
         check(sha(p) in sources, "approved pixels " + str(p))
         check(data[:8] == b"\x89PNG\r\n\x1a\n" and struct.unpack(">II",data[16:24]) == (256,256) and data[25] == 6, "256px RGBA " + str(p))

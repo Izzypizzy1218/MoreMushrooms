@@ -1,0 +1,38 @@
+More Mushrooms v0.3.1 static comparison against immutable v0.3.0
+Date: 2026-10-04 (Asia/Seoul)
+Purpose: Verify the dedicated assorted crop selection icon does not change gameplay or prior assets.
+
+PASS: Immutable v0.3.0 archive SHA-256 verified: MoreMushrooms-v0.3.0-source.zip = 1b4fc5b6e150cbc7519e13d4ac99220c377cee272af84da42fdce20f5a377866
+PASS: Immutable v0.3.0 archive SHA-256 verified: MoreMushrooms-v0.3.0.zip = 34924f124f532e17a7c324570369a6d6d527b9b188a49a5a64a44611322a0ffb
+PASS: Original runtime ZIP paths exactly match v0.3.0 manifest
+PASS: All 72 original runtime ZIP entries match v0.3.0 manifest SHA-256 values
+PASS: Only the expected version transition is declared
+PASS: All gameplay balance values are identical after excluding version
+PASS: Approved mood titles and descriptions are byte-identical
+PASS: Source/ file set unchanged (5 files)
+PASS: All Source/ files are byte-identical to v0.3.0 (5 files)
+PASS: Assemblies/ file set unchanged (1 files)
+PASS: All Assemblies/ files are byte-identical to v0.3.0 (1 files)
+PASS: Languages/ file set unchanged (6 files)
+PASS: All Languages/ files are byte-identical to v0.3.0 (6 files)
+PASS: Patches/ file set unchanged (1 files)
+PASS: All Patches/ files are byte-identical to v0.3.0 (1 files)
+PASS: Defs/ThingDefs_Items/RawMushrooms.xml is byte-identical
+PASS: Defs/ThoughtDefs/MushroomEnjoyment.xml is byte-identical
+PASS: About/Preview.png is byte-identical
+PASS: v0.3.0 contains the original 52 texture files
+PASS: Only the dedicated assorted icon was added to Textures (53 files total)
+PASS: All original 52 plant and ingredient texture files are byte-identical
+PASS: The dedicated uiIconPath was added to RMush_PlantAssorted
+PASS: Plant XML differs only by the assorted uiIconPath; Def IDs, world graphics and planting definitions are identical
+PASS: Runtime icon pixels match the preserved generated source and recorded SHA-256
+PASS: Icon provenance identifies the four requested mushroom species
+
+Native RimWorld 1.6 UI verification (local decompiled code):
+- BuildableDef.PostLoad resolves explicit uiIconPath through ContentFinder<Texture2D>.Get.
+- Zone_Growing.GetGizmos and Building_PlantGrower.GetGizmos both use PlantToGrowSettableUtility.SetPlantToGrowCommand.
+- Command_SetPlantToGrow constructor uses the selected crop ThingDef.uiIcon.
+- Crop list supplies plantDef to FloatMenuOption, which draws Widgets.DefIcon; GetIconFor resolves GetUIIconForStuff to uiIcon.
+- No production C# code, DLL, workgiver patches, gameplay balance or existing save identifier changed.
+
+RESULT: PASS (25 comparison checks)
