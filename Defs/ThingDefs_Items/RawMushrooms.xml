@@ -28,13 +28,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawButton</defName>
     <label>button mushroom</label>
-    <description>Edible button mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible button mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +3 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Button</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteButton</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteButton</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>20</daysToRotStart>
@@ -45,13 +49,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawShiitake</defName>
     <label>shiitake mushroom</label>
-    <description>Edible shiitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible shiitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +6 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Shiitake</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.5</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteShiitake</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteShiitake</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>25</daysToRotStart>
@@ -62,13 +70,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawOyster</defName>
     <label>oyster mushroom</label>
-    <description>Edible oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +1 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Oyster</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.0</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteOyster</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteOyster</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>15</daysToRotStart>
@@ -79,13 +91,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawKingOyster</defName>
     <label>king oyster mushroom</label>
-    <description>Edible king oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible king oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +4 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/KingOyster</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.4</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteKingOyster</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteKingOyster</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>20</daysToRotStart>
@@ -96,13 +112,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawEnoki</defName>
     <label>enoki mushroom</label>
-    <description>Edible enoki mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible enoki mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +2 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Enoki</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.0</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteEnoki</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteEnoki</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>12</daysToRotStart>
@@ -113,13 +133,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawWoodEar</defName>
     <label>wood ear mushroom</label>
-    <description>Edible wood ear mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible wood ear mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +7 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/WoodEar</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.3</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteWoodEar</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteWoodEar</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>30</daysToRotStart>
@@ -130,13 +154,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawBeech</defName>
     <label>beech mushroom</label>
-    <description>Edible beech mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible beech mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +5 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Beech</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.3</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteBeech</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteBeech</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>20</daysToRotStart>
@@ -147,13 +175,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawMaitake</defName>
     <label>maitake mushroom</label>
-    <description>Edible maitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible maitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +8 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Maitake</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.8</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteMaitake</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteMaitake</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>18</daysToRotStart>
@@ -164,13 +196,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawLionsMane</defName>
     <label>lion's mane mushroom</label>
-    <description>Edible lion's mane mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible lion's mane mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +9 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/LionsMane</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2.0</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteLionsMane</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteLionsMane</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>15</daysToRotStart>
@@ -181,13 +217,17 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawMatsutake</defName>
     <label>matsutake mushroom</label>
-    <description>Edible matsutake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <description>Edible matsutake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +10 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Matsutake</texPath>
     </graphicData>
     <statBases>
       <MarketValue>4.0</MarketValue>
     </statBases>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteMatsutake</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteMatsutake</specialThoughtAsIngredient>
+    </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>12</daysToRotStart>

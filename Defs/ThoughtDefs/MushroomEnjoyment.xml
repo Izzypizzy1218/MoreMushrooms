@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThoughtDef>
+    <defName>RMush_AteButton</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed button mushroom</label>
+        <description>That button mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteShiitake</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed shiitake mushroom</label>
+        <description>That shiitake mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteOyster</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed oyster mushroom</label>
+        <description>That oyster mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteKingOyster</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed king oyster mushroom</label>
+        <description>That king oyster mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteEnoki</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed enoki mushroom</label>
+        <description>That enoki mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteWoodEar</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed wood ear mushroom</label>
+        <description>That wood ear mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteBeech</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed beech mushroom</label>
+        <description>That beech mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteMaitake</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed maitake mushroom</label>
+        <description>That maitake mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteLionsMane</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed lion's mane mushroom</label>
+        <description>That lion's mane mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>9</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteMatsutake</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>enjoyed matsutake mushroom</label>
+        <description>That matsutake mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

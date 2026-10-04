@@ -23,6 +23,7 @@ def generate(handoff):
     c = config["common"]
     assert 0 < c["lowMaxCount"] < c["mediumMaxCount"] < c["stackLimit"]
     plants, items, ko, en = [ET.Element(tag) for tag in ("Defs", "Defs", "LanguageData", "LanguageData")]
+    thoughts, thoughts_ko, thoughts_en = [ET.Element(tag) for tag in ("Defs", "LanguageData", "LanguageData")]
     base = node(plants, "ThingDef", Name="RMush_PlantBase", ParentName="PlantBase", Abstract="True")
     stats = node(base, "statBases")
     for key, value in {"MaxHitPoints":85, "Nutrition":0.2}.items(): node(stats, key, value)
@@ -59,14 +60,38 @@ def generate(handoff):
 
     for m in config["mushrooms"]:
         raw_id = "RMush_Raw" + m["id"]
+        thought_id = "RMush_Ate" + m["id"]
+        thought = node(thoughts, "ThoughtDef")
+        node(thought, "defName", thought_id)
+        node(thought, "thoughtClass", "RimMushrooms.Thought_MushroomEnjoyment")
+        node(thought, "durationDays", c["moodDurationHours"] / 24)
+        node(thought, "stackLimit", 1)
+        node(thought, "showBubble", True)
+        node(thought, "icon", "Things/Mote/ThoughtSymbol/Food")
+        stage = node(node(thought, "stages"), "li")
+        mood_label_en = "enjoyed " + m["en"]
+        mood_label_ko = m["ko"] + "의 맛"
+        mood_desc_en = "That " + m["en"] + " had a satisfying flavor. A little pleasure from a good ingredient."
+        mood_desc_ko = m["ko"] + "의 맛을 즐겼다. 좋은 식재료가 주는 작은 즐거움이다."
+        node(stage, "label", mood_label_en)
+        node(stage, "description", mood_desc_en)
+        node(stage, "baseMoodEffect", m["mood"])
+        for language, label, desc in ((thoughts_ko, mood_label_ko, mood_desc_ko), (thoughts_en, mood_label_en, mood_desc_en)):
+            node(language, thought_id + ".stages.0.label", label)
+            node(language, thought_id + ".stages.0.description", desc)
         raw = node(items, "ThingDef", ParentName="RMush_RawBase")
         node(raw, "defName", raw_id)
         node(raw, "label", m["en"])
         desc_en = "Edible " + m["en"] + "s. Can be cooked in ordinary meals or eaten raw. Counts as fungus."
         desc_ko = "식용 " + m["ko"] + ". 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다."
+        desc_en += f" Eating it raw or in a meal grants +{m['mood']} mood for {c['moodDurationHours']} hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply."
+        desc_ko += f" 생식하거나 요리에 넣어 먹으면 {c['moodDurationHours']}시간 동안 무드 +{m['mood']}. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다."
         node(raw, "description", desc_en)
         node(node(raw, "graphicData"), "texPath", "Things/Item/RimMushrooms/" + m["id"])
         node(node(raw, "statBases"), "MarketValue", m["value"])
+        ingestible = node(raw, "ingestible")
+        node(ingestible, "specialThoughtDirect", thought_id)
+        node(ingestible, "specialThoughtAsIngredient", thought_id)
         rot = node(node(raw, "comps"), "li", Class="CompProperties_Rottable")
         node(rot, "daysToRotStart", m["rotDays"])
         node(rot, "rotDestroys", True)
@@ -117,8 +142,11 @@ def generate(handoff):
 
     write_xml(ROOT / "Defs/ThingDefs_Plants/Mushrooms.xml", plants)
     write_xml(ROOT / "Defs/ThingDefs_Items/RawMushrooms.xml", items)
+    write_xml(ROOT / "Defs/ThoughtDefs/MushroomEnjoyment.xml", thoughts)
     for name, language in (("Korean",ko),("English",en)):
         write_xml(ROOT / "Languages" / name / "DefInjected/ThingDef/Mushrooms.xml", language)
+    for name, language in (("Korean",thoughts_ko),("English",thoughts_en)):
+        write_xml(ROOT / "Languages" / name / "DefInjected/ThoughtDef/MushroomEnjoyment.xml", language)
     credits = ROOT / "Credits"
     credits.mkdir(exist_ok=True)
     for source, dest in (
@@ -128,7 +156,7 @@ def generate(handoff):
         ("mushrooms-growing/CREDITS.txt","GROWING-CREDITS.txt")):
         shutil.copy2(handoff / "outputs" / source, credits / dest)
     shutil.copy2(handoff / "outputs/mushrooms-boxed/boxed-preview.png", ROOT / "About/Preview.png")
-    print("Generated 11 plant definitions, 10 ingredients, 52 unchanged PNGs, and EN/KO translations.")
+    print("Generated 11 plants, 10 ingredients, 10 six-hour mood memories, 52 unchanged PNGs, and EN/KO translations.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

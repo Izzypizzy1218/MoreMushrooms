@@ -53,6 +53,7 @@ namespace RimMushroomsTests
                 }
                 if (phase == 100)
                 {
+                    MoodTests.VerifyLoaded(map, Check);
                     Check(map.listerThings.AllThings.Count(t => t.def.defName.StartsWith("RMush_Plant")) >= 33, "plant growth fixtures survive save/load");
                     foreach (var t in map.listerThings.AllThings.Where(t => t.def.defName.StartsWith("RMush_Raw")))
                         Check(Texture(t) == (t.stackCount <= 25 ? "01Low" : t.stackCount <= 50 ? "02Medium" : "03Full"), "saved stack graphic " + t.def.defName + ":" + t.stackCount);
@@ -62,7 +63,7 @@ namespace RimMushroomsTests
                     Application.Quit(0);
                     return;
                 }
-                if (phase == 0) { Setup(map); phase = 1; }
+                if (phase == 0) { Setup(map); phase = 1; if (GenCommandLine.CommandLineArgPassed("mushroomMoodOnly")) cropIndex = plants.Length; }
                 if (phase == 1) { StartCrop(map); return; }
                 if (phase == 2)
                 {
@@ -221,6 +222,7 @@ namespace RimMushroomsTests
             if (cropIndex >= plants.Length)
             {
                 Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
+                MoodTests.Run(farmer, Check);
                 phase = 4; frames = 0;
                 return;
             }

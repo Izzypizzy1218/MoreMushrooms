@@ -1,45 +1,45 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <RMush_RawButton.label>양송이버섯</RMush_RawButton.label>
-  <RMush_RawButton.description>식용 양송이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawButton.description>
+  <RMush_RawButton.description>식용 양송이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +3. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawButton.description>
   <RMush_PlantButton.label>양송이버섯 군락</RMush_PlantButton.label>
   <RMush_PlantButton.description>흙에서 올라오는 양송이버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantButton.description>
   <RMush_RawShiitake.label>표고버섯</RMush_RawShiitake.label>
-  <RMush_RawShiitake.description>식용 표고버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawShiitake.description>
+  <RMush_RawShiitake.description>식용 표고버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +6. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawShiitake.description>
   <RMush_PlantShiitake.label>표고버섯 군락</RMush_PlantShiitake.label>
   <RMush_PlantShiitake.description>흙에서 올라오는 표고버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantShiitake.description>
   <RMush_RawOyster.label>느타리버섯</RMush_RawOyster.label>
-  <RMush_RawOyster.description>식용 느타리버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawOyster.description>
+  <RMush_RawOyster.description>식용 느타리버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +1. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawOyster.description>
   <RMush_PlantOyster.label>느타리버섯 군락</RMush_PlantOyster.label>
   <RMush_PlantOyster.description>흙에서 올라오는 느타리버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantOyster.description>
   <RMush_RawKingOyster.label>새송이버섯</RMush_RawKingOyster.label>
-  <RMush_RawKingOyster.description>식용 새송이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawKingOyster.description>
+  <RMush_RawKingOyster.description>식용 새송이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +4. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawKingOyster.description>
   <RMush_PlantKingOyster.label>새송이버섯 군락</RMush_PlantKingOyster.label>
   <RMush_PlantKingOyster.description>흙에서 올라오는 새송이버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantKingOyster.description>
   <RMush_RawEnoki.label>팽이버섯</RMush_RawEnoki.label>
-  <RMush_RawEnoki.description>식용 팽이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawEnoki.description>
+  <RMush_RawEnoki.description>식용 팽이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +2. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawEnoki.description>
   <RMush_PlantEnoki.label>팽이버섯 군락</RMush_PlantEnoki.label>
   <RMush_PlantEnoki.description>흙에서 올라오는 팽이버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantEnoki.description>
   <RMush_PlantEnokiWild.label>야생 팽이버섯 군락</RMush_PlantEnokiWild.label>
   <RMush_PlantEnokiWild.description>흙에서 올라오는 팽이버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 야생에서 채집할 수 있으며 재배할 수 없습니다.황갈색 갓이 특징입니다. 흰 재배 팽이와 같은 팽이버섯 식재료를 생산합니다.</RMush_PlantEnokiWild.description>
   <RMush_RawWoodEar.label>목이버섯</RMush_RawWoodEar.label>
-  <RMush_RawWoodEar.description>식용 목이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawWoodEar.description>
+  <RMush_RawWoodEar.description>식용 목이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +7. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawWoodEar.description>
   <RMush_PlantWoodEar.label>목이버섯 군락</RMush_PlantWoodEar.label>
   <RMush_PlantWoodEar.description>흙에서 올라오는 목이버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantWoodEar.description>
   <RMush_RawBeech.label>느티만가닥버섯</RMush_RawBeech.label>
-  <RMush_RawBeech.description>식용 느티만가닥버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawBeech.description>
+  <RMush_RawBeech.description>식용 느티만가닥버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +5. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawBeech.description>
   <RMush_PlantBeech.label>느티만가닥버섯 군락</RMush_PlantBeech.label>
   <RMush_PlantBeech.description>흙에서 올라오는 느티만가닥버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantBeech.description>
   <RMush_RawMaitake.label>잎새버섯</RMush_RawMaitake.label>
-  <RMush_RawMaitake.description>식용 잎새버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawMaitake.description>
+  <RMush_RawMaitake.description>식용 잎새버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +8. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawMaitake.description>
   <RMush_PlantMaitake.label>잎새버섯 군락</RMush_PlantMaitake.label>
   <RMush_PlantMaitake.description>흙에서 올라오는 잎새버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantMaitake.description>
   <RMush_RawLionsMane.label>노루궁뎅이버섯</RMush_RawLionsMane.label>
-  <RMush_RawLionsMane.description>식용 노루궁뎅이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawLionsMane.description>
+  <RMush_RawLionsMane.description>식용 노루궁뎅이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +9. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawLionsMane.description>
   <RMush_PlantLionsMane.label>노루궁뎅이버섯 군락</RMush_PlantLionsMane.label>
   <RMush_PlantLionsMane.description>흙에서 올라오는 노루궁뎅이버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 재배 구역에 심을 수 있습니다.</RMush_PlantLionsMane.description>
   <RMush_RawMatsutake.label>송이버섯</RMush_RawMatsutake.label>
-  <RMush_RawMatsutake.description>식용 송이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawMatsutake.description>
+  <RMush_RawMatsutake.description>식용 송이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +10. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawMatsutake.description>
   <RMush_PlantMatsutake.label>송이버섯 군락</RMush_PlantMatsutake.label>
   <RMush_PlantMatsutake.description>흙에서 올라오는 송이버섯 군락입니다. 어둠과 햇빛 모두에서 자랍니다. 야생에서 채집할 수 있으며 재배할 수 없습니다.</RMush_PlantMatsutake.description>
 </LanguageData>

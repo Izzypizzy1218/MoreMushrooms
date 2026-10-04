@@ -1,12 +1,14 @@
 param(
     [string]$GameDir = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld',
     [switch]$AllDlc,
+    [switch]$MoodOnly,
     [ValidateSet('English','Korean')][string]$Language = 'English'
 )
 $ErrorActionPreference = 'Stop'
 if (Get-Process -Name RimWorldWin64 -ErrorAction SilentlyContinue) { throw 'Close RimWorld before starting an isolated test.' }
 $projectRoot = Split-Path $PSScriptRoot -Parent
 $testId = (Get-Date -Format 'yyyyMMdd-HHmmss') + $(if ($AllDlc) { '-DLC' } else { '-Core' })
+if ($MoodOnly) { $testId += '-Mood' }
 $testRoot = Join-Path $projectRoot ('Tests\Runtime\' + $testId)
 $configRoot = Join-Path $testRoot 'Config'
 New-Item -ItemType Directory -Path $configRoot -Force | Out-Null
@@ -22,5 +24,6 @@ $prefs = '<PrefsData><langFolderName>' + $langFolder + '</langFolderName><devMod
 Set-Content -LiteralPath (Join-Path $configRoot 'Prefs.xml') -Value $prefs -Encoding utf8
 $logPath = Join-Path $testRoot 'Player.log'
 $arguments = @('-batchmode','-screen-fullscreen','0','-screen-width','1600','-screen-height','1000','-quicktest','-mushroomSmoke',('-mushroomLanguage=' + $Language),('-savedatafolder="' + $testRoot + '"'),'-logFile',('"' + $logPath + '"'))
+if ($MoodOnly) { $arguments += '-mushroomMoodOnly' }
 $gameProcess = Start-Process -FilePath (Join-Path $GameDir 'RimWorldWin64.exe') -WorkingDirectory $GameDir -ArgumentList $arguments -WindowStyle Hidden -PassThru
 [pscustomobject]@{Pid=$gameProcess.Id; TestRoot=$testRoot; Log=$logPath; Language=$Language; AllDlc=[bool]$AllDlc} | ConvertTo-Json
