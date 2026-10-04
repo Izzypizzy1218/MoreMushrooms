@@ -4,25 +4,6 @@
   <author>izzy_pizzy</author>
   <packageId>izzypizzy.rimmushrooms</packageId>
   <supportedVersions><li>1.6</li></supportedVersions>
-  <modVersion>0.3.2</modVersion>
-  <description>Ten familiar edible mushrooms for the rim. Grow nine varieties in soil, gather rare wild matsutake, and watch mushroom clusters fill out as they grow. Harvested mushrooms appear in three container fill levels according to their stack count.
-v0.3.1: A dedicated assorted crop icon combines button, lion's mane, shiitake and beech mushrooms in one image.
-v0.3.1: 모둠버섯 선택 아이콘에 양송이·노루궁뎅이·표고·느티만가닥을 한 장으로 담았습니다.
-v0.3.0: Grow all nine cultivated varieties, including the assorted selection, in hydroponics basins. Six slower varieties have slightly shorter growth periods; harvest yields are unchanged.
-v0.3.0: 재배 가능한 9종과 모둠버섯의 수경재배를 지원합니다. 기본 성장일수가 6일보다 길던 6종은 0.5~1일 단축하고 수확량은 유지했습니다.
-
-버섯 10종을 추가합니다. 흙에서 9종을 재배하고, 숲에서는 희귀한 송이를 비롯한 야생 버섯을 채집할 수 있습니다. 성장률에 따라 군락의 크기와 개수가 늘고, 수확물은 수량에 따라 상자 안의 양이 3단계로 달라집니다.
-
-v0.1.4: 생식과 버섯을 넣은 요리에 등급별 무드 +3/+5/+7을 추가하고, 송이버섯은 +10을 줍니다. 게임 시간 6시간 동안 가장 높은 버섯 보너스 하나만 적용됩니다.
-
-Strong light slows mushroom growth; shade and low light allow normal growth.
-강한 빛에서는 버섯의 성장이 느려지고, 그늘과 약한 빛에서는 정상 성장합니다.
-
-v0.2.0: Choose assorted mushrooms in a growing zone to sow a random cultivated variety, with nine equal chances. Requires Plants 6; excludes matsutake. Each variety retains its own growth and harvest.
-v0.2.0: 재배구역에서 모둠버섯을 선택하면 9종을 같은 확률로 무작위 파종합니다. 식물 기술 6이 필요하며 송이는 제외됩니다. 각 종류의 성장·수확 수치는 그대로 유지됩니다.
-
-Core only. No DLC, Harmony, or other framework required. English and Korean supported.
-v0.2.1: Distinct mood names and short personal descriptions for all ten mushrooms, reflecting their flavor and texture.
-v0.2.1: 버섯 10종의 향·맛·식감을 반영한 무드 효과 이름과 림월드식 짧은 속마음 설명을 적용했습니다.
-v0.1.4: three six-hour mushroom mood tiers (+3/+5/+7), plus rare matsutake (+10), from raw food or cooked ingredients.</description>
+  <modVersion>0.3.3</modVersion>
+  <description>재배가능한 10종류의 버섯을 추가합니다.</description>
 </ModMetaData>

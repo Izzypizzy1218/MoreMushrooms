@@ -1,4 +1,4 @@
-# More Mushrooms — v0.3.2
+# More Mushrooms — v0.3.3
 
 림월드 1.6용 식용 버섯 10종 모드. 초기 밸런스 초안이며 **Core만 필요**합니다. Harmony, 프레임워크, DLC는 필수가 아닙니다. 영어·한국어를 지원합니다.
 
