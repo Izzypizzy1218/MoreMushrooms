@@ -25,6 +25,10 @@ def generate(handoff):
     plants, items, ko, en = [ET.Element(tag) for tag in ("Defs", "Defs", "LanguageData", "LanguageData")]
     thoughts, thoughts_ko, thoughts_en = [ET.Element(tag) for tag in ("Defs", "LanguageData", "LanguageData")]
     base = node(plants, "ThingDef", Name="RMush_PlantBase", ParentName="PlantBase", Abstract="True")
+    node(base, "thingClass", "RimMushrooms.Plant_Mushroom")
+    light = node(node(base, "modExtensions"), "li", Class="RimMushrooms.MushroomLightSettings")
+    node(light, "shadeMaxGlow", c["shadeMaxGlow"])
+    node(light, "fullLightGrowthFactor", c["fullLightGrowthFactor"])
     stats = node(base, "statBases")
     for key, value in {"MaxHitPoints":85, "Nutrition":0.2}.items(): node(stats, key, value)
     gd = node(base, "graphicData")
@@ -110,8 +114,10 @@ def generate(handoff):
             node(p, "defName", def_id)
             label_en = ("wild " if plant_id == "EnokiWild" else "") + m["en"] + " cluster"
             label_ko = ("야생 " if plant_id == "EnokiWild" else "") + m["ko"] + " 군락"
-            desc_en = "A cluster of " + m["en"] + "s growing directly from the soil. Grows in both darkness and daylight. "
-            desc_ko = "흙에서 올라오는 " + m["ko"] + " 군락입니다. 어둠과 햇빛 모두에서 자랍니다. "
+            desc_en = "A cluster of " + m["en"] + "s growing directly from the soil. "
+            desc_en += f"Grows normally at light levels up to {c['shadeMaxGlow']:.0%}. Stronger light gradually slows growth to {c['fullLightGrowthFactor']:.0%} speed at 100% light, without direct light damage. "
+            desc_ko = "흙에서 올라오는 " + m["ko"] + " 군락입니다. "
+            desc_ko += f"광량 {c['shadeMaxGlow']:.0%} 이하에서는 정상 성장하며, 그보다 강한 빛에서는 점차 느려져 광량 100%에서 성장 속도가 {c['fullLightGrowthFactor']:.0%}가 됩니다. 빛으로 직접 피해를 받지는 않습니다. "
             if wild_only:
                 desc_en += "Gathered in the wild; cannot be sown."
                 desc_ko += "야생에서 채집할 수 있으며 재배할 수 없습니다."
@@ -147,6 +153,10 @@ def generate(handoff):
         write_xml(ROOT / "Languages" / name / "DefInjected/ThingDef/Mushrooms.xml", language)
     for name, language in (("Korean",thoughts_ko),("English",thoughts_en)):
         write_xml(ROOT / "Languages" / name / "DefInjected/ThoughtDef/MushroomEnjoyment.xml", language)
+    for name, text in (("Korean", "강한 빛에 따른 성장 배율: {0}"), ("English", "Bright-light growth multiplier: {0}")):
+        language = ET.Element("LanguageData")
+        node(language, "MM_BrightLightGrowthFactor", text)
+        write_xml(ROOT / "Languages" / name / "Keyed/Mushrooms.xml", language)
     credits = ROOT / "Credits"
     credits.mkdir(exist_ok=True)
     for source, dest in (

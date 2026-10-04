@@ -26,3 +26,5 @@
 - 기존 저장 호환성을 위해 packageId `izzypizzy.rimmushrooms`, 어셈블리/DLL 이름 `RimMushrooms`, C# 네임스페이스 및 클래스명, Def 이름, 텍스처 경로를 유지한다.
 - 새 ZIP 이름과 ZIP 내부 최상위 폴더는 `MoreMushrooms`를 사용한다. 과거 버전 ZIP과 기록에 있는 기존 이름은 수정하지 않는다.
 - 설치 스크립트는 기존 `Mods/RimMushrooms`와 새 `Mods/MoreMushrooms`를 함께 확인하고, 동일 packageId의 기존 설치를 모두 Mods 밖에 백업한 뒤 하나만 설치한다.
+
+- v0.1.4 식물 클래스는 `RimMushrooms.Plant_Mushroom`이다. `MushroomSaveCompatibility`가 맵 사물 역직렬화 전에 기존 저장의 해당 모드 식물 Class 태그만 메모리상에서 변환한다. ID/성장/위치/체력 필드와 원본 저장은 수정하지 않는다. 이 호환 처리를 유지하고 클래스 변경 시 이전 저장 시험을 수행한다.

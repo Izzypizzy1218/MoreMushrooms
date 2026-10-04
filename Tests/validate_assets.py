@@ -24,6 +24,11 @@ def main():
     thoughts = [n for p, doc in docs.items() if "Defs" in p.parts for n in doc.getroot() if n.tag == "ThoughtDef" and n.find("defName") is not None]
     names = [n.findtext("defName") for n in defs]
     check(len(names) == 21 and len(set(names)) == 21, "21 unique definitions")
+    plant_base = ET.parse(ROOT / "Defs/ThingDefs_Plants/Mushrooms.xml").find("ThingDef[@Name='RMush_PlantBase']")
+    check(plant_base.findtext("thingClass") == "RimMushrooms.Plant_Mushroom", "shade-aware mushroom plant class")
+    light = plant_base.find("modExtensions/li[@Class='RimMushrooms.MushroomLightSettings']")
+    check(float(light.findtext("shadeMaxGlow")) == balance["common"]["shadeMaxGlow"] and 0 <= balance["common"]["shadeMaxGlow"] < 1, "configured shade threshold")
+    check(float(light.findtext("fullLightGrowthFactor")) == balance["common"]["fullLightGrowthFactor"] and 0 < balance["common"]["fullLightGrowthFactor"] <= 1, "configured bright light multiplier")
     thought_by_name = {n.findtext("defName"): n for n in thoughts}
     check(len(thoughts) == len(thought_by_name) == 10, "10 unique mushroom memories")
     check(balance["common"]["moodDurationHours"] == 6, "six game-hour duration")
@@ -47,6 +52,7 @@ def main():
         check(all(n+suffix in tags for n in names for suffix in (".label", ".description")), lang + " translation targets")
         mood_tags = [n.tag for n in ET.parse(ROOT / "Languages" / lang / "DefInjected/ThoughtDef/MushroomEnjoyment.xml").getroot()]
         check(len(mood_tags) == len(set(mood_tags)) == 20 and all(n+suffix in mood_tags for n in thought_by_name for suffix in (".stages.0.label", ".stages.0.description")), lang + " memory translations")
+        check("{0}" in ET.parse(ROOT / "Languages" / lang / "Keyed/Mushrooms.xml").findtext("MM_BrightLightGrowthFactor"), lang + " growth tooltip translation")
     pngs = list((ROOT / "Textures").rglob("*.png"))
     check(len(pngs) == 52, "52 shipped textures")
     sources = {sha(p) for folder in ("mushrooms-boxed/sprites-256", "mushrooms-growing/textures-256") for p in (HANDOFF / "outputs" / folder).glob("*.png")}

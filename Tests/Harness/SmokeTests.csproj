@@ -7,12 +7,12 @@
     <OutputPath>Assemblies\</OutputPath><DebugType>none</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/><Reference Include="System.Core"/>
+    <Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Xml"/>
     <Reference Include="Assembly-CSharp"><HintPath>$(Managed)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine.CoreModule"><HintPath>$(Managed)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="netstandard"><HintPath>$(Managed)\netstandard.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="RimMushrooms"><HintPath>..\..\Assemblies\RimMushrooms.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
-  <ItemGroup><Compile Include="SmokeTests.cs"/><Compile Include="MoodTests.cs"/></ItemGroup>
+  <ItemGroup><Compile Include="SmokeTests.cs"/><Compile Include="MoodTests.cs"/><Compile Include="LightTests.cs"/></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 </Project>

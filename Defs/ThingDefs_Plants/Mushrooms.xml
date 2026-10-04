@@ -1,6 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef Name="RMush_PlantBase" ParentName="PlantBase" Abstract="True">
+    <thingClass>RimMushrooms.Plant_Mushroom</thingClass>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomLightSettings">
+        <shadeMaxGlow>0.5</shadeMaxGlow>
+        <fullLightGrowthFactor>0.5</fullLightGrowthFactor>
+      </li>
+    </modExtensions>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
@@ -40,7 +47,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantButton</defName>
     <label>button mushroom cluster</label>
-    <description>A cluster of button mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of button mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Button</texPath>
     </graphicData>
@@ -61,7 +68,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantShiitake</defName>
     <label>shiitake mushroom cluster</label>
-    <description>A cluster of shiitake mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of shiitake mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Shiitake</texPath>
     </graphicData>
@@ -82,7 +89,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantOyster</defName>
     <label>oyster mushroom cluster</label>
-    <description>A cluster of oyster mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of oyster mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Oyster</texPath>
     </graphicData>
@@ -104,7 +111,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantKingOyster</defName>
     <label>king oyster mushroom cluster</label>
-    <description>A cluster of king oyster mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of king oyster mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/KingOyster</texPath>
     </graphicData>
@@ -125,7 +132,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantEnoki</defName>
     <label>enoki mushroom cluster</label>
-    <description>A cluster of enoki mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of enoki mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Enoki</texPath>
     </graphicData>
@@ -142,7 +149,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantEnokiWild</defName>
     <label>wild enoki mushroom cluster</label>
-    <description>A cluster of enoki mushrooms growing directly from the soil. Grows in both darkness and daylight. Gathered in the wild; cannot be sown. Its golden caps differ from cultivated white enoki. Both yield the same enoki ingredient.</description>
+    <description>A cluster of enoki mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Gathered in the wild; cannot be sown. Its golden caps differ from cultivated white enoki. Both yield the same enoki ingredient.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/EnokiWild</texPath>
     </graphicData>
@@ -159,7 +166,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantWoodEar</defName>
     <label>wood ear mushroom cluster</label>
-    <description>A cluster of wood ear mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of wood ear mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/WoodEar</texPath>
     </graphicData>
@@ -181,7 +188,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantBeech</defName>
     <label>beech mushroom cluster</label>
-    <description>A cluster of beech mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of beech mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Beech</texPath>
     </graphicData>
@@ -202,7 +209,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantMaitake</defName>
     <label>maitake mushroom cluster</label>
-    <description>A cluster of maitake mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of maitake mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Maitake</texPath>
     </graphicData>
@@ -223,7 +230,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantLionsMane</defName>
     <label>lion's mane mushroom cluster</label>
-    <description>A cluster of lion's mane mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <description>A cluster of lion's mane mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/LionsMane</texPath>
     </graphicData>
@@ -244,7 +251,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantMatsutake</defName>
     <label>matsutake mushroom cluster</label>
-    <description>A cluster of matsutake mushrooms growing directly from the soil. Grows in both darkness and daylight. Gathered in the wild; cannot be sown.</description>
+    <description>A cluster of matsutake mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Gathered in the wild; cannot be sown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Matsutake</texPath>
     </graphicData>

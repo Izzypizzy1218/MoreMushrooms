@@ -53,14 +53,28 @@ namespace RimMushroomsTests
                 }
                 if (phase == 100)
                 {
+                    bool legacyLoaded = File.Exists(Path.Combine(GenFilePaths.SaveDataFolderPath, "new-save-verified.flag"));
+                    LightTests.VerifyLoaded(map, legacyLoaded, Check);
                     MoodTests.VerifyLoaded(map, Check);
                     Check(map.listerThings.AllThings.Count(t => t.def.defName.StartsWith("RMush_Plant")) >= 33, "plant growth fixtures survive save/load");
                     foreach (var t in map.listerThings.AllThings.Where(t => t.def.defName.StartsWith("RMush_Raw")))
                         Check(Texture(t) == (t.stackCount <= 25 ? "01Low" : t.stackCount <= 50 ? "02Medium" : "03Full"), "saved stack graphic " + t.def.defName + ":" + t.stackCount);
+                    if (GenCommandLine.CommandLineArgPassed("mushroomLegacySave") && !legacyLoaded)
+                    {
+                        File.WriteAllText(Path.Combine(GenFilePaths.SaveDataFolderPath, "new-save-verified.flag"), "PASS");
+                        phase = 101;
+                        return;
+                    }
                     File.AppendAllText(Report, "RESULT PASS" + Environment.NewLine);
                     Log.Message("[Rim Mushrooms Tests] RESULT PASS");
                     finished = true;
                     Application.Quit(0);
+                    return;
+                }
+                if (phase == 101)
+                {
+                    phase = 102;
+                    GameDataSaveLoader.LoadGame("MoreMushrooms-LegacyFixture");
                     return;
                 }
                 if (phase == 0) { Setup(map); phase = 1; if (GenCommandLine.CommandLineArgPassed("mushroomMoodOnly")) cropIndex = plants.Length; }
@@ -168,7 +182,7 @@ namespace RimMushroomsTests
             int row = 0;
             foreach (var d in plants)
             {
-                Check(PlantUtility.GrowthRateFactorFor_Light(d, 0f) == 1f && PlantUtility.GrowthRateFactorFor_Light(d, 1f) == 1f, "dark/light growth " + d.defName);
+                Check(d.thingClass == typeof(Plant_Mushroom) && !d.plant.diesToLight && !d.plant.dieIfNoSunlight, "shade-aware plant without light damage " + d.defName);
                 Check(d.plant.maxMeshCount == 9 && d.plant.visualSizeRange.min == 0.3f && d.plant.visualSizeRange.max == 0.65f, "native growth rendering " + d.defName);
                 if (d.defName != "RMush_PlantEnoki")
                     Check(DefDatabase<BiomeDef>.AllDefs.Any(b => b.AllWildPlants.Contains(d)), "wild biome registration " + d.defName);
@@ -214,6 +228,7 @@ namespace RimMushroomsTests
             }
             Find.CameraDriver.JumpToCurrentMapLoc(map.Center);
             Find.CameraDriver.SetRootSize(19f);
+            LightTests.Run(map, workCell, Check);
             Check(true, "fixture created; live sow/harvest jobs starting");
         }
 

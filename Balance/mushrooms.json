@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "status": "Initial gameplay balance draft, not real-world cultivation data.",
   "common": {
     "stackLimit": 75,
@@ -9,7 +9,9 @@
     "fertilityMin": 0.5,
     "fertilitySensitivity": 0.3,
     "drawSize": 1.0,
-    "moodDurationHours": 6
+    "moodDurationHours": 6,
+    "shadeMaxGlow": 0.5,
+    "fullLightGrowthFactor": 0.5
   },
   "mushrooms": [
     {

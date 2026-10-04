@@ -2,6 +2,7 @@ param(
     [string]$GameDir = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld',
     [switch]$AllDlc,
     [switch]$MoodOnly,
+    [string]$LegacySave,
     [ValidateSet('English','Korean')][string]$Language = 'English'
 )
 $ErrorActionPreference = 'Stop'
@@ -12,6 +13,12 @@ if ($MoodOnly) { $testId += '-Mood' }
 $testRoot = Join-Path $projectRoot ('Tests\Runtime\' + $testId)
 $configRoot = Join-Path $testRoot 'Config'
 New-Item -ItemType Directory -Path $configRoot -Force | Out-Null
+if ($LegacySave) {
+    if (!(Test-Path -LiteralPath $LegacySave -PathType Leaf)) { throw 'Legacy test save not found.' }
+    $saveRoot = Join-Path $testRoot 'Saves'
+    New-Item -ItemType Directory -Path $saveRoot -Force | Out-Null
+    Copy-Item -LiteralPath $LegacySave -Destination (Join-Path $saveRoot 'MoreMushrooms-LegacyFixture.rws')
+}
 $mods = @('ludeon.rimworld')
 if ($AllDlc) { $mods += @('ludeon.rimworld.royalty','ludeon.rimworld.ideology','ludeon.rimworld.biotech','ludeon.rimworld.anomaly','ludeon.rimworld.odyssey') }
 $mods += @('izzypizzy.rimmushrooms','izzypizzy.rimmushrooms.tests')
@@ -25,5 +32,6 @@ Set-Content -LiteralPath (Join-Path $configRoot 'Prefs.xml') -Value $prefs -Enco
 $logPath = Join-Path $testRoot 'Player.log'
 $arguments = @('-batchmode','-screen-fullscreen','0','-screen-width','1600','-screen-height','1000','-quicktest','-mushroomSmoke',('-mushroomLanguage=' + $Language),('-savedatafolder="' + $testRoot + '"'),'-logFile',('"' + $logPath + '"'))
 if ($MoodOnly) { $arguments += '-mushroomMoodOnly' }
+if ($LegacySave) { $arguments += '-mushroomLegacySave' }
 $gameProcess = Start-Process -FilePath (Join-Path $GameDir 'RimWorldWin64.exe') -WorkingDirectory $GameDir -ArgumentList $arguments -WindowStyle Hidden -PassThru
 [pscustomobject]@{Pid=$gameProcess.Id; TestRoot=$testRoot; Log=$logPath; Language=$Language; AllDlc=[bool]$AllDlc} | ConvertTo-Json
