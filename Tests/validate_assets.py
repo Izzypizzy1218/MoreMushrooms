@@ -17,13 +17,20 @@ def check(condition, message):
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 
 def main():
-    docs = {p: ET.parse(p) for folder in ("About","Defs","Languages") for p in (ROOT / folder).rglob("*.xml")}
+    docs = {p: ET.parse(p) for folder in ("About","Defs","Languages","Patches") for p in (ROOT / folder).rglob("*.xml")}
     balance = json.loads((ROOT / "Balance/mushrooms.json").read_text(encoding="utf-8"))
     check(ET.parse(ROOT / "About/About.xml").findtext("modVersion") == balance["version"], "consistent release version")
     defs = [n for p, doc in docs.items() if "Defs" in p.parts for n in doc.getroot() if n.tag == "ThingDef" and n.find("defName") is not None]
     thoughts = [n for p, doc in docs.items() if "Defs" in p.parts for n in doc.getroot() if n.tag == "ThoughtDef" and n.find("defName") is not None]
     names = [n.findtext("defName") for n in defs]
-    check(len(names) == 21 and len(set(names)) == 21, "21 unique definitions")
+    check(len(names) == 22 and len(set(names)) == 22, "22 unique definitions")
+    assorted = next(n for n in defs if n.findtext("defName") == "RMush_PlantAssorted")
+    choices = [n.text for n in assorted.findall("modExtensions/li[@Class='RimMushrooms.AssortedMushroomSettings']/varieties/li")]
+    check(len(choices) == len(set(choices)) == 9 and set(choices) == {"RMush_Plant" + m["id"] for m in balance["mushrooms"] if not m.get("wildOnly", False)}, "assorted chooses exactly nine cultivable species")
+    check(int(assorted.findtext("plant/sowMinSkill")) == max(m["skill"] for m in balance["mushrooms"] if not m.get("wildOnly", False)), "assorted requires skill for all nine species")
+    check(assorted.find("plant/wildBiomes") is None, "assorted menu selection never spawns wild")
+    patch = ET.parse(ROOT / "Patches/AssortedMushroomWork.xml")
+    check(len(patch.findall("Operation/match/value/giverClass")) == 2, "scoped native sow and harvest workers shipped")
     plant_base = ET.parse(ROOT / "Defs/ThingDefs_Plants/Mushrooms.xml").find("ThingDef[@Name='RMush_PlantBase']")
     check(plant_base.findtext("thingClass") == "RimMushrooms.Plant_Mushroom", "shade-aware mushroom plant class")
     light = plant_base.find("modExtensions/li[@Class='RimMushrooms.MushroomLightSettings']")
@@ -48,7 +55,7 @@ def main():
         check(len(files) == (2 if n.find("plant") is not None else 3), "graphic collection size " + str(path))
     for lang in ("English", "Korean"):
         tags = [n.tag for n in ET.parse(ROOT / "Languages" / lang / "DefInjected/ThingDef/Mushrooms.xml").getroot()]
-        check(len(tags) == 42 and len(set(tags)) == 42, lang + " complete translation")
+        check(len(tags) == 44 and len(set(tags)) == 44, lang + " complete translation")
         check(all(n+suffix in tags for n in names for suffix in (".label", ".description")), lang + " translation targets")
         mood_tags = [n.tag for n in ET.parse(ROOT / "Languages" / lang / "DefInjected/ThoughtDef/MushroomEnjoyment.xml").getroot()]
         check(len(mood_tags) == len(set(mood_tags)) == 20 and all(n+suffix in mood_tags for n in thought_by_name for suffix in (".stages.0.label", ".stages.0.description")), lang + " memory translations")

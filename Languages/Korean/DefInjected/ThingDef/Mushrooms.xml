@@ -42,4 +42,6 @@
   <RMush_RawMatsutake.description>식용 송이버섯. 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다. 생식하거나 요리에 넣어 먹으면 6시간 동안 무드 +10. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다.</RMush_RawMatsutake.description>
   <RMush_PlantMatsutake.label>송이버섯 군락</RMush_PlantMatsutake.label>
   <RMush_PlantMatsutake.description>흙에서 올라오는 송이버섯 군락입니다. 광량 50% 이하에서는 정상 성장하며, 그보다 강한 빛에서는 점차 느려져 광량 100%에서 성장 속도가 50%가 됩니다. 빛으로 직접 피해를 받지는 않습니다. 야생에서 채집할 수 있으며 재배할 수 없습니다.</RMush_PlantMatsutake.description>
+  <RMush_PlantAssorted.label>모둠버섯</RMush_PlantAssorted.label>
+  <RMush_PlantAssorted.description>재배 가능한 버섯 9종 중 하나를 같은 확률로 무작위 파종합니다. 송이와 야생 팽이는 제외하며, 수확 후 다시 심을 때도 새로 뽑습니다. 심어진 종류의 성장·수확·섭취 효과가 그대로 적용됩니다. 식물 기술 6이 필요합니다.</RMush_PlantAssorted.description>
 </LanguageData>

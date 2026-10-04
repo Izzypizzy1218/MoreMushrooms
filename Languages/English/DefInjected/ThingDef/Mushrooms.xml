@@ -42,4 +42,6 @@
   <RMush_RawMatsutake.description>Edible matsutake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +10 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawMatsutake.description>
   <RMush_PlantMatsutake.label>matsutake mushroom cluster</RMush_PlantMatsutake.label>
   <RMush_PlantMatsutake.description>A cluster of matsutake mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Gathered in the wild; cannot be sown.</RMush_PlantMatsutake.description>
+  <RMush_PlantAssorted.label>assorted mushrooms</RMush_PlantAssorted.label>
+  <RMush_PlantAssorted.description>Sow one of nine cultivated mushroom varieties at random, each with an equal chance. Excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6.</RMush_PlantAssorted.description>
 </LanguageData>

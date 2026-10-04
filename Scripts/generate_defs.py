@@ -146,6 +146,30 @@ def generate(handoff):
             for v in ("A", "B"):
                 shutil.copy2(handoff / "outputs/mushrooms-growing/textures-256" / (asset + "_" + v + ".png"), folder / (plant_id + v + ".png"))
 
+    cultivable = [m for m in config["mushrooms"] if not m.get("wildOnly", False)]
+    assorted_id = "RMush_PlantAssorted"
+    assorted = node(plants, "ThingDef", ParentName="RMush_PlantBase")
+    node(assorted, "defName", assorted_id)
+    label_en, label_ko = "assorted mushrooms", "모둠버섯"
+    desc_en = "Sow one of nine cultivated mushroom varieties at random, each with an equal chance. Excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6."
+    desc_ko = "재배 가능한 버섯 9종 중 하나를 같은 확률로 무작위 파종합니다. 송이와 야생 팽이는 제외하며, 수확 후 다시 심을 때도 새로 뽑습니다. 심어진 종류의 성장·수확·섭취 효과가 그대로 적용됩니다. 식물 기술 6이 필요합니다."
+    node(assorted, "label", label_en)
+    node(assorted, "description", desc_en)
+    node(node(assorted, "graphicData"), "texPath", "Things/Plant/RimMushrooms/Button")
+    settings = node(node(assorted, "modExtensions"), "li", Class="RimMushrooms.AssortedMushroomSettings")
+    varieties = node(settings, "varieties")
+    for m in cultivable: node(varieties, "li", "RMush_Plant" + m["id"])
+    pp = node(assorted, "plant")
+    node(node(pp, "sowTags"), "li", "Ground")
+    node(pp, "sowMinSkill", max(m["skill"] for m in cultivable))
+    # Menu summary only; jobs always plant the chosen species' actual def.
+    node(pp, "growDays", sum(m["growDays"] for m in cultivable) / len(cultivable))
+    node(pp, "harvestYield", 0)
+    node(pp, "harvestTag", "None")
+    for language, label, desc in ((ko,label_ko,desc_ko),(en,label_en,desc_en)):
+        node(language, assorted_id + ".label", label)
+        node(language, assorted_id + ".description", desc)
+
     write_xml(ROOT / "Defs/ThingDefs_Plants/Mushrooms.xml", plants)
     write_xml(ROOT / "Defs/ThingDefs_Items/RawMushrooms.xml", items)
     write_xml(ROOT / "Defs/ThoughtDefs/MushroomEnjoyment.xml", thoughts)
@@ -166,7 +190,7 @@ def generate(handoff):
         ("mushrooms-growing/CREDITS.txt","GROWING-CREDITS.txt")):
         shutil.copy2(handoff / "outputs" / source, credits / dest)
     shutil.copy2(handoff / "outputs/mushrooms-boxed/boxed-preview.png", ROOT / "About/Preview.png")
-    print("Generated 11 plants, 10 ingredients, 10 six-hour mood memories, 52 unchanged PNGs, and EN/KO translations.")
+    print("Generated 11 species plants plus assorted sowing selection, 10 ingredients, 10 memories, 52 unchanged PNGs, and EN/KO translations.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

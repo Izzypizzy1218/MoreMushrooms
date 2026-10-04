@@ -1,10 +1,11 @@
-# More Mushrooms — v0.1.4
+# More Mushrooms — v0.2.0
 
 림월드 1.6용 식용 버섯 10종 모드. 초기 밸런스 초안이며 **Core만 필요**합니다. Harmony, 프레임워크, DLC는 필수가 아닙니다. 영어·한국어를 지원합니다.
 
 ## 플레이
 
 - 재배 구역의 작물 선택 목록에서 9종을 심습니다. 별도 연구는 없으며 식물 기술 요구치가 종류별로 다릅니다.
+- **모둠버섯**을 선택하면 파종할 칸마다 9종 중 하나를 같은 확률(각 1/9)로 심습니다. 식물 기술 6이 필요하며 송이와 야생 팽이는 제외합니다. 심어진 버섯의 성장일수·수확량·섭취 무드는 기존 개별 종류 그대로이고, 수확 후 다시 심을 때 종류를 새로 뽑습니다.
 - 송이는 온대림·아한대림의 희귀 야생 채집 버섯입니다. 나머지도 지정된 생물군계에서 드물게 자랍니다.
 - 팽이 재배형은 흰색, 야생형은 황갈색입니다. 수확하면 둘 다 같은 팽이버섯 식재료가 됩니다.
 - 모든 버섯은 흙에서 자라며 빛 없이도 성장합니다. 강한 빛에서는 성장이 느려지지만 빛 자체로 피해를 받지는 않습니다. 수경재배는 지원하지 않습니다.
@@ -85,10 +86,11 @@ v0.1.3부터 프로젝트와 게임 표시 이름은 **More Mushrooms**, 개발�
 
 - `Balance/mushrooms.json`: 종류별 성장·수확·가치·부패·기술·생물군계 가중치, 공통 스택 및 표시 경계의 원본.
 - `Scripts/generate_defs.py`: JSON에서 XML과 번역을 생성하고 인계 패키지의 승인된 **256px PNG 52장**을 픽셀 수정 없이 복사합니다.
-- `Defs/ThingDefs_Plants/Mushrooms.xml`: 공통 광량·온도·성장 표시 설정과 식물 11개.
+- `Defs/ThingDefs_Plants/Mushrooms.xml`: 공통 광량·온도·성장 표시 설정, 식물 11개 및 모둠버섯 파종 선택 항목.
 - `Defs/ThingDefs_Items/RawMushrooms.xml`: 식재료 10종.
 - `Defs/ThoughtDefs/MushroomEnjoyment.xml`: 종류별 무드 기억과 지속시간. `Balance/mushrooms.json`의 `mood`, `common.moodDurationHours`에서 생성합니다. 성장 광량 경계와 배율은 `common.shadeMaxGlow`, `common.fullLightGrowthFactor`로 조정합니다.
 - `Source/Plant_Mushroom.cs`: 이 모드의 버섯에만 적용하는 광량별 성장 배율과 설명. `Source/MushroomSaveCompatibility.cs`는 이전 저장의 식물을 불러올 때 호환 처리를 합니다.
+- `Source/AssortedMushrooms.cs`, `Patches/AssortedMushroomWork.xml`: 모둠버섯 구역에서 실제 9종의 파종·수확을 처리합니다. 기본 파종/수확 작업자의 파생 클래스를 사용하며 일반 작물은 기본 메서드에 위임합니다.
 - `Source/Thought_MushroomEnjoyment.cs`: 가장 높은 버섯 보너스 하나만 유지하는 섭취 기억. Harmony 패치 없이 기본 섭취 경로를 사용합니다.
 - `Source/Graphic_MushroomStack.cs`: 수량 3단계 그래픽. 전역 패치가 없으며 이 모드의 수확물에만 적용됩니다.
 - `Tests/Harness/`: 격리 게임 실행용 테스트 모드. 배포본에는 들어가지 않습니다.

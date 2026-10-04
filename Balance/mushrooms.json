@@ -1,5 +1,5 @@
 {
-  "version": "0.1.4",
+  "version": "0.2.0",
   "status": "Initial gameplay balance draft, not real-world cultivation data.",
   "common": {
     "stackLimit": 75,

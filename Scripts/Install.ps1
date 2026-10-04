@@ -9,7 +9,7 @@ foreach ($target in @($installTarget, $legacyTarget)) {
     if ((Split-Path $target -Parent) -ne $modsRoot) { throw 'Invalid installation target.' }
 }
 if (Get-Process -Name RimWorldWin64 -ErrorAction SilentlyContinue) { throw 'Close RimWorld before installing.' }
-foreach ($required in @('About\About.xml','Assemblies\RimMushrooms.dll','Defs','Languages','Textures','Credits')) {
+foreach ($required in @('About\About.xml','Assemblies\RimMushrooms.dll','Defs','Languages','Textures','Credits','Patches')) {
     if (!(Test-Path -LiteralPath (Join-Path $projectRoot $required))) { throw "Missing source: $required. Build first." }
 }
 # Preflight both names before moving either, so a rename cannot leave duplicates.
@@ -27,7 +27,7 @@ foreach ($oldInstall in $oldInstalls) {
     Write-Output "Previous install backed up to $backupTarget"
 }
 New-Item -ItemType Directory -Path $installTarget | Out-Null
-foreach ($name in @('About','Assemblies','Defs','Languages','Textures','Credits')) {
+foreach ($name in @('About','Assemblies','Defs','Languages','Textures','Credits','Patches')) {
     Copy-Item -LiteralPath (Join-Path $projectRoot $name) -Destination $installTarget -Recurse
 }
 foreach ($name in @('README.md','CHANGELOG.md')) {

@@ -11,7 +11,7 @@ namespace RimMushroomsTests
 {
     public sealed class SmokeTests : GameComponent
     {
-        private int phase, cropIndex, frames;
+        private int phase, cropIndex, frames, assortedCycles;
         private bool finished;
         private Pawn farmer;
         private Plant currentPlant;
@@ -40,7 +40,7 @@ namespace RimMushroomsTests
             if (map == null) return;
             try
             {
-                if (phase >= 1 && phase <= 3)
+                if ((phase >= 1 && phase <= 3) || (phase >= 10 && phase <= 13))
                 {
                     foreach (var window in Find.WindowStack.Windows.ToList()) window.Close(false);
                     Find.TickManager.CurTimeSpeed = TimeSpeed.Superfast;
@@ -56,6 +56,7 @@ namespace RimMushroomsTests
                     bool legacyLoaded = File.Exists(Path.Combine(GenFilePaths.SaveDataFolderPath, "new-save-verified.flag"));
                     LightTests.VerifyLoaded(map, legacyLoaded, Check);
                     MoodTests.VerifyLoaded(map, Check);
+                    if (!legacyLoaded) AssortedTests.VerifyLoaded(map, Check);
                     Check(map.listerThings.AllThings.Count(t => t.def.defName.StartsWith("RMush_Plant")) >= 33, "plant growth fixtures survive save/load");
                     foreach (var t in map.listerThings.AllThings.Where(t => t.def.defName.StartsWith("RMush_Raw")))
                         Check(Texture(t) == (t.stackCount <= 25 ? "01Low" : t.stackCount <= 50 ? "02Medium" : "03Full"), "saved stack graphic " + t.def.defName + ":" + t.stackCount);
@@ -78,6 +79,70 @@ namespace RimMushroomsTests
                     return;
                 }
                 if (phase == 0) { Setup(map); phase = 1; if (GenCommandLine.CommandLineArgPassed("mushroomMoodOnly")) cropIndex = plants.Length; }
+                if (phase == 10)
+                {
+                    farmer.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                    var job = AssortedTests.Sower.JobOnCell(farmer, workCell);
+                    if (job != null && job.def == JobDefOf.HaulToCell)
+                    {
+                        job.playerForced = true;
+                        farmer.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                        deadline = Time.realtimeSinceStartup + 40f;
+                        phase = 13;
+                        return;
+                    }
+                    Check(job != null && job.def == JobDefOf.Sow && job.plantDefToSow != AssortedTests.Selection, "assorted actual sow job selects species cycle=" + assortedCycles);
+                    job.playerForced = true;
+                    farmer.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                    deadline = Time.realtimeSinceStartup + 40f;
+                    phase = 11;
+                    return;
+                }
+                if (phase == 11)
+                {
+                    if (Time.realtimeSinceStartup > deadline) throw new Exception("Assorted sow timeout: " + farmer.CurJob);
+                    currentPlant = workCell.GetPlant(map);
+                    if (currentPlant == null || currentPlant.Growth <= 0f || farmer.CurJobDef == JobDefOf.Sow) return;
+                    Check(AssortedTests.Selection.GetModExtension<AssortedMushroomSettings>().varieties.Contains(currentPlant.def) && currentPlant.sown, "pawn actually planted assorted member " + currentPlant.def.defName);
+                    Check(AssortedTests.Sower.JobOnCell(farmer, workCell) == null, "actual assorted planting is kept until harvest");
+                    if (++assortedCycles >= 3)
+                    {
+                        currentPlant.Growth = 0.37f;
+                        Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
+                        farmer.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                        MoodTests.Run(farmer, Check);
+                        phase = 4; frames = 0;
+                        return;
+                    }
+                    currentPlant.Growth = 1f;
+                    Check(AssortedTests.Harvester.HasJobOnCell(farmer, workCell), "automatic worker recognizes mature assorted crop");
+                    baseline = Count(map, currentPlant.def.plant.harvestedThingDef);
+                    originalHarvestFailable = currentPlant.def.plant.harvestFailable;
+                    currentPlant.def.plant.harvestFailable = false;
+                    var harvest = AssortedTests.Harvester.JobOnCell(farmer, workCell);
+                    harvest.playerForced = true;
+                    farmer.jobs.TryTakeOrderedJob(harvest, JobTag.Misc);
+                    deadline = Time.realtimeSinceStartup + 40f;
+                    phase = 12;
+                    return;
+                }
+                if (phase == 12)
+                {
+                    if (Time.realtimeSinceStartup > deadline) throw new Exception("Assorted harvest timeout: " + farmer.CurJob);
+                    if (!currentPlant.Destroyed) return;
+                    currentPlant.def.plant.harvestFailable = originalHarvestFailable;
+                    Check(Count(map, currentPlant.def.plant.harvestedThingDef) > baseline, "actual assorted harvest yields chosen species " + currentPlant.def.plant.harvestedThingDef.defName);
+                    phase = 10;
+                    return;
+                }
+                if (phase == 13)
+                {
+                    if (Time.realtimeSinceStartup > deadline) throw new Exception("Assorted haul-aside timeout: " + farmer.CurJob);
+                    if (farmer.CurJobDef == JobDefOf.HaulToCell) return;
+                    Check(true, "actual automatic hauling clears harvested pile for assorted replanting");
+                    phase = 10;
+                    return;
+                }
                 if (phase == 1) { StartCrop(map); return; }
                 if (phase == 2)
                 {
@@ -149,7 +214,7 @@ namespace RimMushroomsTests
             }
             foreach (var window in Find.WindowStack.Windows.ToList()) window.Close(false);
             Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
-            plants = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Plant")).OrderBy(d => d.defName).ToArray();
+            plants = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Plant") && d.GetModExtension<AssortedMushroomSettings>() == null).OrderBy(d => d.defName).ToArray();
             var items = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Raw")).OrderBy(d => d.defName).ToArray();
             Check(plants.Length == 11 && items.Length == 10, "11 plant and 10 ingredient defs loaded");
             Check(plants.Count(d => d.plant.Sowable) == 9, "exactly nine cultivable varieties");
@@ -229,6 +294,7 @@ namespace RimMushroomsTests
             Find.CameraDriver.JumpToCurrentMapLoc(map.Center);
             Find.CameraDriver.SetRootSize(19f);
             LightTests.Run(map, workCell, Check);
+            AssortedTests.Run(map, farmer, growingZone, workCell, Check);
             Check(true, "fixture created; live sow/harvest jobs starting");
         }
 
@@ -236,9 +302,11 @@ namespace RimMushroomsTests
         {
             if (cropIndex >= plants.Length)
             {
-                Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
-                MoodTests.Run(farmer, Check);
-                phase = 4; frames = 0;
+                growingZone.SetPlantDefToGrow(AssortedTests.Selection);
+                growingZone.allowCut = false;
+                farmer.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                foreach (var t in workCell.GetThingList(map).ToList()) if (!(t is Pawn)) t.Destroy(DestroyMode.Vanish);
+                phase = 10;
                 return;
             }
             var d = plants[cropIndex];

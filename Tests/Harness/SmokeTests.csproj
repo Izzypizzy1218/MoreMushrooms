@@ -13,6 +13,6 @@
     <Reference Include="netstandard"><HintPath>$(Managed)\netstandard.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="RimMushrooms"><HintPath>..\..\Assemblies\RimMushrooms.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
-  <ItemGroup><Compile Include="SmokeTests.cs"/><Compile Include="MoodTests.cs"/><Compile Include="LightTests.cs"/></ItemGroup>
+  <ItemGroup><Compile Include="SmokeTests.cs"/><Compile Include="MoodTests.cs"/><Compile Include="LightTests.cs"/><Compile Include="AssortedTests.cs"/></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 </Project>

@@ -265,4 +265,36 @@
       </wildBiomes>
     </plant>
   </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantAssorted</defName>
+    <label>assorted mushrooms</label>
+    <description>Sow one of nine cultivated mushroom varieties at random, each with an equal chance. Excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Button</texPath>
+    </graphicData>
+    <modExtensions>
+      <li Class="RimMushrooms.AssortedMushroomSettings">
+        <varieties>
+          <li>RMush_PlantButton</li>
+          <li>RMush_PlantShiitake</li>
+          <li>RMush_PlantOyster</li>
+          <li>RMush_PlantKingOyster</li>
+          <li>RMush_PlantEnoki</li>
+          <li>RMush_PlantWoodEar</li>
+          <li>RMush_PlantBeech</li>
+          <li>RMush_PlantMaitake</li>
+          <li>RMush_PlantLionsMane</li>
+        </varieties>
+      </li>
+    </modExtensions>
+    <plant>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>6</sowMinSkill>
+      <growDays>7.055555555555555</growDays>
+      <harvestYield>0</harvestYield>
+      <harvestTag>None</harvestTag>
+    </plant>
+  </ThingDef>
 </Defs>
