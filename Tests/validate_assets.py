@@ -20,6 +20,12 @@ def main():
     docs = {p: ET.parse(p) for folder in ("About","Defs","Languages","Patches") for p in (ROOT / folder).rglob("*.xml")}
     balance = json.loads((ROOT / "Balance/mushrooms.json").read_text(encoding="utf-8"))
     check(ET.parse(ROOT / "About/About.xml").findtext("modVersion") == balance["version"], "consistent release version")
+    cover_record = json.loads((ROOT / "Art/Covers/v0.3.1/cover-v1-generation.json").read_text(encoding="utf-8"))
+    cover = ROOT / "About/Preview.png"
+    source_cover = ROOT / "Art/Covers/v0.3.1/MoreMushrooms-cover-v1.jpg"
+    check(cover.read_bytes() == source_cover.read_bytes(), "approved Ratkin cover configured at native preview path")
+    check(sha(cover) == cover_record["outputs"]["MoreMushrooms-cover-v1.jpg"]["sha256"], "approved cover hash")
+    check(cover.read_bytes()[:3] == b"\xff\xd8\xff" and cover.stat().st_size < 1000000, "native-supported JPEG preview below upload size limit")
     defs = [n for p, doc in docs.items() if "Defs" in p.parts for n in doc.getroot() if n.tag == "ThingDef" and n.find("defName") is not None]
     thoughts = [n for p, doc in docs.items() if "Defs" in p.parts for n in doc.getroot() if n.tag == "ThoughtDef" and n.find("defName") is not None]
     names = [n.findtext("defName") for n in defs]

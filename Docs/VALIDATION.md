@@ -1,3 +1,19 @@
+# v0.3.2 검증 기록
+
+검증일: 2026-10-04. 사용자가 확정한 랫킨 표지 v1 적용.
+
+- `About/Preview.png`는 보존한 `Art/Covers/v0.3.1/MoreMushrooms-cover-v1.jpg`와 바이트 단위로 일치합니다. 1672×941 RGB, 480,600바이트이며 PNG 원본·JPEG export·생성 기록은 보존합니다. 이미지 디코드와 표지 그림을 직접 확인했습니다.
+- 설치된 기본 게임의 `ModMetaData.PreviewImagePath`가 `About/Preview.png`를 사용하고, `PreviewImage`가 바이트를 `Texture2D.LoadImage`로 디코드하는 것을 확인했습니다. 같은 경로가 `GetWorkshopPreviewImagePath`를 통해 창작마당 업로드에 전달됩니다.
+- 파일명은 기본 게임이 고정한 `.png`이며 실제 내용은 지원되는 JPEG입니다. Unity의 `ImageConversion.LoadImage`는 바이트 내용으로 PNG/JPEG를 디코드합니다. 게임의 Workshop 코드는 파일 존재만 확인한 뒤 `SteamUGC.SetItemPreview`에 경로를 전달합니다. 참고: https://docs.unity3d.com/ScriptReference/ImageConversion.LoadImage.html 및 https://partner.steamgames.com/doc/api/ISteamUGC#SetItemPreview .
+- 생성기가 해당 표지를 다시 복사하도록 변경했습니다. 생성기 실행 후 정적 정의·번역·그림·표지 경로/해시/용량 검사가 **218개 통과**했습니다. 기존 버섯 텍스처 53장과 재배·무드·식별자·C# 실행 코드는 유지됩니다.
+- 이전 버전과의 상세 정적 대조 결과는 `Docs/TestResults/v0.3.2-Static-Comparison.txt`에 보관합니다. 이미지와 연결만 변경하므로 전체 게임 파종·수확 검사는 이번 표지 적용에서 반복하지 않았습니다. 이전 실행 검증은 아래에 유지합니다.
+
+실제 게임의 모드 목록 화면 검수와 Steam 발행은 실행하지 않았습니다. 이번 작업은 업로드용 표지 파일의 로컬 설정이며 창작마당 게시 자체를 수행하지 않습니다.
+
+배포: `Releases/v0.3.2/`에 실행 ZIP·소스 ZIP·SHA-256 목록. 게임 종료 확인 후 실제 Mods 폴더에 설치하고 이전 설치를 Mods 밖에 백업합니다. 모든 이전 버전은 보존합니다.
+
+---
+
 # v0.3.1 검증 기록
 
 검증일: 2026-10-04. RimWorld 1.6.4871 rev591. 모둠버섯 전용 재배 선택 아이콘.

@@ -197,7 +197,9 @@ def generate(handoff):
         ("mushrooms-boxed/RIMSHARE-LICENSE.txt","RIMSHARE-LICENSE.txt"),
         ("mushrooms-growing/CREDITS.txt","GROWING-CREDITS.txt")):
         shutil.copy2(handoff / "outputs" / source, credits / dest)
-    shutil.copy2(handoff / "outputs/mushrooms-boxed/boxed-preview.png", ROOT / "About/Preview.png")
+    # RimWorld fixes the preview filename to Preview.png but LoadImage decodes
+    # JPEG/PNG by content. Preserve the approved sub-1MB JPEG byte-for-byte.
+    shutil.copy2(ROOT / "Art/Covers/v0.3.1/MoreMushrooms-cover-v1.jpg", ROOT / "About/Preview.png")
     print("Generated 11 species plants plus assorted sowing selection, 10 ingredients, 10 memories, 52 unchanged PNGs plus 1 assorted UI icon, and EN/KO translations.")
 
 if __name__ == "__main__":

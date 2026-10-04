@@ -1,0 +1,47 @@
+More Mushrooms v0.3.2 static comparison against immutable v0.3.1
+Date: 2026-10-04 (Asia/Seoul)
+Purpose: Verify the approved Ratkin mushroom-box cover changes metadata artwork only.
+
+PASS: Immutable v0.3.1 archive SHA-256 verified: MoreMushrooms-v0.3.1-source.zip = 90d141d52c7362d7679f2299d6982671f7ec4d7702fb5a9af58cb9c92cfb7cd1
+PASS: Immutable v0.3.1 archive SHA-256 verified: MoreMushrooms-v0.3.1.zip = e135ceee9635f6c678e5ce9bd63b29b62b238c7acf5a45f920a34eeaa0ee549c
+PASS: Original runtime ZIP paths exactly match v0.3.1 manifest
+PASS: All 74 original runtime ZIP entries match v0.3.1 manifest SHA-256 values
+PASS: Only the expected version transition is declared
+PASS: All gameplay balance values are identical after excluding version
+PASS: Approved mood titles and descriptions are byte-identical
+PASS: Source/ file set unchanged (5 files)
+PASS: All Source/ files are byte-identical to v0.3.1 (5 files)
+PASS: Assemblies/ file set unchanged (1 files)
+PASS: All Assemblies/ files are byte-identical to v0.3.1 (1 files)
+PASS: Defs/ file set unchanged (3 files)
+PASS: All Defs/ files are byte-identical to v0.3.1 (3 files)
+PASS: Languages/ file set unchanged (6 files)
+PASS: All Languages/ files are byte-identical to v0.3.1 (6 files)
+PASS: Patches/ file set unchanged (1 files)
+PASS: All Patches/ files are byte-identical to v0.3.1 (1 files)
+PASS: Textures/ file set unchanged (53 files)
+PASS: All Textures/ files are byte-identical to v0.3.1 (53 files)
+PASS: Native About/Preview.png is byte-identical to the approved Ratkin cover JPG
+PASS: Approved cover provenance SHA-256 verified: 128286225c8e6d70b432a82e2e87d15489b1cba3d6a7d89e9e4b3d6d27e2f010
+PASS: Preview is 480600 bytes, below 1000000 bytes
+PASS: Native preview has JPEG content despite the hardcoded Preview.png filename
+PASS: Preview successfully decodes as JPEG 1672x941 RGB
+PASS: Prior runtime cover is replaced with the approved Ratkin artwork
+PASS: Definition generation preserves the approved cover at the native preview path
+
+Native RimWorld 1.6 preview-path review (local primary code):
+- Verse/ModMetaData.cs:501 fixes PreviewImagePath to About/Preview.png.
+- ModMetaData.PreviewImage:338-352 reads bytes and calls Texture2D.LoadImage, with no filename format detection.
+- ModMetaData.GetWorkshopPreviewImagePath:702-704 returns the same preview path.
+- Verse.Steam/Workshop.cs:258-272 checks file existence and calls SteamUGC.SetItemPreview; no extension or content-signature validation appears in this caller.
+- Unity ImageConversion.LoadImage supports PNG/JPG bytes: https://docs.unity3d.com/ScriptReference/ImageConversion.LoadImage.html
+- Steam ISteamUGC.SetItemPreview supports JPG/PNG/GIF images: https://partner.steamgames.com/doc/api/ISteamUGC#SetItemPreview
+- Existing artwork is copied byte-for-byte; no generation, crop, resize, recoloring or recompression performed.
+
+Scope and limitations:
+- About metadata, version, generator, asset validator, cover credits and documentation changes are permitted.
+- All five production C# source files, DLL, game definitions, translations, patches and all 53 textures remain identical.
+- This low-impact artwork change does not repeat gameplay smoke tests. Existing v0.3.1 gameplay results remain recorded separately.
+- Runtime UI screenshot verification and actual Steam Workshop publication were not executed. Native decoder compatibility and configured upload path are established; Steam upload success is not claimed.
+
+RESULT: PASS (26 comparison checks)

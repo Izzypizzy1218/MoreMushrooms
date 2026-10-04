@@ -1,0 +1,19 @@
+More Mushrooms cover v1
+Generated on 2026-10-04 with built-in OpenAI image_gen at the user's request.
+Set as the mod preview in v0.3.2.
+
+Scene: Ratkin holding a full mixed-mushroom wooden crate with both hands,
+with the title MORE MUSHROOMS. Original generated illustration.
+
+Ratkin visual reference: NewRatkinPlus, Gloomylynx and NukaFrog.
+https://steamcommunity.com/sharedfiles/filedetails/?id=1578693166
+Mushroom reference: this project's previously approved mushroom illustrations.
+Original reference images are not redistributed here.
+
+Master PNG, JPEG export, full prompt and reference/output hashes:
+Art/Covers/v0.3.1/ in the source release.
+
+Runtime preview path: About/Preview.png.
+The filename is fixed by RimWorld; its contents are the supported JPEG format,
+copied without resizing, cropping, recoloring or re-encoding from the preserved
+480,600-byte JPEG export. Native Texture2D.LoadImage detects the image contents.

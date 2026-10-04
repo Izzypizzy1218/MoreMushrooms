@@ -1,0 +1,54 @@
+{
+  "artworkVersion": "v1",
+  "modVersion": "0.3.1",
+  "createdDate": "2026-10-04",
+  "generator": "built-in OpenAI image_gen",
+  "prompt": "Use case: illustration-story. Asset type: polished landscape Steam Workshop cover illustration for the existing RimWorld mod More Mushrooms, intended landscape 16:9, about 1920x1080. Primary request: ONE adult Ratkin farmer from RimWorld holding a FULL wooden mushroom box WITH BOTH HANDS, looking pleased with the harvest. Input 1 is a Ratkin character-identity reference only: preserve recognizable large ROUND mouse ears with pink inner ears, a humanlike cute anime/chibi face, charcoal-gray hair and a side braid, and the modest gray-purple medieval clothing with a burgundy neck scarf; create a NEW character pose and original illustration, do not reproduce the reference poster, its logo, its character pose or background. Input 2 is a full mushroom-box visual reference: a sturdy rectangular golden-brown open wooden produce crate, full above the brim, with readable front and side panels. Input 3 is mushroom identity/color reference: cream button mushrooms, fluffy shaggy cream lion's mane, brown shiitake with cream cracking, and tan paired beech clusters. Fill the crate with a plentiful mixed harvest featuring those FOUR clearly distinct species, heaped abundantly but not floating. Subject: exactly one modestly dressed adult female Ratkin farmer in a gray-purple long-sleeve dress, cream work apron and burgundy neck scarf, softly smiling at the viewer, round pink mouse ears prominently visible, tidy dark side-braided hair, a slim curved mouse tail visible subtly behind her. Important anatomy and pose: BOTH arms and BOTH hands clearly visible. Her right hand grips/supports one lower side of the box and her left hand grips/supports the other lower side, fingers wrap believably around the wooden corners. The crate is carried at waist/chest height in front of her torso, centered in the foreground; do not hide either hand behind the box or turn this into a one-handed pose. The box is large and noticeably FULL, taking roughly 40 percent of the frame width. Composition: character and overflowing mushroom crate are the main focal point in the center-right; face in upper-middle, box across lower-middle; room in upper-left for large highly readable title. Show most of her body to apron/skirt hem in a slightly three-quarter front view. Scene/backdrop: a simple cozy shaded RimWorld colony mushroom growing nook, wooden shelter roof, soft earthy ground and a few subtle small mushroom clusters, muted woodland hints, restrained detail so the face, two hands and mixed harvest stand out. Style/medium: original clean 2D game-mod cover art, appealing anime/chibi character illustration, confident dark outlines, clear flat color shapes and gentle cel shading, cohesive with the supplied mushroom art; warm cream, ochre, mushroom brown, muted olive and gray-purple palette. Soft warm harvest lighting; wholesome, cozy, proud and inviting mood. Text verbatim: 'MORE MUSHROOMS' in bold cream letters with a dark outline, large in upper-left, split naturally across two lines, with the word MUSHROOMS fully spelled correctly. The title is the only text. Keep title clear of the ears, hands and crate; safe margin around all edges. Constraints: exactly one Ratkin, two distinct visible hands supporting the crate, round mouse ears (NO rabbit ears, NO cat ears), a full diverse mushroom crate, no weapons, no armor, no mascot plush on the head, no speech bubbles, no original Ratkin logo, no official RimWorld logo, no watermark, no extra titles, no photo realism, no 3D render, no copied reference poster. Opaque finished background; no transparency.",
+  "transparentBackground": false,
+  "references": [
+    {
+      "role": "character identity reference only",
+      "path": "C:/Program Files (x86)/Steam/steamapps/workshop/content/294100/1578693166/About/preview.png",
+      "title": "NewRatkinPlus",
+      "authors": "Gloomylynx and NukaFrog",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1578693166"
+    },
+    {
+      "role": "full wooden mushroom-box reference",
+      "path": "Textures/Things/Item/RimMushrooms/Button/03Full.png"
+    },
+    {
+      "role": "four mushroom species identity reference",
+      "path": "Art/Icons/AssortedMushrooms.png"
+    }
+  ],
+  "uploadRequirementsSource": "https://partner.steamgames.com/doc/api/ISteamUGC#SetItemPreview",
+  "notes": "Original cover illustration generated from visual references. Original reference images are not copied into this artwork folder. PNG master preserved; JPG is a format-only export at the same pixel dimensions for Steam's preview size limit. No crop, resize, compositing or recoloring in the export. This standalone cover v1 is for the existing immutable v0.3.1 mod release.",
+  "outputs": {
+    "MoreMushrooms-cover-v1.png": {
+      "pixelSize": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2093644,
+      "sha256": "2bde0ee35f48c21066a2908760680308f81b4982fe7c3f509fd7423b0dd77d9a"
+    },
+    "MoreMushrooms-cover-v1.jpg": {
+      "pixelSize": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 480600,
+      "sha256": "128286225c8e6d70b432a82e2e87d15489b1cba3d6a7d89e9e4b3d6d27e2f010"
+    }
+  },
+  "validation": {
+    "pngAndJpgDecoded": true,
+    "samePixelDimensions": true,
+    "uploadJpgUnder1MB": true,
+    "existingReleaseArchivesUnchanged": true,
+    "visualCheck": "Title spelling, round mouse ears, both visible hands holding the full wooden crate, and four distinct mushroom species checked."
+  }
+}
