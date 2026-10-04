@@ -40,7 +40,7 @@ namespace RimMushroomsTests
         {
             var items = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Raw"))
                 .OrderBy(d => d.ingestible.specialThoughtDirect.stages[0].baseMoodEffect).ToArray();
-            check(items.Select(d => d.ingestible.specialThoughtDirect.stages[0].baseMoodEffect).SequenceEqual(Enumerable.Range(1, 10).Select(i => (float)i)), "ten distinct positive mood values 1 to 10");
+            check(items.Select(d => d.ingestible.specialThoughtDirect.stages[0].baseMoodEffect).SequenceEqual(new float[] {3,3,3,5,5,5,7,7,7,10}), "three mood groups plus matsutake premium");
             foreach (var item in items)
             {
                 check(!item.ingestible.specialThoughtDirect.ConfigErrors().Any(), "memory def config " + item.defName);
@@ -78,6 +78,15 @@ namespace RimMushroomsTests
             top.age = 15000;
             Eat(pawn, Raw(items[0]), check);
             Expect(pawn, items[0], check, "expired stronger cannot block new weaker");
+            foreach (var group in items.GroupBy(d => d.ingestible.specialThoughtDirect.stages[0].baseMoodEffect).Where(g => g.Count() > 1))
+            {
+                Clear(pawn);
+                Eat(pawn, Raw(group.First()), check);
+                Bonuses(pawn).Single().age = 7500;
+                Eat(pawn, Raw(group.Last()), check);
+                Expect(pawn, group.Last(), check, "different variety in same tier replaces label without stacking");
+                check(Bonuses(pawn).Single().age == 0, "different variety in tier +" + group.Key + " refreshes six-hour duration");
+            }
             Clear(pawn);
             Eat(pawn, Raw(ThingDef.Named("RawFungus")), check);
             Eat(pawn, Meal(ThingDefOf.MealSimple, ThingDefOf.RawPotatoes), check);

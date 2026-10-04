@@ -27,7 +27,7 @@ def main():
     thought_by_name = {n.findtext("defName"): n for n in thoughts}
     check(len(thoughts) == len(thought_by_name) == 10, "10 unique mushroom memories")
     check(balance["common"]["moodDurationHours"] == 6, "six game-hour duration")
-    check(len({m["mood"] for m in balance["mushrooms"]}) == 10, "different bonus for each variety")
+    check(sorted(m["mood"] for m in balance["mushrooms"]) == [3,3,3,5,5,5,7,7,7,10], "three mood groups and one premium mushroom")
     for m in balance["mushrooms"]:
         thought_id = "RMush_Ate" + m["id"]
         thought = thought_by_name[thought_id]

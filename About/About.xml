@@ -4,13 +4,13 @@
   <author>izzy_pizzy</author>
   <packageId>izzypizzy.rimmushrooms</packageId>
   <supportedVersions><li>1.6</li></supportedVersions>
-  <modVersion>0.1.1</modVersion>
+  <modVersion>0.1.2</modVersion>
   <description>Ten familiar edible mushrooms for the rim. Grow nine varieties in soil, gather rare wild matsutake, and watch mushroom clusters fill out as they grow. Harvested mushrooms appear in three container fill levels according to their stack count.
 
 버섯 10종을 추가합니다. 흙에서 9종을 재배하고, 숲에서는 희귀한 송이를 비롯한 야생 버섯을 채집할 수 있습니다. 성장률에 따라 군락의 크기와 개수가 늘고, 수확물은 수량에 따라 상자 안의 양이 3단계로 달라집니다.
 
-v0.1.1: 생식과 버섯을 넣은 요리에 종류별 무드 +1~+10을 추가합니다. 게임 시간 6시간 동안 가장 높은 버섯 보너스 하나만 적용됩니다.
+v0.1.2: 생식과 버섯을 넣은 요리에 등급별 무드 +3/+5/+7을 추가하고, 송이버섯은 +10을 줍니다. 게임 시간 6시간 동안 가장 높은 버섯 보너스 하나만 적용됩니다.
 
 Core only. No DLC, Harmony, or other framework required. English and Korean supported.
-v0.1.1: ten distinct six-hour mushroom mood bonuses, from raw food or cooked ingredients.</description>
+v0.1.2: three six-hour mushroom mood tiers (+3/+5/+7), plus rare matsutake (+10), from raw food or cooked ingredients.</description>
 </ModMetaData>

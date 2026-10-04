@@ -26,7 +26,7 @@
       <li>
         <label>enjoyed shiitake mushroom</label>
         <description>That shiitake mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
-        <baseMoodEffect>6</baseMoodEffect>
+        <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -41,7 +41,7 @@
       <li>
         <label>enjoyed oyster mushroom</label>
         <description>That oyster mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
-        <baseMoodEffect>1</baseMoodEffect>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -56,7 +56,7 @@
       <li>
         <label>enjoyed king oyster mushroom</label>
         <description>That king oyster mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
-        <baseMoodEffect>4</baseMoodEffect>
+        <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -71,7 +71,7 @@
       <li>
         <label>enjoyed enoki mushroom</label>
         <description>That enoki mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
-        <baseMoodEffect>2</baseMoodEffect>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -116,7 +116,7 @@
       <li>
         <label>enjoyed maitake mushroom</label>
         <description>That maitake mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
-        <baseMoodEffect>8</baseMoodEffect>
+        <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -131,7 +131,7 @@
       <li>
         <label>enjoyed lion's mane mushroom</label>
         <description>That lion's mane mushroom had a satisfying flavor. A little pleasure from a good ingredient.</description>
-        <baseMoodEffect>9</baseMoodEffect>
+        <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

@@ -5,19 +5,19 @@
   <RMush_PlantButton.label>button mushroom cluster</RMush_PlantButton.label>
   <RMush_PlantButton.description>A cluster of button mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</RMush_PlantButton.description>
   <RMush_RawShiitake.label>shiitake mushroom</RMush_RawShiitake.label>
-  <RMush_RawShiitake.description>Edible shiitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +6 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawShiitake.description>
+  <RMush_RawShiitake.description>Edible shiitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +5 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawShiitake.description>
   <RMush_PlantShiitake.label>shiitake mushroom cluster</RMush_PlantShiitake.label>
   <RMush_PlantShiitake.description>A cluster of shiitake mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</RMush_PlantShiitake.description>
   <RMush_RawOyster.label>oyster mushroom</RMush_RawOyster.label>
-  <RMush_RawOyster.description>Edible oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +1 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawOyster.description>
+  <RMush_RawOyster.description>Edible oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +3 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawOyster.description>
   <RMush_PlantOyster.label>oyster mushroom cluster</RMush_PlantOyster.label>
   <RMush_PlantOyster.description>A cluster of oyster mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</RMush_PlantOyster.description>
   <RMush_RawKingOyster.label>king oyster mushroom</RMush_RawKingOyster.label>
-  <RMush_RawKingOyster.description>Edible king oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +4 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawKingOyster.description>
+  <RMush_RawKingOyster.description>Edible king oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +5 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawKingOyster.description>
   <RMush_PlantKingOyster.label>king oyster mushroom cluster</RMush_PlantKingOyster.label>
   <RMush_PlantKingOyster.description>A cluster of king oyster mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</RMush_PlantKingOyster.description>
   <RMush_RawEnoki.label>enoki mushroom</RMush_RawEnoki.label>
-  <RMush_RawEnoki.description>Edible enoki mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +2 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawEnoki.description>
+  <RMush_RawEnoki.description>Edible enoki mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +3 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawEnoki.description>
   <RMush_PlantEnoki.label>enoki mushroom cluster</RMush_PlantEnoki.label>
   <RMush_PlantEnoki.description>A cluster of enoki mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</RMush_PlantEnoki.description>
   <RMush_PlantEnokiWild.label>wild enoki mushroom cluster</RMush_PlantEnokiWild.label>
@@ -31,11 +31,11 @@
   <RMush_PlantBeech.label>beech mushroom cluster</RMush_PlantBeech.label>
   <RMush_PlantBeech.description>A cluster of beech mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</RMush_PlantBeech.description>
   <RMush_RawMaitake.label>maitake mushroom</RMush_RawMaitake.label>
-  <RMush_RawMaitake.description>Edible maitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +8 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawMaitake.description>
+  <RMush_RawMaitake.description>Edible maitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +7 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawMaitake.description>
   <RMush_PlantMaitake.label>maitake mushroom cluster</RMush_PlantMaitake.label>
   <RMush_PlantMaitake.description>A cluster of maitake mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</RMush_PlantMaitake.description>
   <RMush_RawLionsMane.label>lion's mane mushroom</RMush_RawLionsMane.label>
-  <RMush_RawLionsMane.description>Edible lion's mane mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +9 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawLionsMane.description>
+  <RMush_RawLionsMane.description>Edible lion's mane mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +7 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</RMush_RawLionsMane.description>
   <RMush_PlantLionsMane.label>lion's mane mushroom cluster</RMush_PlantLionsMane.label>
   <RMush_PlantLionsMane.description>A cluster of lion's mane mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</RMush_PlantLionsMane.description>
   <RMush_RawMatsutake.label>matsutake mushroom</RMush_RawMatsutake.label>

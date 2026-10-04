@@ -49,7 +49,7 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawShiitake</defName>
     <label>shiitake mushroom</label>
-    <description>Edible shiitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +6 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
+    <description>Edible shiitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +5 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Shiitake</texPath>
     </graphicData>
@@ -70,7 +70,7 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawOyster</defName>
     <label>oyster mushroom</label>
-    <description>Edible oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +1 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
+    <description>Edible oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +3 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Oyster</texPath>
     </graphicData>
@@ -91,7 +91,7 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawKingOyster</defName>
     <label>king oyster mushroom</label>
-    <description>Edible king oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +4 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
+    <description>Edible king oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +5 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/KingOyster</texPath>
     </graphicData>
@@ -112,7 +112,7 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawEnoki</defName>
     <label>enoki mushroom</label>
-    <description>Edible enoki mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +2 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
+    <description>Edible enoki mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +3 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Enoki</texPath>
     </graphicData>
@@ -175,7 +175,7 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawMaitake</defName>
     <label>maitake mushroom</label>
-    <description>Edible maitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +8 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
+    <description>Edible maitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +7 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Maitake</texPath>
     </graphicData>
@@ -196,7 +196,7 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawLionsMane</defName>
     <label>lion's mane mushroom</label>
-    <description>Edible lion's mane mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +9 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
+    <description>Edible lion's mane mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +7 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/LionsMane</texPath>
     </graphicData>
