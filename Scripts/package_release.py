@@ -17,9 +17,9 @@ def package():
     dest.mkdir(parents=True)
     manifest = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in runtime_files}
     for suffix, files in (("",runtime_files),("-source",source_files)):
-        target = dest / ("RimMushrooms-v" + version + suffix + ".zip")
+        target = dest / ("MoreMushrooms-v" + version + suffix + ".zip")
         with zipfile.ZipFile(target, "w", compression=zipfile.ZIP_DEFLATED) as archive:
-            for path in files: archive.write(path, "RimMushrooms/" + path.relative_to(ROOT).as_posix())
+            for path in files: archive.write(path, "MoreMushrooms/" + path.relative_to(ROOT).as_posix())
         with zipfile.ZipFile(target) as archive:
             if archive.testzip() is not None: raise RuntimeError("ZIP integrity check failed.")
     record = {"version":version,"runtimeFileCount":len(runtime_files),"sourceFileCount":len(source_files),"files":manifest,"archives":{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in dest.glob("*.zip")}}

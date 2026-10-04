@@ -1,4 +1,4 @@
-# Rim Mushrooms — v0.1.2
+# More Mushrooms — v0.1.3
 
 림월드 1.6용 식용 버섯 10종 모드. 초기 밸런스 초안이며 **Core만 필요**합니다. Harmony, 프레임워크, DLC는 필수가 아닙니다. 영어·한국어를 지원합니다.
 
@@ -14,7 +14,7 @@
 - 일반 요리 재료, 원료 저장, 운반, 섭취, 냉장·냉동 및 부패 규칙을 사용합니다. 식재료 유형은 `Fungus`라 이데올로기 사용 시 균류 선호/금기가 적용됩니다.
 - 종류 간 수확물은 서로 다른 아이템으로 유지됩니다. 10종 모두 생식 및 요리 재료로 섭취하면 종류별 무드 보너스를 줍니다. 초능력·치료 효과와 전용 요리는 없습니다.
 
-## 섭취 무드 보너스 (v0.1.2)
+## 섭취 무드 보너스 (v0.1.3)
 
 게임 시간 **6시간(0.25일, 15,000틱)** 동안 유지되는 추가 보너스입니다. 생버섯을 먹거나, 해당 버섯이 재료로 기록된 요리를 먹으면 적용됩니다. 기존에 만든 요리도 재료 정보가 남아 있으면 적용됩니다.
 
@@ -53,7 +53,11 @@
 
 ## 설치와 업데이트
 
-`RimMushrooms` 폴더를 게임의 `Mods` 아래에 두고 모드 목록에서 **Rim Mushrooms**를 활성화한 뒤 재시작합니다. 활성화 순서는 Core 및 사용 중인 DLC 뒤면 됩니다.
+`MoreMushrooms` 폴더를 게임의 `Mods` 아래에 두고 모드 목록에서 **More Mushrooms**를 활성화한 뒤 재시작합니다. 활성화 순서는 Core 및 사용 중인 DLC 뒤면 됩니다.
+
+v0.1.3부터 프로젝트와 게임 표시 이름은 **More Mushrooms**, 개발·설치 폴더는 `MoreMushrooms`입니다. 기존 저장과 활성 모드 목록에서 같은 모드로 인식하도록 packageId(`izzypizzy.rimmushrooms`), DLL/클래스 이름, Def 이름 및 텍스처 경로는 유지합니다.
+
+이전 `Mods/RimMushrooms` 설치가 있으면 `Scripts/Install.ps1`로 업데이트하세요. 이전 폴더를 Mods 밖으로 백업하고 `Mods/MoreMushrooms`에 설치하므로 중복 모드가 생기지 않습니다. 수동 설치 시에도 기존 설치를 Mods 밖으로 보관한 후 새 ZIP을 풀어야 합니다.
 
 개발 폴더에서 `Scripts/Install.ps1`을 실행하면 런타임 파일만 설치합니다. 기존 설치는 이 프로젝트의 `Backups/`로 옮겨 보존하고 설치 후 SHA-256을 대조합니다. 개인 활성 모드 목록과 기존 저장은 자동 변경하지 않습니다.
 
@@ -73,7 +77,7 @@
 
 ```powershell
 python .\Scripts\generate_defs.py
-dotnet msbuild .\RimMushrooms.csproj -p:Configuration=Release -verbosity:minimal
+dotnet msbuild .\MoreMushrooms.csproj -p:Configuration=Release -verbosity:minimal
 python .\Tests\validate_assets.py
 .\Scripts\Install.ps1
 ```

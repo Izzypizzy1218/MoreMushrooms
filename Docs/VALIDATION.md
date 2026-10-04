@@ -1,3 +1,18 @@
+# v0.1.3 검증 기록
+
+검증일: 2026-10-03. 프로젝트명 변경 배포.
+
+- `MoreMushrooms.csproj` 이름으로 실제 게임 DLL 참조 빌드 성공. 정적 검사 179개 통과.
+- 게임 표시 이름 More Mushrooms, 버전 0.1.3, 기존 packageId `izzypizzy.rimmushrooms` 유지 확인.
+- v0.1.2 소스 ZIP과 비교해 버전 외 밸런스, C# 실행 소스, Defs, 번역, 텍스처 및 프로젝트 파일 내용은 동일함을 확인. 프로젝트 파일은 파일명만 변경.
+- 설치 스크립트는 기존 `Mods/RimMushrooms`를 프로젝트 Backups에 보관하고 `Mods/MoreMushrooms`로 설치. 설치 파일 해시와 중복 packageId 부재를 확인.
+- 새 배포 ZIP과 내부 최상위 폴더는 MoreMushrooms. 과거 ZIP·해시·검증 기록은 기존 이름과 내용 그대로 보관.
+- 게임 동작 변경이 없어 이번 이름 변경에서는 게임 실행 검사를 반복하지 않았으며 v0.1.2의 492개 실행 검증 기록을 아래에 유지.
+
+배포: `Releases/v0.1.3/MoreMushrooms-v0.1.3.zip` 및 소스 ZIP·SHA-256 목록.
+
+---
+
 # v0.1.2 검증 기록
 
 검증일: 2026-10-03. RimWorld 1.6.4871 rev591.

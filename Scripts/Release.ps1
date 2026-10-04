@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path $PSScriptRoot -Parent
 Push-Location $projectRoot
 try {
-    dotnet msbuild .\RimMushrooms.csproj -p:Configuration=Release -verbosity:minimal
+    dotnet msbuild .\MoreMushrooms.csproj -p:Configuration=Release -verbosity:minimal
     if ($LASTEXITCODE -ne 0) { throw 'Build failed.' }
     python .\Tests\validate_assets.py
     if ($LASTEXITCODE -ne 0) { throw 'Static validation failed.' }

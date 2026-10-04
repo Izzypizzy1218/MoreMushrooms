@@ -2,21 +2,28 @@ param([string]$GameDir = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld
 $ErrorActionPreference = 'Stop'
 $projectRoot = [IO.Path]::GetFullPath((Split-Path $PSScriptRoot -Parent))
 $modsRoot = [IO.Path]::GetFullPath((Join-Path $GameDir 'Mods'))
-$installTarget = [IO.Path]::GetFullPath((Join-Path $modsRoot 'RimMushrooms'))
+$installTarget = [IO.Path]::GetFullPath((Join-Path $modsRoot 'MoreMushrooms'))
+$legacyTarget = [IO.Path]::GetFullPath((Join-Path $modsRoot 'RimMushrooms'))
 if (!(Test-Path -LiteralPath (Join-Path $GameDir 'RimWorldWin64.exe'))) { throw 'RimWorld executable not found.' }
-if ((Split-Path $installTarget -Parent) -ne $modsRoot) { throw 'Invalid installation target.' }
+foreach ($target in @($installTarget, $legacyTarget)) {
+    if ((Split-Path $target -Parent) -ne $modsRoot) { throw 'Invalid installation target.' }
+}
 if (Get-Process -Name RimWorldWin64 -ErrorAction SilentlyContinue) { throw 'Close RimWorld before installing.' }
 foreach ($required in @('About\About.xml','Assemblies\RimMushrooms.dll','Defs','Languages','Textures','Credits')) {
     if (!(Test-Path -LiteralPath (Join-Path $projectRoot $required))) { throw "Missing source: $required. Build first." }
 }
-if (Test-Path -LiteralPath $installTarget) {
-    $existing = [xml](Get-Content -LiteralPath (Join-Path $installTarget 'About\About.xml') -Raw)
+# Preflight both names before moving either, so a rename cannot leave duplicates.
+$oldInstalls = @($installTarget, $legacyTarget) | Where-Object { Test-Path -LiteralPath $_ }
+foreach ($oldInstall in $oldInstalls) {
+    $existing = [xml](Get-Content -LiteralPath (Join-Path $oldInstall 'About\About.xml') -Raw)
     if ($existing.ModMetaData.packageId -ne 'izzypizzy.rimmushrooms') { throw 'Destination belongs to a different mod.' }
+}
+foreach ($oldInstall in $oldInstalls) {
     $backupRoot = Join-Path $projectRoot 'Backups'
     New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null
-    $backupTarget = [IO.Path]::GetFullPath((Join-Path $backupRoot ('RimMushrooms-' + (Get-Date -Format 'yyyyMMdd-HHmmss-fff'))))
+    $backupTarget = [IO.Path]::GetFullPath((Join-Path $backupRoot ((Split-Path $oldInstall -Leaf) + '-' + (Get-Date -Format 'yyyyMMdd-HHmmss-fff'))))
     if (!( $backupTarget.StartsWith($backupRoot + [IO.Path]::DirectorySeparatorChar))) { throw 'Invalid backup path.' }
-    Move-Item -LiteralPath $installTarget -Destination $backupTarget
+    Move-Item -LiteralPath $oldInstall -Destination $backupTarget
     Write-Output "Previous install backed up to $backupTarget"
 }
 New-Item -ItemType Directory -Path $installTarget | Out-Null
