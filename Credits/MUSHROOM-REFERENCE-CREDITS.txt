@@ -1,0 +1,137 @@
+버섯 10종 — 사진 출처와 변환 기록
+====================================
+제작일: 2026-10-03
+
+이 자료는 버섯 모드 제작을 위한 시각 초안입니다.
+원본 사진은 Google 이미지 검색과 Wikimedia Commons에서 찾아 내려받았습니다.
+references/에는 내려받은 JPG를 편집 없이 보관했습니다.
+photo-cutouts/는 ImageGen으로 배경·불필요한 물체를 분리하고 가려진 부분을 보완한 이미지입니다.
+일부 이미지에는 전용 배경 제거 도구로 실제 투명 알파를 적용했습니다.
+sprites/는 위 형태를 참고하여 굵은 외곽선과 단순한 명암의 림월드풍 아이콘으로 다시 그린 이미지입니다.
+원작자나 Wikimedia Commons가 이 변환 결과를 보증한다는 뜻은 아닙니다.
+원본에 표시된 라이선스를 아래에 기록했으며, 변환 파일에도 해당 라이선스 표시를 유지하여 제공합니다.
+Public domain 항목은 해당 원본의 공개 상태를 함께 표기했습니다.
+
+01_button — 양송이
+원작자: böhringer friedrich
+원본 출처: https://commons.wikimedia.org/wiki/File:Agaricus_bisporus_Zuchtchampignon2.jpg
+직접 이미지: https://upload.wikimedia.org/wikipedia/commons/e/ef/Agaricus_bisporus_Zuchtchampignon2.jpg
+원본 라이선스: CC BY-SA 2.5
+라이선스 상세: https://creativecommons.org/licenses/by-sa/2.5/
+원본: references/01_button.jpg
+변환본: photo-cutouts/01_button.png
+재해석 스프라이트: sprites/01_button.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: CC BY-SA 2.5
+
+02_shiitake — 표고
+원작자: Keith Weller / USDA Agricultural Research Service
+원본 출처: https://commons.wikimedia.org/wiki/File:Shiitake_mushroom.jpg
+직접 이미지: https://upload.wikimedia.org/wikipedia/commons/e/eb/Shiitake_mushroom.jpg
+원본 라이선스: Public domain (US government, USDA ARS)
+라이선스 상세: https://commons.wikimedia.org/wiki/Template:PD-USGov-USDA-ARS
+원본: references/02_shiitake.jpg
+변환본: photo-cutouts/02_shiitake.png
+재해석 스프라이트: sprites/02_shiitake.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: Public domain (US government, USDA ARS)
+
+03_oyster — 느타리
+원작자: Charl de Mille-Isles; derivative work by Ak ccm
+원본 출처: https://commons.wikimedia.org/wiki/File:Pleurotus_ostreatus_-_Pleurote_en_hu%C3%AEtre_cropped.jpg
+직접 이미지: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Pleurotus_ostreatus_-_Pleurote_en_hu%C3%AEtre_cropped.jpg/960px-Pleurotus_ostreatus_-_Pleurote_en_hu%C3%AEtre_cropped.jpg
+원본 라이선스: CC BY 2.0
+라이선스 상세: https://creativecommons.org/licenses/by/2.0/
+원본: references/03_oyster.jpg
+변환본: photo-cutouts/03_oyster.png
+재해석 스프라이트: sprites/03_oyster.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: CC BY 2.0
+
+04_king_oyster — 새송이
+원작자: Lemon-s
+원본 출처: https://commons.wikimedia.org/wiki/File:Pleurotus_eryngii.jpg
+직접 이미지: https://upload.wikimedia.org/wikipedia/commons/a/ac/Pleurotus_eryngii.jpg
+원본 라이선스: Public domain, released by copyright holder
+라이선스 상세: https://commons.wikimedia.org/wiki/Template:PD-self
+원본: references/04_king_oyster.jpg
+변환본: photo-cutouts/04_king_oyster.png
+재해석 스프라이트: sprites/04_king_oyster.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: Public domain, released by copyright holder
+
+05_enoki — 팽이
+원작자: Chris 73 / Wikimedia Commons
+원본 출처: https://commons.wikimedia.org/wiki/File:EnokitakeJapaneseMushroom.jpg
+직접 이미지: https://upload.wikimedia.org/wikipedia/commons/1/18/EnokitakeJapaneseMushroom.jpg
+원본 라이선스: CC BY-SA 3.0
+라이선스 상세: https://creativecommons.org/licenses/by-sa/3.0
+원본: references/05_enoki.jpg
+변환본: photo-cutouts/05_enoki.png
+재해석 스프라이트: sprites/05_enoki.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: CC BY-SA 3.0
+
+06_wood_ear — 목이
+원작자: 트리오구
+원본 출처: https://commons.wikimedia.org/wiki/File:Wood_ear_mushroom_1.jpg
+직접 이미지: https://upload.wikimedia.org/wikipedia/commons/9/9d/Wood_ear_mushroom_1.jpg
+원본 라이선스: CC BY-SA 3.0
+라이선스 상세: https://creativecommons.org/licenses/by-sa/3.0
+원본: references/06_wood_ear.jpg
+변환본: photo-cutouts/06_wood_ear.png
+재해석 스프라이트: sprites/06_wood_ear.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: CC BY-SA 3.0
+
+07_beech — 느티만가닥
+원작자: Batholith
+원본 출처: https://commons.wikimedia.org/wiki/File:Hypsizygus_marmoreus_20101123_a.jpg
+직접 이미지: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Hypsizygus_marmoreus_20101123_a.jpg/1280px-Hypsizygus_marmoreus_20101123_a.jpg
+원본 라이선스: Public domain
+라이선스 상세: https://commons.wikimedia.org/wiki/File:Hypsizygus_marmoreus_20101123_a.jpg
+원본: references/07_beech.jpg
+변환본: photo-cutouts/07_beech.png
+재해석 스프라이트: sprites/07_beech.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: Public domain
+
+08_maitake — 잎새
+원작자: George Chernilevsky
+원본 출처: https://commons.wikimedia.org/wiki/File:Grifola_frondosa_2014_G1.jpg
+직접 이미지: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Grifola_frondosa_2014_G1.jpg/1280px-Grifola_frondosa_2014_G1.jpg
+원본 라이선스: Public domain
+라이선스 상세: https://commons.wikimedia.org/wiki/File:Grifola_frondosa_2014_G1.jpg
+원본: references/08_maitake.jpg
+변환본: photo-cutouts/08_maitake.png
+재해석 스프라이트: sprites/08_maitake.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: Public domain
+
+09_lions_mane — 노루궁뎅이
+원작자: Plam1234
+원본 출처: https://commons.wikimedia.org/wiki/File:Hericium_erinaceus,Lion%27s_Mane,_Hedgehog_Mushroom.jpg
+직접 이미지: https://upload.wikimedia.org/wikipedia/commons/9/96/Hericium_erinaceus%2CLion%27s_Mane%2C_Hedgehog_Mushroom.jpg
+원본 라이선스: CC BY 4.0
+라이선스 상세: https://creativecommons.org/licenses/by/4.0
+원본: references/09_lions_mane.jpg
+변환본: photo-cutouts/09_lions_mane.png
+재해석 스프라이트: sprites/09_lions_mane.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: CC BY 4.0
+
+10_matsutake — 송이
+원작자: Tomomarusan; cropped version uploaded by Jatlas2
+원본 출처: https://commons.wikimedia.org/wiki/File:Matsutake2.jpg
+직접 이미지: https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Matsutake2.jpg/500px-Matsutake2.jpg
+원본 라이선스: CC BY-SA 3.0
+라이선스 상세: https://creativecommons.org/licenses/by-sa/3.0/
+원본: references/10_matsutake.jpg
+변환본: photo-cutouts/10_matsutake.png
+재해석 스프라이트: sprites/10_matsutake.png
+변경 사항: 배경 및 주변 물체 제거, 필요한 부분 재구성, 색·윤곽·명암 단순화, 투명 알파 적용.
+변환본 배포 표시: CC BY-SA 3.0
+
+생성 프롬프트는 동봉한 prompts_*.json에 기록되어 있습니다.
+이 자료의 이미지들은 아직 게임 내 적용·가독성·축소 크기 검증 전의 초안입니다.
+

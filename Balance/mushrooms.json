@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "status": "Initial gameplay balance draft, not real-world cultivation data.",
+  "common": {"stackLimit":75,"lowMaxCount":25,"mediumMaxCount":50,"nutrition":0.05,"fertilityMin":0.5,"fertilitySensitivity":0.3,"drawSize":1.0},
+  "mushrooms": [
+    {"id":"Button","asset":"01_button","en":"button mushroom","ko":"양송이버섯","growDays":6,"yield":10,"skill":0,"value":1.1,"rotDays":20,"biomes":{"TemperateForest":0.018,"TemperateSwamp":0.012}},
+    {"id":"Shiitake","asset":"02_shiitake","en":"shiitake mushroom","ko":"표고버섯","growDays":8,"yield":12,"skill":4,"value":1.5,"rotDays":25,"biomes":{"TemperateForest":0.012,"TropicalRainforest":0.008}},
+    {"id":"Oyster","asset":"03_oyster","en":"oyster mushroom","ko":"느타리버섯","growDays":5.5,"yield":10,"skill":0,"value":1.0,"rotDays":15,"biomes":{"TemperateForest":0.016,"TemperateSwamp":0.016,"BorealForest":0.01}},
+    {"id":"KingOyster","asset":"04_king_oyster","en":"king oyster mushroom","ko":"새송이버섯","growDays":7,"yield":11,"skill":3,"value":1.4,"rotDays":20,"biomes":{"TemperateForest":0.01,"AridShrubland":0.005}},
+    {"id":"Enoki","asset":"05_enoki","en":"enoki mushroom","ko":"팽이버섯","growDays":5,"yield":9,"skill":2,"value":1.0,"rotDays":12,"biomes":{"TemperateForest":0.012,"BorealForest":0.012}},
+    {"id":"WoodEar","asset":"06_wood_ear","en":"wood ear mushroom","ko":"목이버섯","growDays":7,"yield":10,"skill":3,"value":1.3,"rotDays":30,"biomes":{"TemperateSwamp":0.014,"TropicalRainforest":0.014,"TropicalSwamp":0.014}},
+    {"id":"Beech","asset":"07_beech","en":"beech mushroom","ko":"느티만가닥버섯","growDays":7,"yield":12,"skill":4,"value":1.3,"rotDays":20,"biomes":{"TemperateForest":0.01,"BorealForest":0.008}},
+    {"id":"Maitake","asset":"08_maitake","en":"maitake mushroom","ko":"잎새버섯","growDays":9,"yield":14,"skill":6,"value":1.8,"rotDays":18,"biomes":{"TemperateForest":0.007,"TemperateSwamp":0.005}},
+    {"id":"LionsMane","asset":"09_lions_mane","en":"lion's mane mushroom","ko":"노루궁뎅이버섯","growDays":9,"yield":12,"skill":6,"value":2.0,"rotDays":15,"biomes":{"TemperateForest":0.006,"BorealForest":0.004}},
+    {"id":"Matsutake","asset":"10_matsutake","en":"matsutake mushroom","ko":"송이버섯","growDays":12,"yield":6,"skill":0,"value":4.0,"rotDays":12,"wildOnly":true,"biomes":{"TemperateForest":0.003,"BorealForest":0.004}}
+  ]
+}

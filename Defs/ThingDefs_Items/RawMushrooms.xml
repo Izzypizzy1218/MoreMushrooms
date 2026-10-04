@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef Name="RMush_RawBase" ParentName="PlantFoodRawBase" Abstract="True">
+    <stackLimit>75</stackLimit>
+    <possessionCount>10</possessionCount>
+    <statBases>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <graphicClass>RimMushrooms.Graphic_MushroomStack</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <ingestible>
+      <foodType>Fungus</foodType>
+    </ingestible>
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomStackThresholds">
+        <lowMaxCount>25</lowMaxCount>
+        <mediumMaxCount>50</mediumMaxCount>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawButton</defName>
+    <label>button mushroom</label>
+    <description>Edible button mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Button</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawShiitake</defName>
+    <label>shiitake mushroom</label>
+    <description>Edible shiitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Shiitake</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawOyster</defName>
+    <label>oyster mushroom</label>
+    <description>Edible oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Oyster</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawKingOyster</defName>
+    <label>king oyster mushroom</label>
+    <description>Edible king oyster mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/KingOyster</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.4</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawEnoki</defName>
+    <label>enoki mushroom</label>
+    <description>Edible enoki mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Enoki</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawWoodEar</defName>
+    <label>wood ear mushroom</label>
+    <description>Edible wood ear mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/WoodEar</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawBeech</defName>
+    <label>beech mushroom</label>
+    <description>Edible beech mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Beech</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawMaitake</defName>
+    <label>maitake mushroom</label>
+    <description>Edible maitake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Maitake</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.8</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>18</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawLionsMane</defName>
+    <label>lion's mane mushroom</label>
+    <description>Edible lion's mane mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/LionsMane</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawMatsutake</defName>
+    <label>matsutake mushroom</label>
+    <description>Edible matsutake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Matsutake</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,335 @@
+Rim Mushrooms runtime test
+1.6.4871 rev591
+PASS active language Korean (한국어)
+PASS translated button label
+PASS 11 plant and 10 ingredient defs loaded
+PASS exactly nine cultivable varieties
+PASS matsutake wild only
+PASS resolved def config RMush_PlantBeech
+PASS resolved def config RMush_PlantButton
+PASS resolved def config RMush_PlantEnoki
+PASS resolved def config RMush_PlantEnokiWild
+PASS resolved def config RMush_PlantKingOyster
+PASS resolved def config RMush_PlantLionsMane
+PASS resolved def config RMush_PlantMaitake
+PASS resolved def config RMush_PlantMatsutake
+PASS resolved def config RMush_PlantOyster
+PASS resolved def config RMush_PlantShiitake
+PASS resolved def config RMush_PlantWoodEar
+PASS resolved def config RMush_RawBeech
+PASS resolved def config RMush_RawButton
+PASS resolved def config RMush_RawEnoki
+PASS resolved def config RMush_RawKingOyster
+PASS resolved def config RMush_RawLionsMane
+PASS resolved def config RMush_RawMaitake
+PASS resolved def config RMush_RawMatsutake
+PASS resolved def config RMush_RawOyster
+PASS resolved def config RMush_RawShiitake
+PASS resolved def config RMush_RawWoodEar
+PASS dark/light growth RMush_PlantBeech
+PASS native growth rendering RMush_PlantBeech
+PASS wild biome registration RMush_PlantBeech
+PASS plant graphic RMush_PlantBeech 0
+PASS plant graphic RMush_PlantBeech 1
+PASS plant graphic RMush_PlantBeech 2
+PASS mature yield RMush_PlantBeech
+PASS dark/light growth RMush_PlantButton
+PASS native growth rendering RMush_PlantButton
+PASS wild biome registration RMush_PlantButton
+PASS plant graphic RMush_PlantButton 0
+PASS plant graphic RMush_PlantButton 1
+PASS plant graphic RMush_PlantButton 2
+PASS mature yield RMush_PlantButton
+PASS dark/light growth RMush_PlantEnoki
+PASS native growth rendering RMush_PlantEnoki
+PASS white enoki excluded from wild spawn
+PASS plant graphic RMush_PlantEnoki 0
+PASS plant graphic RMush_PlantEnoki 1
+PASS plant graphic RMush_PlantEnoki 2
+PASS mature yield RMush_PlantEnoki
+PASS dark/light growth RMush_PlantEnokiWild
+PASS native growth rendering RMush_PlantEnokiWild
+PASS wild biome registration RMush_PlantEnokiWild
+PASS plant graphic RMush_PlantEnokiWild 0
+PASS plant graphic RMush_PlantEnokiWild 1
+PASS plant graphic RMush_PlantEnokiWild 2
+PASS mature yield RMush_PlantEnokiWild
+PASS dark/light growth RMush_PlantKingOyster
+PASS native growth rendering RMush_PlantKingOyster
+PASS wild biome registration RMush_PlantKingOyster
+PASS plant graphic RMush_PlantKingOyster 0
+PASS plant graphic RMush_PlantKingOyster 1
+PASS plant graphic RMush_PlantKingOyster 2
+PASS mature yield RMush_PlantKingOyster
+PASS dark/light growth RMush_PlantLionsMane
+PASS native growth rendering RMush_PlantLionsMane
+PASS wild biome registration RMush_PlantLionsMane
+PASS plant graphic RMush_PlantLionsMane 0
+PASS plant graphic RMush_PlantLionsMane 1
+PASS plant graphic RMush_PlantLionsMane 2
+PASS mature yield RMush_PlantLionsMane
+PASS dark/light growth RMush_PlantMaitake
+PASS native growth rendering RMush_PlantMaitake
+PASS wild biome registration RMush_PlantMaitake
+PASS plant graphic RMush_PlantMaitake 0
+PASS plant graphic RMush_PlantMaitake 1
+PASS plant graphic RMush_PlantMaitake 2
+PASS mature yield RMush_PlantMaitake
+PASS dark/light growth RMush_PlantMatsutake
+PASS native growth rendering RMush_PlantMatsutake
+PASS wild biome registration RMush_PlantMatsutake
+PASS plant graphic RMush_PlantMatsutake 0
+PASS plant graphic RMush_PlantMatsutake 1
+PASS plant graphic RMush_PlantMatsutake 2
+PASS mature yield RMush_PlantMatsutake
+PASS dark/light growth RMush_PlantOyster
+PASS native growth rendering RMush_PlantOyster
+PASS wild biome registration RMush_PlantOyster
+PASS plant graphic RMush_PlantOyster 0
+PASS plant graphic RMush_PlantOyster 1
+PASS plant graphic RMush_PlantOyster 2
+PASS mature yield RMush_PlantOyster
+PASS dark/light growth RMush_PlantShiitake
+PASS native growth rendering RMush_PlantShiitake
+PASS wild biome registration RMush_PlantShiitake
+PASS plant graphic RMush_PlantShiitake 0
+PASS plant graphic RMush_PlantShiitake 1
+PASS plant graphic RMush_PlantShiitake 2
+PASS mature yield RMush_PlantShiitake
+PASS dark/light growth RMush_PlantWoodEar
+PASS native growth rendering RMush_PlantWoodEar
+PASS wild biome registration RMush_PlantWoodEar
+PASS plant graphic RMush_PlantWoodEar 0
+PASS plant graphic RMush_PlantWoodEar 1
+PASS plant graphic RMush_PlantWoodEar 2
+PASS mature yield RMush_PlantWoodEar
+PASS cooking/fungus category RMush_RawBeech
+PASS simple meal ingredient accepted RMush_RawBeech
+PASS rottable ingredient RMush_RawBeech
+PASS stack boundary RMush_RawBeech:1
+PASS stack boundary RMush_RawBeech:25
+PASS stack boundary RMush_RawBeech:26
+PASS stack boundary RMush_RawBeech:50
+PASS stack boundary RMush_RawBeech:51
+PASS stack boundary RMush_RawBeech:75
+PASS split 75 into 50+25 RMush_RawBeech
+PASS merge 50+25 RMush_RawBeech
+PASS carry split RMush_RawBeech
+PASS carried material RMush_RawBeech
+PASS drop and merge RMush_RawBeech
+PASS dropped full material RMush_RawBeech
+PASS cooking/fungus category RMush_RawButton
+PASS simple meal ingredient accepted RMush_RawButton
+PASS rottable ingredient RMush_RawButton
+PASS stack boundary RMush_RawButton:1
+PASS stack boundary RMush_RawButton:25
+PASS stack boundary RMush_RawButton:26
+PASS stack boundary RMush_RawButton:50
+PASS stack boundary RMush_RawButton:51
+PASS stack boundary RMush_RawButton:75
+PASS split 75 into 50+25 RMush_RawButton
+PASS merge 50+25 RMush_RawButton
+PASS carry split RMush_RawButton
+PASS carried material RMush_RawButton
+PASS drop and merge RMush_RawButton
+PASS dropped full material RMush_RawButton
+PASS cooking/fungus category RMush_RawEnoki
+PASS simple meal ingredient accepted RMush_RawEnoki
+PASS rottable ingredient RMush_RawEnoki
+PASS stack boundary RMush_RawEnoki:1
+PASS stack boundary RMush_RawEnoki:25
+PASS stack boundary RMush_RawEnoki:26
+PASS stack boundary RMush_RawEnoki:50
+PASS stack boundary RMush_RawEnoki:51
+PASS stack boundary RMush_RawEnoki:75
+PASS split 75 into 50+25 RMush_RawEnoki
+PASS merge 50+25 RMush_RawEnoki
+PASS carry split RMush_RawEnoki
+PASS carried material RMush_RawEnoki
+PASS drop and merge RMush_RawEnoki
+PASS dropped full material RMush_RawEnoki
+PASS cooking/fungus category RMush_RawKingOyster
+PASS simple meal ingredient accepted RMush_RawKingOyster
+PASS rottable ingredient RMush_RawKingOyster
+PASS stack boundary RMush_RawKingOyster:1
+PASS stack boundary RMush_RawKingOyster:25
+PASS stack boundary RMush_RawKingOyster:26
+PASS stack boundary RMush_RawKingOyster:50
+PASS stack boundary RMush_RawKingOyster:51
+PASS stack boundary RMush_RawKingOyster:75
+PASS split 75 into 50+25 RMush_RawKingOyster
+PASS merge 50+25 RMush_RawKingOyster
+PASS carry split RMush_RawKingOyster
+PASS carried material RMush_RawKingOyster
+PASS drop and merge RMush_RawKingOyster
+PASS dropped full material RMush_RawKingOyster
+PASS cooking/fungus category RMush_RawLionsMane
+PASS simple meal ingredient accepted RMush_RawLionsMane
+PASS rottable ingredient RMush_RawLionsMane
+PASS stack boundary RMush_RawLionsMane:1
+PASS stack boundary RMush_RawLionsMane:25
+PASS stack boundary RMush_RawLionsMane:26
+PASS stack boundary RMush_RawLionsMane:50
+PASS stack boundary RMush_RawLionsMane:51
+PASS stack boundary RMush_RawLionsMane:75
+PASS split 75 into 50+25 RMush_RawLionsMane
+PASS merge 50+25 RMush_RawLionsMane
+PASS carry split RMush_RawLionsMane
+PASS carried material RMush_RawLionsMane
+PASS drop and merge RMush_RawLionsMane
+PASS dropped full material RMush_RawLionsMane
+PASS cooking/fungus category RMush_RawMaitake
+PASS simple meal ingredient accepted RMush_RawMaitake
+PASS rottable ingredient RMush_RawMaitake
+PASS stack boundary RMush_RawMaitake:1
+PASS stack boundary RMush_RawMaitake:25
+PASS stack boundary RMush_RawMaitake:26
+PASS stack boundary RMush_RawMaitake:50
+PASS stack boundary RMush_RawMaitake:51
+PASS stack boundary RMush_RawMaitake:75
+PASS split 75 into 50+25 RMush_RawMaitake
+PASS merge 50+25 RMush_RawMaitake
+PASS carry split RMush_RawMaitake
+PASS carried material RMush_RawMaitake
+PASS drop and merge RMush_RawMaitake
+PASS dropped full material RMush_RawMaitake
+PASS cooking/fungus category RMush_RawMatsutake
+PASS simple meal ingredient accepted RMush_RawMatsutake
+PASS rottable ingredient RMush_RawMatsutake
+PASS stack boundary RMush_RawMatsutake:1
+PASS stack boundary RMush_RawMatsutake:25
+PASS stack boundary RMush_RawMatsutake:26
+PASS stack boundary RMush_RawMatsutake:50
+PASS stack boundary RMush_RawMatsutake:51
+PASS stack boundary RMush_RawMatsutake:75
+PASS split 75 into 50+25 RMush_RawMatsutake
+PASS merge 50+25 RMush_RawMatsutake
+PASS carry split RMush_RawMatsutake
+PASS carried material RMush_RawMatsutake
+PASS drop and merge RMush_RawMatsutake
+PASS dropped full material RMush_RawMatsutake
+PASS cooking/fungus category RMush_RawOyster
+PASS simple meal ingredient accepted RMush_RawOyster
+PASS rottable ingredient RMush_RawOyster
+PASS stack boundary RMush_RawOyster:1
+PASS stack boundary RMush_RawOyster:25
+PASS stack boundary RMush_RawOyster:26
+PASS stack boundary RMush_RawOyster:50
+PASS stack boundary RMush_RawOyster:51
+PASS stack boundary RMush_RawOyster:75
+PASS split 75 into 50+25 RMush_RawOyster
+PASS merge 50+25 RMush_RawOyster
+PASS carry split RMush_RawOyster
+PASS carried material RMush_RawOyster
+PASS drop and merge RMush_RawOyster
+PASS dropped full material RMush_RawOyster
+PASS cooking/fungus category RMush_RawShiitake
+PASS simple meal ingredient accepted RMush_RawShiitake
+PASS rottable ingredient RMush_RawShiitake
+PASS stack boundary RMush_RawShiitake:1
+PASS stack boundary RMush_RawShiitake:25
+PASS stack boundary RMush_RawShiitake:26
+PASS stack boundary RMush_RawShiitake:50
+PASS stack boundary RMush_RawShiitake:51
+PASS stack boundary RMush_RawShiitake:75
+PASS split 75 into 50+25 RMush_RawShiitake
+PASS merge 50+25 RMush_RawShiitake
+PASS carry split RMush_RawShiitake
+PASS carried material RMush_RawShiitake
+PASS drop and merge RMush_RawShiitake
+PASS dropped full material RMush_RawShiitake
+PASS cooking/fungus category RMush_RawWoodEar
+PASS simple meal ingredient accepted RMush_RawWoodEar
+PASS rottable ingredient RMush_RawWoodEar
+PASS stack boundary RMush_RawWoodEar:1
+PASS stack boundary RMush_RawWoodEar:25
+PASS stack boundary RMush_RawWoodEar:26
+PASS stack boundary RMush_RawWoodEar:50
+PASS stack boundary RMush_RawWoodEar:51
+PASS stack boundary RMush_RawWoodEar:75
+PASS split 75 into 50+25 RMush_RawWoodEar
+PASS merge 50+25 RMush_RawWoodEar
+PASS carry split RMush_RawWoodEar
+PASS carried material RMush_RawWoodEar
+PASS drop and merge RMush_RawWoodEar
+PASS dropped full material RMush_RawWoodEar
+PASS fixture created; live sow/harvest jobs starting
+PASS sow cell accepted RMush_PlantBeech terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantBeech
+PASS actual growth tick RMush_PlantBeech
+PASS actual pawn harvest job produces RMush_RawBeech before=0 after=13 harvestStat=1.10627
+PASS sow cell accepted RMush_PlantButton terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantButton
+PASS actual growth tick RMush_PlantButton
+PASS actual pawn harvest job produces RMush_RawButton before=0 after=11 harvestStat=1.10627
+PASS sow cell accepted RMush_PlantEnoki terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantEnoki
+PASS actual growth tick RMush_PlantEnoki
+PASS actual pawn harvest job produces RMush_RawEnoki before=0 after=10 harvestStat=1.10627
+PASS actual pawn harvest job produces RMush_RawEnoki before=10 after=20 harvestStat=1.10627
+PASS sow cell accepted RMush_PlantKingOyster terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantKingOyster
+PASS actual growth tick RMush_PlantKingOyster
+PASS actual pawn harvest job produces RMush_RawKingOyster before=0 after=12 harvestStat=1.10627
+PASS sow cell accepted RMush_PlantLionsMane terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantLionsMane
+PASS actual growth tick RMush_PlantLionsMane
+PASS actual pawn harvest job produces RMush_RawLionsMane before=0 after=13 harvestStat=1.10627
+PASS sow cell accepted RMush_PlantMaitake terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantMaitake
+PASS actual growth tick RMush_PlantMaitake
+PASS actual pawn harvest job produces RMush_RawMaitake before=0 after=16 harvestStat=1.10627
+PASS actual pawn harvest job produces RMush_RawMatsutake before=0 after=7 harvestStat=1.10627
+PASS sow cell accepted RMush_PlantOyster terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantOyster
+PASS actual growth tick RMush_PlantOyster
+PASS actual pawn harvest job produces RMush_RawOyster before=0 after=11 harvestStat=1.10627
+PASS sow cell accepted RMush_PlantShiitake terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantShiitake
+PASS actual growth tick RMush_PlantShiitake
+PASS actual pawn harvest job produces RMush_RawShiitake before=0 after=13 harvestStat=1.10627
+PASS sow cell accepted RMush_PlantWoodEar terrain=Soil fertility=1
+PASS actual pawn sow job RMush_PlantWoodEar
+PASS actual growth tick RMush_PlantWoodEar
+PASS actual pawn harvest job produces RMush_RawWoodEar before=0 after=11 harvestStat=1.10627
+PASS plant growth fixtures survive save/load
+PASS saved stack graphic RMush_RawBeech:75
+PASS saved stack graphic RMush_RawBeech:25
+PASS saved stack graphic RMush_RawBeech:50
+PASS saved stack graphic RMush_RawButton:75
+PASS saved stack graphic RMush_RawButton:25
+PASS saved stack graphic RMush_RawButton:50
+PASS saved stack graphic RMush_RawEnoki:75
+PASS saved stack graphic RMush_RawEnoki:25
+PASS saved stack graphic RMush_RawEnoki:50
+PASS saved stack graphic RMush_RawKingOyster:75
+PASS saved stack graphic RMush_RawKingOyster:25
+PASS saved stack graphic RMush_RawKingOyster:50
+PASS saved stack graphic RMush_RawLionsMane:75
+PASS saved stack graphic RMush_RawLionsMane:25
+PASS saved stack graphic RMush_RawLionsMane:50
+PASS saved stack graphic RMush_RawMaitake:75
+PASS saved stack graphic RMush_RawMaitake:25
+PASS saved stack graphic RMush_RawMaitake:50
+PASS saved stack graphic RMush_RawMatsutake:75
+PASS saved stack graphic RMush_RawMatsutake:25
+PASS saved stack graphic RMush_RawMatsutake:50
+PASS saved stack graphic RMush_RawOyster:75
+PASS saved stack graphic RMush_RawOyster:25
+PASS saved stack graphic RMush_RawOyster:50
+PASS saved stack graphic RMush_RawShiitake:75
+PASS saved stack graphic RMush_RawShiitake:25
+PASS saved stack graphic RMush_RawShiitake:50
+PASS saved stack graphic RMush_RawWoodEar:75
+PASS saved stack graphic RMush_RawWoodEar:25
+PASS saved stack graphic RMush_RawWoodEar:50
+PASS saved stack graphic RMush_RawBeech:13
+PASS saved stack graphic RMush_RawButton:11
+PASS saved stack graphic RMush_RawEnoki:20
+PASS saved stack graphic RMush_RawKingOyster:12
+PASS saved stack graphic RMush_RawLionsMane:13
+PASS saved stack graphic RMush_RawMaitake:16
+PASS saved stack graphic RMush_RawMatsutake:7
+PASS saved stack graphic RMush_RawOyster:11
+PASS saved stack graphic RMush_RawWoodEar:11
+RESULT PASS

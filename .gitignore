@@ -1,0 +1,7 @@
+obj/
+Releases/
+Backups/
+Tests/Runtime/
+Tests/Harness/obj/
+Tests/Harness/Assemblies/
+__pycache__/

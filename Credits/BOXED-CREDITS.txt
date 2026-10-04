@@ -1,0 +1,31 @@
+Harvested mushroom box illustrations — references and provenance
+
+Artwork
+30 variants created with the built-in ImageGen tool from the accepted mushroom illustrations
+and the common container reference. Individual prompts are saved in prompts_*.json.
+Dedicated IS-Net background removal was used with the user's explicit authorization.
+
+Container design references
+RimWorld RawFungus game texture (64×64), Ludeon Studios.
+Inspected from the user's local installed game, resources.assets.
+Resource path: Things/Item/Resource/PlantFoodRaw/RawFungus
+Information page: https://rimworldwiki.com/wiki/Raw_fungus
+The original game texture is not included as a deliverable here.
+
+Empty produce container template by Sera, MIT license, Copyright (c) 2017 Sera.
+https://github.com/seraphile/rimshare/tree/master/produce%20container
+https://raw.githubusercontent.com/seraphile/rimshare/master/produce%20container/test.png
+https://raw.githubusercontent.com/seraphile/rimshare/master/produce%20container/hirez%20produce%20container.png
+Full MIT license included in RIMSHARE-LICENSE.txt.
+This is a community-made template of the vanilla container shape, not a claim of pixel identity.
+
+Mushroom references
+The accepted ten illustrations were created using the photo references documented in
+MUSHROOM-REFERENCE-CREDITS.txt. These boxed variants use those generated illustrations.
+
+Technical processing
+IS-Net general-use segmentation model from rembg:
+https://github.com/danielgatis/rembg
+Original generated sizes retained in masters/. Resized exports preserve the entire canvas.
+Boundary-only color matting restored dark outlines removed by segmentation.
+The enclosed checkerboard gaps in king oyster full were separately alpha-cleaned.

@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef Name="RMush_PlantBase" ParentName="PlantBase" Abstract="True">
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>14</pathCost>
+    <plant>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <harvestTag>Standard</harvestTag>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfNoSunlight>false</dieIfNoSunlight>
+      <diesToLight>false</diesToLight>
+      <topWindExposure>0</topWindExposure>
+      <visualSizeRange>0.3~0.65</visualSizeRange>
+      <maxMeshCount>9</maxMeshCount>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <wildOrder>1</wildOrder>
+      <wildClusterRadius>3</wildClusterRadius>
+      <wildClusterWeight>5</wildClusterWeight>
+      <minGrowthTemperature>0</minGrowthTemperature>
+      <minOptimalGrowthTemperature>10</minOptimalGrowthTemperature>
+      <maxOptimalGrowthTemperature>30</maxOptimalGrowthTemperature>
+      <maxGrowthTemperature>45</maxGrowthTemperature>
+      <harvestMinGrowth>0.65</harvestMinGrowth>
+      <harvestAfterGrowth>0</harvestAfterGrowth>
+      <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantButton</defName>
+    <label>button mushroom cluster</label>
+    <description>A cluster of button mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Button</texPath>
+    </graphicData>
+    <plant>
+      <growDays>6</growDays>
+      <harvestYield>10</harvestYield>
+      <harvestedThingDef>RMush_RawButton</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>0</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.018</TemperateForest>
+        <TemperateSwamp>0.012</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantShiitake</defName>
+    <label>shiitake mushroom cluster</label>
+    <description>A cluster of shiitake mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Shiitake</texPath>
+    </graphicData>
+    <plant>
+      <growDays>8</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestedThingDef>RMush_RawShiitake</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>4</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.012</TemperateForest>
+        <TropicalRainforest>0.008</TropicalRainforest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantOyster</defName>
+    <label>oyster mushroom cluster</label>
+    <description>A cluster of oyster mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Oyster</texPath>
+    </graphicData>
+    <plant>
+      <growDays>5.5</growDays>
+      <harvestYield>10</harvestYield>
+      <harvestedThingDef>RMush_RawOyster</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>0</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.016</TemperateForest>
+        <TemperateSwamp>0.016</TemperateSwamp>
+        <BorealForest>0.01</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantKingOyster</defName>
+    <label>king oyster mushroom cluster</label>
+    <description>A cluster of king oyster mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/KingOyster</texPath>
+    </graphicData>
+    <plant>
+      <growDays>7</growDays>
+      <harvestYield>11</harvestYield>
+      <harvestedThingDef>RMush_RawKingOyster</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>3</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.01</TemperateForest>
+        <AridShrubland>0.005</AridShrubland>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantEnoki</defName>
+    <label>enoki mushroom cluster</label>
+    <description>A cluster of enoki mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Enoki</texPath>
+    </graphicData>
+    <plant>
+      <growDays>5</growDays>
+      <harvestYield>9</harvestYield>
+      <harvestedThingDef>RMush_RawEnoki</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>2</sowMinSkill>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantEnokiWild</defName>
+    <label>wild enoki mushroom cluster</label>
+    <description>A cluster of enoki mushrooms growing directly from the soil. Grows in both darkness and daylight. Gathered in the wild; cannot be sown. Its golden caps differ from cultivated white enoki. Both yield the same enoki ingredient.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/EnokiWild</texPath>
+    </graphicData>
+    <plant>
+      <growDays>5</growDays>
+      <harvestYield>9</harvestYield>
+      <harvestedThingDef>RMush_RawEnoki</harvestedThingDef>
+      <wildBiomes>
+        <TemperateForest>0.012</TemperateForest>
+        <BorealForest>0.012</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantWoodEar</defName>
+    <label>wood ear mushroom cluster</label>
+    <description>A cluster of wood ear mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/WoodEar</texPath>
+    </graphicData>
+    <plant>
+      <growDays>7</growDays>
+      <harvestYield>10</harvestYield>
+      <harvestedThingDef>RMush_RawWoodEar</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>3</sowMinSkill>
+      <wildBiomes>
+        <TemperateSwamp>0.014</TemperateSwamp>
+        <TropicalRainforest>0.014</TropicalRainforest>
+        <TropicalSwamp>0.014</TropicalSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantBeech</defName>
+    <label>beech mushroom cluster</label>
+    <description>A cluster of beech mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Beech</texPath>
+    </graphicData>
+    <plant>
+      <growDays>7</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestedThingDef>RMush_RawBeech</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>4</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.01</TemperateForest>
+        <BorealForest>0.008</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantMaitake</defName>
+    <label>maitake mushroom cluster</label>
+    <description>A cluster of maitake mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Maitake</texPath>
+    </graphicData>
+    <plant>
+      <growDays>9</growDays>
+      <harvestYield>14</harvestYield>
+      <harvestedThingDef>RMush_RawMaitake</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>6</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.007</TemperateForest>
+        <TemperateSwamp>0.005</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantLionsMane</defName>
+    <label>lion's mane mushroom cluster</label>
+    <description>A cluster of lion's mane mushrooms growing directly from the soil. Grows in both darkness and daylight. Can be sown in growing zones.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/LionsMane</texPath>
+    </graphicData>
+    <plant>
+      <growDays>9</growDays>
+      <harvestYield>12</harvestYield>
+      <harvestedThingDef>RMush_RawLionsMane</harvestedThingDef>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowMinSkill>6</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.006</TemperateForest>
+        <BorealForest>0.004</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantMatsutake</defName>
+    <label>matsutake mushroom cluster</label>
+    <description>A cluster of matsutake mushrooms growing directly from the soil. Grows in both darkness and daylight. Gathered in the wild; cannot be sown.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Matsutake</texPath>
+    </graphicData>
+    <plant>
+      <growDays>12</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawMatsutake</harvestedThingDef>
+      <wildBiomes>
+        <TemperateForest>0.003</TemperateForest>
+        <BorealForest>0.004</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+</Defs>

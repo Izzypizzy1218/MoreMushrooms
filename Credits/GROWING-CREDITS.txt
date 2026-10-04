@@ -1,0 +1,29 @@
+Mushroom growing sprites — references
+
+Generated artwork
+22 original plant-unit variants created with built-in ImageGen.
+Exact prompts are preserved in prompts_*.json.
+Based on the user's previously accepted generated mushroom illustrations.
+Original mushroom photo references are recorded in MUSHROOM-REFERENCE-CREDITS.txt.
+
+RimWorld growth reference
+Ludeon Studios, RimWorld local installed version1.6.4871 rev590.
+Read-only inspection of shipped files:
+  Data/Ideology/Defs/ThingDefs_Plants/Plants_Special.xml: Plant_Nutrifungus
+  Source/RimWorld/Thing/Plant/Plant.cs: Print, lines845–949
+  Things/Plant/Nutrifungus/NutrifungusA, B, C textures in the Ideology asset bundle.
+Original game textures/source code are not redistributed in this package.
+
+Morphology references
+North American Mycological Association: Commonly Cultivated Mushroom Species
+https://namyco.org/interests/cultivation/commonly-cultivated-mushroom-species/
+Korean/Asian enoki taxonomy and cultivated strain study:
+https://link.springer.com/article/10.1007/s11557-018-1409-2
+Wood ear cultivation research:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10142399/
+Additional source URLs and limitations are recorded in morphology-sources-b.json
+and morphology-sources-c.json. Illustrations follow the user's direct-soil game abstraction.
+
+Background processing
+IS-Net model from rembg, with targeted background color matting and alpha repairs.
+https://github.com/danielgatis/rembg
