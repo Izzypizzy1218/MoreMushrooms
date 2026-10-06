@@ -1,0 +1,835 @@
+{
+  "date": "2026-10-05",
+  "generator": "built-in ImageGen",
+  "reference_repo_commit": "82c5c1c9bbb801560a0d14a0c1fd16f0eaf8dc16",
+  "deliverable": "art assets only",
+  "texture_count": 25,
+  "preview_bytes": 469801,
+  "files": [
+    {
+      "species": "FlyAgaric",
+      "kind": "PlantA",
+      "file": "Textures/Things/Plant/RimMushrooms/FlyAgaric/FlyAgaricA.png",
+      "sha256": "5c760e1aa39b35d2900b4b931b54a9ac3882893e9ac4a2d8af91cdf8fa174b6c",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        219,
+        243,
+        1039,
+        1012
+      ],
+      "export_origin": [
+        32,
+        44
+      ],
+      "export_size": [
+        192,
+        180
+      ]
+    },
+    {
+      "species": "FlyAgaric",
+      "kind": "PlantB",
+      "file": "Textures/Things/Plant/RimMushrooms/FlyAgaric/FlyAgaricB.png",
+      "sha256": "70fab6d6df0a9474f082c0b930451ac5f51972b2757a8dd51d0cc270fdc9d3e3",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        151,
+        248,
+        1133,
+        1051
+      ],
+      "export_origin": [
+        32,
+        67
+      ],
+      "export_size": [
+        192,
+        157
+      ]
+    },
+    {
+      "species": "FlyAgaric",
+      "kind": "01Low",
+      "file": "Textures/Things/Item/RimMushrooms/FlyAgaric/01Low.png",
+      "sha256": "1c21af9f6ce603ad310f2ea4138138fdb5f77289fa36dd2255abdbb9a69da710",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        75,
+        303,
+        1179,
+        1019
+      ],
+      "export_origin": [
+        15,
+        70
+      ],
+      "export_size": [
+        226,
+        147
+      ]
+    },
+    {
+      "species": "FlyAgaric",
+      "kind": "02Medium",
+      "file": "Textures/Things/Item/RimMushrooms/FlyAgaric/02Medium.png",
+      "sha256": "61ff1ae6cd6d3b53da69d4729eb04901a14477b7c7bfdabebb4231251d99741c",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        78,
+        301,
+        1199,
+        1024
+      ],
+      "export_origin": [
+        15,
+        71
+      ],
+      "export_size": [
+        226,
+        146
+      ]
+    },
+    {
+      "species": "FlyAgaric",
+      "kind": "03Full",
+      "file": "Textures/Things/Item/RimMushrooms/FlyAgaric/03Full.png",
+      "sha256": "cfd8b9aa41c5f6145b999aebb4b9c25f67589ada113a1389877a151cf34f0fcf",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        78,
+        245,
+        1238,
+        1082
+      ],
+      "export_origin": [
+        15,
+        54
+      ],
+      "export_size": [
+        226,
+        163
+      ]
+    },
+    {
+      "species": "DestroyingAngel",
+      "kind": "PlantA",
+      "file": "Textures/Things/Plant/RimMushrooms/DestroyingAngel/DestroyingAngelA.png",
+      "sha256": "b0b6e43a43eeac7ea2d4baae96b951af78b960067460f0762c254792ee2571b6",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        304,
+        151,
+        949,
+        1104
+      ],
+      "export_origin": [
+        63,
+        32
+      ],
+      "export_size": [
+        130,
+        192
+      ]
+    },
+    {
+      "species": "DestroyingAngel",
+      "kind": "PlantB",
+      "file": "Textures/Things/Plant/RimMushrooms/DestroyingAngel/DestroyingAngelB.png",
+      "sha256": "9c7a377e415cdf3800df317710bfa6e4009956875aaa42b872e2c138a1cee4ed",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        265,
+        177,
+        1076,
+        1090
+      ],
+      "export_origin": [
+        42,
+        32
+      ],
+      "export_size": [
+        171,
+        192
+      ]
+    },
+    {
+      "species": "DestroyingAngel",
+      "kind": "01Low",
+      "file": "Textures/Things/Item/RimMushrooms/DestroyingAngel/01Low.png",
+      "sha256": "c31e824be54c3676b4f7731e5a39df0875fc40a15e9765901f9618c0b4110357",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        75,
+        330,
+        1183,
+        1053
+      ],
+      "export_origin": [
+        15,
+        70
+      ],
+      "export_size": [
+        226,
+        147
+      ]
+    },
+    {
+      "species": "DestroyingAngel",
+      "kind": "02Medium",
+      "file": "Textures/Things/Item/RimMushrooms/DestroyingAngel/02Medium.png",
+      "sha256": "2ad99c8f4d9004916053fe215f2882c0a61abe6110314727a5be531ae17d56ad",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        71,
+        303,
+        1190,
+        1035
+      ],
+      "export_origin": [
+        15,
+        69
+      ],
+      "export_size": [
+        226,
+        148
+      ]
+    },
+    {
+      "species": "DestroyingAngel",
+      "kind": "03Full",
+      "file": "Textures/Things/Item/RimMushrooms/DestroyingAngel/03Full.png",
+      "sha256": "b213987f6d71449b68786039233f7971eef6005e984fc22c78f520f90aea914b",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        91,
+        230,
+        1181,
+        1083
+      ],
+      "export_origin": [
+        15,
+        40
+      ],
+      "export_size": [
+        226,
+        177
+      ]
+    },
+    {
+      "species": "SulfurTuft",
+      "kind": "PlantA",
+      "file": "Textures/Things/Plant/RimMushrooms/SulfurTuft/SulfurTuftA.png",
+      "sha256": "8315d2a355e4fc7ec20d2b5b21a021cb5ed7d6cdcb846a8e0ec509847ba9f896",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        368,
+        207,
+        1018,
+        978
+      ],
+      "export_origin": [
+        47,
+        32
+      ],
+      "export_size": [
+        162,
+        192
+      ]
+    },
+    {
+      "species": "SulfurTuft",
+      "kind": "PlantB",
+      "file": "Textures/Things/Plant/RimMushrooms/SulfurTuft/SulfurTuftB.png",
+      "sha256": "a1d0b7e03ea8c3093c040459fdc113fb421dace21b60eb2416ece1e994f767b1",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        317,
+        303,
+        979,
+        949
+      ],
+      "export_origin": [
+        32,
+        37
+      ],
+      "export_size": [
+        192,
+        187
+      ]
+    },
+    {
+      "species": "SulfurTuft",
+      "kind": "01Low",
+      "file": "Textures/Things/Item/RimMushrooms/SulfurTuft/01Low.png",
+      "sha256": "f354cb09ae09fbd183e76b3cc38892112cb8683e921e803365ee01b1763fde06",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        95,
+        302,
+        1158,
+        1002
+      ],
+      "export_origin": [
+        15,
+        68
+      ],
+      "export_size": [
+        226,
+        149
+      ]
+    },
+    {
+      "species": "SulfurTuft",
+      "kind": "02Medium",
+      "file": "Textures/Things/Item/RimMushrooms/SulfurTuft/02Medium.png",
+      "sha256": "6091f85abaeb23999cd433010bf62d4239b2379b6ce69b2b144497e8a81adec7",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        57,
+        291,
+        1199,
+        1034
+      ],
+      "export_origin": [
+        15,
+        70
+      ],
+      "export_size": [
+        226,
+        147
+      ]
+    },
+    {
+      "species": "SulfurTuft",
+      "kind": "03Full",
+      "file": "Textures/Things/Item/RimMushrooms/SulfurTuft/03Full.png",
+      "sha256": "29e915c71aa3ac286a95b0b4fe317dbf440f61978d3fd821c4ab7537c710f84d",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        74,
+        239,
+        1181,
+        1056
+      ],
+      "export_origin": [
+        15,
+        50
+      ],
+      "export_size": [
+        226,
+        167
+      ]
+    },
+    {
+      "species": "Tsukiyotake",
+      "kind": "PlantA",
+      "file": "Textures/Things/Plant/RimMushrooms/Tsukiyotake/TsukiyotakeA.png",
+      "sha256": "cdc6c14244583a085c161eb268df0a726fe515a54cea04c173cdc3ddd7588e58",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        192,
+        282,
+        1076,
+        974
+      ],
+      "export_origin": [
+        32,
+        74
+      ],
+      "export_size": [
+        192,
+        150
+      ]
+    },
+    {
+      "species": "Tsukiyotake",
+      "kind": "PlantB",
+      "file": "Textures/Things/Plant/RimMushrooms/Tsukiyotake/TsukiyotakeB.png",
+      "sha256": "4d22d2fd507bd8f61942d972e4afaf3a6c5d49042f57a5df7e1a2a925e8a8c0e",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        192,
+        302,
+        1112,
+        962
+      ],
+      "export_origin": [
+        32,
+        86
+      ],
+      "export_size": [
+        192,
+        138
+      ]
+    },
+    {
+      "species": "Tsukiyotake",
+      "kind": "01Low",
+      "file": "Textures/Things/Item/RimMushrooms/Tsukiyotake/01Low.png",
+      "sha256": "f31849456eeb8e150e04109a62cee0b68b538a7c3da2852538e6f511be7d9266",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        78,
+        302,
+        1178,
+        1009
+      ],
+      "export_origin": [
+        15,
+        72
+      ],
+      "export_size": [
+        226,
+        145
+      ]
+    },
+    {
+      "species": "Tsukiyotake",
+      "kind": "02Medium",
+      "file": "Textures/Things/Item/RimMushrooms/Tsukiyotake/02Medium.png",
+      "sha256": "eef0f8a4b3d88fa518502e2dfa781c8ad6bc1943800b6e60d713100598a7f734",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        80,
+        285,
+        1175,
+        1017
+      ],
+      "export_origin": [
+        15,
+        66
+      ],
+      "export_size": [
+        226,
+        151
+      ]
+    },
+    {
+      "species": "Tsukiyotake",
+      "kind": "03Full",
+      "file": "Textures/Things/Item/RimMushrooms/Tsukiyotake/03Full.png",
+      "sha256": "786d157288599070f5593855b957f05da0adc3ad490e44535cdba27b0e52e72c",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        71,
+        251,
+        1209,
+        1075
+      ],
+      "export_origin": [
+        15,
+        53
+      ],
+      "export_size": [
+        226,
+        164
+      ]
+    },
+    {
+      "species": "PoisonFireCoral",
+      "kind": "PlantA",
+      "file": "Textures/Things/Plant/RimMushrooms/PoisonFireCoral/PoisonFireCoralA.png",
+      "sha256": "2366bb15d9fac04df594f9c93fecb52052019c125b2dfe87fcf66450402a462f",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        319,
+        119,
+        947,
+        1109
+      ],
+      "export_origin": [
+        67,
+        32
+      ],
+      "export_size": [
+        122,
+        192
+      ]
+    },
+    {
+      "species": "PoisonFireCoral",
+      "kind": "PlantB",
+      "file": "Textures/Things/Plant/RimMushrooms/PoisonFireCoral/PoisonFireCoralB.png",
+      "sha256": "5bca24ffbe8148f13294f04eca98812363aa3bd7fe974053a6af83be8a9e662b",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        327,
+        168,
+        952,
+        1092
+      ],
+      "export_origin": [
+        63,
+        32
+      ],
+      "export_size": [
+        130,
+        192
+      ]
+    },
+    {
+      "species": "PoisonFireCoral",
+      "kind": "01Low",
+      "file": "Textures/Things/Item/RimMushrooms/PoisonFireCoral/01Low.png",
+      "sha256": "2b548245daff5edccae0b579cef518a1ebbdd151b703a245cc97140c141a3c01",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        89,
+        322,
+        1171,
+        1021
+      ],
+      "export_origin": [
+        15,
+        71
+      ],
+      "export_size": [
+        226,
+        146
+      ]
+    },
+    {
+      "species": "PoisonFireCoral",
+      "kind": "02Medium",
+      "file": "Textures/Things/Item/RimMushrooms/PoisonFireCoral/02Medium.png",
+      "sha256": "af50002c9210d5f2e136d20fc333d8033eb96d00d205be3b7c2692f54c333cac",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        88,
+        321,
+        1172,
+        1022
+      ],
+      "export_origin": [
+        15,
+        71
+      ],
+      "export_size": [
+        226,
+        146
+      ]
+    },
+    {
+      "species": "PoisonFireCoral",
+      "kind": "03Full",
+      "file": "Textures/Things/Item/RimMushrooms/PoisonFireCoral/03Full.png",
+      "sha256": "777e894d57ef6d12199909a3b1cdb009125f1bec8d55730bc5409344706a700c",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox16": [
+        87,
+        289,
+        1171,
+        1023
+      ],
+      "export_origin": [
+        15,
+        64
+      ],
+      "export_size": [
+        226,
+        153
+      ]
+    }
+  ]
+}

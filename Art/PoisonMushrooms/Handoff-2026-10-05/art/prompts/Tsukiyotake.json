@@ -1,0 +1,65 @@
+{
+  "species": "Tsukiyotake",
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "species": "Tsukiyotake",
+      "asset": "PlantA",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent square 2D RimWorld mushroom plant sprite. ONE isolated tiny mature growth UNIT, never a sprite sheet.\nStyle: exactly match the supporting RimWorld plant sprite: heavy warm dark-brown clean outlines, only 2-3 flat cel-shaded color planes, small readable silhouette, slightly top-down three-quarter view, no realistic texture, no gradients, no fine engraving.\nComposition: mushroom in the center, overall group fits within the central 70% of the square with at least 15% transparent safe margins. No soil, grass, log, rocks, root tuft, box, container, shadow on a ground plane, text, labels, watermark or border. Real alpha transparency outside the object, never draw a checkerboard. This is a fully grown plant unit that the game repeats and scales.\nInput 1: actual Omphalotus japonicus photograph (also called O. guepiniformis), species shape only. Input 2: existing Oyster sprite, game linework and simplicity only.\nSubject: TWO mature overlapping thick asymmetrical semicircular fan-shaped brown mushroom caps, upper larger and lower smaller. The broad caps have a dusky chestnut to muted purplish-brown top, a lighter beige rolling outer lip, and pale cream underside with just 3 simple radiating gill planes. Short stout off-center lateral stalks fuse at a compact root point. A small cupped depression on each broad top, a heavy ear/fan silhouette that differs from gray oyster mushrooms. Normal daylight colors, absolutely NO green glow, no bioluminescence. Natural mature variant A, not a pile or full bush.",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg",
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Oyster/OysterA.png"
+      ],
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-10874fae-7f60-4968-9045-e3d52262a6b2.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png"
+    },
+    {
+      "species": "Tsukiyotake",
+      "asset": "PlantB",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: ONE transparent square 2D RimWorld plant unit, mature variant B.\nInput 1 is the style and species identity reference (variant A); input 2 is the real species photograph for anatomy only.\nCreate a different natural mature silhouette of the SAME species and palette, keeping the exact thick warm brown outline, flat clean cel shading, simplicity and slight top-down viewpoint of input 1. Draw TWO broad asymmetrical fan-shaped chestnut/purplish-brown caps with muted lighter beige rolled rims and 3 broad cream gill planes. The larger low broad cap is on the right and the smaller upright cap is behind left, with short stout off-center stems meeting at the base. Slightly cupped mushroom tops; normal daylight, no glow.\nThis is NOT an earlier growth stage. A small mature group, no extra sprouts. Keep the object within central70% with at least15% transparent margin. Actual RGBA transparent background. No checkerboard, ground, soil, log, roots, grass, rocks, box, cast shadow, text, labels, border. No photo realism, no gradients or texture.",
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-da69c2d3-25e6-4f85-838d-3c34a430fbea.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantB.png"
+    },
+    {
+      "species": "Tsukiyotake",
+      "asset": "01Low",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Omphalotus japonicus / tsukiyotake: broad cupped semicircular brown to muted purplish-brown fan caps, paler rolled rims, cream gill underside and short lateral stems, using exactly the palette and flat art of input2. Normal daylight, no glow.\nLOW contents: only 3 loose harvested mushrooms rest near the front-left bottom, far below the back rim. Leave most of the dark inside floor visibly empty.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-e3d03170-c130-4f2e-9ebc-5fab7960f3d0.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/01Low.png"
+    },
+    {
+      "species": "Tsukiyotake",
+      "asset": "02Medium",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Omphalotus japonicus / tsukiyotake: broad cupped semicircular brown to muted purplish-brown fan caps, paler rolled rims, cream gill underside and short lateral stems, using exactly the palette and flat art of input2. Normal daylight, no glow.\nMEDIUM contents: 6 to 7 loose harvested mushrooms, approximately half full with the topmost pieces near but below the rear rim. Clearly more than low and less than full.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-3cd3e12a-d3a8-4a64-933b-ed2253d070f9.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/02Medium.png"
+    },
+    {
+      "species": "Tsukiyotake",
+      "asset": "03Full",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Omphalotus japonicus / tsukiyotake: broad cupped semicircular brown to muted purplish-brown fan caps, paler rolled rims, cream gill underside and short lateral stems, using exactly the palette and flat art of input2. Normal daylight, no glow.\nFULL contents: 12 to 14 loose harvested mushrooms, fill the whole crate and mound slightly over the top rim, matching the height and density of the first reference.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-83bc97d8-4a21-4291-a4f5-2c874f82f2f8.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/03Full.png"
+    }
+  ]
+}

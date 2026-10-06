@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "DestroyingAngel/PlantA",
+    "prompt": "Use case: stylized-concept.\nAsset: DestroyingAngel PlantA mature unit.\nA square isolated game sprite matching the attached existing RimWorld mod mushroom sprite. Very simple flat 2D artwork, thick dark warm-brown continuous outlines, two or three flat color planes only, no texture or realism, slightly elevated three-quarter view. Genuine alpha transparent background, not black, white, or checkerboard. Exactly one centered unit, at least 15 percent clear margin on every side, no typography, no badge, no soil, grass, logs, ground, scene, props, cast shadows or box.\nA single Amanita virosa destroying angel: ivory-white slightly pointed conical umbrella cap, slender white stem with a small clear skirt-like ring, white swollen base. All cap and stem pale cream white with taupe shadow planes. No spots, no red, no face.\nReference 1 controls simplified game style and outline weight; reference 2 is only real species morphology. One compact fully grown mushroom with a rounded conical cap tapering to a softly pointed peak and downward cap edges; a visible fairly short slender stalk and simple skirt ring. White cap must remain distinguishable from the round button-mushroom reference.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonA.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-8e2909c5-01be-48ae-8658-9f58cce838b8.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantA.png",
+    "mode": "built-in-imagegen"
+  },
+  {
+    "asset": "DestroyingAngel/PlantB",
+    "prompt": "Use case: stylized-concept.\nAsset: DestroyingAngel PlantB mature unit visual variation, NOT a juvenile.\nA square isolated game sprite matching the attached existing RimWorld mod mushroom sprite. Very simple flat 2D artwork, thick dark warm-brown continuous outlines, two or three flat color planes only, no texture or realism, slightly elevated three-quarter view. Genuine alpha transparent background, not black, white, or checkerboard. Exactly one centered unit, at least 15 percent clear margin on every side, no typography, no badge, no soil, grass, logs, ground, scene, props, cast shadows or box.\nA single Amanita virosa destroying angel: ivory-white slightly pointed conical umbrella cap, slender white stem with a small clear skirt-like ring, white swollen base. All cap and stem pale cream white with taupe shadow planes. No spots, no red, no face.\nReference 1 controls simplified game style and outline weight; reference 2 is only real species morphology. Variation B has a lower and wider softly pointed asymmetrical umbrella cap, gently tilted right, a visible stalk curved subtly left, a simple skirt ring and swollen base. One complete fully grown mushroom, clean compact silhouette.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonB.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-13958444-7a83-49f1-9ca3-1f68ed1bc883.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantB.png",
+    "mode": "built-in-imagegen"
+  },
+  {
+    "asset": "DestroyingAngel/01Low",
+    "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Destroying angel, Amanita virosa. Ivory white softly pointed conical umbrella caps and white stems with small skirt rings. No rounded button mushroom caps, no spots.\nQuantity LOW: only 3 small harvested destroying angel mushrooms resting inside the box with lightly varied tilts, much of the dark brown interior floor and back wall clearly visible, none projecting above the back rim. Match reference 1's LOW composition exactly; keep the white caps recognizably conical as in reference 2.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantA.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-4903298f-e211-43e7-aa4f-f19b9bbddf7c.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/01Low.png",
+    "mode": "built-in-imagegen"
+  },
+  {
+    "asset": "DestroyingAngel/02Medium",
+    "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Destroying angel, Amanita virosa. Ivory white softly pointed conical umbrella caps and white stems with small skirt rings. No rounded button mushroom caps, no spots.\nQuantity MEDIUM: six small harvested destroying angel mushrooms loosely filling roughly half the tray. White softly pointed caps and a few ringed white stems visible, dark interior behind. Do not overflow; match reference 1's MEDIUM composition.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantA.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-74a15f75-ae03-4609-81e3-706b1a30b8fa.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/02Medium.png",
+    "mode": "built-in-imagegen"
+  },
+  {
+    "asset": "DestroyingAngel/03Full",
+    "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Destroying angel, Amanita virosa. Ivory white softly pointed conical umbrella caps and white stems with small skirt rings. No rounded button mushroom caps, no spots.\nQuantity FULL: twelve to fifteen small harvested destroying angel mushrooms densely packed in a shallow heap rising above the back rim. White softly pointed conical caps, some ringed white stems. Almost no interior floor visible. Match reference 1's FULL composition, not a tall tower.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantA.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-f5da8727-8ba0-4e52-a900-4400808b9287.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/03Full.png",
+    "mode": "built-in-imagegen"
+  }
+]

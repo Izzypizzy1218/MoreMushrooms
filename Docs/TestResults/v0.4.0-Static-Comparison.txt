@@ -1,0 +1,3 @@
+PASS v0.3.3 immutable archives retain recorded SHA-256
+PASS edible balance is identical apart from version
+PASS 70 existing runtime files remain byte-identical

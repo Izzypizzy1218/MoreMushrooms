@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>RMush_PoisonMushrooms</defName>
+    <label>poison mushrooms</label>
+    <parent>ResourcesRaw</parent>
+    <iconPath>Things/Item/RimMushrooms/FlyAgaric/03Full</iconPath>
+  </ThingCategoryDef>
+</Defs>

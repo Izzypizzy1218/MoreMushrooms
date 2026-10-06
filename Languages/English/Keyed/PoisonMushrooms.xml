@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_PoisonPhaseLatent>latent</RMush_PoisonPhaseLatent>
+  <RMush_PoisonPhaseWorsening>worsening</RMush_PoisonPhaseWorsening>
+  <RMush_PoisonPhaseStabilized>stabilized</RMush_PoisonPhaseStabilized>
+  <RMush_PoisonPhaseRecovering>recovering</RMush_PoisonPhaseRecovering>
+  <RMush_PoisonExposureLabel>Poison mushroom eaten</RMush_PoisonExposureLabel>
+  <RMush_PoisonExposureText>{0} has eaten {1}. Symptoms may appear after a latent period. Check their health and arrange medical care.</RMush_PoisonExposureText>
+  <RMush_PoisonOnsetLabel>Mushroom poisoning symptoms</RMush_PoisonOnsetLabel>
+  <RMush_PoisonOnsetText>{0} has developed symptoms of {1}. Use regular doctor care and medicine to treat the poisoning.</RMush_PoisonOnsetText>
+  <RMush_PoisonDangerNote>This is a high-risk poisoning. Early, repeated care can stabilize it; apparent improvement does not mean it has been cured.</RMush_PoisonDangerNote>
+  <RMush_PoisonStabilizedLabel>Mushroom poisoning stabilized</RMush_PoisonStabilizedLabel>
+  <RMush_PoisonStabilizedText>{0}'s {1} has stabilized. Recovery remains gradual; continue medical care and avoid further exposure.</RMush_PoisonStabilizedText>
+  <RMush_PoisonTipPhase>Phase: {0}</RMush_PoisonTipPhase>
+  <RMush_PoisonTipOnset>Symptoms expected in: {0}</RMush_PoisonTipOnset>
+  <RMush_PoisonTipTreatment>Accumulated treatment: {0}</RMush_PoisonTipTreatment>
+  <RMush_PoisonTipRecovery>Estimated recovery remaining: {0}</RMush_PoisonTipRecovery>
+  <RMush_PoisonTipGrace>Minimum response window remaining: {0}</RMush_PoisonTipGrace>
+</LanguageData>

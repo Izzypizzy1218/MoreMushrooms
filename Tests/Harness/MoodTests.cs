@@ -38,7 +38,7 @@ namespace RimMushroomsTests
         }
         public static void Run(Pawn pawn, Action<bool, string> check)
         {
-            var items = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Raw"))
+            var items = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Raw") && d.ingestible.specialThoughtDirect != null)
                 .OrderBy(d => d.ingestible.specialThoughtDirect.stages[0].baseMoodEffect).ToArray();
             check(items.Select(d => d.ingestible.specialThoughtDirect.stages[0].baseMoodEffect).SequenceEqual(new float[] {3,3,3,5,5,5,7,7,7,10}), "three mood groups plus matsutake premium");
             foreach (var item in items)

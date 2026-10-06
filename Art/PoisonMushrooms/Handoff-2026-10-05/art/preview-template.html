@@ -1,0 +1,79 @@
+<div id="poison-mushrooms-v1">
+  <style>
+    #poison-mushrooms-v1 .species-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 28px;margin-top:20px}
+    #poison-mushrooms-v1 .species-name{font-weight:500;margin:0 0 6px}
+    #poison-mushrooms-v1 .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    #poison-mushrooms-v1 figure{margin:0;min-width:0}
+    #poison-mushrooms-v1 figcaption{text-align:center}
+    #poison-mushrooms-v1 .tile{position:relative;aspect-ratio:1;min-width:0}
+    #poison-mushrooms-v1 .soil{position:absolute;inset:16%;background:color-mix(in srgb,var(--orange) 17%,var(--muted))}
+    #poison-mushrooms-v1 .layer{position:absolute;inset:0}
+    #poison-mushrooms-v1 .layer img{position:absolute;display:block;max-width:none}
+    #poison-mushrooms-v1 .stack{width:100%;height:100%;object-fit:contain;display:block}
+    #poison-mushrooms-v1 .range-labels{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+    #poison-mushrooms-v1 .controls-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px}
+    #poison-mushrooms-v1 .status{margin-top:10px}
+    @media(max-width:560px){#poison-mushrooms-v1 .species-grid,#poison-mushrooms-v1 .controls-grid{grid-template-columns:minmax(0,1fr)}}
+  </style>
+  <h3>독버섯 5종 · 성장과 수확물</h3>
+  <div class="controls-grid">
+    <div>
+      <label class="form-label" for="poison-growth">성장률 <output id="poison-growth-value" class="tabular-nums">100%</output></label>
+      <input class="form-range" id="poison-growth" type="range" min="10" max="100" step="10" value="100">
+      <div class="range-labels text-small text-muted"><span>10% · 어린 군락</span><span>50%</span><span>100% · 성체</span></div>
+    </div>
+    <div>
+      <label class="form-label" for="poison-count">수확물 <output id="poison-count-value" class="tabular-nums">75개 · 가득</output></label>
+      <input class="form-range" id="poison-count" type="range" min="1" max="75" step="1" value="75">
+      <div class="range-labels text-small text-muted"><span>1–25 · 적음</span><span>26–50 · 중간</span><span>51–75 · 가득</span></div>
+    </div>
+  </div>
+  <div id="poison-status" class="status text-small text-muted" aria-live="polite"></div>
+  <div class="species-grid" id="poison-species"></div>
+  <script type="application/json" id="poison-assets">__ASSET_DATA__</script>
+  <script>
+  (()=>{
+    const root=document.getElementById('poison-mushrooms-v1');
+    const assets=JSON.parse(root.querySelector('#poison-assets').textContent);
+    const species=[['FlyAgaric','광대버섯'],['DestroyingAngel','독우산광대버섯'],['SulfurTuft','노란다발버섯'],['Tsukiyotake','화경버섯'],['PoisonFireCoral','붉은사슴뿔버섯']];
+    const growth=root.querySelector('#poison-growth'),count=root.querySelector('#poison-count');
+    const grid=root.querySelector('#poison-species'), scenes=[];
+    function random(seed){let s=seed>>>0;return()=>{s=(Math.imul(s,1664525)+1013904223)>>>0;return s/4294967296}}
+    function positions(seed){
+      const rng=random(seed),indices=[4,0,8,2,6,1,7,3,5];
+      return indices.map(idx=>{const angle=rng()*Math.PI*2,radius=rng()*.1;return{x:(idx%3+.5)/3+Math.cos(angle)*radius,z:(Math.floor(idx/3)+.5)/3+Math.sin(angle)*radius,variant:rng()>.5?'B':'A',flip:rng()>.5}});
+    }
+    species.forEach(([id,name],index)=>{
+      const section=document.createElement('section');section.dataset.species=id;
+      const heading=document.createElement('div');heading.className='species-name';heading.textContent=name;heading.id='poison-'+id;section.setAttribute('aria-labelledby',heading.id);section.appendChild(heading);
+      const pair=document.createElement('div');pair.className='pair';section.appendChild(pair);
+      const figure=document.createElement('figure'),caption=document.createElement('figcaption');caption.className='text-small text-muted';caption.textContent='자라는 모습';figure.appendChild(caption);
+      const tile=document.createElement('div');tile.className='tile';tile.setAttribute('role','img');const soil=document.createElement('div');soil.className='soil';soil.setAttribute('aria-hidden','true');tile.appendChild(soil);
+      const layer=document.createElement('div');layer.className='layer';layer.setAttribute('aria-hidden','true');tile.appendChild(layer);figure.appendChild(tile);pair.appendChild(figure);
+      const boxFigure=document.createElement('figure'),boxCaption=document.createElement('figcaption');boxCaption.className='text-small text-muted';boxCaption.textContent='수확 상자';boxFigure.appendChild(boxCaption);
+      const boxTile=document.createElement('div');boxTile.className='tile';const boxImg=document.createElement('img');boxImg.className='stack';boxImg.alt=name+' 수확 상자';boxTile.appendChild(boxImg);boxFigure.appendChild(boxTile);pair.appendChild(boxFigure);
+      grid.appendChild(section);scenes.push({id,name,tile,layer,boxImg,points:positions(2729+index*97)});
+    });
+    function draw(){
+      const pct=Number(growth.value),g=pct/100,n=Math.max(1,Math.ceil(9*g)),size=.3+.35*g;
+      const amount=Number(count.value),phase=amount<=25?'01Low':amount<=50?'02Medium':'03Full',phaseName=amount<=25?'적음':amount<=50?'중간':'가득';
+      root.querySelector('#poison-growth-value').textContent=pct+'%';root.querySelector('#poison-count-value').textContent=amount+'개 · '+phaseName;
+      growth.setAttribute('aria-valuetext','성장률 '+pct+'퍼센트');count.setAttribute('aria-valuetext','수확물 '+amount+'개, '+phaseName);
+      root.querySelector('#poison-status').textContent='군락 '+n+'개 · 성장률에 따라 크기도 변화';
+      scenes.forEach(scene=>{
+        scene.layer.replaceChildren();scene.tile.setAttribute('aria-label',scene.name+' 성장률 '+pct+'퍼센트, 기본 그림 '+n+'개');
+        scene.points.slice(0,n).sort((a,b)=>a.z-b.z).forEach(point=>{
+          const img=document.createElement('img');img.alt='';img.src=assets[scene.id+'Plant'+point.variant];
+          const w=size*68,anchorX=16+point.x*68,anchorY=30+point.z*50;
+          Object.assign(img.style,{width:w+'%',height:w+'%',left:(anchorX-w/2)+'%',top:(anchorY-w*.875)+'%',transform:point.flip?'scaleX(-1)':'none'});scene.layer.appendChild(img);
+        });
+        scene.boxImg.src=assets[scene.id+phase];scene.boxImg.alt=scene.name+' 수확물 '+amount+'개, '+phaseName;
+      });
+    }
+    function saved(state){const data=state?.modelContent??state;if(!data)return;if(Number.isFinite(data.growth))growth.value=Math.min(100,Math.max(10,data.growth));if(Number.isFinite(data.stack))count.value=Math.min(75,Math.max(1,data.stack));}
+    function remember(){window.openai?.setWidgetState?.({modelContent:{view:'poison-mushrooms',growth:Number(growth.value),stack:Number(count.value)},privateContent:null}).catch(()=>{});}
+    saved(window.openai?.widgetState);draw();growth.addEventListener('input',draw);count.addEventListener('input',draw);growth.addEventListener('change',remember);count.addEventListener('change',remember);
+    window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState){saved(event.detail.globals.widgetState);draw();}});
+  })();
+  </script>
+</div>

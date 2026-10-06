@@ -1,0 +1,94 @@
+독버섯 독성 조사와 출처
+확인일: 2026-10-05
+
+이 문서는 게임 효과를 구상하기 위한 조사 메모입니다.
+실제 중독 정보와 게임 수치를 구분하며, 실제 치사량·조리법·치료 절차는 수록하지 않습니다.
+사진 원본의 저작자·라이선스·출처는 ../art/references/sources.json을 확인하세요.
+
+1. 광대버섯 / Amanita muscaria
+혼란, 환각, 흥분, 졸림이 나타나며 심한 경우 혼수로 진행할 수 있습니다.
+독일 BfR은 사망이 매우 드물지만 보고되었다고 설명합니다.
+대개 비교적 빠르게 발현하고 하루 안에 가라앉지만 오래가는 사례도 있습니다.
+
+독일 연방위해평가원 BfR, 2025
+https://www.bfr.bund.de/en/notification/fly-agaric-poison-health-risks-of-fruit-gummies-containing-muscimol-children-are-particularly-at-risk/
+본문의 Potential dangers of the fly agaric 부분은 버섯 자체의 위험을 설명합니다.
+
+CDC MMWR, 2019, Minnesota 2018 중독 사례
+https://www.cdc.gov/mmwr/volumes/68/wr/mm6821a4.htm
+호흡부전으로 인공호흡이 필요했던 중증 사례가 있습니다.
+해당 현장에서 동정된 것은 Amanita muscaria var. guessowii였다는 점을 구분합니다.
+
+일본 후생노동성 종별 자료
+https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000142728.html
+주의: 이 페이지에 실린 별도의 무스카린 사망 증례는 다른 속의 버섯 사례이므로
+광대버섯 자체의 사망 증례로 재인용하지 않습니다.
+
+2. 독우산광대버섯 / Amanita virosa
+6~24시간의 잠복 뒤 구토·설사·복통이 나타날 수 있고, 증상이 줄어든 것처럼 보여도
+간·신장 손상으로 진행해 사망할 수 있는 위험한 중독 양상입니다.
+
+일본 후생노동성 종별 자료
+https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000142727.html
+일부 상세 설명과 증례는 다른 아마톡신 버섯과 공통인 중독 양상을 설명하므로
+모두 독우산광대버섯만의 확정 증례로 취급하지 않습니다.
+
+3. 노란다발버섯 / Hypholoma fasciculare
+노란개암버섯이라는 이름도 사용됩니다.
+구토, 설사, 복통이 주요 증상입니다. 경한 경우 호전할 수 있지만 중증에서는 의료 관리가 필요합니다.
+후생노동성은 심한 탈수, 산증, 경련, 쇼크 및 사망 가능성을 안내합니다.
+이를 곧바로 전형적인 직접 간독성이나 높은 고정 치사율로 해석하지 않습니다.
+
+노르웨이 독극물정보센터 / Helsenorge, 2024 갱신
+https://www.helsenorge.no/en/poison-information/sopp/besk-svovelsopp-er-en-giftig-sopp/
+대개 30분~3시간 사이 발현, 경한 노출에서 24~48시간 내 자연 호전 가능성을 설명합니다.
+
+일본 후생노동성
+https://www.mhlw.go.jp/topics/syokuchu/poison/kinoko_11.html
+약 3시간 발현과 중증 합병증을 설명합니다.
+이전 조사 메모의 10~46시간 수치는 이번 재검토에서 원출처를 다시 확인하지 못했으므로
+이번 설계 근거로 확정하거나 재사용하지 않았습니다.
+
+4. 화경버섯 / Omphalotus japonicus
+화경솔밭버섯이라는 이름도 사용됩니다.
+일부 자료의 Omphalotus guepiniformis, Lampteromyces japonicus 명칭을 함께 확인했습니다.
+급성 구토·설사·복통이 중심입니다. 중증에서는 탈수·쇼크, 이후 장 부종이나 출혈도 생길 수 있습니다.
+반나절 안에 항상 회복하거나 치명 위험이 전혀 없는 버섯으로 설정할 근거는 없습니다.
+
+일본 후생노동성
+https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000142114.html
+발현은 상세 설명에서 30분~3시간, 회복은 다음 날부터 약 10일까지 폭이 있게 설명합니다.
+
+일본농촌의학회지, 2017, 화경버섯 중독 6례
+https://www.jstage.jst.go.jp/article/jjrm/66/4/66_499/_article/-char/ja/
+6명 모두 다음 날 퇴원했으나 2명이 재입원했고,
+그중 1명에게 구토·하혈과 십이지장~공장 벽의 심한 비후가 확인됐습니다.
+이 자료는 중증과 지연성 위장관 합병증을 뒷받침하며 높은 사망률을 산출하는 자료는 아닙니다.
+
+5. 붉은사슴뿔버섯 / Trichoderma cornu-damae
+이전 학명은 Podostroma cornu-damae입니다.
+위장 증상 외에 심한 혈구 감소, 골수 기능 억제, 피부 벗겨짐과 탈모,
+심각한 감염 및 다발성 장기부전이 보고된 위험한 버섯입니다.
+직접 버섯을 먹지 않고 끓인 물을 마신 국내 사망 사례도 확인했습니다.
+해당 사례는 장기간 섭취한 경우로, 한 모금이면 누구나 사망한다는 의미는 아닙니다.
+
+Yonsei Medical Journal, 2013, Two Cases of Mushroom Poisoning by Podostroma Cornu-Damae
+https://www.eymj.org/pdf/10.3349/ymj.2013.54.1.265
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3521283/
+버섯을 끓인 물을 한 달 이상 마신 부부 중 한 명이 심한 혈구 감소,
+패혈증과 다발성 장기부전으로 사망했고 다른 한 명은 입원 치료 후 회복한 보고입니다.
+
+An Elderly Man with Fatal Respiratory Failure after Eating a Poisonous Mushroom Podostroma cornu-damae
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3884116/
+급성 증상과 이후 심각한 호흡부전 및 전신 악화를 보인 별도의 증례입니다.
+
+일본 후생노동성
+https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000143427.html
+중증 중독과 사망 사례를 안내합니다.
+
+조사 한계와 해석
+- 나무위키 페이지는 접근 오류로 읽지 못했습니다. 나무위키 내용을 확인한 것으로 기록하지 않습니다.
+- 종 이름이 비슷한 다른 버섯, 동일 독소군의 설명, 과거 분류명과 개별 확정 증례를 구분합니다.
+- 사례 보고는 가능한 증상을 보여 주지만 전체 환자의 정확한 사망률을 뜻하지 않습니다.
+- 게임의 위험도 구분과 회복 기간은 밸런스 설계값입니다.
+- 수치와 병의 진행 속도는 구현 후 플레이 검증으로 조정해야 합니다.

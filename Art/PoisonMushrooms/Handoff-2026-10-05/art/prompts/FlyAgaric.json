@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "FlyAgaric/PlantA",
+    "prompt": "Use case: stylized-concept.\nAsset: FlyAgaric PlantA mature unit.\nA square isolated game sprite matching the attached existing RimWorld mod mushroom sprite. Very simple flat 2D artwork, thick dark warm-brown continuous outlines, two or three flat color planes only, no texture or realism, slightly elevated three-quarter view. Genuine alpha transparent background, not black, white, or checkerboard. Exactly one centered unit, at least 15 percent clear margin on every side, no typography, no badge, no soil, grass, logs, ground, scene, props, cast shadows or box.\nA single Amanita muscaria fly agaric mushroom: broad red umbrella/domed cap with seven to nine large simple irregular ivory-white spots, white short stem, small white ring. Natural mushroom anatomy, no face.\nReference 1 is the exact game art language to match; reference 2 is the real mushroom for species shape and colors only, never photographic rendering. Use a broadly rounded dome cap angled slightly left; visible short stem.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonA.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-6b5d7a1c-08e3-4025-ae4e-be70455841ad.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantA.png",
+    "mode": "built-in-imagegen"
+  },
+  {
+    "asset": "FlyAgaric/PlantB",
+    "prompt": "Use case: stylized-concept.\nAsset: FlyAgaric PlantB mature unit visual variation, NOT a juvenile.\nA square isolated game sprite matching the attached existing RimWorld mod mushroom sprite. Very simple flat 2D artwork, thick dark warm-brown continuous outlines, two or three flat color planes only, no texture or realism, slightly elevated three-quarter view. Genuine alpha transparent background, not black, white, or checkerboard. Exactly one centered unit, at least 15 percent clear margin on every side, no typography, no badge, no soil, grass, logs, ground, scene, props, cast shadows or box.\nA single Amanita muscaria fly agaric mushroom: broad red umbrella/domed cap with seven to nine large simple irregular ivory-white spots, white short stem, small white ring. Natural mushroom anatomy, no face.\nReference 1 is the exact game art style; reference 2 is real species morphology only. Variation B has a flatter, wider umbrella cap, gently off-center white stem leaning right, with a different arrangement of eight large flat white warts. Clearly one complete adult mushroom.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonB.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-e53078bb-fa0a-4b62-8a40-8a764b4eb648.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantB.png",
+    "mode": "built-in-imagegen"
+  },
+  {
+    "asset": "FlyAgaric/01Low",
+    "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Fly agaric. Red domed caps with several simple large white patches and white short stems.\nQuantity LOW: only 3 small harvested fly agaric mushrooms resting near the bottom inside the box, much of the dark brown interior floor and back wall clearly visible, none projecting above the back rim. Match reference 1's LOW composition exactly.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantA.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-455606cc-1c76-40e2-8c2e-4036166dd051.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/01Low.png",
+    "mode": "built-in-imagegen"
+  },
+  {
+    "asset": "FlyAgaric/02Medium",
+    "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Fly agaric. Red domed caps with several simple large white patches and white short stems.\nQuantity MEDIUM: six small harvested fly agarics loosely filling roughly half the box, caps visible near and below the rim, dark interior visible behind. Match reference 1's MEDIUM amount and arrangement. Not overflowing.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantA.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-0ca647d5-2a5a-44a3-8d52-d5375d7a9154.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/02Medium.png",
+    "mode": "built-in-imagegen"
+  },
+  {
+    "asset": "FlyAgaric/03Full",
+    "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Fly agaric. Red domed caps with several simple large white patches and white short stems.\nQuantity FULL: 12-15 small harvested fly agarics forming a dense shallow mound rising above the back rim exactly as reference 1. Almost no interior floor visible. Many separate readable red caps with white warts; mushrooms densely packed but not a towering pyramid. The tray must keep the same original size and silhouette.",
+    "referenced_image_paths": [
+      "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantA.png",
+      "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+    ],
+    "transparent_background": true,
+    "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-5a27834d-44c0-46e0-bdc3-d4077072800c.png",
+    "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/03Full.png",
+    "mode": "built-in-imagegen"
+  }
+]

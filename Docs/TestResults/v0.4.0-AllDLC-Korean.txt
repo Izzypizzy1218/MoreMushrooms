@@ -1,0 +1,2137 @@
+Rim Mushrooms runtime test
+1.6.4871 rev591
+PASS active language Korean (한국어)
+PASS translated button label
+PASS 11 plant and 10 ingredient defs loaded
+PASS exactly nine cultivable varieties
+PASS matsutake wild only
+PASS resolved def config RMush_PlantBeech
+PASS resolved def config RMush_PlantButton
+PASS resolved def config RMush_PlantEnoki
+PASS resolved def config RMush_PlantEnokiWild
+PASS resolved def config RMush_PlantKingOyster
+PASS resolved def config RMush_PlantLionsMane
+PASS resolved def config RMush_PlantMaitake
+PASS resolved def config RMush_PlantMatsutake
+PASS resolved def config RMush_PlantOyster
+PASS resolved def config RMush_PlantShiitake
+PASS resolved def config RMush_PlantWoodEar
+PASS resolved def config RMush_RawBeech
+PASS resolved def config RMush_RawButton
+PASS resolved def config RMush_RawEnoki
+PASS resolved def config RMush_RawKingOyster
+PASS resolved def config RMush_RawLionsMane
+PASS resolved def config RMush_RawMaitake
+PASS resolved def config RMush_RawMatsutake
+PASS resolved def config RMush_RawOyster
+PASS resolved def config RMush_RawShiitake
+PASS resolved def config RMush_RawWoodEar
+PASS shade-aware plant without light damage RMush_PlantBeech
+PASS native growth rendering RMush_PlantBeech
+PASS wild biome registration RMush_PlantBeech
+PASS plant graphic RMush_PlantBeech 0
+PASS plant graphic RMush_PlantBeech 1
+PASS plant graphic RMush_PlantBeech 2
+PASS mature yield RMush_PlantBeech
+PASS shade-aware plant without light damage RMush_PlantButton
+PASS native growth rendering RMush_PlantButton
+PASS wild biome registration RMush_PlantButton
+PASS plant graphic RMush_PlantButton 0
+PASS plant graphic RMush_PlantButton 1
+PASS plant graphic RMush_PlantButton 2
+PASS mature yield RMush_PlantButton
+PASS shade-aware plant without light damage RMush_PlantEnoki
+PASS native growth rendering RMush_PlantEnoki
+PASS white enoki excluded from wild spawn
+PASS plant graphic RMush_PlantEnoki 0
+PASS plant graphic RMush_PlantEnoki 1
+PASS plant graphic RMush_PlantEnoki 2
+PASS mature yield RMush_PlantEnoki
+PASS shade-aware plant without light damage RMush_PlantEnokiWild
+PASS native growth rendering RMush_PlantEnokiWild
+PASS wild biome registration RMush_PlantEnokiWild
+PASS plant graphic RMush_PlantEnokiWild 0
+PASS plant graphic RMush_PlantEnokiWild 1
+PASS plant graphic RMush_PlantEnokiWild 2
+PASS mature yield RMush_PlantEnokiWild
+PASS shade-aware plant without light damage RMush_PlantKingOyster
+PASS native growth rendering RMush_PlantKingOyster
+PASS wild biome registration RMush_PlantKingOyster
+PASS plant graphic RMush_PlantKingOyster 0
+PASS plant graphic RMush_PlantKingOyster 1
+PASS plant graphic RMush_PlantKingOyster 2
+PASS mature yield RMush_PlantKingOyster
+PASS shade-aware plant without light damage RMush_PlantLionsMane
+PASS native growth rendering RMush_PlantLionsMane
+PASS wild biome registration RMush_PlantLionsMane
+PASS plant graphic RMush_PlantLionsMane 0
+PASS plant graphic RMush_PlantLionsMane 1
+PASS plant graphic RMush_PlantLionsMane 2
+PASS mature yield RMush_PlantLionsMane
+PASS shade-aware plant without light damage RMush_PlantMaitake
+PASS native growth rendering RMush_PlantMaitake
+PASS wild biome registration RMush_PlantMaitake
+PASS plant graphic RMush_PlantMaitake 0
+PASS plant graphic RMush_PlantMaitake 1
+PASS plant graphic RMush_PlantMaitake 2
+PASS mature yield RMush_PlantMaitake
+PASS shade-aware plant without light damage RMush_PlantMatsutake
+PASS native growth rendering RMush_PlantMatsutake
+PASS wild biome registration RMush_PlantMatsutake
+PASS plant graphic RMush_PlantMatsutake 0
+PASS plant graphic RMush_PlantMatsutake 1
+PASS plant graphic RMush_PlantMatsutake 2
+PASS mature yield RMush_PlantMatsutake
+PASS shade-aware plant without light damage RMush_PlantOyster
+PASS native growth rendering RMush_PlantOyster
+PASS wild biome registration RMush_PlantOyster
+PASS plant graphic RMush_PlantOyster 0
+PASS plant graphic RMush_PlantOyster 1
+PASS plant graphic RMush_PlantOyster 2
+PASS mature yield RMush_PlantOyster
+PASS shade-aware plant without light damage RMush_PlantShiitake
+PASS native growth rendering RMush_PlantShiitake
+PASS wild biome registration RMush_PlantShiitake
+PASS plant graphic RMush_PlantShiitake 0
+PASS plant graphic RMush_PlantShiitake 1
+PASS plant graphic RMush_PlantShiitake 2
+PASS mature yield RMush_PlantShiitake
+PASS shade-aware plant without light damage RMush_PlantWoodEar
+PASS native growth rendering RMush_PlantWoodEar
+PASS wild biome registration RMush_PlantWoodEar
+PASS plant graphic RMush_PlantWoodEar 0
+PASS plant graphic RMush_PlantWoodEar 1
+PASS plant graphic RMush_PlantWoodEar 2
+PASS mature yield RMush_PlantWoodEar
+PASS cooking/fungus category RMush_RawBeech
+PASS simple meal ingredient accepted RMush_RawBeech
+PASS rottable ingredient RMush_RawBeech
+PASS stack boundary RMush_RawBeech:1
+PASS stack boundary RMush_RawBeech:25
+PASS stack boundary RMush_RawBeech:26
+PASS stack boundary RMush_RawBeech:50
+PASS stack boundary RMush_RawBeech:51
+PASS stack boundary RMush_RawBeech:75
+PASS split 75 into 50+25 RMush_RawBeech
+PASS merge 50+25 RMush_RawBeech
+PASS carry split RMush_RawBeech
+PASS carried material RMush_RawBeech
+PASS drop and merge RMush_RawBeech
+PASS dropped full material RMush_RawBeech
+PASS cooking/fungus category RMush_RawButton
+PASS simple meal ingredient accepted RMush_RawButton
+PASS rottable ingredient RMush_RawButton
+PASS stack boundary RMush_RawButton:1
+PASS stack boundary RMush_RawButton:25
+PASS stack boundary RMush_RawButton:26
+PASS stack boundary RMush_RawButton:50
+PASS stack boundary RMush_RawButton:51
+PASS stack boundary RMush_RawButton:75
+PASS split 75 into 50+25 RMush_RawButton
+PASS merge 50+25 RMush_RawButton
+PASS carry split RMush_RawButton
+PASS carried material RMush_RawButton
+PASS drop and merge RMush_RawButton
+PASS dropped full material RMush_RawButton
+PASS cooking/fungus category RMush_RawEnoki
+PASS simple meal ingredient accepted RMush_RawEnoki
+PASS rottable ingredient RMush_RawEnoki
+PASS stack boundary RMush_RawEnoki:1
+PASS stack boundary RMush_RawEnoki:25
+PASS stack boundary RMush_RawEnoki:26
+PASS stack boundary RMush_RawEnoki:50
+PASS stack boundary RMush_RawEnoki:51
+PASS stack boundary RMush_RawEnoki:75
+PASS split 75 into 50+25 RMush_RawEnoki
+PASS merge 50+25 RMush_RawEnoki
+PASS carry split RMush_RawEnoki
+PASS carried material RMush_RawEnoki
+PASS drop and merge RMush_RawEnoki
+PASS dropped full material RMush_RawEnoki
+PASS cooking/fungus category RMush_RawKingOyster
+PASS simple meal ingredient accepted RMush_RawKingOyster
+PASS rottable ingredient RMush_RawKingOyster
+PASS stack boundary RMush_RawKingOyster:1
+PASS stack boundary RMush_RawKingOyster:25
+PASS stack boundary RMush_RawKingOyster:26
+PASS stack boundary RMush_RawKingOyster:50
+PASS stack boundary RMush_RawKingOyster:51
+PASS stack boundary RMush_RawKingOyster:75
+PASS split 75 into 50+25 RMush_RawKingOyster
+PASS merge 50+25 RMush_RawKingOyster
+PASS carry split RMush_RawKingOyster
+PASS carried material RMush_RawKingOyster
+PASS drop and merge RMush_RawKingOyster
+PASS dropped full material RMush_RawKingOyster
+PASS cooking/fungus category RMush_RawLionsMane
+PASS simple meal ingredient accepted RMush_RawLionsMane
+PASS rottable ingredient RMush_RawLionsMane
+PASS stack boundary RMush_RawLionsMane:1
+PASS stack boundary RMush_RawLionsMane:25
+PASS stack boundary RMush_RawLionsMane:26
+PASS stack boundary RMush_RawLionsMane:50
+PASS stack boundary RMush_RawLionsMane:51
+PASS stack boundary RMush_RawLionsMane:75
+PASS split 75 into 50+25 RMush_RawLionsMane
+PASS merge 50+25 RMush_RawLionsMane
+PASS carry split RMush_RawLionsMane
+PASS carried material RMush_RawLionsMane
+PASS drop and merge RMush_RawLionsMane
+PASS dropped full material RMush_RawLionsMane
+PASS cooking/fungus category RMush_RawMaitake
+PASS simple meal ingredient accepted RMush_RawMaitake
+PASS rottable ingredient RMush_RawMaitake
+PASS stack boundary RMush_RawMaitake:1
+PASS stack boundary RMush_RawMaitake:25
+PASS stack boundary RMush_RawMaitake:26
+PASS stack boundary RMush_RawMaitake:50
+PASS stack boundary RMush_RawMaitake:51
+PASS stack boundary RMush_RawMaitake:75
+PASS split 75 into 50+25 RMush_RawMaitake
+PASS merge 50+25 RMush_RawMaitake
+PASS carry split RMush_RawMaitake
+PASS carried material RMush_RawMaitake
+PASS drop and merge RMush_RawMaitake
+PASS dropped full material RMush_RawMaitake
+PASS cooking/fungus category RMush_RawMatsutake
+PASS simple meal ingredient accepted RMush_RawMatsutake
+PASS rottable ingredient RMush_RawMatsutake
+PASS stack boundary RMush_RawMatsutake:1
+PASS stack boundary RMush_RawMatsutake:25
+PASS stack boundary RMush_RawMatsutake:26
+PASS stack boundary RMush_RawMatsutake:50
+PASS stack boundary RMush_RawMatsutake:51
+PASS stack boundary RMush_RawMatsutake:75
+PASS split 75 into 50+25 RMush_RawMatsutake
+PASS merge 50+25 RMush_RawMatsutake
+PASS carry split RMush_RawMatsutake
+PASS carried material RMush_RawMatsutake
+PASS drop and merge RMush_RawMatsutake
+PASS dropped full material RMush_RawMatsutake
+PASS cooking/fungus category RMush_RawOyster
+PASS simple meal ingredient accepted RMush_RawOyster
+PASS rottable ingredient RMush_RawOyster
+PASS stack boundary RMush_RawOyster:1
+PASS stack boundary RMush_RawOyster:25
+PASS stack boundary RMush_RawOyster:26
+PASS stack boundary RMush_RawOyster:50
+PASS stack boundary RMush_RawOyster:51
+PASS stack boundary RMush_RawOyster:75
+PASS split 75 into 50+25 RMush_RawOyster
+PASS merge 50+25 RMush_RawOyster
+PASS carry split RMush_RawOyster
+PASS carried material RMush_RawOyster
+PASS drop and merge RMush_RawOyster
+PASS dropped full material RMush_RawOyster
+PASS cooking/fungus category RMush_RawShiitake
+PASS simple meal ingredient accepted RMush_RawShiitake
+PASS rottable ingredient RMush_RawShiitake
+PASS stack boundary RMush_RawShiitake:1
+PASS stack boundary RMush_RawShiitake:25
+PASS stack boundary RMush_RawShiitake:26
+PASS stack boundary RMush_RawShiitake:50
+PASS stack boundary RMush_RawShiitake:51
+PASS stack boundary RMush_RawShiitake:75
+PASS split 75 into 50+25 RMush_RawShiitake
+PASS merge 50+25 RMush_RawShiitake
+PASS carry split RMush_RawShiitake
+PASS carried material RMush_RawShiitake
+PASS drop and merge RMush_RawShiitake
+PASS dropped full material RMush_RawShiitake
+PASS cooking/fungus category RMush_RawWoodEar
+PASS simple meal ingredient accepted RMush_RawWoodEar
+PASS rottable ingredient RMush_RawWoodEar
+PASS stack boundary RMush_RawWoodEar:1
+PASS stack boundary RMush_RawWoodEar:25
+PASS stack boundary RMush_RawWoodEar:26
+PASS stack boundary RMush_RawWoodEar:50
+PASS stack boundary RMush_RawWoodEar:51
+PASS stack boundary RMush_RawWoodEar:75
+PASS split 75 into 50+25 RMush_RawWoodEar
+PASS merge 50+25 RMush_RawWoodEar
+PASS carry split RMush_RawWoodEar
+PASS carried material RMush_RawWoodEar
+PASS drop and merge RMush_RawWoodEar
+PASS dropped full material RMush_RawWoodEar
+PASS shade-aware spawned class RMush_PlantFlyAgaric
+PASS fixture supports growth RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0.49
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0.5
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0.51
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0.75
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantFlyAgaric glow=1
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=1
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS translated 50 percent growth tooltip RMush_PlantFlyAgaric
+PASS roof shade restores full multiplier RMush_PlantFlyAgaric
+PASS roof shade restores actual growth rate RMush_PlantFlyAgaric
+PASS shade removes bright-light penalty from tooltip RMush_PlantFlyAgaric
+PASS night rest still applies RMush_PlantFlyAgaric
+PASS shade-aware spawned class RMush_PlantDestroyingAngel
+PASS fixture supports growth RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0.49
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0.5
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0.51
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0.75
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=1
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=1
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS translated 50 percent growth tooltip RMush_PlantDestroyingAngel
+PASS roof shade restores full multiplier RMush_PlantDestroyingAngel
+PASS roof shade restores actual growth rate RMush_PlantDestroyingAngel
+PASS shade removes bright-light penalty from tooltip RMush_PlantDestroyingAngel
+PASS night rest still applies RMush_PlantDestroyingAngel
+PASS shade-aware spawned class RMush_PlantSulfurTuft
+PASS fixture supports growth RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0.49
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0.5
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0.51
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0.75
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantSulfurTuft glow=1
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=1
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS translated 50 percent growth tooltip RMush_PlantSulfurTuft
+PASS roof shade restores full multiplier RMush_PlantSulfurTuft
+PASS roof shade restores actual growth rate RMush_PlantSulfurTuft
+PASS shade removes bright-light penalty from tooltip RMush_PlantSulfurTuft
+PASS night rest still applies RMush_PlantSulfurTuft
+PASS shade-aware spawned class RMush_PlantTsukiyotake
+PASS fixture supports growth RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0.49
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0.5
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0.51
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0.75
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantTsukiyotake glow=1
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=1
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS translated 50 percent growth tooltip RMush_PlantTsukiyotake
+PASS roof shade restores full multiplier RMush_PlantTsukiyotake
+PASS roof shade restores actual growth rate RMush_PlantTsukiyotake
+PASS shade removes bright-light penalty from tooltip RMush_PlantTsukiyotake
+PASS night rest still applies RMush_PlantTsukiyotake
+PASS shade-aware spawned class RMush_PlantPoisonFireCoral
+PASS fixture supports growth RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0.49
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0.5
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0.51
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0.75
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=1
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=1
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS translated 50 percent growth tooltip RMush_PlantPoisonFireCoral
+PASS roof shade restores full multiplier RMush_PlantPoisonFireCoral
+PASS roof shade restores actual growth rate RMush_PlantPoisonFireCoral
+PASS shade removes bright-light penalty from tooltip RMush_PlantPoisonFireCoral
+PASS night rest still applies RMush_PlantPoisonFireCoral
+PASS shade-aware spawned class RMush_PlantButton
+PASS fixture supports growth RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantButton glow=0
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantButton glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0.49
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantButton glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0.5
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantButton glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0.51
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantButton glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0.75
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantButton glow=1
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=1
+PASS light causes no direct damage RMush_PlantButton
+PASS translated 50 percent growth tooltip RMush_PlantButton
+PASS roof shade restores full multiplier RMush_PlantButton
+PASS roof shade restores actual growth rate RMush_PlantButton
+PASS shade removes bright-light penalty from tooltip RMush_PlantButton
+PASS night rest still applies RMush_PlantButton
+PASS shade-aware spawned class RMush_PlantShiitake
+PASS fixture supports growth RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantShiitake glow=0
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantShiitake glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0.49
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantShiitake glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0.5
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantShiitake glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0.51
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantShiitake glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0.75
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantShiitake glow=1
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=1
+PASS light causes no direct damage RMush_PlantShiitake
+PASS translated 50 percent growth tooltip RMush_PlantShiitake
+PASS roof shade restores full multiplier RMush_PlantShiitake
+PASS roof shade restores actual growth rate RMush_PlantShiitake
+PASS shade removes bright-light penalty from tooltip RMush_PlantShiitake
+PASS night rest still applies RMush_PlantShiitake
+PASS shade-aware spawned class RMush_PlantOyster
+PASS fixture supports growth RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantOyster glow=0
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantOyster glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0.49
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantOyster glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0.5
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantOyster glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0.51
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantOyster glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0.75
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantOyster glow=1
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=1
+PASS light causes no direct damage RMush_PlantOyster
+PASS translated 50 percent growth tooltip RMush_PlantOyster
+PASS roof shade restores full multiplier RMush_PlantOyster
+PASS roof shade restores actual growth rate RMush_PlantOyster
+PASS shade removes bright-light penalty from tooltip RMush_PlantOyster
+PASS night rest still applies RMush_PlantOyster
+PASS shade-aware spawned class RMush_PlantKingOyster
+PASS fixture supports growth RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantKingOyster glow=0
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantKingOyster glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0.49
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantKingOyster glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0.5
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantKingOyster glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0.51
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantKingOyster glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0.75
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantKingOyster glow=1
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=1
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS translated 50 percent growth tooltip RMush_PlantKingOyster
+PASS roof shade restores full multiplier RMush_PlantKingOyster
+PASS roof shade restores actual growth rate RMush_PlantKingOyster
+PASS shade removes bright-light penalty from tooltip RMush_PlantKingOyster
+PASS night rest still applies RMush_PlantKingOyster
+PASS shade-aware spawned class RMush_PlantEnoki
+PASS fixture supports growth RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantEnoki glow=0
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantEnoki glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0.49
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantEnoki glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0.5
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantEnoki glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0.51
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantEnoki glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0.75
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantEnoki glow=1
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=1
+PASS light causes no direct damage RMush_PlantEnoki
+PASS translated 50 percent growth tooltip RMush_PlantEnoki
+PASS roof shade restores full multiplier RMush_PlantEnoki
+PASS roof shade restores actual growth rate RMush_PlantEnoki
+PASS shade removes bright-light penalty from tooltip RMush_PlantEnoki
+PASS night rest still applies RMush_PlantEnoki
+PASS shade-aware spawned class RMush_PlantEnokiWild
+PASS fixture supports growth RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantEnokiWild glow=0
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantEnokiWild glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0.49
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantEnokiWild glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0.5
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantEnokiWild glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0.51
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantEnokiWild glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0.75
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantEnokiWild glow=1
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=1
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS translated 50 percent growth tooltip RMush_PlantEnokiWild
+PASS roof shade restores full multiplier RMush_PlantEnokiWild
+PASS roof shade restores actual growth rate RMush_PlantEnokiWild
+PASS shade removes bright-light penalty from tooltip RMush_PlantEnokiWild
+PASS night rest still applies RMush_PlantEnokiWild
+PASS shade-aware spawned class RMush_PlantWoodEar
+PASS fixture supports growth RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantWoodEar glow=0
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantWoodEar glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0.49
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantWoodEar glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0.5
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantWoodEar glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0.51
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantWoodEar glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0.75
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantWoodEar glow=1
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=1
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS translated 50 percent growth tooltip RMush_PlantWoodEar
+PASS roof shade restores full multiplier RMush_PlantWoodEar
+PASS roof shade restores actual growth rate RMush_PlantWoodEar
+PASS shade removes bright-light penalty from tooltip RMush_PlantWoodEar
+PASS night rest still applies RMush_PlantWoodEar
+PASS shade-aware spawned class RMush_PlantBeech
+PASS fixture supports growth RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantBeech glow=0
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantBeech glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0.49
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantBeech glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0.5
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantBeech glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0.51
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantBeech glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0.75
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantBeech glow=1
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=1
+PASS light causes no direct damage RMush_PlantBeech
+PASS translated 50 percent growth tooltip RMush_PlantBeech
+PASS roof shade restores full multiplier RMush_PlantBeech
+PASS roof shade restores actual growth rate RMush_PlantBeech
+PASS shade removes bright-light penalty from tooltip RMush_PlantBeech
+PASS night rest still applies RMush_PlantBeech
+PASS shade-aware spawned class RMush_PlantMaitake
+PASS fixture supports growth RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantMaitake glow=0
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantMaitake glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0.49
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantMaitake glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0.5
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantMaitake glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0.51
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantMaitake glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0.75
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantMaitake glow=1
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=1
+PASS light causes no direct damage RMush_PlantMaitake
+PASS translated 50 percent growth tooltip RMush_PlantMaitake
+PASS roof shade restores full multiplier RMush_PlantMaitake
+PASS roof shade restores actual growth rate RMush_PlantMaitake
+PASS shade removes bright-light penalty from tooltip RMush_PlantMaitake
+PASS night rest still applies RMush_PlantMaitake
+PASS shade-aware spawned class RMush_PlantLionsMane
+PASS fixture supports growth RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantLionsMane glow=0
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantLionsMane glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0.49
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantLionsMane glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0.5
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantLionsMane glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0.51
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantLionsMane glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0.75
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantLionsMane glow=1
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=1
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS translated 50 percent growth tooltip RMush_PlantLionsMane
+PASS roof shade restores full multiplier RMush_PlantLionsMane
+PASS roof shade restores actual growth rate RMush_PlantLionsMane
+PASS shade removes bright-light penalty from tooltip RMush_PlantLionsMane
+PASS night rest still applies RMush_PlantLionsMane
+PASS shade-aware spawned class RMush_PlantMatsutake
+PASS fixture supports growth RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantMatsutake glow=0
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantMatsutake glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0.49
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantMatsutake glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0.5
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantMatsutake glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0.51
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantMatsutake glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0.75
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantMatsutake glow=1
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=1
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS translated 50 percent growth tooltip RMush_PlantMatsutake
+PASS roof shade restores full multiplier RMush_PlantMatsutake
+PASS roof shade restores actual growth rate RMush_PlantMatsutake
+PASS shade removes bright-light penalty from tooltip RMush_PlantMatsutake
+PASS night rest still applies RMush_PlantMatsutake
+PASS shade-aware spawned class RMush_PlantAssorted
+PASS fixture supports growth RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantAssorted glow=0
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantAssorted glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0.49
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantAssorted glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0.5
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantAssorted glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0.51
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantAssorted glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0.75
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantAssorted glow=1
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=1
+PASS light causes no direct damage RMush_PlantAssorted
+PASS translated 50 percent growth tooltip RMush_PlantAssorted
+PASS roof shade restores full multiplier RMush_PlantAssorted
+PASS roof shade restores actual growth rate RMush_PlantAssorted
+PASS shade removes bright-light penalty from tooltip RMush_PlantAssorted
+PASS night rest still applies RMush_PlantAssorted
+PASS vanilla rice class and sunlight growth unaffected
+PASS vanilla nutrifungus retains its own light rules
+PASS native growing workers resolve assorted support without Harmony
+PASS assorted selection resolved and sowable
+PASS native growing-zone crop menu includes assorted mushrooms
+PASS translated assorted crop entry
+PASS assorted excludes wild-only varieties
+PASS assorted skill 5 cannot sow
+PASS automatic sow scan excludes under-skilled assorted zone
+PASS automatic sow scan includes skill 6 assorted zone
+PASS equal-probability native sow samples RMush_PlantButton=220/1800
+PASS equal-probability native sow samples RMush_PlantShiitake=216/1800
+PASS equal-probability native sow samples RMush_PlantOyster=179/1800
+PASS equal-probability native sow samples RMush_PlantKingOyster=188/1800
+PASS equal-probability native sow samples RMush_PlantEnoki=195/1800
+PASS equal-probability native sow samples RMush_PlantWoodEar=192/1800
+PASS equal-probability native sow samples RMush_PlantBeech=217/1800
+PASS equal-probability native sow samples RMush_PlantMaitake=213/1800
+PASS equal-probability native sow samples RMush_PlantLionsMane=180/1800
+PASS assorted never cuts/replants its growing RMush_PlantButton
+PASS automatic assorted harvest with cutting disabled RMush_PlantButton
+PASS native harvest queue accepts assorted member RMush_PlantButton
+PASS assorted never cuts/replants its growing RMush_PlantShiitake
+PASS automatic assorted harvest with cutting disabled RMush_PlantShiitake
+PASS native harvest queue accepts assorted member RMush_PlantShiitake
+PASS assorted never cuts/replants its growing RMush_PlantOyster
+PASS automatic assorted harvest with cutting disabled RMush_PlantOyster
+PASS native harvest queue accepts assorted member RMush_PlantOyster
+PASS assorted never cuts/replants its growing RMush_PlantKingOyster
+PASS automatic assorted harvest with cutting disabled RMush_PlantKingOyster
+PASS native harvest queue accepts assorted member RMush_PlantKingOyster
+PASS assorted never cuts/replants its growing RMush_PlantEnoki
+PASS automatic assorted harvest with cutting disabled RMush_PlantEnoki
+PASS native harvest queue accepts assorted member RMush_PlantEnoki
+PASS assorted never cuts/replants its growing RMush_PlantWoodEar
+PASS automatic assorted harvest with cutting disabled RMush_PlantWoodEar
+PASS native harvest queue accepts assorted member RMush_PlantWoodEar
+PASS assorted never cuts/replants its growing RMush_PlantBeech
+PASS automatic assorted harvest with cutting disabled RMush_PlantBeech
+PASS native harvest queue accepts assorted member RMush_PlantBeech
+PASS assorted never cuts/replants its growing RMush_PlantMaitake
+PASS automatic assorted harvest with cutting disabled RMush_PlantMaitake
+PASS native harvest queue accepts assorted member RMush_PlantMaitake
+PASS assorted never cuts/replants its growing RMush_PlantLionsMane
+PASS automatic assorted harvest with cutting disabled RMush_PlantLionsMane
+PASS native harvest queue accepts assorted member RMush_PlantLionsMane
+PASS assorted honors sow-disabled zone
+PASS individual mushroom sow unchanged
+PASS vanilla rice sow unchanged
+PASS fixture created; live sow/harvest jobs starting
+PASS assorted actual sow job selects species cycle=0 job=Sow (Job_1814) A = (143, 0, 125) selection=RMush_PlantAssorted allowSow=True skill=20 temperature=2.968045 things=
+PASS pawn actually planted assorted member RMush_PlantWoodEar
+PASS actual assorted planting is kept until harvest
+PASS automatic worker recognizes mature assorted crop
+PASS actual assorted harvest yields chosen species RMush_RawWoodEar
+PASS assorted actual sow job selects species cycle=1 job=Sow (Job_1832) A = (143, 0, 125) selection=RMush_PlantAssorted allowSow=True skill=20 temperature=2.996607 things=
+PASS pawn actually planted assorted member RMush_PlantOyster
+PASS actual assorted planting is kept until harvest
+PASS automatic worker recognizes mature assorted crop
+PASS actual assorted harvest yields chosen species RMush_RawOyster
+PASS assorted actual sow job selects species cycle=2 job=Sow (Job_1850) A = (143, 0, 125) selection=RMush_PlantAssorted allowSow=True skill=20 temperature=3.03826 things=
+PASS pawn actually planted assorted member RMush_PlantMaitake
+PASS actual assorted planting is kept until harvest
+PASS hydroponics fixture remains inside isolated map
+PASS actual hydroponics basin is powered through native battery/conduit network
+PASS selected vanilla hydroponics basin creates native crop-selection command
+PASS hydroponics assorted pool still contains exactly nine real species
+PASS native hydroponics crop menu includes RMush_PlantBeech
+PASS native hydroponics crop menu includes RMush_PlantButton
+PASS native hydroponics crop menu includes RMush_PlantEnoki
+PASS native hydroponics crop menu includes RMush_PlantKingOyster
+PASS native hydroponics crop menu includes RMush_PlantLionsMane
+PASS native hydroponics crop menu includes RMush_PlantMaitake
+PASS native hydroponics crop menu includes RMush_PlantOyster
+PASS native hydroponics crop menu includes RMush_PlantShiitake
+PASS native hydroponics crop menu includes RMush_PlantWoodEar
+PASS native hydroponics crop menu includes RMush_PlantAssorted
+PASS wild-only mushroom is excluded from hydroponics menu RMush_PlantMatsutake
+PASS wild-only mushroom is excluded from hydroponics menu RMush_PlantEnokiWild
+PASS vanilla rice remains selectable in hydroponics menu
+PASS actual hydroponics building overrides soil with 280 percent fertility
+PASS assorted selection resolves from actual Building_PlantGrower
+PASS hydroponic assorted rejects skill 5 in jobs and automatic scan
+PASS hydroponic assorted accepts skill 6 in automatic scan
+PASS hydroponic assorted respects basin blackout sow gate
+PASS native automatic scan excludes unpowered hydroponics basin
+PASS mushrooms retain vanilla hydroponics blackout damage
+PASS assorted basin never cuts growing member RMush_PlantBeech
+PASS automatic assorted basin harvest accepts every real member RMush_PlantBeech
+PASS assorted basin never cuts growing member RMush_PlantButton
+PASS automatic assorted basin harvest accepts every real member RMush_PlantButton
+PASS assorted basin never cuts growing member RMush_PlantEnoki
+PASS automatic assorted basin harvest accepts every real member RMush_PlantEnoki
+PASS assorted basin never cuts growing member RMush_PlantKingOyster
+PASS automatic assorted basin harvest accepts every real member RMush_PlantKingOyster
+PASS assorted basin never cuts growing member RMush_PlantLionsMane
+PASS automatic assorted basin harvest accepts every real member RMush_PlantLionsMane
+PASS assorted basin never cuts growing member RMush_PlantMaitake
+PASS automatic assorted basin harvest accepts every real member RMush_PlantMaitake
+PASS assorted basin never cuts growing member RMush_PlantOyster
+PASS automatic assorted basin harvest accepts every real member RMush_PlantOyster
+PASS assorted basin never cuts growing member RMush_PlantShiitake
+PASS automatic assorted basin harvest accepts every real member RMush_PlantShiitake
+PASS assorted basin never cuts growing member RMush_PlantWoodEar
+PASS automatic assorted basin harvest accepts every real member RMush_PlantWoodEar
+PASS native automatic sow scan includes selected powered basin RMush_PlantBeech cycle=0
+PASS native hydroponic sow job chooses real species RMush_PlantBeech cycle=0 job=Sow (Job_1854) A = (141, 0, 115) power=True temperature=3.080918 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantBeech
+PASS pawn actually sowed hydroponic RMush_PlantBeech cycle=0
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantBeech
+PASS native 280 percent basin fertility reaches planted RMush_PlantBeech
+PASS hydroponic fertility multiplier RMush_PlantBeech=1.54
+PASS native basin light and temperature support growth RMush_PlantBeech
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantBeech
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantBeech
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantBeech
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantBeech
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantBeech
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantBeech
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantBeech
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawBeech cycle=0
+PASS native automatic sow scan includes selected powered basin RMush_PlantButton cycle=1
+PASS native hydroponic sow job chooses real species RMush_PlantButton cycle=1 job=Sow (Job_1872) A = (141, 0, 115) power=True temperature=10.43799 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantButton
+PASS pawn actually sowed hydroponic RMush_PlantButton cycle=1
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantButton
+PASS native 280 percent basin fertility reaches planted RMush_PlantButton
+PASS hydroponic fertility multiplier RMush_PlantButton=1.54
+PASS native basin light and temperature support growth RMush_PlantButton
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantButton
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantButton
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantButton
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantButton
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantButton
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantButton
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantButton
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawButton cycle=1
+PASS native automatic sow scan includes selected powered basin RMush_PlantEnoki cycle=2
+PASS native hydroponic sow job chooses real species RMush_PlantEnoki cycle=2 job=Sow (Job_1890) A = (141, 0, 115) power=True temperature=10.565 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantEnoki
+PASS pawn actually sowed hydroponic RMush_PlantEnoki cycle=2
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantEnoki
+PASS native 280 percent basin fertility reaches planted RMush_PlantEnoki
+PASS hydroponic fertility multiplier RMush_PlantEnoki=1.54
+PASS native basin light and temperature support growth RMush_PlantEnoki
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantEnoki
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantEnoki
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantEnoki
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantEnoki
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantEnoki
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantEnoki
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantEnoki
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawEnoki cycle=2
+PASS native automatic sow scan includes selected powered basin RMush_PlantKingOyster cycle=3
+PASS native hydroponic sow job chooses real species RMush_PlantKingOyster cycle=3 job=Sow (Job_1908) A = (141, 0, 115) power=True temperature=15.82345 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantKingOyster
+PASS pawn actually sowed hydroponic RMush_PlantKingOyster cycle=3
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantKingOyster
+PASS native 280 percent basin fertility reaches planted RMush_PlantKingOyster
+PASS hydroponic fertility multiplier RMush_PlantKingOyster=1.54
+PASS native basin light and temperature support growth RMush_PlantKingOyster
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantKingOyster
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantKingOyster
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantKingOyster
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantKingOyster
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantKingOyster
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantKingOyster
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantKingOyster
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawKingOyster cycle=3
+PASS native automatic sow scan includes selected powered basin RMush_PlantLionsMane cycle=4
+PASS native hydroponic sow job chooses real species RMush_PlantLionsMane cycle=4 job=Sow (Job_1923) A = (141, 0, 115) power=True temperature=21.93644 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantLionsMane
+PASS pawn actually sowed hydroponic RMush_PlantLionsMane cycle=4
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantLionsMane
+PASS native 280 percent basin fertility reaches planted RMush_PlantLionsMane
+PASS hydroponic fertility multiplier RMush_PlantLionsMane=1.54
+PASS native basin light and temperature support growth RMush_PlantLionsMane
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantLionsMane
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantLionsMane
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantLionsMane
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantLionsMane
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantLionsMane
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantLionsMane
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantLionsMane
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawLionsMane cycle=4
+PASS native automatic sow scan includes selected powered basin RMush_PlantMaitake cycle=5
+PASS native hydroponic sow job chooses real species RMush_PlantMaitake cycle=5 job=Sow (Job_1942) A = (141, 0, 115) power=True temperature=26.42074 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantMaitake
+PASS pawn actually sowed hydroponic RMush_PlantMaitake cycle=5
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantMaitake
+PASS native 280 percent basin fertility reaches planted RMush_PlantMaitake
+PASS hydroponic fertility multiplier RMush_PlantMaitake=1.54
+PASS native basin light and temperature support growth RMush_PlantMaitake
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantMaitake
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantMaitake
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantMaitake
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantMaitake
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantMaitake
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantMaitake
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantMaitake
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawMaitake cycle=5
+PASS native automatic sow scan includes selected powered basin RMush_PlantOyster cycle=6
+PASS native hydroponic sow job chooses real species RMush_PlantOyster cycle=6 job=Sow (Job_1962) A = (141, 0, 115) power=True temperature=23.73346 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantOyster
+PASS pawn actually sowed hydroponic RMush_PlantOyster cycle=6
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantOyster
+PASS native 280 percent basin fertility reaches planted RMush_PlantOyster
+PASS hydroponic fertility multiplier RMush_PlantOyster=1.54
+PASS native basin light and temperature support growth RMush_PlantOyster
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantOyster
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantOyster
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantOyster
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantOyster
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantOyster
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantOyster
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantOyster
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawOyster cycle=6
+PASS native automatic sow scan includes selected powered basin RMush_PlantShiitake cycle=7
+PASS native hydroponic sow job chooses real species RMush_PlantShiitake cycle=7 job=Sow (Job_1976) A = (141, 0, 115) power=True temperature=23.91233 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantShiitake
+PASS pawn actually sowed hydroponic RMush_PlantShiitake cycle=7
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantShiitake
+PASS native 280 percent basin fertility reaches planted RMush_PlantShiitake
+PASS hydroponic fertility multiplier RMush_PlantShiitake=1.54
+PASS native basin light and temperature support growth RMush_PlantShiitake
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantShiitake
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantShiitake
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantShiitake
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantShiitake
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantShiitake
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantShiitake
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantShiitake
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawShiitake cycle=7
+PASS native automatic sow scan includes selected powered basin RMush_PlantWoodEar cycle=8
+PASS native hydroponic sow job chooses real species RMush_PlantWoodEar cycle=8 job=Sow (Job_1992) A = (141, 0, 115) power=True temperature=27.12533 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantWoodEar
+PASS pawn actually sowed hydroponic RMush_PlantWoodEar cycle=8
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantWoodEar
+PASS native 280 percent basin fertility reaches planted RMush_PlantWoodEar
+PASS hydroponic fertility multiplier RMush_PlantWoodEar=1.54
+PASS native basin light and temperature support growth RMush_PlantWoodEar
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantWoodEar
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantWoodEar
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantWoodEar
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantWoodEar
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantWoodEar
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantWoodEar
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantWoodEar
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawWoodEar cycle=8
+PASS native automatic sow scan includes selected powered basin Plant_Rice cycle=9
+PASS native hydroponic sow job chooses real species Plant_Rice cycle=9 job=Sow (Job_2010) A = (141, 0, 115) power=True temperature=28.05104 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit,RMush_RawWoodEar
+PASS selected actual crop accepts basin fertility and planting cell Plant_Rice
+PASS pawn actually sowed hydroponic Plant_Rice cycle=9
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting Plant_Rice
+PASS native 280 percent basin fertility reaches planted Plant_Rice
+PASS hydroponic fertility multiplier Plant_Rice=2.8
+PASS native basin light and temperature support growth Plant_Rice
+PASS vanilla hydroponic rice retains native class and full-light growth
+PASS actual hydroponic growth tick follows selected species growDays Plant_Rice
+PASS native automatic harvester recognizes mature hydroponic Plant_Rice
+PASS native hydroponic harvest queue contains actual planted species Plant_Rice
+PASS actual hydroponic pawn harvest yields selected ingredient RawRice cycle=9
+PASS native automatic sow scan includes selected powered basin RMush_PlantAssorted cycle=10
+PASS native hydroponic sow job chooses real species RMush_PlantAssorted cycle=10 job=Sow (Job_2032) A = (141, 0, 115) power=True temperature=27.19203 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit,RMush_RawWoodEar
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantBeech
+PASS pawn actually sowed hydroponic RMush_PlantBeech cycle=10
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantBeech
+PASS native 280 percent basin fertility reaches planted RMush_PlantBeech
+PASS hydroponic fertility multiplier RMush_PlantBeech=1.54
+PASS native basin light and temperature support growth RMush_PlantBeech
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantBeech
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantBeech
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantBeech
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantBeech
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantBeech
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantBeech
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantBeech
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawBeech cycle=10
+PASS native automatic sow scan includes selected powered basin RMush_PlantAssorted cycle=11
+PASS native hydroponic sow job chooses real species RMush_PlantAssorted cycle=11 job=Sow (Job_2043) A = (141, 0, 115) power=True temperature=25.49492 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit,RMush_RawWoodEar
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantMaitake
+PASS pawn actually sowed hydroponic RMush_PlantMaitake cycle=11
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantMaitake
+PASS native 280 percent basin fertility reaches planted RMush_PlantMaitake
+PASS hydroponic fertility multiplier RMush_PlantMaitake=1.54
+PASS native basin light and temperature support growth RMush_PlantMaitake
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantMaitake
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantMaitake
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantMaitake
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantMaitake
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantMaitake
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantMaitake
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantMaitake
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawMaitake cycle=11
+PASS native automatic sow scan includes selected powered basin RMush_PlantAssorted cycle=12
+PASS native hydroponic sow job chooses real species RMush_PlantAssorted cycle=12 job=Sow (Job_2060) A = (141, 0, 115) power=True temperature=26.77181 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit,RMush_RawWoodEar
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantKingOyster
+PASS pawn actually sowed hydroponic RMush_PlantKingOyster cycle=12
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantKingOyster
+PASS native 280 percent basin fertility reaches planted RMush_PlantKingOyster
+PASS hydroponic fertility multiplier RMush_PlantKingOyster=1.54
+PASS native basin light and temperature support growth RMush_PlantKingOyster
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantKingOyster
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantKingOyster
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantKingOyster
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantKingOyster
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantKingOyster
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantKingOyster
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantKingOyster
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawKingOyster cycle=12
+PASS native automatic sow scan includes selected powered basin RMush_PlantAssorted cycle=13
+PASS native hydroponic sow job chooses real species RMush_PlantAssorted cycle=13 job=Sow (Job_2076) A = (141, 0, 115) power=True temperature=27.8052 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit,RMush_RawWoodEar
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantBeech
+PASS pawn actually sowed hydroponic RMush_PlantBeech cycle=13
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantBeech
+PASS native 280 percent basin fertility reaches planted RMush_PlantBeech
+PASS hydroponic fertility multiplier RMush_PlantBeech=1.54
+PASS native basin light and temperature support growth RMush_PlantBeech
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantBeech
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantBeech
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantBeech
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantBeech
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantBeech
+PASS assorted hydroponics save fixture retains chosen variety and basin selection
+PASS three mood groups plus matsutake premium
+PASS memory def config RMush_RawButton
+PASS actual Ingested consumes RMush_RawButton
+PASS native meal/raw/ideology memories retained RMush_RawButton
+PASS raw one bonus RMush_RawButton
+PASS raw mood +3
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawButton
+PASS cooked fine meal mood +3
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawButton
+PASS expires at six-hour boundary RMush_RawButton
+PASS expired memory removed by native interval RMush_RawButton
+PASS memory def config RMush_RawOyster
+PASS actual Ingested consumes RMush_RawOyster
+PASS native meal/raw/ideology memories retained RMush_RawOyster
+PASS raw one bonus RMush_RawOyster
+PASS raw mood +3
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawOyster
+PASS cooked fine meal mood +3
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawOyster
+PASS expires at six-hour boundary RMush_RawOyster
+PASS expired memory removed by native interval RMush_RawOyster
+PASS memory def config RMush_RawEnoki
+PASS actual Ingested consumes RMush_RawEnoki
+PASS native meal/raw/ideology memories retained RMush_RawEnoki
+PASS raw one bonus RMush_RawEnoki
+PASS raw mood +3
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawEnoki
+PASS cooked fine meal mood +3
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawEnoki
+PASS expires at six-hour boundary RMush_RawEnoki
+PASS expired memory removed by native interval RMush_RawEnoki
+PASS memory def config RMush_RawShiitake
+PASS actual Ingested consumes RMush_RawShiitake
+PASS native meal/raw/ideology memories retained RMush_RawShiitake
+PASS raw one bonus RMush_RawShiitake
+PASS raw mood +5
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawShiitake
+PASS cooked fine meal mood +5
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawShiitake
+PASS expires at six-hour boundary RMush_RawShiitake
+PASS expired memory removed by native interval RMush_RawShiitake
+PASS memory def config RMush_RawKingOyster
+PASS actual Ingested consumes RMush_RawKingOyster
+PASS native meal/raw/ideology memories retained RMush_RawKingOyster
+PASS raw one bonus RMush_RawKingOyster
+PASS raw mood +5
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawKingOyster
+PASS cooked fine meal mood +5
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawKingOyster
+PASS expires at six-hour boundary RMush_RawKingOyster
+PASS expired memory removed by native interval RMush_RawKingOyster
+PASS memory def config RMush_RawBeech
+PASS actual Ingested consumes RMush_RawBeech
+PASS native meal/raw/ideology memories retained RMush_RawBeech
+PASS raw one bonus RMush_RawBeech
+PASS raw mood +5
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawBeech
+PASS cooked fine meal mood +5
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawBeech
+PASS expires at six-hour boundary RMush_RawBeech
+PASS expired memory removed by native interval RMush_RawBeech
+PASS memory def config RMush_RawWoodEar
+PASS actual Ingested consumes RMush_RawWoodEar
+PASS native meal/raw/ideology memories retained RMush_RawWoodEar
+PASS raw one bonus RMush_RawWoodEar
+PASS raw mood +7
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawWoodEar
+PASS cooked fine meal mood +7
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawWoodEar
+PASS expires at six-hour boundary RMush_RawWoodEar
+PASS expired memory removed by native interval RMush_RawWoodEar
+PASS memory def config RMush_RawMaitake
+PASS actual Ingested consumes RMush_RawMaitake
+PASS native meal/raw/ideology memories retained RMush_RawMaitake
+PASS raw one bonus RMush_RawMaitake
+PASS raw mood +7
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawMaitake
+PASS cooked fine meal mood +7
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawMaitake
+PASS expires at six-hour boundary RMush_RawMaitake
+PASS expired memory removed by native interval RMush_RawMaitake
+PASS memory def config RMush_RawLionsMane
+PASS actual Ingested consumes RMush_RawLionsMane
+PASS native meal/raw/ideology memories retained RMush_RawLionsMane
+PASS raw one bonus RMush_RawLionsMane
+PASS raw mood +7
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawLionsMane
+PASS cooked fine meal mood +7
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawLionsMane
+PASS expires at six-hour boundary RMush_RawLionsMane
+PASS expired memory removed by native interval RMush_RawLionsMane
+PASS memory def config RMush_RawMatsutake
+PASS actual Ingested consumes RMush_RawMatsutake
+PASS native meal/raw/ideology memories retained RMush_RawMatsutake
+PASS raw one bonus RMush_RawMatsutake
+PASS raw mood +10
+PASS raw six hours / 15000 ticks
+PASS actual Ingested consumes MealFine
+PASS native meal/raw/ideology memories retained MealFine
+PASS cooked fine meal one bonus RMush_RawMatsutake
+PASS cooked fine meal mood +10
+PASS cooked fine meal six hours / 15000 ticks
+PASS present before six-hour boundary RMush_RawMatsutake
+PASS expires at six-hour boundary RMush_RawMatsutake
+PASS expired memory removed by native interval RMush_RawMatsutake
+PASS actual Ingested consumes MealSimple
+PASS native meal/raw/ideology memories retained MealSimple
+PASS mixed ingredients in either order one bonus RMush_RawMatsutake
+PASS mixed ingredients in either order mood +10
+PASS mixed ingredients in either order six hours / 15000 ticks
+PASS actual Ingested consumes MealSimple
+PASS native meal/raw/ideology memories retained MealSimple
+PASS mixed ingredients in either order one bonus RMush_RawMatsutake
+PASS mixed ingredients in either order mood +10
+PASS mixed ingredients in either order six hours / 15000 ticks
+PASS actual Ingested consumes RMush_RawButton
+PASS native meal/raw/ideology memories retained RMush_RawButton
+PASS weaker variety neither stacks nor extends stronger bonus
+PASS actual Ingested consumes RMush_RawMatsutake
+PASS native meal/raw/ideology memories retained RMush_RawMatsutake
+PASS same variety refreshes duration without stacking
+PASS actual Ingested consumes RMush_RawButton
+PASS native meal/raw/ideology memories retained RMush_RawButton
+PASS actual Ingested consumes RMush_RawMatsutake
+PASS native meal/raw/ideology memories retained RMush_RawMatsutake
+PASS stronger replaces weaker one bonus RMush_RawMatsutake
+PASS stronger replaces weaker mood +10
+PASS stronger replaces weaker six hours / 15000 ticks
+PASS actual Ingested consumes RMush_RawButton
+PASS native meal/raw/ideology memories retained RMush_RawButton
+PASS expired stronger cannot block new weaker one bonus RMush_RawButton
+PASS expired stronger cannot block new weaker mood +3
+PASS expired stronger cannot block new weaker six hours / 15000 ticks
+PASS actual Ingested consumes RMush_RawButton
+PASS native meal/raw/ideology memories retained RMush_RawButton
+PASS actual Ingested consumes RMush_RawEnoki
+PASS native meal/raw/ideology memories retained RMush_RawEnoki
+PASS different variety in same tier replaces label without stacking one bonus RMush_RawEnoki
+PASS different variety in same tier replaces label without stacking mood +3
+PASS different variety in same tier replaces label without stacking six hours / 15000 ticks
+PASS different variety in tier +3 refreshes six-hour duration
+PASS actual Ingested consumes RMush_RawShiitake
+PASS native meal/raw/ideology memories retained RMush_RawShiitake
+PASS actual Ingested consumes RMush_RawBeech
+PASS native meal/raw/ideology memories retained RMush_RawBeech
+PASS different variety in same tier replaces label without stacking one bonus RMush_RawBeech
+PASS different variety in same tier replaces label without stacking mood +5
+PASS different variety in same tier replaces label without stacking six hours / 15000 ticks
+PASS different variety in tier +5 refreshes six-hour duration
+PASS actual Ingested consumes RMush_RawWoodEar
+PASS native meal/raw/ideology memories retained RMush_RawWoodEar
+PASS actual Ingested consumes RMush_RawLionsMane
+PASS native meal/raw/ideology memories retained RMush_RawLionsMane
+PASS different variety in same tier replaces label without stacking one bonus RMush_RawLionsMane
+PASS different variety in same tier replaces label without stacking mood +7
+PASS different variety in same tier replaces label without stacking six hours / 15000 ticks
+PASS different variety in tier +7 refreshes six-hour duration
+PASS actual Ingested consumes RawFungus
+PASS native meal/raw/ideology memories retained RawFungus
+PASS actual Ingested consumes MealSimple
+PASS native meal/raw/ideology memories retained MealSimple
+PASS vanilla fungus and mushroom-free meals grant no custom bonus
+PASS animal has no mood need
+PASS animal safely eats mushroom without mood need
+PASS actual Ingested consumes RMush_RawMatsutake
+PASS native meal/raw/ideology memories retained RMush_RawMatsutake
+PASS active matsutake memory prepared for save/load at age 5000
+PASS poison: controlled healthy doctor has enabled medical work, effective skill 20 and positive native tend quality=1.55
+PASS poison: resolved raw/plant/condition defs FlyAgaric
+PASS poison: native vomiting stages are absent in latency and species-appropriate after symptoms FlyAgaric
+PASS poison: harvested material is excluded from autonomous nutrition and drug taking FlyAgaric
+PASS poison: wild-only poison excluded from sowing, assorted crop and direct plant food FlyAgaric
+PASS poison: poisonous wild plant itself has no native ingestible object FlyAgaric
+PASS poison: native crop selection excludes poisonous species FlyAgaric Zone_Growing
+PASS poison: native crop selection excludes poisonous species FlyAgaric Building_PlantGrower
+PASS poison: native harvesting points to correct poisonous material FlyAgaric
+PASS poison: wild biome registration FlyAgaric
+PASS poison: ordinary recipe excludes poison CookMealSimple FlyAgaric
+PASS poison: ordinary recipe excludes poison CookMealFine FlyAgaric
+PASS poison: ordinary recipe excludes poison CookMealLavish FlyAgaric
+PASS poison: mature native harvest yield and plant texture FlyAgaric
+PASS poison: native random plant graphic loads both approved A/B variants FlyAgaric
+PASS poison: native A/B plant texture identities FlyAgaric
+PASS poison: poison material stack graphic FlyAgaric 1
+PASS poison: poison material stack graphic FlyAgaric 25
+PASS poison: poison material stack graphic FlyAgaric 26
+PASS poison: poison material stack graphic FlyAgaric 50
+PASS poison: poison material stack graphic FlyAgaric 51
+PASS poison: poison material stack graphic FlyAgaric 75
+PASS poison: resolved raw/plant/condition defs DestroyingAngel
+PASS poison: native vomiting stages are absent in latency and species-appropriate after symptoms DestroyingAngel
+PASS poison: harvested material is excluded from autonomous nutrition and drug taking DestroyingAngel
+PASS poison: wild-only poison excluded from sowing, assorted crop and direct plant food DestroyingAngel
+PASS poison: poisonous wild plant itself has no native ingestible object DestroyingAngel
+PASS poison: native crop selection excludes poisonous species DestroyingAngel Zone_Growing
+PASS poison: native crop selection excludes poisonous species DestroyingAngel Building_PlantGrower
+PASS poison: native harvesting points to correct poisonous material DestroyingAngel
+PASS poison: wild biome registration DestroyingAngel
+PASS poison: ordinary recipe excludes poison CookMealSimple DestroyingAngel
+PASS poison: ordinary recipe excludes poison CookMealFine DestroyingAngel
+PASS poison: ordinary recipe excludes poison CookMealLavish DestroyingAngel
+PASS poison: mature native harvest yield and plant texture DestroyingAngel
+PASS poison: native random plant graphic loads both approved A/B variants DestroyingAngel
+PASS poison: native A/B plant texture identities DestroyingAngel
+PASS poison: poison material stack graphic DestroyingAngel 1
+PASS poison: poison material stack graphic DestroyingAngel 25
+PASS poison: poison material stack graphic DestroyingAngel 26
+PASS poison: poison material stack graphic DestroyingAngel 50
+PASS poison: poison material stack graphic DestroyingAngel 51
+PASS poison: poison material stack graphic DestroyingAngel 75
+PASS poison: resolved raw/plant/condition defs SulfurTuft
+PASS poison: native vomiting stages are absent in latency and species-appropriate after symptoms SulfurTuft
+PASS poison: harvested material is excluded from autonomous nutrition and drug taking SulfurTuft
+PASS poison: wild-only poison excluded from sowing, assorted crop and direct plant food SulfurTuft
+PASS poison: poisonous wild plant itself has no native ingestible object SulfurTuft
+PASS poison: native crop selection excludes poisonous species SulfurTuft Zone_Growing
+PASS poison: native crop selection excludes poisonous species SulfurTuft Building_PlantGrower
+PASS poison: native harvesting points to correct poisonous material SulfurTuft
+PASS poison: wild biome registration SulfurTuft
+PASS poison: ordinary recipe excludes poison CookMealSimple SulfurTuft
+PASS poison: ordinary recipe excludes poison CookMealFine SulfurTuft
+PASS poison: ordinary recipe excludes poison CookMealLavish SulfurTuft
+PASS poison: mature native harvest yield and plant texture SulfurTuft
+PASS poison: native random plant graphic loads both approved A/B variants SulfurTuft
+PASS poison: native A/B plant texture identities SulfurTuft
+PASS poison: poison material stack graphic SulfurTuft 1
+PASS poison: poison material stack graphic SulfurTuft 25
+PASS poison: poison material stack graphic SulfurTuft 26
+PASS poison: poison material stack graphic SulfurTuft 50
+PASS poison: poison material stack graphic SulfurTuft 51
+PASS poison: poison material stack graphic SulfurTuft 75
+PASS poison: resolved raw/plant/condition defs Tsukiyotake
+PASS poison: native vomiting stages are absent in latency and species-appropriate after symptoms Tsukiyotake
+PASS poison: harvested material is excluded from autonomous nutrition and drug taking Tsukiyotake
+PASS poison: wild-only poison excluded from sowing, assorted crop and direct plant food Tsukiyotake
+PASS poison: poisonous wild plant itself has no native ingestible object Tsukiyotake
+PASS poison: native crop selection excludes poisonous species Tsukiyotake Zone_Growing
+PASS poison: native crop selection excludes poisonous species Tsukiyotake Building_PlantGrower
+PASS poison: native harvesting points to correct poisonous material Tsukiyotake
+PASS poison: wild biome registration Tsukiyotake
+PASS poison: ordinary recipe excludes poison CookMealSimple Tsukiyotake
+PASS poison: ordinary recipe excludes poison CookMealFine Tsukiyotake
+PASS poison: ordinary recipe excludes poison CookMealLavish Tsukiyotake
+PASS poison: mature native harvest yield and plant texture Tsukiyotake
+PASS poison: native random plant graphic loads both approved A/B variants Tsukiyotake
+PASS poison: native A/B plant texture identities Tsukiyotake
+PASS poison: poison material stack graphic Tsukiyotake 1
+PASS poison: poison material stack graphic Tsukiyotake 25
+PASS poison: poison material stack graphic Tsukiyotake 26
+PASS poison: poison material stack graphic Tsukiyotake 50
+PASS poison: poison material stack graphic Tsukiyotake 51
+PASS poison: poison material stack graphic Tsukiyotake 75
+PASS poison: resolved raw/plant/condition defs PoisonFireCoral
+PASS poison: native vomiting stages are absent in latency and species-appropriate after symptoms PoisonFireCoral
+PASS poison: harvested material is excluded from autonomous nutrition and drug taking PoisonFireCoral
+PASS poison: wild-only poison excluded from sowing, assorted crop and direct plant food PoisonFireCoral
+PASS poison: poisonous wild plant itself has no native ingestible object PoisonFireCoral
+PASS poison: native crop selection excludes poisonous species PoisonFireCoral Zone_Growing
+PASS poison: native crop selection excludes poisonous species PoisonFireCoral Building_PlantGrower
+PASS poison: native harvesting points to correct poisonous material PoisonFireCoral
+PASS poison: wild biome registration PoisonFireCoral
+PASS poison: ordinary recipe excludes poison CookMealSimple PoisonFireCoral
+PASS poison: ordinary recipe excludes poison CookMealFine PoisonFireCoral
+PASS poison: ordinary recipe excludes poison CookMealLavish PoisonFireCoral
+PASS poison: mature native harvest yield and plant texture PoisonFireCoral
+PASS poison: native random plant graphic loads both approved A/B variants PoisonFireCoral
+PASS poison: native A/B plant texture identities PoisonFireCoral
+PASS poison: poison material stack graphic PoisonFireCoral 1
+PASS poison: poison material stack graphic PoisonFireCoral 25
+PASS poison: poison material stack graphic PoisonFireCoral 26
+PASS poison: poison material stack graphic PoisonFireCoral 50
+PASS poison: poison material stack graphic PoisonFireCoral 51
+PASS poison: poison material stack graphic PoisonFireCoral 75
+PASS poison: native map food search rejects all five poisons even with no safe food desperate=False
+PASS poison: native map food search rejects all five poisons even with no safe food desperate=True
+PASS poison: native search finds a safe ordinary meal while nearer poisons are ignored
+PASS poison: native inventory food search excludes poison nutrition
+PASS poison: native explicit-ingest eligibility checks pass RMush_RawFlyAgaric
+PASS poison: native explicit-ingest count resolves to one despite zero nutrition RMush_RawFlyAgaric
+PASS poison: native ordered ingest job accepts one poisonous mushroom from a full stack RMush_RawFlyAgaric
+PASS poison: native explicit-ingest eligibility checks pass RMush_RawDestroyingAngel
+PASS poison: native explicit-ingest count resolves to one despite zero nutrition RMush_RawDestroyingAngel
+PASS poison: native ordered ingest job accepts one poisonous mushroom from a full stack RMush_RawDestroyingAngel
+PASS poison: native explicit-ingest eligibility checks pass RMush_RawSulfurTuft
+PASS poison: native explicit-ingest count resolves to one despite zero nutrition RMush_RawSulfurTuft
+PASS poison: native ordered ingest job accepts one poisonous mushroom from a full stack RMush_RawSulfurTuft
+PASS poison: native explicit-ingest eligibility checks pass RMush_RawTsukiyotake
+PASS poison: native explicit-ingest count resolves to one despite zero nutrition RMush_RawTsukiyotake
+PASS poison: native ordered ingest job accepts one poisonous mushroom from a full stack RMush_RawTsukiyotake
+PASS poison: native explicit-ingest eligibility checks pass RMush_RawPoisonFireCoral
+PASS poison: native explicit-ingest count resolves to one despite zero nutrition RMush_RawPoisonFireCoral
+PASS poison: native ordered ingest job accepts one poisonous mushroom from a full stack RMush_RawPoisonFireCoral
+PASS poison: actual native ingestion consumes one FlyAgaric and creates poisoning
+PASS poison: single condition after ingestion FlyAgaric
+PASS poison: single dose starts in latent phase FlyAgaric
+PASS poison: species-specific latency FlyAgaric ticks=2500
+PASS poison: no clinical symptoms before latency boundary FlyAgaric
+PASS poison: native health update issues first symptom warning exactly at onset FlyAgaric
+PASS poison: normal recovery target follows species range FlyAgaric ticks=44892
+PASS poison: temporary clinical symptoms develop during actual course FlyAgaric
+PASS poison: native health tracker removes naturally recovered poison within target range FlyAgaric ticks=44973
+PASS poison: actual native ingestion consumes one DestroyingAngel and creates poisoning
+PASS poison: single condition after ingestion DestroyingAngel
+PASS poison: single dose starts in latent phase DestroyingAngel
+PASS poison: species-specific latency DestroyingAngel ticks=20000
+PASS poison: no clinical symptoms before latency boundary DestroyingAngel
+PASS poison: native health update issues first symptom warning exactly at onset DestroyingAngel
+PASS poison: dangerous poison has no automatic recovery deadline before stabilization DestroyingAngel
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: single dose starts in latent phase SulfurTuft
+PASS poison: species-specific latency SulfurTuft ticks=7500
+PASS poison: no clinical symptoms before latency boundary SulfurTuft
+PASS poison: native health update issues first symptom warning exactly at onset SulfurTuft
+PASS poison: normal recovery target follows species range SulfurTuft ticks=174265
+PASS poison: temporary clinical symptoms develop during actual course SulfurTuft
+PASS poison: native health tracker removes naturally recovered poison within target range SulfurTuft ticks=174316
+PASS poison: actual native ingestion consumes one Tsukiyotake and creates poisoning
+PASS poison: single condition after ingestion Tsukiyotake
+PASS poison: single dose starts in latent phase Tsukiyotake
+PASS poison: species-specific latency Tsukiyotake ticks=1250
+PASS poison: no clinical symptoms before latency boundary Tsukiyotake
+PASS poison: native health update issues first symptom warning exactly at onset Tsukiyotake
+PASS poison: normal recovery target follows species range Tsukiyotake ticks=111120
+PASS poison: temporary clinical symptoms develop during actual course Tsukiyotake
+PASS poison: native health tracker removes naturally recovered poison within target range Tsukiyotake ticks=111280
+PASS poison: actual native ingestion consumes one PoisonFireCoral and creates poisoning
+PASS poison: single condition after ingestion PoisonFireCoral
+PASS poison: single dose starts in latent phase PoisonFireCoral
+PASS poison: species-specific latency PoisonFireCoral ticks=7500
+PASS poison: no clinical symptoms before latency boundary PoisonFireCoral
+PASS poison: native health update issues first symptom warning exactly at onset PoisonFireCoral
+PASS poison: dangerous poison has no automatic recovery deadline before stabilization PoisonFireCoral
+PASS poison: actual native ingestion consumes one DestroyingAngel and creates poisoning
+PASS poison: single condition after ingestion DestroyingAngel
+PASS poison: even severe one-dose poisoning cannot kill before 24 hours after warning DestroyingAngel
+PASS poison: native death occurs after grace when critical poison is untreated DestroyingAngel
+PASS poison: actual native ingestion consumes one DestroyingAngel and creates poisoning
+PASS poison: single condition after ingestion DestroyingAngel
+PASS poison: unmodified single ingestion becomes fatal when left untreated DestroyingAngel
+PASS poison: actual native ingestion consumes one DestroyingAngel and creates poisoning
+PASS poison: single condition after ingestion DestroyingAngel
+PASS poison: native medical scanner requests care RMush_PoisonDestroyingAngel
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonDestroyingAngel
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=1.000
+PASS poison: one ordinary treatment does not instantly cure or stabilize dangerous poison DestroyingAngel
+PASS poison: native treatment cooldown blocks same-tick treatment spam DestroyingAngel
+PASS poison: native repeat care is unavailable one tick before six-hour expiry DestroyingAngel
+PASS poison: native repeat care becomes available at exact six-hour expiry DestroyingAngel
+PASS poison: native medical scanner requests care RMush_PoisonDestroyingAngel
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonDestroyingAngel
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=1.000
+PASS poison: early repeated ordinary medicine stabilizes dangerous poison DestroyingAngel treatments=2
+PASS poison: stabilized normal-severity recovery follows species range DestroyingAngel
+PASS poison: stabilized patient improves and leaves lethal progression DestroyingAngel
+PASS poison: native health tracker removes treated poison after recovery DestroyingAngel
+PASS poison: actual native ingestion consumes one PoisonFireCoral and creates poisoning
+PASS poison: single condition after ingestion PoisonFireCoral
+PASS poison: even severe one-dose poisoning cannot kill before 24 hours after warning PoisonFireCoral
+PASS poison: native death occurs after grace when critical poison is untreated PoisonFireCoral
+PASS poison: actual native ingestion consumes one PoisonFireCoral and creates poisoning
+PASS poison: single condition after ingestion PoisonFireCoral
+PASS poison: unmodified single ingestion becomes fatal when left untreated PoisonFireCoral
+PASS poison: actual native ingestion consumes one PoisonFireCoral and creates poisoning
+PASS poison: single condition after ingestion PoisonFireCoral
+PASS poison: native medical scanner requests care RMush_PoisonPoisonFireCoral
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonPoisonFireCoral
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=1.000
+PASS poison: one ordinary treatment does not instantly cure or stabilize dangerous poison PoisonFireCoral
+PASS poison: native treatment cooldown blocks same-tick treatment spam PoisonFireCoral
+PASS poison: native repeat care is unavailable one tick before six-hour expiry PoisonFireCoral
+PASS poison: native repeat care becomes available at exact six-hour expiry PoisonFireCoral
+PASS poison: native medical scanner requests care RMush_PoisonPoisonFireCoral
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonPoisonFireCoral
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=1.000
+PASS poison: early repeated ordinary medicine stabilizes dangerous poison PoisonFireCoral treatments=2
+PASS poison: stabilized normal-severity recovery follows species range PoisonFireCoral
+PASS poison: stabilized patient improves and leaves lethal progression PoisonFireCoral
+PASS poison: native health tracker removes treated poison after recovery PoisonFireCoral
+PASS poison: actual native ingestion consumes one DestroyingAngel and creates poisoning
+PASS poison: single condition after ingestion DestroyingAngel
+PASS poison: actual native ingestion consumes one DestroyingAngel and creates poisoning
+PASS poison: single condition after ingestion DestroyingAngel
+PASS poison: same capable doctor gives positive native medicine-specific base quality industrial=1 herbal=0.7
+PASS poison: native medical scanner requests care RMush_PoisonDestroyingAngel
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonDestroyingAngel
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=0.764
+PASS poison: native medical scanner requests care RMush_PoisonDestroyingAngel
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonDestroyingAngel
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=0.464
+PASS poison: same doctor and native variance draw give ordinary medicine stronger support than herbal medicine
+PASS poison: neither medicine is a single-use antidote
+PASS poison: actual native ingestion consumes one DestroyingAngel and creates poisoning
+PASS poison: single condition after ingestion DestroyingAngel
+PASS poison: native doctor care without medicine still helps through ordinary tending
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: repeated doses are capped at four exposures and bounded severity
+PASS poison: repeated doses add at most one recovery day instead of unlimited stacked conditions
+PASS poison: actual native ingestion consumes one FlyAgaric and creates poisoning
+PASS poison: single condition after ingestion FlyAgaric
+PASS poison: actual native ingestion consumes one FlyAgaric and creates poisoning
+PASS poison: single condition after ingestion FlyAgaric
+PASS poison: actual native ingestion consumes one FlyAgaric and creates poisoning
+PASS poison: single condition after ingestion FlyAgaric
+PASS poison: actual native ingestion consumes one FlyAgaric and creates poisoning
+PASS poison: single condition after ingestion FlyAgaric
+PASS poison: four bounded fly agaric doses can reach the profound drowsiness stage
+PASS poison: native health capacities produce temporary nonfatal unconsciousness after repeated fly agaric exposure level=0.2
+PASS poison: native health tracker restores consciousness and removes recovered fly agaric poisoning
+PASS poison: controlled healthy doctor has enabled medical work, effective skill 20 and positive native tend quality=1.55
+PASS poison: actual native ingestion consumes one PoisonFireCoral and creates poisoning
+PASS poison: single condition after ingestion PoisonFireCoral
+PASS poison: native medical scanner requests care RMush_PoisonPoisonFireCoral
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonPoisonFireCoral
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=1.000
+PASS poison: native medical scanner requests care RMush_PoisonPoisonFireCoral
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonPoisonFireCoral
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=0.937
+PASS poison: live treated dangerous poison prepared for round-trip save
+PASS poison: actual native ingestion consumes one Tsukiyotake and creates poisoning
+PASS poison: single condition after ingestion Tsukiyotake
+PASS poison: symptom warning and recovery deadline prepared for save
+PASS poison: actual native ingestion consumes one FlyAgaric and creates poisoning
+PASS poison: single condition after ingestion FlyAgaric
+PASS poison: actual native ingestion consumes one DestroyingAngel and creates poisoning
+PASS poison: single condition after ingestion DestroyingAngel
+PASS poison: native medical scanner requests care RMush_PoisonDestroyingAngel
+PASS poison: native DoTend consumes medicine and starts ordinary treatment RMush_PoisonDestroyingAngel
+PASS poison: actual randomized native tend quality respects medicine cap
+PASS poison: ordinary tending increases bounded treatment reserve quality=0.551
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: actual native ingestion consumes one SulfurTuft and creates poisoning
+PASS poison: single condition after ingestion SulfurTuft
+PASS poison: five species including initial latent poisoning prepared for save
+PASS poison: all simulation advances restore original global clock
+PASS new save restores shade-aware plants
+PASS saved mushroom memory class and value restored
+PASS saved remaining duration restored age=5000 duration=15000
+PASS translated mushroom memory label
+PASS loaded memory expires normally
+PASS assorted zone selection and actual species persist after save/load
+PASS assorted actual species growth persists after save/load
+PASS loaded assorted crop is not cut or replanted
+PASS hydroponics basin assorted selection persists after save/load
+PASS chosen real hydroponic species and sown state persist after save/load
+PASS hydroponic species growth persists after save/load
+PASS loaded hydroponic crop keeps native 280 percent fertility
+PASS native hydroponics power network and powered state restore after save/load
+PASS loaded assorted basin selection resolves from growing building
+PASS loaded assorted hydroponic member is kept without cutting or replanting
+PASS poison: expected poison save snapshots retained through native map reload
+PASS poison: native save restores poison class/source/severity/phase RMush_PoisonPoisonFireCoral
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral onsetTick
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral firstSymptomWarningTick
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral lastProgressTick
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral stabilizedTick
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral recoveryEndTick
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral treatmentUntilTick
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral exposureCount
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral treatmentCount
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral extraRecoveryTicks
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral recoveryDurationTicks
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral recoveryProgressTicks
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral treatmentReserve
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral lastTendQuality
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral peakSeverity
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral stabilizedSeverity
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral stabilized
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral onsetAnnounced
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral stabilizationAnnounced
+PASS poison: saved poison progression field RMush_PoisonPoisonFireCoral exposureAnnounced
+PASS poison: native tending comp survives poison save RMush_PoisonPoisonFireCoral
+PASS poison: loaded poison continues through native health ticks RMush_PoisonPoisonFireCoral
+PASS poison: native save restores poison class/source/severity/phase RMush_PoisonTsukiyotake
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake onsetTick
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake firstSymptomWarningTick
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake lastProgressTick
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake stabilizedTick
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake recoveryEndTick
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake treatmentUntilTick
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake exposureCount
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake treatmentCount
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake extraRecoveryTicks
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake recoveryDurationTicks
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake recoveryProgressTicks
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake treatmentReserve
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake lastTendQuality
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake peakSeverity
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake stabilizedSeverity
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake stabilized
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake onsetAnnounced
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake stabilizationAnnounced
+PASS poison: saved poison progression field RMush_PoisonTsukiyotake exposureAnnounced
+PASS poison: native tending comp survives poison save RMush_PoisonTsukiyotake
+PASS poison: loaded poison continues through native health ticks RMush_PoisonTsukiyotake
+PASS poison: native save restores poison class/source/severity/phase RMush_PoisonFlyAgaric
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric onsetTick
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric firstSymptomWarningTick
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric lastProgressTick
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric stabilizedTick
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric recoveryEndTick
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric treatmentUntilTick
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric exposureCount
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric treatmentCount
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric extraRecoveryTicks
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric recoveryDurationTicks
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric recoveryProgressTicks
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric treatmentReserve
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric lastTendQuality
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric peakSeverity
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric stabilizedSeverity
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric stabilized
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric onsetAnnounced
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric stabilizationAnnounced
+PASS poison: saved poison progression field RMush_PoisonFlyAgaric exposureAnnounced
+PASS poison: native tending comp survives poison save RMush_PoisonFlyAgaric
+PASS poison: loaded poison continues through native health ticks RMush_PoisonFlyAgaric
+PASS poison: native save restores poison class/source/severity/phase RMush_PoisonDestroyingAngel
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel onsetTick
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel firstSymptomWarningTick
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel lastProgressTick
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel stabilizedTick
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel recoveryEndTick
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel treatmentUntilTick
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel exposureCount
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel treatmentCount
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel extraRecoveryTicks
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel recoveryDurationTicks
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel recoveryProgressTicks
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel treatmentReserve
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel lastTendQuality
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel peakSeverity
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel stabilizedSeverity
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel stabilized
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel onsetAnnounced
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel stabilizationAnnounced
+PASS poison: saved poison progression field RMush_PoisonDestroyingAngel exposureAnnounced
+PASS poison: native tending comp survives poison save RMush_PoisonDestroyingAngel
+PASS poison: loaded poison continues through native health ticks RMush_PoisonDestroyingAngel
+PASS poison: native save restores poison class/source/severity/phase RMush_PoisonSulfurTuft
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft onsetTick
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft firstSymptomWarningTick
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft lastProgressTick
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft stabilizedTick
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft recoveryEndTick
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft treatmentUntilTick
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft exposureCount
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft treatmentCount
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft extraRecoveryTicks
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft recoveryDurationTicks
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft recoveryProgressTicks
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft treatmentReserve
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft lastTendQuality
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft peakSeverity
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft stabilizedSeverity
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft stabilized
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft onsetAnnounced
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft stabilizationAnnounced
+PASS poison: saved poison progression field RMush_PoisonSulfurTuft exposureAnnounced
+PASS poison: native tending comp survives poison save RMush_PoisonSulfurTuft
+PASS poison: loaded poison continues through native health ticks RMush_PoisonSulfurTuft
+PASS plant growth fixtures survive save/load
+PASS saved stack graphic RMush_RawBeech:75
+PASS saved stack graphic RMush_RawBeech:25
+PASS saved stack graphic RMush_RawBeech:50
+PASS saved stack graphic RMush_RawButton:75
+PASS saved stack graphic RMush_RawButton:25
+PASS saved stack graphic RMush_RawButton:50
+PASS saved stack graphic RMush_RawEnoki:75
+PASS saved stack graphic RMush_RawEnoki:25
+PASS saved stack graphic RMush_RawEnoki:50
+PASS saved stack graphic RMush_RawKingOyster:75
+PASS saved stack graphic RMush_RawKingOyster:25
+PASS saved stack graphic RMush_RawKingOyster:50
+PASS saved stack graphic RMush_RawLionsMane:75
+PASS saved stack graphic RMush_RawLionsMane:25
+PASS saved stack graphic RMush_RawLionsMane:50
+PASS saved stack graphic RMush_RawMaitake:75
+PASS saved stack graphic RMush_RawMaitake:25
+PASS saved stack graphic RMush_RawMaitake:50
+PASS saved stack graphic RMush_RawMatsutake:75
+PASS saved stack graphic RMush_RawMatsutake:25
+PASS saved stack graphic RMush_RawMatsutake:50
+PASS saved stack graphic RMush_RawOyster:75
+PASS saved stack graphic RMush_RawOyster:25
+PASS saved stack graphic RMush_RawOyster:50
+PASS saved stack graphic RMush_RawShiitake:75
+PASS saved stack graphic RMush_RawShiitake:25
+PASS saved stack graphic RMush_RawShiitake:50
+PASS saved stack graphic RMush_RawWoodEar:75
+PASS saved stack graphic RMush_RawWoodEar:25
+PASS saved stack graphic RMush_RawWoodEar:50
+PASS saved stack graphic RMush_RawWoodEar:11
+PASS saved stack graphic RMush_RawOyster:11
+PASS saved stack graphic RMush_RawBeech:26
+PASS saved stack graphic RMush_RawButton:11
+PASS saved stack graphic RMush_RawEnoki:10
+PASS saved stack graphic RMush_RawKingOyster:25
+PASS saved stack graphic RMush_RawLionsMane:14
+PASS saved stack graphic RMush_RawMaitake:32
+PASS saved stack graphic RMush_RawOyster:11
+PASS saved stack graphic RMush_RawShiitake:14
+PASS saved stack graphic RMush_RawWoodEar:11
+PASS legacy save restores shade-aware plants
+PASS legacy identity and position preserved RMush_PlantWoodEar4970
+PASS legacy growth preserved RMush_PlantWoodEar4970
+PASS legacy age preserved RMush_PlantWoodEar4970
+PASS legacy health preserved RMush_PlantWoodEar4970
+PASS legacy identity and position preserved RMush_PlantShiitake5111
+PASS legacy growth preserved RMush_PlantShiitake5111
+PASS legacy age preserved RMush_PlantShiitake5111
+PASS legacy health preserved RMush_PlantShiitake5111
+PASS legacy identity and position preserved RMush_PlantWoodEar6046
+PASS legacy growth preserved RMush_PlantWoodEar6046
+PASS legacy age preserved RMush_PlantWoodEar6046
+PASS legacy health preserved RMush_PlantWoodEar6046
+PASS legacy identity and position preserved RMush_PlantWoodEar7692
+PASS legacy growth preserved RMush_PlantWoodEar7692
+PASS legacy age preserved RMush_PlantWoodEar7692
+PASS legacy health preserved RMush_PlantWoodEar7692
+PASS legacy identity and position preserved RMush_PlantShiitake7735
+PASS legacy growth preserved RMush_PlantShiitake7735
+PASS legacy age preserved RMush_PlantShiitake7735
+PASS legacy health preserved RMush_PlantShiitake7735
+PASS legacy identity and position preserved RMush_PlantShiitake8765
+PASS legacy growth preserved RMush_PlantShiitake8765
+PASS legacy age preserved RMush_PlantShiitake8765
+PASS legacy health preserved RMush_PlantShiitake8765
+PASS legacy identity and position preserved RMush_PlantWoodEar8814
+PASS legacy growth preserved RMush_PlantWoodEar8814
+PASS legacy age preserved RMush_PlantWoodEar8814
+PASS legacy health preserved RMush_PlantWoodEar8814
+PASS legacy identity and position preserved RMush_PlantWoodEar9556
+PASS legacy growth preserved RMush_PlantWoodEar9556
+PASS legacy age preserved RMush_PlantWoodEar9556
+PASS legacy health preserved RMush_PlantWoodEar9556
+PASS legacy identity and position preserved RMush_PlantShiitake10323
+PASS legacy growth preserved RMush_PlantShiitake10323
+PASS legacy age preserved RMush_PlantShiitake10323
+PASS legacy health preserved RMush_PlantShiitake10323
+PASS legacy identity and position preserved RMush_PlantWoodEar11084
+PASS legacy growth preserved RMush_PlantWoodEar11084
+PASS legacy age preserved RMush_PlantWoodEar11084
+PASS legacy health preserved RMush_PlantWoodEar11084
+PASS legacy identity and position preserved RMush_PlantWoodEar12637
+PASS legacy growth preserved RMush_PlantWoodEar12637
+PASS legacy age preserved RMush_PlantWoodEar12637
+PASS legacy health preserved RMush_PlantWoodEar12637
+PASS legacy identity and position preserved RMush_PlantShiitake13003
+PASS legacy growth preserved RMush_PlantShiitake13003
+PASS legacy age preserved RMush_PlantShiitake13003
+PASS legacy health preserved RMush_PlantShiitake13003
+PASS legacy identity and position preserved RMush_PlantWoodEar13835
+PASS legacy growth preserved RMush_PlantWoodEar13835
+PASS legacy age preserved RMush_PlantWoodEar13835
+PASS legacy health preserved RMush_PlantWoodEar13835
+PASS legacy identity and position preserved RMush_PlantWoodEar16300
+PASS legacy growth preserved RMush_PlantWoodEar16300
+PASS legacy age preserved RMush_PlantWoodEar16300
+PASS legacy health preserved RMush_PlantWoodEar16300
+PASS legacy identity and position preserved RMush_PlantShiitake16397
+PASS legacy growth preserved RMush_PlantShiitake16397
+PASS legacy age preserved RMush_PlantShiitake16397
+PASS legacy health preserved RMush_PlantShiitake16397
+PASS legacy identity and position preserved RMush_PlantWoodEar17736
+PASS legacy growth preserved RMush_PlantWoodEar17736
+PASS legacy age preserved RMush_PlantWoodEar17736
+PASS legacy health preserved RMush_PlantWoodEar17736
+PASS legacy identity and position preserved RMush_PlantShiitake17794
+PASS legacy growth preserved RMush_PlantShiitake17794
+PASS legacy age preserved RMush_PlantShiitake17794
+PASS legacy health preserved RMush_PlantShiitake17794
+PASS legacy identity and position preserved RMush_PlantShiitake20955
+PASS legacy growth preserved RMush_PlantShiitake20955
+PASS legacy age preserved RMush_PlantShiitake20955
+PASS legacy health preserved RMush_PlantShiitake20955
+PASS legacy identity and position preserved RMush_PlantWoodEar23571
+PASS legacy growth preserved RMush_PlantWoodEar23571
+PASS legacy age preserved RMush_PlantWoodEar23571
+PASS legacy health preserved RMush_PlantWoodEar23571
+PASS legacy identity and position preserved RMush_PlantShiitake26353
+PASS legacy growth preserved RMush_PlantShiitake26353
+PASS legacy age preserved RMush_PlantShiitake26353
+PASS legacy health preserved RMush_PlantShiitake26353
+PASS legacy identity and position preserved RMush_PlantWoodEar26659
+PASS legacy growth preserved RMush_PlantWoodEar26659
+PASS legacy age preserved RMush_PlantWoodEar26659
+PASS legacy health preserved RMush_PlantWoodEar26659
+PASS legacy identity and position preserved RMush_PlantShiitake28338
+PASS legacy growth preserved RMush_PlantShiitake28338
+PASS legacy age preserved RMush_PlantShiitake28338
+PASS legacy health preserved RMush_PlantShiitake28338
+PASS legacy identity and position preserved RMush_PlantWoodEar30878
+PASS legacy growth preserved RMush_PlantWoodEar30878
+PASS legacy age preserved RMush_PlantWoodEar30878
+PASS legacy health preserved RMush_PlantWoodEar30878
+PASS legacy identity and position preserved RMush_PlantWoodEar31735
+PASS legacy growth preserved RMush_PlantWoodEar31735
+PASS legacy age preserved RMush_PlantWoodEar31735
+PASS legacy health preserved RMush_PlantWoodEar31735
+PASS legacy identity and position preserved RMush_PlantWoodEar32139
+PASS legacy growth preserved RMush_PlantWoodEar32139
+PASS legacy age preserved RMush_PlantWoodEar32139
+PASS legacy health preserved RMush_PlantWoodEar32139
+PASS legacy identity and position preserved RMush_PlantShiitake32909
+PASS legacy growth preserved RMush_PlantShiitake32909
+PASS legacy age preserved RMush_PlantShiitake32909
+PASS legacy health preserved RMush_PlantShiitake32909
+PASS legacy identity and position preserved RMush_PlantWoodEar33479
+PASS legacy growth preserved RMush_PlantWoodEar33479
+PASS legacy age preserved RMush_PlantWoodEar33479
+PASS legacy health preserved RMush_PlantWoodEar33479
+PASS legacy identity and position preserved RMush_PlantShiitake33622
+PASS legacy growth preserved RMush_PlantShiitake33622
+PASS legacy age preserved RMush_PlantShiitake33622
+PASS legacy health preserved RMush_PlantShiitake33622
+PASS legacy identity and position preserved RMush_PlantWoodEar34676
+PASS legacy growth preserved RMush_PlantWoodEar34676
+PASS legacy age preserved RMush_PlantWoodEar34676
+PASS legacy health preserved RMush_PlantWoodEar34676
+PASS legacy identity and position preserved RMush_PlantWoodEar34897
+PASS legacy growth preserved RMush_PlantWoodEar34897
+PASS legacy age preserved RMush_PlantWoodEar34897
+PASS legacy health preserved RMush_PlantWoodEar34897
+PASS legacy identity and position preserved RMush_PlantShiitake34982
+PASS legacy growth preserved RMush_PlantShiitake34982
+PASS legacy age preserved RMush_PlantShiitake34982
+PASS legacy health preserved RMush_PlantShiitake34982
+PASS legacy identity and position preserved RMush_PlantWoodEar35162
+PASS legacy growth preserved RMush_PlantWoodEar35162
+PASS legacy age preserved RMush_PlantWoodEar35162
+PASS legacy health preserved RMush_PlantWoodEar35162
+PASS legacy identity and position preserved RMush_PlantWoodEar35528
+PASS legacy growth preserved RMush_PlantWoodEar35528
+PASS legacy age preserved RMush_PlantWoodEar35528
+PASS legacy health preserved RMush_PlantWoodEar35528
+PASS legacy identity and position preserved RMush_PlantShiitake35686
+PASS legacy growth preserved RMush_PlantShiitake35686
+PASS legacy age preserved RMush_PlantShiitake35686
+PASS legacy health preserved RMush_PlantShiitake35686
+PASS legacy identity and position preserved RMush_PlantShiitake36313
+PASS legacy growth preserved RMush_PlantShiitake36313
+PASS legacy age preserved RMush_PlantShiitake36313
+PASS legacy health preserved RMush_PlantShiitake36313
+PASS legacy identity and position preserved RMush_PlantWoodEar36528
+PASS legacy growth preserved RMush_PlantWoodEar36528
+PASS legacy age preserved RMush_PlantWoodEar36528
+PASS legacy health preserved RMush_PlantWoodEar36528
+PASS legacy identity and position preserved RMush_PlantShiitake36847
+PASS legacy growth preserved RMush_PlantShiitake36847
+PASS legacy age preserved RMush_PlantShiitake36847
+PASS legacy health preserved RMush_PlantShiitake36847
+PASS legacy identity and position preserved RMush_PlantWoodEar37411
+PASS legacy growth preserved RMush_PlantWoodEar37411
+PASS legacy age preserved RMush_PlantWoodEar37411
+PASS legacy health preserved RMush_PlantWoodEar37411
+PASS legacy identity and position preserved RMush_PlantWoodEar37617
+PASS legacy growth preserved RMush_PlantWoodEar37617
+PASS legacy age preserved RMush_PlantWoodEar37617
+PASS legacy health preserved RMush_PlantWoodEar37617
+PASS legacy identity and position preserved RMush_PlantWoodEar37701
+PASS legacy growth preserved RMush_PlantWoodEar37701
+PASS legacy age preserved RMush_PlantWoodEar37701
+PASS legacy health preserved RMush_PlantWoodEar37701
+PASS legacy identity and position preserved RMush_PlantShiitake37709
+PASS legacy growth preserved RMush_PlantShiitake37709
+PASS legacy age preserved RMush_PlantShiitake37709
+PASS legacy health preserved RMush_PlantShiitake37709
+PASS legacy identity and position preserved RMush_PlantShiitake39524
+PASS legacy growth preserved RMush_PlantShiitake39524
+PASS legacy age preserved RMush_PlantShiitake39524
+PASS legacy health preserved RMush_PlantShiitake39524
+PASS legacy identity and position preserved RMush_PlantWoodEar41744
+PASS legacy growth preserved RMush_PlantWoodEar41744
+PASS legacy age preserved RMush_PlantWoodEar41744
+PASS legacy health preserved RMush_PlantWoodEar41744
+PASS legacy identity and position preserved RMush_PlantBeech47580
+PASS legacy growth preserved RMush_PlantBeech47580
+PASS legacy age preserved RMush_PlantBeech47580
+PASS legacy health preserved RMush_PlantBeech47580
+PASS legacy identity and position preserved RMush_PlantBeech47581
+PASS legacy growth preserved RMush_PlantBeech47581
+PASS legacy age preserved RMush_PlantBeech47581
+PASS legacy health preserved RMush_PlantBeech47581
+PASS legacy identity and position preserved RMush_PlantBeech47582
+PASS legacy growth preserved RMush_PlantBeech47582
+PASS legacy age preserved RMush_PlantBeech47582
+PASS legacy health preserved RMush_PlantBeech47582
+PASS legacy identity and position preserved RMush_PlantButton47583
+PASS legacy growth preserved RMush_PlantButton47583
+PASS legacy age preserved RMush_PlantButton47583
+PASS legacy health preserved RMush_PlantButton47583
+PASS legacy identity and position preserved RMush_PlantButton47584
+PASS legacy growth preserved RMush_PlantButton47584
+PASS legacy age preserved RMush_PlantButton47584
+PASS legacy health preserved RMush_PlantButton47584
+PASS legacy identity and position preserved RMush_PlantButton47585
+PASS legacy growth preserved RMush_PlantButton47585
+PASS legacy age preserved RMush_PlantButton47585
+PASS legacy health preserved RMush_PlantButton47585
+PASS legacy identity and position preserved RMush_PlantEnoki47586
+PASS legacy growth preserved RMush_PlantEnoki47586
+PASS legacy age preserved RMush_PlantEnoki47586
+PASS legacy health preserved RMush_PlantEnoki47586
+PASS legacy identity and position preserved RMush_PlantEnoki47587
+PASS legacy growth preserved RMush_PlantEnoki47587
+PASS legacy age preserved RMush_PlantEnoki47587
+PASS legacy health preserved RMush_PlantEnoki47587
+PASS legacy identity and position preserved RMush_PlantEnoki47588
+PASS legacy growth preserved RMush_PlantEnoki47588
+PASS legacy age preserved RMush_PlantEnoki47588
+PASS legacy health preserved RMush_PlantEnoki47588
+PASS legacy identity and position preserved RMush_PlantEnokiWild47589
+PASS legacy growth preserved RMush_PlantEnokiWild47589
+PASS legacy age preserved RMush_PlantEnokiWild47589
+PASS legacy health preserved RMush_PlantEnokiWild47589
+PASS legacy identity and position preserved RMush_PlantEnokiWild47590
+PASS legacy growth preserved RMush_PlantEnokiWild47590
+PASS legacy age preserved RMush_PlantEnokiWild47590
+PASS legacy health preserved RMush_PlantEnokiWild47590
+PASS legacy identity and position preserved RMush_PlantEnokiWild47591
+PASS legacy growth preserved RMush_PlantEnokiWild47591
+PASS legacy age preserved RMush_PlantEnokiWild47591
+PASS legacy health preserved RMush_PlantEnokiWild47591
+PASS legacy identity and position preserved RMush_PlantKingOyster47592
+PASS legacy growth preserved RMush_PlantKingOyster47592
+PASS legacy age preserved RMush_PlantKingOyster47592
+PASS legacy health preserved RMush_PlantKingOyster47592
+PASS legacy identity and position preserved RMush_PlantKingOyster47593
+PASS legacy growth preserved RMush_PlantKingOyster47593
+PASS legacy age preserved RMush_PlantKingOyster47593
+PASS legacy health preserved RMush_PlantKingOyster47593
+PASS legacy identity and position preserved RMush_PlantKingOyster47594
+PASS legacy growth preserved RMush_PlantKingOyster47594
+PASS legacy age preserved RMush_PlantKingOyster47594
+PASS legacy health preserved RMush_PlantKingOyster47594
+PASS legacy identity and position preserved RMush_PlantLionsMane47595
+PASS legacy growth preserved RMush_PlantLionsMane47595
+PASS legacy age preserved RMush_PlantLionsMane47595
+PASS legacy health preserved RMush_PlantLionsMane47595
+PASS legacy identity and position preserved RMush_PlantLionsMane47596
+PASS legacy growth preserved RMush_PlantLionsMane47596
+PASS legacy age preserved RMush_PlantLionsMane47596
+PASS legacy health preserved RMush_PlantLionsMane47596
+PASS legacy identity and position preserved RMush_PlantLionsMane47597
+PASS legacy growth preserved RMush_PlantLionsMane47597
+PASS legacy age preserved RMush_PlantLionsMane47597
+PASS legacy health preserved RMush_PlantLionsMane47597
+PASS legacy identity and position preserved RMush_PlantMaitake47598
+PASS legacy growth preserved RMush_PlantMaitake47598
+PASS legacy age preserved RMush_PlantMaitake47598
+PASS legacy health preserved RMush_PlantMaitake47598
+PASS legacy identity and position preserved RMush_PlantMaitake47599
+PASS legacy growth preserved RMush_PlantMaitake47599
+PASS legacy age preserved RMush_PlantMaitake47599
+PASS legacy health preserved RMush_PlantMaitake47599
+PASS legacy identity and position preserved RMush_PlantMaitake47600
+PASS legacy growth preserved RMush_PlantMaitake47600
+PASS legacy age preserved RMush_PlantMaitake47600
+PASS legacy health preserved RMush_PlantMaitake47600
+PASS legacy identity and position preserved RMush_PlantMatsutake47601
+PASS legacy growth preserved RMush_PlantMatsutake47601
+PASS legacy age preserved RMush_PlantMatsutake47601
+PASS legacy health preserved RMush_PlantMatsutake47601
+PASS legacy identity and position preserved RMush_PlantMatsutake47602
+PASS legacy growth preserved RMush_PlantMatsutake47602
+PASS legacy age preserved RMush_PlantMatsutake47602
+PASS legacy health preserved RMush_PlantMatsutake47602
+PASS legacy identity and position preserved RMush_PlantMatsutake47603
+PASS legacy growth preserved RMush_PlantMatsutake47603
+PASS legacy age preserved RMush_PlantMatsutake47603
+PASS legacy health preserved RMush_PlantMatsutake47603
+PASS legacy identity and position preserved RMush_PlantOyster47604
+PASS legacy growth preserved RMush_PlantOyster47604
+PASS legacy age preserved RMush_PlantOyster47604
+PASS legacy health preserved RMush_PlantOyster47604
+PASS legacy identity and position preserved RMush_PlantOyster47605
+PASS legacy growth preserved RMush_PlantOyster47605
+PASS legacy age preserved RMush_PlantOyster47605
+PASS legacy health preserved RMush_PlantOyster47605
+PASS legacy identity and position preserved RMush_PlantOyster47606
+PASS legacy growth preserved RMush_PlantOyster47606
+PASS legacy age preserved RMush_PlantOyster47606
+PASS legacy health preserved RMush_PlantOyster47606
+PASS legacy identity and position preserved RMush_PlantShiitake47607
+PASS legacy growth preserved RMush_PlantShiitake47607
+PASS legacy age preserved RMush_PlantShiitake47607
+PASS legacy health preserved RMush_PlantShiitake47607
+PASS legacy identity and position preserved RMush_PlantShiitake47608
+PASS legacy growth preserved RMush_PlantShiitake47608
+PASS legacy age preserved RMush_PlantShiitake47608
+PASS legacy health preserved RMush_PlantShiitake47608
+PASS legacy identity and position preserved RMush_PlantShiitake47609
+PASS legacy growth preserved RMush_PlantShiitake47609
+PASS legacy age preserved RMush_PlantShiitake47609
+PASS legacy health preserved RMush_PlantShiitake47609
+PASS legacy identity and position preserved RMush_PlantWoodEar47610
+PASS legacy growth preserved RMush_PlantWoodEar47610
+PASS legacy age preserved RMush_PlantWoodEar47610
+PASS legacy health preserved RMush_PlantWoodEar47610
+PASS legacy identity and position preserved RMush_PlantWoodEar47611
+PASS legacy growth preserved RMush_PlantWoodEar47611
+PASS legacy age preserved RMush_PlantWoodEar47611
+PASS legacy health preserved RMush_PlantWoodEar47611
+PASS legacy identity and position preserved RMush_PlantWoodEar47612
+PASS legacy growth preserved RMush_PlantWoodEar47612
+PASS legacy age preserved RMush_PlantWoodEar47612
+PASS legacy health preserved RMush_PlantWoodEar47612
+PASS old save plants upgraded without replacing IDs or growth
+PASS legacy vanilla plants not converted
+PASS legacy input save remains unchanged on disk
+PASS saved mushroom memory class and value restored
+PASS saved remaining duration restored age=5000 duration=15000
+PASS translated mushroom memory label
+PASS loaded memory expires normally
+PASS plant growth fixtures survive save/load
+PASS saved stack graphic RMush_RawBeech:75
+PASS saved stack graphic RMush_RawBeech:25
+PASS saved stack graphic RMush_RawBeech:50
+PASS saved stack graphic RMush_RawButton:75
+PASS saved stack graphic RMush_RawButton:25
+PASS saved stack graphic RMush_RawButton:50
+PASS saved stack graphic RMush_RawEnoki:75
+PASS saved stack graphic RMush_RawEnoki:25
+PASS saved stack graphic RMush_RawEnoki:50
+PASS saved stack graphic RMush_RawKingOyster:75
+PASS saved stack graphic RMush_RawKingOyster:25
+PASS saved stack graphic RMush_RawKingOyster:50
+PASS saved stack graphic RMush_RawLionsMane:75
+PASS saved stack graphic RMush_RawLionsMane:25
+PASS saved stack graphic RMush_RawLionsMane:50
+PASS saved stack graphic RMush_RawMaitake:75
+PASS saved stack graphic RMush_RawMaitake:25
+PASS saved stack graphic RMush_RawMaitake:50
+PASS saved stack graphic RMush_RawMatsutake:75
+PASS saved stack graphic RMush_RawMatsutake:25
+PASS saved stack graphic RMush_RawMatsutake:50
+PASS saved stack graphic RMush_RawOyster:75
+PASS saved stack graphic RMush_RawOyster:25
+PASS saved stack graphic RMush_RawOyster:50
+PASS saved stack graphic RMush_RawShiitake:75
+PASS saved stack graphic RMush_RawShiitake:25
+PASS saved stack graphic RMush_RawShiitake:50
+PASS saved stack graphic RMush_RawWoodEar:75
+PASS saved stack graphic RMush_RawWoodEar:25
+PASS saved stack graphic RMush_RawWoodEar:50
+RESULT PASS

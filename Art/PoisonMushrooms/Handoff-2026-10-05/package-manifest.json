@@ -1,0 +1,442 @@
+{
+  "date": "2026-10-05",
+  "scope": "Poison mushroom art, source references, latest game-design notes and conversation summary; no mod implementation.",
+  "repository": "https://github.com/Izzypizzy1218/MoreMushrooms",
+  "reference_commit": "82c5c1c9bbb801560a0d14a0c1fd16f0eaf8dc16",
+  "art_files_identical_to_original": 80,
+  "master_count": 25,
+  "texture_count": 25,
+  "portable_previews": {
+    "preview.html": {
+      "external_dependencies": 0,
+      "images_embedded": true
+    },
+    "comparison.html": {
+      "external_dependencies": 0,
+      "images_embedded": true
+    }
+  },
+  "files": [
+    {
+      "path": "art/build_assets.py",
+      "bytes": 3638,
+      "sha256": "6a662aa554993ba1a6a3d1b5d0a2149696b664c376691f1769f9110805669e75"
+    },
+    {
+      "path": "art/comparison-template.html",
+      "bytes": 7208,
+      "sha256": "03ea5581f6356cbc7f6ab9521ea21a508b14285acfacf47621585b82a1348348"
+    },
+    {
+      "path": "art/comparison.html",
+      "bytes": 542009,
+      "sha256": "7dbb7314745bc57be7f3c4659961ed1f28ff298a411aedd9fb8b762a3d423b03"
+    },
+    {
+      "path": "art/generation-prompts.json",
+      "bytes": 55003,
+      "sha256": "a7f325deb5d85774ebf437b53250ab81af18b5e9a09f65bb4173f61cd2911edd"
+    },
+    {
+      "path": "art/manifest.json",
+      "bytes": 16812,
+      "sha256": "cf281050be96524f966322297ec2c8c05a39c09e9fd7e8db6a05f56b22058d1b"
+    },
+    {
+      "path": "art/masters/DestroyingAngel/01Low.png",
+      "bytes": 623026,
+      "sha256": "12511e64efadda38f6fab0628b1e9a04fb227dad22d19bfde0c31838556ec35b"
+    },
+    {
+      "path": "art/masters/DestroyingAngel/02Medium.png",
+      "bytes": 648273,
+      "sha256": "52e85b10e85a2eaaac428d9274c668a60116e7d3f2d230b59f0c666951821bd0"
+    },
+    {
+      "path": "art/masters/DestroyingAngel/03Full.png",
+      "bytes": 760806,
+      "sha256": "d28d12871c1ca6242f6e6ba3e0e13e4843e88a4fffbdf96004159d3b8ef3b0ce"
+    },
+    {
+      "path": "art/masters/DestroyingAngel/PlantA.png",
+      "bytes": 380523,
+      "sha256": "1a459c3ef3390b7c019d789942c51fcd9be6b7f5f09ce71b9bef6c071c626836"
+    },
+    {
+      "path": "art/masters/DestroyingAngel/PlantB.png",
+      "bytes": 431288,
+      "sha256": "3d7d661cbbe081d1361e0822baaf6cac569f3554ae355598cda837f5f34610d4"
+    },
+    {
+      "path": "art/masters/FlyAgaric/01Low.png",
+      "bytes": 597445,
+      "sha256": "69545eb681e633aac2c0c20e387a99a5afe3c7087af2f555a3142e7fce4b4b3c"
+    },
+    {
+      "path": "art/masters/FlyAgaric/02Medium.png",
+      "bytes": 634032,
+      "sha256": "9157c6afa61a1c90c59ddb4f86437cf0021eb3f950a3fc21025ae282f13db494"
+    },
+    {
+      "path": "art/masters/FlyAgaric/03Full.png",
+      "bytes": 770254,
+      "sha256": "215b67599cb4cd1e5614e9fddd970f41a80f9789d86e0a404d5baf6ac65d6010"
+    },
+    {
+      "path": "art/masters/FlyAgaric/PlantA.png",
+      "bytes": 465537,
+      "sha256": "bd3c8c6d98ef755b809fb4ea2734581be68d9e109f8d43e669092172a49ee660"
+    },
+    {
+      "path": "art/masters/FlyAgaric/PlantB.png",
+      "bytes": 479598,
+      "sha256": "4b4e29c501773cf032b2d360a129645fa924b488baf7603ffb6f16f750d2ea77"
+    },
+    {
+      "path": "art/masters/PoisonFireCoral/01Low.png",
+      "bytes": 565341,
+      "sha256": "aae814a5912cf047ec3f2a8f474abe496083a53eedf0cc3962fa89c39ac8186b"
+    },
+    {
+      "path": "art/masters/PoisonFireCoral/02Medium.png",
+      "bytes": 608574,
+      "sha256": "4b53d5741c52e92fe5dd71f9b15cee6521b64b04bb396502447db1d5688c4c20"
+    },
+    {
+      "path": "art/masters/PoisonFireCoral/03Full.png",
+      "bytes": 652974,
+      "sha256": "5ab5f7a9b8f4e5439737a37f2fe35f2beec6520e73c03b004c8fae8e0651d7ae"
+    },
+    {
+      "path": "art/masters/PoisonFireCoral/PlantA.png",
+      "bytes": 441041,
+      "sha256": "be29db43c9b90435a6809148a8305407e339f884200c2a633a76e431743eecab"
+    },
+    {
+      "path": "art/masters/PoisonFireCoral/PlantB.png",
+      "bytes": 393172,
+      "sha256": "b1bdd6a88f7b907b6dc0cd0edab88ed34e16201bee39e2263f5e862617a9ca4d"
+    },
+    {
+      "path": "art/masters/SulfurTuft/01Low.png",
+      "bytes": 566211,
+      "sha256": "ff9ae860b02f747a83193e695c17fde41e05709d3a113344c56613fb469c53f5"
+    },
+    {
+      "path": "art/masters/SulfurTuft/02Medium.png",
+      "bytes": 666822,
+      "sha256": "21fa0093530e926676e4c6991598bb19375e90fb41cb528ba1b56f1574162ece"
+    },
+    {
+      "path": "art/masters/SulfurTuft/03Full.png",
+      "bytes": 721159,
+      "sha256": "f3fa179d9bfaa844cf338eece677e37d5e3b5e957ddeca0df253d5b4c0fa4f09"
+    },
+    {
+      "path": "art/masters/SulfurTuft/PlantA.png",
+      "bytes": 396555,
+      "sha256": "c3d2439f3a4a228182040133d5f3dce3a9a02c87562d5b0be579201ed0af0271"
+    },
+    {
+      "path": "art/masters/SulfurTuft/PlantB.png",
+      "bytes": 309778,
+      "sha256": "28ade1a695e7a0621dc0b4fda531e7c5cab24906ffc243a879413fbfb1e03835"
+    },
+    {
+      "path": "art/masters/Tsukiyotake/01Low.png",
+      "bytes": 614766,
+      "sha256": "6edb212de0d5258daa447bd5bbfbf98b9f92e8d78a3dbc3ab048760b818deb61"
+    },
+    {
+      "path": "art/masters/Tsukiyotake/02Medium.png",
+      "bytes": 688513,
+      "sha256": "18e37473fc19b59b641a8760f5f2ebc59e236ccff2c8a7814d570900c3c97f19"
+    },
+    {
+      "path": "art/masters/Tsukiyotake/03Full.png",
+      "bytes": 828486,
+      "sha256": "404b9cd14f6c9a2e5a79248b0af40fc57b9dc2ee533cf9236f765caeda2ef192"
+    },
+    {
+      "path": "art/masters/Tsukiyotake/PlantA.png",
+      "bytes": 495123,
+      "sha256": "72e558e3850fa5002aa47bb377c0e0d70b3e1d91a6a1e2faa437c370e91dd2bb"
+    },
+    {
+      "path": "art/masters/Tsukiyotake/PlantB.png",
+      "bytes": 449535,
+      "sha256": "31c7ea0f53fc3e7b38bd041f1a2e02bc0b5a9bff486d642b4f5bf493f9c79e18"
+    },
+    {
+      "path": "art/poison-mushrooms-comparison.html",
+      "bytes": 469830,
+      "sha256": "a0f9f6b2d6feca10fc15df3040639c9a357c22f92e6927a28d5b46a0cf87debf"
+    },
+    {
+      "path": "art/poison-mushrooms-preview.html",
+      "bytes": 469880,
+      "sha256": "010774ccd23699fc5e795ff6c4ae46b4f33aaabbe8f0c534b270a883b4b36059"
+    },
+    {
+      "path": "art/preview-template.html",
+      "bytes": 7275,
+      "sha256": "518eec0f879414dfd334991372cfe6ee60702cc1595b1eea7ebe308e3d68c257"
+    },
+    {
+      "path": "art/preview.html",
+      "bytes": 542293,
+      "sha256": "c1dbde79e7fc41c9b0dc750824de97f1da9eea35674475461455d84fdfca5b30"
+    },
+    {
+      "path": "art/prompts/DestroyingAngel.json",
+      "bytes": 10065,
+      "sha256": "a2d207cebfdd5716403fe36a2ca9754b26b62a60470c0c12fd4c7d50590c45fa"
+    },
+    {
+      "path": "art/prompts/FlyAgaric.json",
+      "bytes": 9355,
+      "sha256": "f27668eef635eee9b8d2e4c4c6448a555245f513796742de962ffb3c12c05b4c"
+    },
+    {
+      "path": "art/prompts/PoisonFireCoral-validation.json",
+      "bytes": 2744,
+      "sha256": "8e6632261bc83a32fd624f652d2c1b6a357382de5bbed18af523108e44d79a63"
+    },
+    {
+      "path": "art/prompts/PoisonFireCoral.json",
+      "bytes": 12194,
+      "sha256": "ead2ee1bc30c0160b64aa5f3905c18801e55ad0d3f5c7384a2f71fe8ed31ee48"
+    },
+    {
+      "path": "art/prompts/SulfurTuft.json",
+      "bytes": 10940,
+      "sha256": "2b0167b058c838eb0451e325d00a2255c5d07be4d15b7428cd2da2dd8cbcc37e"
+    },
+    {
+      "path": "art/prompts/Tsukiyotake.json",
+      "bytes": 11362,
+      "sha256": "9e2f5af9fb2135f138c6826e78353db44f89bb3de2cd54d1b2d99e213f18580d"
+    },
+    {
+      "path": "art/README.txt",
+      "bytes": 2591,
+      "sha256": "50f3c29458915da490ea990cec3b8afc550f1cc012e0beabcc74fbc2e8a6f6fa"
+    },
+    {
+      "path": "art/references/destroying-angel.jpg",
+      "bytes": 133095,
+      "sha256": "f167f76f4d4dda4acc11fe56b6acb096419ec469ab18f03b5fb768787a558cda"
+    },
+    {
+      "path": "art/references/fly-agaric.jpg",
+      "bytes": 224607,
+      "sha256": "7788d0cbe9ba25b4270d2b99854676117e2aee7627da56b899d9fae9f43c96b1"
+    },
+    {
+      "path": "art/references/poison-fire-coral.jpg",
+      "bytes": 269936,
+      "sha256": "2e6aaff37b7e689b3510e32a6f4a7bf0eb5fd2b4bb26da7a5e39863913691110"
+    },
+    {
+      "path": "art/references/sources.json",
+      "bytes": 2527,
+      "sha256": "51f6dc430ca2aea91a2d1233e3450f52dac3cfcc988de17fc4c0448e83463ffb"
+    },
+    {
+      "path": "art/references/style/01Low.png",
+      "bytes": 38673,
+      "sha256": "e7d26adeba54dded607e525a8177b6a861fc2b6d2ae77520c9e1b964dfb4ad11"
+    },
+    {
+      "path": "art/references/style/02Medium.png",
+      "bytes": 41840,
+      "sha256": "b18150ed4cd54fca087f83b26713bdfc78587e94ff99ed91ef58462943c0110f"
+    },
+    {
+      "path": "art/references/style/03Full.png",
+      "bytes": 47368,
+      "sha256": "c559da75d94fe73ebd0600809e11ea2124931c4173d179becf98f6e7916efb93"
+    },
+    {
+      "path": "art/references/style/ButtonA.png",
+      "bytes": 38563,
+      "sha256": "9aaf0eb23a079a3f668e9266d2d60be3667d6c82e45f28af0c701de0d9d6d374"
+    },
+    {
+      "path": "art/references/style/ButtonB.png",
+      "bytes": 31836,
+      "sha256": "2cae100fd21764299e871702a3c6ae3c96aadac8a5e111845140e6f13b5f47b6"
+    },
+    {
+      "path": "art/references/style/EnokiWildA.png",
+      "bytes": 41178,
+      "sha256": "4d106529f308c15aebf645d2f184c5c25e24d2b22d918ce3c6156206fc4f0bb4"
+    },
+    {
+      "path": "art/references/style/OysterA.png",
+      "bytes": 36948,
+      "sha256": "0bc0be628e6bd5f5475835ef4c372055c7a9f24d52e3b1d7c9a7615d9ffe0da0"
+    },
+    {
+      "path": "art/references/sulfur-tuft.jpg",
+      "bytes": 192260,
+      "sha256": "1a288426443be15e047577fdfad5a8c20a243571b798a098b82b5445ff095f6b"
+    },
+    {
+      "path": "art/references/tsukiyotake.jpg",
+      "bytes": 169284,
+      "sha256": "396c30fcb6d45b272b8321e30fc5b8acb5d4b55011793ec1e2a703be8f6ea319"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/DestroyingAngel/01Low.png",
+      "bytes": 40395,
+      "sha256": "c31e824be54c3676b4f7731e5a39df0875fc40a15e9765901f9618c0b4110357"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/DestroyingAngel/02Medium.png",
+      "bytes": 43122,
+      "sha256": "2ad99c8f4d9004916053fe215f2882c0a61abe6110314727a5be531ae17d56ad"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/DestroyingAngel/03Full.png",
+      "bytes": 53931,
+      "sha256": "b213987f6d71449b68786039233f7971eef6005e984fc22c78f520f90aea914b"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/FlyAgaric/01Low.png",
+      "bytes": 39442,
+      "sha256": "1c21af9f6ce603ad310f2ea4138138fdb5f77289fa36dd2255abdbb9a69da710"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/FlyAgaric/02Medium.png",
+      "bytes": 42148,
+      "sha256": "61ff1ae6cd6d3b53da69d4729eb04901a14477b7c7bfdabebb4231251d99741c"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/FlyAgaric/03Full.png",
+      "bytes": 49047,
+      "sha256": "cfd8b9aa41c5f6145b999aebb4b9c25f67589ada113a1389877a151cf34f0fcf"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/PoisonFireCoral/01Low.png",
+      "bytes": 38332,
+      "sha256": "2b548245daff5edccae0b579cef518a1ebbdd151b703a245cc97140c141a3c01"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/PoisonFireCoral/02Medium.png",
+      "bytes": 42152,
+      "sha256": "af50002c9210d5f2e136d20fc333d8033eb96d00d205be3b7c2692f54c333cac"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/PoisonFireCoral/03Full.png",
+      "bytes": 45208,
+      "sha256": "777e894d57ef6d12199909a3b1cdb009125f1bec8d55730bc5409344706a700c"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/SulfurTuft/01Low.png",
+      "bytes": 39244,
+      "sha256": "f354cb09ae09fbd183e76b3cc38892112cb8683e921e803365ee01b1763fde06"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/SulfurTuft/02Medium.png",
+      "bytes": 43262,
+      "sha256": "6091f85abaeb23999cd433010bf62d4239b2379b6ce69b2b144497e8a81adec7"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/SulfurTuft/03Full.png",
+      "bytes": 48939,
+      "sha256": "29e915c71aa3ac286a95b0b4fe317dbf440f61978d3fd821c4ab7537c710f84d"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/Tsukiyotake/01Low.png",
+      "bytes": 40531,
+      "sha256": "f31849456eeb8e150e04109a62cee0b68b538a7c3da2852538e6f511be7d9266"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/Tsukiyotake/02Medium.png",
+      "bytes": 46813,
+      "sha256": "eef0f8a4b3d88fa518502e2dfa781c8ad6bc1943800b6e60d713100598a7f734"
+    },
+    {
+      "path": "art/Textures/Things/Item/RimMushrooms/Tsukiyotake/03Full.png",
+      "bytes": 54339,
+      "sha256": "786d157288599070f5593855b957f05da0adc3ad490e44535cdba27b0e52e72c"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/DestroyingAngel/DestroyingAngelA.png",
+      "bytes": 26059,
+      "sha256": "b0b6e43a43eeac7ea2d4baae96b951af78b960067460f0762c254792ee2571b6"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/DestroyingAngel/DestroyingAngelB.png",
+      "bytes": 30969,
+      "sha256": "9c7a377e415cdf3800df317710bfa6e4009956875aaa42b872e2c138a1cee4ed"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/FlyAgaric/FlyAgaricA.png",
+      "bytes": 38859,
+      "sha256": "5c760e1aa39b35d2900b4b931b54a9ac3882893e9ac4a2d8af91cdf8fa174b6c"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/FlyAgaric/FlyAgaricB.png",
+      "bytes": 29828,
+      "sha256": "70fab6d6df0a9474f082c0b930451ac5f51972b2757a8dd51d0cc270fdc9d3e3"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/PoisonFireCoral/PoisonFireCoralA.png",
+      "bytes": 29055,
+      "sha256": "2366bb15d9fac04df594f9c93fecb52052019c125b2dfe87fcf66450402a462f"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/PoisonFireCoral/PoisonFireCoralB.png",
+      "bytes": 28381,
+      "sha256": "5bca24ffbe8148f13294f04eca98812363aa3bd7fe974053a6af83be8a9e662b"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/SulfurTuft/SulfurTuftA.png",
+      "bytes": 39066,
+      "sha256": "8315d2a355e4fc7ec20d2b5b21a021cb5ed7d6cdcb846a8e0ec509847ba9f896"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/SulfurTuft/SulfurTuftB.png",
+      "bytes": 37179,
+      "sha256": "a1d0b7e03ea8c3093c040459fdc113fb421dace21b60eb2416ece1e994f767b1"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/Tsukiyotake/TsukiyotakeA.png",
+      "bytes": 40228,
+      "sha256": "cdc6c14244583a085c161eb268df0a726fe515a54cea04c173cdc3ddd7588e58"
+    },
+    {
+      "path": "art/Textures/Things/Plant/RimMushrooms/Tsukiyotake/TsukiyotakeB.png",
+      "bytes": 34553,
+      "sha256": "4d22d2fd507bd8f61942d972e4afaf3a6c5d49042f57a5df7e1a2a925e8a8c0e"
+    },
+    {
+      "path": "art/validation.json",
+      "bytes": 731,
+      "sha256": "c1d09660a908b2afee0bcde2e4951dfab8d5cd1d230785713af684a66f044f8c"
+    },
+    {
+      "path": "notes/01-독버섯효과최신설계안.txt",
+      "bytes": 6951,
+      "sha256": "58464b33ff01549adad957bf59dd0e0e7e08c2c2c0a3b466a84ecab3ecf1bf9c"
+    },
+    {
+      "path": "notes/02-대화와결정사항요약.txt",
+      "bytes": 10037,
+      "sha256": "bc3f3e101b7ac6dc756e70eb06c0e71849fd1b2c38e2780a81517fdc38fcbd3d"
+    },
+    {
+      "path": "notes/03-독성조사와출처.txt",
+      "bytes": 6072,
+      "sha256": "269ddcc506d237425fe7021155fc15f6f5c336e950a2e53c053bc9ba0def26a5"
+    },
+    {
+      "path": "README-먼저읽기.txt",
+      "bytes": 3277,
+      "sha256": "f52b67a8183ca45a92dccf71a6a1adfdc64ade332c498895f904f869984f2f6b"
+    }
+  ],
+  "manifest_self_hash_excluded": true
+}

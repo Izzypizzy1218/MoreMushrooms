@@ -14,9 +14,23 @@ foreach ($required in @('About\About.xml','Assemblies\RimMushrooms.dll','Defs','
 }
 # Preflight both names before moving either, so a rename cannot leave duplicates.
 $oldInstalls = @($installTarget, $legacyTarget) | Where-Object { Test-Path -LiteralPath $_ }
+$publishedIds = @()
+foreach ($aboutRoot in @((Join-Path $projectRoot 'About')) + @($oldInstalls | ForEach-Object { Join-Path $_ 'About' })) {
+    $idPath = Join-Path $aboutRoot 'PublishedFileId.txt'
+    if (Test-Path -LiteralPath $idPath) {
+        $idValue = ([IO.File]::ReadAllText($idPath)).Trim()
+        if ($idValue -notmatch '^[1-9][0-9]*$') { throw 'Invalid Workshop published file ID.' }
+        $publishedIds += $idValue
+    }
+}
+$distinctPublishedIds = @($publishedIds | Select-Object -Unique)
+if ($distinctPublishedIds.Count -gt 1) { throw 'Conflicting Workshop published file IDs.' }
 foreach ($oldInstall in $oldInstalls) {
     $existing = [xml](Get-Content -LiteralPath (Join-Path $oldInstall 'About\About.xml') -Raw)
     if ($existing.ModMetaData.packageId -ne 'izzypizzy.rimmushrooms') { throw 'Destination belongs to a different mod.' }
+}
+if ($distinctPublishedIds.Count -eq 1) {
+    [IO.File]::WriteAllText((Join-Path $projectRoot 'About\PublishedFileId.txt'), $distinctPublishedIds[0], [Text.UTF8Encoding]::new($false))
 }
 foreach ($oldInstall in $oldInstalls) {
     $backupRoot = Join-Path $projectRoot 'Backups'

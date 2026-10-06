@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef Name="RMush_PoisonRawBase" ParentName="OrganicProductBase" Abstract="True">
+    <stackLimit>75</stackLimit>
+    <possessionCount>0</possessionCount>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>RMush_PoisonMushrooms</li>
+    </thingCategories>
+    <statBases>
+      <Nutrition>0</Nutrition>
+      <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <graphicData>
+      <graphicClass>RimMushrooms.Graphic_MushroomStack</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <ingestible>
+      <foodType>Fungus</foodType>
+      <drugCategory>None</drugCategory>
+      <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+      <baseIngestTicks>500</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+    </ingestible>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomStackThresholds">
+        <lowMaxCount>25</lowMaxCount>
+        <mediumMaxCount>50</mediumMaxCount>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawFlyAgaric</defName>
+    <label>fly agaric</label>
+    <description>Poisonous fly agaric. Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/FlyAgaric</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.8</MarketValue>
+    </statBases>
+    <ingestible>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonFlyAgaric</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantFlyAgaric</defName>
+    <label>fly agaric cluster</label>
+    <description>A wild cluster of poisonous fly agaric. Can be harvested but cannot be sown. Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/FlyAgaric</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>7</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawFlyAgaric</harvestedThingDef>
+      <wildBiomes>
+        <TemperateForest>0.006</TemperateForest>
+        <BorealForest>0.005</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawDestroyingAngel</defName>
+    <label>destroying angel</label>
+    <description>Poisonous destroying angel. Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/DestroyingAngel</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <ingestible>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonDestroyingAngel</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantDestroyingAngel</defName>
+    <label>destroying angel cluster</label>
+    <description>A wild cluster of poisonous destroying angel. Can be harvested but cannot be sown. Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/DestroyingAngel</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>9</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawDestroyingAngel</harvestedThingDef>
+      <wildBiomes>
+        <TemperateForest>0.002</TemperateForest>
+        <BorealForest>0.002</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawSulfurTuft</defName>
+    <label>sulfur tuft</label>
+    <description>Poisonous sulfur tuft. Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/SulfurTuft</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <ingestible>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonSulfurTuft</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantSulfurTuft</defName>
+    <label>sulfur tuft cluster</label>
+    <description>A wild cluster of poisonous sulfur tuft. Can be harvested but cannot be sown. Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/SulfurTuft</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>6.5</growDays>
+      <harvestYield>10</harvestYield>
+      <harvestedThingDef>RMush_RawSulfurTuft</harvestedThingDef>
+      <wildBiomes>
+        <TemperateForest>0.005</TemperateForest>
+        <TemperateSwamp>0.006</TemperateSwamp>
+        <BorealForest>0.003</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawTsukiyotake</defName>
+    <label>tsukiyotake</label>
+    <description>Poisonous tsukiyotake. Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Tsukiyotake</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.8</MarketValue>
+    </statBases>
+    <ingestible>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonTsukiyotake</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantTsukiyotake</defName>
+    <label>tsukiyotake cluster</label>
+    <description>A wild cluster of poisonous tsukiyotake. Can be harvested but cannot be sown. Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Tsukiyotake</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>7</growDays>
+      <harvestYield>9</harvestYield>
+      <harvestedThingDef>RMush_RawTsukiyotake</harvestedThingDef>
+      <wildBiomes>
+        <TemperateForest>0.004</TemperateForest>
+        <TemperateSwamp>0.004</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawPoisonFireCoral</defName>
+    <label>poison fire coral</label>
+    <description>Poisonous poison fire coral. Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/PoisonFireCoral</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonPoisonFireCoral</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantPoisonFireCoral</defName>
+    <label>poison fire coral cluster</label>
+    <description>A wild cluster of poisonous poison fire coral. Can be harvested but cannot be sown. Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/PoisonFireCoral</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>10</growDays>
+      <harvestYield>5</harvestYield>
+      <harvestedThingDef>RMush_RawPoisonFireCoral</harvestedThingDef>
+      <wildBiomes>
+        <TemperateForest>0.002</TemperateForest>
+        <TemperateSwamp>0.002</TemperateSwamp>
+        <TropicalRainforest>0.002</TropicalRainforest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+</Defs>

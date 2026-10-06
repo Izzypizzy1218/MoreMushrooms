@@ -1,0 +1,335 @@
+{
+  "FlyAgaric": [
+    {
+      "asset": "FlyAgaric/PlantA",
+      "prompt": "Use case: stylized-concept.\nAsset: FlyAgaric PlantA mature unit.\nA square isolated game sprite matching the attached existing RimWorld mod mushroom sprite. Very simple flat 2D artwork, thick dark warm-brown continuous outlines, two or three flat color planes only, no texture or realism, slightly elevated three-quarter view. Genuine alpha transparent background, not black, white, or checkerboard. Exactly one centered unit, at least 15 percent clear margin on every side, no typography, no badge, no soil, grass, logs, ground, scene, props, cast shadows or box.\nA single Amanita muscaria fly agaric mushroom: broad red umbrella/domed cap with seven to nine large simple irregular ivory-white spots, white short stem, small white ring. Natural mushroom anatomy, no face.\nReference 1 is the exact game art language to match; reference 2 is the real mushroom for species shape and colors only, never photographic rendering. Use a broadly rounded dome cap angled slightly left; visible short stem.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-6b5d7a1c-08e3-4025-ae4e-be70455841ad.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantA.png",
+      "mode": "built-in-imagegen"
+    },
+    {
+      "asset": "FlyAgaric/PlantB",
+      "prompt": "Use case: stylized-concept.\nAsset: FlyAgaric PlantB mature unit visual variation, NOT a juvenile.\nA square isolated game sprite matching the attached existing RimWorld mod mushroom sprite. Very simple flat 2D artwork, thick dark warm-brown continuous outlines, two or three flat color planes only, no texture or realism, slightly elevated three-quarter view. Genuine alpha transparent background, not black, white, or checkerboard. Exactly one centered unit, at least 15 percent clear margin on every side, no typography, no badge, no soil, grass, logs, ground, scene, props, cast shadows or box.\nA single Amanita muscaria fly agaric mushroom: broad red umbrella/domed cap with seven to nine large simple irregular ivory-white spots, white short stem, small white ring. Natural mushroom anatomy, no face.\nReference 1 is the exact game art style; reference 2 is real species morphology only. Variation B has a flatter, wider umbrella cap, gently off-center white stem leaning right, with a different arrangement of eight large flat white warts. Clearly one complete adult mushroom.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonB.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-e53078bb-fa0a-4b62-8a40-8a764b4eb648.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantB.png",
+      "mode": "built-in-imagegen"
+    },
+    {
+      "asset": "FlyAgaric/01Low",
+      "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Fly agaric. Red domed caps with several simple large white patches and white short stems.\nQuantity LOW: only 3 small harvested fly agaric mushrooms resting near the bottom inside the box, much of the dark brown interior floor and back wall clearly visible, none projecting above the back rim. Match reference 1's LOW composition exactly.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-455606cc-1c76-40e2-8c2e-4036166dd051.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/01Low.png",
+      "mode": "built-in-imagegen"
+    },
+    {
+      "asset": "FlyAgaric/02Medium",
+      "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Fly agaric. Red domed caps with several simple large white patches and white short stems.\nQuantity MEDIUM: six small harvested fly agarics loosely filling roughly half the box, caps visible near and below the rim, dark interior visible behind. Match reference 1's MEDIUM amount and arrangement. Not overflowing.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-0ca647d5-2a5a-44a3-8d52-d5375d7a9154.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/02Medium.png",
+      "mode": "built-in-imagegen"
+    },
+    {
+      "asset": "FlyAgaric/03Full",
+      "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Fly agaric. Red domed caps with several simple large white patches and white short stems.\nQuantity FULL: 12-15 small harvested fly agarics forming a dense shallow mound rising above the back rim exactly as reference 1. Almost no interior floor visible. Many separate readable red caps with white warts; mushrooms densely packed but not a towering pyramid. The tray must keep the same original size and silhouette.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/fly-agaric.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-5a27834d-44c0-46e0-bdc3-d4077072800c.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/FlyAgaric/03Full.png",
+      "mode": "built-in-imagegen"
+    }
+  ],
+  "DestroyingAngel": [
+    {
+      "asset": "DestroyingAngel/PlantA",
+      "prompt": "Use case: stylized-concept.\nAsset: DestroyingAngel PlantA mature unit.\nA square isolated game sprite matching the attached existing RimWorld mod mushroom sprite. Very simple flat 2D artwork, thick dark warm-brown continuous outlines, two or three flat color planes only, no texture or realism, slightly elevated three-quarter view. Genuine alpha transparent background, not black, white, or checkerboard. Exactly one centered unit, at least 15 percent clear margin on every side, no typography, no badge, no soil, grass, logs, ground, scene, props, cast shadows or box.\nA single Amanita virosa destroying angel: ivory-white slightly pointed conical umbrella cap, slender white stem with a small clear skirt-like ring, white swollen base. All cap and stem pale cream white with taupe shadow planes. No spots, no red, no face.\nReference 1 controls simplified game style and outline weight; reference 2 is only real species morphology. One compact fully grown mushroom with a rounded conical cap tapering to a softly pointed peak and downward cap edges; a visible fairly short slender stalk and simple skirt ring. White cap must remain distinguishable from the round button-mushroom reference.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-8e2909c5-01be-48ae-8658-9f58cce838b8.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantA.png",
+      "mode": "built-in-imagegen"
+    },
+    {
+      "asset": "DestroyingAngel/PlantB",
+      "prompt": "Use case: stylized-concept.\nAsset: DestroyingAngel PlantB mature unit visual variation, NOT a juvenile.\nA square isolated game sprite matching the attached existing RimWorld mod mushroom sprite. Very simple flat 2D artwork, thick dark warm-brown continuous outlines, two or three flat color planes only, no texture or realism, slightly elevated three-quarter view. Genuine alpha transparent background, not black, white, or checkerboard. Exactly one centered unit, at least 15 percent clear margin on every side, no typography, no badge, no soil, grass, logs, ground, scene, props, cast shadows or box.\nA single Amanita virosa destroying angel: ivory-white slightly pointed conical umbrella cap, slender white stem with a small clear skirt-like ring, white swollen base. All cap and stem pale cream white with taupe shadow planes. No spots, no red, no face.\nReference 1 controls simplified game style and outline weight; reference 2 is only real species morphology. Variation B has a lower and wider softly pointed asymmetrical umbrella cap, gently tilted right, a visible stalk curved subtly left, a simple skirt ring and swollen base. One complete fully grown mushroom, clean compact silhouette.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonB.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-13958444-7a83-49f1-9ca3-1f68ed1bc883.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantB.png",
+      "mode": "built-in-imagegen"
+    },
+    {
+      "asset": "DestroyingAngel/01Low",
+      "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Destroying angel, Amanita virosa. Ivory white softly pointed conical umbrella caps and white stems with small skirt rings. No rounded button mushroom caps, no spots.\nQuantity LOW: only 3 small harvested destroying angel mushrooms resting inside the box with lightly varied tilts, much of the dark brown interior floor and back wall clearly visible, none projecting above the back rim. Match reference 1's LOW composition exactly; keep the white caps recognizably conical as in reference 2.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-4903298f-e211-43e7-aa4f-f19b9bbddf7c.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/01Low.png",
+      "mode": "built-in-imagegen"
+    },
+    {
+      "asset": "DestroyingAngel/02Medium",
+      "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Destroying angel, Amanita virosa. Ivory white softly pointed conical umbrella caps and white stems with small skirt rings. No rounded button mushroom caps, no spots.\nQuantity MEDIUM: six small harvested destroying angel mushrooms loosely filling roughly half the tray. White softly pointed caps and a few ringed white stems visible, dark interior behind. Do not overflow; match reference 1's MEDIUM composition.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-74a15f75-ae03-4609-81e3-706b1a30b8fa.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/02Medium.png",
+      "mode": "built-in-imagegen"
+    },
+    {
+      "asset": "DestroyingAngel/03Full",
+      "prompt": "Use case: precise-object-edit.\nAsset: RimWorld harvested mushroom resource sprite.\nEDIT REFERENCE 1, preserve its ochre rectangular resource tray EXACTLY: same straight front panel, same stepped notch on the right wall, same dark brown outlines, same geometry, perspective, color, size and canvas position. Change ONLY the mushrooms inside the tray. Do not redesign or beautify the tray, do not add wooden planks or handles. Match the flat simple 2D game art, heavy dark-brown outlines and 2-3 flat shading planes. Reference 2 shows the exact new mushroom art; reference 3 is real species morphology only. Square transparent RGBA background, no shadow outside tray, no background fill, no checkerboard, no text or label, no skulls. Keep all mushrooms inside the tray; no loose mushrooms outside.\nSpecies: Destroying angel, Amanita virosa. Ivory white softly pointed conical umbrella caps and white stems with small skirt rings. No rounded button mushroom caps, no spots.\nQuantity FULL: twelve to fifteen small harvested destroying angel mushrooms densely packed in a shallow heap rising above the back rim. White softly pointed conical caps, some ringed white stems. Almost no interior floor visible. Match reference 1's FULL composition, not a tall tower.",
+      "referenced_image_paths": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/destroying-angel.jpg"
+      ],
+      "transparent_background": true,
+      "generated_source": "C:\\Users\\HOME\\.codex\\generated_images\\01a10ab4-5e03-7630-8436-e4afb4832a4a\\exec-f5da8727-8ba0-4e52-a900-4400808b9287.png",
+      "saved_path": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/DestroyingAngel/03Full.png",
+      "mode": "built-in-imagegen"
+    }
+  ],
+  "SulfurTuft": {
+    "species": "SulfurTuft",
+    "mode": "built-in image_gen",
+    "transparent_background": true,
+    "assets": [
+      {
+        "species": "SulfurTuft",
+        "asset": "PlantA",
+        "prompt": "Use case: stylized-concept\nAsset type: transparent square 2D RimWorld mushroom plant sprite. ONE isolated tiny mature growth UNIT, never a sprite sheet.\nStyle: exactly match the supporting RimWorld plant sprite: heavy warm dark-brown clean outlines, only 2-3 flat cel-shaded color planes, small readable silhouette, slightly top-down three-quarter view, no realistic texture, no gradients, no fine engraving.\nComposition: mushroom in the center, overall group fits within the central 70% of the square with at least 15% transparent safe margins. No soil, grass, log, rocks, root tuft, box, container, shadow on a ground plane, text, labels, watermark or border. Real alpha transparency outside the object, never draw a checkerboard. This is a fully grown plant unit that the game repeats and scales.\nInput 1: real Hypholoma fasciculare photograph for species anatomy and colors only. Input 2: existing EnokiWild sprite for line thickness, simplified shapes and viewpoint only.\nSubject: a compact cluster of THREE small sulfur-yellow mushrooms. Bell-domed cap tops have muted ochre-orange centers and paler sulfur-yellow edges. Stems are relatively slim, long and pale mustard-yellow, with NO ring or white volva. One tallest cap slightly left of center, a medium cap on right, one lower little cap front left. Natural mature variant A. Distinct from the single thick-stem amber EnokiWild reference. Keep it austere and readable as a tiny game sprite.",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg",
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/EnokiWild/EnokiWildA.png"
+        ],
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-46aaca31-9efb-4b6f-9b34-e86fcbaaaa98.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png"
+      },
+      {
+        "species": "SulfurTuft",
+        "asset": "PlantB",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg"
+        ],
+        "prompt": "Use case: precise-object-edit\nAsset type: ONE transparent square 2D RimWorld plant unit, mature variant B.\nInput 1 is the style and species identity reference (variant A); input 2 is the real species photograph for anatomy only.\nCreate a different natural mature silhouette of the SAME species and palette, keeping the exact thick warm brown outline, flat clean cel shading, simplicity and slight top-down viewpoint of input 1. Draw TWO sulfur-yellow bell-domed caps with ochre-orange centers, the taller one on the right, the shorter one on the left, on slim pale mustard-yellow stalks meeting at the base. Caps are rounder and slightly more open than variant A.\nThis is NOT an earlier growth stage. A small mature group, no extra sprouts. Keep the object within central70% with at least15% transparent margin. Actual RGBA transparent background. No checkerboard, ground, soil, log, roots, grass, rocks, box, cast shadow, text, labels, border. No photo realism, no gradients or texture.",
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-39c5fad3-5832-4abf-bc27-574500d1b112.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantB.png"
+      },
+      {
+        "species": "SulfurTuft",
+        "asset": "01Low",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg"
+        ],
+        "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Hypholoma fasciculare / sulfur tuft: small sulfur-yellow domed caps with orange-ochre centers and slender pale yellow stalks, using exactly the palette and flat art of input2.\nLOW contents: only 3 loose harvested mushrooms rest near the front-left bottom, far below the back rim. Leave most of the dark inside floor visibly empty.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-52fbe767-9fa9-4ee5-8249-75e91d2ae3b2.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/01Low.png"
+      },
+      {
+        "species": "SulfurTuft",
+        "asset": "02Medium",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg"
+        ],
+        "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Hypholoma fasciculare / sulfur tuft: small sulfur-yellow domed caps with orange-ochre centers and slender pale yellow stalks, using exactly the palette and flat art of input2.\nMEDIUM contents: 6 to 7 loose harvested mushrooms, approximately half full with the topmost pieces near but below the rear rim. Clearly more than low and less than full.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-495085f1-4fc9-41f3-850c-4689b3052e77.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/02Medium.png"
+      },
+      {
+        "species": "SulfurTuft",
+        "asset": "03Full",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg"
+        ],
+        "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Hypholoma fasciculare / sulfur tuft: small sulfur-yellow domed caps with orange-ochre centers and slender pale yellow stalks, using exactly the palette and flat art of input2.\nFULL contents: 12 to 14 loose harvested mushrooms, fill the whole crate and mound slightly over the top rim, matching the height and density of the first reference.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-98cf48ec-5def-47a1-9679-3370b9cc22a4.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/03Full.png"
+      }
+    ]
+  },
+  "Tsukiyotake": {
+    "species": "Tsukiyotake",
+    "mode": "built-in image_gen",
+    "transparent_background": true,
+    "assets": [
+      {
+        "species": "Tsukiyotake",
+        "asset": "PlantA",
+        "prompt": "Use case: stylized-concept\nAsset type: transparent square 2D RimWorld mushroom plant sprite. ONE isolated tiny mature growth UNIT, never a sprite sheet.\nStyle: exactly match the supporting RimWorld plant sprite: heavy warm dark-brown clean outlines, only 2-3 flat cel-shaded color planes, small readable silhouette, slightly top-down three-quarter view, no realistic texture, no gradients, no fine engraving.\nComposition: mushroom in the center, overall group fits within the central 70% of the square with at least 15% transparent safe margins. No soil, grass, log, rocks, root tuft, box, container, shadow on a ground plane, text, labels, watermark or border. Real alpha transparency outside the object, never draw a checkerboard. This is a fully grown plant unit that the game repeats and scales.\nInput 1: actual Omphalotus japonicus photograph (also called O. guepiniformis), species shape only. Input 2: existing Oyster sprite, game linework and simplicity only.\nSubject: TWO mature overlapping thick asymmetrical semicircular fan-shaped brown mushroom caps, upper larger and lower smaller. The broad caps have a dusky chestnut to muted purplish-brown top, a lighter beige rolling outer lip, and pale cream underside with just 3 simple radiating gill planes. Short stout off-center lateral stalks fuse at a compact root point. A small cupped depression on each broad top, a heavy ear/fan silhouette that differs from gray oyster mushrooms. Normal daylight colors, absolutely NO green glow, no bioluminescence. Natural mature variant A, not a pile or full bush.",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg",
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Oyster/OysterA.png"
+        ],
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-10874fae-7f60-4968-9045-e3d52262a6b2.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png"
+      },
+      {
+        "species": "Tsukiyotake",
+        "asset": "PlantB",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg"
+        ],
+        "prompt": "Use case: precise-object-edit\nAsset type: ONE transparent square 2D RimWorld plant unit, mature variant B.\nInput 1 is the style and species identity reference (variant A); input 2 is the real species photograph for anatomy only.\nCreate a different natural mature silhouette of the SAME species and palette, keeping the exact thick warm brown outline, flat clean cel shading, simplicity and slight top-down viewpoint of input 1. Draw TWO broad asymmetrical fan-shaped chestnut/purplish-brown caps with muted lighter beige rolled rims and 3 broad cream gill planes. The larger low broad cap is on the right and the smaller upright cap is behind left, with short stout off-center stems meeting at the base. Slightly cupped mushroom tops; normal daylight, no glow.\nThis is NOT an earlier growth stage. A small mature group, no extra sprouts. Keep the object within central70% with at least15% transparent margin. Actual RGBA transparent background. No checkerboard, ground, soil, log, roots, grass, rocks, box, cast shadow, text, labels, border. No photo realism, no gradients or texture.",
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-da69c2d3-25e6-4f85-838d-3c34a430fbea.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantB.png"
+      },
+      {
+        "species": "Tsukiyotake",
+        "asset": "01Low",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg"
+        ],
+        "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Omphalotus japonicus / tsukiyotake: broad cupped semicircular brown to muted purplish-brown fan caps, paler rolled rims, cream gill underside and short lateral stems, using exactly the palette and flat art of input2. Normal daylight, no glow.\nLOW contents: only 3 loose harvested mushrooms rest near the front-left bottom, far below the back rim. Leave most of the dark inside floor visibly empty.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-e3d03170-c130-4f2e-9ebc-5fab7960f3d0.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/01Low.png"
+      },
+      {
+        "species": "Tsukiyotake",
+        "asset": "02Medium",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg"
+        ],
+        "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Omphalotus japonicus / tsukiyotake: broad cupped semicircular brown to muted purplish-brown fan caps, paler rolled rims, cream gill underside and short lateral stems, using exactly the palette and flat art of input2. Normal daylight, no glow.\nMEDIUM contents: 6 to 7 loose harvested mushrooms, approximately half full with the topmost pieces near but below the rear rim. Clearly more than low and less than full.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-3cd3e12a-d3a8-4a64-933b-ed2253d070f9.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/02Medium.png"
+      },
+      {
+        "species": "Tsukiyotake",
+        "asset": "03Full",
+        "refs": [
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/tsukiyotake.jpg"
+        ],
+        "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Omphalotus japonicus / tsukiyotake: broad cupped semicircular brown to muted purplish-brown fan caps, paler rolled rims, cream gill underside and short lateral stems, using exactly the palette and flat art of input2. Normal daylight, no glow.\nFULL contents: 12 to 14 loose harvested mushrooms, fill the whole crate and mound slightly over the top rim, matching the height and density of the first reference.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+        "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-83bc97d8-4a21-4291-a4f5-2c874f82f2f8.png",
+        "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/Tsukiyotake/03Full.png"
+      }
+    ]
+  },
+  "PoisonFireCoral": {
+    "species": "PoisonFireCoral",
+    "koreanName": "붉은사슴뿔버섯",
+    "generationMode": "built-in image_gen",
+    "assets": [
+      {
+        "asset": "PlantA",
+        "mode": "built-in image_gen",
+        "prompt": "Use case: stylized-concept. Asset type: one transparent square RimWorld mushroom plant unit sprite, variant A.\nInput 1 is a STYLE reference only: match its bold dark warm-brown outlines, simple flat 2D silhouette, two or three muted cel-shaded color planes, slight view from above, clean game-icon readability. Input 2 is a SPECIES SHAPE reference only for poison fire coral fungus (붉은사슴뿔버섯).\nDraw one SMALL coherent unit of this fungus: three to four upright slender scarlet/vermilion rounded-tip clubs, of unequal lengths, joined near a compact base. One gentle fork is enough. Largest club at center-left, shorter club at right. Blunt softly rounded tips, subtly tapering bodies. This is a terrestrial club fungus, NOT sea coral, not a hand, not flames. Do not add caps or ordinary mushroom stems. Smooth matte scarlet red main faces, dark brick-red shadow plane, restrained lighter red highlight planes. Keep outlining weight similar to the style reference. No photographic texture, no glossy 3D lighting, no fine noise.\nComposition: single isolated mature plant unit centered in a square, around 70 percent of canvas height, with at least 15 percent safe transparent space around. Root at bottom of subject. Actual transparent alpha background; no checker pattern, no solid backdrop. Do not include soil, grass, moss, logs, roots, rocks, base platform, shadow, box, other objects, labels, skulls, warning markings, text or watermark. Exactly one sprite, not a sheet.",
+        "references": [
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg"
+        ],
+        "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-11afeba4-a701-4da2-916d-82b3e56eb3e4.png",
+        "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+        "transparent_background": true
+      },
+      {
+        "asset": "PlantB",
+        "mode": "built-in image_gen",
+        "prompt": "Use case: stylized-concept. Asset type: one transparent square RimWorld mushroom plant unit sprite, mature variant B.\nInput 1 is the accepted poison fire coral PlantA sprite: preserve the same species, scarlet/vermilion/brick-red palette, bold dark brown outlines and simple 2D game icon language. Input 2 is its real species reference only. Input 3 is the established button mushroom sprite style.\nCreate a SECOND mature variation, not an earlier growth stage: THREE main slender upright rounded-tip club fingers connected at a small base, with one short lateral lobe. Tallest finger now slightly to the RIGHT, gently curving right; the left one bends subtly outward; middle shorter finger peeks between. Unequal natural heights and a few simple broad flat shadow shapes. Do not simply mirror A. The clubs are smooth cylindrical fungal fruiting bodies without mushroom caps, sea-coral branching, palms, flame tips, or flowers.\nUse only 2-3 matte cel-shaded tones per form with no granular texture, photographic detail, 3D shine or gradients. Thick clean warm dark-brown contour like the button reference. Slight view from above consistent with other game plants.\nOne compact isolated unit in a square; keep entire silhouette inside central 70 percent of canvas with generous actual transparent margins. Genuine alpha transparency, no drawn checkerboard. No soil, grass, moss, logs, roots, rocks, platform, drop shadow, box, text, symbols, skulls, warnings or watermarks. Exactly one sprite, not a sheet.",
+        "references": [
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg",
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonA.png"
+        ],
+        "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-61ea2295-4dca-458e-a314-b2bd73ae561c.png",
+        "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantB.png",
+        "transparent_background": true
+      },
+      {
+        "asset": "01Low",
+        "mode": "built-in image_gen",
+        "prompt": "Use case: precise-object-edit. Asset type: one transparent square RimWorld harvested resource icon, low quantity.\nImage 1 is the edit target: the approved ochre mushroom tray containing a few white mushrooms. KEEP THE TRAY SHAPE EXACTLY: same broad front panel, same angular rim, same dark brown inside, same raised right-side wall with its distinctive stepped inward notch, same view from above, same position, proportions, outline thickness, shading and yellow-ochre palette. Do not redesign, turn, mirror, resize or decorate the box.\nReplace ONLY the white button mushrooms inside with harvested poison fire coral fungus, as shown in the red plant sprite image 2 and species photo image 3. Draw THREE or FOUR short cut red club branches lying loosely near the bottom inside the box. Scarlet red smooth thick rounded clubs with subtle brick-red shadow and dark brown contour, small compact pieces, a tiny fork allowed. The dark empty interior remains mostly visible (approximately 75 percent empty). No tall living upright clusters rising out of the tray. Contents remain below its rim and behind its front panel. They are fungal club branches, not chilies, sausages, carrots, sea coral, fire or hands.\nMatch the approved box image's extremely simple flat 2D painted game sprite language: broad 2-3 tone shadow planes, no texture, no realistic noise, no glossy 3D. Entire box inside canvas, square composition, generous transparent padding. True alpha transparency, not checkerboard. No ground, shadow, text, symbols, skulls, warnings, labels, ribbons or watermark. Exactly one low-quantity item sprite.",
+        "references": [
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg"
+        ],
+        "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-997bcf54-6d8c-462f-8d2c-af50cb3b337e.png",
+        "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/01Low.png",
+        "transparent_background": true
+      },
+      {
+        "asset": "02Medium",
+        "mode": "built-in image_gen",
+        "prompt": "Use case: precise-object-edit. Asset type: one transparent square RimWorld harvested resource icon, MEDIUM quantity.\nInput 1 is the existing poison fire coral LOW tray edit target. Keep the tray's entire frame, outline, yellow-ochre colors, broad front panel, top rim, empty inner wall, stepped notch in the right side, perspective, position and scale IDENTICAL. Increase only the red fungal contents to a MEDIUM quantity. Input 2 is the approved button mushroom MEDIUM reference indicating intended approximate fill level. Input 3 is the red plant style and input 4 the real fungus shape.\nAdd roughly seven to nine short harvested scarlet red club branches with a few small forks, arranged loosely across the bottom. Rounded blunt red clubs, simple brick-red shadow planes with warm dark-brown outline. The box now looks HALF FULL: significantly more contents than input 1, some empty dark-brown interior remains visible behind them, and no pile above the back rim. Short cut branches lie and lean together, not a tall living upright plant. No white button mushrooms remain.\nKeep very simple flat 2D painted game-sprite rendering with thick brown outlines, minimal 2-3 tone planes, no detailed texture or noise, no glossy photorealism. Do not alter the box shape or proportions. Entire object inside square with generous transparent padding; genuine alpha transparency and no checkerboard. No soil, ground, platform, cast shadow, text, labels, symbols, skulls, warning marks, decorations or watermark. Exactly one medium-quantity sprite.",
+        "references": [
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/01Low.png",
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg"
+        ],
+        "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-00b1781d-71f2-45c3-8191-7f1d1a3a99dc.png",
+        "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/02Medium.png",
+        "transparent_background": true
+      },
+      {
+        "asset": "03Full",
+        "mode": "built-in image_gen",
+        "prompt": "Use case: precise-object-edit. Asset type: one transparent square RimWorld harvested resource icon, FULL quantity.\nInput 1 is the poison fire coral MEDIUM tray edit target. Keep the tray's entire frame, outline, yellow-ochre colors, broad front panel, top rim, empty inner wall, stepped notch in the right side, perspective, position and scale IDENTICAL. Increase only the red fungal contents to a FULL quantity. Input 2 is the approved button mushroom FULL reference for amount and restrained pile height. Input 3 is the red plant style and input 4 the real fungus shape.\nFill the tray with a compact mound of about fourteen small harvested scarlet red club branches and a few short forked pieces. Rounded blunt red fungal clubs with brick-red shadows and dark warm brown contours. Closely nestled and overlapping in varied directions. They lie as short cut branch pieces, not tall living upright plants. Only a modest upper layer rises slightly above the back rim, as in the quantity reference; no huge horns extending high above or outside the box. The mound should clearly be fuller than input 1 and the interior floor is no longer visible. Keep almost all of the yellow tray rim visible and never cover the outside front panel. No white mushrooms.\nSame simple flat 2D game sprite with minimal broad cel-shaded planes, no noisy textures or photographic detail, no gloss or 3D rendering. Preserve the exact box footprint, colors and camera. Entire object inside a square with generous transparent padding; genuine alpha transparency and no checkerboard. No soil, ground, shadow, labels, text, skull, symbols, warning markings or watermark. Exactly one full-quantity sprite.",
+        "references": [
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/02Medium.png",
+          "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+          "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg"
+        ],
+        "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-a33e698e-2873-48cb-af88-8ed28ac21f7c.png",
+        "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/03Full.png",
+        "transparent_background": true
+      }
+    ]
+  }
+}

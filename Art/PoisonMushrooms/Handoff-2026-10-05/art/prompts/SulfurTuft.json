@@ -1,0 +1,65 @@
+{
+  "species": "SulfurTuft",
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "species": "SulfurTuft",
+      "asset": "PlantA",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent square 2D RimWorld mushroom plant sprite. ONE isolated tiny mature growth UNIT, never a sprite sheet.\nStyle: exactly match the supporting RimWorld plant sprite: heavy warm dark-brown clean outlines, only 2-3 flat cel-shaded color planes, small readable silhouette, slightly top-down three-quarter view, no realistic texture, no gradients, no fine engraving.\nComposition: mushroom in the center, overall group fits within the central 70% of the square with at least 15% transparent safe margins. No soil, grass, log, rocks, root tuft, box, container, shadow on a ground plane, text, labels, watermark or border. Real alpha transparency outside the object, never draw a checkerboard. This is a fully grown plant unit that the game repeats and scales.\nInput 1: real Hypholoma fasciculare photograph for species anatomy and colors only. Input 2: existing EnokiWild sprite for line thickness, simplified shapes and viewpoint only.\nSubject: a compact cluster of THREE small sulfur-yellow mushrooms. Bell-domed cap tops have muted ochre-orange centers and paler sulfur-yellow edges. Stems are relatively slim, long and pale mustard-yellow, with NO ring or white volva. One tallest cap slightly left of center, a medium cap on right, one lower little cap front left. Natural mature variant A. Distinct from the single thick-stem amber EnokiWild reference. Keep it austere and readable as a tiny game sprite.",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg",
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/EnokiWild/EnokiWildA.png"
+      ],
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-46aaca31-9efb-4b6f-9b34-e86fcbaaaa98.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png"
+    },
+    {
+      "species": "SulfurTuft",
+      "asset": "PlantB",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: ONE transparent square 2D RimWorld plant unit, mature variant B.\nInput 1 is the style and species identity reference (variant A); input 2 is the real species photograph for anatomy only.\nCreate a different natural mature silhouette of the SAME species and palette, keeping the exact thick warm brown outline, flat clean cel shading, simplicity and slight top-down viewpoint of input 1. Draw TWO sulfur-yellow bell-domed caps with ochre-orange centers, the taller one on the right, the shorter one on the left, on slim pale mustard-yellow stalks meeting at the base. Caps are rounder and slightly more open than variant A.\nThis is NOT an earlier growth stage. A small mature group, no extra sprouts. Keep the object within central70% with at least15% transparent margin. Actual RGBA transparent background. No checkerboard, ground, soil, log, roots, grass, rocks, box, cast shadow, text, labels, border. No photo realism, no gradients or texture.",
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-39c5fad3-5832-4abf-bc27-574500d1b112.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantB.png"
+    },
+    {
+      "species": "SulfurTuft",
+      "asset": "01Low",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Hypholoma fasciculare / sulfur tuft: small sulfur-yellow domed caps with orange-ochre centers and slender pale yellow stalks, using exactly the palette and flat art of input2.\nLOW contents: only 3 loose harvested mushrooms rest near the front-left bottom, far below the back rim. Leave most of the dark inside floor visibly empty.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-52fbe767-9fa9-4ee5-8249-75e91d2ae3b2.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/01Low.png"
+    },
+    {
+      "species": "SulfurTuft",
+      "asset": "02Medium",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Hypholoma fasciculare / sulfur tuft: small sulfur-yellow domed caps with orange-ochre centers and slender pale yellow stalks, using exactly the palette and flat art of input2.\nMEDIUM contents: 6 to 7 loose harvested mushrooms, approximately half full with the topmost pieces near but below the rear rim. Clearly more than low and less than full.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-495085f1-4fc9-41f3-850c-4689b3052e77.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/02Medium.png"
+    },
+    {
+      "species": "SulfurTuft",
+      "asset": "03Full",
+      "refs": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/sulfur-tuft.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: single RimWorld harvested mushroom resource sprite in the EXISTING standard golden-ochre storage tray. Real transparent square background.\nInput 1 is the EDIT TARGET: preserve its box exactly. Input 2 is the new species artwork reference. Input 3 is the real mushroom photograph for anatomy only.\nChange ONLY the mushrooms inside the first image to Hypholoma fasciculare / sulfur tuft: small sulfur-yellow domed caps with orange-ochre centers and slender pale yellow stalks, using exactly the palette and flat art of input2.\nFULL contents: 12 to 14 loose harvested mushrooms, fill the whole crate and mound slightly over the top rim, matching the height and density of the first reference.\nSTRICT INVARIANTS: retain the original box silhouette, straight flat front panel, right-side indented notch and upright end block, golden-ochre hue, dark interior, outline thickness, perspective, every box edge and framing. The crate is a simple flat solid-sided tray, NOT slatted, not an ordinary wooden rectangle. Do not add nails, plank texture, handles, logos, skulls, poison symbols, labels or text. Keep the container in the same relative position and scale as input1. Keep its front panel opaque and in front of the contents. All mushrooms are harvested loose produce, not standing plants.\nSimple 2D cartoon game sprite, thick dark-brown outline, 2-3 flat cel-shaded planes per material. No realism, no texture, no soft gradients or ground shadow. One icon only, no panels. Transparent RGBA outside the object, never paint a checkerboard. Keep full crate safely within square canvas.",
+      "generatedSource": "C:/Users/HOME/.codex/generated_images/01a10aa7-418c-7450-b5a2-b7e2229f42ae/exec-98cf48ec-5def-47a1-9679-3370b9cc22a4.png",
+      "output": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/SulfurTuft/03Full.png"
+    }
+  ]
+}

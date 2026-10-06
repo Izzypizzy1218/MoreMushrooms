@@ -1,0 +1,73 @@
+{
+  "species": "PoisonFireCoral",
+  "koreanName": "붉은사슴뿔버섯",
+  "generationMode": "built-in image_gen",
+  "assets": [
+    {
+      "asset": "PlantA",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent square RimWorld mushroom plant unit sprite, variant A.\nInput 1 is a STYLE reference only: match its bold dark warm-brown outlines, simple flat 2D silhouette, two or three muted cel-shaded color planes, slight view from above, clean game-icon readability. Input 2 is a SPECIES SHAPE reference only for poison fire coral fungus (붉은사슴뿔버섯).\nDraw one SMALL coherent unit of this fungus: three to four upright slender scarlet/vermilion rounded-tip clubs, of unequal lengths, joined near a compact base. One gentle fork is enough. Largest club at center-left, shorter club at right. Blunt softly rounded tips, subtly tapering bodies. This is a terrestrial club fungus, NOT sea coral, not a hand, not flames. Do not add caps or ordinary mushroom stems. Smooth matte scarlet red main faces, dark brick-red shadow plane, restrained lighter red highlight planes. Keep outlining weight similar to the style reference. No photographic texture, no glossy 3D lighting, no fine noise.\nComposition: single isolated mature plant unit centered in a square, around 70 percent of canvas height, with at least 15 percent safe transparent space around. Root at bottom of subject. Actual transparent alpha background; no checker pattern, no solid backdrop. Do not include soil, grass, moss, logs, roots, rocks, base platform, shadow, box, other objects, labels, skulls, warning markings, text or watermark. Exactly one sprite, not a sheet.",
+      "references": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg"
+      ],
+      "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-11afeba4-a701-4da2-916d-82b3e56eb3e4.png",
+      "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+      "transparent_background": true
+    },
+    {
+      "asset": "PlantB",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: stylized-concept. Asset type: one transparent square RimWorld mushroom plant unit sprite, mature variant B.\nInput 1 is the accepted poison fire coral PlantA sprite: preserve the same species, scarlet/vermilion/brick-red palette, bold dark brown outlines and simple 2D game icon language. Input 2 is its real species reference only. Input 3 is the established button mushroom sprite style.\nCreate a SECOND mature variation, not an earlier growth stage: THREE main slender upright rounded-tip club fingers connected at a small base, with one short lateral lobe. Tallest finger now slightly to the RIGHT, gently curving right; the left one bends subtly outward; middle shorter finger peeks between. Unequal natural heights and a few simple broad flat shadow shapes. Do not simply mirror A. The clubs are smooth cylindrical fungal fruiting bodies without mushroom caps, sea-coral branching, palms, flame tips, or flowers.\nUse only 2-3 matte cel-shaded tones per form with no granular texture, photographic detail, 3D shine or gradients. Thick clean warm dark-brown contour like the button reference. Slight view from above consistent with other game plants.\nOne compact isolated unit in a square; keep entire silhouette inside central 70 percent of canvas with generous actual transparent margins. Genuine alpha transparency, no drawn checkerboard. No soil, grass, moss, logs, roots, rocks, platform, drop shadow, box, text, symbols, skulls, warnings or watermarks. Exactly one sprite, not a sheet.",
+      "references": [
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg",
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Plant/RimMushrooms/Button/ButtonA.png"
+      ],
+      "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-61ea2295-4dca-458e-a314-b2bd73ae561c.png",
+      "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantB.png",
+      "transparent_background": true
+    },
+    {
+      "asset": "01Low",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: one transparent square RimWorld harvested resource icon, low quantity.\nImage 1 is the edit target: the approved ochre mushroom tray containing a few white mushrooms. KEEP THE TRAY SHAPE EXACTLY: same broad front panel, same angular rim, same dark brown inside, same raised right-side wall with its distinctive stepped inward notch, same view from above, same position, proportions, outline thickness, shading and yellow-ochre palette. Do not redesign, turn, mirror, resize or decorate the box.\nReplace ONLY the white button mushrooms inside with harvested poison fire coral fungus, as shown in the red plant sprite image 2 and species photo image 3. Draw THREE or FOUR short cut red club branches lying loosely near the bottom inside the box. Scarlet red smooth thick rounded clubs with subtle brick-red shadow and dark brown contour, small compact pieces, a tiny fork allowed. The dark empty interior remains mostly visible (approximately 75 percent empty). No tall living upright clusters rising out of the tray. Contents remain below its rim and behind its front panel. They are fungal club branches, not chilies, sausages, carrots, sea coral, fire or hands.\nMatch the approved box image's extremely simple flat 2D painted game sprite language: broad 2-3 tone shadow planes, no texture, no realistic noise, no glossy 3D. Entire box inside canvas, square composition, generous transparent padding. True alpha transparency, not checkerboard. No ground, shadow, text, symbols, skulls, warnings, labels, ribbons or watermark. Exactly one low-quantity item sprite.",
+      "references": [
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg"
+      ],
+      "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-997bcf54-6d8c-462f-8d2c-af50cb3b337e.png",
+      "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/01Low.png",
+      "transparent_background": true
+    },
+    {
+      "asset": "02Medium",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: one transparent square RimWorld harvested resource icon, MEDIUM quantity.\nInput 1 is the existing poison fire coral LOW tray edit target. Keep the tray's entire frame, outline, yellow-ochre colors, broad front panel, top rim, empty inner wall, stepped notch in the right side, perspective, position and scale IDENTICAL. Increase only the red fungal contents to a MEDIUM quantity. Input 2 is the approved button mushroom MEDIUM reference indicating intended approximate fill level. Input 3 is the red plant style and input 4 the real fungus shape.\nAdd roughly seven to nine short harvested scarlet red club branches with a few small forks, arranged loosely across the bottom. Rounded blunt red clubs, simple brick-red shadow planes with warm dark-brown outline. The box now looks HALF FULL: significantly more contents than input 1, some empty dark-brown interior remains visible behind them, and no pile above the back rim. Short cut branches lie and lean together, not a tall living upright plant. No white button mushrooms remain.\nKeep very simple flat 2D painted game-sprite rendering with thick brown outlines, minimal 2-3 tone planes, no detailed texture or noise, no glossy photorealism. Do not alter the box shape or proportions. Entire object inside square with generous transparent padding; genuine alpha transparency and no checkerboard. No soil, ground, platform, cast shadow, text, labels, symbols, skulls, warning marks, decorations or watermark. Exactly one medium-quantity sprite.",
+      "references": [
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/01Low.png",
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg"
+      ],
+      "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-00b1781d-71f2-45c3-8191-7f1d1a3a99dc.png",
+      "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/02Medium.png",
+      "transparent_background": true
+    },
+    {
+      "asset": "03Full",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: one transparent square RimWorld harvested resource icon, FULL quantity.\nInput 1 is the poison fire coral MEDIUM tray edit target. Keep the tray's entire frame, outline, yellow-ochre colors, broad front panel, top rim, empty inner wall, stepped notch in the right side, perspective, position and scale IDENTICAL. Increase only the red fungal contents to a FULL quantity. Input 2 is the approved button mushroom FULL reference for amount and restrained pile height. Input 3 is the red plant style and input 4 the real fungus shape.\nFill the tray with a compact mound of about fourteen small harvested scarlet red club branches and a few short forked pieces. Rounded blunt red fungal clubs with brick-red shadows and dark warm brown contours. Closely nestled and overlapping in varied directions. They lie as short cut branch pieces, not tall living upright plants. Only a modest upper layer rises slightly above the back rim, as in the quantity reference; no huge horns extending high above or outside the box. The mound should clearly be fuller than input 1 and the interior floor is no longer visible. Keep almost all of the yellow tray rim visible and never cover the outside front panel. No white mushrooms.\nSame simple flat 2D game sprite with minimal broad cel-shaded planes, no noisy textures or photographic detail, no gloss or 3D rendering. Preserve the exact box footprint, colors and camera. Entire object inside a square with generous transparent padding; genuine alpha transparency and no checkerboard. No soil, ground, shadow, labels, text, skull, symbols, warning markings or watermark. Exactly one full-quantity sprite.",
+      "references": [
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/02Medium.png",
+        "C:/Users/HOME/Documents/New project/work/MoreMushrooms-read-2026-10-05/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/PlantA.png",
+        "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/references/poison-fire-coral.jpg"
+      ],
+      "sourceGeneratedImage": "C:/Users/HOME/.codex/generated_images/01a10aa7-2cd7-7c43-a45c-3219a3397b9e/exec-a33e698e-2873-48cb-af88-8ed28ac21f7c.png",
+      "savedPath": "C:/Users/HOME/Documents/New project/output/poison-mushrooms-art-2026-10-05/masters/PoisonFireCoral/03Full.png",
+      "transparent_background": true
+    }
+  ]
+}

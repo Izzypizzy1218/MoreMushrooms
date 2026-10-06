@@ -1,0 +1,388 @@
+{
+  "status": "Game balance for the approved 2026-10-05 poison mushroom handoff. These are fictional gameplay values, not medical guidance.",
+  "handoff": "Art/PoisonMushrooms/Handoff-2026-10-05",
+  "common": {
+    "stackLimit": 75,
+    "lowMaxCount": 25,
+    "mediumMaxCount": 50,
+    "nutrition": 0,
+    "responseGraceHours": 24,
+    "tendDurationHours": 6,
+    "lethalSeverity": 0.95,
+    "stabilizationTreatment": 1,
+    "initialSeverity": 0.01
+  },
+  "mushrooms": [
+    {
+      "id": "FlyAgaric",
+      "en": "fly agaric",
+      "ko": "광대버섯",
+      "scientific": "Amanita muscaria",
+      "growDays": 7,
+      "yield": 8,
+      "value": 0.8,
+      "rotDays": 15,
+      "biomes": {
+        "TemperateForest": 0.006,
+        "BorealForest": 0.005
+      },
+      "effectEn": "Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act.",
+      "effectKo": "혼란과 졸림, 의식 저하가 나타나며 심한 중독은 행동을 크게 제한합니다.",
+      "settings": {
+        "latencyHoursMin": 1,
+        "latencyHoursMax": 1,
+        "recoveryDaysMin": 0.5,
+        "recoveryDaysMax": 1,
+        "untreatedSeverityPerDay": 0.1,
+        "maximumSeverity": 1,
+        "fatal": false,
+        "peakSeverity": 0.48,
+        "vomitMtbHours": 0
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "confused and drowsy",
+          "ko": "혼란과 졸림",
+          "capacities": {
+            "Consciousness": -0.15
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "impaired consciousness",
+          "ko": "뚜렷한 의식 저하",
+          "capacities": {
+            "Consciousness": -0.35
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe neurological poisoning",
+          "ko": "심한 신경계 중독",
+          "capacities": {
+            "Consciousness": -0.55
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "profound drowsiness",
+          "ko": "깊은 의식 저하",
+          "capacities": {
+            "Consciousness": -0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "DestroyingAngel",
+      "en": "destroying angel",
+      "ko": "독우산광대버섯",
+      "scientific": "Amanita virosa",
+      "growDays": 9,
+      "yield": 6,
+      "value": 1,
+      "rotDays": 15,
+      "biomes": {
+        "TemperateForest": 0.002,
+        "BorealForest": 0.002
+      },
+      "effectEn": "Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal.",
+      "effectKo": "잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다.",
+      "settings": {
+        "latencyHoursMin": 8,
+        "latencyHoursMax": 8,
+        "recoveryDaysMin": 3,
+        "recoveryDaysMax": 5,
+        "untreatedSeverityPerDay": 0.22,
+        "maximumSeverity": 1,
+        "fatal": true,
+        "peakSeverity": 0.6,
+        "vomitMtbHours": 8
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "gastrointestinal symptoms",
+          "ko": "초기 위장 증상",
+          "painOffset": 0.08,
+          "capacities": {
+            "Consciousness": -0.08,
+            "Moving": -0.1
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "quieter symptoms; liver injury continues",
+          "ko": "위장 증상 완화 · 간 손상 진행",
+          "painOffset": 0.05,
+          "capacities": {
+            "Consciousness": -0.1,
+            "Moving": -0.1,
+            "BloodFiltration": -0.2
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe liver injury",
+          "ko": "심한 간 손상",
+          "painOffset": 0.12,
+          "capacities": {
+            "Consciousness": -0.3,
+            "Moving": -0.25,
+            "BloodFiltration": -0.35
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "critical liver poisoning",
+          "ko": "위중한 간 중독",
+          "painOffset": 0.25,
+          "capacities": {
+            "Consciousness": -0.55,
+            "Moving": -0.45,
+            "BloodFiltration": -0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "SulfurTuft",
+      "en": "sulfur tuft",
+      "ko": "노란다발버섯",
+      "scientific": "Hypholoma fasciculare",
+      "growDays": 6.5,
+      "yield": 10,
+      "value": 0.6,
+      "rotDays": 15,
+      "biomes": {
+        "TemperateForest": 0.005,
+        "TemperateSwamp": 0.006,
+        "BorealForest": 0.003
+      },
+      "effectEn": "Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover.",
+      "effectKo": "심한 위장염과 구토, 통증, 쇠약이 이어집니다. 중증일수록 치료가 필요하고 회복에 더 오래 걸립니다.",
+      "settings": {
+        "latencyHoursMin": 3,
+        "latencyHoursMax": 3,
+        "recoveryDaysMin": 2,
+        "recoveryDaysMax": 3,
+        "untreatedSeverityPerDay": 0.1,
+        "maximumSeverity": 1,
+        "fatal": false,
+        "peakSeverity": 0.65,
+        "vomitMtbHours": 10
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "stomach pain",
+          "ko": "복통",
+          "painOffset": 0.08,
+          "capacities": {
+            "Moving": -0.1,
+            "Manipulation": -0.05
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "gastroenteritis and weakness",
+          "ko": "위장염과 쇠약",
+          "painOffset": 0.15,
+          "capacities": {
+            "Moving": -0.2,
+            "Manipulation": -0.15
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe gastroenteritis",
+          "ko": "심한 위장염",
+          "painOffset": 0.22,
+          "capacities": {
+            "Moving": -0.35,
+            "Manipulation": -0.25
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "profound weakness",
+          "ko": "극심한 쇠약",
+          "painOffset": 0.3,
+          "capacities": {
+            "Moving": -0.45,
+            "Manipulation": -0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Tsukiyotake",
+      "en": "tsukiyotake",
+      "ko": "화경버섯",
+      "scientific": "Omphalotus japonicus",
+      "growDays": 7,
+      "yield": 9,
+      "value": 0.8,
+      "rotDays": 15,
+      "biomes": {
+        "TemperateForest": 0.004,
+        "TemperateSwamp": 0.004
+      },
+      "effectEn": "Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss.",
+      "effectKo": "빠르고 강한 구토 뒤 장염과 쇠약이 남습니다. 장 출혈을 포함한 중증 위장 증상은 게임에서 별도의 혈액 손실 대신 심한 장염, 통증과 쇠약으로 표현합니다.",
+      "settings": {
+        "latencyHoursMin": 0.5,
+        "latencyHoursMax": 0.5,
+        "recoveryDaysMin": 1,
+        "recoveryDaysMax": 2,
+        "untreatedSeverityPerDay": 0.12,
+        "maximumSeverity": 1,
+        "fatal": false,
+        "peakSeverity": 0.72,
+        "vomitMtbHours": 4
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "acute nausea",
+          "ko": "급성 구역질",
+          "painOffset": 0.1,
+          "capacities": {
+            "Moving": -0.1,
+            "Manipulation": -0.05
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "vomiting and enteritis",
+          "ko": "구토와 장염",
+          "painOffset": 0.2,
+          "capacities": {
+            "Moving": -0.2,
+            "Manipulation": -0.1
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe enteritis",
+          "ko": "심한 장염",
+          "painOffset": 0.28,
+          "capacities": {
+            "Moving": -0.4,
+            "Manipulation": -0.25
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "severe enteritis and weakness",
+          "ko": "극심한 장염과 쇠약",
+          "painOffset": 0.35,
+          "capacities": {
+            "Moving": -0.5,
+            "Manipulation": -0.35
+          }
+        }
+      ]
+    },
+    {
+      "id": "PoisonFireCoral",
+      "en": "poison fire coral",
+      "ko": "붉은사슴뿔버섯",
+      "scientific": "Trichoderma cornu-damae",
+      "growDays": 10,
+      "yield": 5,
+      "value": 1.2,
+      "rotDays": 20,
+      "biomes": {
+        "TemperateForest": 0.002,
+        "TemperateSwamp": 0.002,
+        "TropicalRainforest": 0.002
+      },
+      "effectEn": "Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal.",
+      "effectKo": "구토와 통증으로 시작해 쇠약, 면역 획득 저하, 의식 저하가 진행하는 전신 중독입니다. 방치하거나 치료가 늦으면 치명적일 수 있습니다.",
+      "settings": {
+        "latencyHoursMin": 3,
+        "latencyHoursMax": 3,
+        "recoveryDaysMin": 5,
+        "recoveryDaysMax": 8,
+        "untreatedSeverityPerDay": 0.26,
+        "maximumSeverity": 1,
+        "fatal": true,
+        "peakSeverity": 0.6,
+        "vomitMtbHours": 8
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "early systemic poisoning",
+          "ko": "초기 전신 중독",
+          "painOffset": 0.08,
+          "immunityGainSpeedFactor": 0.9,
+          "capacities": {
+            "Consciousness": -0.08,
+            "Moving": -0.1
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "progressive systemic poisoning",
+          "ko": "진행성 전신 중독",
+          "painOffset": 0.15,
+          "immunityGainSpeedFactor": 0.75,
+          "capacities": {
+            "Consciousness": -0.2,
+            "Moving": -0.2
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe systemic poisoning",
+          "ko": "심한 전신 중독",
+          "painOffset": 0.22,
+          "immunityGainSpeedFactor": 0.6,
+          "capacities": {
+            "Consciousness": -0.35,
+            "Moving": -0.35
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "critical systemic poisoning",
+          "ko": "위중한 전신 중독",
+          "painOffset": 0.3,
+          "immunityGainSpeedFactor": 0.5,
+          "capacities": {
+            "Consciousness": -0.55,
+            "Moving": -0.45
+          }
+        }
+      ]
+    }
+  ]
+}

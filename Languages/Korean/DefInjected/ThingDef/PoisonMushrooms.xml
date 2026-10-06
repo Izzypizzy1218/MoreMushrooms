@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_RawFlyAgaric.label>광대버섯</RMush_RawFlyAgaric.label>
+  <RMush_RawFlyAgaric.description>독성이 있는 광대버섯. 혼란과 졸림, 의식 저하가 나타나며 심한 중독은 행동을 크게 제한합니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawFlyAgaric.description>
+  <RMush_RawFlyAgaric.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawFlyAgaric.ingestible.ingestCommandString>
+  <RMush_RawFlyAgaric.ingestible.ingestReportString>{0} 먹는 중 (독버섯).</RMush_RawFlyAgaric.ingestible.ingestReportString>
+  <RMush_PlantFlyAgaric.label>광대버섯 군락</RMush_PlantFlyAgaric.label>
+  <RMush_PlantFlyAgaric.description>야생에서 자라는 광대버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 혼란과 졸림, 의식 저하가 나타나며 심한 중독은 행동을 크게 제한합니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantFlyAgaric.description>
+  <RMush_RawDestroyingAngel.label>독우산광대버섯</RMush_RawDestroyingAngel.label>
+  <RMush_RawDestroyingAngel.description>독성이 있는 독우산광대버섯. 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawDestroyingAngel.description>
+  <RMush_RawDestroyingAngel.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawDestroyingAngel.ingestible.ingestCommandString>
+  <RMush_RawDestroyingAngel.ingestible.ingestReportString>{0} 먹는 중 (독버섯).</RMush_RawDestroyingAngel.ingestible.ingestReportString>
+  <RMush_PlantDestroyingAngel.label>독우산광대버섯 군락</RMush_PlantDestroyingAngel.label>
+  <RMush_PlantDestroyingAngel.description>야생에서 자라는 독우산광대버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantDestroyingAngel.description>
+  <RMush_RawSulfurTuft.label>노란다발버섯</RMush_RawSulfurTuft.label>
+  <RMush_RawSulfurTuft.description>독성이 있는 노란다발버섯. 심한 위장염과 구토, 통증, 쇠약이 이어집니다. 중증일수록 치료가 필요하고 회복에 더 오래 걸립니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawSulfurTuft.description>
+  <RMush_RawSulfurTuft.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawSulfurTuft.ingestible.ingestCommandString>
+  <RMush_RawSulfurTuft.ingestible.ingestReportString>{0} 먹는 중 (독버섯).</RMush_RawSulfurTuft.ingestible.ingestReportString>
+  <RMush_PlantSulfurTuft.label>노란다발버섯 군락</RMush_PlantSulfurTuft.label>
+  <RMush_PlantSulfurTuft.description>야생에서 자라는 노란다발버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 심한 위장염과 구토, 통증, 쇠약이 이어집니다. 중증일수록 치료가 필요하고 회복에 더 오래 걸립니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantSulfurTuft.description>
+  <RMush_RawTsukiyotake.label>화경버섯</RMush_RawTsukiyotake.label>
+  <RMush_RawTsukiyotake.description>독성이 있는 화경버섯. 빠르고 강한 구토 뒤 장염과 쇠약이 남습니다. 장 출혈을 포함한 중증 위장 증상은 게임에서 별도의 혈액 손실 대신 심한 장염, 통증과 쇠약으로 표현합니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawTsukiyotake.description>
+  <RMush_RawTsukiyotake.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawTsukiyotake.ingestible.ingestCommandString>
+  <RMush_RawTsukiyotake.ingestible.ingestReportString>{0} 먹는 중 (독버섯).</RMush_RawTsukiyotake.ingestible.ingestReportString>
+  <RMush_PlantTsukiyotake.label>화경버섯 군락</RMush_PlantTsukiyotake.label>
+  <RMush_PlantTsukiyotake.description>야생에서 자라는 화경버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 빠르고 강한 구토 뒤 장염과 쇠약이 남습니다. 장 출혈을 포함한 중증 위장 증상은 게임에서 별도의 혈액 손실 대신 심한 장염, 통증과 쇠약으로 표현합니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantTsukiyotake.description>
+  <RMush_RawPoisonFireCoral.label>붉은사슴뿔버섯</RMush_RawPoisonFireCoral.label>
+  <RMush_RawPoisonFireCoral.description>독성이 있는 붉은사슴뿔버섯. 구토와 통증으로 시작해 쇠약, 면역 획득 저하, 의식 저하가 진행하는 전신 중독입니다. 방치하거나 치료가 늦으면 치명적일 수 있습니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawPoisonFireCoral.description>
+  <RMush_RawPoisonFireCoral.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawPoisonFireCoral.ingestible.ingestCommandString>
+  <RMush_RawPoisonFireCoral.ingestible.ingestReportString>{0} 먹는 중 (독버섯).</RMush_RawPoisonFireCoral.ingestible.ingestReportString>
+  <RMush_PlantPoisonFireCoral.label>붉은사슴뿔버섯 군락</RMush_PlantPoisonFireCoral.label>
+  <RMush_PlantPoisonFireCoral.description>야생에서 자라는 붉은사슴뿔버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 구토와 통증으로 시작해 쇠약, 면역 획득 저하, 의식 저하가 진행하는 전신 중독입니다. 방치하거나 치료가 늦으면 치명적일 수 있습니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantPoisonFireCoral.description>
+</LanguageData>

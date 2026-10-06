@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_PoisonPhaseLatent>잠복 중</RMush_PoisonPhaseLatent>
+  <RMush_PoisonPhaseWorsening>악화 중</RMush_PoisonPhaseWorsening>
+  <RMush_PoisonPhaseStabilized>안정화됨</RMush_PoisonPhaseStabilized>
+  <RMush_PoisonPhaseRecovering>회복 중</RMush_PoisonPhaseRecovering>
+  <RMush_PoisonExposureLabel>독버섯 섭취</RMush_PoisonExposureLabel>
+  <RMush_PoisonExposureText>{0}(이)가 {1}(을)를 먹었습니다. 잠복기 뒤 증상이 나타날 수 있습니다. 건강 상태를 확인하고 치료를 준비하세요.</RMush_PoisonExposureText>
+  <RMush_PoisonOnsetLabel>버섯 중독 증상 발현</RMush_PoisonOnsetLabel>
+  <RMush_PoisonOnsetText>{0}에게 {1} 증상이 나타났습니다. 기존 의사 작업과 의약품으로 치료할 수 있습니다.</RMush_PoisonOnsetText>
+  <RMush_PoisonDangerNote>위험도가 높은 중독입니다. 조기 반복 치료로 안정화할 수 있으며, 증상이 잦아들어도 완치된 것은 아닙니다.</RMush_PoisonDangerNote>
+  <RMush_PoisonStabilizedLabel>버섯 중독 안정화</RMush_PoisonStabilizedLabel>
+  <RMush_PoisonStabilizedText>{0}의 {1}(이)가 안정화되었습니다. 회복에는 시간이 걸립니다. 돌봄을 이어가고 추가 섭취를 피하세요.</RMush_PoisonStabilizedText>
+  <RMush_PoisonTipPhase>중독 상태: {0}</RMush_PoisonTipPhase>
+  <RMush_PoisonTipOnset>증상 발현까지: {0}</RMush_PoisonTipOnset>
+  <RMush_PoisonTipTreatment>누적 치료: {0}</RMush_PoisonTipTreatment>
+  <RMush_PoisonTipRecovery>예상 회복 잔여 시간: {0}</RMush_PoisonTipRecovery>
+  <RMush_PoisonTipGrace>최소 대응 시간 잔여: {0}</RMush_PoisonTipGrace>
+</LanguageData>

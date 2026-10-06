@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_RawFlyAgaric.label>fly agaric</RMush_RawFlyAgaric.label>
+  <RMush_RawFlyAgaric.description>Poisonous fly agaric. Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</RMush_RawFlyAgaric.description>
+  <RMush_RawFlyAgaric.ingestible.ingestCommandString>Eat {0} (poisonous)</RMush_RawFlyAgaric.ingestible.ingestCommandString>
+  <RMush_RawFlyAgaric.ingestible.ingestReportString>Eating {0} (poisonous).</RMush_RawFlyAgaric.ingestible.ingestReportString>
+  <RMush_PlantFlyAgaric.label>fly agaric cluster</RMush_PlantFlyAgaric.label>
+  <RMush_PlantFlyAgaric.description>A wild cluster of poisonous fly agaric. Can be harvested but cannot be sown. Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</RMush_PlantFlyAgaric.description>
+  <RMush_RawDestroyingAngel.label>destroying angel</RMush_RawDestroyingAngel.label>
+  <RMush_RawDestroyingAngel.description>Poisonous destroying angel. Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</RMush_RawDestroyingAngel.description>
+  <RMush_RawDestroyingAngel.ingestible.ingestCommandString>Eat {0} (poisonous)</RMush_RawDestroyingAngel.ingestible.ingestCommandString>
+  <RMush_RawDestroyingAngel.ingestible.ingestReportString>Eating {0} (poisonous).</RMush_RawDestroyingAngel.ingestible.ingestReportString>
+  <RMush_PlantDestroyingAngel.label>destroying angel cluster</RMush_PlantDestroyingAngel.label>
+  <RMush_PlantDestroyingAngel.description>A wild cluster of poisonous destroying angel. Can be harvested but cannot be sown. Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</RMush_PlantDestroyingAngel.description>
+  <RMush_RawSulfurTuft.label>sulfur tuft</RMush_RawSulfurTuft.label>
+  <RMush_RawSulfurTuft.description>Poisonous sulfur tuft. Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</RMush_RawSulfurTuft.description>
+  <RMush_RawSulfurTuft.ingestible.ingestCommandString>Eat {0} (poisonous)</RMush_RawSulfurTuft.ingestible.ingestCommandString>
+  <RMush_RawSulfurTuft.ingestible.ingestReportString>Eating {0} (poisonous).</RMush_RawSulfurTuft.ingestible.ingestReportString>
+  <RMush_PlantSulfurTuft.label>sulfur tuft cluster</RMush_PlantSulfurTuft.label>
+  <RMush_PlantSulfurTuft.description>A wild cluster of poisonous sulfur tuft. Can be harvested but cannot be sown. Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</RMush_PlantSulfurTuft.description>
+  <RMush_RawTsukiyotake.label>tsukiyotake</RMush_RawTsukiyotake.label>
+  <RMush_RawTsukiyotake.description>Poisonous tsukiyotake. Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</RMush_RawTsukiyotake.description>
+  <RMush_RawTsukiyotake.ingestible.ingestCommandString>Eat {0} (poisonous)</RMush_RawTsukiyotake.ingestible.ingestCommandString>
+  <RMush_RawTsukiyotake.ingestible.ingestReportString>Eating {0} (poisonous).</RMush_RawTsukiyotake.ingestible.ingestReportString>
+  <RMush_PlantTsukiyotake.label>tsukiyotake cluster</RMush_PlantTsukiyotake.label>
+  <RMush_PlantTsukiyotake.description>A wild cluster of poisonous tsukiyotake. Can be harvested but cannot be sown. Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</RMush_PlantTsukiyotake.description>
+  <RMush_RawPoisonFireCoral.label>poison fire coral</RMush_RawPoisonFireCoral.label>
+  <RMush_RawPoisonFireCoral.description>Poisonous poison fire coral. Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required.</RMush_RawPoisonFireCoral.description>
+  <RMush_RawPoisonFireCoral.ingestible.ingestCommandString>Eat {0} (poisonous)</RMush_RawPoisonFireCoral.ingestible.ingestCommandString>
+  <RMush_RawPoisonFireCoral.ingestible.ingestReportString>Eating {0} (poisonous).</RMush_RawPoisonFireCoral.ingestible.ingestReportString>
+  <RMush_PlantPoisonFireCoral.label>poison fire coral cluster</RMush_PlantPoisonFireCoral.label>
+  <RMush_PlantPoisonFireCoral.description>A wild cluster of poisonous poison fire coral. Can be harvested but cannot be sown. Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</RMush_PlantPoisonFireCoral.description>
+</LanguageData>

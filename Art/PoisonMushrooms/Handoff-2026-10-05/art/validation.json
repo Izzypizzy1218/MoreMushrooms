@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-05",
+  "generated_masters": 25,
+  "exported_textures": 25,
+  "all_masters": "1254x1254 RGBA",
+  "all_exports": "256x256 RGBA with real alpha 0..255",
+  "growth_render_counts": {
+    "10%": 1,
+    "50%": 5,
+    "100%": 9
+  },
+  "browser_checks": {
+    "broken_images": 0,
+    "growth_harvest_tabs": "passed",
+    "stack_boundary_25_26_50_51": "passed",
+    "slider_growth_10_50_100": "passed",
+    "comparison_horizontal_overflow_at_736_and_320": false
+  },
+  "visual_review": "All 25 masters reviewed; final 256px export and growth/harvest comparisons reviewed.",
+  "scope": "Art pack and illustrative previews. No RimWorld Defs, gameplay behavior, installation, or in-game verification."
+}

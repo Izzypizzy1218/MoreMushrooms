@@ -39,6 +39,7 @@ namespace RimMushroomsTests
         private string Texture(Thing thing) => thing.Graphic.MatSingleFor(thing).mainTexture.name;
         private int Count(Map map, ThingDef def) => map.listerThings.ThingsOfDef(def).Where(t => t.Position.DistanceTo(workCell) < 5f).Sum(t => t.stackCount);
 
+
         public override void GameComponentUpdate()
         {
             if (finished || !GenCommandLine.CommandLineArgPassed("mushroomSmoke") || Current.ProgramState != ProgramState.Playing || LongEventHandler.AnyEventNowOrWaiting) return;
@@ -46,6 +47,15 @@ namespace RimMushroomsTests
             if (map == null) return;
             try
             {
+                if (phase < 100)
+                {
+                    // This is an isolated crop/health fixture. Random incidents
+                    // and lightning fires must not preempt ordered test jobs.
+                    DebugSettings.enableStoryteller = false;
+                    if (map.weatherManager.curWeather != WeatherDefOf.Clear)
+                        map.weatherManager.TransitionTo(WeatherDefOf.Clear);
+                    map.weatherManager.curWeatherAge = 0;
+                }
                 if ((phase >= 1 && phase <= 3) || (phase >= 10 && phase <= 13) || phase == 20)
                 {
                     foreach (var window in Find.WindowStack.Windows.ToList()) window.Close(false);
@@ -66,6 +76,7 @@ namespace RimMushroomsTests
                     {
                         AssortedTests.VerifyLoaded(map, Check);
                         HydroponicsTests.VerifyLoaded(map, Check);
+                        PoisonTests.VerifyLoaded(map, Check);
                     }
                     Check(map.listerThings.AllThings.Count(t => t.def.defName.StartsWith("RMush_Plant")) >= 33, "plant growth fixtures survive save/load");
                     foreach (var t in map.listerThings.AllThings.Where(t => t.def.defName.StartsWith("RMush_Raw")))
@@ -165,6 +176,7 @@ namespace RimMushroomsTests
                     // Restore its documented value before save/load assertions.
                     workCell.GetPlant(map).Growth = 0.37f;
                     MoodTests.Run(farmer, Check);
+                    PoisonTests.Run(farmer, map, Check);
                     phase = 4; frames = 0;
                     return;
                 }
@@ -221,11 +233,16 @@ namespace RimMushroomsTests
             }
             catch (Exception e)
             {
-                File.AppendAllText(Report, "RESULT FAIL " + e + Environment.NewLine);
-                Log.Error("[Rim Mushrooms Tests] " + e);
-                finished = true;
-                Application.Quit(1);
+                Fail(e);
             }
+        }
+
+        private void Fail(Exception e)
+        {
+            File.AppendAllText(Report, "RESULT FAIL " + e + Environment.NewLine);
+            Log.Error("[Rim Mushrooms Tests] " + e);
+            finished = true;
+            Application.Quit(1);
         }
 
         private void Setup(Map map)
@@ -239,8 +256,8 @@ namespace RimMushroomsTests
             }
             foreach (var window in Find.WindowStack.Windows.ToList()) window.Close(false);
             Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
-            plants = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Plant") && d.GetModExtension<AssortedMushroomSettings>() == null).OrderBy(d => d.defName).ToArray();
-            var items = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Raw")).OrderBy(d => d.defName).ToArray();
+            plants = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Plant") && d.GetModExtension<AssortedMushroomSettings>() == null && d.plant.harvestedThingDef.ingestible.specialThoughtDirect != null).OrderBy(d => d.defName).ToArray();
+            var items = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Raw") && d.ingestible.specialThoughtDirect != null).OrderBy(d => d.defName).ToArray();
             Check(plants.Length == 11 && items.Length == 10, "11 plant and 10 ingredient defs loaded");
             Check(plants.Count(d => d.plant.Sowable) == 9, "exactly nine cultivable varieties");
             Check(!DefDatabase<ThingDef>.GetNamed("RMush_PlantMatsutake").plant.Sowable, "matsutake wild only");

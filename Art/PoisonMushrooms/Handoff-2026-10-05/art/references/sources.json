@@ -1,0 +1,17 @@
+{
+  "retrieved": "2026-10-05",
+  "discovery": "Google Images; species and licenses checked on the linked Wikimedia Commons description pages.",
+  "purpose": "Real mushroom shape and color references for newly generated game artwork. Photographs are unmodified.",
+  "style_repository": {
+    "url": "https://github.com/Izzypizzy1218/MoreMushrooms",
+    "commit": "82c5c1c9bbb801560a0d14a0c1fd16f0eaf8dc16",
+    "version": "0.3.3"
+  },
+  "photos": [
+    {"id":"FlyAgaric","name":"광대버섯","scientific":"Amanita muscaria","file":"fly-agaric.jpg","page":"https://commons.wikimedia.org/wiki/File:Amanita_muscaria_Marriott_Falls_1.jpg","author":"JJ Harrison","license":"CC BY-SA 3.0","license_url":"https://creativecommons.org/licenses/by-sa/3.0/","google_query":"Amanita muscaria Marriott Falls Wikimedia Commons"},
+    {"id":"DestroyingAngel","name":"독우산광대버섯","scientific":"Amanita virosa","file":"destroying-angel.jpg","page":"https://commons.wikimedia.org/wiki/File:2006-08_Amanita_virosa_crop.jpg","author":"B. Baldassari; retouched/cropped by Ak ccm","license":"CC BY 2.5","license_url":"https://creativecommons.org/licenses/by/2.5/","google_query":"Amanita virosa 2006-08 crop Wikimedia Commons"},
+    {"id":"SulfurTuft","name":"노란다발버섯","scientific":"Hypholoma fasciculare","file":"sulfur-tuft.jpg","page":"https://commons.wikimedia.org/wiki/File:Hypholoma_fasciculare_LC0091.jpg","author":"Jörg Hempel","license":"CC BY-SA 2.0 DE","license_url":"https://creativecommons.org/licenses/by-sa/2.0/de/","google_query":"Hypholoma fasciculare LC0091 Wikimedia Commons"},
+    {"id":"Tsukiyotake","name":"화경버섯","scientific":"Omphalotus japonicus","file":"tsukiyotake.jpg","page":"https://commons.wikimedia.org/wiki/File:Omphalotus_guepiniformis_Berk_Neda_02.jpg","author":"あおもりくま (aomorikuma)","license":"CC BY-SA 3.0","license_url":"https://creativecommons.org/licenses/by-sa/3.0/","google_query":"Omphalotus guepiniformis Berk Neda 02 Wikimedia Commons","note":"Photo filename uses the older name Omphalotus guepiniformis."},
+    {"id":"PoisonFireCoral","name":"붉은사슴뿔버섯","scientific":"Trichoderma cornu-damae","file":"poison-fire-coral.jpg","page":"https://commons.wikimedia.org/wiki/File:Podostroma_cornu-damae.jpg","author":"Kouchan","license":"CC BY-SA 3.0","license_url":"https://creativecommons.org/licenses/by-sa/3.0/","google_query":"Podostroma cornu-damae Wikimedia Commons Kouchan","note":"Photo filename uses the older name Podostroma cornu-damae."}
+  ]
+}

@@ -1,0 +1,96 @@
+<div id="poison-mushrooms-comparison-v1">
+  <style>
+    #poison-mushrooms-comparison-v1 .comparison-panel{margin-top:18px}
+    #poison-mushrooms-comparison-v1 .comparison-row{display:grid;grid-template-columns:minmax(108px,0.65fr) repeat(3,minmax(0,1fr));align-items:center;gap:12px;margin-bottom:16px}
+    #poison-mushrooms-comparison-v1 .species-name{font-weight:500;min-width:0;overflow-wrap:anywhere}
+    #poison-mushrooms-comparison-v1 figure{margin:0;min-width:0}
+    #poison-mushrooms-comparison-v1 figcaption{text-align:center}
+    #poison-mushrooms-comparison-v1 .comparison-tile{position:relative;aspect-ratio:1;min-width:0}
+    #poison-mushrooms-comparison-v1 .soil{position:absolute;inset:16%;background:color-mix(in srgb,var(--orange) 17%,var(--muted))}
+    #poison-mushrooms-comparison-v1 .plant-layer{position:absolute;inset:0}
+    #poison-mushrooms-comparison-v1 .plant-layer img{position:absolute;display:block;max-width:none}
+    #poison-mushrooms-comparison-v1 .stack-image{display:block;width:100%;height:100%;object-fit:contain}
+    @media(max-width:540px){
+      #poison-mushrooms-comparison-v1 .comparison-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:22px}
+      #poison-mushrooms-comparison-v1 .species-name{grid-column:1/-1;margin-bottom:4px}
+    }
+  </style>
+  <h3>독버섯 5종 · 단계 비교</h3>
+  <div class="nav nav-pills" role="tablist" aria-label="버섯 모습">
+    <button class="nav-link active" id="poison-comparison-growth-tab" role="tab" aria-controls="poison-comparison-growth-panel" aria-selected="true" type="button" data-view="growth">성장</button>
+    <button class="nav-link" id="poison-comparison-harvest-tab" role="tab" aria-controls="poison-comparison-harvest-panel" aria-selected="false" type="button" data-view="harvest">수확</button>
+  </div>
+  <div id="poison-comparison-growth-panel" class="comparison-panel" role="tabpanel" aria-labelledby="poison-comparison-growth-tab"></div>
+  <div id="poison-comparison-harvest-panel" class="comparison-panel" role="tabpanel" aria-labelledby="poison-comparison-harvest-tab" hidden></div>
+  <span id="poison-comparison-status" class="sr-only" aria-live="polite"></span>
+  <script type="application/json" id="poison-comparison-assets">__ASSET_DATA__</script>
+  <script>
+  (()=>{
+    const root=document.getElementById('poison-mushrooms-comparison-v1');
+    const assets=JSON.parse(root.querySelector('#poison-comparison-assets').textContent);
+    const species=[['FlyAgaric','광대버섯'],['DestroyingAngel','독우산광대버섯'],['SulfurTuft','노란다발버섯'],['Tsukiyotake','화경버섯'],['PoisonFireCoral','붉은사슴뿔버섯']];
+    const growthPanel=root.querySelector('#poison-comparison-growth-panel');
+    const harvestPanel=root.querySelector('#poison-comparison-harvest-panel');
+    const status=root.querySelector('#poison-comparison-status');
+    const tabs=Array.from(root.querySelectorAll('[role="tab"]'));
+    function random(seed){let s=seed>>>0;return()=>{s=(Math.imul(s,1664525)+1013904223)>>>0;return s/4294967296}}
+    function positions(seed){
+      const rng=random(seed),indices=[4,0,8,2,6,1,7,3,5];
+      return indices.map(idx=>{const angle=rng()*Math.PI*2,radius=rng()*.1;return{x:(idx%3+.5)/3+Math.cos(angle)*radius,z:(Math.floor(idx/3)+.5)/3+Math.sin(angle)*radius,variant:rng()>.5?'B':'A',flip:rng()>.5}});
+    }
+    function makeRow(id,name,view){
+      const row=document.createElement('section');row.className='comparison-row';row.dataset.species=id;
+      const heading=document.createElement('div');heading.className='species-name';heading.id='poison-comparison-'+view+'-'+id;heading.textContent=name;
+      row.setAttribute('aria-labelledby',heading.id);row.appendChild(heading);return row;
+    }
+    function makeFigure(label){
+      const figure=document.createElement('figure');
+      const caption=document.createElement('figcaption');caption.className='text-small text-muted tabular-nums';caption.textContent=label;figure.appendChild(caption);
+      const tile=document.createElement('div');tile.className='comparison-tile';figure.appendChild(tile);
+      return{figure,tile};
+    }
+    species.forEach(([id,name],index)=>{
+      const points=positions(2729+index*97);
+      const growthRow=makeRow(id,name,'growth');
+      [10,50,100].forEach(pct=>{
+        const g=pct/100,n=Math.max(1,Math.ceil(9*g)),size=.3+.35*g;
+        const{figure,tile}=makeFigure(pct+'%');tile.dataset.growth=String(pct);tile.setAttribute('role','img');tile.setAttribute('aria-label',name+' 성장률 '+pct+'퍼센트, 기본 그림 '+n+'개');
+        const soil=document.createElement('div');soil.className='soil';soil.setAttribute('aria-hidden','true');tile.appendChild(soil);
+        const layer=document.createElement('div');layer.className='plant-layer';layer.setAttribute('aria-hidden','true');tile.appendChild(layer);
+        points.slice(0,n).sort((a,b)=>a.z-b.z).forEach(point=>{
+          const img=document.createElement('img');img.alt='';img.src=assets[id+'Plant'+point.variant];
+          const w=size*68,anchorX=16+point.x*68,anchorY=30+point.z*50;
+          Object.assign(img.style,{width:w+'%',height:w+'%',left:(anchorX-w/2)+'%',top:(anchorY-w*.875)+'%',transform:point.flip?'scaleX(-1)':'none'});
+          layer.appendChild(img);
+        });
+        growthRow.appendChild(figure);
+      });
+      growthPanel.appendChild(growthRow);
+      const harvestRow=makeRow(id,name,'harvest');
+      [['01Low','적음'],['02Medium','중간'],['03Full','가득']].forEach(([phase,label])=>{
+        const{figure,tile}=makeFigure(label);tile.dataset.phase=phase;
+        const img=document.createElement('img');img.className='stack-image';img.alt=name+' 수확 상자, '+label;img.src=assets[id+phase];tile.appendChild(img);harvestRow.appendChild(figure);
+      });
+      harvestPanel.appendChild(harvestRow);
+    });
+    function applyView(view){
+      if(view!=='growth'&&view!=='harvest')return;
+      tabs.forEach(tab=>{const active=tab.dataset.view===view;tab.classList.toggle('active',active);tab.setAttribute('aria-selected',String(active));});
+      growthPanel.hidden=view!=='growth';harvestPanel.hidden=view!=='harvest';
+      status.textContent=view==='growth'?'독버섯 5종, 성장률 10·50·100퍼센트 비교':'독버섯 5종, 적음·중간·가득 수확 상자 비교';
+    }
+    function restore(state){
+      const data=state?.modelContent??state;
+      if(data?.view==='poison-mushrooms-comparison')applyView(data.selectedTab);
+    }
+    function remember(view){
+      status.textContent=view==='growth'?'독버섯 5종, 성장률 10·50·100퍼센트 비교':'독버섯 5종, 적음·중간·가득 수확 상자 비교';
+      const setter=window.openai?.setWidgetState;
+      if(setter)setter.call(window.openai,{modelContent:{view:'poison-mushrooms-comparison',selectedTab:view},privateContent:null}).catch(()=>{});
+    }
+    tabs.forEach(tab=>tab.addEventListener('click',()=>remember(tab.dataset.view)));
+    restore(window.openai?.widgetState);
+    window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState)restore(event.detail.globals.widgetState);});
+  })();
+  </script>
+</div>

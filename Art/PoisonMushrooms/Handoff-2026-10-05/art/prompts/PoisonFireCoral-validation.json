@@ -1,0 +1,137 @@
+{
+  "assets": [
+    {
+      "file": "01Low.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alpha16Bounds": [
+        89,
+        322,
+        1171,
+        1021
+      ],
+      "alpha128Bounds": [
+        90,
+        323,
+        1170,
+        1020
+      ],
+      "transparentPercent": 66.437,
+      "sha256": "aae814a5912cf047ec3f2a8f474abe496083a53eedf0cc3962fa89c39ac8186b"
+    },
+    {
+      "file": "02Medium.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alpha16Bounds": [
+        88,
+        321,
+        1172,
+        1022
+      ],
+      "alpha128Bounds": [
+        89,
+        321,
+        1171,
+        1021
+      ],
+      "transparentPercent": 66.317,
+      "sha256": "4b53d5741c52e92fe5dd71f9b15cee6521b64b04bb396502447db1d5688c4c20"
+    },
+    {
+      "file": "03Full.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alpha16Bounds": [
+        87,
+        289,
+        1171,
+        1023
+      ],
+      "alpha128Bounds": [
+        88,
+        290,
+        1171,
+        1022
+      ],
+      "transparentPercent": 66.119,
+      "sha256": "5ab5f7a9b8f4e5439737a37f2fe35f2beec6520e73c03b004c8fae8e0651d7ae"
+    },
+    {
+      "file": "PlantA.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alpha16Bounds": [
+        319,
+        119,
+        947,
+        1109
+      ],
+      "alpha128Bounds": [
+        320,
+        120,
+        947,
+        1108
+      ],
+      "transparentPercent": 76.748,
+      "sha256": "be29db43c9b90435a6809148a8305407e339f884200c2a633a76e431743eecab"
+    },
+    {
+      "file": "PlantB.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alpha16Bounds": [
+        327,
+        168,
+        952,
+        1092
+      ],
+      "alpha128Bounds": [
+        328,
+        169,
+        952,
+        1091
+      ],
+      "transparentPercent": 79.562,
+      "sha256": "b1bdd6a88f7b907b6dc0cd0edab88ed34e16201bee39e2263f5e862617a9ca4d"
+    }
+  ],
+  "visualInspection": "All five generated images inspected; plant A/B have alternate club layouts; low/medium/full contents increase while tray framing remains consistent.",
+  "mode": "built-in image_gen",
+  "sourceAlterations": "None. Raw generated PNG masters copied unchanged."
+}

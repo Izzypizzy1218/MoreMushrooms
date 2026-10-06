@@ -4,6 +4,6 @@
   <author>izzy_pizzy</author>
   <packageId>izzypizzy.rimmushrooms</packageId>
   <supportedVersions><li>1.6</li></supportedVersions>
-  <modVersion>0.3.3</modVersion>
-  <description>재배가능한 10종류의 버섯을 추가합니다.</description>
+  <modVersion>0.4.0</modVersion>
+  <description>식용 버섯 10종과 독버섯 5종을 추가합니다.</description>
 </ModMetaData>

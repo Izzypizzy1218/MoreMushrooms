@@ -122,7 +122,7 @@ namespace RimMushroomsTests
                 // Exhausting the native scan resets its shared wantedPlantDef cache.
                 Sower.PotentialWorkCellsGlobal(farmer).ToList();
                 var job = Sower.JobOnCell(farmer, cell);
-                if (job != null && job.def == JobDefOf.HaulToCell)
+                if (job != null && (job.def == JobDefOf.HaulToCell || job.def == JobDefOf.CutPlant))
                 {
                     job.playerForced = true;
                     farmer.jobs.TryTakeOrderedJob(job, JobTag.Misc);
@@ -131,7 +131,12 @@ namespace RimMushroomsTests
                     return false;
                 }
                 check(job != null && job.def == JobDefOf.Sow && (assorted ? varieties.Contains(job.plantDefToSow) : job.plantDefToSow == selected),
-                    "native hydroponic sow job chooses real species " + selected.defName + " cycle=" + cycle);
+                    "native hydroponic sow job chooses real species " + selected.defName + " cycle=" + cycle
+                    + " job=" + job + " power=" + basinPower.PowerOn + " temperature=" + cell.GetTemperature(map)
+                    + " skill=" + farmer.skills.GetSkill(SkillDefOf.Plants).Level
+                    + " reserve=" + farmer.CanReserve(cell) + " season=" + PlantUtility.GrowthSeasonNow(cell, map, selected)
+                    + " blocker=" + PlantUtility.AdjacentSowBlocker(selected, cell, map)
+                    + " things=" + string.Join(",", cell.GetThingList(map).Select(t => t.def.defName)));
                 check(job.plantDefToSow.CanNowPlantAt(cell, map), "selected actual crop accepts basin fertility and planting cell " + job.plantDefToSow.defName);
                 job.playerForced = true;
                 farmer.jobs.TryTakeOrderedJob(job, JobTag.Misc);
@@ -199,8 +204,8 @@ namespace RimMushroomsTests
             }
             if (phase == 4)
             {
-                if (farmer.CurJobDef == JobDefOf.HaulToCell) return false;
-                check(true, "native haul-aside job clears harvested hydroponic pile for replanting");
+                if (farmer.CurJobDef == JobDefOf.HaulToCell || farmer.CurJobDef == JobDefOf.CutPlant) return false;
+                check(true, "native clearing job removes planting blocker for hydroponic replanting");
                 phase = 1;
                 deadline = Time.realtimeSinceStartup + 40f;
             }

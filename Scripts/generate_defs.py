@@ -206,3 +206,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--handoff", type=Path, default=ROOT.parent / "RimWorld-Mushrooms-Handoff-2026-10-03")
     generate(parser.parse_args().handoff)
+    from generate_poison_defs import generate as generate_poison
+    generate_poison()

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_PoisonFlyAgaric.stages.0.label>asymptomatic</RMush_PoisonFlyAgaric.stages.0.label>
+  <RMush_PoisonFlyAgaric.stages.1.label>confused and drowsy</RMush_PoisonFlyAgaric.stages.1.label>
+  <RMush_PoisonFlyAgaric.stages.2.label>impaired consciousness</RMush_PoisonFlyAgaric.stages.2.label>
+  <RMush_PoisonFlyAgaric.stages.3.label>severe neurological poisoning</RMush_PoisonFlyAgaric.stages.3.label>
+  <RMush_PoisonFlyAgaric.stages.4.label>profound drowsiness</RMush_PoisonFlyAgaric.stages.4.label>
+  <RMush_PoisonFlyAgaric.label>fly agaric poisoning</RMush_PoisonFlyAgaric.label>
+  <RMush_PoisonFlyAgaric.description>Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonFlyAgaric.description>
+  <RMush_PoisonDestroyingAngel.stages.0.label>asymptomatic</RMush_PoisonDestroyingAngel.stages.0.label>
+  <RMush_PoisonDestroyingAngel.stages.1.label>gastrointestinal symptoms</RMush_PoisonDestroyingAngel.stages.1.label>
+  <RMush_PoisonDestroyingAngel.stages.2.label>quieter symptoms; liver injury continues</RMush_PoisonDestroyingAngel.stages.2.label>
+  <RMush_PoisonDestroyingAngel.stages.3.label>severe liver injury</RMush_PoisonDestroyingAngel.stages.3.label>
+  <RMush_PoisonDestroyingAngel.stages.4.label>critical liver poisoning</RMush_PoisonDestroyingAngel.stages.4.label>
+  <RMush_PoisonDestroyingAngel.label>destroying angel poisoning</RMush_PoisonDestroyingAngel.label>
+  <RMush_PoisonDestroyingAngel.description>Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. After the first symptom warning, a single exposure grants at least 24 hours before this poisoning itself can enter its lethal stage. Other illnesses, injuries and additional exposures are not covered.</RMush_PoisonDestroyingAngel.description>
+  <RMush_PoisonSulfurTuft.stages.0.label>asymptomatic</RMush_PoisonSulfurTuft.stages.0.label>
+  <RMush_PoisonSulfurTuft.stages.1.label>stomach pain</RMush_PoisonSulfurTuft.stages.1.label>
+  <RMush_PoisonSulfurTuft.stages.2.label>gastroenteritis and weakness</RMush_PoisonSulfurTuft.stages.2.label>
+  <RMush_PoisonSulfurTuft.stages.3.label>severe gastroenteritis</RMush_PoisonSulfurTuft.stages.3.label>
+  <RMush_PoisonSulfurTuft.stages.4.label>profound weakness</RMush_PoisonSulfurTuft.stages.4.label>
+  <RMush_PoisonSulfurTuft.label>sulfur tuft poisoning</RMush_PoisonSulfurTuft.label>
+  <RMush_PoisonSulfurTuft.description>Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonSulfurTuft.description>
+  <RMush_PoisonTsukiyotake.stages.0.label>asymptomatic</RMush_PoisonTsukiyotake.stages.0.label>
+  <RMush_PoisonTsukiyotake.stages.1.label>acute nausea</RMush_PoisonTsukiyotake.stages.1.label>
+  <RMush_PoisonTsukiyotake.stages.2.label>vomiting and enteritis</RMush_PoisonTsukiyotake.stages.2.label>
+  <RMush_PoisonTsukiyotake.stages.3.label>severe enteritis</RMush_PoisonTsukiyotake.stages.3.label>
+  <RMush_PoisonTsukiyotake.stages.4.label>severe enteritis and weakness</RMush_PoisonTsukiyotake.stages.4.label>
+  <RMush_PoisonTsukiyotake.label>tsukiyotake poisoning</RMush_PoisonTsukiyotake.label>
+  <RMush_PoisonTsukiyotake.description>Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonTsukiyotake.description>
+  <RMush_PoisonPoisonFireCoral.stages.0.label>asymptomatic</RMush_PoisonPoisonFireCoral.stages.0.label>
+  <RMush_PoisonPoisonFireCoral.stages.1.label>early systemic poisoning</RMush_PoisonPoisonFireCoral.stages.1.label>
+  <RMush_PoisonPoisonFireCoral.stages.2.label>progressive systemic poisoning</RMush_PoisonPoisonFireCoral.stages.2.label>
+  <RMush_PoisonPoisonFireCoral.stages.3.label>severe systemic poisoning</RMush_PoisonPoisonFireCoral.stages.3.label>
+  <RMush_PoisonPoisonFireCoral.stages.4.label>critical systemic poisoning</RMush_PoisonPoisonFireCoral.stages.4.label>
+  <RMush_PoisonPoisonFireCoral.label>poison fire coral poisoning</RMush_PoisonPoisonFireCoral.label>
+  <RMush_PoisonPoisonFireCoral.description>Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. After the first symptom warning, a single exposure grants at least 24 hours before this poisoning itself can enter its lethal stage. Other illnesses, injuries and additional exposures are not covered.</RMush_PoisonPoisonFireCoral.description>
+</LanguageData>

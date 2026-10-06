@@ -1,0 +1,44 @@
+More Mushrooms poison mushroom artwork
+
+Approved handoff: 2026-10-05
+25 game textures and 25 masters generated with built-in ImageGen.
+The original ZIP and preserved handoff retain source, prompts and hash manifests.
+All approved game textures were copied byte-for-byte, with no image edits.
+
+Reference photographs are preserved only in development/source assets.
+They are unmodified; they are not included in the runtime mod textures.
+
+Reference photo attribution:
+
+광대버섯 / Amanita muscaria
+Author: JJ Harrison
+Source: https://commons.wikimedia.org/wiki/File:Amanita_muscaria_Marriott_Falls_1.jpg
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+
+독우산광대버섯 / Amanita virosa
+Author: B. Baldassari; retouched/cropped by Ak ccm
+Source: https://commons.wikimedia.org/wiki/File:2006-08_Amanita_virosa_crop.jpg
+License: CC BY 2.5
+License URL: https://creativecommons.org/licenses/by/2.5/
+
+노란다발버섯 / Hypholoma fasciculare
+Author: Jörg Hempel
+Source: https://commons.wikimedia.org/wiki/File:Hypholoma_fasciculare_LC0091.jpg
+License: CC BY-SA 2.0 DE
+License URL: https://creativecommons.org/licenses/by-sa/2.0/de/
+
+화경버섯 / Omphalotus japonicus
+Author: あおもりくま (aomorikuma)
+Source: https://commons.wikimedia.org/wiki/File:Omphalotus_guepiniformis_Berk_Neda_02.jpg
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+
+붉은사슴뿔버섯 / Trichoderma cornu-damae
+Author: Kouchan
+Source: https://commons.wikimedia.org/wiki/File:Podostroma_cornu-damae.jpg
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+
+Generated game artwork has no additional licensing declaration in the handoff.
+This credit file preserves reference-photo attribution; it does not invent a license for the mod or generated artwork.
