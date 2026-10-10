@@ -1,0 +1,33 @@
+{
+  "Core-English": {
+    "checks": 7253,
+    "groups": {
+      "ecology": 555,
+      "poison": 749,
+      "psychoactive": 121,
+      "expansion": 1135,
+      "meal exposure": 19,
+      "nutrient paste": 20
+    },
+    "profile": "20261010-224349-Core",
+    "reportSha256": "f1ca76b8474bfa7ed3ef817646441a88f1db020b7fb0aeb492c08ae326d4764a",
+    "logSha256": "a0ba8465ea61026bad313aae34f301060fcc52251fe55bda6d4897e81dc4601e",
+    "legacyInputSha256": "bdb80bdc3504684f7c212565f57ab50618d6b600030971900fbdcf413e5d04a0"
+  },
+  "AllDLC-Korean": {
+    "checks": 6040,
+    "groups": {
+      "ecology": 555,
+      "poison": 749,
+      "psychoactive": 122,
+      "expansion": 1387,
+      "meal exposure": 19,
+      "nutrient paste": 20
+    },
+    "profile": "20261010-225140-DLC-Mood",
+    "reportSha256": "a9085c7bcfebd1a8b5c314dc6fa6c6d3f783f75f6a92384988fc47919c9a8870",
+    "logSha256": "9349fc8df3956ea1fd4dc1baa79fe3dbc9ea21cc41be22c0f7302504731d3190",
+    "legacyInputSha256": "c8d3f542f75dab7f08a3284eca05999bd0f473126cf303e30de0d21e1ca0fa5d"
+  },
+  "productionAssemblySha256": "ce314d169c6174d6d47bd7cc70c3056023b75aa09762d2730ef5c8abb272a88f"
+}

@@ -1,0 +1,474 @@
+Mono path[0] = 'C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/Managed'
+Mono config path = 'C:/Program Files (x86)/Steam/steamapps/common/RimWorld/MonoBleedingEdge/etc'
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Initialize engine version: 2022.3.35f1 (011206c7a712)
+[Subsystems] Discovering subsystems at path C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12113 MB
+    Driver:   32.0.16.1088
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.162 seconds
+- Finished resetting the current domain, in  0.001 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+UnloadTime: 0.610400 ms
+Command line arguments: -batchmode -screen-fullscreen 0 -screen-width 1600 -screen-height 1000 -quicktest -mushroomFieldBalance -savedatafolder=C:\Users\집\Desktop\codex\MoreMushrooms\Tests\Runtime\20261011-002921-040-FieldBalance-Core -logFile C:\Users\집\Desktop\codex\MoreMushrooms\Tests\Runtime\20261011-002921-040-FieldBalance-Core\Player.log
+RimWorld 1.6.4871 rev591
+Save data folder overridden to C:\Users\집\Desktop\codex\MoreMushrooms\Tests\Runtime\20261011-002921-040-FieldBalance-Core
+Created WorkshopItem for 2590957984 but there is no folder for it.
+Mod RimTalk - Expand Toddlers dependency (cyanobot.toddlers) needs to have <downloadUrl> and/or <steamWorkshopUrl> specified.
+Mod RimTalk - Expand Toddlers dependency (cj.rimtalk) needs to have <downloadUrl> and/or <steamWorkshopUrl> specified.
+Fallback handler could not load library C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/MonoBleedingEdge/data-000001891DBF7030.dll
+Fallback handler could not load library C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/MonoBleedingEdge/data-000001891DC6F0E0.dll
+[Rim Mushrooms Tests] Diagnostics: full exception stacks enabled; Harmony stacktrace caching disabled for this process only.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 89 unused Assets to reduce memory usage. Loaded Objects now: 16494.
+Total: 64.357700 ms (FindLiveObjects: 0.844600 ms CreateObjectMapping: 0.677600 ms MarkObjects: 62.517900 ms  DeleteObjects: 0.317300 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+UnloadTime: 2.576100 ms
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 16509.
+Total: 64.010800 ms (FindLiveObjects: 0.478800 ms CreateObjectMapping: 0.836300 ms MarkObjects: 62.659800 ms  DeleteObjects: 0.035600 ms)
+
+Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - izzypizzy.rimmushrooms
+  - izzypizzy.rimmushrooms.tests
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 22324.
+Total: 97.239600 ms (FindLiveObjects: 0.706400 ms CreateObjectMapping: 0.701000 ms MarkObjects: 95.757300 ms  DeleteObjects: 0.074500 ms)
+
+[Mushroom Field Balance] prepared 130 accelerated native single-pawn cases; output=C:\Users\집\Desktop\codex\MoreMushrooms\Tests\Runtime\20261011-002921-040-FieldBalance-Core\field-balance-report.json
+[Mushroom Field Balance] 1/130 psychoactive/LibertyCap/first-standard-awake/63011 dead=False mentalHours=6.54 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 2/130 psychoactive/LibertyCap/three-standard-immediate/63011 dead=False mentalHours=7.14 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 3/130 psychoactive/LibertyCap/second-standard-after-six-hours/63011 dead=False mentalHours=13.86 moodPointHours=42 nativeTends=0
+[Mushroom Field Balance] 4/130 psychoactive/LibertyCap/first-standard-awake/63037 dead=False mentalHours=6.84 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 5/130 psychoactive/LibertyCap/three-standard-immediate/63037 dead=False mentalHours=7.26 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 6/130 psychoactive/LibertyCap/second-standard-after-six-hours/63037 dead=False mentalHours=12.54 moodPointHours=174 nativeTends=0
+[Mushroom Field Balance] 7/130 psychoactive/LibertyCap/first-standard-awake/63073 dead=False mentalHours=7.02 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 8/130 psychoactive/LibertyCap/three-standard-immediate/63073 dead=False mentalHours=7.26 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 9/130 psychoactive/LibertyCap/second-standard-after-six-hours/63073 dead=False mentalHours=4.86 moodPointHours=42 nativeTends=0
+[Mushroom Field Balance] 10/130 psychoactive/LibertyCap/controlled-sleep-at-two-hours/63011 dead=False mentalHours=2.04 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 11/130 psychoactive/LibertyCap/anesthetic-downing-at-two-hours/63011 dead=False mentalHours=2.04 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 12/130 psychoactive/Cubensis/first-standard-awake/63011 dead=False mentalHours=6.54 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 13/130 psychoactive/Cubensis/three-standard-immediate/63011 dead=False mentalHours=7.98 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 14/130 psychoactive/Cubensis/second-standard-after-six-hours/63011 dead=False mentalHours=13.86 moodPointHours=42 nativeTends=0
+[Mushroom Field Balance] 15/130 psychoactive/Cubensis/first-standard-awake/63037 dead=False mentalHours=7.26 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 16/130 psychoactive/Cubensis/three-standard-immediate/63037 dead=False mentalHours=7.86 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 17/130 psychoactive/Cubensis/second-standard-after-six-hours/63037 dead=False mentalHours=13.92 moodPointHours=42 nativeTends=0
+[Mushroom Field Balance] 18/130 psychoactive/Cubensis/first-standard-awake/63073 dead=False mentalHours=6.9 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 19/130 psychoactive/Cubensis/three-standard-immediate/63073 dead=False mentalHours=7.5 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 20/130 psychoactive/Cubensis/second-standard-after-six-hours/63073 dead=False mentalHours=12.84 moodPointHours=174 nativeTends=0
+[Mushroom Field Balance] 21/130 psychoactive/Cubensis/controlled-sleep-at-two-hours/63011 dead=False mentalHours=2.04 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 22/130 psychoactive/Cubensis/anesthetic-downing-at-two-hours/63011 dead=False mentalHours=2.04 moodPointHours=90 nativeTends=0
+[Mushroom Field Balance] 23/130 psychoactive/FlyAgaric/first-standard-awake/63011 dead=False mentalHours=11.88 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 24/130 psychoactive/FlyAgaric/three-standard-immediate/63011 dead=True mentalHours=11.76 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 25/130 psychoactive/FlyAgaric/second-standard-after-six-hours/63011 dead=False mentalHours=16.02 moodPointHours=114 nativeTends=0
+[Mushroom Field Balance] 26/130 psychoactive/FlyAgaric/first-standard-awake/63037 dead=False mentalHours=8.82 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 27/130 psychoactive/FlyAgaric/three-standard-immediate/63037 dead=True mentalHours=11.7 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 28/130 psychoactive/FlyAgaric/second-standard-after-six-hours/63037 dead=False mentalHours=15.6 moodPointHours=114 nativeTends=0
+[Mushroom Field Balance] 29/130 psychoactive/FlyAgaric/first-standard-awake/63073 dead=False mentalHours=10.98 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 30/130 psychoactive/FlyAgaric/three-standard-immediate/63073 dead=True mentalHours=11.88 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 31/130 psychoactive/FlyAgaric/second-standard-after-six-hours/63073 dead=False mentalHours=15.78 moodPointHours=114 nativeTends=0
+[Mushroom Field Balance] 32/130 psychoactive/FlyAgaric/controlled-sleep-at-two-hours/63011 dead=False mentalHours=2.04 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 33/130 psychoactive/FlyAgaric/anesthetic-downing-at-two-hours/63011 dead=False mentalHours=2.04 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 34/130 psychoactive/PantherCap/first-standard-awake/63011 dead=False mentalHours=13.08 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 35/130 psychoactive/PantherCap/three-standard-immediate/63011 dead=False mentalHours=10.44 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 36/130 psychoactive/PantherCap/second-standard-after-six-hours/63011 dead=False mentalHours=23.64 moodPointHours=114 nativeTends=0
+[Mushroom Field Balance] 37/130 psychoactive/PantherCap/first-standard-awake/63037 dead=False mentalHours=13.56 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 38/130 psychoactive/PantherCap/three-standard-immediate/63037 dead=False mentalHours=12.54 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 39/130 psychoactive/PantherCap/second-standard-after-six-hours/63037 dead=False mentalHours=24 moodPointHours=114 nativeTends=0
+[Mushroom Field Balance] 40/130 psychoactive/PantherCap/first-standard-awake/63073 dead=False mentalHours=18.48 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 41/130 psychoactive/PantherCap/three-standard-immediate/63073 dead=False mentalHours=12.24 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 42/130 psychoactive/PantherCap/second-standard-after-six-hours/63073 dead=False mentalHours=22.5 moodPointHours=114 nativeTends=0
+[Mushroom Field Balance] 43/130 psychoactive/PantherCap/controlled-sleep-at-two-hours/63011 dead=False mentalHours=2.04 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 44/130 psychoactive/PantherCap/anesthetic-downing-at-two-hours/63011 dead=False mentalHours=2.04 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 45/130 poison/FlyAgaric/one-standard-untreated/63011 dead=False mentalHours=11.76 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 46/130 poison/FlyAgaric/one-standard-MedicineIndustrial/63011 dead=False mentalHours=11.76 moodPointHours=60 nativeTends=3
+[Mushroom Field Balance] 47/130 poison/FlyAgaric/one-standard-untreated/63037 dead=False mentalHours=10.86 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 48/130 poison/FlyAgaric/one-standard-MedicineIndustrial/63037 dead=False mentalHours=8.88 moodPointHours=60 nativeTends=3
+[Mushroom Field Balance] 49/130 poison/DestroyingAngel/one-standard-untreated/63011 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 50/130 poison/DestroyingAngel/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 51/130 poison/DestroyingAngel/one-standard-untreated/63037 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 52/130 poison/DestroyingAngel/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=15
+[Mushroom Field Balance] 53/130 poison/SulfurTuft/one-standard-untreated/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 54/130 poison/SulfurTuft/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=11
+[Mushroom Field Balance] 55/130 poison/SulfurTuft/one-standard-untreated/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 56/130 poison/SulfurTuft/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=10
+[Mushroom Field Balance] 57/130 poison/Tsukiyotake/one-standard-untreated/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 58/130 poison/Tsukiyotake/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=7
+[Mushroom Field Balance] 59/130 poison/Tsukiyotake/one-standard-untreated/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 60/130 poison/Tsukiyotake/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=7
+[Mushroom Field Balance] 61/130 poison/PoisonFireCoral/one-standard-untreated/63011 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 62/130 poison/PoisonFireCoral/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=23
+[Mushroom Field Balance] 63/130 poison/PoisonFireCoral/one-standard-untreated/63037 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 64/130 poison/PoisonFireCoral/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=24
+[Mushroom Field Balance] 65/130 poison/DeathCap/one-standard-untreated/63011 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 66/130 poison/DeathCap/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 67/130 poison/DeathCap/one-standard-untreated/63037 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 68/130 poison/DeathCap/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=15
+[Mushroom Field Balance] 69/130 poison/YellowDapperling/one-standard-untreated/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 70/130 poison/YellowDapperling/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=2
+[Mushroom Field Balance] 71/130 poison/YellowDapperling/one-standard-untreated/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 72/130 poison/YellowDapperling/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=4
+[Mushroom Field Balance] 73/130 poison/JackOLantern/one-standard-untreated/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 74/130 poison/JackOLantern/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=6
+[Mushroom Field Balance] 75/130 poison/JackOLantern/one-standard-untreated/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 76/130 poison/JackOLantern/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=9
+[Mushroom Field Balance] 77/130 poison/DeadlyWebcap/one-standard-untreated/63011 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 78/130 poison/DeadlyWebcap/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=18
+[Mushroom Field Balance] 79/130 poison/DeadlyWebcap/one-standard-untreated/63037 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 80/130 poison/DeadlyWebcap/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=19
+[Mushroom Field Balance] 81/130 poison/PantherCap/one-standard-untreated/63011 dead=False mentalHours=23.64 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 82/130 poison/PantherCap/one-standard-MedicineIndustrial/63011 dead=False mentalHours=13.08 moodPointHours=60 nativeTends=5
+[Mushroom Field Balance] 83/130 poison/PantherCap/one-standard-untreated/63037 dead=False mentalHours=18.36 moodPointHours=60 nativeTends=0
+[Mushroom Field Balance] 84/130 poison/PantherCap/one-standard-MedicineIndustrial/63037 dead=False mentalHours=18.6 moodPointHours=60 nativeTends=4
+[Mushroom Field Balance] 85/130 poison/GhostFungus/one-standard-untreated/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 86/130 poison/GhostFungus/one-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=4
+[Mushroom Field Balance] 87/130 poison/GhostFungus/one-standard-untreated/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 88/130 poison/GhostFungus/one-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=4
+[Mushroom Field Balance] 89/130 poison/DestroyingAngel/one-standard-none/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 90/130 poison/DestroyingAngel/one-standard-MedicineHerbal/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 91/130 poison/DestroyingAngel/one-standard-MedicineUltratech/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 92/130 poison/DestroyingAngel/one-standard-none/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=17
+[Mushroom Field Balance] 93/130 poison/DestroyingAngel/one-standard-MedicineHerbal/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=20
+[Mushroom Field Balance] 94/130 poison/DestroyingAngel/one-standard-MedicineUltratech/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=15
+[Mushroom Field Balance] 95/130 poison/DestroyingAngel/industrial-start-warning-plus-24h/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 96/130 poison/DestroyingAngel/industrial-start-warning-plus-72h/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=18
+[Mushroom Field Balance] 97/130 poison/PoisonFireCoral/one-standard-none/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=22
+[Mushroom Field Balance] 98/130 poison/PoisonFireCoral/one-standard-MedicineHerbal/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=22
+[Mushroom Field Balance] 99/130 poison/PoisonFireCoral/one-standard-MedicineUltratech/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=23
+[Mushroom Field Balance] 100/130 poison/PoisonFireCoral/one-standard-none/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=25
+[Mushroom Field Balance] 101/130 poison/PoisonFireCoral/one-standard-MedicineHerbal/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=31
+[Mushroom Field Balance] 102/130 poison/PoisonFireCoral/one-standard-MedicineUltratech/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=24
+[Mushroom Field Balance] 103/130 poison/PoisonFireCoral/industrial-start-warning-plus-24h/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=23
+[Mushroom Field Balance] 104/130 poison/PoisonFireCoral/industrial-start-warning-plus-72h/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=28
+[Mushroom Field Balance] 105/130 poison/DeathCap/one-standard-none/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 106/130 poison/DeathCap/one-standard-MedicineHerbal/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 107/130 poison/DeathCap/one-standard-MedicineUltratech/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 108/130 poison/DeathCap/one-standard-none/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=17
+[Mushroom Field Balance] 109/130 poison/DeathCap/one-standard-MedicineHerbal/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=20
+[Mushroom Field Balance] 110/130 poison/DeathCap/one-standard-MedicineUltratech/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=15
+[Mushroom Field Balance] 111/130 poison/DeathCap/industrial-start-warning-plus-24h/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=14
+[Mushroom Field Balance] 112/130 poison/DeathCap/industrial-start-warning-plus-72h/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=18
+[Mushroom Field Balance] 113/130 poison/DeadlyWebcap/one-standard-none/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=18
+[Mushroom Field Balance] 114/130 poison/DeadlyWebcap/one-standard-MedicineHerbal/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=18
+[Mushroom Field Balance] 115/130 poison/DeadlyWebcap/one-standard-MedicineUltratech/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=18
+[Mushroom Field Balance] 116/130 poison/DeadlyWebcap/one-standard-none/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=21
+[Mushroom Field Balance] 117/130 poison/DeadlyWebcap/one-standard-MedicineHerbal/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=24
+[Mushroom Field Balance] 118/130 poison/DeadlyWebcap/one-standard-MedicineUltratech/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=19
+[Mushroom Field Balance] 119/130 poison/DeadlyWebcap/industrial-start-warning-plus-24h/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=18
+[Mushroom Field Balance] 120/130 poison/DeadlyWebcap/industrial-start-warning-plus-72h/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=22
+[Mushroom Field Balance] 121/130 poison/FlyAgaric/three-standard-untreated/63011 dead=True mentalHours=11.88 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 122/130 poison/FlyAgaric/three-standard-MedicineIndustrial/63011 dead=False mentalHours=11.88 moodPointHours=-48 nativeTends=6
+[Mushroom Field Balance] 123/130 poison/FlyAgaric/three-standard-untreated/63037 dead=True mentalHours=11.76 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 124/130 poison/FlyAgaric/three-standard-MedicineIndustrial/63037 dead=False mentalHours=10.44 moodPointHours=60 nativeTends=6
+[Mushroom Field Balance] 125/130 poison/SulfurTuft/three-standard-untreated/63011 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 126/130 poison/SulfurTuft/three-standard-MedicineIndustrial/63011 dead=False mentalHours=0 moodPointHours=0 nativeTends=11
+[Mushroom Field Balance] 127/130 poison/SulfurTuft/three-standard-untreated/63037 dead=True mentalHours=0 moodPointHours=0 nativeTends=0
+[Mushroom Field Balance] 128/130 poison/SulfurTuft/three-standard-MedicineIndustrial/63037 dead=False mentalHours=0 moodPointHours=0 nativeTends=12
+[Mushroom Field Balance] 129/130 poison/PantherCap/four-standard-untreated/63011 dead=False mentalHours=10.8 moodPointHours=-48 nativeTends=0
+[Mushroom Field Balance] 130/130 poison/PantherCap/four-standard-MedicineIndustrial/63011 dead=False mentalHours=9.6 moodPointHours=-48 nativeTends=8
+[Mushroom Field Balance] RESULT PASS cases=130 failures=0
+Memory Statistics:
+[ALLOC_TEMP_TLS] TLS Allocator
+  StackAllocators : 
+    [ALLOC_TEMP_MAIN]
+      Peak usage frame count: [0-1.0 KB]: 1996 frames, [2.0 KB-4.0 KB]: 3 frames, [8.0 KB-16.0 KB]: 1 frames, [32.0 KB-64.0 KB]: 1 frames, [1.0 MB-2.0 MB]: 2 frames, [2.0 MB-4.0 MB]: 2 frames
+      Initial Block Size 4.0 MB
+      Current Block Size 4.0 MB
+      Peak Allocated Bytes 3.2 MB
+      Overflow Count 1
+    [ALLOC_TEMP_Loading.AsyncRead]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 315 B
+      Overflow Count 0
+    [ALLOC_TEMP_Loading.PreloadManager]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 3.8 KB
+      Overflow Count 8
+    [ALLOC_TEMP_Background Job.Worker 8]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 6]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 0]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 10]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 9]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 5]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 14]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 6]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 4]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 3]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 12]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_EnlightenWorker] x 6
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 15]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 1]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 2]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 7]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_AssetGarbageCollectorHelper] x 11
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 138 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 5]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 9]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 13]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 8]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 7]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 1]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 507 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 2]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 480 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 3]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 11]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 10]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 0]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 4]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_BatchDeleteObjects]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+[ALLOC_DEFAULT] Dual Thread Allocator
+  Peak main deferred allocation count 577
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 4 Subsections = 4096 buckets. Failed count: 6524
+        32B: 34 Subsections = 17408 buckets. Failed count: 14502
+        48B: 64 Subsections = 21845 buckets. Failed count: 27813
+        64B: 46 Subsections = 11776 buckets. Failed count: 10567
+        80B: 87 Subsections = 17817 buckets. Failed count: 1104
+        96B: 8 Subsections = 1365 buckets. Failed count: 0
+        112B: 8 Subsections = 1170 buckets. Failed count: 1712
+        128B: 5 Subsections = 640 buckets. Failed count: 2930
+    [ALLOC_DEFAULT_MAIN]
+      Peak usage frame count: [16.0 MB-32.0 MB]: 391 frames, [64.0 MB-128.0 MB]: 1614 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 6
+      Peak Allocated memory 78.1 MB
+      Peak Large allocation bytes 0 B
+    [ALLOC_DEFAULT_THREAD]
+      Peak usage frame count: [4.0 MB-8.0 MB]: 1 frames, [8.0 MB-16.0 MB]: 468 frames, [16.0 MB-32.0 MB]: 613 frames, [32.0 MB-64.0 MB]: 791 frames, [64.0 MB-128.0 MB]: 132 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 5
+      Peak Allocated memory 72.2 MB
+      Peak Large allocation bytes 8.2 MB
+[ALLOC_TEMP_JOB_1_FRAME]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_2_FRAMES]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_4_FRAMES (JobTemp)]
+  Initial Block Size 2.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_ASYNC (Background)]
+  Initial Block Size 1.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_GFX] Dual Thread Allocator
+  Peak main deferred allocation count 0
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 4 Subsections = 4096 buckets. Failed count: 6524
+        32B: 34 Subsections = 17408 buckets. Failed count: 14502
+        48B: 64 Subsections = 21845 buckets. Failed count: 27813
+        64B: 46 Subsections = 11776 buckets. Failed count: 10567
+        80B: 87 Subsections = 17817 buckets. Failed count: 1104
+        96B: 8 Subsections = 1365 buckets. Failed count: 0
+        112B: 8 Subsections = 1170 buckets. Failed count: 1712
+        128B: 5 Subsections = 640 buckets. Failed count: 2930
+    [ALLOC_GFX_MAIN]
+      Peak usage frame count: [64.0 KB-128.0 KB]: 1 frames, [2.0 MB-4.0 MB]: 1871 frames, [32.0 MB-64.0 MB]: 132 frames, [64.0 MB-128.0 MB]: 1 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 3
+      Peak Allocated memory 109.5 MB
+      Peak Large allocation bytes 106.3 MB
+    [ALLOC_GFX_THREAD]
+      Peak usage frame count: [0-1.0 KB]: 2005 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 1
+      Peak Allocated memory 0.9 KB
+      Peak Large allocation bytes 0 B
+[ALLOC_CACHEOBJECTS] Dual Thread Allocator
+  Peak main deferred allocation count 86
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 4 Subsections = 4096 buckets. Failed count: 6524
+        32B: 34 Subsections = 17408 buckets. Failed count: 14502
+        48B: 64 Subsections = 21845 buckets. Failed count: 27813
+        64B: 46 Subsections = 11776 buckets. Failed count: 10567
+        80B: 87 Subsections = 17817 buckets. Failed count: 1104
+        96B: 8 Subsections = 1365 buckets. Failed count: 0
+        112B: 8 Subsections = 1170 buckets. Failed count: 1712
+        128B: 5 Subsections = 640 buckets. Failed count: 2930
+    [ALLOC_CACHEOBJECTS_MAIN]
+      Peak usage frame count: [4.0 MB-8.0 MB]: 391 frames, [8.0 MB-16.0 MB]: 1614 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 3
+      Peak Allocated memory 8.9 MB
+      Peak Large allocation bytes 0 B
+    [ALLOC_CACHEOBJECTS_THREAD]
+      Peak usage frame count: [4.0 KB-8.0 KB]: 391 frames, [32.0 KB-64.0 KB]: 1 frames, [64.0 KB-128.0 KB]: 1612 frames, [256.0 KB-0.5 MB]: 1 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 1
+      Peak Allocated memory 371.1 KB
+      Peak Large allocation bytes 0 B
+[ALLOC_TYPETREE] Dual Thread Allocator
+  Peak main deferred allocation count 0
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 4 Subsections = 4096 buckets. Failed count: 6524
+        32B: 34 Subsections = 17408 buckets. Failed count: 14502
+        48B: 64 Subsections = 21845 buckets. Failed count: 27813
+        64B: 46 Subsections = 11776 buckets. Failed count: 10567
+        80B: 87 Subsections = 17817 buckets. Failed count: 1104
+        96B: 8 Subsections = 1365 buckets. Failed count: 0
+        112B: 8 Subsections = 1170 buckets. Failed count: 1712
+        128B: 5 Subsections = 640 buckets. Failed count: 2930
+    [ALLOC_TYPETREE_MAIN]
+      Peak usage frame count: [4.0 KB-8.0 KB]: 1 frames, [8.0 KB-16.0 KB]: 2004 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 1
+      Peak Allocated memory 10.6 KB
+      Peak Large allocation bytes 0 B
+    [ALLOC_TYPETREE_THREAD]
+      Peak usage frame count: [0-1.0 KB]: 2005 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 0
+      Peak Allocated memory 0 B
+      Peak Large allocation bytes 0 B

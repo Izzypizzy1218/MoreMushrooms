@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <RimMushrooms.WildMushroomEcologyDef>
+    <defName>RMush_WildEcology</defName>
+    <checkIntervalTicks>2500</checkIntervalTicks>
+    <sampleAttempts>24</sampleAttempts>
+    <dailyExtraBudget>8</dailyExtraBudget>
+    <wildCapPer10000Cells>80.0</wildCapPer10000Cells>
+    <minWildCap>80</minWildCap>
+    <maxWildCap>1500</maxWildCap>
+    <ringChancePerCheck>0.015</ringChancePerCheck>
+    <ringCooldownDays>3.0</ringCooldownDays>
+    <ringMinCount>4</ringMinCount>
+    <ringMaxCount>7</ringMaxCount>
+    <ringMinRadius>2.5</ringMinRadius>
+    <ringMaxRadius>4.0</ringMaxRadius>
+    <maxPendingRegrowth>64</maxPendingRegrowth>
+    <regrowthExpiryDays>8.0</regrowthExpiryDays>
+  </RimMushrooms.WildMushroomEcologyDef>
+</Defs>

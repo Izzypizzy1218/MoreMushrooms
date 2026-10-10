@@ -45,7 +45,7 @@ namespace RimMushroomsTests
             originalGrowingPriority = farmer.workSettings.GetPriority(WorkTypeDefOf.Growing);
             farmer.workSettings.SetPriority(WorkTypeDefOf.Growing, 0);
             varieties = Selection.GetModExtension<AssortedMushroomSettings>().varieties.OrderBy(d => d.defName).ToArray();
-            crops = varieties.Concat(new[] { ThingDef.Named("RMush_PlantCauliflower"), ThingDef.Named("RMush_PlantPurpleBlewit") }).OrderBy(d => d.defName).ToArray();
+            crops = varieties.ToArray();
             Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
             farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
             farmer.pather.StopDead();
@@ -74,6 +74,11 @@ namespace RimMushroomsTests
                 map.roofGrid.SetRoof(c, RoofDefOf.RoofRockThick);
             basinPower = basin.GetComp<CompPowerTrader>();
             cell = basin.Position;
+            map.regionAndRoomUpdater.TryRebuildDirtyRegionsAndRooms();
+            foreach (var room in basin.OccupiedRect().Select(c => c.GetRoom(map)).Where(r => r != null).Distinct())
+                room.Temperature = 21f;
+            check(Mathf.Abs(cell.GetTemperature(map) - 21f) < 0.001f,
+                "hydroponics fixture native room temperature is 21C actual=" + cell.GetTemperature(map));
             basin.SetPlantDefToGrow(Selection);
             farmer.Position = cell + IntVec3.West;
             farmer.Notify_Teleported();
@@ -99,7 +104,19 @@ namespace RimMushroomsTests
             farmer.needs.rest.CurLevelPercentage = 1f;
             if (farmer.needs.mood != null) farmer.needs.mood.CurLevelPercentage = 1f;
             if (Time.realtimeSinceStartup > deadline)
-                throw new Exception("Hydroponics timeout phase=" + phase + " cycle=" + cycle + " job=" + farmer.CurJob + " basinPower=" + basinPower.PowerOn);
+                throw new Exception("Hydroponics timeout phase=" + phase + " cycle=" + cycle + " job=" + farmer.CurJob + " basinPower=" + basinPower.PowerOn
+                    + " farmer=" + farmer.ThingID + " dead=" + farmer.Dead + " downed=" + farmer.Downed
+                    + " position=" + farmer.Position + " temperature=" + farmer.Position.GetTemperature(map)
+                    + " health=[" + string.Join(",", farmer.health.hediffSet.hediffs.Select(h => h.def.defName + ":" + h.Severity + ":" + h.Part?.def.defName)) + "]"
+                    + " capacities=[consciousness=" + farmer.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness)
+                    + ",moving=" + farmer.health.capacities.GetLevel(PawnCapacityDefOf.Moving)
+                    + ",manipulation=" + farmer.health.capacities.GetLevel(PawnCapacityDefOf.Manipulation) + "]"
+                    + " basin=[destroyed=" + basin.Destroyed + ",hp=" + basin.HitPoints + ",temp=" + cell.GetTemperature(map) + "]"
+                    + " battery=[destroyed=" + battery.Destroyed + ",hp=" + battery.HitPoints
+                    + ",energy=" + battery.GetComp<CompPowerBattery>().StoredEnergy + ",net=" + (basinPower.PowerNet != null) + "]"
+                    + " conditions=[" + string.Join(",", map.gameConditionManager.ActiveConditions.Select(c => c.def.defName)) + "]"
+                    + " nearbyFires=[" + string.Join(",", map.listerThings.ThingsOfDef(ThingDefOf.Fire)
+                        .Where(t => t.Position.DistanceTo(farmer.Position) < 12f).Select(t => t.Position.ToString())) + "]");
 
             if (phase == 0)
             {
@@ -123,7 +140,10 @@ namespace RimMushroomsTests
                 check(Sower.PotentialWorkCellsGlobal(farmer).Contains(cell), "native automatic sow scan includes selected powered basin " + selected.defName + " cycle=" + cycle);
                 // Exhausting the native scan resets its shared wantedPlantDef cache.
                 Sower.PotentialWorkCellsGlobal(farmer).ToList();
-                var job = Sower.JobOnCell(farmer, cell);
+                ThingDef expectedAssorted = assorted
+                    ? cycle - crops.Length - 1 < varieties.Length ? varieties[cycle - crops.Length - 1] : ThingDef.Named("RMush_PlantPurpleBlewit")
+                    : null;
+                var job = assorted ? AssortedTests.NativeSowJobForSpecies(farmer, cell, expectedAssorted) : Sower.JobOnCell(farmer, cell);
                 if (job != null && (job.def == JobDefOf.HaulToCell || job.def == JobDefOf.CutPlant))
                 {
                     job.playerForced = true;
@@ -139,6 +159,7 @@ namespace RimMushroomsTests
                     + " reserve=" + farmer.CanReserve(cell) + " season=" + PlantUtility.GrowthSeasonNow(cell, map, selected)
                     + " blocker=" + PlantUtility.AdjacentSowBlocker(selected, cell, map)
                     + " things=" + string.Join(",", cell.GetThingList(map).Select(t => t.def.defName)));
+                if (assorted) check(job.plantDefToSow == expectedAssorted, "native assorted hydroponics selection exercises " + expectedAssorted.defName);
                 check(job.plantDefToSow.CanNowPlantAt(cell, map), "selected actual crop accepts basin fertility and planting cell " + job.plantDefToSow.defName);
                 job.playerForced = true;
                 farmer.jobs.TryTakeOrderedJob(job, JobTag.Misc);
@@ -161,9 +182,10 @@ namespace RimMushroomsTests
                 check(Sower.JobOnCell(farmer, cell) == null, "hydroponic crop is kept without cutting or replanting " + plant.def.defName);
                 ValidateGrowth(plant, rice);
 
-                // Nine species, vanilla rice and three assorted sow/harvest
-                // cycles finish first. A fourth assorted sow remains for loading.
-                if (cycle == crops.Length + 4)
+                // Eleven individual species, vanilla rice, then all eleven
+                // assorted members finish real sow/harvest jobs. One additional
+                // newly added member remains in the basin for save/load.
+                if (cycle == crops.Length + varieties.Length + 1)
                 {
                     plant.Growth = 0.37f;
                     foreach (var extra in basin.PlantsOnMe.Where(p => p != plant).ToList()) extra.Destroy();
@@ -241,7 +263,7 @@ namespace RimMushroomsTests
                     if (!(selected is Thing thing) || !thing.Destroyed)
                         Find.Selector.Select(selected, playSound: false, forceDesignatorDeselect: false);
             }
-            check(varieties.Length == 9, "hydroponics assorted pool still contains exactly nine real species");
+            check(varieties.Length == 11 && varieties.Distinct().Count() == 11, "hydroponics assorted pool contains exactly eleven distinct real species");
             check(crops.Length == 11, "hydroponics individually cultivates all eleven species");
             foreach (var def in crops.Concat(new[] { Selection }))
                 check(menu.Contains(def) && Command_SetPlantToGrow.IsPlantAvailable(def, map), "native hydroponics crop menu includes " + def.defName);

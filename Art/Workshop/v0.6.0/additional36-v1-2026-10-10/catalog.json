@@ -1,0 +1,711 @@
+{
+  "title": "More Mushrooms - additional 36 mushroom catalog",
+  "modVersion": "0.6.0",
+  "artVersion": "1",
+  "date": "2026-10-10",
+  "excludedOriginalTen": [
+    "Button",
+    "Shiitake",
+    "Oyster",
+    "KingOyster",
+    "Enoki",
+    "WoodEar",
+    "Beech",
+    "Maitake",
+    "LionsMane",
+    "Matsutake"
+  ],
+  "pageCount": 2,
+  "speciesPerPage": 18,
+  "pixelSize": [
+    1800,
+    1120
+  ],
+  "rendering": "Unchanged approved PlantA PNG masters, HTML/CSS/SVG layout and browser capture. Alpha bounding boxes are metadata for framing; original sprites are not edited.",
+  "species": [
+    {
+      "id": "Cauliflower",
+      "ko": "꽃송이버섯",
+      "en": "cauliflower mushroom",
+      "page": 1,
+      "position": 1,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cauliflower/PlantA.png",
+      "sourceSha256": "88063dea564ba0628f44f097fb77e58e960755f5d47fc582f7078aa1f919b1b2",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        106,
+        159,
+        1151,
+        1106
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Cauliflower/CauliflowerA.png",
+      "gameAssetSha256": "92aa4e63d09481cb516e6a1a569a8d90038ea859caaab9ebd2e9063c4d7bb3f5"
+    },
+    {
+      "id": "PurpleBlewit",
+      "ko": "자주방망이버섯아재비",
+      "en": "purple blewit",
+      "page": 1,
+      "position": 2,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PurpleBlewit/PlantA.png",
+      "sourceSha256": "d0e1d1b66cbcaf888db090bf2056ef23dcf7cae84ed42258dcd7ce3d681b4985",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        210,
+        239,
+        1043,
+        1001
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/PurpleBlewit/PurpleBlewitA.png",
+      "gameAssetSha256": "a71df0d6d7c84ad26be4a204f24119a49b62a7759150a9b822b2ac5dc5cc54af"
+    },
+    {
+      "id": "BlackTruffle",
+      "ko": "트러플",
+      "en": "black truffle",
+      "page": 1,
+      "position": 3,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/PlantA.png",
+      "sourceSha256": "0f4a40b5fc29a12123b62ee2e170f2dca5bc0b579ee2ed6a9675e86c27e710df",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        221,
+        219,
+        1057,
+        1045
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/BlackTruffle/BlackTruffleA.png",
+      "gameAssetSha256": "791d7b9878a990e04e93e6f27dd30bc473535df6050c3754187217dc1b48feb5"
+    },
+    {
+      "id": "Porcini",
+      "ko": "포르치니",
+      "en": "porcini",
+      "page": 1,
+      "position": 4,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/PlantA.png",
+      "sourceSha256": "4693179b7f274845537eb1ac9c7f729b5dbf297df4ddcba50e43b98c00935441",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        132,
+        151,
+        1128,
+        1109
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Porcini/PorciniA.png",
+      "gameAssetSha256": "732358f2f53645a3cf19fdb4ac9c6e41f905661fc2102d3f608a72f1654b5480"
+    },
+    {
+      "id": "Morel",
+      "ko": "곰보버섯",
+      "en": "morel",
+      "page": 1,
+      "position": 5,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Morel/PlantA.png",
+      "sourceSha256": "08241d71dabc8c4983f570d16b175b9bff1bf649af87ac3a3f003564eb02ecb8",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        289,
+        124,
+        970,
+        1151
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Morel/MorelA.png",
+      "gameAssetSha256": "ac265a06bf2baa15b382eef1947a42fcae2a0eca4195e24a45c8e8421da81651"
+    },
+    {
+      "id": "BlackTrumpet",
+      "ko": "블랙트럼펫",
+      "en": "black trumpet",
+      "page": 1,
+      "position": 6,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTrumpet/PlantA.png",
+      "sourceSha256": "aa3921697ee11c3e74b1b2ae017b2fc3fbb05f2ffd834910515a50a4b9655b0a",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        269,
+        198,
+        1049,
+        1065
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/BlackTrumpet/BlackTrumpetA.png",
+      "gameAssetSha256": "e79215db0fa81c8c23f78605dd2b7647c98c7b3177b3a4c9f7c12fcf00cecd54"
+    },
+    {
+      "id": "GiantPuffball",
+      "ko": "댕구알버섯",
+      "en": "giant puffball",
+      "page": 1,
+      "position": 7,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/GiantPuffball/PlantA.png",
+      "sourceSha256": "59a6d9349a5d3553f1e3c9024c54a26593ea2ff34a98827430b82a718adc511f",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        97,
+        159,
+        1177,
+        1128
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/GiantPuffball/GiantPuffballA.png",
+      "gameAssetSha256": "afa9a0f077a96686d1ec2b0741050fedd0a0ee2b2740165edad2be3973c4f2bc"
+    },
+    {
+      "id": "IndigoMilkcap",
+      "ko": "파란젖버섯",
+      "en": "indigo milkcap",
+      "page": 1,
+      "position": 8,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/IndigoMilkcap/PlantA.png",
+      "sourceSha256": "44f3a5450dcb057b1743135bc1ef7aff5c60c6f8d7b607dc3c40cf0fa0108593",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        149,
+        247,
+        1115,
+        1045
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/IndigoMilkcap/IndigoMilkcapA.png",
+      "gameAssetSha256": "19af5853dc7ec2b21ab759b09ce794d39c80e1d89f798413292bd581d411fe87"
+    },
+    {
+      "id": "VeiledStinkhorn",
+      "ko": "망태버섯",
+      "en": "veiled stinkhorn",
+      "page": 1,
+      "position": 9,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/VeiledStinkhorn/PlantA.png",
+      "sourceSha256": "322caa1b2117f791125d25577c636c8fd4c58e63273c6ab2a50330dad2994c89",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        276,
+        115,
+        1003,
+        1131
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/VeiledStinkhorn/VeiledStinkhornA.png",
+      "gameAssetSha256": "19429fc2b3e626e74486897377762b1b50203c9f2a9908211c0815284918b069"
+    },
+    {
+      "id": "ShaggyInkcap",
+      "ko": "먹물버섯",
+      "en": "shaggy inkcap",
+      "page": 1,
+      "position": 10,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/PlantA.png",
+      "sourceSha256": "43a8d57b4d12fcc6ecaa6f9d7b4adbf2cf91ba7bc1fdf3f326b65a6c46c006fd",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        355,
+        150,
+        905,
+        1108
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/ShaggyInkcap/ShaggyInkcapA.png",
+      "gameAssetSha256": "34308cb70c6ff5caee8c428fdb7391a72e677d85603faae57cdd48dd5b5f4ad9"
+    },
+    {
+      "id": "Lobster",
+      "ko": "랍스터버섯",
+      "en": "lobster mushroom",
+      "page": 1,
+      "position": 11,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/PlantA.png",
+      "sourceSha256": "8ffb5a82ec009d0c2aceb536b4d0117c6669a5a4e3aeb456fc66c5631733bae4",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        157,
+        183,
+        1167,
+        1079
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Lobster/LobsterA.png",
+      "gameAssetSha256": "6e7344daada5e4467260a7daac378f20b624f6a5d761c3050779ebff38266b23"
+    },
+    {
+      "id": "Reishi",
+      "ko": "영지버섯",
+      "en": "reishi",
+      "page": 1,
+      "position": 12,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Reishi/PlantA.png",
+      "sourceSha256": "62da56b7c1c796dc93ba4e983c3d02bf62cbdce6e10a35fbb59b84330838851f",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        158,
+        250,
+        1153,
+        1006
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Reishi/ReishiA.png",
+      "gameAssetSha256": "6067b8326581e4a9327b38015096d4f9a518331c7f1cc6ab647069632a161b20"
+    },
+    {
+      "id": "TurkeyTail",
+      "ko": "구름버섯",
+      "en": "turkey tail",
+      "page": 1,
+      "position": 13,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/PlantA.png",
+      "sourceSha256": "7c1191101f16db14341fbb493382c127d2f0a22c1032394b02784dca6c1bafd0",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        193,
+        293,
+        1093,
+        948
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/TurkeyTail/TurkeyTailA.png",
+      "gameAssetSha256": "7ecd579ef58a425dd7ca6da07ad224edb66ec9a4048da7ffb687533e3304d001"
+    },
+    {
+      "id": "Sanghuang",
+      "ko": "상황버섯",
+      "en": "sanghuang",
+      "page": 1,
+      "position": 14,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantA.png",
+      "sourceSha256": "56c032536e06654762267fb3a3de4f73f482fb41518b0cc25a12e063ceaff9a5",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        60,
+        334,
+        1201,
+        952
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Sanghuang/SanghuangA.png",
+      "gameAssetSha256": "16b2d409eb0a0b95bfe96c39593d8c5727811a83a2a9ced63f6540895d8a92e0"
+    },
+    {
+      "id": "Cordyceps",
+      "ko": "동충하초",
+      "en": "cordyceps",
+      "page": 1,
+      "position": 15,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+      "sourceSha256": "fbd5a2ea7dc840ec927c067e5a537402ae2c67ffb1f0fcb62834c20963b12ea7",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        336,
+        129,
+        919,
+        1126
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Cordyceps/CordycepsA.png",
+      "gameAssetSha256": "31dde58025b0c5a18f4d60f87684c95aab0d934393e765589b09fbce7ab0600b"
+    },
+    {
+      "id": "Chaga",
+      "ko": "차가버섯",
+      "en": "chaga",
+      "page": 1,
+      "position": 16,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+      "sourceSha256": "c6e710997e3a665ee6b35488234b8611b36f10adbf6d6ef9c896857f9aacd2e3",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        139,
+        186,
+        1116,
+        1062
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Chaga/ChagaA.png",
+      "gameAssetSha256": "4d8ab15f6a3f521377fbf0624eed9f9fb091d7eb1a7f9f6a3baa0b7a523ed645"
+    },
+    {
+      "id": "HoneyFungus",
+      "ko": "뽕나무버섯",
+      "en": "honey fungus",
+      "page": 1,
+      "position": 17,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/HoneyFungus/PlantA.png",
+      "sourceSha256": "dbeccb815613f49cef7b6a1891517695880ce238083915c50cee57cb152f850e",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        158,
+        212,
+        1095,
+        1040
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/HoneyFungus/HoneyFungusA.png",
+      "gameAssetSha256": "6fc566675d06d8110b5ccee0fa90f0fe8f8ee96099669d359f861ae14edd504d"
+    },
+    {
+      "id": "YellowBrain",
+      "ko": "노란뇌버섯",
+      "en": "yellow brain fungus",
+      "page": 1,
+      "position": 18,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/YellowBrain/PlantA.png",
+      "sourceSha256": "21cd3dbc637296f87899a05a24ec3b8585cb2d4948162870ad0902062c82bb0b",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        105,
+        196,
+        1177,
+        1083
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/YellowBrain/YellowBrainA.png",
+      "gameAssetSha256": "4ac95a22e27976f6f8f0492aacce9a867519e42eefa52cdd064abbdbcaa48f2f"
+    },
+    {
+      "id": "LibertyCap",
+      "ko": "자유모자버섯",
+      "en": "liberty cap",
+      "page": 2,
+      "position": 1,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/LibertyCap/PlantA.png",
+      "sourceSha256": "09b92118eddfff0714169f69fdd908a20c4d0aacf3a6117935cfa6185d2d0fa7",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        426,
+        176,
+        823,
+        1106
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/LibertyCap/LibertyCapA.png",
+      "gameAssetSha256": "f157ed534618f41fd8be7dd4d172fbbf97ee80bcae9f7728b5583eaaf3bab454"
+    },
+    {
+      "id": "Cubensis",
+      "ko": "주사위환각버섯",
+      "en": "cubensis",
+      "page": 2,
+      "position": 2,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cubensis/PlantA.png",
+      "sourceSha256": "a7fad08e78cff256d52671fd0dada2c244aa80f5b6ddb6ebc198f149225f485c",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        241,
+        248,
+        1021,
+        1062
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Cubensis/CubensisA.png",
+      "gameAssetSha256": "c9014d17fe484516f06164c8b2101624c55c521aba4b029bd4feb0744a0233dd"
+    },
+    {
+      "id": "FlyAgaric",
+      "ko": "광대버섯",
+      "en": "fly agaric",
+      "page": 2,
+      "position": 3,
+      "source": "Art/PoisonMushrooms/Handoff-2026-10-05/art/masters/FlyAgaric/PlantA.png",
+      "sourceSha256": "bd3c8c6d98ef755b809fb4ea2734581be68d9e109f8d43e669092172a49ee660",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        219,
+        243,
+        1039,
+        1012
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/FlyAgaric/FlyAgaricA.png",
+      "gameAssetSha256": "5c760e1aa39b35d2900b4b931b54a9ac3882893e9ac4a2d8af91cdf8fa174b6c"
+    },
+    {
+      "id": "PantherCap",
+      "ko": "마귀광대버섯",
+      "en": "panther cap",
+      "page": 2,
+      "position": 4,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/PlantA.png",
+      "sourceSha256": "2500b75cfeba828859285bb0e621cf1d17598f7c0201a657c686eff6006a15e3",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        153,
+        206,
+        1120,
+        1088
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/PantherCap/PantherCapA.png",
+      "gameAssetSha256": "a71c1f587dafe2b8b9c3d8dfc4eb80c19464eb7e02e6deadfe8b4993c3ba444b"
+    },
+    {
+      "id": "DeathCap",
+      "ko": "알광대버섯",
+      "en": "death cap",
+      "page": 2,
+      "position": 5,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/DeathCap/PlantA.png",
+      "sourceSha256": "8fc216f17f8daa01fd205bb796738e44c274e5ae3dee64e8d2e6b3425960be6f",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        234,
+        154,
+        1021,
+        1103
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/DeathCap/DeathCapA.png",
+      "gameAssetSha256": "744d13745fc3177da4aece8d7871ff2a74a6f7f6ed1c2b96fd50d7e660878fe7"
+    },
+    {
+      "id": "DestroyingAngel",
+      "ko": "독우산광대버섯",
+      "en": "destroying angel",
+      "page": 2,
+      "position": 6,
+      "source": "Art/PoisonMushrooms/Handoff-2026-10-05/art/masters/DestroyingAngel/PlantA.png",
+      "sourceSha256": "1a459c3ef3390b7c019d789942c51fcd9be6b7f5f09ce71b9bef6c071c626836",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        304,
+        151,
+        949,
+        1104
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/DestroyingAngel/DestroyingAngelA.png",
+      "gameAssetSha256": "b0b6e43a43eeac7ea2d4baae96b951af78b960067460f0762c254792ee2571b6"
+    },
+    {
+      "id": "PoisonFireCoral",
+      "ko": "붉은사슴뿔버섯",
+      "en": "poison fire coral",
+      "page": 2,
+      "position": 7,
+      "source": "Art/PoisonMushrooms/Handoff-2026-10-05/art/masters/PoisonFireCoral/PlantA.png",
+      "sourceSha256": "be29db43c9b90435a6809148a8305407e339f884200c2a633a76e431743eecab",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        319,
+        119,
+        947,
+        1109
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/PoisonFireCoral/PoisonFireCoralA.png",
+      "gameAssetSha256": "2366bb15d9fac04df594f9c93fecb52052019c125b2dfe87fcf66450402a462f"
+    },
+    {
+      "id": "YellowDapperling",
+      "ko": "노란각시버섯",
+      "en": "yellow dapperling",
+      "page": 2,
+      "position": 8,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/YellowDapperling/PlantA.png",
+      "sourceSha256": "a1d74ea60152d1e9b645962a9e0b22f0172984fd17388982cbd761de180f81b9",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        209,
+        169,
+        1044,
+        1087
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/YellowDapperling/YellowDapperlingA.png",
+      "gameAssetSha256": "02c8ec277ad3aa904dd8cdf01e3e628e2704c46537d789e23764dc7c95a44c5a"
+    },
+    {
+      "id": "JackOLantern",
+      "ko": "잭오랜턴버섯",
+      "en": "jack-o-lantern mushroom",
+      "page": 2,
+      "position": 9,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/JackOLantern/PlantA.png",
+      "sourceSha256": "816c8765f6af3c77905de7bfc20f67724a04080fb445c64ea390ab8f410bc84f",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        188,
+        226,
+        1075,
+        1031
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/JackOLantern/JackOLanternA.png",
+      "gameAssetSha256": "e1e75ed2c4f090b5f539c1fe63770928763cef3d61c795e24ef15280ca032e29"
+    },
+    {
+      "id": "DeadlyWebcap",
+      "ko": "녹슨끈적버섯",
+      "en": "deadly webcap",
+      "page": 2,
+      "position": 10,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/DeadlyWebcap/PlantA.png",
+      "sourceSha256": "d90aa27d4628642febed9489b7d77b4a5236cb4f0243bf16235bfd702e0e385d",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        124,
+        112,
+        1132,
+        1143
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/DeadlyWebcap/DeadlyWebcapA.png",
+      "gameAssetSha256": "3cdbdcd031815448f8253a6f49a8433287e849e64b2e375211465ce286807e09"
+    },
+    {
+      "id": "SulfurTuft",
+      "ko": "노란다발버섯",
+      "en": "sulfur tuft",
+      "page": 2,
+      "position": 11,
+      "source": "Art/PoisonMushrooms/Handoff-2026-10-05/art/masters/SulfurTuft/PlantA.png",
+      "sourceSha256": "c3d2439f3a4a228182040133d5f3dce3a9a02c87562d5b0be579201ed0af0271",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        368,
+        207,
+        1018,
+        978
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/SulfurTuft/SulfurTuftA.png",
+      "gameAssetSha256": "8315d2a355e4fc7ec20d2b5b21a021cb5ed7d6cdcb846a8e0ec509847ba9f896"
+    },
+    {
+      "id": "Tsukiyotake",
+      "ko": "화경버섯",
+      "en": "tsukiyotake",
+      "page": 2,
+      "position": 12,
+      "source": "Art/PoisonMushrooms/Handoff-2026-10-05/art/masters/Tsukiyotake/PlantA.png",
+      "sourceSha256": "72e558e3850fa5002aa47bb377c0e0d70b3e1d91a6a1e2faa437c370e91dd2bb",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        192,
+        282,
+        1076,
+        974
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Tsukiyotake/TsukiyotakeA.png",
+      "gameAssetSha256": "cdc6c14244583a085c161eb268df0a726fe515a54cea04c173cdc3ddd7588e58"
+    },
+    {
+      "id": "GhostFungus",
+      "ko": "발광버섯",
+      "en": "ghost fungus",
+      "page": 2,
+      "position": 13,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/GhostFungus/PlantA.png",
+      "sourceSha256": "4233d2aaf56fae75a6ea145fbf5333355589ffdc809951b5680e7f29517a4c22",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        79,
+        198,
+        1175,
+        1054
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/GhostFungus/GhostFungusA.png",
+      "gameAssetSha256": "5569fb7f2b37364771f5da54f1173af949d4b5fb35b40dd144f724ab0561379d"
+    },
+    {
+      "id": "ZombieAntFungus",
+      "ko": "개미동충하초",
+      "en": "zombie-ant fungus",
+      "page": 2,
+      "position": 14,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ZombieAntFungus/PlantA.png",
+      "sourceSha256": "26ecc6537219347e0f030a2ab8eef9aeb32c7ccb688ce559b8a8f71b50c1014d",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        437,
+        62,
+        824,
+        1120
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/ZombieAntFungus/ZombieAntFungusA.png",
+      "gameAssetSha256": "0479ebbcbc70e4d229902a3630e24685a1df71824bbabe838dff3d7fb3abe3f4"
+    },
+    {
+      "id": "DryRot",
+      "ko": "집버섯",
+      "en": "dry rot fungus",
+      "page": 2,
+      "position": 15,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/DryRot/PlantA.png",
+      "sourceSha256": "c8557831bbea446448b6bccf53af9b27d38d71a56e0143ab93483cf14f9f360d",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        142,
+        308,
+        1135,
+        931
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/DryRot/DryRotA.png",
+      "gameAssetSha256": "6f5c6619949fe56ed71a44d4e5612a9cf453020d561cbf7b8bda4fc4d2ee28e4"
+    },
+    {
+      "id": "DevilsFingers",
+      "ko": "악마손가락버섯",
+      "en": "devil's fingers",
+      "page": 2,
+      "position": 16,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/DevilsFingers/PlantA.png",
+      "sourceSha256": "406438f4d28417696fd9e1a750622fd20d8361319fd00ce05a63a051075ed206",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        77,
+        166,
+        1188,
+        978
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/DevilsFingers/DevilsFingersA.png",
+      "gameAssetSha256": "54bf2fa7ff2a29289fcab2d6b3f06ac57454bed6d33e7ac605c0d3caa549def6"
+    },
+    {
+      "id": "BirdsNest",
+      "ko": "새둥지버섯",
+      "en": "bird's nest fungus",
+      "page": 2,
+      "position": 17,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BirdsNest/PlantA.png",
+      "sourceSha256": "c97607956736e3cd75bc87560f5fd15827ff76c6560fea9b83b3fcfbd0d4f6f6",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        168,
+        220,
+        1102,
+        1048
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/BirdsNest/BirdsNestA.png",
+      "gameAssetSha256": "28f887a6e337c8d262ec0b124bc1e3214f80ed1fee1713ec41b49ccbb2be78c1"
+    },
+    {
+      "id": "Chlorophos",
+      "ko": "받침애주름버섯",
+      "en": "green-glowing mycena",
+      "page": 2,
+      "position": 18,
+      "source": "Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/PlantA.png",
+      "sourceSha256": "32d72b131a07923226fd0cd2e2be05cc49a0247e33f69c2040cc45b1baff5953",
+      "width": 1254,
+      "height": 1254,
+      "alphaBounds16": [
+        186,
+        174,
+        1096,
+        1086
+      ],
+      "gameAsset": "Textures/Things/Plant/RimMushrooms/Chlorophos/ChlorophosA.png",
+      "gameAssetSha256": "cd0b9cdf1d0c48afa1843b7a1ffd5bd2fcb08b1ed3f386a438c22f778459d4dc"
+    }
+  ]
+}

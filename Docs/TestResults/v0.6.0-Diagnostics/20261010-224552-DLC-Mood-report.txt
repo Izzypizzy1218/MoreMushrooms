@@ -1,0 +1,2530 @@
+Rim Mushrooms runtime test
+1.6.4871 rev591
+PASS active language Korean (한국어)
+PASS translated button label
+PASS legacy eleven plus two new cultivable plants and ten legacy ingredients loaded
+PASS exactly eleven cultivable varieties
+PASS matsutake wild only
+PASS resolved def config RMush_PlantBeech
+PASS resolved def config RMush_PlantButton
+PASS resolved def config RMush_PlantCauliflower
+PASS resolved def config RMush_PlantEnoki
+PASS resolved def config RMush_PlantEnokiWild
+PASS resolved def config RMush_PlantKingOyster
+PASS resolved def config RMush_PlantLionsMane
+PASS resolved def config RMush_PlantMaitake
+PASS resolved def config RMush_PlantMatsutake
+PASS resolved def config RMush_PlantOyster
+PASS resolved def config RMush_PlantPurpleBlewit
+PASS resolved def config RMush_PlantShiitake
+PASS resolved def config RMush_PlantWoodEar
+PASS resolved def config RMush_RawBeech
+PASS resolved def config RMush_RawButton
+PASS resolved def config RMush_RawEnoki
+PASS resolved def config RMush_RawKingOyster
+PASS resolved def config RMush_RawLionsMane
+PASS resolved def config RMush_RawMaitake
+PASS resolved def config RMush_RawMatsutake
+PASS resolved def config RMush_RawOyster
+PASS resolved def config RMush_RawShiitake
+PASS resolved def config RMush_RawWoodEar
+PASS shade-aware plant without light damage RMush_PlantBeech
+PASS native growth rendering RMush_PlantBeech
+PASS wild biome registration RMush_PlantBeech
+PASS plant graphic RMush_PlantBeech 0
+PASS plant graphic RMush_PlantBeech 1
+PASS plant graphic RMush_PlantBeech 2
+PASS mature yield RMush_PlantBeech
+PASS shade-aware plant without light damage RMush_PlantButton
+PASS native growth rendering RMush_PlantButton
+PASS wild biome registration RMush_PlantButton
+PASS plant graphic RMush_PlantButton 0
+PASS plant graphic RMush_PlantButton 1
+PASS plant graphic RMush_PlantButton 2
+PASS mature yield RMush_PlantButton
+PASS shade-aware plant without light damage RMush_PlantCauliflower
+PASS native growth rendering RMush_PlantCauliflower
+PASS wild biome registration RMush_PlantCauliflower
+PASS plant graphic RMush_PlantCauliflower 0
+PASS plant graphic RMush_PlantCauliflower 1
+PASS plant graphic RMush_PlantCauliflower 2
+PASS mature yield RMush_PlantCauliflower
+PASS shade-aware plant without light damage RMush_PlantEnoki
+PASS native growth rendering RMush_PlantEnoki
+PASS white enoki excluded from wild spawn
+PASS plant graphic RMush_PlantEnoki 0
+PASS plant graphic RMush_PlantEnoki 1
+PASS plant graphic RMush_PlantEnoki 2
+PASS mature yield RMush_PlantEnoki
+PASS shade-aware plant without light damage RMush_PlantEnokiWild
+PASS native growth rendering RMush_PlantEnokiWild
+PASS wild biome registration RMush_PlantEnokiWild
+PASS plant graphic RMush_PlantEnokiWild 0
+PASS plant graphic RMush_PlantEnokiWild 1
+PASS plant graphic RMush_PlantEnokiWild 2
+PASS mature yield RMush_PlantEnokiWild
+PASS shade-aware plant without light damage RMush_PlantKingOyster
+PASS native growth rendering RMush_PlantKingOyster
+PASS wild biome registration RMush_PlantKingOyster
+PASS plant graphic RMush_PlantKingOyster 0
+PASS plant graphic RMush_PlantKingOyster 1
+PASS plant graphic RMush_PlantKingOyster 2
+PASS mature yield RMush_PlantKingOyster
+PASS shade-aware plant without light damage RMush_PlantLionsMane
+PASS native growth rendering RMush_PlantLionsMane
+PASS wild biome registration RMush_PlantLionsMane
+PASS plant graphic RMush_PlantLionsMane 0
+PASS plant graphic RMush_PlantLionsMane 1
+PASS plant graphic RMush_PlantLionsMane 2
+PASS mature yield RMush_PlantLionsMane
+PASS shade-aware plant without light damage RMush_PlantMaitake
+PASS native growth rendering RMush_PlantMaitake
+PASS wild biome registration RMush_PlantMaitake
+PASS plant graphic RMush_PlantMaitake 0
+PASS plant graphic RMush_PlantMaitake 1
+PASS plant graphic RMush_PlantMaitake 2
+PASS mature yield RMush_PlantMaitake
+PASS shade-aware plant without light damage RMush_PlantMatsutake
+PASS native growth rendering RMush_PlantMatsutake
+PASS wild biome registration RMush_PlantMatsutake
+PASS plant graphic RMush_PlantMatsutake 0
+PASS plant graphic RMush_PlantMatsutake 1
+PASS plant graphic RMush_PlantMatsutake 2
+PASS mature yield RMush_PlantMatsutake
+PASS shade-aware plant without light damage RMush_PlantOyster
+PASS native growth rendering RMush_PlantOyster
+PASS wild biome registration RMush_PlantOyster
+PASS plant graphic RMush_PlantOyster 0
+PASS plant graphic RMush_PlantOyster 1
+PASS plant graphic RMush_PlantOyster 2
+PASS mature yield RMush_PlantOyster
+PASS shade-aware plant without light damage RMush_PlantPurpleBlewit
+PASS native growth rendering RMush_PlantPurpleBlewit
+PASS wild biome registration RMush_PlantPurpleBlewit
+PASS plant graphic RMush_PlantPurpleBlewit 0
+PASS plant graphic RMush_PlantPurpleBlewit 1
+PASS plant graphic RMush_PlantPurpleBlewit 2
+PASS mature yield RMush_PlantPurpleBlewit
+PASS shade-aware plant without light damage RMush_PlantShiitake
+PASS native growth rendering RMush_PlantShiitake
+PASS wild biome registration RMush_PlantShiitake
+PASS plant graphic RMush_PlantShiitake 0
+PASS plant graphic RMush_PlantShiitake 1
+PASS plant graphic RMush_PlantShiitake 2
+PASS mature yield RMush_PlantShiitake
+PASS shade-aware plant without light damage RMush_PlantWoodEar
+PASS native growth rendering RMush_PlantWoodEar
+PASS wild biome registration RMush_PlantWoodEar
+PASS plant graphic RMush_PlantWoodEar 0
+PASS plant graphic RMush_PlantWoodEar 1
+PASS plant graphic RMush_PlantWoodEar 2
+PASS mature yield RMush_PlantWoodEar
+PASS cooking/fungus category RMush_RawBeech
+PASS simple meal ingredient accepted RMush_RawBeech
+PASS rottable ingredient RMush_RawBeech
+PASS stack boundary RMush_RawBeech:1
+PASS stack boundary RMush_RawBeech:25
+PASS stack boundary RMush_RawBeech:26
+PASS stack boundary RMush_RawBeech:50
+PASS stack boundary RMush_RawBeech:51
+PASS stack boundary RMush_RawBeech:75
+PASS split 75 into 50+25 RMush_RawBeech
+PASS merge 50+25 RMush_RawBeech
+PASS carry split RMush_RawBeech
+PASS carried material RMush_RawBeech
+PASS drop and merge RMush_RawBeech
+PASS dropped full material RMush_RawBeech
+PASS cooking/fungus category RMush_RawButton
+PASS simple meal ingredient accepted RMush_RawButton
+PASS rottable ingredient RMush_RawButton
+PASS stack boundary RMush_RawButton:1
+PASS stack boundary RMush_RawButton:25
+PASS stack boundary RMush_RawButton:26
+PASS stack boundary RMush_RawButton:50
+PASS stack boundary RMush_RawButton:51
+PASS stack boundary RMush_RawButton:75
+PASS split 75 into 50+25 RMush_RawButton
+PASS merge 50+25 RMush_RawButton
+PASS carry split RMush_RawButton
+PASS carried material RMush_RawButton
+PASS drop and merge RMush_RawButton
+PASS dropped full material RMush_RawButton
+PASS cooking/fungus category RMush_RawEnoki
+PASS simple meal ingredient accepted RMush_RawEnoki
+PASS rottable ingredient RMush_RawEnoki
+PASS stack boundary RMush_RawEnoki:1
+PASS stack boundary RMush_RawEnoki:25
+PASS stack boundary RMush_RawEnoki:26
+PASS stack boundary RMush_RawEnoki:50
+PASS stack boundary RMush_RawEnoki:51
+PASS stack boundary RMush_RawEnoki:75
+PASS split 75 into 50+25 RMush_RawEnoki
+PASS merge 50+25 RMush_RawEnoki
+PASS carry split RMush_RawEnoki
+PASS carried material RMush_RawEnoki
+PASS drop and merge RMush_RawEnoki
+PASS dropped full material RMush_RawEnoki
+PASS cooking/fungus category RMush_RawKingOyster
+PASS simple meal ingredient accepted RMush_RawKingOyster
+PASS rottable ingredient RMush_RawKingOyster
+PASS stack boundary RMush_RawKingOyster:1
+PASS stack boundary RMush_RawKingOyster:25
+PASS stack boundary RMush_RawKingOyster:26
+PASS stack boundary RMush_RawKingOyster:50
+PASS stack boundary RMush_RawKingOyster:51
+PASS stack boundary RMush_RawKingOyster:75
+PASS split 75 into 50+25 RMush_RawKingOyster
+PASS merge 50+25 RMush_RawKingOyster
+PASS carry split RMush_RawKingOyster
+PASS carried material RMush_RawKingOyster
+PASS drop and merge RMush_RawKingOyster
+PASS dropped full material RMush_RawKingOyster
+PASS cooking/fungus category RMush_RawLionsMane
+PASS simple meal ingredient accepted RMush_RawLionsMane
+PASS rottable ingredient RMush_RawLionsMane
+PASS stack boundary RMush_RawLionsMane:1
+PASS stack boundary RMush_RawLionsMane:25
+PASS stack boundary RMush_RawLionsMane:26
+PASS stack boundary RMush_RawLionsMane:50
+PASS stack boundary RMush_RawLionsMane:51
+PASS stack boundary RMush_RawLionsMane:75
+PASS split 75 into 50+25 RMush_RawLionsMane
+PASS merge 50+25 RMush_RawLionsMane
+PASS carry split RMush_RawLionsMane
+PASS carried material RMush_RawLionsMane
+PASS drop and merge RMush_RawLionsMane
+PASS dropped full material RMush_RawLionsMane
+PASS cooking/fungus category RMush_RawMaitake
+PASS simple meal ingredient accepted RMush_RawMaitake
+PASS rottable ingredient RMush_RawMaitake
+PASS stack boundary RMush_RawMaitake:1
+PASS stack boundary RMush_RawMaitake:25
+PASS stack boundary RMush_RawMaitake:26
+PASS stack boundary RMush_RawMaitake:50
+PASS stack boundary RMush_RawMaitake:51
+PASS stack boundary RMush_RawMaitake:75
+PASS split 75 into 50+25 RMush_RawMaitake
+PASS merge 50+25 RMush_RawMaitake
+PASS carry split RMush_RawMaitake
+PASS carried material RMush_RawMaitake
+PASS drop and merge RMush_RawMaitake
+PASS dropped full material RMush_RawMaitake
+PASS cooking/fungus category RMush_RawMatsutake
+PASS simple meal ingredient accepted RMush_RawMatsutake
+PASS rottable ingredient RMush_RawMatsutake
+PASS stack boundary RMush_RawMatsutake:1
+PASS stack boundary RMush_RawMatsutake:25
+PASS stack boundary RMush_RawMatsutake:26
+PASS stack boundary RMush_RawMatsutake:50
+PASS stack boundary RMush_RawMatsutake:51
+PASS stack boundary RMush_RawMatsutake:75
+PASS split 75 into 50+25 RMush_RawMatsutake
+PASS merge 50+25 RMush_RawMatsutake
+PASS carry split RMush_RawMatsutake
+PASS carried material RMush_RawMatsutake
+PASS drop and merge RMush_RawMatsutake
+PASS dropped full material RMush_RawMatsutake
+PASS cooking/fungus category RMush_RawOyster
+PASS simple meal ingredient accepted RMush_RawOyster
+PASS rottable ingredient RMush_RawOyster
+PASS stack boundary RMush_RawOyster:1
+PASS stack boundary RMush_RawOyster:25
+PASS stack boundary RMush_RawOyster:26
+PASS stack boundary RMush_RawOyster:50
+PASS stack boundary RMush_RawOyster:51
+PASS stack boundary RMush_RawOyster:75
+PASS split 75 into 50+25 RMush_RawOyster
+PASS merge 50+25 RMush_RawOyster
+PASS carry split RMush_RawOyster
+PASS carried material RMush_RawOyster
+PASS drop and merge RMush_RawOyster
+PASS dropped full material RMush_RawOyster
+PASS cooking/fungus category RMush_RawShiitake
+PASS simple meal ingredient accepted RMush_RawShiitake
+PASS rottable ingredient RMush_RawShiitake
+PASS stack boundary RMush_RawShiitake:1
+PASS stack boundary RMush_RawShiitake:25
+PASS stack boundary RMush_RawShiitake:26
+PASS stack boundary RMush_RawShiitake:50
+PASS stack boundary RMush_RawShiitake:51
+PASS stack boundary RMush_RawShiitake:75
+PASS split 75 into 50+25 RMush_RawShiitake
+PASS merge 50+25 RMush_RawShiitake
+PASS carry split RMush_RawShiitake
+PASS carried material RMush_RawShiitake
+PASS drop and merge RMush_RawShiitake
+PASS dropped full material RMush_RawShiitake
+PASS cooking/fungus category RMush_RawWoodEar
+PASS simple meal ingredient accepted RMush_RawWoodEar
+PASS rottable ingredient RMush_RawWoodEar
+PASS stack boundary RMush_RawWoodEar:1
+PASS stack boundary RMush_RawWoodEar:25
+PASS stack boundary RMush_RawWoodEar:26
+PASS stack boundary RMush_RawWoodEar:50
+PASS stack boundary RMush_RawWoodEar:51
+PASS stack boundary RMush_RawWoodEar:75
+PASS split 75 into 50+25 RMush_RawWoodEar
+PASS merge 50+25 RMush_RawWoodEar
+PASS carry split RMush_RawWoodEar
+PASS carried material RMush_RawWoodEar
+PASS drop and merge RMush_RawWoodEar
+PASS dropped full material RMush_RawWoodEar
+PASS shade-aware spawned class RMush_PlantCauliflower
+PASS fixture supports growth RMush_PlantCauliflower temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantCauliflower glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantCauliflower glow=0
+PASS actual growth tick follows light multiplier RMush_PlantCauliflower glow=0
+PASS light causes no direct damage RMush_PlantCauliflower
+PASS light curve RMush_PlantCauliflower glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantCauliflower glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantCauliflower glow=0.49
+PASS light causes no direct damage RMush_PlantCauliflower
+PASS light curve RMush_PlantCauliflower glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantCauliflower glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantCauliflower glow=0.5
+PASS light causes no direct damage RMush_PlantCauliflower
+PASS light curve RMush_PlantCauliflower glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantCauliflower glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantCauliflower glow=0.51
+PASS light causes no direct damage RMush_PlantCauliflower
+PASS light curve RMush_PlantCauliflower glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantCauliflower glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantCauliflower glow=0.75
+PASS light causes no direct damage RMush_PlantCauliflower
+PASS light curve RMush_PlantCauliflower glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantCauliflower glow=1
+PASS actual growth tick follows light multiplier RMush_PlantCauliflower glow=1
+PASS light causes no direct damage RMush_PlantCauliflower
+PASS translated 50 percent growth tooltip RMush_PlantCauliflower
+PASS roof shade restores full multiplier RMush_PlantCauliflower
+PASS roof shade restores actual growth rate RMush_PlantCauliflower
+PASS shade removes bright-light penalty from tooltip RMush_PlantCauliflower
+PASS night rest still applies RMush_PlantCauliflower
+PASS shade-aware spawned class RMush_PlantPurpleBlewit
+PASS fixture supports growth RMush_PlantPurpleBlewit temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantPurpleBlewit glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantPurpleBlewit glow=0
+PASS actual growth tick follows light multiplier RMush_PlantPurpleBlewit glow=0
+PASS light causes no direct damage RMush_PlantPurpleBlewit
+PASS light curve RMush_PlantPurpleBlewit glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantPurpleBlewit glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantPurpleBlewit glow=0.49
+PASS light causes no direct damage RMush_PlantPurpleBlewit
+PASS light curve RMush_PlantPurpleBlewit glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantPurpleBlewit glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantPurpleBlewit glow=0.5
+PASS light causes no direct damage RMush_PlantPurpleBlewit
+PASS light curve RMush_PlantPurpleBlewit glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantPurpleBlewit glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantPurpleBlewit glow=0.51
+PASS light causes no direct damage RMush_PlantPurpleBlewit
+PASS light curve RMush_PlantPurpleBlewit glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantPurpleBlewit glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantPurpleBlewit glow=0.75
+PASS light causes no direct damage RMush_PlantPurpleBlewit
+PASS light curve RMush_PlantPurpleBlewit glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantPurpleBlewit glow=1
+PASS actual growth tick follows light multiplier RMush_PlantPurpleBlewit glow=1
+PASS light causes no direct damage RMush_PlantPurpleBlewit
+PASS translated 50 percent growth tooltip RMush_PlantPurpleBlewit
+PASS roof shade restores full multiplier RMush_PlantPurpleBlewit
+PASS roof shade restores actual growth rate RMush_PlantPurpleBlewit
+PASS shade removes bright-light penalty from tooltip RMush_PlantPurpleBlewit
+PASS night rest still applies RMush_PlantPurpleBlewit
+PASS shade-aware spawned class RMush_PlantBlackTruffle
+PASS fixture supports growth RMush_PlantBlackTruffle temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantBlackTruffle glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantBlackTruffle glow=0
+PASS actual growth tick follows light multiplier RMush_PlantBlackTruffle glow=0
+PASS light causes no direct damage RMush_PlantBlackTruffle
+PASS light curve RMush_PlantBlackTruffle glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantBlackTruffle glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantBlackTruffle glow=0.49
+PASS light causes no direct damage RMush_PlantBlackTruffle
+PASS light curve RMush_PlantBlackTruffle glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantBlackTruffle glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantBlackTruffle glow=0.5
+PASS light causes no direct damage RMush_PlantBlackTruffle
+PASS light curve RMush_PlantBlackTruffle glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantBlackTruffle glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantBlackTruffle glow=0.51
+PASS light causes no direct damage RMush_PlantBlackTruffle
+PASS light curve RMush_PlantBlackTruffle glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantBlackTruffle glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantBlackTruffle glow=0.75
+PASS light causes no direct damage RMush_PlantBlackTruffle
+PASS light curve RMush_PlantBlackTruffle glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantBlackTruffle glow=1
+PASS actual growth tick follows light multiplier RMush_PlantBlackTruffle glow=1
+PASS light causes no direct damage RMush_PlantBlackTruffle
+PASS translated 50 percent growth tooltip RMush_PlantBlackTruffle
+PASS roof shade restores full multiplier RMush_PlantBlackTruffle
+PASS roof shade restores actual growth rate RMush_PlantBlackTruffle
+PASS shade removes bright-light penalty from tooltip RMush_PlantBlackTruffle
+PASS night rest still applies RMush_PlantBlackTruffle
+PASS shade-aware spawned class RMush_PlantPorcini
+PASS fixture supports growth RMush_PlantPorcini temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantPorcini glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantPorcini glow=0
+PASS actual growth tick follows light multiplier RMush_PlantPorcini glow=0
+PASS light causes no direct damage RMush_PlantPorcini
+PASS light curve RMush_PlantPorcini glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantPorcini glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantPorcini glow=0.49
+PASS light causes no direct damage RMush_PlantPorcini
+PASS light curve RMush_PlantPorcini glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantPorcini glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantPorcini glow=0.5
+PASS light causes no direct damage RMush_PlantPorcini
+PASS light curve RMush_PlantPorcini glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantPorcini glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantPorcini glow=0.51
+PASS light causes no direct damage RMush_PlantPorcini
+PASS light curve RMush_PlantPorcini glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantPorcini glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantPorcini glow=0.75
+PASS light causes no direct damage RMush_PlantPorcini
+PASS light curve RMush_PlantPorcini glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantPorcini glow=1
+PASS actual growth tick follows light multiplier RMush_PlantPorcini glow=1
+PASS light causes no direct damage RMush_PlantPorcini
+PASS translated 50 percent growth tooltip RMush_PlantPorcini
+PASS roof shade restores full multiplier RMush_PlantPorcini
+PASS roof shade restores actual growth rate RMush_PlantPorcini
+PASS shade removes bright-light penalty from tooltip RMush_PlantPorcini
+PASS night rest still applies RMush_PlantPorcini
+PASS shade-aware spawned class RMush_PlantMorel
+PASS fixture supports growth RMush_PlantMorel temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantMorel glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantMorel glow=0
+PASS actual growth tick follows light multiplier RMush_PlantMorel glow=0
+PASS light causes no direct damage RMush_PlantMorel
+PASS light curve RMush_PlantMorel glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantMorel glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantMorel glow=0.49
+PASS light causes no direct damage RMush_PlantMorel
+PASS light curve RMush_PlantMorel glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantMorel glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantMorel glow=0.5
+PASS light causes no direct damage RMush_PlantMorel
+PASS light curve RMush_PlantMorel glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantMorel glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantMorel glow=0.51
+PASS light causes no direct damage RMush_PlantMorel
+PASS light curve RMush_PlantMorel glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantMorel glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantMorel glow=0.75
+PASS light causes no direct damage RMush_PlantMorel
+PASS light curve RMush_PlantMorel glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantMorel glow=1
+PASS actual growth tick follows light multiplier RMush_PlantMorel glow=1
+PASS light causes no direct damage RMush_PlantMorel
+PASS translated 50 percent growth tooltip RMush_PlantMorel
+PASS roof shade restores full multiplier RMush_PlantMorel
+PASS roof shade restores actual growth rate RMush_PlantMorel
+PASS shade removes bright-light penalty from tooltip RMush_PlantMorel
+PASS night rest still applies RMush_PlantMorel
+PASS shade-aware spawned class RMush_PlantBlackTrumpet
+PASS fixture supports growth RMush_PlantBlackTrumpet temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantBlackTrumpet glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantBlackTrumpet glow=0
+PASS actual growth tick follows light multiplier RMush_PlantBlackTrumpet glow=0
+PASS light causes no direct damage RMush_PlantBlackTrumpet
+PASS light curve RMush_PlantBlackTrumpet glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantBlackTrumpet glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantBlackTrumpet glow=0.49
+PASS light causes no direct damage RMush_PlantBlackTrumpet
+PASS light curve RMush_PlantBlackTrumpet glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantBlackTrumpet glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantBlackTrumpet glow=0.5
+PASS light causes no direct damage RMush_PlantBlackTrumpet
+PASS light curve RMush_PlantBlackTrumpet glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantBlackTrumpet glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantBlackTrumpet glow=0.51
+PASS light causes no direct damage RMush_PlantBlackTrumpet
+PASS light curve RMush_PlantBlackTrumpet glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantBlackTrumpet glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantBlackTrumpet glow=0.75
+PASS light causes no direct damage RMush_PlantBlackTrumpet
+PASS light curve RMush_PlantBlackTrumpet glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantBlackTrumpet glow=1
+PASS actual growth tick follows light multiplier RMush_PlantBlackTrumpet glow=1
+PASS light causes no direct damage RMush_PlantBlackTrumpet
+PASS translated 50 percent growth tooltip RMush_PlantBlackTrumpet
+PASS roof shade restores full multiplier RMush_PlantBlackTrumpet
+PASS roof shade restores actual growth rate RMush_PlantBlackTrumpet
+PASS shade removes bright-light penalty from tooltip RMush_PlantBlackTrumpet
+PASS night rest still applies RMush_PlantBlackTrumpet
+PASS shade-aware spawned class RMush_PlantGiantPuffball
+PASS fixture supports growth RMush_PlantGiantPuffball temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantGiantPuffball glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantGiantPuffball glow=0
+PASS actual growth tick follows light multiplier RMush_PlantGiantPuffball glow=0
+PASS light causes no direct damage RMush_PlantGiantPuffball
+PASS light curve RMush_PlantGiantPuffball glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantGiantPuffball glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantGiantPuffball glow=0.49
+PASS light causes no direct damage RMush_PlantGiantPuffball
+PASS light curve RMush_PlantGiantPuffball glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantGiantPuffball glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantGiantPuffball glow=0.5
+PASS light causes no direct damage RMush_PlantGiantPuffball
+PASS light curve RMush_PlantGiantPuffball glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantGiantPuffball glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantGiantPuffball glow=0.51
+PASS light causes no direct damage RMush_PlantGiantPuffball
+PASS light curve RMush_PlantGiantPuffball glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantGiantPuffball glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantGiantPuffball glow=0.75
+PASS light causes no direct damage RMush_PlantGiantPuffball
+PASS light curve RMush_PlantGiantPuffball glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantGiantPuffball glow=1
+PASS actual growth tick follows light multiplier RMush_PlantGiantPuffball glow=1
+PASS light causes no direct damage RMush_PlantGiantPuffball
+PASS translated 50 percent growth tooltip RMush_PlantGiantPuffball
+PASS roof shade restores full multiplier RMush_PlantGiantPuffball
+PASS roof shade restores actual growth rate RMush_PlantGiantPuffball
+PASS shade removes bright-light penalty from tooltip RMush_PlantGiantPuffball
+PASS night rest still applies RMush_PlantGiantPuffball
+PASS shade-aware spawned class RMush_PlantIndigoMilkcap
+PASS fixture supports growth RMush_PlantIndigoMilkcap temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantIndigoMilkcap glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantIndigoMilkcap glow=0
+PASS actual growth tick follows light multiplier RMush_PlantIndigoMilkcap glow=0
+PASS light causes no direct damage RMush_PlantIndigoMilkcap
+PASS light curve RMush_PlantIndigoMilkcap glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantIndigoMilkcap glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantIndigoMilkcap glow=0.49
+PASS light causes no direct damage RMush_PlantIndigoMilkcap
+PASS light curve RMush_PlantIndigoMilkcap glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantIndigoMilkcap glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantIndigoMilkcap glow=0.5
+PASS light causes no direct damage RMush_PlantIndigoMilkcap
+PASS light curve RMush_PlantIndigoMilkcap glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantIndigoMilkcap glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantIndigoMilkcap glow=0.51
+PASS light causes no direct damage RMush_PlantIndigoMilkcap
+PASS light curve RMush_PlantIndigoMilkcap glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantIndigoMilkcap glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantIndigoMilkcap glow=0.75
+PASS light causes no direct damage RMush_PlantIndigoMilkcap
+PASS light curve RMush_PlantIndigoMilkcap glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantIndigoMilkcap glow=1
+PASS actual growth tick follows light multiplier RMush_PlantIndigoMilkcap glow=1
+PASS light causes no direct damage RMush_PlantIndigoMilkcap
+PASS translated 50 percent growth tooltip RMush_PlantIndigoMilkcap
+PASS roof shade restores full multiplier RMush_PlantIndigoMilkcap
+PASS roof shade restores actual growth rate RMush_PlantIndigoMilkcap
+PASS shade removes bright-light penalty from tooltip RMush_PlantIndigoMilkcap
+PASS night rest still applies RMush_PlantIndigoMilkcap
+PASS shade-aware spawned class RMush_PlantVeiledStinkhorn
+PASS fixture supports growth RMush_PlantVeiledStinkhorn temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantVeiledStinkhorn glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantVeiledStinkhorn glow=0
+PASS actual growth tick follows light multiplier RMush_PlantVeiledStinkhorn glow=0
+PASS light causes no direct damage RMush_PlantVeiledStinkhorn
+PASS light curve RMush_PlantVeiledStinkhorn glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantVeiledStinkhorn glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantVeiledStinkhorn glow=0.49
+PASS light causes no direct damage RMush_PlantVeiledStinkhorn
+PASS light curve RMush_PlantVeiledStinkhorn glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantVeiledStinkhorn glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantVeiledStinkhorn glow=0.5
+PASS light causes no direct damage RMush_PlantVeiledStinkhorn
+PASS light curve RMush_PlantVeiledStinkhorn glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantVeiledStinkhorn glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantVeiledStinkhorn glow=0.51
+PASS light causes no direct damage RMush_PlantVeiledStinkhorn
+PASS light curve RMush_PlantVeiledStinkhorn glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantVeiledStinkhorn glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantVeiledStinkhorn glow=0.75
+PASS light causes no direct damage RMush_PlantVeiledStinkhorn
+PASS light curve RMush_PlantVeiledStinkhorn glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantVeiledStinkhorn glow=1
+PASS actual growth tick follows light multiplier RMush_PlantVeiledStinkhorn glow=1
+PASS light causes no direct damage RMush_PlantVeiledStinkhorn
+PASS translated 50 percent growth tooltip RMush_PlantVeiledStinkhorn
+PASS roof shade restores full multiplier RMush_PlantVeiledStinkhorn
+PASS roof shade restores actual growth rate RMush_PlantVeiledStinkhorn
+PASS shade removes bright-light penalty from tooltip RMush_PlantVeiledStinkhorn
+PASS night rest still applies RMush_PlantVeiledStinkhorn
+PASS shade-aware spawned class RMush_PlantShaggyInkcap
+PASS fixture supports growth RMush_PlantShaggyInkcap temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantShaggyInkcap glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantShaggyInkcap glow=0
+PASS actual growth tick follows light multiplier RMush_PlantShaggyInkcap glow=0
+PASS light causes no direct damage RMush_PlantShaggyInkcap
+PASS light curve RMush_PlantShaggyInkcap glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantShaggyInkcap glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantShaggyInkcap glow=0.49
+PASS light causes no direct damage RMush_PlantShaggyInkcap
+PASS light curve RMush_PlantShaggyInkcap glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantShaggyInkcap glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantShaggyInkcap glow=0.5
+PASS light causes no direct damage RMush_PlantShaggyInkcap
+PASS light curve RMush_PlantShaggyInkcap glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantShaggyInkcap glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantShaggyInkcap glow=0.51
+PASS light causes no direct damage RMush_PlantShaggyInkcap
+PASS light curve RMush_PlantShaggyInkcap glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantShaggyInkcap glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantShaggyInkcap glow=0.75
+PASS light causes no direct damage RMush_PlantShaggyInkcap
+PASS light curve RMush_PlantShaggyInkcap glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantShaggyInkcap glow=1
+PASS actual growth tick follows light multiplier RMush_PlantShaggyInkcap glow=1
+PASS light causes no direct damage RMush_PlantShaggyInkcap
+PASS translated 50 percent growth tooltip RMush_PlantShaggyInkcap
+PASS roof shade restores full multiplier RMush_PlantShaggyInkcap
+PASS roof shade restores actual growth rate RMush_PlantShaggyInkcap
+PASS shade removes bright-light penalty from tooltip RMush_PlantShaggyInkcap
+PASS night rest still applies RMush_PlantShaggyInkcap
+PASS shade-aware spawned class RMush_PlantLobster
+PASS fixture supports growth RMush_PlantLobster temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantLobster glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantLobster glow=0
+PASS actual growth tick follows light multiplier RMush_PlantLobster glow=0
+PASS light causes no direct damage RMush_PlantLobster
+PASS light curve RMush_PlantLobster glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantLobster glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantLobster glow=0.49
+PASS light causes no direct damage RMush_PlantLobster
+PASS light curve RMush_PlantLobster glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantLobster glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantLobster glow=0.5
+PASS light causes no direct damage RMush_PlantLobster
+PASS light curve RMush_PlantLobster glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantLobster glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantLobster glow=0.51
+PASS light causes no direct damage RMush_PlantLobster
+PASS light curve RMush_PlantLobster glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantLobster glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantLobster glow=0.75
+PASS light causes no direct damage RMush_PlantLobster
+PASS light curve RMush_PlantLobster glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantLobster glow=1
+PASS actual growth tick follows light multiplier RMush_PlantLobster glow=1
+PASS light causes no direct damage RMush_PlantLobster
+PASS translated 50 percent growth tooltip RMush_PlantLobster
+PASS roof shade restores full multiplier RMush_PlantLobster
+PASS roof shade restores actual growth rate RMush_PlantLobster
+PASS shade removes bright-light penalty from tooltip RMush_PlantLobster
+PASS night rest still applies RMush_PlantLobster
+PASS shade-aware spawned class RMush_PlantReishi
+PASS fixture supports growth RMush_PlantReishi temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantReishi glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantReishi glow=0
+PASS actual growth tick follows light multiplier RMush_PlantReishi glow=0
+PASS light causes no direct damage RMush_PlantReishi
+PASS light curve RMush_PlantReishi glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantReishi glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantReishi glow=0.49
+PASS light causes no direct damage RMush_PlantReishi
+PASS light curve RMush_PlantReishi glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantReishi glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantReishi glow=0.5
+PASS light causes no direct damage RMush_PlantReishi
+PASS light curve RMush_PlantReishi glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantReishi glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantReishi glow=0.51
+PASS light causes no direct damage RMush_PlantReishi
+PASS light curve RMush_PlantReishi glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantReishi glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantReishi glow=0.75
+PASS light causes no direct damage RMush_PlantReishi
+PASS light curve RMush_PlantReishi glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantReishi glow=1
+PASS actual growth tick follows light multiplier RMush_PlantReishi glow=1
+PASS light causes no direct damage RMush_PlantReishi
+PASS translated 50 percent growth tooltip RMush_PlantReishi
+PASS roof shade restores full multiplier RMush_PlantReishi
+PASS roof shade restores actual growth rate RMush_PlantReishi
+PASS shade removes bright-light penalty from tooltip RMush_PlantReishi
+PASS night rest still applies RMush_PlantReishi
+PASS shade-aware spawned class RMush_PlantTurkeyTail
+PASS fixture supports growth RMush_PlantTurkeyTail temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantTurkeyTail glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantTurkeyTail glow=0
+PASS actual growth tick follows light multiplier RMush_PlantTurkeyTail glow=0
+PASS light causes no direct damage RMush_PlantTurkeyTail
+PASS light curve RMush_PlantTurkeyTail glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantTurkeyTail glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantTurkeyTail glow=0.49
+PASS light causes no direct damage RMush_PlantTurkeyTail
+PASS light curve RMush_PlantTurkeyTail glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantTurkeyTail glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantTurkeyTail glow=0.5
+PASS light causes no direct damage RMush_PlantTurkeyTail
+PASS light curve RMush_PlantTurkeyTail glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantTurkeyTail glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantTurkeyTail glow=0.51
+PASS light causes no direct damage RMush_PlantTurkeyTail
+PASS light curve RMush_PlantTurkeyTail glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantTurkeyTail glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantTurkeyTail glow=0.75
+PASS light causes no direct damage RMush_PlantTurkeyTail
+PASS light curve RMush_PlantTurkeyTail glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantTurkeyTail glow=1
+PASS actual growth tick follows light multiplier RMush_PlantTurkeyTail glow=1
+PASS light causes no direct damage RMush_PlantTurkeyTail
+PASS translated 50 percent growth tooltip RMush_PlantTurkeyTail
+PASS roof shade restores full multiplier RMush_PlantTurkeyTail
+PASS roof shade restores actual growth rate RMush_PlantTurkeyTail
+PASS shade removes bright-light penalty from tooltip RMush_PlantTurkeyTail
+PASS night rest still applies RMush_PlantTurkeyTail
+PASS shade-aware spawned class RMush_PlantSanghuang
+PASS fixture supports growth RMush_PlantSanghuang temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantSanghuang glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantSanghuang glow=0
+PASS actual growth tick follows light multiplier RMush_PlantSanghuang glow=0
+PASS light causes no direct damage RMush_PlantSanghuang
+PASS light curve RMush_PlantSanghuang glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantSanghuang glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantSanghuang glow=0.49
+PASS light causes no direct damage RMush_PlantSanghuang
+PASS light curve RMush_PlantSanghuang glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantSanghuang glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantSanghuang glow=0.5
+PASS light causes no direct damage RMush_PlantSanghuang
+PASS light curve RMush_PlantSanghuang glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantSanghuang glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantSanghuang glow=0.51
+PASS light causes no direct damage RMush_PlantSanghuang
+PASS light curve RMush_PlantSanghuang glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantSanghuang glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantSanghuang glow=0.75
+PASS light causes no direct damage RMush_PlantSanghuang
+PASS light curve RMush_PlantSanghuang glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantSanghuang glow=1
+PASS actual growth tick follows light multiplier RMush_PlantSanghuang glow=1
+PASS light causes no direct damage RMush_PlantSanghuang
+PASS translated 50 percent growth tooltip RMush_PlantSanghuang
+PASS roof shade restores full multiplier RMush_PlantSanghuang
+PASS roof shade restores actual growth rate RMush_PlantSanghuang
+PASS shade removes bright-light penalty from tooltip RMush_PlantSanghuang
+PASS night rest still applies RMush_PlantSanghuang
+PASS shade-aware spawned class RMush_PlantCordyceps
+PASS fixture supports growth RMush_PlantCordyceps temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantCordyceps glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantCordyceps glow=0
+PASS actual growth tick follows light multiplier RMush_PlantCordyceps glow=0
+PASS light causes no direct damage RMush_PlantCordyceps
+PASS light curve RMush_PlantCordyceps glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantCordyceps glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantCordyceps glow=0.49
+PASS light causes no direct damage RMush_PlantCordyceps
+PASS light curve RMush_PlantCordyceps glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantCordyceps glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantCordyceps glow=0.5
+PASS light causes no direct damage RMush_PlantCordyceps
+PASS light curve RMush_PlantCordyceps glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantCordyceps glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantCordyceps glow=0.51
+PASS light causes no direct damage RMush_PlantCordyceps
+PASS light curve RMush_PlantCordyceps glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantCordyceps glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantCordyceps glow=0.75
+PASS light causes no direct damage RMush_PlantCordyceps
+PASS light curve RMush_PlantCordyceps glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantCordyceps glow=1
+PASS actual growth tick follows light multiplier RMush_PlantCordyceps glow=1
+PASS light causes no direct damage RMush_PlantCordyceps
+PASS translated 50 percent growth tooltip RMush_PlantCordyceps
+PASS roof shade restores full multiplier RMush_PlantCordyceps
+PASS roof shade restores actual growth rate RMush_PlantCordyceps
+PASS shade removes bright-light penalty from tooltip RMush_PlantCordyceps
+PASS night rest still applies RMush_PlantCordyceps
+PASS shade-aware spawned class RMush_PlantChaga
+PASS fixture supports growth RMush_PlantChaga temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantChaga glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantChaga glow=0
+PASS actual growth tick follows light multiplier RMush_PlantChaga glow=0
+PASS light causes no direct damage RMush_PlantChaga
+PASS light curve RMush_PlantChaga glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantChaga glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantChaga glow=0.49
+PASS light causes no direct damage RMush_PlantChaga
+PASS light curve RMush_PlantChaga glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantChaga glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantChaga glow=0.5
+PASS light causes no direct damage RMush_PlantChaga
+PASS light curve RMush_PlantChaga glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantChaga glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantChaga glow=0.51
+PASS light causes no direct damage RMush_PlantChaga
+PASS light curve RMush_PlantChaga glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantChaga glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantChaga glow=0.75
+PASS light causes no direct damage RMush_PlantChaga
+PASS light curve RMush_PlantChaga glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantChaga glow=1
+PASS actual growth tick follows light multiplier RMush_PlantChaga glow=1
+PASS light causes no direct damage RMush_PlantChaga
+PASS translated 50 percent growth tooltip RMush_PlantChaga
+PASS roof shade restores full multiplier RMush_PlantChaga
+PASS roof shade restores actual growth rate RMush_PlantChaga
+PASS shade removes bright-light penalty from tooltip RMush_PlantChaga
+PASS night rest still applies RMush_PlantChaga
+PASS shade-aware spawned class RMush_PlantLibertyCap
+PASS fixture supports growth RMush_PlantLibertyCap temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantLibertyCap glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantLibertyCap glow=0
+PASS actual growth tick follows light multiplier RMush_PlantLibertyCap glow=0
+PASS light causes no direct damage RMush_PlantLibertyCap
+PASS light curve RMush_PlantLibertyCap glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantLibertyCap glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantLibertyCap glow=0.49
+PASS light causes no direct damage RMush_PlantLibertyCap
+PASS light curve RMush_PlantLibertyCap glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantLibertyCap glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantLibertyCap glow=0.5
+PASS light causes no direct damage RMush_PlantLibertyCap
+PASS light curve RMush_PlantLibertyCap glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantLibertyCap glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantLibertyCap glow=0.51
+PASS light causes no direct damage RMush_PlantLibertyCap
+PASS light curve RMush_PlantLibertyCap glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantLibertyCap glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantLibertyCap glow=0.75
+PASS light causes no direct damage RMush_PlantLibertyCap
+PASS light curve RMush_PlantLibertyCap glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantLibertyCap glow=1
+PASS actual growth tick follows light multiplier RMush_PlantLibertyCap glow=1
+PASS light causes no direct damage RMush_PlantLibertyCap
+PASS translated 50 percent growth tooltip RMush_PlantLibertyCap
+PASS roof shade restores full multiplier RMush_PlantLibertyCap
+PASS roof shade restores actual growth rate RMush_PlantLibertyCap
+PASS shade removes bright-light penalty from tooltip RMush_PlantLibertyCap
+PASS night rest still applies RMush_PlantLibertyCap
+PASS shade-aware spawned class RMush_PlantPantherCap
+PASS fixture supports growth RMush_PlantPantherCap temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantPantherCap glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantPantherCap glow=0
+PASS actual growth tick follows light multiplier RMush_PlantPantherCap glow=0
+PASS light causes no direct damage RMush_PlantPantherCap
+PASS light curve RMush_PlantPantherCap glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantPantherCap glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantPantherCap glow=0.49
+PASS light causes no direct damage RMush_PlantPantherCap
+PASS light curve RMush_PlantPantherCap glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantPantherCap glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantPantherCap glow=0.5
+PASS light causes no direct damage RMush_PlantPantherCap
+PASS light curve RMush_PlantPantherCap glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantPantherCap glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantPantherCap glow=0.51
+PASS light causes no direct damage RMush_PlantPantherCap
+PASS light curve RMush_PlantPantherCap glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantPantherCap glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantPantherCap glow=0.75
+PASS light causes no direct damage RMush_PlantPantherCap
+PASS light curve RMush_PlantPantherCap glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantPantherCap glow=1
+PASS actual growth tick follows light multiplier RMush_PlantPantherCap glow=1
+PASS light causes no direct damage RMush_PlantPantherCap
+PASS translated 50 percent growth tooltip RMush_PlantPantherCap
+PASS roof shade restores full multiplier RMush_PlantPantherCap
+PASS roof shade restores actual growth rate RMush_PlantPantherCap
+PASS shade removes bright-light penalty from tooltip RMush_PlantPantherCap
+PASS night rest still applies RMush_PlantPantherCap
+PASS shade-aware spawned class RMush_PlantCubensis
+PASS fixture supports growth RMush_PlantCubensis temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantCubensis glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantCubensis glow=0
+PASS actual growth tick follows light multiplier RMush_PlantCubensis glow=0
+PASS light causes no direct damage RMush_PlantCubensis
+PASS light curve RMush_PlantCubensis glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantCubensis glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantCubensis glow=0.49
+PASS light causes no direct damage RMush_PlantCubensis
+PASS light curve RMush_PlantCubensis glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantCubensis glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantCubensis glow=0.5
+PASS light causes no direct damage RMush_PlantCubensis
+PASS light curve RMush_PlantCubensis glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantCubensis glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantCubensis glow=0.51
+PASS light causes no direct damage RMush_PlantCubensis
+PASS light curve RMush_PlantCubensis glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantCubensis glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantCubensis glow=0.75
+PASS light causes no direct damage RMush_PlantCubensis
+PASS light curve RMush_PlantCubensis glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantCubensis glow=1
+PASS actual growth tick follows light multiplier RMush_PlantCubensis glow=1
+PASS light causes no direct damage RMush_PlantCubensis
+PASS translated 50 percent growth tooltip RMush_PlantCubensis
+PASS roof shade restores full multiplier RMush_PlantCubensis
+PASS roof shade restores actual growth rate RMush_PlantCubensis
+PASS shade removes bright-light penalty from tooltip RMush_PlantCubensis
+PASS night rest still applies RMush_PlantCubensis
+PASS shade-aware spawned class RMush_PlantDeathCap
+PASS fixture supports growth RMush_PlantDeathCap temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantDeathCap glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantDeathCap glow=0
+PASS actual growth tick follows light multiplier RMush_PlantDeathCap glow=0
+PASS light causes no direct damage RMush_PlantDeathCap
+PASS light curve RMush_PlantDeathCap glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantDeathCap glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantDeathCap glow=0.49
+PASS light causes no direct damage RMush_PlantDeathCap
+PASS light curve RMush_PlantDeathCap glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantDeathCap glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantDeathCap glow=0.5
+PASS light causes no direct damage RMush_PlantDeathCap
+PASS light curve RMush_PlantDeathCap glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantDeathCap glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantDeathCap glow=0.51
+PASS light causes no direct damage RMush_PlantDeathCap
+PASS light curve RMush_PlantDeathCap glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantDeathCap glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantDeathCap glow=0.75
+PASS light causes no direct damage RMush_PlantDeathCap
+PASS light curve RMush_PlantDeathCap glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantDeathCap glow=1
+PASS actual growth tick follows light multiplier RMush_PlantDeathCap glow=1
+PASS light causes no direct damage RMush_PlantDeathCap
+PASS translated 50 percent growth tooltip RMush_PlantDeathCap
+PASS roof shade restores full multiplier RMush_PlantDeathCap
+PASS roof shade restores actual growth rate RMush_PlantDeathCap
+PASS shade removes bright-light penalty from tooltip RMush_PlantDeathCap
+PASS night rest still applies RMush_PlantDeathCap
+PASS shade-aware spawned class RMush_PlantYellowDapperling
+PASS fixture supports growth RMush_PlantYellowDapperling temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantYellowDapperling glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantYellowDapperling glow=0
+PASS actual growth tick follows light multiplier RMush_PlantYellowDapperling glow=0
+PASS light causes no direct damage RMush_PlantYellowDapperling
+PASS light curve RMush_PlantYellowDapperling glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantYellowDapperling glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantYellowDapperling glow=0.49
+PASS light causes no direct damage RMush_PlantYellowDapperling
+PASS light curve RMush_PlantYellowDapperling glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantYellowDapperling glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantYellowDapperling glow=0.5
+PASS light causes no direct damage RMush_PlantYellowDapperling
+PASS light curve RMush_PlantYellowDapperling glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantYellowDapperling glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantYellowDapperling glow=0.51
+PASS light causes no direct damage RMush_PlantYellowDapperling
+PASS light curve RMush_PlantYellowDapperling glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantYellowDapperling glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantYellowDapperling glow=0.75
+PASS light causes no direct damage RMush_PlantYellowDapperling
+PASS light curve RMush_PlantYellowDapperling glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantYellowDapperling glow=1
+PASS actual growth tick follows light multiplier RMush_PlantYellowDapperling glow=1
+PASS light causes no direct damage RMush_PlantYellowDapperling
+PASS translated 50 percent growth tooltip RMush_PlantYellowDapperling
+PASS roof shade restores full multiplier RMush_PlantYellowDapperling
+PASS roof shade restores actual growth rate RMush_PlantYellowDapperling
+PASS shade removes bright-light penalty from tooltip RMush_PlantYellowDapperling
+PASS night rest still applies RMush_PlantYellowDapperling
+PASS shade-aware spawned class RMush_PlantJackOLantern
+PASS fixture supports growth RMush_PlantJackOLantern temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantJackOLantern glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantJackOLantern glow=0
+PASS actual growth tick follows light multiplier RMush_PlantJackOLantern glow=0
+PASS light causes no direct damage RMush_PlantJackOLantern
+PASS light curve RMush_PlantJackOLantern glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantJackOLantern glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantJackOLantern glow=0.49
+PASS light causes no direct damage RMush_PlantJackOLantern
+PASS light curve RMush_PlantJackOLantern glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantJackOLantern glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantJackOLantern glow=0.5
+PASS light causes no direct damage RMush_PlantJackOLantern
+PASS light curve RMush_PlantJackOLantern glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantJackOLantern glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantJackOLantern glow=0.51
+PASS light causes no direct damage RMush_PlantJackOLantern
+PASS light curve RMush_PlantJackOLantern glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantJackOLantern glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantJackOLantern glow=0.75
+PASS light causes no direct damage RMush_PlantJackOLantern
+PASS light curve RMush_PlantJackOLantern glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantJackOLantern glow=1
+PASS actual growth tick follows light multiplier RMush_PlantJackOLantern glow=1
+PASS light causes no direct damage RMush_PlantJackOLantern
+PASS translated 50 percent growth tooltip RMush_PlantJackOLantern
+PASS roof shade restores full multiplier RMush_PlantJackOLantern
+PASS roof shade restores actual growth rate RMush_PlantJackOLantern
+PASS shade removes bright-light penalty from tooltip RMush_PlantJackOLantern
+PASS night rest still applies RMush_PlantJackOLantern
+PASS shade-aware spawned class RMush_PlantDeadlyWebcap
+PASS fixture supports growth RMush_PlantDeadlyWebcap temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantDeadlyWebcap glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantDeadlyWebcap glow=0
+PASS actual growth tick follows light multiplier RMush_PlantDeadlyWebcap glow=0
+PASS light causes no direct damage RMush_PlantDeadlyWebcap
+PASS light curve RMush_PlantDeadlyWebcap glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantDeadlyWebcap glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantDeadlyWebcap glow=0.49
+PASS light causes no direct damage RMush_PlantDeadlyWebcap
+PASS light curve RMush_PlantDeadlyWebcap glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantDeadlyWebcap glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantDeadlyWebcap glow=0.5
+PASS light causes no direct damage RMush_PlantDeadlyWebcap
+PASS light curve RMush_PlantDeadlyWebcap glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantDeadlyWebcap glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantDeadlyWebcap glow=0.51
+PASS light causes no direct damage RMush_PlantDeadlyWebcap
+PASS light curve RMush_PlantDeadlyWebcap glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantDeadlyWebcap glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantDeadlyWebcap glow=0.75
+PASS light causes no direct damage RMush_PlantDeadlyWebcap
+PASS light curve RMush_PlantDeadlyWebcap glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantDeadlyWebcap glow=1
+PASS actual growth tick follows light multiplier RMush_PlantDeadlyWebcap glow=1
+PASS light causes no direct damage RMush_PlantDeadlyWebcap
+PASS translated 50 percent growth tooltip RMush_PlantDeadlyWebcap
+PASS roof shade restores full multiplier RMush_PlantDeadlyWebcap
+PASS roof shade restores actual growth rate RMush_PlantDeadlyWebcap
+PASS shade removes bright-light penalty from tooltip RMush_PlantDeadlyWebcap
+PASS night rest still applies RMush_PlantDeadlyWebcap
+PASS shade-aware spawned class RMush_PlantZombieAntFungus
+PASS fixture supports growth RMush_PlantZombieAntFungus temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantZombieAntFungus glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantZombieAntFungus glow=0
+PASS actual growth tick follows light multiplier RMush_PlantZombieAntFungus glow=0
+PASS light causes no direct damage RMush_PlantZombieAntFungus
+PASS light curve RMush_PlantZombieAntFungus glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantZombieAntFungus glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantZombieAntFungus glow=0.49
+PASS light causes no direct damage RMush_PlantZombieAntFungus
+PASS light curve RMush_PlantZombieAntFungus glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantZombieAntFungus glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantZombieAntFungus glow=0.5
+PASS light causes no direct damage RMush_PlantZombieAntFungus
+PASS light curve RMush_PlantZombieAntFungus glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantZombieAntFungus glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantZombieAntFungus glow=0.51
+PASS light causes no direct damage RMush_PlantZombieAntFungus
+PASS light curve RMush_PlantZombieAntFungus glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantZombieAntFungus glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantZombieAntFungus glow=0.75
+PASS light causes no direct damage RMush_PlantZombieAntFungus
+PASS light curve RMush_PlantZombieAntFungus glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantZombieAntFungus glow=1
+PASS actual growth tick follows light multiplier RMush_PlantZombieAntFungus glow=1
+PASS light causes no direct damage RMush_PlantZombieAntFungus
+PASS translated 50 percent growth tooltip RMush_PlantZombieAntFungus
+PASS roof shade restores full multiplier RMush_PlantZombieAntFungus
+PASS roof shade restores actual growth rate RMush_PlantZombieAntFungus
+PASS shade removes bright-light penalty from tooltip RMush_PlantZombieAntFungus
+PASS night rest still applies RMush_PlantZombieAntFungus
+PASS shade-aware spawned class RMush_PlantHoneyFungus
+PASS fixture supports growth RMush_PlantHoneyFungus temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantHoneyFungus glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantHoneyFungus glow=0
+PASS actual growth tick follows light multiplier RMush_PlantHoneyFungus glow=0
+PASS light causes no direct damage RMush_PlantHoneyFungus
+PASS light curve RMush_PlantHoneyFungus glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantHoneyFungus glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantHoneyFungus glow=0.49
+PASS light causes no direct damage RMush_PlantHoneyFungus
+PASS light curve RMush_PlantHoneyFungus glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantHoneyFungus glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantHoneyFungus glow=0.5
+PASS light causes no direct damage RMush_PlantHoneyFungus
+PASS light curve RMush_PlantHoneyFungus glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantHoneyFungus glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantHoneyFungus glow=0.51
+PASS light causes no direct damage RMush_PlantHoneyFungus
+PASS light curve RMush_PlantHoneyFungus glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantHoneyFungus glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantHoneyFungus glow=0.75
+PASS light causes no direct damage RMush_PlantHoneyFungus
+PASS light curve RMush_PlantHoneyFungus glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantHoneyFungus glow=1
+PASS actual growth tick follows light multiplier RMush_PlantHoneyFungus glow=1
+PASS light causes no direct damage RMush_PlantHoneyFungus
+PASS translated 50 percent growth tooltip RMush_PlantHoneyFungus
+PASS roof shade restores full multiplier RMush_PlantHoneyFungus
+PASS roof shade restores actual growth rate RMush_PlantHoneyFungus
+PASS shade removes bright-light penalty from tooltip RMush_PlantHoneyFungus
+PASS night rest still applies RMush_PlantHoneyFungus
+PASS shade-aware spawned class RMush_PlantDryRot
+PASS fixture supports growth RMush_PlantDryRot temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantDryRot glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantDryRot glow=0
+PASS actual growth tick follows light multiplier RMush_PlantDryRot glow=0
+PASS light causes no direct damage RMush_PlantDryRot
+PASS light curve RMush_PlantDryRot glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantDryRot glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantDryRot glow=0.49
+PASS light causes no direct damage RMush_PlantDryRot
+PASS light curve RMush_PlantDryRot glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantDryRot glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantDryRot glow=0.5
+PASS light causes no direct damage RMush_PlantDryRot
+PASS light curve RMush_PlantDryRot glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantDryRot glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantDryRot glow=0.51
+PASS light causes no direct damage RMush_PlantDryRot
+PASS light curve RMush_PlantDryRot glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantDryRot glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantDryRot glow=0.75
+PASS light causes no direct damage RMush_PlantDryRot
+PASS light curve RMush_PlantDryRot glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantDryRot glow=1
+PASS actual growth tick follows light multiplier RMush_PlantDryRot glow=1
+PASS light causes no direct damage RMush_PlantDryRot
+PASS translated 50 percent growth tooltip RMush_PlantDryRot
+PASS roof shade restores full multiplier RMush_PlantDryRot
+PASS roof shade restores actual growth rate RMush_PlantDryRot
+PASS shade removes bright-light penalty from tooltip RMush_PlantDryRot
+PASS night rest still applies RMush_PlantDryRot
+PASS shade-aware spawned class RMush_PlantGhostFungus
+PASS fixture supports growth RMush_PlantGhostFungus temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantGhostFungus glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantGhostFungus glow=0
+PASS actual growth tick follows light multiplier RMush_PlantGhostFungus glow=0
+PASS light causes no direct damage RMush_PlantGhostFungus
+PASS light curve RMush_PlantGhostFungus glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantGhostFungus glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantGhostFungus glow=0.49
+PASS light causes no direct damage RMush_PlantGhostFungus
+PASS light curve RMush_PlantGhostFungus glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantGhostFungus glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantGhostFungus glow=0.5
+PASS light causes no direct damage RMush_PlantGhostFungus
+PASS light curve RMush_PlantGhostFungus glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantGhostFungus glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantGhostFungus glow=0.51
+PASS light causes no direct damage RMush_PlantGhostFungus
+PASS light curve RMush_PlantGhostFungus glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantGhostFungus glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantGhostFungus glow=0.75
+PASS light causes no direct damage RMush_PlantGhostFungus
+PASS light curve RMush_PlantGhostFungus glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantGhostFungus glow=1
+PASS actual growth tick follows light multiplier RMush_PlantGhostFungus glow=1
+PASS light causes no direct damage RMush_PlantGhostFungus
+PASS translated 50 percent growth tooltip RMush_PlantGhostFungus
+PASS roof shade restores full multiplier RMush_PlantGhostFungus
+PASS roof shade restores actual growth rate RMush_PlantGhostFungus
+PASS shade removes bright-light penalty from tooltip RMush_PlantGhostFungus
+PASS night rest still applies RMush_PlantGhostFungus
+PASS shade-aware spawned class RMush_PlantYellowBrain
+PASS fixture supports growth RMush_PlantYellowBrain temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantYellowBrain glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantYellowBrain glow=0
+PASS actual growth tick follows light multiplier RMush_PlantYellowBrain glow=0
+PASS light causes no direct damage RMush_PlantYellowBrain
+PASS light curve RMush_PlantYellowBrain glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantYellowBrain glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantYellowBrain glow=0.49
+PASS light causes no direct damage RMush_PlantYellowBrain
+PASS light curve RMush_PlantYellowBrain glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantYellowBrain glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantYellowBrain glow=0.5
+PASS light causes no direct damage RMush_PlantYellowBrain
+PASS light curve RMush_PlantYellowBrain glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantYellowBrain glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantYellowBrain glow=0.51
+PASS light causes no direct damage RMush_PlantYellowBrain
+PASS light curve RMush_PlantYellowBrain glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantYellowBrain glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantYellowBrain glow=0.75
+PASS light causes no direct damage RMush_PlantYellowBrain
+PASS light curve RMush_PlantYellowBrain glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantYellowBrain glow=1
+PASS actual growth tick follows light multiplier RMush_PlantYellowBrain glow=1
+PASS light causes no direct damage RMush_PlantYellowBrain
+PASS translated 50 percent growth tooltip RMush_PlantYellowBrain
+PASS roof shade restores full multiplier RMush_PlantYellowBrain
+PASS roof shade restores actual growth rate RMush_PlantYellowBrain
+PASS shade removes bright-light penalty from tooltip RMush_PlantYellowBrain
+PASS night rest still applies RMush_PlantYellowBrain
+PASS shade-aware spawned class RMush_PlantDevilsFingers
+PASS fixture supports growth RMush_PlantDevilsFingers temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantDevilsFingers glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantDevilsFingers glow=0
+PASS actual growth tick follows light multiplier RMush_PlantDevilsFingers glow=0
+PASS light causes no direct damage RMush_PlantDevilsFingers
+PASS light curve RMush_PlantDevilsFingers glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantDevilsFingers glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantDevilsFingers glow=0.49
+PASS light causes no direct damage RMush_PlantDevilsFingers
+PASS light curve RMush_PlantDevilsFingers glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantDevilsFingers glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantDevilsFingers glow=0.5
+PASS light causes no direct damage RMush_PlantDevilsFingers
+PASS light curve RMush_PlantDevilsFingers glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantDevilsFingers glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantDevilsFingers glow=0.51
+PASS light causes no direct damage RMush_PlantDevilsFingers
+PASS light curve RMush_PlantDevilsFingers glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantDevilsFingers glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantDevilsFingers glow=0.75
+PASS light causes no direct damage RMush_PlantDevilsFingers
+PASS light curve RMush_PlantDevilsFingers glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantDevilsFingers glow=1
+PASS actual growth tick follows light multiplier RMush_PlantDevilsFingers glow=1
+PASS light causes no direct damage RMush_PlantDevilsFingers
+PASS translated 50 percent growth tooltip RMush_PlantDevilsFingers
+PASS roof shade restores full multiplier RMush_PlantDevilsFingers
+PASS roof shade restores actual growth rate RMush_PlantDevilsFingers
+PASS shade removes bright-light penalty from tooltip RMush_PlantDevilsFingers
+PASS night rest still applies RMush_PlantDevilsFingers
+PASS shade-aware spawned class RMush_PlantBirdsNest
+PASS fixture supports growth RMush_PlantBirdsNest temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantBirdsNest glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantBirdsNest glow=0
+PASS actual growth tick follows light multiplier RMush_PlantBirdsNest glow=0
+PASS light causes no direct damage RMush_PlantBirdsNest
+PASS light curve RMush_PlantBirdsNest glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantBirdsNest glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantBirdsNest glow=0.49
+PASS light causes no direct damage RMush_PlantBirdsNest
+PASS light curve RMush_PlantBirdsNest glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantBirdsNest glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantBirdsNest glow=0.5
+PASS light causes no direct damage RMush_PlantBirdsNest
+PASS light curve RMush_PlantBirdsNest glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantBirdsNest glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantBirdsNest glow=0.51
+PASS light causes no direct damage RMush_PlantBirdsNest
+PASS light curve RMush_PlantBirdsNest glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantBirdsNest glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantBirdsNest glow=0.75
+PASS light causes no direct damage RMush_PlantBirdsNest
+PASS light curve RMush_PlantBirdsNest glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantBirdsNest glow=1
+PASS actual growth tick follows light multiplier RMush_PlantBirdsNest glow=1
+PASS light causes no direct damage RMush_PlantBirdsNest
+PASS translated 50 percent growth tooltip RMush_PlantBirdsNest
+PASS roof shade restores full multiplier RMush_PlantBirdsNest
+PASS roof shade restores actual growth rate RMush_PlantBirdsNest
+PASS shade removes bright-light penalty from tooltip RMush_PlantBirdsNest
+PASS night rest still applies RMush_PlantBirdsNest
+PASS shade-aware spawned class RMush_PlantChlorophos
+PASS fixture supports growth RMush_PlantChlorophos temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantChlorophos glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantChlorophos glow=0
+PASS actual growth tick follows light multiplier RMush_PlantChlorophos glow=0
+PASS light causes no direct damage RMush_PlantChlorophos
+PASS light curve RMush_PlantChlorophos glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantChlorophos glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantChlorophos glow=0.49
+PASS light causes no direct damage RMush_PlantChlorophos
+PASS light curve RMush_PlantChlorophos glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantChlorophos glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantChlorophos glow=0.5
+PASS light causes no direct damage RMush_PlantChlorophos
+PASS light curve RMush_PlantChlorophos glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantChlorophos glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantChlorophos glow=0.51
+PASS light causes no direct damage RMush_PlantChlorophos
+PASS light curve RMush_PlantChlorophos glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantChlorophos glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantChlorophos glow=0.75
+PASS light causes no direct damage RMush_PlantChlorophos
+PASS light curve RMush_PlantChlorophos glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantChlorophos glow=1
+PASS actual growth tick follows light multiplier RMush_PlantChlorophos glow=1
+PASS light causes no direct damage RMush_PlantChlorophos
+PASS translated 50 percent growth tooltip RMush_PlantChlorophos
+PASS roof shade restores full multiplier RMush_PlantChlorophos
+PASS roof shade restores actual growth rate RMush_PlantChlorophos
+PASS shade removes bright-light penalty from tooltip RMush_PlantChlorophos
+PASS night rest still applies RMush_PlantChlorophos
+PASS shade-aware spawned class RMush_PlantFlyAgaric
+PASS fixture supports growth RMush_PlantFlyAgaric temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantFlyAgaric glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0.49
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0.5
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0.51
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantFlyAgaric glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=0.75
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS light curve RMush_PlantFlyAgaric glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantFlyAgaric glow=1
+PASS actual growth tick follows light multiplier RMush_PlantFlyAgaric glow=1
+PASS light causes no direct damage RMush_PlantFlyAgaric
+PASS translated 50 percent growth tooltip RMush_PlantFlyAgaric
+PASS roof shade restores full multiplier RMush_PlantFlyAgaric
+PASS roof shade restores actual growth rate RMush_PlantFlyAgaric
+PASS shade removes bright-light penalty from tooltip RMush_PlantFlyAgaric
+PASS night rest still applies RMush_PlantFlyAgaric
+PASS shade-aware spawned class RMush_PlantDestroyingAngel
+PASS fixture supports growth RMush_PlantDestroyingAngel temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantDestroyingAngel glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0.49
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0.5
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0.51
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=0.75
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS light curve RMush_PlantDestroyingAngel glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantDestroyingAngel glow=1
+PASS actual growth tick follows light multiplier RMush_PlantDestroyingAngel glow=1
+PASS light causes no direct damage RMush_PlantDestroyingAngel
+PASS translated 50 percent growth tooltip RMush_PlantDestroyingAngel
+PASS roof shade restores full multiplier RMush_PlantDestroyingAngel
+PASS roof shade restores actual growth rate RMush_PlantDestroyingAngel
+PASS shade removes bright-light penalty from tooltip RMush_PlantDestroyingAngel
+PASS night rest still applies RMush_PlantDestroyingAngel
+PASS shade-aware spawned class RMush_PlantSulfurTuft
+PASS fixture supports growth RMush_PlantSulfurTuft temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantSulfurTuft glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0.49
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0.5
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0.51
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantSulfurTuft glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=0.75
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS light curve RMush_PlantSulfurTuft glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantSulfurTuft glow=1
+PASS actual growth tick follows light multiplier RMush_PlantSulfurTuft glow=1
+PASS light causes no direct damage RMush_PlantSulfurTuft
+PASS translated 50 percent growth tooltip RMush_PlantSulfurTuft
+PASS roof shade restores full multiplier RMush_PlantSulfurTuft
+PASS roof shade restores actual growth rate RMush_PlantSulfurTuft
+PASS shade removes bright-light penalty from tooltip RMush_PlantSulfurTuft
+PASS night rest still applies RMush_PlantSulfurTuft
+PASS shade-aware spawned class RMush_PlantTsukiyotake
+PASS fixture supports growth RMush_PlantTsukiyotake temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantTsukiyotake glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0.49
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0.5
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0.51
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantTsukiyotake glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=0.75
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS light curve RMush_PlantTsukiyotake glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantTsukiyotake glow=1
+PASS actual growth tick follows light multiplier RMush_PlantTsukiyotake glow=1
+PASS light causes no direct damage RMush_PlantTsukiyotake
+PASS translated 50 percent growth tooltip RMush_PlantTsukiyotake
+PASS roof shade restores full multiplier RMush_PlantTsukiyotake
+PASS roof shade restores actual growth rate RMush_PlantTsukiyotake
+PASS shade removes bright-light penalty from tooltip RMush_PlantTsukiyotake
+PASS night rest still applies RMush_PlantTsukiyotake
+PASS shade-aware spawned class RMush_PlantPoisonFireCoral
+PASS fixture supports growth RMush_PlantPoisonFireCoral temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantPoisonFireCoral glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0.49
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0.5
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0.51
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=0.75
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS light curve RMush_PlantPoisonFireCoral glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantPoisonFireCoral glow=1
+PASS actual growth tick follows light multiplier RMush_PlantPoisonFireCoral glow=1
+PASS light causes no direct damage RMush_PlantPoisonFireCoral
+PASS translated 50 percent growth tooltip RMush_PlantPoisonFireCoral
+PASS roof shade restores full multiplier RMush_PlantPoisonFireCoral
+PASS roof shade restores actual growth rate RMush_PlantPoisonFireCoral
+PASS shade removes bright-light penalty from tooltip RMush_PlantPoisonFireCoral
+PASS night rest still applies RMush_PlantPoisonFireCoral
+PASS shade-aware spawned class RMush_PlantButton
+PASS fixture supports growth RMush_PlantButton temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantButton glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantButton glow=0
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantButton glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0.49
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantButton glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0.5
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantButton glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0.51
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantButton glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=0.75
+PASS light causes no direct damage RMush_PlantButton
+PASS light curve RMush_PlantButton glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantButton glow=1
+PASS actual growth tick follows light multiplier RMush_PlantButton glow=1
+PASS light causes no direct damage RMush_PlantButton
+PASS translated 50 percent growth tooltip RMush_PlantButton
+PASS roof shade restores full multiplier RMush_PlantButton
+PASS roof shade restores actual growth rate RMush_PlantButton
+PASS shade removes bright-light penalty from tooltip RMush_PlantButton
+PASS night rest still applies RMush_PlantButton
+PASS shade-aware spawned class RMush_PlantShiitake
+PASS fixture supports growth RMush_PlantShiitake temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantShiitake glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantShiitake glow=0
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantShiitake glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0.49
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantShiitake glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0.5
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantShiitake glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0.51
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantShiitake glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=0.75
+PASS light causes no direct damage RMush_PlantShiitake
+PASS light curve RMush_PlantShiitake glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantShiitake glow=1
+PASS actual growth tick follows light multiplier RMush_PlantShiitake glow=1
+PASS light causes no direct damage RMush_PlantShiitake
+PASS translated 50 percent growth tooltip RMush_PlantShiitake
+PASS roof shade restores full multiplier RMush_PlantShiitake
+PASS roof shade restores actual growth rate RMush_PlantShiitake
+PASS shade removes bright-light penalty from tooltip RMush_PlantShiitake
+PASS night rest still applies RMush_PlantShiitake
+PASS shade-aware spawned class RMush_PlantOyster
+PASS fixture supports growth RMush_PlantOyster temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantOyster glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantOyster glow=0
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantOyster glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0.49
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantOyster glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0.5
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantOyster glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0.51
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantOyster glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=0.75
+PASS light causes no direct damage RMush_PlantOyster
+PASS light curve RMush_PlantOyster glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantOyster glow=1
+PASS actual growth tick follows light multiplier RMush_PlantOyster glow=1
+PASS light causes no direct damage RMush_PlantOyster
+PASS translated 50 percent growth tooltip RMush_PlantOyster
+PASS roof shade restores full multiplier RMush_PlantOyster
+PASS roof shade restores actual growth rate RMush_PlantOyster
+PASS shade removes bright-light penalty from tooltip RMush_PlantOyster
+PASS night rest still applies RMush_PlantOyster
+PASS shade-aware spawned class RMush_PlantKingOyster
+PASS fixture supports growth RMush_PlantKingOyster temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantKingOyster glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantKingOyster glow=0
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantKingOyster glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0.49
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantKingOyster glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0.5
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantKingOyster glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0.51
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantKingOyster glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=0.75
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS light curve RMush_PlantKingOyster glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantKingOyster glow=1
+PASS actual growth tick follows light multiplier RMush_PlantKingOyster glow=1
+PASS light causes no direct damage RMush_PlantKingOyster
+PASS translated 50 percent growth tooltip RMush_PlantKingOyster
+PASS roof shade restores full multiplier RMush_PlantKingOyster
+PASS roof shade restores actual growth rate RMush_PlantKingOyster
+PASS shade removes bright-light penalty from tooltip RMush_PlantKingOyster
+PASS night rest still applies RMush_PlantKingOyster
+PASS shade-aware spawned class RMush_PlantEnoki
+PASS fixture supports growth RMush_PlantEnoki temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantEnoki glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantEnoki glow=0
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantEnoki glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0.49
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantEnoki glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0.5
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantEnoki glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0.51
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantEnoki glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=0.75
+PASS light causes no direct damage RMush_PlantEnoki
+PASS light curve RMush_PlantEnoki glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantEnoki glow=1
+PASS actual growth tick follows light multiplier RMush_PlantEnoki glow=1
+PASS light causes no direct damage RMush_PlantEnoki
+PASS translated 50 percent growth tooltip RMush_PlantEnoki
+PASS roof shade restores full multiplier RMush_PlantEnoki
+PASS roof shade restores actual growth rate RMush_PlantEnoki
+PASS shade removes bright-light penalty from tooltip RMush_PlantEnoki
+PASS night rest still applies RMush_PlantEnoki
+PASS shade-aware spawned class RMush_PlantEnokiWild
+PASS fixture supports growth RMush_PlantEnokiWild temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantEnokiWild glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantEnokiWild glow=0
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantEnokiWild glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0.49
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantEnokiWild glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0.5
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantEnokiWild glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0.51
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantEnokiWild glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=0.75
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS light curve RMush_PlantEnokiWild glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantEnokiWild glow=1
+PASS actual growth tick follows light multiplier RMush_PlantEnokiWild glow=1
+PASS light causes no direct damage RMush_PlantEnokiWild
+PASS translated 50 percent growth tooltip RMush_PlantEnokiWild
+PASS roof shade restores full multiplier RMush_PlantEnokiWild
+PASS roof shade restores actual growth rate RMush_PlantEnokiWild
+PASS shade removes bright-light penalty from tooltip RMush_PlantEnokiWild
+PASS night rest still applies RMush_PlantEnokiWild
+PASS shade-aware spawned class RMush_PlantWoodEar
+PASS fixture supports growth RMush_PlantWoodEar temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantWoodEar glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantWoodEar glow=0
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantWoodEar glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0.49
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantWoodEar glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0.5
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantWoodEar glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0.51
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantWoodEar glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=0.75
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS light curve RMush_PlantWoodEar glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantWoodEar glow=1
+PASS actual growth tick follows light multiplier RMush_PlantWoodEar glow=1
+PASS light causes no direct damage RMush_PlantWoodEar
+PASS translated 50 percent growth tooltip RMush_PlantWoodEar
+PASS roof shade restores full multiplier RMush_PlantWoodEar
+PASS roof shade restores actual growth rate RMush_PlantWoodEar
+PASS shade removes bright-light penalty from tooltip RMush_PlantWoodEar
+PASS night rest still applies RMush_PlantWoodEar
+PASS shade-aware spawned class RMush_PlantBeech
+PASS fixture supports growth RMush_PlantBeech temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantBeech glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantBeech glow=0
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantBeech glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0.49
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantBeech glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0.5
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantBeech glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0.51
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantBeech glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=0.75
+PASS light causes no direct damage RMush_PlantBeech
+PASS light curve RMush_PlantBeech glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantBeech glow=1
+PASS actual growth tick follows light multiplier RMush_PlantBeech glow=1
+PASS light causes no direct damage RMush_PlantBeech
+PASS translated 50 percent growth tooltip RMush_PlantBeech
+PASS roof shade restores full multiplier RMush_PlantBeech
+PASS roof shade restores actual growth rate RMush_PlantBeech
+PASS shade removes bright-light penalty from tooltip RMush_PlantBeech
+PASS night rest still applies RMush_PlantBeech
+PASS shade-aware spawned class RMush_PlantMaitake
+PASS fixture supports growth RMush_PlantMaitake temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantMaitake glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantMaitake glow=0
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantMaitake glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0.49
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantMaitake glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0.5
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantMaitake glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0.51
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantMaitake glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=0.75
+PASS light causes no direct damage RMush_PlantMaitake
+PASS light curve RMush_PlantMaitake glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantMaitake glow=1
+PASS actual growth tick follows light multiplier RMush_PlantMaitake glow=1
+PASS light causes no direct damage RMush_PlantMaitake
+PASS translated 50 percent growth tooltip RMush_PlantMaitake
+PASS roof shade restores full multiplier RMush_PlantMaitake
+PASS roof shade restores actual growth rate RMush_PlantMaitake
+PASS shade removes bright-light penalty from tooltip RMush_PlantMaitake
+PASS night rest still applies RMush_PlantMaitake
+PASS shade-aware spawned class RMush_PlantLionsMane
+PASS fixture supports growth RMush_PlantLionsMane temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantLionsMane glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantLionsMane glow=0
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantLionsMane glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0.49
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantLionsMane glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0.5
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantLionsMane glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0.51
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantLionsMane glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=0.75
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS light curve RMush_PlantLionsMane glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantLionsMane glow=1
+PASS actual growth tick follows light multiplier RMush_PlantLionsMane glow=1
+PASS light causes no direct damage RMush_PlantLionsMane
+PASS translated 50 percent growth tooltip RMush_PlantLionsMane
+PASS roof shade restores full multiplier RMush_PlantLionsMane
+PASS roof shade restores actual growth rate RMush_PlantLionsMane
+PASS shade removes bright-light penalty from tooltip RMush_PlantLionsMane
+PASS night rest still applies RMush_PlantLionsMane
+PASS shade-aware spawned class RMush_PlantMatsutake
+PASS fixture supports growth RMush_PlantMatsutake temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantMatsutake glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantMatsutake glow=0
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantMatsutake glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0.49
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantMatsutake glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0.5
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantMatsutake glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0.51
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantMatsutake glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=0.75
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS light curve RMush_PlantMatsutake glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantMatsutake glow=1
+PASS actual growth tick follows light multiplier RMush_PlantMatsutake glow=1
+PASS light causes no direct damage RMush_PlantMatsutake
+PASS translated 50 percent growth tooltip RMush_PlantMatsutake
+PASS roof shade restores full multiplier RMush_PlantMatsutake
+PASS roof shade restores actual growth rate RMush_PlantMatsutake
+PASS shade removes bright-light penalty from tooltip RMush_PlantMatsutake
+PASS night rest still applies RMush_PlantMatsutake
+PASS shade-aware spawned class RMush_PlantAssorted
+PASS fixture supports growth RMush_PlantAssorted temp=7.828103 fertility=1 light=1 temperature=0.7828103 haze=1 drought=1
+PASS light curve RMush_PlantAssorted glow=0 multiplier=1
+PASS total growth multiplier RMush_PlantAssorted glow=0
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0.49 multiplier=1
+PASS total growth multiplier RMush_PlantAssorted glow=0.49
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0.49
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0.5 multiplier=1
+PASS total growth multiplier RMush_PlantAssorted glow=0.5
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0.5
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0.51 multiplier=0.99
+PASS total growth multiplier RMush_PlantAssorted glow=0.51
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0.51
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=0.75 multiplier=0.75
+PASS total growth multiplier RMush_PlantAssorted glow=0.75
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=0.75
+PASS light causes no direct damage RMush_PlantAssorted
+PASS light curve RMush_PlantAssorted glow=1 multiplier=0.5
+PASS total growth multiplier RMush_PlantAssorted glow=1
+PASS actual growth tick follows light multiplier RMush_PlantAssorted glow=1
+PASS light causes no direct damage RMush_PlantAssorted
+PASS translated 50 percent growth tooltip RMush_PlantAssorted
+PASS roof shade restores full multiplier RMush_PlantAssorted
+PASS roof shade restores actual growth rate RMush_PlantAssorted
+PASS shade removes bright-light penalty from tooltip RMush_PlantAssorted
+PASS night rest still applies RMush_PlantAssorted
+PASS vanilla rice class and sunlight growth unaffected
+PASS vanilla nutrifungus retains its own light rules
+PASS native growing workers resolve assorted support without Harmony
+PASS assorted selection resolved and sowable
+PASS native growing-zone crop menu includes assorted mushrooms
+PASS translated assorted crop entry
+PASS assorted excludes wild-only varieties
+PASS assorted skill 5 cannot sow
+PASS automatic sow scan excludes under-skilled assorted zone
+PASS automatic sow scan includes skill 6 assorted zone
+PASS equal-probability native sow samples RMush_PlantButton=220/1800
+PASS equal-probability native sow samples RMush_PlantShiitake=216/1800
+PASS equal-probability native sow samples RMush_PlantOyster=179/1800
+PASS equal-probability native sow samples RMush_PlantKingOyster=188/1800
+PASS equal-probability native sow samples RMush_PlantEnoki=195/1800
+PASS equal-probability native sow samples RMush_PlantWoodEar=192/1800
+PASS equal-probability native sow samples RMush_PlantBeech=217/1800
+PASS equal-probability native sow samples RMush_PlantMaitake=213/1800
+PASS equal-probability native sow samples RMush_PlantLionsMane=180/1800
+PASS assorted never cuts/replants its growing RMush_PlantButton
+PASS automatic assorted harvest with cutting disabled RMush_PlantButton
+PASS native harvest queue accepts assorted member RMush_PlantButton
+PASS assorted never cuts/replants its growing RMush_PlantShiitake
+PASS automatic assorted harvest with cutting disabled RMush_PlantShiitake
+PASS native harvest queue accepts assorted member RMush_PlantShiitake
+PASS assorted never cuts/replants its growing RMush_PlantOyster
+PASS automatic assorted harvest with cutting disabled RMush_PlantOyster
+PASS native harvest queue accepts assorted member RMush_PlantOyster
+PASS assorted never cuts/replants its growing RMush_PlantKingOyster
+PASS automatic assorted harvest with cutting disabled RMush_PlantKingOyster
+PASS native harvest queue accepts assorted member RMush_PlantKingOyster
+PASS assorted never cuts/replants its growing RMush_PlantEnoki
+PASS automatic assorted harvest with cutting disabled RMush_PlantEnoki
+PASS native harvest queue accepts assorted member RMush_PlantEnoki
+PASS assorted never cuts/replants its growing RMush_PlantWoodEar
+PASS automatic assorted harvest with cutting disabled RMush_PlantWoodEar
+PASS native harvest queue accepts assorted member RMush_PlantWoodEar
+PASS assorted never cuts/replants its growing RMush_PlantBeech
+PASS automatic assorted harvest with cutting disabled RMush_PlantBeech
+PASS native harvest queue accepts assorted member RMush_PlantBeech
+PASS assorted never cuts/replants its growing RMush_PlantMaitake
+PASS automatic assorted harvest with cutting disabled RMush_PlantMaitake
+PASS native harvest queue accepts assorted member RMush_PlantMaitake
+PASS assorted never cuts/replants its growing RMush_PlantLionsMane
+PASS automatic assorted harvest with cutting disabled RMush_PlantLionsMane
+PASS native harvest queue accepts assorted member RMush_PlantLionsMane
+PASS assorted honors sow-disabled zone
+PASS individual mushroom sow unchanged
+PASS vanilla rice sow unchanged
+PASS ecology: separate outdoor ecology test patch fits map
+PASS ecology: native biome diagnosis biome=TemperateForest biomes=TemperateForest declaredMushrooms=40 cachedNativeMushrooms=40 allWildPlants=59 buttonCommonality=0.02937366
+PASS ecology: declared mushroom biome and native commonality cache agree biome=TemperateForest
+PASS ecology: season profiles are resolved on real plant definitions
+PASS ecology: reported local season weight RMush_PlantCauliflower Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCauliflower Spring
+PASS ecology: reported local season weight RMush_PlantCauliflower Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCauliflower Summer
+PASS ecology: reported local season weight RMush_PlantCauliflower Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCauliflower Fall
+PASS ecology: reported local season weight RMush_PlantCauliflower Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCauliflower Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantCauliflower
+PASS ecology: reported local season weight RMush_PlantPurpleBlewit Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPurpleBlewit Spring
+PASS ecology: reported local season weight RMush_PlantPurpleBlewit Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPurpleBlewit Summer
+PASS ecology: reported local season weight RMush_PlantPurpleBlewit Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPurpleBlewit Fall
+PASS ecology: reported local season weight RMush_PlantPurpleBlewit Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPurpleBlewit Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantPurpleBlewit
+PASS ecology: reported local season weight RMush_PlantBlackTruffle Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBlackTruffle Spring
+PASS ecology: reported local season weight RMush_PlantBlackTruffle Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBlackTruffle Summer
+PASS ecology: reported local season weight RMush_PlantBlackTruffle Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBlackTruffle Fall
+PASS ecology: reported local season weight RMush_PlantBlackTruffle Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBlackTruffle Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantBlackTruffle
+PASS ecology: reported local season weight RMush_PlantPorcini Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPorcini Spring
+PASS ecology: reported local season weight RMush_PlantPorcini Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPorcini Summer
+PASS ecology: reported local season weight RMush_PlantPorcini Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPorcini Fall
+PASS ecology: reported local season weight RMush_PlantPorcini Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPorcini Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantPorcini
+PASS ecology: reported local season weight RMush_PlantMorel Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMorel Spring
+PASS ecology: reported local season weight RMush_PlantMorel Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMorel Summer
+PASS ecology: reported local season weight RMush_PlantMorel Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMorel Fall
+PASS ecology: reported local season weight RMush_PlantMorel Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMorel Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantMorel
+PASS ecology: reported local season weight RMush_PlantBlackTrumpet Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBlackTrumpet Spring
+PASS ecology: reported local season weight RMush_PlantBlackTrumpet Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBlackTrumpet Summer
+PASS ecology: reported local season weight RMush_PlantBlackTrumpet Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBlackTrumpet Fall
+PASS ecology: reported local season weight RMush_PlantBlackTrumpet Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBlackTrumpet Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantBlackTrumpet
+PASS ecology: reported local season weight RMush_PlantGiantPuffball Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantGiantPuffball Spring
+PASS ecology: reported local season weight RMush_PlantGiantPuffball Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantGiantPuffball Summer
+PASS ecology: reported local season weight RMush_PlantGiantPuffball Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantGiantPuffball Fall
+PASS ecology: reported local season weight RMush_PlantGiantPuffball Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantGiantPuffball Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantGiantPuffball
+PASS ecology: reported local season weight RMush_PlantIndigoMilkcap Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantIndigoMilkcap Spring
+PASS ecology: reported local season weight RMush_PlantIndigoMilkcap Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantIndigoMilkcap Summer
+PASS ecology: reported local season weight RMush_PlantIndigoMilkcap Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantIndigoMilkcap Fall
+PASS ecology: reported local season weight RMush_PlantIndigoMilkcap Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantIndigoMilkcap Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantIndigoMilkcap
+PASS ecology: reported local season weight RMush_PlantVeiledStinkhorn Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantVeiledStinkhorn Spring
+PASS ecology: reported local season weight RMush_PlantVeiledStinkhorn Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantVeiledStinkhorn Summer
+PASS ecology: reported local season weight RMush_PlantVeiledStinkhorn Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantVeiledStinkhorn Fall
+PASS ecology: reported local season weight RMush_PlantVeiledStinkhorn Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantVeiledStinkhorn Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantVeiledStinkhorn
+PASS ecology: reported local season weight RMush_PlantShaggyInkcap Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantShaggyInkcap Spring
+PASS ecology: reported local season weight RMush_PlantShaggyInkcap Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantShaggyInkcap Summer
+PASS ecology: reported local season weight RMush_PlantShaggyInkcap Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantShaggyInkcap Fall
+PASS ecology: reported local season weight RMush_PlantShaggyInkcap Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantShaggyInkcap Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantShaggyInkcap
+PASS ecology: reported local season weight RMush_PlantLobster Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLobster Spring
+PASS ecology: reported local season weight RMush_PlantLobster Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLobster Summer
+PASS ecology: reported local season weight RMush_PlantLobster Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLobster Fall
+PASS ecology: reported local season weight RMush_PlantLobster Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLobster Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantLobster
+PASS ecology: reported local season weight RMush_PlantReishi Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantReishi Spring
+PASS ecology: reported local season weight RMush_PlantReishi Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantReishi Summer
+PASS ecology: reported local season weight RMush_PlantReishi Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantReishi Fall
+PASS ecology: reported local season weight RMush_PlantReishi Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantReishi Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantReishi
+PASS ecology: reported local season weight RMush_PlantTurkeyTail Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantTurkeyTail Spring
+PASS ecology: reported local season weight RMush_PlantTurkeyTail Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantTurkeyTail Summer
+PASS ecology: reported local season weight RMush_PlantTurkeyTail Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantTurkeyTail Fall
+PASS ecology: reported local season weight RMush_PlantTurkeyTail Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantTurkeyTail Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantTurkeyTail
+PASS ecology: reported local season weight RMush_PlantSanghuang Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantSanghuang Spring
+PASS ecology: reported local season weight RMush_PlantSanghuang Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantSanghuang Summer
+PASS ecology: reported local season weight RMush_PlantSanghuang Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantSanghuang Fall
+PASS ecology: reported local season weight RMush_PlantSanghuang Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantSanghuang Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantSanghuang
+PASS ecology: reported local season weight RMush_PlantCordyceps Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCordyceps Spring
+PASS ecology: reported local season weight RMush_PlantCordyceps Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCordyceps Summer
+PASS ecology: reported local season weight RMush_PlantCordyceps Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCordyceps Fall
+PASS ecology: reported local season weight RMush_PlantCordyceps Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCordyceps Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantCordyceps
+PASS ecology: reported local season weight RMush_PlantChaga Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantChaga Spring
+PASS ecology: reported local season weight RMush_PlantChaga Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantChaga Summer
+PASS ecology: reported local season weight RMush_PlantChaga Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantChaga Fall
+PASS ecology: reported local season weight RMush_PlantChaga Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantChaga Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantChaga
+PASS ecology: reported local season weight RMush_PlantLibertyCap Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLibertyCap Spring
+PASS ecology: reported local season weight RMush_PlantLibertyCap Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLibertyCap Summer
+PASS ecology: reported local season weight RMush_PlantLibertyCap Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLibertyCap Fall
+PASS ecology: reported local season weight RMush_PlantLibertyCap Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLibertyCap Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantLibertyCap
+PASS ecology: reported local season weight RMush_PlantPantherCap Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPantherCap Spring
+PASS ecology: reported local season weight RMush_PlantPantherCap Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPantherCap Summer
+PASS ecology: reported local season weight RMush_PlantPantherCap Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPantherCap Fall
+PASS ecology: reported local season weight RMush_PlantPantherCap Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPantherCap Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantPantherCap
+PASS ecology: reported local season weight RMush_PlantCubensis Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCubensis Spring
+PASS ecology: reported local season weight RMush_PlantCubensis Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCubensis Summer
+PASS ecology: reported local season weight RMush_PlantCubensis Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCubensis Fall
+PASS ecology: reported local season weight RMush_PlantCubensis Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantCubensis Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantCubensis
+PASS ecology: reported local season weight RMush_PlantDeathCap Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDeathCap Spring
+PASS ecology: reported local season weight RMush_PlantDeathCap Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDeathCap Summer
+PASS ecology: reported local season weight RMush_PlantDeathCap Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDeathCap Fall
+PASS ecology: reported local season weight RMush_PlantDeathCap Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDeathCap Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantDeathCap
+PASS ecology: reported local season weight RMush_PlantYellowDapperling Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantYellowDapperling Spring
+PASS ecology: reported local season weight RMush_PlantYellowDapperling Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantYellowDapperling Summer
+PASS ecology: reported local season weight RMush_PlantYellowDapperling Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantYellowDapperling Fall
+PASS ecology: reported local season weight RMush_PlantYellowDapperling Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantYellowDapperling Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantYellowDapperling
+PASS ecology: reported local season weight RMush_PlantJackOLantern Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantJackOLantern Spring
+PASS ecology: reported local season weight RMush_PlantJackOLantern Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantJackOLantern Summer
+PASS ecology: reported local season weight RMush_PlantJackOLantern Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantJackOLantern Fall
+PASS ecology: reported local season weight RMush_PlantJackOLantern Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantJackOLantern Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantJackOLantern
+PASS ecology: reported local season weight RMush_PlantDeadlyWebcap Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDeadlyWebcap Spring
+PASS ecology: reported local season weight RMush_PlantDeadlyWebcap Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDeadlyWebcap Summer
+PASS ecology: reported local season weight RMush_PlantDeadlyWebcap Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDeadlyWebcap Fall
+PASS ecology: reported local season weight RMush_PlantDeadlyWebcap Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDeadlyWebcap Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantDeadlyWebcap
+PASS ecology: reported local season weight RMush_PlantZombieAntFungus Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantZombieAntFungus Spring
+PASS ecology: reported local season weight RMush_PlantZombieAntFungus Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantZombieAntFungus Summer
+PASS ecology: reported local season weight RMush_PlantZombieAntFungus Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantZombieAntFungus Fall
+PASS ecology: reported local season weight RMush_PlantZombieAntFungus Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantZombieAntFungus Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantZombieAntFungus
+PASS ecology: reported local season weight RMush_PlantHoneyFungus Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantHoneyFungus Spring
+PASS ecology: reported local season weight RMush_PlantHoneyFungus Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantHoneyFungus Summer
+PASS ecology: reported local season weight RMush_PlantHoneyFungus Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantHoneyFungus Fall
+PASS ecology: reported local season weight RMush_PlantHoneyFungus Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantHoneyFungus Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantHoneyFungus
+PASS ecology: reported local season weight RMush_PlantDryRot Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDryRot Spring
+PASS ecology: reported local season weight RMush_PlantDryRot Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDryRot Summer
+PASS ecology: reported local season weight RMush_PlantDryRot Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDryRot Fall
+PASS ecology: reported local season weight RMush_PlantDryRot Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDryRot Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantDryRot
+PASS ecology: reported local season weight RMush_PlantGhostFungus Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantGhostFungus Spring
+PASS ecology: reported local season weight RMush_PlantGhostFungus Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantGhostFungus Summer
+PASS ecology: reported local season weight RMush_PlantGhostFungus Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantGhostFungus Fall
+PASS ecology: reported local season weight RMush_PlantGhostFungus Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantGhostFungus Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantGhostFungus
+PASS ecology: reported local season weight RMush_PlantYellowBrain Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantYellowBrain Spring
+PASS ecology: reported local season weight RMush_PlantYellowBrain Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantYellowBrain Summer
+PASS ecology: reported local season weight RMush_PlantYellowBrain Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantYellowBrain Fall
+PASS ecology: reported local season weight RMush_PlantYellowBrain Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantYellowBrain Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantYellowBrain
+PASS ecology: reported local season weight RMush_PlantDevilsFingers Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDevilsFingers Spring
+PASS ecology: reported local season weight RMush_PlantDevilsFingers Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDevilsFingers Summer
+PASS ecology: reported local season weight RMush_PlantDevilsFingers Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDevilsFingers Fall
+PASS ecology: reported local season weight RMush_PlantDevilsFingers Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDevilsFingers Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantDevilsFingers
+PASS ecology: reported local season weight RMush_PlantBirdsNest Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBirdsNest Spring
+PASS ecology: reported local season weight RMush_PlantBirdsNest Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBirdsNest Summer
+PASS ecology: reported local season weight RMush_PlantBirdsNest Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBirdsNest Fall
+PASS ecology: reported local season weight RMush_PlantBirdsNest Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBirdsNest Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantBirdsNest
+PASS ecology: reported local season weight RMush_PlantChlorophos Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantChlorophos Spring
+PASS ecology: reported local season weight RMush_PlantChlorophos Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantChlorophos Summer
+PASS ecology: reported local season weight RMush_PlantChlorophos Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantChlorophos Fall
+PASS ecology: reported local season weight RMush_PlantChlorophos Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantChlorophos Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantChlorophos
+PASS ecology: reported local season weight RMush_PlantFlyAgaric Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantFlyAgaric Spring
+PASS ecology: reported local season weight RMush_PlantFlyAgaric Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantFlyAgaric Summer
+PASS ecology: reported local season weight RMush_PlantFlyAgaric Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantFlyAgaric Fall
+PASS ecology: reported local season weight RMush_PlantFlyAgaric Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantFlyAgaric Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantFlyAgaric
+PASS ecology: reported local season weight RMush_PlantDestroyingAngel Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDestroyingAngel Spring
+PASS ecology: reported local season weight RMush_PlantDestroyingAngel Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDestroyingAngel Summer
+PASS ecology: reported local season weight RMush_PlantDestroyingAngel Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDestroyingAngel Fall
+PASS ecology: reported local season weight RMush_PlantDestroyingAngel Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantDestroyingAngel Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantDestroyingAngel
+PASS ecology: reported local season weight RMush_PlantSulfurTuft Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantSulfurTuft Spring
+PASS ecology: reported local season weight RMush_PlantSulfurTuft Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantSulfurTuft Summer
+PASS ecology: reported local season weight RMush_PlantSulfurTuft Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantSulfurTuft Fall
+PASS ecology: reported local season weight RMush_PlantSulfurTuft Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantSulfurTuft Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantSulfurTuft
+PASS ecology: reported local season weight RMush_PlantTsukiyotake Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantTsukiyotake Spring
+PASS ecology: reported local season weight RMush_PlantTsukiyotake Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantTsukiyotake Summer
+PASS ecology: reported local season weight RMush_PlantTsukiyotake Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantTsukiyotake Fall
+PASS ecology: reported local season weight RMush_PlantTsukiyotake Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantTsukiyotake Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantTsukiyotake
+PASS ecology: reported local season weight RMush_PlantPoisonFireCoral Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPoisonFireCoral Spring
+PASS ecology: reported local season weight RMush_PlantPoisonFireCoral Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPoisonFireCoral Summer
+PASS ecology: reported local season weight RMush_PlantPoisonFireCoral Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPoisonFireCoral Fall
+PASS ecology: reported local season weight RMush_PlantPoisonFireCoral Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantPoisonFireCoral Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantPoisonFireCoral
+PASS ecology: reported local season weight RMush_PlantButton Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantButton Spring
+PASS ecology: reported local season weight RMush_PlantButton Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantButton Summer
+PASS ecology: reported local season weight RMush_PlantButton Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantButton Fall
+PASS ecology: reported local season weight RMush_PlantButton Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantButton Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantButton
+PASS ecology: reported local season weight RMush_PlantShiitake Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantShiitake Spring
+PASS ecology: reported local season weight RMush_PlantShiitake Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantShiitake Summer
+PASS ecology: reported local season weight RMush_PlantShiitake Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantShiitake Fall
+PASS ecology: reported local season weight RMush_PlantShiitake Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantShiitake Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantShiitake
+PASS ecology: reported local season weight RMush_PlantOyster Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantOyster Spring
+PASS ecology: reported local season weight RMush_PlantOyster Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantOyster Summer
+PASS ecology: reported local season weight RMush_PlantOyster Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantOyster Fall
+PASS ecology: reported local season weight RMush_PlantOyster Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantOyster Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantOyster
+PASS ecology: reported local season weight RMush_PlantKingOyster Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantKingOyster Spring
+PASS ecology: reported local season weight RMush_PlantKingOyster Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantKingOyster Summer
+PASS ecology: reported local season weight RMush_PlantKingOyster Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantKingOyster Fall
+PASS ecology: reported local season weight RMush_PlantKingOyster Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantKingOyster Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantKingOyster
+PASS ecology: reported local season weight RMush_PlantEnoki Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantEnoki Spring
+PASS ecology: reported local season weight RMush_PlantEnoki Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantEnoki Summer
+PASS ecology: reported local season weight RMush_PlantEnoki Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantEnoki Fall
+PASS ecology: reported local season weight RMush_PlantEnoki Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantEnoki Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantEnoki
+PASS ecology: reported local season weight RMush_PlantEnokiWild Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantEnokiWild Spring
+PASS ecology: reported local season weight RMush_PlantEnokiWild Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantEnokiWild Summer
+PASS ecology: reported local season weight RMush_PlantEnokiWild Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantEnokiWild Fall
+PASS ecology: reported local season weight RMush_PlantEnokiWild Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantEnokiWild Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantEnokiWild
+PASS ecology: reported local season weight RMush_PlantWoodEar Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantWoodEar Spring
+PASS ecology: reported local season weight RMush_PlantWoodEar Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantWoodEar Summer
+PASS ecology: reported local season weight RMush_PlantWoodEar Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantWoodEar Fall
+PASS ecology: reported local season weight RMush_PlantWoodEar Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantWoodEar Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantWoodEar
+PASS ecology: reported local season weight RMush_PlantBeech Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBeech Spring
+PASS ecology: reported local season weight RMush_PlantBeech Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBeech Summer
+PASS ecology: reported local season weight RMush_PlantBeech Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBeech Fall
+PASS ecology: reported local season weight RMush_PlantBeech Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantBeech Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantBeech
+PASS ecology: reported local season weight RMush_PlantMaitake Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMaitake Spring
+PASS ecology: reported local season weight RMush_PlantMaitake Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMaitake Summer
+PASS ecology: reported local season weight RMush_PlantMaitake Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMaitake Fall
+PASS ecology: reported local season weight RMush_PlantMaitake Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMaitake Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantMaitake
+PASS ecology: reported local season weight RMush_PlantLionsMane Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLionsMane Spring
+PASS ecology: reported local season weight RMush_PlantLionsMane Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLionsMane Summer
+PASS ecology: reported local season weight RMush_PlantLionsMane Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLionsMane Fall
+PASS ecology: reported local season weight RMush_PlantLionsMane Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantLionsMane Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantLionsMane
+PASS ecology: reported local season weight RMush_PlantMatsutake Spring
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMatsutake Spring
+PASS ecology: reported local season weight RMush_PlantMatsutake Summer
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMatsutake Summer
+PASS ecology: reported local season weight RMush_PlantMatsutake Fall
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMatsutake Fall
+PASS ecology: reported local season weight RMush_PlantMatsutake Winter
+PASS ecology: tropical biome ignores temperate season weight RMush_PlantMatsutake Winter
+PASS ecology: permanent season follows its native summer or winter climate RMush_PlantMatsutake
+PASS ecology: native north/south local seasons are opposite day=0
+PASS ecology: southern weighting follows native local season day=0
+PASS ecology: native north/south local seasons are opposite day=5
+PASS ecology: southern weighting follows native local season day=5
+PASS ecology: native north/south local seasons are opposite day=10
+PASS ecology: southern weighting follows native local season day=10
+PASS ecology: native north/south local seasons are opposite day=15
+PASS ecology: southern weighting follows native local season day=15
+PASS ecology: native north/south local seasons are opposite day=20
+PASS ecology: southern weighting follows native local season day=20
+PASS ecology: native north/south local seasons are opposite day=25
+PASS ecology: southern weighting follows native local season day=25
+PASS ecology: native north/south local seasons are opposite day=30
+PASS ecology: southern weighting follows native local season day=30
+PASS ecology: native north/south local seasons are opposite day=35
+PASS ecology: southern weighting follows native local season day=35
+PASS ecology: native north/south local seasons are opposite day=40
+PASS ecology: southern weighting follows native local season day=40
+PASS ecology: native north/south local seasons are opposite day=45
+PASS ecology: southern weighting follows native local season day=45
+PASS ecology: native north/south local seasons are opposite day=50
+PASS ecology: southern weighting follows native local season day=50
+PASS ecology: native north/south local seasons are opposite day=55
+PASS ecology: southern weighting follows native local season day=55
+PASS ecology: cultivated growth factors ignore wild seasonal weighting Button quarter=0
+PASS ecology: native sow permission retained Button quarter=0
+PASS ecology: cultivated growth factors ignore wild seasonal weighting Button quarter=1
+PASS ecology: native sow permission retained Button quarter=1
+PASS ecology: cultivated growth factors ignore wild seasonal weighting Button quarter=2
+PASS ecology: native sow permission retained Button quarter=2
+PASS ecology: cultivated growth factors ignore wild seasonal weighting Button quarter=3
+PASS ecology: native sow permission retained Button quarter=3
+PASS ecology: cultivated growth factors ignore wild seasonal weighting Cauliflower quarter=0
+PASS ecology: native sow permission retained Cauliflower quarter=0
+PASS ecology: cultivated growth factors ignore wild seasonal weighting Cauliflower quarter=1
+PASS ecology: native sow permission retained Cauliflower quarter=1
+PASS ecology: cultivated growth factors ignore wild seasonal weighting Cauliflower quarter=2
+PASS ecology: native sow permission retained Cauliflower quarter=2
+PASS ecology: cultivated growth factors ignore wild seasonal weighting Cauliflower quarter=3
+PASS ecology: native sow permission retained Cauliflower quarter=3
+PASS ecology: cultivated growth factors ignore wild seasonal weighting PurpleBlewit quarter=0
+PASS ecology: native sow permission retained PurpleBlewit quarter=0
+PASS ecology: cultivated growth factors ignore wild seasonal weighting PurpleBlewit quarter=1
+PASS ecology: native sow permission retained PurpleBlewit quarter=1
+PASS ecology: cultivated growth factors ignore wild seasonal weighting PurpleBlewit quarter=2
+PASS ecology: native sow permission retained PurpleBlewit quarter=2
+PASS ecology: cultivated growth factors ignore wild seasonal weighting PurpleBlewit quarter=3
+PASS ecology: native sow permission retained PurpleBlewit quarter=3
+PASS ecology: native glower registers on spawn GhostFungus
+PASS ecology: native ground glow is emitted GhostFungus glow=0.5
+PASS ecology: native ground glow unregisters on despawn GhostFungus
+PASS ecology: native ground glow returns on respawn GhostFungus
+PASS ecology: native ground glow unregisters on destruction GhostFungus
+PASS ecology: native glower registers on spawn Chlorophos
+PASS ecology: native ground glow is emitted Chlorophos glow=0.5
+PASS ecology: native ground glow unregisters on despawn Chlorophos
+PASS ecology: native ground glow returns on respawn Chlorophos
+PASS ecology: native ground glow unregisters on destruction Chlorophos
+PASS ecology: jack-o-lantern name alone does not emit light
+PASS ecology: wild ecology map component is registered automatically
+PASS ecology: empty warm outdoor soil is a wild candidate
+PASS ecology: roofed cell is excluded from general wild ecology
+PASS ecology: zero-fertility constructed floor is excluded
+PASS ecology: building cell is excluded
+PASS ecology: occupied plant cell is excluded
+PASS ecology: player growing zone is excluded even before sowing
+PASS ecology: hydroponics cell is excluded
+PASS ecology: freezing soil is excluded actual=-30 configured=-30
+PASS ecology: overheated soil is excluded actual=70 configured=70
+PASS ecology: restored warm empty outdoor soil is eligible again
+PASS ecology: installed native wild plant selection method is available
+PASS ecology: actual native selection assigns positive eligible mushroom weight
+PASS ecology: Harmony season multiplier executes through the actual native private selection method
+PASS ecology: native non-mushroom wild selection remains unchanged by mushroom season profiles
+PASS ecology: actual native wild selection excludes roofed mushroom habitat
+PASS ecology: actual native wild selection enforces the global wild mushroom population cap
+PASS ecology: real ring spawns a complete minimum-sized group
+PASS ecology: ring uses one unsown species and fills previously empty cells
+PASS ecology: ring positions follow one rounded circle
+PASS ecology: full ring surrounds its center
+PASS ecology: real half-ring spawns a complete minimum-sized group
+PASS ecology: ring uses one unsown species and fills previously empty cells
+PASS ecology: ring positions follow one rounded circle
+PASS ecology: half-ring occupies a single half-plane
+PASS ecology: invalid roofed ring neither partially spawns nor consumes budget
+PASS ecology: extra wild spawn consumes daily allowance index=0
+PASS ecology: extra wild spawn consumes daily allowance index=1
+PASS ecology: extra wild spawn consumes daily allowance index=2
+PASS ecology: daily extra population allowance is enforced
+PASS ecology: removing plants cannot bypass an exhausted daily allowance
+PASS ecology: existing unsown map population counts toward total wild cap
+PASS ecology: ring also respects total wild population cap
+PASS ecology: fresh map has no unsolicited harvest-site regrowth
+PASS ecology: cutting a wild mushroom does not leave a mycelium ticket
+PASS ecology: failed harvest without native success notification does not leave a mycelium ticket
+PASS ecology: successful cultivated harvest does not leave wild mycelium
+PASS ecology: unsown mushroom inside growing zone does not leave wild mycelium
+PASS ecology: immature wild mushroom cannot queue regrowth
+PASS ecology: native successful harvest notification followed by collection creates one mycelium ticket
+PASS ecology: collected original cannot queue a duplicate ticket
+PASS ecology: mycelium stays invisible until its scheduled delay
+PASS ecology: delayed mycelium regenerates same wild species exactly once
+PASS ecology: regenerated plant starts immature rather than producing an instant harvest
+PASS ecology: repeated scheduler call cannot duplicate completed regrowth
+PASS ecology: harvesting regenerated mushroom cannot begin an endless second generation
+PASS ecology: a live original consumes its single regrowth opportunity at queue time
+PASS ecology: temporarily occupied harvest site waits without deleting its scheduled mycelium
+PASS ecology: blocked regrowth ticket is discarded by expiry rather than accumulating forever
+PASS ecology: soil conversion fixture begins with a real pending ticket
+PASS ecology: roof construction permanently cancels pending wild mycelium
+PASS fixture created; live sow/harvest jobs starting
+PASS assorted actual sow job selects species cycle=0 job=Sow (Job_1827) A = (143, 0, 125) selection=RMush_PlantAssorted allowSow=True skill=20 temperature=7.828103 things=
+PASS pawn actually planted assorted member RMush_PlantMaitake
+PASS actual assorted planting is kept until harvest
+PASS automatic worker recognizes mature assorted crop
+PASS actual assorted harvest yields chosen species RMush_RawMaitake
+PASS assorted actual sow job selects species cycle=1 job=Sow (Job_1955) A = (143, 0, 125) selection=RMush_PlantAssorted allowSow=True skill=20 temperature=21 things=
+PASS pawn actually planted assorted member RMush_PlantButton
+PASS actual assorted planting is kept until harvest
+PASS automatic worker recognizes mature assorted crop
+PASS actual assorted harvest yields chosen species RMush_RawButton
+PASS assorted actual sow job selects species cycle=2 job=Sow (Job_2086) A = (143, 0, 125) selection=RMush_PlantAssorted allowSow=True skill=20 temperature=21 things=
+PASS pawn actually planted assorted member RMush_PlantBeech
+PASS actual assorted planting is kept until harvest
+PASS hydroponics fixture remains inside isolated map
+PASS actual hydroponics basin is powered through native battery/conduit network
+PASS selected vanilla hydroponics basin creates native crop-selection command
+PASS hydroponics assorted pool still contains exactly nine real species
+PASS hydroponics individually cultivates all eleven species
+PASS native hydroponics crop menu includes RMush_PlantBeech
+PASS native hydroponics crop menu includes RMush_PlantButton
+PASS native hydroponics crop menu includes RMush_PlantCauliflower
+PASS native hydroponics crop menu includes RMush_PlantEnoki
+PASS native hydroponics crop menu includes RMush_PlantKingOyster
+PASS native hydroponics crop menu includes RMush_PlantLionsMane
+PASS native hydroponics crop menu includes RMush_PlantMaitake
+PASS native hydroponics crop menu includes RMush_PlantOyster
+PASS native hydroponics crop menu includes RMush_PlantPurpleBlewit
+PASS native hydroponics crop menu includes RMush_PlantShiitake
+PASS native hydroponics crop menu includes RMush_PlantWoodEar
+PASS native hydroponics crop menu includes RMush_PlantAssorted
+PASS wild-only mushroom is excluded from hydroponics menu RMush_PlantMatsutake
+PASS wild-only mushroom is excluded from hydroponics menu RMush_PlantEnokiWild
+PASS vanilla rice remains selectable in hydroponics menu
+PASS actual hydroponics building overrides soil with 280 percent fertility
+PASS assorted selection resolves from actual Building_PlantGrower
+PASS hydroponic assorted rejects skill 5 in jobs and automatic scan
+PASS hydroponic assorted accepts skill 6 in automatic scan
+PASS hydroponic assorted respects basin blackout sow gate
+PASS native automatic scan excludes unpowered hydroponics basin
+PASS mushrooms retain vanilla hydroponics blackout damage
+PASS assorted basin never cuts growing member RMush_PlantBeech
+PASS automatic assorted basin harvest accepts every real member RMush_PlantBeech
+PASS assorted basin never cuts growing member RMush_PlantButton
+PASS automatic assorted basin harvest accepts every real member RMush_PlantButton
+PASS assorted basin never cuts growing member RMush_PlantEnoki
+PASS automatic assorted basin harvest accepts every real member RMush_PlantEnoki
+PASS assorted basin never cuts growing member RMush_PlantKingOyster
+PASS automatic assorted basin harvest accepts every real member RMush_PlantKingOyster
+PASS assorted basin never cuts growing member RMush_PlantLionsMane
+PASS automatic assorted basin harvest accepts every real member RMush_PlantLionsMane
+PASS assorted basin never cuts growing member RMush_PlantMaitake
+PASS automatic assorted basin harvest accepts every real member RMush_PlantMaitake
+PASS assorted basin never cuts growing member RMush_PlantOyster
+PASS automatic assorted basin harvest accepts every real member RMush_PlantOyster
+PASS assorted basin never cuts growing member RMush_PlantShiitake
+PASS automatic assorted basin harvest accepts every real member RMush_PlantShiitake
+PASS assorted basin never cuts growing member RMush_PlantWoodEar
+PASS automatic assorted basin harvest accepts every real member RMush_PlantWoodEar
+PASS native automatic sow scan includes selected powered basin RMush_PlantBeech cycle=0
+PASS native hydroponic sow job chooses real species RMush_PlantBeech cycle=0 job=Sow (Job_2146) A = (141, 0, 115) power=True temperature=21 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantBeech
+PASS pawn actually sowed hydroponic RMush_PlantBeech cycle=0
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantBeech
+PASS native 280 percent basin fertility reaches planted RMush_PlantBeech
+PASS hydroponic fertility multiplier RMush_PlantBeech=1.54
+PASS native basin light and temperature support growth RMush_PlantBeech
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantBeech
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantBeech
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantBeech
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantBeech
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantBeech
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantBeech
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantBeech
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawBeech cycle=0
+PASS native automatic sow scan includes selected powered basin RMush_PlantButton cycle=1
+PASS native hydroponic sow job chooses real species RMush_PlantButton cycle=1 job=Sow (Job_2297) A = (141, 0, 115) power=True temperature=21 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantButton
+PASS pawn actually sowed hydroponic RMush_PlantButton cycle=1
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantButton
+PASS native 280 percent basin fertility reaches planted RMush_PlantButton
+PASS hydroponic fertility multiplier RMush_PlantButton=1.54
+PASS native basin light and temperature support growth RMush_PlantButton
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantButton
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantButton
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantButton
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantButton
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantButton
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantButton
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantButton
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawButton cycle=1
+PASS native automatic sow scan includes selected powered basin RMush_PlantCauliflower cycle=2
+PASS native hydroponic sow job chooses real species RMush_PlantCauliflower cycle=2 job=Sow (Job_2439) A = (141, 0, 115) power=True temperature=21 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantCauliflower
+PASS pawn actually sowed hydroponic RMush_PlantCauliflower cycle=2
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantCauliflower
+PASS native 280 percent basin fertility reaches planted RMush_PlantCauliflower
+PASS hydroponic fertility multiplier RMush_PlantCauliflower=1.54
+PASS native basin light and temperature support growth RMush_PlantCauliflower
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantCauliflower
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantCauliflower
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantCauliflower
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantCauliflower
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantCauliflower
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantCauliflower
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantCauliflower
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawCauliflower cycle=2
+PASS native automatic sow scan includes selected powered basin RMush_PlantEnoki cycle=3
+PASS native hydroponic sow job chooses real species RMush_PlantEnoki cycle=3 job=Sow (Job_2586) A = (141, 0, 115) power=True temperature=21 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantEnoki
+PASS pawn actually sowed hydroponic RMush_PlantEnoki cycle=3
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantEnoki
+PASS native 280 percent basin fertility reaches planted RMush_PlantEnoki
+PASS hydroponic fertility multiplier RMush_PlantEnoki=1.54
+PASS native basin light and temperature support growth RMush_PlantEnoki
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantEnoki
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantEnoki
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantEnoki
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantEnoki
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantEnoki
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantEnoki
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantEnoki
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawEnoki cycle=3
+PASS native automatic sow scan includes selected powered basin RMush_PlantKingOyster cycle=4
+PASS native hydroponic sow job chooses real species RMush_PlantKingOyster cycle=4 job=Sow (Job_2758) A = (141, 0, 115) power=True temperature=21 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantKingOyster
+PASS pawn actually sowed hydroponic RMush_PlantKingOyster cycle=4
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantKingOyster
+PASS native 280 percent basin fertility reaches planted RMush_PlantKingOyster
+PASS hydroponic fertility multiplier RMush_PlantKingOyster=1.54
+PASS native basin light and temperature support growth RMush_PlantKingOyster
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantKingOyster
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantKingOyster
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantKingOyster
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantKingOyster
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantKingOyster
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantKingOyster
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantKingOyster
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawKingOyster cycle=4
+PASS native automatic sow scan includes selected powered basin RMush_PlantLionsMane cycle=5
+PASS native hydroponic sow job chooses real species RMush_PlantLionsMane cycle=5 job=Sow (Job_2932) A = (141, 0, 115) power=True temperature=21 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantLionsMane
+PASS pawn actually sowed hydroponic RMush_PlantLionsMane cycle=5
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantLionsMane
+PASS native 280 percent basin fertility reaches planted RMush_PlantLionsMane
+PASS hydroponic fertility multiplier RMush_PlantLionsMane=1.54
+PASS native basin light and temperature support growth RMush_PlantLionsMane
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantLionsMane
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantLionsMane
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantLionsMane
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantLionsMane
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantLionsMane
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantLionsMane
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantLionsMane
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawLionsMane cycle=5
+PASS native automatic sow scan includes selected powered basin RMush_PlantMaitake cycle=6
+PASS native hydroponic sow job chooses real species RMush_PlantMaitake cycle=6 job=Sow (Job_3063) A = (141, 0, 115) power=True temperature=21 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantMaitake
+PASS pawn actually sowed hydroponic RMush_PlantMaitake cycle=6
+PASS hydroponics contains an ordinary crop rather than assorted selector plant
+PASS hydroponic crop is kept without cutting or replanting RMush_PlantMaitake
+PASS native 280 percent basin fertility reaches planted RMush_PlantMaitake
+PASS hydroponic fertility multiplier RMush_PlantMaitake=1.54
+PASS native basin light and temperature support growth RMush_PlantMaitake
+PASS hydroponic real mushroom retains shade-aware class and fertility sensitivity 0.3 RMush_PlantMaitake
+PASS shaded hydroponic mushroom uses full 1.54 fertility multiplier RMush_PlantMaitake
+PASS full-light hydroponic mushroom retains 50 percent shade penalty RMush_PlantMaitake
+PASS hydroponic fertility and sunlight penalties multiply in actual growth RMush_PlantMaitake
+PASS actual hydroponic growth tick follows selected species growDays RMush_PlantMaitake
+PASS native automatic harvester recognizes mature hydroponic RMush_PlantMaitake
+PASS native hydroponic harvest queue contains actual planted species RMush_PlantMaitake
+PASS actual hydroponic pawn harvest yields selected ingredient RMush_RawMaitake cycle=6
+PASS native automatic sow scan includes selected powered basin RMush_PlantOyster cycle=7
+PASS native hydroponic sow job chooses real species RMush_PlantOyster cycle=7 job=Sow (Job_3289) A = (141, 0, 115) power=True temperature=21 skill=20 reserve=True season=True blocker= things=HydroponicsBasin,PowerConduit
+PASS selected actual crop accepts basin fertility and planting cell RMush_PlantOyster
+RESULT FAIL System.Exception: Hydroponics timeout phase=2 cycle=7 job=Wait_Downed (Job_4339) Giver = JobGiver_IdleForever [workGiverDef: null] basinPower=False
+[Ref DCEC836C]
+  at RimMushroomsTests.HydroponicsTests.Update () [0x0015a] in <284fd79e85e347ef8a915129fd45c2ec>:0 
+  at RimMushroomsTests.SmokeTests.GameComponentUpdate () [0x00a8e] in <284fd79e85e347ef8a915129fd45c2ec>:0 

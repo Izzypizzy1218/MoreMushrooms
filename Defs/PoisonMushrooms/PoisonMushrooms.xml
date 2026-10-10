@@ -37,7 +37,7 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawFlyAgaric</defName>
     <label>fly agaric</label>
-    <description>Fly agaric mushrooms. Can be eaten raw or used automatically in ordinary cooking. A standard exposure grants +10 mood for 6 hours and 2–3 hours of uncontrolled hallucination wandering, together with neurological poisoning. Confusion, drowsiness and impaired consciousness. High or repeated exposure can become life-threatening without sufficient care. Effects and poisoning remain when used in meals.</description>
+    <description>Fly agaric mushrooms. Can be eaten raw or used automatically in ordinary cooking. A first standard exposure (10 mushrooms) grants +10 mood for 6 hours and 8–12 hours of uncontrolled hallucination wandering, together with neurological poisoning. Confusion, drowsiness and impaired consciousness. High or repeated exposure can become life-threatening without sufficient care. Effects and poisoning remain when used in meals. Amount affects mood and duration; new episodes are scheduled for 6–24 hours. Repeated intake cannot extend an episode beyond 24 hours from first exposure. Sleep or incapacitation can end wandering early.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/FlyAgaric</texPath>
     </graphicData>
@@ -57,8 +57,8 @@
         <psychoactive>true</psychoactive>
         <moodBonus>10</moodBonus>
         <moodDurationHours>6</moodDurationHours>
-        <hallucinationHoursMin>2</hallucinationHoursMin>
-        <hallucinationHoursMax>3</hallucinationHoursMax>
+        <hallucinationHoursMin>8</hallucinationHoursMin>
+        <hallucinationHoursMax>12</hallucinationHoursMax>
         <poisonHediff>RMush_PoisonFlyAgaric</poisonHediff>
       </li>
     </modExtensions>
@@ -72,7 +72,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantFlyAgaric</defName>
     <label>fly agaric cluster</label>
-    <description>A wild fly agaric cluster. Can be harvested but cannot be sown. The harvested mushrooms can be eaten raw or used in ordinary meals, causing mood effects, uncontrolled hallucination wandering and neurological poisoning.</description>
+    <description>A wild fly agaric cluster. Can be harvested but cannot be sown. The harvested mushrooms can be eaten raw or used in ordinary meals, causing mood effects, uncontrolled hallucination wandering and neurological poisoning. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/FlyAgaric</texPath>
     </graphicData>
@@ -91,6 +91,17 @@
         <BorealForest>0.005</BorealForest>
       </wildBiomes>
     </plant>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomEcologyExtension">
+        <springFactor>0.76470588</springFactor>
+        <summerFactor>1.17647059</summerFactor>
+        <fallFactor>1.76470588</fallFactor>
+        <winterFactor>0.29411765</winterFactor>
+        <ringEligible>false</ringEligible>
+        <regrowthChance>0</regrowthChance>
+        <regrowthDelayDays>6.0</regrowthDelayDays>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawDestroyingAngel</defName>
@@ -128,7 +139,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantDestroyingAngel</defName>
     <label>destroying angel cluster</label>
-    <description>A wild cluster of poisonous destroying angel. Can be harvested but cannot be sown. Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <description>A wild cluster of poisonous destroying angel. Can be harvested but cannot be sown. Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. The harvested mushrooms are excluded from automatic eating and ordinary cooking. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/DestroyingAngel</texPath>
     </graphicData>
@@ -147,6 +158,17 @@
         <BorealForest>0.002</BorealForest>
       </wildBiomes>
     </plant>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomEcologyExtension">
+        <springFactor>0.76470588</springFactor>
+        <summerFactor>1.17647059</summerFactor>
+        <fallFactor>1.76470588</fallFactor>
+        <winterFactor>0.29411765</winterFactor>
+        <ringEligible>false</ringEligible>
+        <regrowthChance>0</regrowthChance>
+        <regrowthDelayDays>7.0</regrowthDelayDays>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawSulfurTuft</defName>
@@ -184,7 +206,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantSulfurTuft</defName>
     <label>sulfur tuft cluster</label>
-    <description>A wild cluster of poisonous sulfur tuft. Can be harvested but cannot be sown. Persistent gastroenteritis, vomiting, pain and weakness. High or repeated exposure can become life-threatening without sufficient care. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <description>A wild cluster of poisonous sulfur tuft. Can be harvested but cannot be sown. Persistent gastroenteritis, vomiting, pain and weakness. High or repeated exposure can become life-threatening without sufficient care. The harvested mushrooms are excluded from automatic eating and ordinary cooking. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/SulfurTuft</texPath>
     </graphicData>
@@ -204,6 +226,17 @@
         <BorealForest>0.003</BorealForest>
       </wildBiomes>
     </plant>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomEcologyExtension">
+        <springFactor>0.76470588</springFactor>
+        <summerFactor>1.17647059</summerFactor>
+        <fallFactor>1.76470588</fallFactor>
+        <winterFactor>0.29411765</winterFactor>
+        <ringEligible>false</ringEligible>
+        <regrowthChance>0</regrowthChance>
+        <regrowthDelayDays>4.0</regrowthDelayDays>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawTsukiyotake</defName>
@@ -241,7 +274,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantTsukiyotake</defName>
     <label>tsukiyotake cluster</label>
-    <description>A wild cluster of poisonous tsukiyotake. Can be harvested but cannot be sown. Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <description>A wild cluster of poisonous tsukiyotake. Can be harvested but cannot be sown. Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss. The harvested mushrooms are excluded from automatic eating and ordinary cooking. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Tsukiyotake</texPath>
     </graphicData>
@@ -260,6 +293,17 @@
         <TemperateSwamp>0.004</TemperateSwamp>
       </wildBiomes>
     </plant>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomEcologyExtension">
+        <springFactor>0.76470588</springFactor>
+        <summerFactor>1.17647059</summerFactor>
+        <fallFactor>1.76470588</fallFactor>
+        <winterFactor>0.29411765</winterFactor>
+        <ringEligible>false</ringEligible>
+        <regrowthChance>0</regrowthChance>
+        <regrowthDelayDays>4.0</regrowthDelayDays>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawPoisonFireCoral</defName>
@@ -297,7 +341,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantPoisonFireCoral</defName>
     <label>poison fire coral cluster</label>
-    <description>A wild cluster of poisonous poison fire coral. Can be harvested but cannot be sown. Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. The harvested mushrooms are excluded from automatic eating and ordinary cooking.</description>
+    <description>A wild cluster of poisonous poison fire coral. Can be harvested but cannot be sown. Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. The harvested mushrooms are excluded from automatic eating and ordinary cooking. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/PoisonFireCoral</texPath>
     </graphicData>
@@ -317,5 +361,16 @@
         <TropicalRainforest>0.002</TropicalRainforest>
       </wildBiomes>
     </plant>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomEcologyExtension">
+        <springFactor>0.76470588</springFactor>
+        <summerFactor>1.17647059</summerFactor>
+        <fallFactor>1.76470588</fallFactor>
+        <winterFactor>0.29411765</winterFactor>
+        <ringEligible>false</ringEligible>
+        <regrowthChance>0</regrowthChance>
+        <regrowthDelayDays>7.0</regrowthDelayDays>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>

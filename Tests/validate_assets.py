@@ -61,7 +61,7 @@ def validate_poison(defs, docs, assorted_choices):
             exposure = raw.find("modExtensions/li[@Class='RimMushrooms.MushroomExposureProperties']")
             check(outcome is not None and exposure is not None and exposure.findtext("poisonHediff") == poison_name and exposure.findtext("psychoactive") == "true", "fly agaric raw and cooked psychoactive exposure")
             check(float(exposure.findtext("doseUnitCount")) == 10 and float(exposure.findtext("moodBonus")) == 10 and float(exposure.findtext("moodDurationHours")) == 6, "configured fly agaric standard exposure")
-            check((float(exposure.findtext("hallucinationHoursMin")), float(exposure.findtext("hallucinationHoursMax"))) == (2, 3), "fly agaric control loss lasts two to three hours")
+            check([float(exposure.findtext("hallucinationHoursMin")), float(exposure.findtext("hallucinationHoursMax"))] == mushroom["hallucinationHours"] == [8, 12], "fly agaric control loss lasts eight to twelve hours")
         else:
             outcome = raw.find("ingestible/outcomeDoers/li[@Class='RimMushrooms.IngestionOutcomeDoer_MushroomPoison']")
             check(outcome is not None and outcome.findtext("hediff") == poison_name and int(outcome.findtext("doseUnitCount")) == 1, "correct poisoning ingestion link " + identity)
@@ -184,7 +184,7 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
     catalog = json.loads((ROOT / config["catalog"]).read_text(encoding="utf-8"))
     registry = {m["id"]: m for m in catalog["species"]}
     species = config["mushrooms"]
-    check(config["contentVersion"] == balance["version"] == "0.5.0", "expansion and release versions match")
+    check(config["contentVersion"] == balance["version"] == "0.6.4", "expansion and release versions match")
     check(len(species) == len(registry) == 31 and {m["id"] for m in species} == set(registry), "all thirty-one approved expansion species represented exactly once")
     check(not set(registry).intersection(catalog["existing_species_excluded"]), "expansion does not redefine existing fifteen species")
     check({m["id"] for m in species if m["cultivable"]} == {"Cauliflower", "PurpleBlewit"}, "exactly two new cultivated varieties")
@@ -217,7 +217,7 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
         check(float(plant.findtext("plant/growDays")) == mushroom["growDays"] and int(plant.findtext("plant/harvestYield")) == mushroom["yield"], "configured expansion growth and yield " + identity)
         tags = {n.text for n in plant.findall("plant/sowTags/li")}
         check(tags == ({"Ground", "Hydroponic"} if mushroom["cultivable"] else set()), "new cultivar supports hydroponics and wild species cannot be sown " + identity)
-        check(plant_name not in assorted_choices, "original nine-variety assorted selection remains unchanged " + identity)
+        check((plant_name in assorted_choices) == mushroom["cultivable"], "assorted includes both new cultivars and excludes wild-only species " + identity)
         if mushroom["cultivable"]:
             check(int(plant.findtext("plant/sowMinSkill")) == mushroom["skill"], "configured new cultivation skill " + identity)
         else:
@@ -225,13 +225,14 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
         check(plant.findtext("plant/humanFoodPlant") == str(food).lower() and plant.findtext("plant/purpose") == ("Food" if food else "Misc"), "new plant purpose matches harvest use " + identity)
         check(plant.findtext("plant/wildClusterWeight") == "1" and plant.findtext("plant/wildClusterRadius") == "2", "small expansion wild clusters " + identity)
         biomes = {n.tag: float(n.text) for n in plant.findall("plant/wildBiomes/*")}
-        check(biomes == mushroom["biomes"] and all(0 < weight <= .002 for weight in biomes.values()), "low configured expansion wild-selection weights " + identity)
+        check(biomes == mushroom["biomes"] and all(0 < weight <= .004 for weight in biomes.values()), "bounded configured expansion wild-selection weights " + identity)
         for biome, weight in biomes.items(): wild_totals[biome] = round(wild_totals.get(biome, 0) + weight, 8)
         if use == "psychoactive":
             exposure = raw.find("modExtensions/li[@Class='RimMushrooms.MushroomExposureProperties']")
             check(exposure is not None and exposure.findtext("psychoactive") == "true" and float(exposure.findtext("doseUnitCount")) == 10, "raw and meal psychoactive exposure contract " + identity)
             check(float(exposure.findtext("moodBonus")) == mushroom["mood"] and float(exposure.findtext("moodDurationHours")) == 6, "six-hour psychoactive mood " + identity)
-            check([float(exposure.findtext(field)) for field in ("hallucinationHoursMin", "hallucinationHoursMax")] == mushroom["hallucinationHours"], "configured loss-of-control duration " + identity)
+            expected_hours = {"LibertyCap": [6, 8], "Cubensis": [6, 8], "PantherCap": [12, 24]}[identity]
+            check([float(exposure.findtext(field)) for field in ("hallucinationHoursMin", "hallucinationHoursMax")] == mushroom["hallucinationHours"] == expected_hours, "configured six-to-twenty-four-hour loss-of-control duration " + identity)
             check(raw.find("ingestible/outcomeDoers/li[@Class='RimMushrooms.IngestionOutcomeDoer_MushroomExposure']") is not None and raw.find("ingestible/specialThoughtDirect") is None and raw.find("ingestible/specialThoughtAsIngredient") is None, "psychoactive effects use one unified ingestion path " + identity)
             check(exposure.findtext("poisonHediff") == mushroom.get("poisonHediff"), "only panther cap links an expansion psychoactive poison " + identity)
         elif use == "poisonous":
@@ -243,8 +244,11 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
         elif use == "food" and mushroom["mood"]:
             thought_name = "RMush_Ate" + identity
             thought = thought_by_name[thought_name]
-            check(thought.findtext("thoughtClass") == "RimMushrooms.Thought_MushroomEnjoyment" and float(thought.findtext("durationDays")) == .25 and thought.findtext("stackLimit") == "1", "new edible six-hour nonstacking enjoyment " + identity)
-            check(float(thought.findtext("stages/li/baseMoodEffect")) == mushroom["mood"] and mushroom["mood"] in (3, 5, 7), "new edible belongs to approved taste groups " + identity)
+            mood_hours = mushroom.get("moodDurationHours", balance["common"]["moodDurationHours"])
+            premium = mushroom["group"] == "premium-wild-edible"
+            check(mood_hours == (48 if premium else 6), "premium or ordinary taste duration " + identity)
+            check(thought.findtext("thoughtClass") == "RimMushrooms.Thought_MushroomEnjoyment" and float(thought.findtext("durationDays")) == mood_hours / 24 and thought.findtext("stackLimit") == "1", "configured nonstacking enjoyment duration " + identity)
+            check(float(thought.findtext("stages/li/baseMoodEffect")) == mushroom["mood"] and (mushroom["mood"] == 15 if premium else mushroom["mood"] in (3, 5, 7)), "approved premium or ordinary taste groups " + identity)
             check(all(raw.findtext("ingestible/" + tag) == thought_name for tag in ("specialThoughtDirect", "specialThoughtAsIngredient")), "new edible taste applies raw and cooked " + identity)
             for field in ("label", "description"):
                 expected_text["ThoughtDef"][thought_name + ".stages.0." + field] = thought.findtext("stages/li/" + field)
@@ -252,7 +256,7 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
             check(raw.find("ingestible/specialThoughtDirect") is None and raw.find("ingestible/outcomeDoers") is None and raw.find("modExtensions") is None, "plain food or paused resource has no unapproved medical effect " + identity)
         for name, definition in ((raw_name, raw), (plant_name, plant)):
             for suffix in ("label", "description"): expected_text["ThingDef"][name + "." + suffix] = definition.findtext(suffix)
-    check(wild_totals == config["newWildCommonalityTotals"] and wild_totals["TemperateForest"] <= .03 and wild_totals["BorealForest"] <= .01, "aggregate expansion wild budgets remain small")
+    check(wild_totals == config["newWildCommonalityTotals"], "aggregate expansion wild weights match configured diversity budgets")
     for language in ("English", "Korean"):
         for def_type, expected in expected_text.items():
             entries = list(ET.parse(ROOT / "Languages" / language / "DefInjected" / def_type / "ExpansionMushrooms.xml").getroot())
@@ -295,6 +299,109 @@ def validate_psychoactive(docs, thoughts):
             expected = [identity + ".stages." + str(index) + "." + field for index in range(3) for field in ("label", "description")] if def_type == "ThoughtDef" else [identity + ".label", identity + ".description"] if def_type == "HediffDef" else [identity + ".label", identity + ".beginLetter", identity + ".recoveryMessage", identity + ".baseInspectLine"]
             check(all(key in translated for key in expected), "complete Korean psychoactive effect strings " + identity)
 
+def validate_wild_ecology(defs, docs, balance, expansion, poison):
+    """Validate balanced diversity, native glow and bounded opt-in wild features."""
+    config = json.loads((ROOT / "Balance/wild_ecology.json").read_text(encoding="utf-8"))
+    check(config["contentVersion"] == balance["version"] == expansion["contentVersion"], "ecology and species versions agree")
+    check(set(config["scope"]) == {"wild diversity", "native bioluminescence", "fairy rings", "seasonal wild emergence", "limited harvest-site mycelium regrowth"}, "ecology scope limited to five approved features")
+    species = balance["mushrooms"] + poison["mushrooms"] + expansion["mushrooms"]
+    registry = {m["id"]: m for m in species}
+    check(set(config["species"]) == set(registry) == set(config["commonality"]["baselineBiomes"]), "ecology covers forty-six existing species without new identities")
+    definitions = [n for path, document in docs.items() if "Defs" in path.parts for n in document.getroot()]
+    settings_defs = [n for n in definitions if n.tag == "RimMushrooms.WildMushroomEcologyDef"]
+    check(len(settings_defs) == 1 and settings_defs[0].findtext("defName") == "RMush_WildEcology", "single custom wild ecology settings definition")
+    settings = config["settings"]
+    runtime_path = ROOT / "Source/WildMushroomEcology.cs"
+    check(runtime_path.is_file(), "wild ecology definitions have a matching runtime source")
+    runtime = runtime_path.read_text(encoding="utf-8")
+    check(all(re.search(r"class\s+" + name + r"\b", runtime) for name in ("MushroomEcologyExtension", "WildMushroomEcologyDef", "MapComponent_WildMushrooms", "MushroomMycelium")), "ecology runtime implements settings, species profiles, map lifecycle and saved mycelium")
+    settings_source = runtime.split("class WildMushroomEcologyDef", 1)[1].split("class MushroomMycelium", 1)[0]
+    for key, value in settings.items():
+        check(re.search(r"public\s+" + ("int" if isinstance(value, int) else "float") + r"\s+" + key + r"\b", settings_source) is not None, "ecology XML field exists in runtime " + key)
+    check(set(n.tag for n in settings_defs[0]) == {"defName"} | set(settings), "ecology XML has exactly the configured settings")
+    for key, value in settings.items():
+        check(float(settings_defs[0].findtext(key)) == value, "configured ecology setting " + key)
+    check(settings["checkIntervalTicks"] >= 2500 and 1 <= settings["sampleAttempts"] <= 32 and 1 <= settings["dailyExtraBudget"] <= 8, "sparse emergence checks with a shared daily budget")
+    check(1 <= settings["minWildCap"] <= settings["maxWildCap"] <= 1500 and 0 < settings["wildCapPer10000Cells"] <= 80, "bounded wild population cap preserves the measured v0.5 map population")
+    check(0 < settings["ringChancePerCheck"] <= .02 and settings["ringCooldownDays"] >= 3 and 4 <= settings["ringMinCount"] <= settings["ringMaxCount"] <= settings["dailyExtraBudget"], "small rare rings cannot exceed the daily emergence budget")
+    check(2 <= settings["ringMinRadius"] <= settings["ringMaxRadius"] <= 5 and 1 <= settings["maxPendingRegrowth"] <= 64 and settings["regrowthExpiryDays"] <= 10, "small ring footprints and bounded expiring mycelium records")
+    for name, profile in config["seasonProfiles"].items():
+        check(set(profile) == {"springFactor", "summerFactor", "fallFactor", "winterFactor"} and all(0 < factor <= 3 for factor in profile.values()), "valid four-season emergence factors " + name)
+        check(abs(sum(profile.values()) - 4) < 1e-7, "season profile retains an annual configured mean of one " + name)
+    ring_ids = {"Button", "PurpleBlewit", "GiantPuffball", "ShaggyInkcap"}
+    regrowth_ids = {"Button", "Shiitake", "Oyster", "Enoki", "WoodEar", "Beech", "PurpleBlewit", "ShaggyInkcap", "HoneyFungus", "TurkeyTail"}
+    check({identity for identity, value in config["species"].items() if value["ringEligible"]} == ring_ids, "rings restricted to four common edible species")
+    check({identity for identity, value in config["species"].items() if value["regrowthChance"] > 0} == regrowth_ids, "regrowth restricted to ten common species without premium or poisonous farming")
+    ecology_count = 0
+    glow_ids = set()
+    by_name = {definition.findtext("defName"): definition for definition in defs}
+    for name, plant in by_name.items():
+        if not name.startswith("RMush_Plant") or name == "RMush_PlantAssorted":
+            continue
+        identity = name.removeprefix("RMush_Plant")
+        identity = "Enoki" if identity == "EnokiWild" else identity
+        value = config["species"][identity]
+        extension = plant.findall("modExtensions/li[@Class='RimMushrooms.MushroomEcologyExtension']")
+        check(len(extension) == 1, "single per-species ecology extension " + name)
+        expected = config["seasonProfiles"][value["seasonProfile"]] | {key: value[key] for key in ("ringEligible", "regrowthChance", "regrowthDelayDays")}
+        check({n.tag for n in extension[0]} == set(expected), "exact ecology extension fields " + name)
+        for key, expected_value in expected.items():
+            actual = extension[0].findtext(key)
+            check(actual == str(expected_value).lower() if isinstance(expected_value, bool) else actual is not None and float(actual) == expected_value, "configured ecology extension " + name + "." + key)
+        check(0 <= value["regrowthChance"] <= .30 and 4 <= value["regrowthDelayDays"] <= 8, "delayed limited regrowth chance " + name)
+        glowers = plant.findall("comps/li[@Class='CompProperties_Glower']")
+        if "glow" in value:
+            glow_ids.add(identity)
+            check(len(glowers) == 1 and float(glowers[0].findtext("glowRadius")) == value["glow"]["radius"] and glowers[0].findtext("glowColor") == value["glow"]["color"] and float(glowers[0].findtext("overlightRadius")) == 0, "native light matches approved small glow " + name)
+        else:
+            check(not glowers, "ordinary species emits no artificial light " + name)
+        description = plant.findtext("description")
+        check(description.count(" Wild ecology: ") == 1 and "Seasonal emergence does not change cultivated growth." in description, "wild-only ecology is described once " + name)
+        ecology_count += 1
+    check(ecology_count == 47 and glow_ids == {"GhostFungus", "Chlorophos"}, "forty-seven plants and exactly two real native glow species")
+    check(by_name["RMush_PlantAssorted"].find("modExtensions/li[@Class='RimMushrooms.MushroomEcologyExtension']") is None, "assorted menu proxy does not acquire ecology")
+    baseline = config["commonality"]["baselineBiomes"]
+    old_ids = {m["id"] for m in poison["mushrooms"]} | {"Matsutake"}
+    for identity in old_ids:
+        check(registry[identity]["biomes"] == baseline[identity], "matsutake rarity and legacy poison weights preserved " + identity)
+    audits = config["commonality"]["biomeAudit"]
+    for biome, audit in audits.items():
+        before = round(sum(weights.get(biome, 0) for weights in baseline.values()), 8)
+        after = round(sum(m["biomes"].get(biome, 0) for m in species), 8)
+        old_expansion = round(sum(baseline[m["id"]].get(biome, 0) for m in expansion["mushrooms"]), 8)
+        new_expansion = round(sum(m["biomes"].get(biome, 0) for m in expansion["mushrooms"]), 8)
+        check(before == after == audit["beforeTotal"] == audit["afterTotal"], "exact total selection-weight budget preserved " + biome)
+        check(old_expansion == audit["beforeExpansionTotal"] and new_expansion == audit["afterExpansionTotal"] and new_expansion > old_expansion, "new-species diversity increase matches recorded audit " + biome)
+        check(abs(audit["beforeExpansionShare"] - old_expansion / before) < 1e-7 and abs(audit["afterExpansionShare"] - new_expansion / after) < 1e-7, "recorded before and after expansion shares " + biome)
+        for mushroom in balance["mushrooms"]:
+            if mushroom.get("wildOnly") or biome not in mushroom["biomes"]:
+                continue
+            ratio = mushroom["biomes"][biome] / baseline[mushroom["id"]][biome]
+            check(abs(ratio - audit["originalCultivatedMultiplier"]) < 3e-6 and 0.8 - 1e-7 <= ratio <= 1, "cultivated wild-weight reduction is bounded and audited " + mushroom["id"] + "." + biome)
+        for mushroom in expansion["mushrooms"]:
+            if biome not in mushroom["biomes"]:
+                continue
+            group = mushroom["group"]
+            factor = config["commonality"].get("biomeGroupOverrides", {}).get(biome, {}).get(group, config["commonality"]["expansionSpeciesOverrides"].get(mushroom["id"], config["commonality"]["expansionGroupMultipliers"][group]))
+            expected = round(baseline[mushroom["id"]][biome] * factor * audit["expansionMultiplierNormalization"], 8)
+            check(abs(mushroom["biomes"][biome] - expected) < 1.1e-8, "category-specific diversity scaling matches policy " + mushroom["id"] + "." + biome)
+    temperate = audits["TemperateForest"]
+    check(temperate["afterTotal"] == .1375 and abs(temperate["afterExpansionShare"] - .30) < 1e-6 and .8 <= temperate["originalCultivatedMultiplier"] <= .85, "temperate diversity rises from about eighteen to thirty percent at unchanged total weight")
+    for mushroom in balance["mushrooms"]:
+        name = "RMush_PlantEnokiWild" if mushroom["id"] == "Enoki" else "RMush_Plant" + mushroom["id"]
+        check({n.tag: float(n.text) for n in by_name[name].findall("plant/wildBiomes/*")} == mushroom["biomes"], "configured original species wild weights generated " + name)
+    for language in ("English", "Korean"):
+        keyed = ET.parse(ROOT / "Languages" / language / "Keyed/WildEcology.xml").getroot()
+        check(len(keyed) == len({n.tag for n in keyed}) == 3 and all(n.text and n.text.strip() for n in keyed), "complete unique ecology keyed translations " + language)
+        for filename in ("Mushrooms.xml", "PoisonMushrooms.xml", "ExpansionMushrooms.xml"):
+            translated = {n.tag: n.text for n in ET.parse(ROOT / "Languages" / language / "DefInjected/ThingDef" / filename).getroot()}
+            for name, plant in by_name.items():
+                key = name + ".description"
+                if name.startswith("RMush_Plant") and name != "RMush_PlantAssorted" and key in translated:
+                    check(("Wild ecology:" if language == "English" else "야생 생태:") in translated[key], "localized ecology plant description " + language + "." + name)
+    check(not any(n.tag in {"QuestScriptDef", "IncidentDef", "ResearchProjectDef", "RecipeDef"} for n in definitions), "ecology does not add deferred quests, facilities or medicinal crafting")
+
+
 def main():
     docs = {p: ET.parse(p) for folder in ("About","Defs","Languages","Patches") for p in (ROOT / folder).rglob("*.xml")}
     balance = json.loads((ROOT / "Balance/mushrooms.json").read_text(encoding="utf-8"))
@@ -303,9 +410,9 @@ def main():
         "Oyster": (5.5, 10, 0, 1, 15, 3), "KingOyster": (6.5, 11, 3, 1.4, 20, 5),
         "Enoki": (5, 9, 2, 1, 12, 3), "WoodEar": (6.5, 10, 3, 1.3, 30, 7),
         "Beech": (6.5, 12, 4, 1.3, 20, 5), "Maitake": (8, 14, 6, 1.8, 18, 7),
-        "LionsMane": (8, 12, 6, 2, 15, 7), "Matsutake": (12, 6, 0, 4, 12, 10),
+        "LionsMane": (8, 12, 6, 2, 15, 7), "Matsutake": (12, 6, 0, 4, 12, 15),
     }
-    check({m["id"]: tuple(m[field] for field in ("growDays", "yield", "skill", "value", "rotDays", "mood")) for m in balance["mushrooms"]} == preserved_balance, "original ten species balance preserved from v0.4.0")
+    check({m["id"]: tuple(m[field] for field in ("growDays", "yield", "skill", "value", "rotDays", "mood")) for m in balance["mushrooms"]} == preserved_balance, "original cultivation statistics preserved and matsutake mood updated")
     check(ET.parse(ROOT / "About/About.xml").findtext("modVersion") == balance["version"], "consistent release version")
     about = ET.parse(ROOT / "About/About.xml")
     check(about.findtext("description") == "46종류의 버섯을 추가합니다.", "concise forty-six species mod description")
@@ -328,8 +435,10 @@ def main():
     check({n.findtext("plant/harvestedThingDef") for n in defs if n.find("plant/harvestedThingDef") is not None} == {"RMush_Raw" + identity for identity in all_species}, "all forty-six distinct harvest species are connected to plants")
     assorted = next(n for n in defs if n.findtext("defName") == "RMush_PlantAssorted")
     choices = [n.text for n in assorted.findall("modExtensions/li[@Class='RimMushrooms.AssortedMushroomSettings']/varieties/li")]
-    check(len(choices) == len(set(choices)) == 9 and set(choices) == {"RMush_Plant" + m["id"] for m in balance["mushrooms"] if not m.get("wildOnly", False)}, "assorted chooses exactly nine cultivable species")
-    check(int(assorted.findtext("plant/sowMinSkill")) == max(m["skill"] for m in balance["mushrooms"] if not m.get("wildOnly", False)), "assorted requires skill for all nine species")
+    cultivable = [m for m in balance["mushrooms"] if not m.get("wildOnly", False)] + [m for m in expansion["mushrooms"] if m["cultivable"]]
+    check(len(choices) == len(set(choices)) == 11 and set(choices) == {"RMush_Plant" + m["id"] for m in cultivable}, "assorted chooses exactly eleven cultivable species")
+    check(int(assorted.findtext("plant/sowMinSkill")) == max(m["skill"] for m in cultivable) == 6, "assorted requires skill for all eleven species")
+    check(abs(float(assorted.findtext("plant/growDays")) - sum(m["growDays"] for m in cultivable)/11) < 1e-8, "assorted menu average covers all eleven species")
     check(assorted.find("plant/wildBiomes") is None, "assorted menu selection never spawns wild")
     check({n.text for n in assorted.findall("plant/sowTags/li")} == {"Ground", "Hydroponic"}, "assorted supports soil and hydroponics")
     icon = ROOT / "Textures/UI/Icons/AssortedMushrooms.png"
@@ -371,11 +480,13 @@ def main():
     expected_thought_names = legacy_thought_names | {"RMush_Ate" + m["id"] for m in expansion["mushrooms"] if m["use"] == "food" and m["mood"]} | {"RMush_PsychedelicExperience"}
     check(len(thoughts) == len(thought_by_name) == 22 and set(thought_by_name) == expected_thought_names, "ten preserved edible memories plus eleven expansion tastes and one shared psychoactive experience")
     check(balance["common"]["moodDurationHours"] == 6, "six game-hour duration")
-    check(sorted(m["mood"] for m in balance["mushrooms"]) == [3,3,3,5,5,5,7,7,7,10], "three mood groups and one premium mushroom")
+    check(sorted(m["mood"] for m in balance["mushrooms"]) == [3,3,3,5,5,5,7,7,7,15], "three mood groups and premium matsutake")
+    premium = [m for m in balance["mushrooms"] + expansion["mushrooms"] if m.get("moodDurationHours") == 48]
+    check({m["id"] for m in premium} == {"Matsutake", "BlackTruffle", "Porcini", "Morel", "BlackTrumpet"} and all(m["mood"] == 15 for m in premium), "exactly the five premium wild foods grant fifteen mood for forty-eight hours")
     for m in balance["mushrooms"]:
         thought_id = "RMush_Ate" + m["id"]
         thought = thought_by_name[thought_id]
-        check(float(thought.findtext("durationDays")) == 0.25 and int(thought.findtext("stackLimit")) == 1, "duration and stacking " + thought_id)
+        check(float(thought.findtext("durationDays")) == m.get("moodDurationHours", 6) / 24 and int(thought.findtext("stackLimit")) == 1, "duration and stacking " + thought_id)
         check(float(thought.findtext("stages/li/baseMoodEffect")) == m["mood"] and m["mood"] > 0, "positive configured bonus " + thought_id)
         raw = next(n for n in defs if n.findtext("defName") == "RMush_Raw" + m["id"])
         check(all(raw.findtext("ingestible/" + tag) == thought_id for tag in ("specialThoughtDirect", "specialThoughtAsIngredient")), "raw and cooked links " + thought_id)
@@ -405,6 +516,7 @@ def main():
     validate_poison(defs, docs, choices)
     validate_expansion(defs, thoughts, docs, balance, choices)
     validate_psychoactive(docs, thoughts)
+    validate_wild_ecology(defs, docs, balance, expansion, poison)
     total_definitions = sum(1 for path, doc in docs.items() if "Defs" in path.parts for definition in doc.getroot() if definition.find("defName") is not None)
     print(json.dumps({"status":"PASS", "checks":checks,"xml_files":len(docs),"definitions":total_definitions,"species":len(all_species),"textures":len(pngs)}, indent=2))
 

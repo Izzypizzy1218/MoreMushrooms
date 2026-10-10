@@ -40,9 +40,9 @@
     <durationDays>0.25</durationDays>
     <stackLimit>1</stackLimit>
     <stages>
-      <li><label>vivid mushroom visions</label><description>Colors and shapes feel wonderfully alive. Everything seems strangely connected.</description><baseMoodEffect>0</baseMoodEffect></li>
-      <li><label>dreamlike mushroom visions</label><description>The world feels soft and distant. For a while, everyday worries seem far away.</description><baseMoodEffect>0</baseMoodEffect></li>
-      <li><label>frightening mushroom visions</label><description>Nothing feels quite real, and every strange shape seems threatening. I want this to stop.</description><baseMoodEffect>0</baseMoodEffect></li>
+      <li><label>vivid mushroom visions</label><description>Colors and patterns ripple like sunlight on water. Has the world always been this dazzling?</description><baseMoodEffect>0</baseMoodEffect></li>
+      <li><label>dreamlike mushroom visions</label><description>A thin mist seems to hang between me and the world. My eyes are open, yet I'm floating through a dream.</description><baseMoodEffect>0</baseMoodEffect></li>
+      <li><label>frightening mushroom visions</label><description>Unfamiliar shadows seem to cover a place I know. I can't tell what's real, and I keep feeling afraid.</description><baseMoodEffect>0</baseMoodEffect></li>
     </stages>
   </ThoughtDef>
   <MentalStateDef>

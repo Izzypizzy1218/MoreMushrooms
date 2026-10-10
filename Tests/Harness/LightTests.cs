@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -13,14 +14,26 @@ namespace RimMushroomsTests
 {
     internal static class LightTests
     {
+        private static readonly HashSet<string> ProvenLegacyStaticOverlaps = new HashSet<string>();
+        internal static bool WasValidatedLegacyStaticOverlap(string id) => ProvenLegacyStaticOverlaps.Contains(id);
+
         public static void Run(Map map, IntVec3 cell, Action<bool, string> check)
         {
             int oldTicks = Find.TickManager.TicksGame;
             float oldGlow = map.skyManager.CurSkyGlow;
             var oldRoof = map.roofGrid.RoofAt(cell);
+            float? oldBiomeTemperature = map.Biome.constantOutdoorTemperature;
+            float oldCellTemperature = cell.GetTemperature(map);
             Plant plant = null;
             try
             {
+                // The biome target alone does not update RoomTempTracker until
+                // native equalization ticks. This synchronous light fixture must
+                // actually be at its declared 21C before measuring growth.
+                map.Biome.constantOutdoorTemperature = 21f;
+                cell.GetRoom(map).Temperature = 21f;
+                check(Mathf.Abs(cell.GetTemperature(map) - 21f) < 0.001f,
+                    "light fixture actual room temperature is 21C; previous=" + oldCellTemperature + " actual=" + cell.GetTemperature(map));
                 int toNoon = (int)((0.5f - GenLocalDate.DayPercent(map) + 1f) % 1f * 60000f);
                 Find.TickManager.DebugSetTicksGame(oldTicks + toNoon);
                 foreach (var def in DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Plant")))
@@ -76,6 +89,8 @@ namespace RimMushroomsTests
                 map.roofGrid.SetRoof(cell, oldRoof);
                 map.skyManager.ForceSetCurSkyGlow(oldGlow);
                 Find.TickManager.DebugSetTicksGame(oldTicks);
+                map.Biome.constantOutdoorTemperature = oldBiomeTemperature;
+                cell.GetRoom(map).Temperature = oldCellTemperature;
             }
         }
 
@@ -84,26 +99,69 @@ namespace RimMushroomsTests
             var plants = map.listerThings.AllThings.OfType<Plant>().Where(p => p.def.defName.StartsWith("RMush_Plant")).ToArray();
             check(plants.Length >= 33 && plants.All(p => p is Plant_Mushroom), (legacy ? "legacy" : "new") + " save restores shade-aware plants");
             if (!legacy) return;
-            var doc = new XmlDocument();
+            ProvenLegacyStaticOverlaps.Clear();
+            var doc = new XmlDocument { XmlResolver = null };
             doc.Load(Path.Combine(GenFilePaths.SaveDataFolderPath, "Saves", "MoreMushrooms-LegacyFixture.rws"));
+            var savedMap = doc.SelectSingleNode("/savegame/game/maps/li[uniqueID='" + map.uniqueID + "']");
+            check(savedMap != null, "legacy plant comparison uses the same saved map ID " + map.uniqueID);
+            var compressedStatics = ReadSavedCompressedStatics(savedMap, map, check);
             int compared = 0;
-            foreach (XmlNode node in doc.SelectNodes("//thing[@Class='Plant' or @Class='RimWorld.Plant' or @Class='RimMushrooms.Plant_Mushroom']"))
+            foreach (XmlNode node in savedMap.SelectNodes("things/thing[@Class='Plant' or @Class='RimWorld.Plant' or @Class='RimMushrooms.Plant_Mushroom']"))
             {
                 string defName = node["def"]?.InnerText;
                 if (defName == null || !defName.StartsWith("RMush_Plant")) continue;
-                var plant = plants.Single(p => p.ThingID == node["id"].InnerText);
-                check(plant.def.defName == defName && plant.Position == IntVec3.FromString(node["pos"].InnerText), "legacy identity and position preserved " + plant.ThingID);
+                string id = node["id"].InnerText;
+                var cell = IntVec3.FromString(node["pos"].InnerText);
+                var plant = plants.SingleOrDefault(p => p.ThingID == id);
+                if (plant == null)
+                {
+                    ushort hash;
+                    compressedStatics.TryGetValue(cell, out hash);
+                    var staticDef = hash == 0 ? null : DefDatabase<ThingDef>.AllDefs.SingleOrDefault(d => d.shortHash == hash);
+                    var blocker = cell.GetThingList(map).FirstOrDefault(t => t is Building && t.def == staticDef && t.def.saveCompressible);
+                    // The v0.6 DLC artwork fixture extended below its cleared soil
+                    // rectangle. Native plant spawn permits rock overlap, while
+                    // loading the saved compressed rock correctly wipes that plant.
+                    // Accept only this fully proven native case, never an unexplained
+                    // missing plant, changed ID, other map or held-object mismatch.
+                    check(hash != 0 && staticDef != null && blocker != null
+                        && GenSpawn.SpawningWipes(blocker.def, ThingDef.Named(defName)),
+                        "missing legacy plant must be explained by its original compressed static building and native wipe rule "
+                        + id + " cell=" + cell + " savedHash=" + hash + " resolvedDef=" + staticDef?.defName
+                        + " loadedCell=" + string.Join(",", cell.GetThingList(map).Select(t => t.ThingID + ":" + t.def.defName)));
+                    ProvenLegacyStaticOverlaps.Add(id);
+                    check(true, "preexisting v0.6 invalid artwork overlap receives native load wipe " + id
+                        + " cell=" + cell + " compressedHash=" + hash + " building=" + blocker.def.defName);
+                    continue;
+                }
+                check(plant.def.defName == defName && plant.Position == cell, "legacy identity and position preserved " + plant.ThingID);
                 check(Mathf.Abs(plant.Growth - float.Parse(node["growth"].InnerText, CultureInfo.InvariantCulture)) < 0.000001f, "legacy growth preserved " + plant.ThingID);
                 check(plant.Age == (node["age"] == null ? 0 : int.Parse(node["age"].InnerText)), "legacy age preserved " + plant.ThingID);
                 if (node["health"] != null) check(plant.HitPoints == int.Parse(node["health"].InnerText), "legacy health preserved " + plant.ThingID);
                 compared++;
             }
-            check(compared >= 33, "old save plants restored without replacing IDs or growth");
+            check(compared >= 33, "old save valid plants restored without replacing IDs or growth; compared=" + compared
+                + " provenPreexistingStaticOverlaps=" + ProvenLegacyStaticOverlaps.Count);
+            check(compared + ProvenLegacyStaticOverlaps.Count == savedMap.SelectNodes("things/thing[starts-with(def,'RMush_Plant')]").Count,
+                "every saved legacy mushroom is compared or has an independently proven original static overlap");
             check(map.listerThings.AllThings.OfType<Plant>().Where(p => !p.def.defName.StartsWith("RMush_Plant")).All(p => !(p is Plant_Mushroom)), "legacy vanilla plants not converted");
             // Check that loading did not write the class migration back into the source file.
             using (var stream = File.OpenRead(Path.Combine(GenFilePaths.SaveDataFolderPath, "Saves", "MoreMushrooms-LegacyFixture.rws")))
             using (var hash = SHA256.Create())
                 check(BitConverter.ToString(hash.ComputeHash(stream)).Replace("-", "") == File.ReadAllText(Path.Combine(GenFilePaths.SaveDataFolderPath, "legacy-input.sha256")).Trim(), "legacy input save remains unchanged on disk");
+        }
+
+        private static Dictionary<IntVec3, ushort> ReadSavedCompressedStatics(XmlNode savedMap, Map map, Action<bool, string> check)
+        {
+            var result = new Dictionary<IntVec3, ushort>();
+            string compressed = savedMap.SelectSingleNode("compressedThingMapDeflate")?.InnerText;
+            string uncompressed = savedMap.SelectSingleNode("compressedThingMap")?.InnerText;
+            if (string.IsNullOrWhiteSpace(compressed) && string.IsNullOrWhiteSpace(uncompressed)) return result;
+            byte[] bytes = string.IsNullOrWhiteSpace(compressed) ? Convert.FromBase64String(uncompressed)
+                : CompressUtility.Decompress(Convert.FromBase64String(compressed));
+            check(bytes.Length == map.cellIndices.NumGridCells * 2, "legacy compressed static grid has the expected native ushort dimensions");
+            MapSerializeUtility.LoadUshort(bytes, map, (cell, hash) => { if (hash != 0) result.Add(cell, hash); });
+            return result;
         }
     }
 }

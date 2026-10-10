@@ -10,7 +10,7 @@
     <stages>
       <li>
         <label>cauliflower flavor</label>
-        <description>The folded mushroom made for a satisfying bite.</description>
+        <description>Every crisp bite brings out more nutty flavor. For something shaped like flower petals, it has quite a bite.</description>
         <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
@@ -25,7 +25,7 @@
     <stages>
       <li>
         <label>purple blewit flavor</label>
-        <description>Its gentle sweetness and mushroom aroma worked well together.</description>
+        <description>A little sweetness peeks through that rich mushroom aroma. What an unexpected little treat.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -33,60 +33,60 @@
   <ThoughtDef>
     <defName>RMush_AteBlackTruffle</defName>
     <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
-    <durationDays>0.25</durationDays>
+    <durationDays>2.0</durationDays>
     <stackLimit>1</stackLimit>
     <showBubble>true</showBubble>
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
         <label>rich truffle aroma</label>
-        <description>The rich aroma lingered pleasantly.</description>
-        <baseMoodEffect>7</baseMoodEffect>
+        <description>That deep aroma fills my mouth. For a moment, my ordinary meal feels like a lavish feast.</description>
+        <baseMoodEffect>15</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
   <ThoughtDef>
     <defName>RMush_AtePorcini</defName>
     <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
-    <durationDays>0.25</durationDays>
+    <durationDays>2.0</durationDays>
     <stackLimit>1</stackLimit>
     <showBubble>true</showBubble>
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
         <label>nutty porcini flavor</label>
-        <description>The thick flesh had a rich, nutty flavor.</description>
-        <baseMoodEffect>7</baseMoodEffect>
+        <description>There's a gentle nutty flavor hiding in that thick flesh. It feels like I've brought home a little treasure from the woods.</description>
+        <baseMoodEffect>15</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
   <ThoughtDef>
     <defName>RMush_AteMorel</defName>
     <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
-    <durationDays>0.25</durationDays>
+    <durationDays>2.0</durationDays>
     <stackLimit>1</stackLimit>
     <showBubble>true</showBubble>
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
         <label>morel flavor</label>
-        <description>The gentle aroma and springy texture were pleasing.</description>
-        <baseMoodEffect>5</baseMoodEffect>
+        <description>That little honeycomb of a cap has a springy bite. Its mild flavor lets me take my time enjoying the texture.</description>
+        <baseMoodEffect>15</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
   <ThoughtDef>
     <defName>RMush_AteBlackTrumpet</defName>
     <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
-    <durationDays>0.25</durationDays>
+    <durationDays>2.0</durationDays>
     <stackLimit>1</stackLimit>
     <showBubble>true</showBubble>
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
         <label>black trumpet flavor</label>
-        <description>The thin mushroom added a pleasant note to the meal.</description>
-        <baseMoodEffect>5</baseMoodEffect>
+        <description>So much rich flavor hidden in such a thin piece. This little trumpet certainly makes itself heard in my mouth.</description>
+        <baseMoodEffect>15</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -100,7 +100,7 @@
     <stages>
       <li>
         <label>mild puffball flavor</label>
-        <description>The large, mild mushroom made a satisfying meal.</description>
+        <description>How can something this huge be so soft? It's like biting into a cloud with a gentle mushroom flavor.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -115,7 +115,7 @@
     <stages>
       <li>
         <label>indigo milkcap flavor</label>
-        <description>The unfamiliar blue mushroom tasted surprisingly pleasant.</description>
+        <description>I thought the color was the unusual part, but that earthy flavor has depth too. I close my eyes and feel as if I'm sitting in the woods.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -130,7 +130,7 @@
     <stages>
       <li>
         <label>veiled stinkhorn texture</label>
-        <description>The sponge-like mushroom added a pleasing texture.</description>
+        <description>Smooth as silk, then a little crunch. There's more going on in this bite than I expected.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -145,7 +145,7 @@
     <stages>
       <li>
         <label>shaggy inkcap flavor</label>
-        <description>The delicate flesh had a pleasant mild flavor.</description>
+        <description>As I bite into the tender flesh, its flavor spreads through my mouth like a little burst of ink.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -160,7 +160,7 @@
     <stages>
       <li>
         <label>lobster mushroom texture</label>
-        <description>The firm, springy mushroom flesh made a satisfying bite.</description>
+        <description>That thick, firm flesh makes every bite feel like a piece of lobster.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>

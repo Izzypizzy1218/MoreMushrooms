@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <MM_WildEcologySeasonFactor>제철에 따른 야생 발생 배율: {0}</MM_WildEcologySeasonFactor>
+  <MM_WildEcologyRing>야생에서 고리 모양 군락을 이룰 수 있습니다.</MM_WildEcologyRing>
+  <MM_WildEcologyRegrowth>야생에서 수확한 자리의 균사가 {0}일 후 다시 자랄 수 있습니다.</MM_WildEcologyRegrowth>
+</LanguageData>

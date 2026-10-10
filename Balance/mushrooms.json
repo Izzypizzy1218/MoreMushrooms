@@ -1,6 +1,6 @@
 {
-  "version": "0.5.0",
-  "status": "Initial gameplay balance draft, not real-world cultivation data.",
+  "version": "0.6.4",
+  "status": "v0.6.4 pre-release qualification and publication documentation. Gameplay values, descriptions, approved artwork and production code are unchanged from v0.6.3.",
   "common": {
     "stackLimit": 75,
     "lowMaxCount": 25,
@@ -25,8 +25,8 @@
       "value": 1.1,
       "rotDays": 20,
       "biomes": {
-        "TemperateForest": 0.018,
-        "TemperateSwamp": 0.012
+        "TemperateForest": 0.01468683,
+        "TemperateSwamp": 0.01131319
       },
       "mood": 3
     },
@@ -41,8 +41,8 @@
       "value": 1.5,
       "rotDays": 25,
       "biomes": {
-        "TemperateForest": 0.012,
-        "TropicalRainforest": 0.008
+        "TemperateForest": 0.00979121,
+        "TropicalRainforest": 0.0064
       },
       "mood": 5
     },
@@ -57,9 +57,9 @@
       "value": 1.0,
       "rotDays": 15,
       "biomes": {
-        "TemperateForest": 0.016,
-        "TemperateSwamp": 0.016,
-        "BorealForest": 0.01
+        "TemperateForest": 0.01305495,
+        "TemperateSwamp": 0.01508426,
+        "BorealForest": 0.00834706
       },
       "mood": 3
     },
@@ -74,8 +74,8 @@
       "value": 1.4,
       "rotDays": 20,
       "biomes": {
-        "TemperateForest": 0.01,
-        "AridShrubland": 0.005
+        "TemperateForest": 0.00815934,
+        "AridShrubland": 0.00409
       },
       "mood": 5
     },
@@ -90,8 +90,8 @@
       "value": 1.0,
       "rotDays": 12,
       "biomes": {
-        "TemperateForest": 0.012,
-        "BorealForest": 0.012
+        "TemperateForest": 0.00979121,
+        "BorealForest": 0.01001647
       },
       "mood": 3
     },
@@ -106,9 +106,9 @@
       "value": 1.3,
       "rotDays": 30,
       "biomes": {
-        "TemperateSwamp": 0.014,
-        "TropicalRainforest": 0.014,
-        "TropicalSwamp": 0.014
+        "TemperateSwamp": 0.01319872,
+        "TropicalRainforest": 0.0112,
+        "TropicalSwamp": 0.01207
       },
       "mood": 7
     },
@@ -123,8 +123,8 @@
       "value": 1.3,
       "rotDays": 20,
       "biomes": {
-        "TemperateForest": 0.01,
-        "BorealForest": 0.008
+        "TemperateForest": 0.00815934,
+        "BorealForest": 0.00667765
       },
       "mood": 5
     },
@@ -139,8 +139,8 @@
       "value": 1.8,
       "rotDays": 18,
       "biomes": {
-        "TemperateForest": 0.007,
-        "TemperateSwamp": 0.005
+        "TemperateForest": 0.00571154,
+        "TemperateSwamp": 0.00471383
       },
       "mood": 7
     },
@@ -155,8 +155,8 @@
       "value": 2.0,
       "rotDays": 15,
       "biomes": {
-        "TemperateForest": 0.006,
-        "BorealForest": 0.004
+        "TemperateForest": 0.0048956,
+        "BorealForest": 0.00333882
       },
       "mood": 7
     },
@@ -175,7 +175,8 @@
         "TemperateForest": 0.003,
         "BorealForest": 0.004
       },
-      "mood": 10
+      "mood": 15,
+      "moodDurationHours": 48
     }
   ]
 }

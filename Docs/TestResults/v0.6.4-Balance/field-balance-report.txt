@@ -1,0 +1,3 @@
+Mushroom field balance: PASS
+Cases 130/130; failures 0
+Accelerated native single-pawn health/mental-state fixture; not measured colony job loss.

@@ -1,0 +1,19 @@
+More Mushrooms native field work balance: PASS
+One pawn per treatment; 24 game hours each; preparation seed 640611; subsequent native RNG is not fixed by this harness
+Isolated profile autosave interval: 99 game days; save/load and autosave behavior are outside this observation.
+Native stonecutting, hunger/rest/health/mental-state AI. Output ratios are this small fixture's observations, not settlement labor guarantees.
+control-potatoes: observed=24h;blocks=400;DoBill=17.346h;recipe work=16.08h;mental=0h;sleep=6.2196h;down=0h;food poisoning=0h
+cubensis-first-standard: observed=24h;blocks=260;DoBill=11.154h;recipe work=10.452h;mental=6.5368h;sleep=5.9128h;down=0h;food poisoning=0h
+panther-first-standard: observed=24h;blocks=0;DoBill=0h;recipe work=0h;mental=18.886h;sleep=5.0164h;down=0h;food poisoning=0h
+
+Three matched adult human pawns from one fixed-seed preparation, one observation per food, each followed for 60,000 native ticks (24 game hours). Three pawns are not three replicates per treatment.
+A small controlled stonecutting comparison, not a general settlement labor value, population probability, medical study, or all-mod compatibility guarantee.
+The isolated profile's native autosave interval is 99 game days. For batch-mode observation it is configured beyond this one-day trial because a synchronous autosave waits for a GUI repaint. This experiment does not test save/load or autosaving.
+Each pawn has an identical enclosed room, an assigned normal-quality bed, one stonecutting table, 55 granite chunks, 30 fresh simple meals and a fueled torch lamp. Logistics, other workers, raids, treatment, social interaction and alternative jobs are absent.
+Only the initial native Ingest job is ordered. Crafting priority 1 and an Anything timetable let normal PawnJob AI choose bill work, food, sleep and other needs. The component never issues follow-up work orders or interrupts eating or sleeping.
+Initial health, traits, skills, genes, nutrition, rest and mood are prepared once before ingestion. No healing, tending, nutrition/rest restoration, forced waking, mental-state recovery, manual job/health/need ticks, exposure-timer edits or clock changes occur during observation.
+Raw food's native food-poisoning chance is retained. Food-poisoning, mushroom poisoning, rest, hunger and unrelated mental states can affect output; this one sample cannot separate their causal contributions.
+DoBill ticks include walking and ingredient handling; recipe-work ticks additionally use the native JobDriver_DoBill counter. Neither metric alone guarantees a finished product. Stone blocks actually present in that room/carried by its pawn are counted separately.
+Per-tick states can overlap: mental-state, sleep, downed and food-poisoning hours must not be added together. Unavailable-union hours count any mental state, sleep, downing or death once per tick.
+Mushroom mood-point-hours integrate only RMush memory offsets. They are not net overall mood, a recommendation to consume mushrooms, or a conversion between mood and labor value.
+Only fixture preparation uses the stated Rand seed in a same-frame PushState/PopState scope. Actual ingestion, duration sampling and the subsequent 24 hours use the normal game's RNG. The harness does not fix or claim deterministic global randomness across frames; the world seed is recorded separately.

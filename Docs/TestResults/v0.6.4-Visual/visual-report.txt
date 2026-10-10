@@ -1,0 +1,67 @@
+Native RimWorld render, 1600x1000; isolated Core profile; no postprocessing.
+Growth 25/65/100 percent (sown=false), raw stack 25/50/75. Enoki uses wild variant.
+Paused fixed fixtures measure appearance, not natural co-occurrence or growth rate.
+PAGE 1 row=0 RMush_PlantBeech
+PAGE 1 row=1 RMush_PlantBirdsNest
+PAGE 1 row=2 RMush_PlantBlackTruffle
+PAGE 1 row=3 RMush_PlantBlackTrumpet
+PAGE 1 row=4 RMush_PlantButton
+PAGE 1 row=5 RMush_PlantCauliflower
+PAGE 1 row=6 RMush_PlantChaga
+PAGE 1 row=7 RMush_PlantChlorophos
+PAGE 1 row=8 RMush_PlantCordyceps
+PAGE 1 row=9 RMush_PlantCubensis
+PAGE 1 row=10 RMush_PlantDeadlyWebcap
+PAGE 1 row=11 RMush_PlantDeathCap
+FRAME growth-stack-page-1-normal.png bytes=2669477 cameraRootSize=18 cellPixels=27.77778 localDayFraction=0.5050167 skyGlow=1
+FRAME growth-stack-page-1-small.png bytes=645093 cameraRootSize=32 cellPixels=15.625 localDayFraction=0.50495 skyGlow=1
+PAGE 2 row=0 RMush_PlantDestroyingAngel
+PAGE 2 row=1 RMush_PlantDevilsFingers
+PAGE 2 row=2 RMush_PlantDryRot
+PAGE 2 row=3 RMush_PlantEnokiWild
+PAGE 2 row=4 RMush_PlantFlyAgaric
+PAGE 2 row=5 RMush_PlantGhostFungus
+PAGE 2 row=6 RMush_PlantGiantPuffball
+PAGE 2 row=7 RMush_PlantHoneyFungus
+PAGE 2 row=8 RMush_PlantIndigoMilkcap
+PAGE 2 row=9 RMush_PlantJackOLantern
+PAGE 2 row=10 RMush_PlantKingOyster
+PAGE 2 row=11 RMush_PlantLibertyCap
+FRAME growth-stack-page-2-normal.png bytes=2672245 cameraRootSize=18 cellPixels=27.77778 localDayFraction=0.5049667 skyGlow=1
+FRAME growth-stack-page-2-small.png bytes=635681 cameraRootSize=32 cellPixels=15.625 localDayFraction=0.5049667 skyGlow=1
+PAGE 3 row=0 RMush_PlantLionsMane
+PAGE 3 row=1 RMush_PlantLobster
+PAGE 3 row=2 RMush_PlantMaitake
+PAGE 3 row=3 RMush_PlantMatsutake
+PAGE 3 row=4 RMush_PlantMorel
+PAGE 3 row=5 RMush_PlantOyster
+PAGE 3 row=6 RMush_PlantPantherCap
+PAGE 3 row=7 RMush_PlantPoisonFireCoral
+PAGE 3 row=8 RMush_PlantPorcini
+PAGE 3 row=9 RMush_PlantPurpleBlewit
+PAGE 3 row=10 RMush_PlantReishi
+PAGE 3 row=11 RMush_PlantSanghuang
+FRAME growth-stack-page-3-normal.png bytes=2667779 cameraRootSize=18 cellPixels=27.77778 localDayFraction=0.5049334 skyGlow=1
+FRAME growth-stack-page-3-small.png bytes=627806 cameraRootSize=32 cellPixels=15.625 localDayFraction=0.5049334 skyGlow=1
+PAGE 4 row=0 RMush_PlantShaggyInkcap
+PAGE 4 row=1 RMush_PlantShiitake
+PAGE 4 row=2 RMush_PlantSulfurTuft
+PAGE 4 row=3 RMush_PlantTsukiyotake
+PAGE 4 row=4 RMush_PlantTurkeyTail
+PAGE 4 row=5 RMush_PlantVeiledStinkhorn
+PAGE 4 row=6 RMush_PlantWoodEar
+PAGE 4 row=7 RMush_PlantYellowBrain
+PAGE 4 row=8 RMush_PlantYellowDapperling
+PAGE 4 row=9 RMush_PlantZombieAntFungus
+FRAME growth-stack-page-4-normal.png bytes=2659815 cameraRootSize=18 cellPixels=27.77778 localDayFraction=0.50495 skyGlow=1
+FRAME growth-stack-page-4-small.png bytes=618889 cameraRootSize=32 cellPixels=15.625 localDayFraction=0.5049667 skyGlow=1
+Unavailable optional reference Plant_Glowstool
+NIGHT RMush_PlantGhostFungus own=0.5 adjacent=0.1411765 distance3=0
+NIGHT RMush_PlantChlorophos own=0.5 adjacent=0.3247059 distance3=0
+NIGHT RMush_PlantButton own=0 adjacent=0 distance3=0
+FRAME night-normal.png bytes=2288486 cameraRootSize=18 cellPixels=27.77778 localDayFraction=0.004933333 skyGlow=0
+Unavailable optional reference Plant_Glowstool
+NIGHT RMush_PlantGhostFungus own=0.5 adjacent=0.1411765 distance3=0
+NIGHT RMush_PlantChlorophos own=0.5 adjacent=0.3247059 distance3=0
+NIGHT RMush_PlantButton own=0 adjacent=0 distance3=0
+FRAME night-small.png bytes=533749 cameraRootSize=32 cellPixels=15.625 localDayFraction=0.004933333 skyGlow=0.01731218

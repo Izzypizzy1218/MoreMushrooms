@@ -1,0 +1,105 @@
+{
+  "version": "0.6.3",
+  "scope": "All 21 food descriptions and all three shared psychedelic descriptions rewritten with varied imagery in Korean and English. Labels and gameplay values retained.",
+  "metaphorPolicy": "The resident's personal imagery is fictional, not a claim that lobster mushroom is shellfish or that ink physically bursts from an eaten shaggy inkcap. Existing sensory research remains the factual basis; no new health effects.",
+  "food": {
+    "Button": {
+      "ko": "순한 향이 입안을 포근하게 감싸네. 자극적이지 않아서 오히려 한입 더 먹고 싶어.",
+      "en": "There's something comforting about that mild aroma. Its gentle flavor makes me want another bite."
+    },
+    "Shiitake": {
+      "ko": "씹을수록 진한 감칠맛이 배어 나와. 작은 버섯에 국물 한 그릇을 담아 놓은 것 같아.",
+      "en": "Every chew releases more savory flavor. It's like someone tucked a bowl of rich broth inside a little mushroom."
+    },
+    "Oyster": {
+      "ko": "부드러운 살이 결을 따라 풀려. 요란하지 않은 감칠맛이 슬쩍 다음 한입을 부르네.",
+      "en": "The tender flesh pulls apart in delicate strands. That quiet savory flavor keeps calling me back for another bite."
+    },
+    "KingOyster": {
+      "ko": "탱글한 줄기가 제법 든든하게 씹혀. 버섯 한 조각인데 작은 스테이크를 썰어 먹는 기분이야.",
+      "en": "That springy stem makes a substantial bite. One piece of mushroom, and I feel like I'm tucking into a little steak."
+    },
+    "Enoki": {
+      "ko": "아삭아삭, 가느다란 줄기들이 입안에서 경쾌한 박자를 맞추네.",
+      "en": "Crunch, crunch. Those slender stems are keeping a cheerful little rhythm in my mouth."
+    },
+    "WoodEar": {
+      "ko": "꼬들꼬들한 조각이 이 사이에서 탱탱하게 버틴다. 맛보다 씹는 재미로 기억에 남을 녀석이야.",
+      "en": "Those chewy little pieces put up a springy resistance. I'll remember this one for the fun of chewing it."
+    },
+    "Beech": {
+      "ko": "오독 하고 씹히더니 은근한 고소함이 따라온다. 작아도 제법 알찬 녀석들이야.",
+      "en": "A crisp little bite, then a gentle nutty flavor follows. These little ones have plenty going for them."
+    },
+    "Maitake": {
+      "ko": "얇은 잎을 씹을 때마다 짙은 풍미가 겹겹이 펼쳐져. 작은 숲을 한입에 담은 기분이네.",
+      "en": "Each thin frond unfolds another layer of rich flavor. It feels like a little forest in a single bite."
+    },
+    "LionsMane": {
+      "ko": "실타래처럼 풀리는 부드러운 살에 은근한 단맛까지. 생긴 만큼 포근한 맛이네.",
+      "en": "Tender strands unravel like a skein of thread, with a little sweetness too. It tastes as comforting as it looks."
+    },
+    "Matsutake": {
+      "ko": "한입 베어 무니 솔숲이 떠올라. 코끝에 남은 향이 아까워서 다음 한입은 천천히 먹고 싶네.",
+      "en": "One bite brings a pine forest to mind. I want to linger over that aroma before taking the next."
+    },
+    "Cauliflower": {
+      "ko": "오도독 씹을수록 고소한 맛이 퍼져. 꽃잎처럼 생긴 녀석이 입안에서는 꽤 야무지네.",
+      "en": "Every crisp bite brings out more nutty flavor. For something shaped like flower petals, it has quite a bite."
+    },
+    "PurpleBlewit": {
+      "ko": "진한 버섯 향 사이로 단맛이 살짝 고개를 내미네. 뜻밖의 간식을 발견한 기분이야.",
+      "en": "A little sweetness peeks through that rich mushroom aroma. What an unexpected little treat."
+    },
+    "BlackTruffle": {
+      "ko": "짙은 향이 입안을 가득 채우는군. 평범한 내 식사가 잠깐은 사치스러운 만찬처럼 느껴져.",
+      "en": "That deep aroma fills my mouth. For a moment, my ordinary meal feels like a lavish feast."
+    },
+    "Porcini": {
+      "ko": "두툼한 살에 견과 같은 고소함이 숨어 있네. 숲에서 작은 별미를 주워 온 기분이야.",
+      "en": "There's a gentle nutty flavor hiding in that thick flesh. It feels like I've brought home a little treasure from the woods."
+    },
+    "Morel": {
+      "ko": "작은 벌집 같은 갓이 탄력 있게 씹혀. 순한 맛 덕분에 이 씹는 재미를 느긋하게 즐기게 돼.",
+      "en": "That little honeycomb of a cap has a springy bite. Its mild flavor lets me take my time enjoying the texture."
+    },
+    "BlackTrumpet": {
+      "ko": "이 얇은 조각에 이렇게 진한 맛을 숨겨 뒀다니. 작은 나팔이 입안에서 존재감을 뽐내네.",
+      "en": "So much rich flavor hidden in such a thin piece. This little trumpet certainly makes itself heard in my mouth."
+    },
+    "GiantPuffball": {
+      "ko": "이 커다란 덩어리가 이렇게 부드럽다니. 버섯 맛을 머금은 구름 한 조각을 베어 문 것 같아.",
+      "en": "How can something this huge be so soft? It's like biting into a cloud with a gentle mushroom flavor."
+    },
+    "IndigoMilkcap": {
+      "ko": "색깔만 별난 줄 알았는데 풍미도 짙네. 눈을 감으면 숲 한가운데 앉아 있는 것 같아.",
+      "en": "I thought the color was the unusual part, but that earthy flavor has depth too. I close my eyes and feel as if I'm sitting in the woods."
+    },
+    "VeiledStinkhorn": {
+      "ko": "비단처럼 매끈한데 씹으면 살짝 아삭해. 한입 안에 식감이 둘이나 숨어 있네.",
+      "en": "Smooth as silk, then a little crunch. There's more going on in this bite than I expected."
+    },
+    "ShaggyInkcap": {
+      "ko": "부드러운 살을 씹으니 먹물이 터지듯 풍미가 입안에 번져.",
+      "en": "As I bite into the tender flesh, its flavor spreads through my mouth like a little burst of ink."
+    },
+    "Lobster": {
+      "ko": "도톰한 살이 단단하게 씹히는 게, 꼭 랍스터 한 점을 먹는 기분이야.",
+      "en": "That thick, firm flesh makes every bite feel like a piece of lobster."
+    }
+  },
+  "psychoactive": {
+    "0": {
+      "ko": "색과 무늬가 물 위의 햇빛처럼 일렁여. 늘 보던 세상이 이렇게 화려했나?",
+      "en": "Colors and patterns ripple like sunlight on water. Has the world always been this dazzling?"
+    },
+    "1": {
+      "ko": "세상과 나 사이에 얇은 안개가 낀 것 같아. 눈을 뜨고도 꿈 한가운데 둥둥 떠 있네.",
+      "en": "A thin mist seems to hang between me and the world. My eyes are open, yet I'm floating through a dream."
+    },
+    "2": {
+      "ko": "익숙한 풍경에 낯선 그림자가 덧씌워졌어. 무엇이 진짜인지 모르겠고, 자꾸 겁이 나.",
+      "en": "Unfamiliar shadows seem to cover a place I know. I can't tell what's real, and I keep feeling afraid."
+    }
+  }
+}

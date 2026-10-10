@@ -1,0 +1,50 @@
+{
+  "artVersion": 1,
+  "modVersion": "0.6.0",
+  "species": 36,
+  "pages": 2,
+  "outputs": [
+    {
+      "file": "MoreMushrooms-additional36-page1-v1.png",
+      "page": 1,
+      "size": 755359,
+      "sha256": "0f4aafc87c7d059ad6320b90490d00da27d6b37bf35ef80b892514027cc74d3a",
+      "pixelSize": [
+        1800,
+        1120
+      ]
+    },
+    {
+      "file": "MoreMushrooms-additional36-page1-v1.jpg",
+      "page": 1,
+      "size": 345644,
+      "sha256": "6477faf73f32cc201c94687ec3315c84f3b03db99005213f1552c60613b34a0b",
+      "pixelSize": [
+        1800,
+        1120
+      ]
+    },
+    {
+      "file": "MoreMushrooms-additional36-page2-v1.png",
+      "page": 2,
+      "size": 652069,
+      "sha256": "90a244fdf8b85361f03fbf998ff0a572b8bd5698eb7165964c02ba72c31c3481",
+      "pixelSize": [
+        1800,
+        1120
+      ]
+    },
+    {
+      "file": "MoreMushrooms-additional36-page2-v1.jpg",
+      "page": 2,
+      "size": 332259,
+      "sha256": "f709188383817ed4aba96efd0c2004838c863f9e2f9cd5a143a23a7b0df44f0c",
+      "pixelSize": [
+        1800,
+        1120
+      ]
+    }
+  ],
+  "sourceImagesUnchanged": true,
+  "gameImagesUnchanged": true
+}

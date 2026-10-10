@@ -217,7 +217,7 @@
   <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawMatsutake</defName>
     <label>matsutake mushroom</label>
-    <description>Edible matsutake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +10 mood for 6 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
+    <description>Edible matsutake mushrooms. Can be cooked in ordinary meals or eaten raw. Counts as fungus. Eating it raw or in a meal grants +15 mood for 48 hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Matsutake</texPath>
     </graphicData>

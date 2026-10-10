@@ -11,7 +11,10 @@ def package():
     dest = ROOT / "Releases" / ("v" + version)
     if dest.exists(): raise SystemExit("Release already exists. Increase the version instead of overwriting it.")
     runtime_dirs = {"About","Assemblies","Defs","Languages","Textures","Credits","Patches"}
-    runtime_files = [p for p in ROOT.rglob("*") if p.is_file() and (p.relative_to(ROOT).parts[0] in runtime_dirs or p.relative_to(ROOT).as_posix() in {"README.md","CHANGELOG.md","Docs/VALIDATION.md","Docs/CONTENT-v0.5.0.md","Docs/History/README-v0.4.0.md"})]
+    runtime_files = [p for p in ROOT.rglob("*") if p.is_file() and (p.relative_to(ROOT).parts[0] in runtime_dirs or p.relative_to(ROOT).as_posix() in {"README.md","CHANGELOG.md","Docs/VALIDATION.md","Docs/CONTENT-v0.5.0.md","Docs/CONTENT-v0.6.0.md","Docs/CONTENT-v0.6.1.md","Docs/CONTENT-v0.6.2.md","Docs/CONTENT-v0.6.3.md","Docs/MOOD-v0.6.3.md","Docs/History/README-v0.6.2.md","Docs/BALANCE-v0.6.1.md","Docs/MOOD-v0.6.2.md","Docs/WILD-ECOLOGY-v0.6.0.md","Docs/History/README-v0.4.0.md","Docs/History/README-v0.5.0.md","Docs/History/README-v0.6.0.md","Docs/History/README-v0.6.1.md"})]
+    runtime_files += [ROOT / rel for rel in ("Docs/CONTENT-v0.6.4.md", "Docs/QA-v0.6.4.md", "Docs/History/README-v0.6.3.md") if (ROOT / rel).is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/Publication/v0.6.4").glob("*") if p.is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/TestResults").rglob("*") if p.is_file() and p.relative_to(ROOT / "Docs/TestResults").as_posix().startswith("v0.6.4-")]
     excluded = {".git","Releases","Backups","obj","__pycache__"}
     source_files = [p for p in ROOT.rglob("*") if p.is_file() and not any(part in excluded for part in p.relative_to(ROOT).parts) and not p.relative_to(ROOT).as_posix().startswith(("Tests/Runtime/","Tests/Harness/Assemblies/"))]
     dest.mkdir(parents=True)

@@ -13,11 +13,13 @@ namespace RimMushrooms
     {
         // A mixed meal is one exposure: half portions of two psychoactive foods
         // count as one full dose, rather than each being penalized as a repeat.
-        // The strongest mood source supplies the single episode's species profile.
+        // Mood uses the strongest source. Timing uses the longest species profile,
+        // so adding a pleasant short-lived ingredient cannot shorten a longer one.
         public static void ApplyMixture(Pawn pawn, IEnumerable<KeyValuePair<ThingDef, float>> ingredients)
         {
             if (ingredients == null) return;
             ThingDef dominant = null;
+            MushroomExposureProperties timingProfile = null;
             float strongestMood = float.MinValue;
             float totalDoses = 0f;
             foreach (var ingredient in ingredients)
@@ -26,16 +28,24 @@ namespace RimMushrooms
                 if (settings == null || !settings.psychoactive || ingredient.Value <= 0f
                     || float.IsNaN(ingredient.Value) || float.IsInfinity(ingredient.Value)) continue;
                 totalDoses = Mathf.Min(4f, totalDoses + ingredient.Value);
+                if (timingProfile == null || settings.hallucinationHoursMax > timingProfile.hallucinationHoursMax
+                    || (settings.hallucinationHoursMax == timingProfile.hallucinationHoursMax
+                        && settings.hallucinationHoursMin > timingProfile.hallucinationHoursMin)) timingProfile = settings;
                 if (settings.moodBonus > strongestMood)
                 {
                     dominant = ingredient.Key;
                     strongestMood = settings.moodBonus;
                 }
             }
-            if (dominant != null) Apply(pawn, dominant, totalDoses);
+            if (dominant != null) Apply(pawn, dominant, totalDoses, timingProfile);
         }
 
         public static void Apply(Pawn pawn, ThingDef source, float doses)
+        {
+            Apply(pawn, source, doses, null);
+        }
+
+        private static void Apply(Pawn pawn, ThingDef source, float doses, MushroomExposureProperties timingProfile)
         {
             var settings = source?.GetModExtension<MushroomExposureProperties>();
             if (settings == null || !settings.psychoactive || doses <= 0f || float.IsNaN(doses)
@@ -62,7 +72,7 @@ namespace RimMushrooms
                 hallucination.sourceLabel = source.label;
                 pawn.health.AddHediff(hallucination);
             }
-            hallucination.RegisterDose(settings, doses, previousTolerance);
+            hallucination.RegisterDose(timingProfile ?? settings, doses, previousTolerance);
 
             int bonus = Mathf.Max(1, Mathf.RoundToInt(settings.moodBonus * Mathf.Clamp01(doses)
                 * Mathf.Lerp(1f, 0.4f, previousTolerance)));
@@ -132,12 +142,16 @@ namespace RimMushrooms
 
     public sealed class Hediff_MushroomHallucination : HediffWithComps
     {
+        private const float MinimumControlHours = 6f;
+        private const float MaximumControlHours = 24f;
+        private const int MaximumEpisodeTicks = 60000;
         private int episodeStartTick = -1;
         private int endTick = -1;
         private float totalDoses;
         private bool startAttempted;
         private bool panic;
         private IntVec3 anchor = IntVec3.Invalid;
+        public int EpisodeStartTick => episodeStartTick;
         public int EndTick => endTick;
         public float TotalDoses => totalDoses;
         public bool Panic => panic;
@@ -151,10 +165,15 @@ namespace RimMushrooms
             int now = Find.TickManager.TicksGame;
             if (episodeStartTick < 0) episodeStartTick = now;
             totalDoses = Mathf.Min(4f, totalDoses + doses);
-            float minHours = Mathf.Clamp(settings.hallucinationHoursMin, 0.1f, 4f);
-            float maxHours = Mathf.Clamp(settings.hallucinationHoursMax, minHours, 4f);
-            int duration = Mathf.RoundToInt(Rand.Range(minHours, maxHours) * Mathf.Clamp(doses, 0.05f, 2f) * 2500f);
-            endTick = Math.Min(episodeStartTick + 20000, Math.Max(endTick, now + duration));
+            float minHours = Mathf.Clamp(settings.hallucinationHoursMin, MinimumControlHours, MaximumControlHours);
+            float maxHours = Mathf.Clamp(settings.hallucinationHoursMax, minHours, MaximumControlHours);
+            // Ingredient quantities still scale mood, tolerance and the sampled
+            // duration. Even a fractional food dose has a six-hour scheduled
+            // episode; repeats cannot extend it past 24 hours from first exposure.
+            float hours = Mathf.Clamp(Rand.Range(minHours, maxHours) * Mathf.Clamp(doses, 0.05f, 2f),
+                MinimumControlHours, MaximumControlHours);
+            int duration = Mathf.RoundToInt(hours * 2500f);
+            endTick = Math.Min(episodeStartTick + MaximumEpisodeTicks, Math.Max(endTick, now + duration));
             // First ordinary exposure is not a random punishment. Repeated/high doses
             // can become unpleasant, and switching species cannot bypass tolerance.
             if (!panic && (tolerance >= 0.25f || totalDoses > 1.5f))

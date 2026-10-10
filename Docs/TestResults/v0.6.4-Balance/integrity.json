@@ -1,0 +1,3427 @@
+{
+  "schemaVersion": 1,
+  "result": "PASS",
+  "createdAtUtc": "2026-10-10T15:54:28.880126+00:00",
+  "sourceProfile": "Tests/Runtime/20261011-002921-040-FieldBalance-Core",
+  "destination": "Docs/TestResults/v0.6.4-Balance",
+  "rawReportResult": "PASS",
+  "plannedCases": 130,
+  "completedCases": 130,
+  "failureCount": 0,
+  "findingCount": 0,
+  "eventCount": 1704,
+  "csvComparison": {
+    "field-balance-cases.csv": {
+      "rows": 130,
+      "columns": 57,
+      "cellsCompared": 7410
+    },
+    "field-balance-events.csv": {
+      "rows": 1704,
+      "columns": 4,
+      "cellsCompared": 6816
+    }
+  },
+  "recomputedNativeSummaryStatistics": 728,
+  "summary": {
+    "path": "Docs/TestResults/v0.6.4-Balance-Summary.md",
+    "sha256": "dce2cc576498e3881d9e2383af0f30de207c768953cbd501f0695c46c398fa1a",
+    "numericTablesAndLimitations": "Exactly reproduced from the original raw-data generator; only raw links and TXT SHA row added."
+  },
+  "files": [
+    {
+      "name": "field-balance-report.txt",
+      "role": "primary raw evidence",
+      "sizeBytes": 148,
+      "sourceSha256": "98b08bc3b7c3d359bdfadb1a2dc9824bd914e05c6c8f73f90aa60cd0b9b3ed05",
+      "copySha256": "98b08bc3b7c3d359bdfadb1a2dc9824bd914e05c6c8f73f90aa60cd0b9b3ed05"
+    },
+    {
+      "name": "field-balance-report.json",
+      "role": "primary raw evidence",
+      "sizeBytes": 584856,
+      "sourceSha256": "fdfe4076da41ad406ac520696c16c0f9a0f586160d1ec65e9184abd64abbe17a",
+      "copySha256": "fdfe4076da41ad406ac520696c16c0f9a0f586160d1ec65e9184abd64abbe17a"
+    },
+    {
+      "name": "field-balance-cases.csv",
+      "role": "primary raw evidence",
+      "sizeBytes": 98611,
+      "sourceSha256": "b47906228d84654683b59de1ae61916bb7ed38c556c1a894b21389fe3c73d594",
+      "copySha256": "b47906228d84654683b59de1ae61916bb7ed38c556c1a894b21389fe3c73d594"
+    },
+    {
+      "name": "field-balance-events.csv",
+      "role": "primary raw evidence",
+      "sizeBytes": 241210,
+      "sourceSha256": "db2f8d7b1c38558ba1c981f3a0f9700ddfb3d4152831e05df48a75a6503afb95",
+      "copySha256": "db2f8d7b1c38558ba1c981f3a0f9700ddfb3d4152831e05df48a75a6503afb95"
+    },
+    {
+      "name": "Player.log",
+      "role": "optional native Core log",
+      "sizeBytes": 33920,
+      "sourceSha256": "77e6517a07c29340d4d38a52a3ac9bd8be71503cba705556f7fcdf62d6db90ef",
+      "copySha256": "77e6517a07c29340d4d38a52a3ac9bd8be71503cba705556f7fcdf62d6db90ef"
+    }
+  ],
+  "limitations": [
+    "This is not full colony play. Work/pathfinding/normal job AI, hunger/rest decisions, weather/raids and logistics are not advanced; no real colony job-loss number is measured.",
+    "Mental-state hours and normal-command-unavailable union hours are controlled work-availability proxies, not measured crafting, hauling or harvest losses.",
+    "Awake protocols hold initial nutrition/rest by not ticking needs. Sleep intervention explicitly starts a native LayDown driver and sets its public ground posture/asleep flag at approximately 2h, releasing at 4h. It does not estimate spontaneous sleep frequency.",
+    "Downing intervention adds native anesthesia at approximately 2h and removes it at 4h. Native poisoning may independently down a pawn earlier or later.",
+    "Only mushroom memory mood offsets are integrated; overall mood and unrelated memories/ideology effects are not a net mood benefit estimate.",
+    "Care uses the real tend scanner and medicine consumption, but applies DoTend immediately when eligible; it excludes doctor travel, tending job duration, bed rest bonus and medicine supply constraints.",
+    "Patients are newly generated healthy 30-year-old baseliners with no generated relations or ideology; initial health conditions are removed once before ingestion. Traits remain recorded. Samples are small fixed-seed QA, not population probabilities.",
+    "Sixteen-day observation is censored when unresolved. Time sampling uncertainty is at most one 150-tick step per transition; poison internal progression may update at 300 ticks with this step.",
+    "Native HealthTickInterval may start vomiting jobs. Transient jobsGivenThisTick and jobsGivenThisTickTextual loop-guard fields alone are cleared each simulated step, matching JobTrackerTick bookkeeping while deliberately not running job drivers. Vomiting jobs can interrupt jobs but their full duration/work loss is not measured.",
+    "Single-species raw standard exposures only. Actual cooked mixtures, variable meal fractions, combined poison species, animals, old saves, addiction policies and colony economics are outside this run."
+  ],
+  "checksPassed": 834,
+  "checksTotal": 834,
+  "checks": [
+    {
+      "name": "report_completed_PASS",
+      "pass": true
+    },
+    {
+      "name": "130_planned_completed_cases",
+      "pass": true
+    },
+    {
+      "name": "no_failures_or_findings",
+      "pass": true
+    },
+    {
+      "name": "no_censored_cases",
+      "pass": true
+    },
+    {
+      "name": "unique_case_ids",
+      "pass": true
+    },
+    {
+      "name": "all_events_have_known_case",
+      "pass": true
+    },
+    {
+      "name": "field-balance-cases.csv:column_order",
+      "pass": true
+    },
+    {
+      "name": "field-balance-cases.csv:row_count",
+      "pass": true
+    },
+    {
+      "name": "field-balance-cases.csv:all_cells_equal_JSON",
+      "pass": true,
+      "detail": {
+        "cellsCompared": 7410
+      }
+    },
+    {
+      "name": "field-balance-events.csv:column_order",
+      "pass": true
+    },
+    {
+      "name": "field-balance-events.csv:row_count",
+      "pass": true
+    },
+    {
+      "name": "field-balance-events.csv:all_cells_equal_JSON",
+      "pass": true,
+      "detail": {
+        "cellsCompared": 6816
+      }
+    },
+    {
+      "name": "summary_group_ids_match_cases",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/first-standard-awake:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/three-standard-immediate:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/second-standard-after-six-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/controlled-sleep-at-two-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/LibertyCap/anesthetic-downing-at-two-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/first-standard-awake:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/three-standard-immediate:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/second-standard-after-six-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/controlled-sleep-at-two-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/Cubensis/anesthetic-downing-at-two-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/first-standard-awake:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/three-standard-immediate:deathHoursAfterWarning:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/second-standard-after-six-hours:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/controlled-sleep-at-two-hours:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/FlyAgaric/anesthetic-downing-at-two-hours:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/first-standard-awake:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/three-standard-immediate:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/second-standard-after-six-hours:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/controlled-sleep-at-two-hours:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "psychoactive/PantherCap/anesthetic-downing-at-two-hours:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-untreated:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-untreated:deathHoursAfterWarning:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-untreated:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-untreated:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/Tsukiyotake/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-untreated:deathHoursAfterWarning:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-untreated:deathHoursAfterWarning:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-untreated:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/YellowDapperling/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-untreated:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/JackOLantern/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-untreated:deathHoursAfterWarning:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-untreated:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-untreated:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/GhostFungus/one-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-none:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineHerbal:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/one-standard-MedicineUltratech:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-24h:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DestroyingAngel/industrial-start-warning-plus-72h:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-none:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineHerbal:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/one-standard-MedicineUltratech:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-24h:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PoisonFireCoral/industrial-start-warning-plus-72h:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-none:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineHerbal:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/one-standard-MedicineUltratech:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-24h:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeathCap/industrial-start-warning-plus-72h:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-none:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineHerbal:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/one-standard-MedicineUltratech:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-24h:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/DeadlyWebcap/industrial-start-warning-plus-72h:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-untreated:deathHoursAfterWarning:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/FlyAgaric/three-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-untreated:deathHoursAfterWarning:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/SulfurTuft/three-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-untreated:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:summary_counts",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:mentalStateHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:positiveMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:negativeMushroomMoodHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:mushroomMoodPointHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:downedHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:normalCommandUnavailableProxyHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:poisonActiveHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:nativeTreatments:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:medicineItemsConsumed:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:warningAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "poison/PantherCap/four-standard-MedicineIndustrial:curedAtHours:native_summary_recomputed",
+      "pass": true
+    },
+    {
+      "name": "TXT_matches_JSON_PASS_counts",
+      "pass": true
+    },
+    {
+      "name": "log_has_matching_native_RESULT",
+      "pass": true
+    },
+    {
+      "name": "existing_summary_matches_recomputed_raw_tables",
+      "pass": true
+    },
+    {
+      "name": "summary_body_numeric_tables_unchanged",
+      "pass": true
+    },
+    {
+      "name": "summary_has_no_ignored_runtime_links",
+      "pass": true
+    },
+    {
+      "name": "summary_link_resolves:v0.6.4-Balance/field-balance-report.txt",
+      "pass": true
+    },
+    {
+      "name": "summary_link_resolves:v0.6.4-Balance/field-balance-report.json",
+      "pass": true
+    },
+    {
+      "name": "summary_link_resolves:v0.6.4-Balance/field-balance-cases.csv",
+      "pass": true
+    },
+    {
+      "name": "summary_link_resolves:v0.6.4-Balance/field-balance-events.csv",
+      "pass": true
+    },
+    {
+      "name": "summary_link_resolves:v0.6.4-Balance/Player.log",
+      "pass": true
+    },
+    {
+      "name": "copy_bytes_equal_source:field-balance-report.txt",
+      "pass": true
+    },
+    {
+      "name": "raw_source_unchanged:field-balance-report.txt",
+      "pass": true
+    },
+    {
+      "name": "summary_SHA_matches:field-balance-report.txt",
+      "pass": true
+    },
+    {
+      "name": "copy_bytes_equal_source:field-balance-report.json",
+      "pass": true
+    },
+    {
+      "name": "raw_source_unchanged:field-balance-report.json",
+      "pass": true
+    },
+    {
+      "name": "summary_SHA_matches:field-balance-report.json",
+      "pass": true
+    },
+    {
+      "name": "copy_bytes_equal_source:field-balance-cases.csv",
+      "pass": true
+    },
+    {
+      "name": "raw_source_unchanged:field-balance-cases.csv",
+      "pass": true
+    },
+    {
+      "name": "summary_SHA_matches:field-balance-cases.csv",
+      "pass": true
+    },
+    {
+      "name": "copy_bytes_equal_source:field-balance-events.csv",
+      "pass": true
+    },
+    {
+      "name": "raw_source_unchanged:field-balance-events.csv",
+      "pass": true
+    },
+    {
+      "name": "summary_SHA_matches:field-balance-events.csv",
+      "pass": true
+    },
+    {
+      "name": "copy_bytes_equal_source:Player.log",
+      "pass": true
+    },
+    {
+      "name": "raw_source_unchanged:Player.log",
+      "pass": true
+    },
+    {
+      "name": "summary_SHA_matches:Player.log",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,91 @@
+{
+  "Core-English": {
+    "checks": 8075,
+    "groups": {
+      "ecology": 1028,
+      "poison": 750,
+      "psychoactive": 145,
+      "expansion": 1135,
+      "meal exposure": 19,
+      "nutrient paste": 20
+    },
+    "profile": "20261010-233914-Core",
+    "result": "PASS",
+    "reportSha256": "6ceac4e3acc86fd353d3e4a1569095fdcc542ccb52dc1af258e807842d38ad26",
+    "logSha256": "64dcadaa76d709239c1f79e8f6ff2a52c45065806fb41f076ff6db5a0afea2ff",
+    "legacyInputSha256": "fae22d9c97d38ab67a58a4f5315a422efde290da02c8897ffcfd1b8f5c0c7a53",
+    "logWarnings": []
+  },
+  "AllDLC-Korean": {
+    "checks": 8329,
+    "groups": {
+      "ecology": 1043,
+      "poison": 750,
+      "psychoactive": 145,
+      "expansion": 1387,
+      "meal exposure": 19,
+      "nutrient paste": 20
+    },
+    "profile": "20261010-233803-DLC-Mood",
+    "result": "PASS",
+    "reportSha256": "8d41c11e0eed03825488995ee62035c0c6c93465d765c0d62aef133ed0e6fd5f",
+    "logSha256": "3a08d31bcb975f09e4e02da4c30c6461b851925eb831bf11b9576581a7cac478",
+    "legacyInputSha256": "759ff01aefbc52917fd8efe186f389d93fcc2a664825a19a8ae02eac886ae215",
+    "logWarnings": [
+      {
+        "kind": "native DirectPawnRelation missing pawn reference",
+        "owner": "Human917 in worldPawns/pawnsMothballed",
+        "relation": "Spouse",
+        "target": "Thing_Human13735",
+        "scope": "New test fixture save only; no target deep-save; absent from actual v0.6.0 input and final Core log. Harness temporary-pawn generation/destruction can leave this relationship; exact helper is unproven because generated IDs were not logged. Production source does not generate pawns or change relations. Mushroom state comparisons passed."
+      }
+    ]
+  },
+  "productionAssemblySha256": "90c72dedaa7b2504f93f42375cc467b9c5aaf08739f24ff20310c9796a8ba24d",
+  "testHarnessAssemblySha256": "f872168c578ad092c7fa9931cd8c76d0215eb7ef6dfd0f9c409c47ef74db4ebe",
+  "testedRuntimeFileCount": 291,
+  "priorReleaseArchivesPreserved": 28,
+  "userModsConfigSha256": "B9A3F70FBE9A6F4F71B6DF4311BACD2724F385133EC1A84D50D7AD3AB3B119B8",
+  "interruptedAttempts": [
+    {
+      "profile": "20261010-231746-DLC-Mood",
+      "result": "FAIL",
+      "passedChecksBeforeStop": 2318,
+      "reason": "Random quicktest BorealForest has native mushrooms but no ring-eligible species. Old fixture First() incorrectly required a ring crop. Ring-only fixture now uses and restores an explicit supported biome.",
+      "reportSha256": "569291cbc6089ecf1f06e785a8edb099c7cd58021e7906c1e47f55a231f7dc78",
+      "logSha256": "ffb8c37e94d37daa9f1a7f43cd03dd52742ec7aa29494401ae4aea4be7191ea4"
+    },
+    {
+      "profile": "20261010-231956-DLC-Mood",
+      "result": "FAIL",
+      "passedChecksBeforeStop": 7099,
+      "reason": "v0.6.0 legacy art fixture saved four plants overlapping compressed Granite/MineableUranium. Native load wipes these invalid overlaps. New art fixture clears its full row extent; legacy comparison proves original compressed static, matching loaded building and native wipe rule. One untraced NullReferenceException Ref89773808 in this attempt remains unattributed; later harness enables full stacks to diagnose recurrence.",
+      "reportSha256": "df1d9b99d148c8cd6d0f4cc0b2bdbdd2cdcfbd3e849de34eb2a0aa01649dced4",
+      "logSha256": "4a168190c66f70a1dd533a65a40af86190a18dab6c5daf8a4fcb3a47cd56b955"
+    },
+    {
+      "profile": "20261010-232638-DLC-Mood",
+      "result": "FAIL",
+      "passedChecksBeforeStop": 271,
+      "reason": "Fresh quicktest cell RoomTempTracker retained -1.058861C despite a 21C biome target, so LightTests correctly rejected zero growth. Native fixture room temperatures will be set explicitly; growth assertions and production climate behavior remain intact. Full-stack diagnostic enabled; no unidentified NRE in this early-ending attempt.",
+      "reportSha256": "3bc5334ebef768e5c40a8f810b0cb8c92a8effdab956606009498a535b429752",
+      "logSha256": "43ff549f5e318292282d609243f7701d11ea50d47b76d7b4274c2d54d2a9237e"
+    },
+    {
+      "profile": "20261010-232927-DLC-Mood",
+      "result": "FAIL",
+      "passedChecksBeforeStop": 2393,
+      "reason": "Full-stack IL identified SmokeTests.GameComponentUpdate offset 0x12f as farmer.needs.food access. Worker was non-null but needs/food missing; after process exit death and cause are unknown. New fixture starts a healthy adult, isolates ambient wildlife once and logs/guards worker health without in-job healing. This symptom did not recur in the next run.",
+      "reportSha256": "d2ac9d361055742cc513fdf866499368ef6cb222f4b86d8f87ee86231aec6dc7",
+      "logSha256": "e517e0a1ab5c216b60b7fecf7ed182fd236280892785de5432e094bdf9f9ae10"
+    },
+    {
+      "profile": "20261010-233542-DLC-Mood",
+      "result": "FAIL",
+      "passedChecksBeforeStop": 3321,
+      "reason": "Unchanged native HediffComp_TendDuration.CompTended adds Rand.Range(-0.25,0.25) to requested quality then clamps to maxQuality. Fixture used requested0.05/max1.0; actual could be0.30 and reserve0.345, breaking its <0.3 assertion while never stabilizing. Fixture now caps native maxQuality at0.05 and asserts actual<=0.05; original stabilization/reserve and eventual-death assertions retained. Production poison code unchanged.",
+      "reportSha256": "801e2151b478e86d6fff9897183638ad5383ff26ec030fb111fba8def368dd2c",
+      "logSha256": "77a43b3d1f8dd0e92b12c62d43cc552602af2c7af134f42f0e8ffbd33058de5c"
+    }
+  ]
+}

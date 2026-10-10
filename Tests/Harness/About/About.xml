@@ -5,5 +5,5 @@
   <packageId>izzypizzy.rimmushrooms.tests</packageId>
   <supportedVersions><li>1.6</li></supportedVersions>
   <loadAfter><li>izzypizzy.rimmushrooms</li></loadAfter>
-  <description>Isolated automated test harness. Only runs with the mushroomSmoke command-line flag. Never include in a release.</description>
+  <description>Isolated development harness. Tests require explicit mushroomSmoke, mushroomFieldEcology, mushroomFieldBalance, mushroomFieldWorkBalance, mushroomCompatibility or mushroomVisual flags. Never include in a release.</description>
 </ModMetaData>

@@ -1,0 +1,391 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "gameVersion": "1.6.4871 rev591",
+  "profile": "20261011-004105-527-FieldCompatibility-Core",
+  "phase": 4,
+  "frames": 2235,
+  "expectedIds": [
+    "brrainz.harmony",
+    "ludeon.rimworld",
+    "izzypizzy.rimmushrooms",
+    "izzypizzy.rimmushrooms.tests"
+  ],
+  "loadedMods": [
+    {
+      "id": "brrainz.harmony",
+      "internalId": "brrainz.harmony",
+      "name": "Harmony"
+    },
+    {
+      "id": "Ludeon.RimWorld",
+      "internalId": "ludeon.rimworld",
+      "name": "Core"
+    },
+    {
+      "id": "izzypizzy.rimmushrooms",
+      "internalId": "izzypizzy.rimmushrooms",
+      "name": "More Mushrooms"
+    },
+    {
+      "id": "izzypizzy.rimmushrooms.tests",
+      "internalId": "izzypizzy.rimmushrooms.tests",
+      "name": "Rim Mushrooms Test Harness (development only)"
+    }
+  ],
+  "missingIds": [],
+  "patches": [
+    {
+      "method": "Verse.Thing.Single Ingested(Verse.Pawn, Single)",
+      "owners": []
+    },
+    {
+      "method": "Verse.Thing.Verse.Thing SplitOff(Int32)",
+      "owners": []
+    },
+    {
+      "method": "Verse.Thing.Boolean CanStackWith(Verse.Thing)",
+      "owners": []
+    },
+    {
+      "method": "Verse.Thing.Boolean TryAbsorbStack(Verse.Thing, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingWithComps.Verse.Thing SplitOff(Int32)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingWithComps.Boolean CanStackWith(Verse.Thing)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingWithComps.Boolean TryAbsorbStack(Verse.Thing, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "Verse.GenRecipe.System.Collections.Generic.IEnumerable`1[Verse.Thing] MakeRecipeProducts(Verse.RecipeDef, Verse.Pawn, System.Collections.Generic.List`1[Verse.Thing], Verse.Thing, RimWorld.IBillGiver, RimWorld.Precept_ThingStyle, Verse.ThingStyleDef, System.Nullable`1[System.Int32])",
+      "owners": [
+        "Postfixes:izzypizzy.rimmushrooms.meal-exposure"
+      ]
+    },
+    {
+      "method": "RimWorld.WorkGiver_DoBill.Verse.AI.Job JobOnThing(Verse.Pawn, Verse.Thing, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.WorkGiver_GrowerHarvest.Boolean HasJobOnCell(Verse.Pawn, Verse.IntVec3, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.WorkGiver_GrowerHarvest.Verse.AI.Job JobOnCell(Verse.Pawn, Verse.IntVec3, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.FoodUtility.Boolean WillEat(Verse.Pawn, Verse.Thing, Verse.Pawn, Boolean, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.FoodUtility.Boolean WillEat(Verse.Pawn, Verse.ThingDef, Verse.Pawn, Boolean, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingFilter.Boolean Allows(Verse.Thing)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingFilter.Boolean Allows(Verse.ThingDef)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingFilter.Boolean Allows(Verse.SpecialThingFilterDef)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.Plant.Void PlantCollected(Verse.Pawn, RimWorld.PlantDestructionMode)",
+      "owners": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "all requested active mod IDs are loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthy human fixture prepared before jobs",
+      "passed": true,
+      "detail": "Human32446"
+    },
+    {
+      "name": "fixture cooking table class",
+      "passed": true,
+      "detail": "RimWorld.Building_WorkTable_HeatPush"
+    },
+    {
+      "name": "native stove interaction cell standable",
+      "passed": true,
+      "detail": "(152, 0, 142)"
+    },
+    {
+      "name": "native grower recognizes mature planted mushroom",
+      "passed": true,
+      "detail": "(146, 0, 143)"
+    },
+    {
+      "name": "native harvest job generated",
+      "passed": true,
+      "detail": "Harvest (Job_4)"
+    },
+    {
+      "name": "actual ordered harvest produced mushrooms",
+      "passed": true,
+      "detail": "before=0;after=11"
+    },
+    {
+      "name": "native stove accepts bulk simple-meal recipe",
+      "passed": true,
+      "detail": "CookMealSimpleBulk"
+    },
+    {
+      "name": "new native cooking bill permits four psychoactive ingredients",
+      "passed": true,
+      "detail": "RMush_RawLibertyCap,RMush_RawCubensis,RMush_RawFlyAgaric,RMush_RawPantherCap"
+    },
+    {
+      "name": "native DoBill job selected for round 0",
+      "passed": true,
+      "detail": "DoBill (Job_10) A = Thing_FueledStove32449"
+    },
+    {
+      "name": "native DoBill has explicit ingredient quantities",
+      "passed": true,
+      "detail": "round=0"
+    },
+    {
+      "name": "native bill selected requested ingredient",
+      "passed": true,
+      "detail": "RMush_RawCubensis"
+    },
+    {
+      "name": "native cooking produced recipe output",
+      "passed": true,
+      "detail": "round=0"
+    },
+    {
+      "name": "native cooking conserves actual exposure round 0",
+      "passed": true,
+      "detail": "inputUnits=4;recorded=4"
+    },
+    {
+      "name": "native stove accepts bulk simple-meal recipe",
+      "passed": true,
+      "detail": "CookMealSimpleBulk"
+    },
+    {
+      "name": "new native cooking bill permits four psychoactive ingredients",
+      "passed": true,
+      "detail": "RMush_RawLibertyCap,RMush_RawCubensis,RMush_RawFlyAgaric,RMush_RawPantherCap"
+    },
+    {
+      "name": "native DoBill job selected for round 1",
+      "passed": true,
+      "detail": "DoBill (Job_20) A = Thing_FueledStove32449"
+    },
+    {
+      "name": "native DoBill has explicit ingredient quantities",
+      "passed": true,
+      "detail": "round=1"
+    },
+    {
+      "name": "native bill selected requested ingredient",
+      "passed": true,
+      "detail": "RawPotatoes"
+    },
+    {
+      "name": "native cooking produced recipe output",
+      "passed": true,
+      "detail": "round=1"
+    },
+    {
+      "name": "native stove accepts bulk simple-meal recipe",
+      "passed": true,
+      "detail": "CookMealSimpleBulk"
+    },
+    {
+      "name": "new native cooking bill permits four psychoactive ingredients",
+      "passed": true,
+      "detail": "RMush_RawLibertyCap,RMush_RawCubensis,RMush_RawFlyAgaric,RMush_RawPantherCap"
+    },
+    {
+      "name": "native DoBill job selected for round 2",
+      "passed": true,
+      "detail": "DoBill (Job_57) A = Thing_FueledStove32449"
+    },
+    {
+      "name": "native DoBill has explicit ingredient quantities",
+      "passed": true,
+      "detail": "round=2"
+    },
+    {
+      "name": "native bill selected requested ingredient",
+      "passed": true,
+      "detail": "RMush_RawMatsutake"
+    },
+    {
+      "name": "native cooking produced recipe output",
+      "passed": true,
+      "detail": "round=2"
+    },
+    {
+      "name": "native cooked meal has exposure comp",
+      "passed": true,
+      "detail": "MealSimple"
+    },
+    {
+      "name": "healthy human fixture prepared before jobs",
+      "passed": true,
+      "detail": "Human32472"
+    },
+    {
+      "name": "food policy inclusion reaches native WillEat",
+      "passed": true,
+      "detail": "MealSimple"
+    },
+    {
+      "name": "food policy exclusion blocks psycho meal but retains plain meal",
+      "passed": true,
+      "detail": "MealSimple"
+    },
+    {
+      "name": "psycho and plain native cooked meals cannot stack",
+      "passed": true,
+      "detail": "native CanStackWith both directions"
+    },
+    {
+      "name": "native SplitOff conserves per-serving provenance",
+      "passed": true,
+      "detail": "dose=1"
+    },
+    {
+      "name": "native matching stacks merge without exposure amplification",
+      "passed": true,
+      "detail": "count=4"
+    },
+    {
+      "name": "healthy human fixture prepared before jobs",
+      "passed": true,
+      "detail": "Human32476"
+    },
+    {
+      "name": "native cooked ingestion portion has recorded exposure",
+      "passed": true,
+      "detail": "RMush_RawCubensis=1"
+    },
+    {
+      "name": "native meal ingestion gives one psychoactive memory",
+      "passed": true,
+      "detail": "count=1"
+    },
+    {
+      "name": "native psychoactive memory follows live source mood and duration",
+      "passed": true,
+      "detail": "mood=15;expected=15;duration=15000"
+    },
+    {
+      "name": "native ingestion applies recorded units exactly once",
+      "passed": true,
+      "detail": "expected=1;actual=1"
+    },
+    {
+      "name": "native ingestion schedules bounded episode",
+      "passed": true,
+      "detail": "ticks=18787"
+    },
+    {
+      "name": "healthy human fixture prepared before jobs",
+      "passed": true,
+      "detail": "Human32480"
+    },
+    {
+      "name": "native cooked matsutake produces its flavor memory",
+      "passed": true,
+      "detail": "RMush_AteMatsutake"
+    },
+    {
+      "name": "native flavor memory follows live thought mood and duration",
+      "passed": true,
+      "detail": "baseMood=15;duration=120000"
+    }
+  ],
+  "observations": [
+    {
+      "name": "modCounts",
+      "value": "requested=4;loaded=4;missing=0"
+    },
+    {
+      "name": "fixture",
+      "value": "clearedThings=151;origin=(149, 0, 143);temperature=-1.079468"
+    },
+    {
+      "name": "workerStats",
+      "value": "PlantHarvestYield=1.13;PlantWorkSpeed=2.38;CookingSpeed=1.6"
+    },
+    {
+      "name": "plantStats",
+      "value": "def=RMush_PlantButton;growth=1;growDays=6;harvestYield=10;harvestFailable=True"
+    },
+    {
+      "name": "defaultBillFilterRound0",
+      "value": "RMush_RawLibertyCap=True;RMush_RawCubensis=True;RMush_RawFlyAgaric=True;RMush_RawPantherCap=True"
+    },
+    {
+      "name": "recipeRound0",
+      "value": "source=RMush_RawCubensis;ingredientCount=40;rawNutrition=0.05;recipe=CookMealSimpleBulk;declaredOutput=MealSimple:4"
+    },
+    {
+      "name": "cookedRound0",
+      "value": "items=4;mealNutrition=0.9;doses=MealSimple32460:4:RMush_RawCubensis=1"
+    },
+    {
+      "name": "defaultBillFilterRound1",
+      "value": "RMush_RawLibertyCap=True;RMush_RawCubensis=True;RMush_RawFlyAgaric=True;RMush_RawPantherCap=True"
+    },
+    {
+      "name": "recipeRound1",
+      "value": "source=RawPotatoes;ingredientCount=40;rawNutrition=0.05;recipe=CookMealSimpleBulk;declaredOutput=MealSimple:4"
+    },
+    {
+      "name": "cookedRound1",
+      "value": "items=4;mealNutrition=0.9;doses=MealSimple32466:4:"
+    },
+    {
+      "name": "defaultBillFilterRound2",
+      "value": "RMush_RawLibertyCap=True;RMush_RawCubensis=True;RMush_RawFlyAgaric=True;RMush_RawPantherCap=True"
+    },
+    {
+      "name": "recipeRound2",
+      "value": "source=RMush_RawMatsutake;ingredientCount=40;rawNutrition=0.05;recipe=CookMealSimpleBulk;declaredOutput=MealSimple:4"
+    },
+    {
+      "name": "cookedRound2",
+      "value": "items=4;mealNutrition=0.9;doses=MealSimple32471:4:"
+    },
+    {
+      "name": "psychoactiveIngestion",
+      "value": "mood=15;memoryDuration=15000;dose=1;panic=False;mentalState=RMush_HallucinatoryWander;startAttempted=True"
+    },
+    {
+      "name": "flavorIngestion",
+      "value": "def=RMush_AteMatsutake;baseMood=15;effectiveMood=15;durationTicks=120000"
+    }
+  ],
+  "limitations": [
+    "Representative native harvest/cooking/ingestion cases only; not an absolute compatibility guarantee for all gameplay or all mod combinations.",
+    "Uses an isolated copied active-mod list with default settings for other mods; user ModSettings and external-service/API configuration are not copied or read.",
+    "Controlled fresh adult human fixtures, cleared soil, clear weather and disabled storyteller; not combat, alien-race, production UI or long-term ecology validation.",
+    "Live stats and recipe outputs are recorded rather than assumed equal to vanilla; Core and user-mod reports must be compared separately.",
+    "No save/reload or nutrient-paste-dispenser scenario in this component; those require separate suites."
+  ],
+  "failure": ""
+}

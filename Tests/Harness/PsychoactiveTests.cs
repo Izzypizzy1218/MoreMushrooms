@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Xml;
 using RimMushrooms;
 using RimWorld;
 using Verse;
@@ -10,9 +13,14 @@ namespace RimMushroomsTests
 {
     internal static class PsychoactiveTests
     {
-        private static string savedPawn;
-        private static int savedEnd, savedStateEnd;
-        private static float savedDose, savedTolerance;
+        private sealed class SavedExposure
+        {
+            public string PawnId;
+            public int Start, End, StateEnd;
+            public float Dose, Tolerance;
+            public bool AtCap;
+        }
+        private static readonly List<SavedExposure> Saved = new List<SavedExposure>();
         private static Thought_MushroomHallucination[] Memories(Pawn pawn) => pawn.needs.mood.thoughts.memories.Memories.OfType<Thought_MushroomHallucination>().ToArray();
         private static Hediff_MushroomHallucination Effect(Pawn pawn) => pawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("RMush_Hallucination")) as Hediff_MushroomHallucination;
         private static Hediff_MushroomTolerance Tolerance(Pawn pawn) => pawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("RMush_PsychedelicTolerance")) as Hediff_MushroomTolerance;
@@ -85,8 +93,10 @@ namespace RimMushroomsTests
                     }
                     finally { pawn.Destroy(DestroyMode.Vanish); Find.TickManager.DebugSetTicksGame(clock); }
                 }
+                ValidateDurationBounds(map, check);
                 ValidateRepeatDose(map, check);
                 ValidateMixedDose(map, check);
+                ValidateMixedDuration(map, check);
                 ValidateOtherMentalState(map, check);
                 ValidateDowned(map, check);
                 ValidateDecay(map, check);
@@ -97,6 +107,67 @@ namespace RimMushroomsTests
                 foreach (var letter in Find.LetterStack.LettersListForReading.Where(l => !letters.Contains(l)).ToList()) Find.LetterStack.RemoveLetter(letter);
             }
             PrepareSaved(map, check);
+        }
+
+        private static void ValidateDurationBounds(Map map, Action<bool, string> check)
+        {
+            int clock = Find.TickManager.TicksGame;
+            var pawn = Healthy(map, 0);
+            try
+            {
+                var raw = ThingMaker.MakeThing(ThingDef.Named("RMush_RawCubensis"));
+                raw.stackCount = 1;
+                raw.Ingested(pawn, raw.GetStatValue(StatDefOf.Nutrition));
+                var exposure = Effect(pawn);
+                var state = pawn.MentalState as MentalState_MushroomWander;
+                float expectedTolerance = HediffDef.Named("RMush_PsychedelicTolerance").initialSeverity + 0.025f;
+                Check(check, exposure != null && Math.Abs(exposure.TotalDoses - 0.1f) < 0.00001f
+                    && Math.Abs(Tolerance(pawn).Severity - expectedTolerance) < 0.00001f
+                    && Memories(pawn).Single().moodOffset == 2,
+                    "native one-mushroom fractional ingestion preserves dose-scaled mood and tolerance");
+                Check(check, exposure.EpisodeStartTick == clock && exposure.EndTick == clock + 15000
+                    && state != null && state.EndTick == exposure.EndTick,
+                    "fractional food dose schedules exactly the six-hour minimum");
+                Find.TickManager.DebugSetTicksGame(clock + 14999);
+                state.MentalStateTick(1);
+                Check(check, pawn.MentalState == state && !exposure.ShouldRemove,
+                    "control loss remains active one tick before the six-hour deadline");
+                Find.TickManager.DebugSetTicksGame(clock + 15000);
+                state.MentalStateTick(1);
+                Check(check, !pawn.InMentalState && exposure.ShouldRemove,
+                    "control returns at the six-hour deadline");
+            }
+            finally { pawn.Destroy(DestroyMode.Vanish); Find.TickManager.DebugSetTicksGame(clock); }
+
+            pawn = Healthy(map, 0);
+            try
+            {
+                MushroomPsychoactive.Apply(pawn, ThingDef.Named("RMush_RawPantherCap"), 4f);
+                var exposure = Effect(pawn);
+                var state = pawn.MentalState as MentalState_MushroomWander;
+                Check(check, exposure.EpisodeStartTick == clock && exposure.EndTick == clock + 60000
+                    && state != null && state.EndTick == exposure.EndTick,
+                    "high panther-cap dose reaches the 24-hour maximum");
+                Find.TickManager.DebugSetTicksGame(clock + 55000);
+                MushroomPsychoactive.Apply(pawn, ThingDef.Named("RMush_RawLibertyCap"), 1f);
+                Check(check, Effect(pawn) == exposure && exposure.EndTick == clock + 60000 && pawn.MentalState == state
+                    && state.EndTick == exposure.EndTick,
+                    "late repeated ingestion cannot reset or exceed the original 24-hour episode cap");
+                Find.TickManager.DebugSetTicksGame(clock + 59999);
+                state.MentalStateTick(1);
+                Check(check, pawn.MentalState == state && !exposure.ShouldRemove,
+                    "control loss remains active one tick before the 24-hour deadline");
+                Find.TickManager.DebugSetTicksGame(clock + 60000);
+                state.MentalStateTick(1);
+                Check(check, !pawn.InMentalState && exposure.ShouldRemove,
+                    "control returns at the 24-hour episode cap");
+                MushroomPsychoactive.Apply(pawn, ThingDef.Named("RMush_RawLibertyCap"), 1f);
+                var nextEpisode = Effect(pawn);
+                Check(check, nextEpisode != exposure && nextEpisode.EpisodeStartTick == clock + 60000
+                    && nextEpisode.EndTick >= clock + 75000 && nextEpisode.EndTick <= clock + 120000,
+                    "ingestion after expiry creates a separate bounded episode rather than reusing an expired cap");
+            }
+            finally { pawn.Destroy(DestroyMode.Vanish); Find.TickManager.DebugSetTicksGame(clock); }
         }
 
         private static void ValidateMixedDose(Map map, Action<bool, string> check)
@@ -113,6 +184,36 @@ namespace RimMushroomsTests
                     "mixed first dose gives one full strongest mood, without sequential-repeat penalty");
             }
             finally { pawn.Destroy(DestroyMode.Vanish); }
+        }
+
+        private static void ValidateMixedDuration(Map map, Action<bool, string> check)
+        {
+            var first = Healthy(map, 0);
+            var second = Healthy(map, 1);
+            try
+            {
+                var liberty = ThingDef.Named("RMush_RawLibertyCap");
+                var panther = ThingDef.Named("RMush_RawPantherCap");
+                var mixture = new[] { new KeyValuePair<ThingDef, float>(liberty, 0.5f),
+                    new KeyValuePair<ThingDef, float>(panther, 0.5f) };
+                Rand.PushState(24680);
+                try { MushroomPsychoactive.ApplyMixture(first, mixture); }
+                finally { Rand.PopState(); }
+                Rand.PushState(24680);
+                try { MushroomPsychoactive.ApplyMixture(second, mixture.Reverse()); }
+                finally { Rand.PopState(); }
+                int now = Find.TickManager.TicksGame;
+                var timing = panther.GetModExtension<MushroomExposureProperties>();
+                Check(check, Effect(first).EndTick >= now + (int)(timing.hallucinationHoursMin * 2500f)
+                    && Effect(first).EndTick <= now + (int)(timing.hallucinationHoursMax * 2500f)
+                    && Memories(first).Single().moodOffset == 15 && Effect(first).sourceDef == liberty,
+                    "mixed short pleasant and long species retain strongest mood and longest control-time profile");
+                Check(check, Effect(first).EndTick == Effect(second).EndTick && Effect(first).TotalDoses == 1f
+                    && Effect(second).TotalDoses == 1f && Memories(second).Single().moodOffset == 15
+                    && Math.Abs(Tolerance(first).Severity - Tolerance(second).Severity) < 0.00001f,
+                    "mixed control duration, mood and dose are independent of ingredient order");
+            }
+            finally { first.Destroy(DestroyMode.Vanish); second.Destroy(DestroyMode.Vanish); }
         }
 
         private static void ValidateRepeatDose(Map map, Action<bool, string> check)
@@ -134,7 +235,7 @@ namespace RimMushroomsTests
                 var afterRepeat = Memories(pawn).Single();
                 Check(check, afterRepeat.moodOffset < 15, "repeated dose lowers mood benefit or causes panic");
                 for (int i = 0; i < 20; i++) MushroomPsychoactive.Apply(pawn, first, 4f);
-                Check(check, Effect(pawn) == exposure && exposure.TotalDoses == 4f && exposure.EndTick <= Find.TickManager.TicksGame + 20000
+                Check(check, Effect(pawn) == exposure && exposure.TotalDoses == 4f && exposure.EndTick <= exposure.EpisodeStartTick + 60000
                     && Tolerance(pawn).Severity <= 1f && Memories(pawn).Length == 1, "repeat dose bounds episode, dose, tolerance and memory stacking");
                 Check(check, exposure.Panic && Memories(pawn)[0].moodOffset == -8
                     && pawn.MentalState is MentalState_MushroomWander && !pawn.MentalStateDef.IsAggro,
@@ -197,34 +298,93 @@ namespace RimMushroomsTests
 
         private static void PrepareSaved(Map map, Action<bool, string> check)
         {
-            var pawn = Healthy(map, 0);
-            MushroomPsychoactive.Apply(pawn, ThingDef.Named("RMush_RawLibertyCap"), 1f);
-            savedPawn = pawn.GetUniqueLoadID();
-            savedEnd = Effect(pawn).EndTick;
-            savedDose = Effect(pawn).TotalDoses;
-            savedTolerance = Tolerance(pawn).Severity;
-            savedStateEnd = ((MentalState_MushroomWander)pawn.MentalState).EndTick;
-            Check(check, savedEnd == savedStateEnd, "save fixture has matching absolute effect/state deadlines");
+            Saved.Clear();
+            for (int i = 0; i < 2; i++)
+            {
+                var pawn = Healthy(map, i);
+                MushroomPsychoactive.Apply(pawn, ThingDef.Named(i == 0 ? "RMush_RawLibertyCap" : "RMush_RawPantherCap"), i == 0 ? 1f : 4f);
+                var exposure = Effect(pawn);
+                Saved.Add(new SavedExposure {
+                    PawnId = pawn.GetUniqueLoadID(), Start = exposure.EpisodeStartTick, End = exposure.EndTick,
+                    Dose = exposure.TotalDoses, Tolerance = Tolerance(pawn).Severity,
+                    StateEnd = ((MentalState_MushroomWander)pawn.MentalState).EndTick, AtCap = i == 1
+                });
+                Check(check, exposure.EndTick == Saved[i].StateEnd && exposure.EndTick - exposure.EpisodeStartTick >= 15000
+                    && exposure.EndTick - exposure.EpisodeStartTick <= 60000,
+                    "save fixture has matching bounded absolute effect/state deadlines " + i);
+            }
         }
 
         public static void VerifyLoaded(Map map, Action<bool, string> check)
         {
-            var pawn = map.mapPawns.AllPawnsSpawned.Single(p => p.GetUniqueLoadID() == savedPawn);
-            var exposure = Effect(pawn);
-            var state = pawn.MentalState as MentalState_MushroomWander;
-            Check(check, exposure != null && exposure.EndTick == savedEnd && exposure.TotalDoses == savedDose && exposure.StartAttempted
-                && Tolerance(pawn).Severity == savedTolerance, "native save/load preserves exposure dose, tolerance and deadline");
-            Check(check, state != null && state.EndTick == savedStateEnd && !state.causedByMood && Memories(pawn).Length == 1,
-                "native save/load preserves custom mental state and unique mood memory");
-            int clock = Find.TickManager.TicksGame;
-            try
+            foreach (var saved in Saved)
             {
-                Find.TickManager.DebugSetTicksGame(savedEnd);
-                state.MentalStateTick(1);
-                exposure.PostTickInterval(250);
-                Check(check, !pawn.InMentalState, "loaded episode restores control at original deadline without resetting duration");
+                var pawn = map.mapPawns.AllPawnsSpawned.Single(p => p.GetUniqueLoadID() == saved.PawnId);
+                var exposure = Effect(pawn);
+                var state = pawn.MentalState as MentalState_MushroomWander;
+                Check(check, exposure != null && exposure.EpisodeStartTick == saved.Start && exposure.EndTick == saved.End
+                    && exposure.TotalDoses == saved.Dose && exposure.StartAttempted && Tolerance(pawn).Severity == saved.Tolerance,
+                    "native save/load preserves exposure dose, tolerance and absolute episode deadlines");
+                Check(check, state != null && state.EndTick == saved.StateEnd && !state.causedByMood && Memories(pawn).Length == 1,
+                    "native save/load preserves custom mental state and unique mood memory");
+                int clock = Find.TickManager.TicksGame;
+                try
+                {
+                    if (saved.AtCap)
+                    {
+                        Find.TickManager.DebugSetTicksGame(saved.Start + 55000);
+                        MushroomPsychoactive.Apply(pawn, ThingDef.Named("RMush_RawCubensis"), 1f);
+                        Check(check, exposure.EndTick == saved.End && state.EndTick == saved.End && pawn.MentalState == state,
+                            "loaded repeat retains the original 24-hour cap rather than starting another day");
+                    }
+                    Find.TickManager.DebugSetTicksGame(saved.End);
+                    state.MentalStateTick(1);
+                    exposure.PostTickInterval(250);
+                    Check(check, !pawn.InMentalState, "loaded episode restores control at original deadline without resetting duration");
+                }
+                finally { Find.TickManager.DebugSetTicksGame(clock); }
             }
-            finally { Find.TickManager.DebugSetTicksGame(clock); }
+        }
+
+        public static void VerifyLegacy(Map map, Action<bool, string> check)
+        {
+            string path = Path.Combine(GenFilePaths.SaveDataFolderPath, "Saves", "MoreMushrooms-LegacyFixture.rws");
+            Check(check, File.Exists(path), "actual legacy save XML is available for duration compatibility comparison");
+            var document = new XmlDocument { XmlResolver = null };
+            document.Load(path);
+            int verified = 0, shorterThanSixHours = 0;
+            foreach (XmlNode savedPawn in document.SelectNodes("//thing[healthTracker/hediffSet/hediffs/li[def='RMush_Hallucination']]"))
+            {
+                string pawnId = savedPawn.SelectSingleNode("id").InnerText;
+                var pawn = map.mapPawns.AllPawnsSpawned.SingleOrDefault(p => p.ThingID == pawnId);
+                Check(check, pawn != null && !pawn.Dead, "legacy hallucinating pawn survives load " + pawnId);
+                foreach (XmlNode saved in savedPawn.SelectNodes("healthTracker/hediffSet/hediffs/li[def='RMush_Hallucination']"))
+                {
+                    string loadId = "Hediff_" + saved.SelectSingleNode("loadID").InnerText;
+                    var exposure = pawn.health.hediffSet.hediffs.SingleOrDefault(h => h.GetUniqueLoadID() == loadId)
+                        as Hediff_MushroomHallucination;
+                    int start = int.Parse(saved.SelectSingleNode("episodeStartTick")?.InnerText ?? "-1", CultureInfo.InvariantCulture);
+                    int end = int.Parse(saved.SelectSingleNode("endTick")?.InnerText ?? "-1", CultureInfo.InvariantCulture);
+                    float dose = float.Parse(saved.SelectSingleNode("totalDoses")?.InnerText ?? "0", CultureInfo.InvariantCulture);
+                    Check(check, exposure != null && exposure.EpisodeStartTick == start && exposure.EndTick == end
+                        && Math.Abs(exposure.TotalDoses - dose) < 0.00001f
+                        && exposure.StartAttempted == bool.Parse(saved.SelectSingleNode("startAttempted")?.InnerText ?? "false")
+                        && exposure.Panic == bool.Parse(saved.SelectSingleNode("panic")?.InnerText ?? "false"),
+                        "legacy episode start, deadline, dose and flags remain unchanged " + pawnId);
+                    var savedState = savedPawn.SelectSingleNode("mindState/mentalStateHandler/curState[mushroomEndTick]");
+                    if (savedState != null)
+                    {
+                        var state = pawn.MentalState as MentalState_MushroomWander;
+                        int stateEnd = int.Parse(savedState.SelectSingleNode("mushroomEndTick").InnerText, CultureInfo.InvariantCulture);
+                        Check(check, state != null && state.EndTick == stateEnd,
+                            "legacy mental-state deadline remains unchanged " + pawnId);
+                    }
+                    if (start >= 0 && end - start < 15000) shorterThanSixHours++;
+                    verified++;
+                }
+            }
+            Check(check, true, "legacy duration XML comparisons=" + verified + "; preserved pre-update episodes below six hours=" + shorterThanSixHours
+                + (verified == 0 ? " (this older fixture contains no mushroom hallucination episodes)" : ""));
         }
     }
 }

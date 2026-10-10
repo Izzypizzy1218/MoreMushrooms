@@ -519,9 +519,15 @@ namespace RimMushroomsTests
             var patient = Healthy();
             var condition = Eat(patient, "DeathCap", check);
             Advance(patient, condition.OnsetTick);
-            condition.Tended(0.05f, 1f);
+            // Native CompTended adds +/-25 percentage points before applying
+            // maxQuality. Cap the final quality, rather than accidentally testing
+            // a treatment as high as 30% when this case calls for poor 5% care.
+            condition.Tended(0.05f, 0.05f);
+            var tend = condition.TryGetComp<HediffComp_TendDuration>();
+            Check(check, tend != null && tend.IsTended && tend.tendQuality >= 0f && tend.tendQuality <= 0.05f,
+                "poor-care fixture caps actual native randomized tend quality at five percent; actual=" + tend?.tendQuality);
             Check(check, !condition.IsStabilized && condition.TreatmentReserve < 0.3f,
-                "one poor treatment cannot stabilize dangerous poison");
+                "one poor treatment cannot stabilize dangerous poison; reserve=" + condition.TreatmentReserve);
             Advance(patient, condition.FirstSymptomWarningTick + 6 * Day);
             Check(check, patient.Dead, "insufficient low-quality care followed by neglect does not prevent fatal worsening");
         }

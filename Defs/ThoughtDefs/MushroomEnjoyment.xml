@@ -10,7 +10,7 @@
     <stages>
       <li>
         <label>subtle button mushroom flavor</label>
-        <description>I ate button mushrooms. Their subtle aroma and mild flavor were nice.</description>
+        <description>There's something comforting about that mild aroma. Its gentle flavor makes me want another bite.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -25,7 +25,7 @@
     <stages>
       <li>
         <label>rich shiitake umami</label>
-        <description>I ate some fragrant shiitake. The savory flavor was really good.</description>
+        <description>Every chew releases more savory flavor. It's like someone tucked a bowl of rich broth inside a little mushroom.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -40,7 +40,7 @@
     <stages>
       <li>
         <label>subtle oyster mushroom umami</label>
-        <description>The oyster mushrooms were soft and subtly tasty. Quite nice, really.</description>
+        <description>The tender flesh pulls apart in delicate strands. That quiet savory flavor keeps calling me back for another bite.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -55,7 +55,7 @@
     <stages>
       <li>
         <label>springy king oyster mushrooms</label>
-        <description>I ate king oyster mushrooms. I liked chewing their thick flesh.</description>
+        <description>That springy stem makes a substantial bite. One piece of mushroom, and I feel like I'm tucking into a little steak.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -70,7 +70,7 @@
     <stages>
       <li>
         <label>crisp enoki</label>
-        <description>I liked the crisp enoki stems. They were nice to chew.</description>
+        <description>Crunch, crunch. Those slender stems are keeping a cheerful little rhythm in my mouth.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
@@ -85,7 +85,7 @@
     <stages>
       <li>
         <label>chewy wood ear mushrooms</label>
-        <description>I ate wood ear mushrooms. Their chewy texture was really nice.</description>
+        <description>Those chewy little pieces put up a springy resistance. I'll remember this one for the fun of chewing it.</description>
         <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
@@ -100,7 +100,7 @@
     <stages>
       <li>
         <label>crunchy beech mushrooms</label>
-        <description>The beech mushrooms were subtly nutty. I liked their crunch, too.</description>
+        <description>A crisp little bite, then a gentle nutty flavor follows. These little ones have plenty going for them.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -115,7 +115,7 @@
     <stages>
       <li>
         <label>rich maitake flavor</label>
-        <description>The maitake had a rich, nutty flavor. I really enjoyed them.</description>
+        <description>Each thin frond unfolds another layer of rich flavor. It feels like a little forest in a single bite.</description>
         <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
@@ -130,7 +130,7 @@
     <stages>
       <li>
         <label>tender lion's mane</label>
-        <description>I liked the tender flesh of the lion's mane mushroom. Its subtle sweetness was nice, too.</description>
+        <description>Tender strands unravel like a skein of thread, with a little sweetness too. It tastes as comforting as it looks.</description>
         <baseMoodEffect>7</baseMoodEffect>
       </li>
     </stages>
@@ -138,15 +138,15 @@
   <ThoughtDef>
     <defName>RMush_AteMatsutake</defName>
     <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
-    <durationDays>0.25</durationDays>
+    <durationDays>2.0</durationDays>
     <stackLimit>1</stackLimit>
     <showBubble>true</showBubble>
     <icon>Things/Mote/ThoughtSymbol/Food</icon>
     <stages>
       <li>
         <label>pine-scented matsutake</label>
-        <description>I ate some wonderfully fragrant matsutake. The pine aroma filling my mouth was fantastic.</description>
-        <baseMoodEffect>10</baseMoodEffect>
+        <description>One bite brings a pine forest to mind. I want to linger over that aroma before taking the next.</description>
+        <baseMoodEffect>15</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

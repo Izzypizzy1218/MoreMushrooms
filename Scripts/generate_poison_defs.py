@@ -219,8 +219,11 @@ def generate(config=None, handoff=None):
         raw_en = "Poisonous " + en + ". " + mushroom["effectEn"] + " Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required."
         raw_ko = "독성이 있는 " + ko + ". " + mushroom["effectKo"] + " 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다."
         if psychedelic:
-            raw_en = "Fly agaric mushrooms. Can be eaten raw or used automatically in ordinary cooking. A standard exposure grants +10 mood for 6 hours and 2–3 hours of uncontrolled hallucination wandering, together with neurological poisoning. " + mushroom["effectEn"] + " Effects and poisoning remain when used in meals."
-            raw_ko = "광대버섯입니다. 직접 먹거나 일반 요리에 자동으로 사용할 수 있습니다. 표준 노출은 6시간 동안 무드 +10과 2~3시간의 통제 불가 환각 배회, 신경계 중독을 함께 일으킵니다. " + mushroom["effectKo"] + " 요리에 넣어도 환각과 중독 효과가 전달됩니다."
+            minimum, maximum = mushroom["hallucinationHours"]
+            raw_en = f"Fly agaric mushrooms. Can be eaten raw or used automatically in ordinary cooking. A first standard exposure (10 mushrooms) grants +10 mood for 6 hours and {minimum:g}–{maximum:g} hours of uncontrolled hallucination wandering, together with neurological poisoning. " + mushroom["effectEn"] + " Effects and poisoning remain when used in meals."
+            raw_ko = f"광대버섯입니다. 직접 먹거나 일반 요리에 자동으로 사용할 수 있습니다. 첫 표준 노출(원물 10개)은 6시간 동안 무드 +10과 {minimum:g}~{maximum:g}시간의 통제 불가 환각 배회, 신경계 중독을 함께 일으킵니다. " + mushroom["effectKo"] + " 요리에 넣어도 환각과 중독 효과가 전달됩니다."
+            raw_en += " Amount affects mood and duration; new episodes are scheduled for 6–24 hours. Repeated intake cannot extend an episode beyond 24 hours from first exposure. Sleep or incapacitation can end wandering early."
+            raw_ko += " 섭취량에 따라 무드와 시간이 달라지며, 새 노출의 예정 시간은 6~24시간입니다. 반복 섭취도 최초 노출부터 24시간을 넘기지 않습니다. 수면이나 쓰러짐으로 배회가 먼저 끝날 수 있습니다."
         node(raw, "label", en)
         node(raw, "description", raw_en)
         node(node(raw, "graphicData"), "texPath", "Things/Item/RimMushrooms/" + identity)
@@ -231,7 +234,7 @@ def generate(config=None, handoff=None):
         if psychedelic:
             node(node(ingestion, "outcomeDoers"), "li", Class="RimMushrooms.IngestionOutcomeDoer_MushroomExposure")
             exposure = node(node(raw, "modExtensions"), "li", Class="RimMushrooms.MushroomExposureProperties")
-            for key, value in {"doseUnitCount": 10, "psychoactive": True, "moodBonus": 10, "moodDurationHours": 6, "hallucinationHoursMin": 2, "hallucinationHoursMax": 3, "poisonHediff": poison_name}.items():
+            for key, value in {"doseUnitCount": 10, "psychoactive": True, "moodBonus": 10, "moodDurationHours": 6, "hallucinationHoursMin": minimum, "hallucinationHoursMax": maximum, "poisonHediff": poison_name}.items():
                 node(exposure, key, value)
         else:
             outcome = node(node(ingestion, "outcomeDoers"), "li", Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison")

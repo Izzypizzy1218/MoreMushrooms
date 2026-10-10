@@ -1,0 +1,187 @@
+﻿More Mushrooms native field ecology QA
+Native map generation with v0.5 wildBiomes weights only. Current species, seasonal Harmony rules, habitat rules and caps remain active. This is a weight-only proxy, not the v0.5 DLL or a realized supply forecast.
+Accelerated component model: ecology every 2500 game-clock ticks; mushroom Plant.TickLong every native 2000 ticks; native celestial light, seasonal temperature and outdoor room equalization. Other plants, native background wild reseeding, animals, weather transitions, incidents and pawn jobs are not ticked. Initial weather is held. No terrain/roof/plant clearing, forced maturity, forced spawn or bypassed regrowth roll.
+Both seeds have passive and independently selected 25%-of-mature-plants-per-day harvest conditions on identically regenerated starting maps. The abstract unspawned Plants-10 colonist uses the native success/yield formula and PlantCollected hook; no travel, work, reachability, food safety choice or storage is modeled. Units are collected-potential, not colony stock or realized gameplay supply. Failed harvests destroy/reset plants natively and cannot queue regrowth. Each mature plant gets a new independent 0.25 selection roll per daily sweep.
+
+2026-10-10T15:48:58.9177359Z START 34 native maps; 12 longitudinal series x 120 days; geographySeed=blackjack
+2026-10-10T15:49:10.4868162Z INITIAL TemperateForest-A-current mode=current biome=TemperateForest tile=10,0 mushrooms=392 old15=267 new31=125 allPlants=28177 fertileCells=54561
+2026-10-10T15:49:10.4991161Z DAY TemperateForest-A 0 season=Spring population=392 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:49:10.4991161Z LONGITUDINAL START TemperateForest-A passive harvestStat=0
+2026-10-10T15:49:13.2071775Z DAY TemperateForest-A 30 season=Fall population=71 rings=2 regrowth=0 harvestUnits=0
+2026-10-10T15:49:15.6658632Z DAY TemperateForest-A 60 season=Spring population=4 rings=3 regrowth=0 harvestUnits=0
+2026-10-10T15:49:17.6470868Z DAY TemperateForest-A 90 season=Fall population=9 rings=5 regrowth=0 harvestUnits=0
+2026-10-10T15:49:19.5901648Z DAY TemperateForest-A 120 season=Spring population=14 rings=8 regrowth=0 harvestUnits=0
+2026-10-10T15:49:19.5911686Z LONGITUDINAL COMPLETE TemperateForest-A scenario=passive rings=8 ringPlants=37 regrowth=0 harvestUnits=0 attempts=0 failures=0 naturalLosses=415
+2026-10-10T15:49:31.9803700Z INITIAL TemperateForest-A-v05-weight-proxy mode=v0.5-weight-only-proxy biome=TemperateForest tile=10,0 mushrooms=391 old15=318 new31=73 allPlants=28177 fertileCells=54561
+2026-10-10T15:49:45.1770061Z INITIAL TemperateForest-A-current-harvest25-copy mode=current-harvest25-copy biome=TemperateForest tile=10,0 mushrooms=392 old15=267 new31=125 allPlants=28177 fertileCells=54561
+2026-10-10T15:49:45.1885153Z DAY TemperateForest-A 0 season=Spring population=392 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:49:45.1885153Z LONGITUDINAL START TemperateForest-A daily-25percent-abstract-harvest harvestStat=1.02
+2026-10-10T15:49:47.7532854Z DAY TemperateForest-A 30 season=Fall population=40 rings=2 regrowth=47 harvestUnits=3121
+2026-10-10T15:49:49.7088777Z DAY TemperateForest-A 60 season=Spring population=3 rings=3 regrowth=52 harvestUnits=3527
+2026-10-10T15:49:51.7846192Z DAY TemperateForest-A 90 season=Fall population=14 rings=6 regrowth=53 harvestUnits=3599
+2026-10-10T15:49:53.7687992Z DAY TemperateForest-A 120 season=Spring population=15 rings=10 regrowth=54 harvestUnits=3792
+2026-10-10T15:49:53.7699584Z LONGITUDINAL COMPLETE TemperateForest-A scenario=daily-25percent-abstract-harvest rings=10 ringPlants=45 regrowth=54 harvestUnits=3792 attempts=373 failures=0 naturalLosses=103
+2026-10-10T15:50:04.8194298Z INITIAL TemperateForest-B-current mode=current biome=TemperateForest tile=10,0 mushrooms=361 old15=255 new31=106 allPlants=26358 fertileCells=52576
+2026-10-10T15:50:04.8284375Z DAY TemperateForest-B 0 season=Spring population=361 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:50:04.8294433Z LONGITUDINAL START TemperateForest-B passive harvestStat=0
+2026-10-10T15:50:08.0078456Z DAY TemperateForest-B 30 season=Fall population=55 rings=2 regrowth=0 harvestUnits=0
+2026-10-10T15:50:10.1251926Z DAY TemperateForest-B 60 season=Spring population=4 rings=3 regrowth=0 harvestUnits=0
+2026-10-10T15:50:12.0507257Z DAY TemperateForest-B 90 season=Fall population=13 rings=6 regrowth=0 harvestUnits=0
+2026-10-10T15:50:13.8573041Z DAY TemperateForest-B 120 season=Spring population=8 rings=8 regrowth=0 harvestUnits=0
+2026-10-10T15:50:13.8588067Z LONGITUDINAL COMPLETE TemperateForest-B scenario=passive rings=8 ringPlants=35 regrowth=0 harvestUnits=0 attempts=0 failures=0 naturalLosses=388
+2026-10-10T15:50:25.2858417Z INITIAL TemperateForest-B-v05-weight-proxy mode=v0.5-weight-only-proxy biome=TemperateForest tile=10,0 mushrooms=360 old15=295 new31=65 allPlants=26358 fertileCells=52576
+2026-10-10T15:50:36.5861475Z INITIAL TemperateForest-B-current-harvest25-copy mode=current-harvest25-copy biome=TemperateForest tile=10,0 mushrooms=361 old15=255 new31=106 allPlants=26358 fertileCells=52576
+2026-10-10T15:50:36.5987010Z DAY TemperateForest-B 0 season=Spring population=361 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:50:36.5997070Z LONGITUDINAL START TemperateForest-B daily-25percent-abstract-harvest harvestStat=1.00775993
+2026-10-10T15:50:39.4112186Z DAY TemperateForest-B 30 season=Fall population=41 rings=3 regrowth=47 harvestUnits=2774
+2026-10-10T15:50:41.6745506Z DAY TemperateForest-B 60 season=Spring population=5 rings=4 regrowth=51 harvestUnits=3191
+2026-10-10T15:50:43.7308378Z DAY TemperateForest-B 90 season=Fall population=9 rings=6 regrowth=52 harvestUnits=3242
+2026-10-10T15:50:45.6928941Z DAY TemperateForest-B 120 season=Spring population=10 rings=9 regrowth=55 harvestUnits=3368
+2026-10-10T15:50:45.6928941Z LONGITUDINAL COMPLETE TemperateForest-B scenario=daily-25percent-abstract-harvest rings=9 ringPlants=38 regrowth=55 harvestUnits=3368 attempts=349 failures=0 naturalLosses=95
+2026-10-10T15:51:10.7489718Z INITIAL TemperateSwamp-A-current mode=current biome=TemperateSwamp tile=44,0 mushrooms=317 old15=282 new31=35 allPlants=37738 fertileCells=47921
+2026-10-10T15:51:35.7424042Z INITIAL TemperateSwamp-A-v05-weight-proxy mode=v0.5-weight-only-proxy biome=TemperateSwamp tile=44,0 mushrooms=321 old15=299 new31=22 allPlants=37751 fertileCells=47921
+2026-10-10T15:51:59.5056675Z INITIAL TemperateSwamp-B-current mode=current biome=TemperateSwamp tile=44,0 mushrooms=320 old15=285 new31=35 allPlants=37220 fertileCells=47128
+2026-10-10T15:52:21.9791571Z INITIAL TemperateSwamp-B-v05-weight-proxy mode=v0.5-weight-only-proxy biome=TemperateSwamp tile=44,0 mushrooms=315 old15=297 new31=18 allPlants=37214 fertileCells=47128
+2026-10-10T15:52:26.6939152Z INITIAL BorealForest-A-current mode=current biome=BorealForest tile=24,0 mushrooms=0 old15=0 new31=0 allPlants=13380 fertileCells=42400
+2026-10-10T15:52:26.6989346Z DAY BorealForest-A 0 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:26.6999403Z LONGITUDINAL START BorealForest-A passive harvestStat=0
+2026-10-10T15:52:27.8589290Z DAY BorealForest-A 30 season=Fall population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:28.9496437Z DAY BorealForest-A 60 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:30.3560727Z DAY BorealForest-A 90 season=Fall population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:31.5412616Z DAY BorealForest-A 120 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:31.5422619Z LONGITUDINAL COMPLETE BorealForest-A scenario=passive rings=0 ringPlants=0 regrowth=0 harvestUnits=0 attempts=0 failures=0 naturalLosses=0
+2026-10-10T15:52:36.2140897Z INITIAL BorealForest-A-v05-weight-proxy mode=v0.5-weight-only-proxy biome=BorealForest tile=24,0 mushrooms=0 old15=0 new31=0 allPlants=13380 fertileCells=42400
+2026-10-10T15:52:41.0221453Z INITIAL BorealForest-A-current-harvest25-copy mode=current-harvest25-copy biome=BorealForest tile=24,0 mushrooms=0 old15=0 new31=0 allPlants=13380 fertileCells=42400
+2026-10-10T15:52:41.0326562Z DAY BorealForest-A 0 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:41.0336563Z LONGITUDINAL START BorealForest-A daily-25percent-abstract-harvest harvestStat=1.02
+2026-10-10T15:52:42.3278395Z DAY BorealForest-A 30 season=Fall population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:43.5233554Z DAY BorealForest-A 60 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:44.9273785Z DAY BorealForest-A 90 season=Fall population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:46.1817012Z DAY BorealForest-A 120 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:46.1817012Z LONGITUDINAL COMPLETE BorealForest-A scenario=daily-25percent-abstract-harvest rings=0 ringPlants=0 regrowth=0 harvestUnits=0 attempts=0 failures=0 naturalLosses=0
+2026-10-10T15:52:50.9111059Z INITIAL BorealForest-B-current mode=current biome=BorealForest tile=24,0 mushrooms=0 old15=0 new31=0 allPlants=12283 fertileCells=39385
+2026-10-10T15:52:50.9151051Z DAY BorealForest-B 0 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:50.9161054Z LONGITUDINAL START BorealForest-B passive harvestStat=0
+2026-10-10T15:52:52.3505545Z DAY BorealForest-B 30 season=Fall population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:53.6522854Z DAY BorealForest-B 60 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:55.0513835Z DAY BorealForest-B 90 season=Fall population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:56.3202520Z DAY BorealForest-B 120 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:52:56.3202520Z LONGITUDINAL COMPLETE BorealForest-B scenario=passive rings=0 ringPlants=0 regrowth=0 harvestUnits=0 attempts=0 failures=0 naturalLosses=0
+2026-10-10T15:53:01.3629590Z INITIAL BorealForest-B-v05-weight-proxy mode=v0.5-weight-only-proxy biome=BorealForest tile=24,0 mushrooms=0 old15=0 new31=0 allPlants=12283 fertileCells=39385
+2026-10-10T15:53:06.2433770Z INITIAL BorealForest-B-current-harvest25-copy mode=current-harvest25-copy biome=BorealForest tile=24,0 mushrooms=0 old15=0 new31=0 allPlants=12283 fertileCells=39385
+2026-10-10T15:53:06.2518885Z DAY BorealForest-B 0 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:06.2528879Z LONGITUDINAL START BorealForest-B daily-25percent-abstract-harvest harvestStat=0.99858
+2026-10-10T15:53:07.9140425Z DAY BorealForest-B 30 season=Fall population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:09.2851007Z DAY BorealForest-B 60 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:10.8335463Z DAY BorealForest-B 90 season=Fall population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:12.4953696Z DAY BorealForest-B 120 season=Spring population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:12.4963710Z LONGITUDINAL COMPLETE BorealForest-B scenario=daily-25percent-abstract-harvest rings=0 ringPlants=0 regrowth=0 harvestUnits=0 attempts=0 failures=0 naturalLosses=0
+2026-10-10T15:53:16.0771272Z INITIAL AridShrubland-A-current mode=current biome=AridShrubland tile=88,0 mushrooms=5 old15=3 new31=2 allPlants=7449 fertileCells=54400
+2026-10-10T15:53:19.6320851Z INITIAL AridShrubland-A-v05-weight-proxy mode=v0.5-weight-only-proxy biome=AridShrubland tile=88,0 mushrooms=6 old15=3 new31=3 allPlants=7449 fertileCells=54400
+2026-10-10T15:53:23.1233725Z INITIAL AridShrubland-B-current mode=current biome=AridShrubland tile=88,0 mushrooms=4 old15=2 new31=2 allPlants=7724 fertileCells=53929
+2026-10-10T15:53:26.7271651Z INITIAL AridShrubland-B-v05-weight-proxy mode=v0.5-weight-only-proxy biome=AridShrubland tile=88,0 mushrooms=5 old15=3 new31=2 allPlants=7724 fertileCells=53929
+2026-10-10T15:53:40.2999764Z INITIAL TropicalRainforest-A-current mode=current biome=TropicalRainforest tile=49,0 mushrooms=119 old15=75 new31=44 allPlants=35838 fertileCells=53842
+2026-10-10T15:53:40.3145547Z DAY TropicalRainforest-A 0 season=PermanentSummer population=119 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:40.3165547Z LONGITUDINAL START TropicalRainforest-A passive harvestStat=0
+2026-10-10T15:53:43.8788391Z DAY TropicalRainforest-A 30 season=PermanentSummer population=17 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:47.7308936Z DAY TropicalRainforest-A 60 season=PermanentSummer population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:51.0322447Z DAY TropicalRainforest-A 90 season=PermanentSummer population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:54.1345519Z DAY TropicalRainforest-A 120 season=PermanentSummer population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:53:54.1345519Z LONGITUDINAL COMPLETE TropicalRainforest-A scenario=passive rings=0 ringPlants=0 regrowth=0 harvestUnits=0 attempts=0 failures=0 naturalLosses=119
+2026-10-10T15:54:08.4858809Z INITIAL TropicalRainforest-A-v05-weight-proxy mode=v0.5-weight-only-proxy biome=TropicalRainforest tile=49,0 mushrooms=118 old15=92 new31=26 allPlants=35838 fertileCells=53842
+2026-10-10T15:54:22.3727711Z INITIAL TropicalRainforest-A-current-harvest25-copy mode=current-harvest25-copy biome=TropicalRainforest tile=49,0 mushrooms=119 old15=75 new31=44 allPlants=35838 fertileCells=53842
+2026-10-10T15:54:22.3822762Z DAY TropicalRainforest-A 0 season=PermanentSummer population=119 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:54:22.3822762Z LONGITUDINAL START TropicalRainforest-A daily-25percent-abstract-harvest harvestStat=1.02
+2026-10-10T15:54:26.2193897Z DAY TropicalRainforest-A 30 season=PermanentSummer population=12 rings=0 regrowth=12 harvestUnits=726
+2026-10-10T15:54:29.8755624Z DAY TropicalRainforest-A 60 season=PermanentSummer population=0 rings=0 regrowth=12 harvestUnits=826
+2026-10-10T15:54:33.7260532Z DAY TropicalRainforest-A 90 season=PermanentSummer population=0 rings=0 regrowth=12 harvestUnits=826
+2026-10-10T15:54:37.3199994Z DAY TropicalRainforest-A 120 season=PermanentSummer population=0 rings=0 regrowth=12 harvestUnits=826
+2026-10-10T15:54:37.3209984Z LONGITUDINAL COMPLETE TropicalRainforest-A scenario=daily-25percent-abstract-harvest rings=0 ringPlants=0 regrowth=12 harvestUnits=826 attempts=88 failures=0 naturalLosses=43
+2026-10-10T15:54:52.2380113Z INITIAL TropicalRainforest-B-current mode=current biome=TropicalRainforest tile=49,0 mushrooms=124 old15=76 new31=48 allPlants=36769 fertileCells=55944
+2026-10-10T15:54:52.2445248Z DAY TropicalRainforest-B 0 season=PermanentSummer population=124 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:54:52.2458607Z LONGITUDINAL START TropicalRainforest-B passive harvestStat=0
+2026-10-10T15:54:56.1305557Z DAY TropicalRainforest-B 30 season=PermanentSummer population=20 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:54:59.6334784Z DAY TropicalRainforest-B 60 season=PermanentSummer population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:55:02.9727393Z DAY TropicalRainforest-B 90 season=PermanentSummer population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:55:06.5389327Z DAY TropicalRainforest-B 120 season=PermanentSummer population=0 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:55:06.5403846Z LONGITUDINAL COMPLETE TropicalRainforest-B scenario=passive rings=0 ringPlants=0 regrowth=0 harvestUnits=0 attempts=0 failures=0 naturalLosses=124
+2026-10-10T15:55:21.6188767Z INITIAL TropicalRainforest-B-v05-weight-proxy mode=v0.5-weight-only-proxy biome=TropicalRainforest tile=49,0 mushrooms=125 old15=95 new31=30 allPlants=36769 fertileCells=55944
+2026-10-10T15:55:35.8445951Z INITIAL TropicalRainforest-B-current-harvest25-copy mode=current-harvest25-copy biome=TropicalRainforest tile=49,0 mushrooms=124 old15=76 new31=48 allPlants=36769 fertileCells=55944
+2026-10-10T15:55:35.8566191Z DAY TropicalRainforest-B 0 season=PermanentSummer population=124 rings=0 regrowth=0 harvestUnits=0
+2026-10-10T15:55:35.8566191Z LONGITUDINAL START TropicalRainforest-B daily-25percent-abstract-harvest harvestStat=1.02
+2026-10-10T15:55:40.0487712Z DAY TropicalRainforest-B 30 season=PermanentSummer population=8 rings=0 regrowth=10 harvestUnits=851
+2026-10-10T15:55:43.7798898Z DAY TropicalRainforest-B 60 season=PermanentSummer population=0 rings=0 regrowth=10 harvestUnits=935
+2026-10-10T15:55:47.3945977Z DAY TropicalRainforest-B 90 season=PermanentSummer population=0 rings=0 regrowth=10 harvestUnits=935
+2026-10-10T15:55:50.9139167Z DAY TropicalRainforest-B 120 season=PermanentSummer population=0 rings=0 regrowth=10 harvestUnits=935
+2026-10-10T15:55:50.9139167Z LONGITUDINAL COMPLETE TropicalRainforest-B scenario=daily-25percent-abstract-harvest rings=0 ringPlants=0 regrowth=10 harvestUnits=935 attempts=101 failures=0 naturalLosses=33
+2026-10-10T15:56:16.2864135Z INITIAL TropicalSwamp-A-current mode=current biome=TropicalSwamp tile=124,0 mushrooms=48 old15=36 new31=12 allPlants=38561 fertileCells=43242
+2026-10-10T15:56:42.0222187Z INITIAL TropicalSwamp-A-v05-weight-proxy mode=v0.5-weight-only-proxy biome=TropicalSwamp tile=124,0 mushrooms=49 old15=41 new31=8 allPlants=38564 fertileCells=43242
+2026-10-10T15:57:08.9908474Z INITIAL TropicalSwamp-B-current mode=current biome=TropicalSwamp tile=124,0 mushrooms=50 old15=37 new31=13 allPlants=40723 fertileCells=46150
+2026-10-10T15:57:36.0975972Z INITIAL TropicalSwamp-B-v05-weight-proxy mode=v0.5-weight-only-proxy biome=TropicalSwamp tile=124,0 mushrooms=54 old15=45 new31=9 allPlants=40702 fertileCells=46150
+2026-10-10T15:57:40.1242504Z INITIAL Tundra-A-current mode=current biome=Tundra tile=1,0 mushrooms=0 old15=0 new31=0 allPlants=8505 fertileCells=53888
+2026-10-10T15:57:44.0338799Z INITIAL Tundra-A-v05-weight-proxy mode=v0.5-weight-only-proxy biome=Tundra tile=1,0 mushrooms=0 old15=0 new31=0 allPlants=8505 fertileCells=53888
+2026-10-10T15:57:47.8720847Z INITIAL Tundra-B-current mode=current biome=Tundra tile=1,0 mushrooms=0 old15=0 new31=0 allPlants=8485 fertileCells=55463
+2026-10-10T15:57:51.4851923Z INITIAL Tundra-B-v05-weight-proxy mode=v0.5-weight-only-proxy biome=Tundra tile=1,0 mushrooms=0 old15=0 new31=0 allPlants=8485 fertileCells=55463
+2026-10-10T15:57:52.0032134Z INITIAL PAIRED SUMMARY (weight-only proxy; no v0.5 runtime/supply claim)
+2026-10-10T15:57:52.0042146Z TemperateForest MoreMushrooms-Field-A-20261011 current=392 proxy=391 delta=1 currentSpecies=40 proxySpecies=40 old15=267/318 new31=125/73
+2026-10-10T15:57:52.0042146Z TemperateForest MoreMushrooms-Field-B-20261011 current=361 proxy=360 delta=1 currentSpecies=40 proxySpecies=40 old15=255/295 new31=106/65
+2026-10-10T15:57:52.0052149Z TemperateSwamp MoreMushrooms-Field-A-20261011 current=317 proxy=321 delta=-4 currentSpecies=13 proxySpecies=13 old15=282/299 new31=35/22
+2026-10-10T15:57:52.0052149Z TemperateSwamp MoreMushrooms-Field-B-20261011 current=320 proxy=315 delta=5 currentSpecies=13 proxySpecies=13 old15=285/297 new31=35/18
+2026-10-10T15:57:52.0062147Z BorealForest MoreMushrooms-Field-A-20261011 current=0 proxy=0 delta=0 currentSpecies=0 proxySpecies=0 old15=0/0 new31=0/0
+2026-10-10T15:57:52.0062147Z BorealForest MoreMushrooms-Field-B-20261011 current=0 proxy=0 delta=0 currentSpecies=0 proxySpecies=0 old15=0/0 new31=0/0
+2026-10-10T15:57:52.0072142Z AridShrubland MoreMushrooms-Field-A-20261011 current=5 proxy=6 delta=-1 currentSpecies=3 proxySpecies=3 old15=3/3 new31=2/3
+2026-10-10T15:57:52.0072142Z AridShrubland MoreMushrooms-Field-B-20261011 current=4 proxy=5 delta=-1 currentSpecies=3 proxySpecies=3 old15=2/3 new31=2/2
+2026-10-10T15:57:52.0082169Z TropicalRainforest MoreMushrooms-Field-A-20261011 current=119 proxy=118 delta=1 currentSpecies=12 proxySpecies=12 old15=75/92 new31=44/26
+2026-10-10T15:57:52.0092157Z TropicalRainforest MoreMushrooms-Field-B-20261011 current=124 proxy=125 delta=-1 currentSpecies=12 proxySpecies=12 old15=76/95 new31=48/30
+2026-10-10T15:57:52.0092157Z TropicalSwamp MoreMushrooms-Field-A-20261011 current=48 proxy=49 delta=-1 currentSpecies=6 proxySpecies=6 old15=36/41 new31=12/8
+2026-10-10T15:57:52.0092157Z TropicalSwamp MoreMushrooms-Field-B-20261011 current=50 proxy=54 delta=-4 currentSpecies=6 proxySpecies=6 old15=37/45 new31=13/9
+2026-10-10T15:57:52.0103310Z Tundra MoreMushrooms-Field-A-20261011 current=0 proxy=0 delta=0 currentSpecies=0 proxySpecies=0 old15=0/0 new31=0/0
+2026-10-10T15:57:52.0103310Z Tundra MoreMushrooms-Field-B-20261011 current=0 proxy=0 delta=0 currentSpecies=0 proxySpecies=0 old15=0/0 new31=0/0
+2026-10-10T15:57:52.0113304Z SPECIES INITIAL OBSERVATIONS across 14 primary maps per mode (not probabilities)
+2026-10-10T15:57:52.0123296Z RMush_PlantBeech currentCount=45 proxyCount=55 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0133374Z RMush_PlantBirdsNest currentCount=10 proxyCount=6 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0143317Z RMush_PlantBlackTruffle currentCount=4 proxyCount=3 currentDetectedMaps=2 currentNativeEligibleMaps=2
+2026-10-10T15:57:52.0143317Z RMush_PlantBlackTrumpet currentCount=15 proxyCount=11 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0153320Z RMush_PlantButton currentCount=189 proxyCount=211 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0153320Z RMush_PlantCauliflower currentCount=18 proxyCount=10 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0163318Z RMush_PlantChaga currentCount=3 proxyCount=2 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0163318Z RMush_PlantChlorophos currentCount=14 proxyCount=8 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0173318Z RMush_PlantCordyceps currentCount=4 proxyCount=3 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0183308Z RMush_PlantCubensis currentCount=13 proxyCount=11 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0183308Z RMush_PlantDeadlyWebcap currentCount=3 proxyCount=3 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0198364Z RMush_PlantDeathCap currentCount=4 proxyCount=3 currentDetectedMaps=2 currentNativeEligibleMaps=2
+2026-10-10T15:57:52.0198364Z RMush_PlantDestroyingAngel currentCount=12 proxyCount=11 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0208416Z RMush_PlantDevilsFingers currentCount=14 proxyCount=6 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0208416Z RMush_PlantDryRot currentCount=8 proxyCount=5 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0208416Z RMush_PlantEnokiWild currentCount=60 proxyCount=73 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0223463Z RMush_PlantFlyAgaric currentCount=34 proxyCount=29 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0223463Z RMush_PlantGhostFungus currentCount=13 proxyCount=5 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0233519Z RMush_PlantGiantPuffball currentCount=17 proxyCount=11 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0233519Z RMush_PlantHoneyFungus currentCount=24 proxyCount=12 currentDetectedMaps=4 currentNativeEligibleMaps=6
+2026-10-10T15:57:52.0243518Z RMush_PlantIndigoMilkcap currentCount=16 proxyCount=7 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0253545Z RMush_PlantJackOLantern currentCount=7 proxyCount=4 currentDetectedMaps=2 currentNativeEligibleMaps=2
+2026-10-10T15:57:52.0253545Z RMush_PlantKingOyster currentCount=50 proxyCount=61 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0263512Z RMush_PlantLibertyCap currentCount=10 proxyCount=6 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0263512Z RMush_PlantLionsMane currentCount=28 proxyCount=36 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0273501Z RMush_PlantLobster currentCount=7 proxyCount=5 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0273501Z RMush_PlantMaitake currentCount=77 proxyCount=94 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0273501Z RMush_PlantMatsutake currentCount=16 proxyCount=16 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0288527Z RMush_PlantMorel currentCount=9 proxyCount=10 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0288527Z RMush_PlantOyster currentCount=226 proxyCount=239 currentDetectedMaps=4 currentNativeEligibleMaps=6
+2026-10-10T15:57:52.0308619Z RMush_PlantPantherCap currentCount=5 proxyCount=4 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0308619Z RMush_PlantPoisonFireCoral currentCount=51 proxyCount=47 currentDetectedMaps=6 currentNativeEligibleMaps=6
+2026-10-10T15:57:52.0318572Z RMush_PlantPorcini currentCount=6 proxyCount=6 currentDetectedMaps=2 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0318572Z RMush_PlantPurpleBlewit currentCount=40 proxyCount=22 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0328560Z RMush_PlantReishi currentCount=27 proxyCount=16 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0338571Z RMush_PlantSanghuang currentCount=6 proxyCount=3 currentDetectedMaps=2 currentNativeEligibleMaps=2
+2026-10-10T15:57:52.0338571Z RMush_PlantShaggyInkcap currentCount=17 proxyCount=10 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0348558Z RMush_PlantShiitake currentCount=90 proxyCount=125 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0348558Z RMush_PlantSulfurTuft currentCount=85 proxyCount=82 currentDetectedMaps=4 currentNativeEligibleMaps=6
+2026-10-10T15:57:52.0358596Z RMush_PlantTsukiyotake currentCount=61 proxyCount=61 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0368565Z RMush_PlantTurkeyTail currentCount=32 proxyCount=18 currentDetectedMaps=4 currentNativeEligibleMaps=6
+2026-10-10T15:57:52.0368565Z RMush_PlantVeiledStinkhorn currentCount=32 proxyCount=17 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0378573Z RMush_PlantWoodEar currentCount=294 proxyCount=348 currentDetectedMaps=6 currentNativeEligibleMaps=6
+2026-10-10T15:57:52.0378573Z RMush_PlantYellowBrain currentCount=24 proxyCount=12 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0378573Z RMush_PlantYellowDapperling currentCount=9 proxyCount=9 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0393614Z RMush_PlantZombieAntFungus currentCount=11 proxyCount=8 currentDetectedMaps=4 currentNativeEligibleMaps=4
+2026-10-10T15:57:52.0393614Z PASS: untouched initial censuses, native weight-only proxy and accelerated ecology completed. Zero detections are observations, not proof of absence; the two seeds are not a statistical prevalence estimate.

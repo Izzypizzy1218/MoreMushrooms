@@ -1,0 +1,862 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "gameVersion": "1.6.4871 rev591",
+  "profile": "20261011-004257-525-FieldCompatibility-UserMods",
+  "phase": 4,
+  "frames": 2192,
+  "expectedIds": [
+    "brrainz.harmony",
+    "ludeon.rimworld",
+    "ludeon.rimworld.royalty",
+    "ludeon.rimworld.ideology",
+    "ludeon.rimworld.biotech",
+    "ludeon.rimworld.anomaly",
+    "ludeon.rimworld.odyssey",
+    "adaptive.storage.framework",
+    "unlimitedhugs.hugslib",
+    "oskarpotocki.vanillafactionsexpanded.core",
+    "erdelf.humanoidalienraces",
+    "ancot.ancotlibrary",
+    "solaris.ratkinracemod",
+    "rooandgloomy.dragonianracemod",
+    "nsns.tinimar",
+    "miho.fortifiedoutremer",
+    "sg.moonjelly",
+    "ancot.kiirorace",
+    "nals.customportraits",
+    "nals.facialanimation",
+    "sbz.neatstorage",
+    "leo.eventsexpanded",
+    "mlie.allmemoriesfade",
+    "sarg.alphabooks",
+    "ancot.kiirostoryeventsexpanded",
+    "hashtag39ch.kiiropaperartplus",
+    "olli.butterplusplus",
+    "brrainz.cameraplus",
+    "zylle.childrensdrawings",
+    "solaris.furniturebase",
+    "sarg.alphaanimals",
+    "ih.clean.textures",
+    "battyvanthe.concertsforall",
+    "dubwise.dubsperformanceanalyzer.steam",
+    "oppey.goawayeyestrain",
+    "dev.soeur.imageopt",
+    "jaxe.bubbles",
+    "krafs.levelup",
+    "m00nl1ght.mappreview",
+    "peppsen.pmusic",
+    "mehni.pickupandhaul",
+    "ponpeco.pfkidsroom",
+    "jaxe.rimhud",
+    "rmk.translation",
+    "mlie.showmeyourhands",
+    "sarg.smartspeed",
+    "dhultgren.smarterconstruction",
+    "goji.thesimstraits",
+    "superniquito.traiticons",
+    "vanillaexpanded.vee",
+    "visibleraidpoints.1trickpwnyta",
+    "com.yayo.yayoani.continued",
+    "seohyeon.rwgallary",
+    "ab.hatweaker",
+    "fxz.ratkin.facialanimation",
+    "cj.rimtalk",
+    "codex.archotecheye.invisibilitydetection",
+    "sizzb.manito",
+    "dimonsever000.diseasesplus.specific",
+    "seohyeon.autotranslation",
+    "beyond.dream.gp",
+    "aota.ratkin.ear.tail.animation",
+    "wowgag.eventimagepopup",
+    "cyanobot.toddlers",
+    "talos.tinimar.fa",
+    "saltgin.rimtalkeventmemory",
+    "cj.rimtalk.toddlers",
+    "spino.megafauna",
+    "spincrus.dinosauria",
+    "vanillaexpanded.vaeroy",
+    "ingendum.animalapparelframework",
+    "ingendum.animalarmorbasic",
+    "ingendum.animalarmoruniversal",
+    "wildshift.mod",
+    "meathax.showmeyourtools",
+    "astryl.dynamicatmosphere",
+    "lezhizhong.rimworld.gentleratkinhaven",
+    "local.gentleratkinhaven.korean",
+    "izzypizzy.rimmushrooms",
+    "izzypizzy.rimmushrooms.tests"
+  ],
+  "loadedMods": [
+    {
+      "id": "brrainz.harmony",
+      "internalId": "brrainz.harmony",
+      "name": "Harmony"
+    },
+    {
+      "id": "Ludeon.RimWorld",
+      "internalId": "ludeon.rimworld",
+      "name": "Core"
+    },
+    {
+      "id": "Ludeon.RimWorld.Royalty",
+      "internalId": "ludeon.rimworld.royalty",
+      "name": "Royalty"
+    },
+    {
+      "id": "Ludeon.RimWorld.Ideology",
+      "internalId": "ludeon.rimworld.ideology",
+      "name": "Ideology"
+    },
+    {
+      "id": "Ludeon.RimWorld.Biotech",
+      "internalId": "ludeon.rimworld.biotech",
+      "name": "Biotech"
+    },
+    {
+      "id": "Ludeon.RimWorld.Anomaly",
+      "internalId": "ludeon.rimworld.anomaly",
+      "name": "Anomaly"
+    },
+    {
+      "id": "Ludeon.RimWorld.Odyssey",
+      "internalId": "ludeon.rimworld.odyssey",
+      "name": "Odyssey"
+    },
+    {
+      "id": "adaptive.storage.framework",
+      "internalId": "adaptive.storage.framework",
+      "name": "Adaptive Storage Framework"
+    },
+    {
+      "id": "UnlimitedHugs.HugsLib",
+      "internalId": "unlimitedhugs.hugslib",
+      "name": "HugsLib"
+    },
+    {
+      "id": "OskarPotocki.VanillaFactionsExpanded.Core",
+      "internalId": "oskarpotocki.vanillafactionsexpanded.core",
+      "name": "Vanilla Expanded Framework"
+    },
+    {
+      "id": "erdelf.HumanoidAlienRaces",
+      "internalId": "erdelf.humanoidalienraces",
+      "name": "Humanoid Alien Races"
+    },
+    {
+      "id": "Ancot.AncotLibrary",
+      "internalId": "ancot.ancotlibrary",
+      "name": "Ancot Library"
+    },
+    {
+      "id": "Solaris.RatkinRaceMod",
+      "internalId": "solaris.ratkinracemod",
+      "name": "NewRatkinPlus"
+    },
+    {
+      "id": "RooAndGloomy.DragonianRaceMod",
+      "internalId": "rooandgloomy.dragonianracemod",
+      "name": "Gloomy Dragonian race"
+    },
+    {
+      "id": "nsns.Tinimar",
+      "internalId": "nsns.tinimar",
+      "name": "Tinimar the Harfling"
+    },
+    {
+      "id": "miho.fortifiedoutremer",
+      "internalId": "miho.fortifiedoutremer",
+      "name": "Miho, the celestial fox"
+    },
+    {
+      "id": "SG.moonjelly",
+      "internalId": "sg.moonjelly",
+      "name": "Moonjelly Xenotype"
+    },
+    {
+      "id": "Ancot.KiiroRace",
+      "internalId": "ancot.kiirorace",
+      "name": "Kiiro Race"
+    },
+    {
+      "id": "Nals.CustomPortraits",
+      "internalId": "nals.customportraits",
+      "name": "[NL] Custom Portraits"
+    },
+    {
+      "id": "Nals.FacialAnimation",
+      "internalId": "nals.facialanimation",
+      "name": "[NL] Facial Animation - WIP"
+    },
+    {
+      "id": "sbz.NeatStorage",
+      "internalId": "sbz.neatstorage",
+      "name": "[sbz] Neat Storage"
+    },
+    {
+      "id": "Leo.EventsExpanded",
+      "internalId": "leo.eventsexpanded",
+      "name": "Leo - Events"
+    },
+    {
+      "id": "Mlie.AllMemoriesFade",
+      "internalId": "mlie.allmemoriesfade",
+      "name": "All Memories Fade"
+    },
+    {
+      "id": "sarg.alphabooks",
+      "internalId": "sarg.alphabooks",
+      "name": "Alpha Books"
+    },
+    {
+      "id": "Ancot.KiiroStoryEventsExpanded",
+      "internalId": "ancot.kiirostoryeventsexpanded",
+      "name": "Kiiro Story: Events Expanded"
+    },
+    {
+      "id": "hashtag39ch.kiiropaperartplus",
+      "internalId": "hashtag39ch.kiiropaperartplus",
+      "name": "KiiroPaperArtPlus"
+    },
+    {
+      "id": "olli.butterplusplus",
+      "internalId": "olli.butterplusplus",
+      "name": "Butter++"
+    },
+    {
+      "id": "brrainz.cameraplus",
+      "internalId": "brrainz.cameraplus",
+      "name": "Camera+"
+    },
+    {
+      "id": "zylle.ChildrensDrawings",
+      "internalId": "zylle.childrensdrawings",
+      "name": "Childrens Drawings"
+    },
+    {
+      "id": "Solaris.FurnitureBase",
+      "internalId": "solaris.furniturebase",
+      "name": "GloomyFurniture"
+    },
+    {
+      "id": "sarg.alphaanimals",
+      "internalId": "sarg.alphaanimals",
+      "name": "Alpha Animals"
+    },
+    {
+      "id": "IH.Clean.Textures",
+      "internalId": "ih.clean.textures",
+      "name": "Clean Textures"
+    },
+    {
+      "id": "BattyVanthe.ConcertsForAll",
+      "internalId": "battyvanthe.concertsforall",
+      "name": "Concerts For All"
+    },
+    {
+      "id": "Dubwise.DubsPerformanceAnalyzer.steam",
+      "internalId": "dubwise.dubsperformanceanalyzer.steam",
+      "name": "Dubs Performance Analyzer"
+    },
+    {
+      "id": "Oppey.GoAwayEyeStrain",
+      "internalId": "oppey.goawayeyestrain",
+      "name": "Go Away Eye Strain!"
+    },
+    {
+      "id": "dev.soeur.imageopt",
+      "internalId": "dev.soeur.imageopt",
+      "name": "Image Opt"
+    },
+    {
+      "id": "Jaxe.Bubbles",
+      "internalId": "jaxe.bubbles",
+      "name": "Interaction Bubbles"
+    },
+    {
+      "id": "Krafs.LevelUp",
+      "internalId": "krafs.levelup",
+      "name": "Level Up!"
+    },
+    {
+      "id": "m00nl1ght.MapPreview",
+      "internalId": "m00nl1ght.mappreview",
+      "name": "Map Preview"
+    },
+    {
+      "id": "Peppsen.PMusic",
+      "internalId": "peppsen.pmusic",
+      "name": "P-Music"
+    },
+    {
+      "id": "Mehni.PickUpAndHaul",
+      "internalId": "mehni.pickupandhaul",
+      "name": "Pick Up And Haul"
+    },
+    {
+      "id": "ponpeco.PFKidsRoom",
+      "internalId": "ponpeco.pfkidsroom",
+      "name": "Ponpeco Furnitures : Kids' Room"
+    },
+    {
+      "id": "Jaxe.RimHUD",
+      "internalId": "jaxe.rimhud",
+      "name": "RimHUD"
+    },
+    {
+      "id": "RMK.translation",
+      "internalId": "rmk.translation",
+      "name": "Rimworld Mod Korean"
+    },
+    {
+      "id": "Mlie.ShowMeYourHands",
+      "internalId": "mlie.showmeyourhands",
+      "name": "Show Me Your Hands"
+    },
+    {
+      "id": "sarg.smartspeed",
+      "internalId": "sarg.smartspeed",
+      "name": "Smart Speed"
+    },
+    {
+      "id": "dhultgren.smarterconstruction",
+      "internalId": "dhultgren.smarterconstruction",
+      "name": "Smarter Construction"
+    },
+    {
+      "id": "Goji.TheSimsTraits",
+      "internalId": "goji.thesimstraits",
+      "name": "The Sims Traits"
+    },
+    {
+      "id": "Superniquito.TraitIcons",
+      "internalId": "superniquito.traiticons",
+      "name": "Trait and Backstory Icons"
+    },
+    {
+      "id": "VanillaExpanded.VEE",
+      "internalId": "vanillaexpanded.vee",
+      "name": "Vanilla Events Expanded"
+    },
+    {
+      "id": "visibleraidpoints.1trickPwnyta",
+      "internalId": "visibleraidpoints.1trickpwnyta",
+      "name": "Visible Raid Points"
+    },
+    {
+      "id": "com.yayo.yayoAni.continued",
+      "internalId": "com.yayo.yayoani.continued",
+      "name": "Yayo's Animation (Continued)"
+    },
+    {
+      "id": "seohyeon.RWGallary",
+      "internalId": "seohyeon.rwgallary",
+      "name": "변방계 라디오"
+    },
+    {
+      "id": "AB.HATweaker",
+      "internalId": "ab.hatweaker",
+      "name": "AB's Head Apparel Tweaker"
+    },
+    {
+      "id": "fxz.Ratkin.FacialAnimation",
+      "internalId": "fxz.ratkin.facialanimation",
+      "name": "Hyacinth's Ratkin Facial Animation"
+    },
+    {
+      "id": "cj.rimtalk",
+      "internalId": "cj.rimtalk",
+      "name": "RimTalk"
+    },
+    {
+      "id": "codex.archotecheye.invisibilitydetection",
+      "internalId": "codex.archotecheye.invisibilitydetection",
+      "name": "초월공학 눈 - 투명 존재 감지"
+    },
+    {
+      "id": "sizzb.manito",
+      "internalId": "sizzb.manito",
+      "name": "Manito"
+    },
+    {
+      "id": "DimonSever000.DiseasesPlus.Specific",
+      "internalId": "dimonsever000.diseasesplus.specific",
+      "name": "Cybranian - Diseases+"
+    },
+    {
+      "id": "seohyeon.autotranslation",
+      "internalId": "seohyeon.autotranslation",
+      "name": "Auto Translation"
+    },
+    {
+      "id": "Beyond.Dream.GP",
+      "internalId": "beyond.dream.gp",
+      "name": "[GP]Beyond death - Dreams"
+    },
+    {
+      "id": "aota.ratkin.ear.tail.animation",
+      "internalId": "aota.ratkin.ear.tail.animation",
+      "name": "Ratkin Ear and Tail Animation"
+    },
+    {
+      "id": "wowgag.EventImagePopup",
+      "internalId": "wowgag.eventimagepopup",
+      "name": "Event Image Popup"
+    },
+    {
+      "id": "cyanobot.toddlers",
+      "internalId": "cyanobot.toddlers",
+      "name": "Toddlers"
+    },
+    {
+      "id": "Talos.Tinimar.FA",
+      "internalId": "talos.tinimar.fa",
+      "name": "Tinimar the Harfling Facial Animation"
+    },
+    {
+      "id": "saltgin.rimtalkeventmemory",
+      "internalId": "saltgin.rimtalkeventmemory",
+      "name": "RimTalk Event+"
+    },
+    {
+      "id": "cj.rimtalk.toddlers",
+      "internalId": "cj.rimtalk.toddlers",
+      "name": "RimTalk - Expand Toddlers"
+    },
+    {
+      "id": "Spino.Megafauna",
+      "internalId": "spino.megafauna",
+      "name": "Megafauna"
+    },
+    {
+      "id": "spincrus.dinosauria",
+      "internalId": "spincrus.dinosauria",
+      "name": "Dinosauria"
+    },
+    {
+      "id": "VanillaExpanded.VAERoy",
+      "internalId": "vanillaexpanded.vaeroy",
+      "name": "Vanilla Animals Expanded — Royal Animals"
+    },
+    {
+      "id": "Ingendum.AnimalApparelFramework",
+      "internalId": "ingendum.animalapparelframework",
+      "name": "Animal Apparel: Framework"
+    },
+    {
+      "id": "Ingendum.AnimalArmorBasic",
+      "internalId": "ingendum.animalarmorbasic",
+      "name": "Animal Apparel: Basic Armor"
+    },
+    {
+      "id": "Ingendum.AnimalArmorUniversal",
+      "internalId": "ingendum.animalarmoruniversal",
+      "name": "Animal Apparel: Universal Basic Armor"
+    },
+    {
+      "id": "wildshift.mod",
+      "internalId": "wildshift.mod",
+      "name": "WildShift"
+    },
+    {
+      "id": "meathax.ShowMeYourTools",
+      "internalId": "meathax.showmeyourtools",
+      "name": "Show Me Your Tools"
+    },
+    {
+      "id": "astryl.DynamicAtmosphere",
+      "internalId": "astryl.dynamicatmosphere",
+      "name": "Dynamic Atmosphere"
+    },
+    {
+      "id": "lezhizhong.rimworld.gentleratkinhaven",
+      "internalId": "lezhizhong.rimworld.gentleratkinhaven",
+      "name": "鼠鼠温柔窝"
+    },
+    {
+      "id": "local.gentleratkinhaven.korean",
+      "internalId": "local.gentleratkinhaven.korean",
+      "name": "랫킨의 포근한 둥지 한글 패치 (로컬)"
+    },
+    {
+      "id": "izzypizzy.rimmushrooms",
+      "internalId": "izzypizzy.rimmushrooms",
+      "name": "More Mushrooms"
+    },
+    {
+      "id": "izzypizzy.rimmushrooms.tests",
+      "internalId": "izzypizzy.rimmushrooms.tests",
+      "name": "Rim Mushrooms Test Harness (development only)"
+    }
+  ],
+  "missingIds": [],
+  "patches": [
+    {
+      "method": "Verse.Thing.Single Ingested(Verse.Pawn, Single)",
+      "owners": [
+        "Prefixes:OskarPotocki.VEF",
+        "Prefixes:rimworld.erdelf.alien_race.main",
+        "Postfixes:SimsTraitsMod",
+        "Transpilers:rimworld.erdelf.alien_race.main",
+        "Finalizers:OskarPotocki.VEF"
+      ]
+    },
+    {
+      "method": "Verse.Thing.Verse.Thing SplitOff(Int32)",
+      "owners": []
+    },
+    {
+      "method": "Verse.Thing.Boolean CanStackWith(Verse.Thing)",
+      "owners": []
+    },
+    {
+      "method": "Verse.Thing.Boolean TryAbsorbStack(Verse.Thing, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingWithComps.Verse.Thing SplitOff(Int32)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingWithComps.Boolean CanStackWith(Verse.Thing)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingWithComps.Boolean TryAbsorbStack(Verse.Thing, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "Verse.GenRecipe.System.Collections.Generic.IEnumerable`1[Verse.Thing] MakeRecipeProducts(Verse.RecipeDef, Verse.Pawn, System.Collections.Generic.List`1[Verse.Thing], Verse.Thing, RimWorld.IBillGiver, RimWorld.Precept_ThingStyle, Verse.ThingStyleDef, System.Nullable`1[System.Int32])",
+      "owners": [
+        "Postfixes:com.alphabooks",
+        "Postfixes:SimsTraitsMod",
+        "Postfixes:com.vanillaanimalsexpandedroyal",
+        "Postfixes:izzypizzy.rimmushrooms.meal-exposure"
+      ]
+    },
+    {
+      "method": "RimWorld.WorkGiver_DoBill.Verse.AI.Job JobOnThing(Verse.Pawn, Verse.Thing, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.WorkGiver_GrowerHarvest.Boolean HasJobOnCell(Verse.Pawn, Verse.IntVec3, Boolean)",
+      "owners": [
+        "Postfixes:rimworld.erdelf.alien_race.main"
+      ]
+    },
+    {
+      "method": "RimWorld.WorkGiver_GrowerHarvest.Verse.AI.Job JobOnCell(Verse.Pawn, Verse.IntVec3, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.FoodUtility.Boolean WillEat(Verse.Pawn, Verse.Thing, Verse.Pawn, Boolean, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.FoodUtility.Boolean WillEat(Verse.Pawn, Verse.ThingDef, Verse.Pawn, Boolean, Boolean)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingFilter.Boolean Allows(Verse.Thing)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingFilter.Boolean Allows(Verse.ThingDef)",
+      "owners": []
+    },
+    {
+      "method": "Verse.ThingFilter.Boolean Allows(Verse.SpecialThingFilterDef)",
+      "owners": []
+    },
+    {
+      "method": "RimWorld.Plant.Void PlantCollected(Verse.Pawn, RimWorld.PlantDestructionMode)",
+      "owners": [
+        "Prefixes:OskarPotocki.VEF",
+        "Prefixes:meathax.JobEffects",
+        "Postfixes:meathax.JobEffects"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "all requested active mod IDs are loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthy human fixture prepared before jobs",
+      "passed": true,
+      "detail": "Human45944"
+    },
+    {
+      "name": "fixture cooking table class",
+      "passed": true,
+      "detail": "RimWorld.Building_WorkTable_HeatPush"
+    },
+    {
+      "name": "native stove interaction cell standable",
+      "passed": true,
+      "detail": "(152, 0, 142)"
+    },
+    {
+      "name": "native grower recognizes mature planted mushroom",
+      "passed": true,
+      "detail": "(146, 0, 143)"
+    },
+    {
+      "name": "native harvest job generated",
+      "passed": true,
+      "detail": "Harvest (Job_0)"
+    },
+    {
+      "name": "actual ordered harvest produced mushrooms",
+      "passed": true,
+      "detail": "before=0;after=11"
+    },
+    {
+      "name": "native stove accepts bulk simple-meal recipe",
+      "passed": true,
+      "detail": "CookMealSimpleBulk"
+    },
+    {
+      "name": "new native cooking bill permits four psychoactive ingredients",
+      "passed": true,
+      "detail": "RMush_RawLibertyCap,RMush_RawCubensis,RMush_RawFlyAgaric,RMush_RawPantherCap"
+    },
+    {
+      "name": "native DoBill job selected for round 0",
+      "passed": true,
+      "detail": "DoBill (Job_12) A = Thing_FueledStove45947"
+    },
+    {
+      "name": "native DoBill has explicit ingredient quantities",
+      "passed": true,
+      "detail": "round=0"
+    },
+    {
+      "name": "native bill selected requested ingredient",
+      "passed": true,
+      "detail": "RMush_RawCubensis"
+    },
+    {
+      "name": "native cooking produced recipe output",
+      "passed": true,
+      "detail": "round=0"
+    },
+    {
+      "name": "native cooking conserves actual exposure round 0",
+      "passed": true,
+      "detail": "inputUnits=4;recorded=4"
+    },
+    {
+      "name": "native stove accepts bulk simple-meal recipe",
+      "passed": true,
+      "detail": "CookMealSimpleBulk"
+    },
+    {
+      "name": "new native cooking bill permits four psychoactive ingredients",
+      "passed": true,
+      "detail": "RMush_RawLibertyCap,RMush_RawCubensis,RMush_RawFlyAgaric,RMush_RawPantherCap"
+    },
+    {
+      "name": "native DoBill job selected for round 1",
+      "passed": true,
+      "detail": "DoBill (Job_32) A = Thing_FueledStove45947"
+    },
+    {
+      "name": "native DoBill has explicit ingredient quantities",
+      "passed": true,
+      "detail": "round=1"
+    },
+    {
+      "name": "native bill selected requested ingredient",
+      "passed": true,
+      "detail": "RawPotatoes"
+    },
+    {
+      "name": "native cooking produced recipe output",
+      "passed": true,
+      "detail": "round=1"
+    },
+    {
+      "name": "native stove accepts bulk simple-meal recipe",
+      "passed": true,
+      "detail": "CookMealSimpleBulk"
+    },
+    {
+      "name": "new native cooking bill permits four psychoactive ingredients",
+      "passed": true,
+      "detail": "RMush_RawLibertyCap,RMush_RawCubensis,RMush_RawFlyAgaric,RMush_RawPantherCap"
+    },
+    {
+      "name": "native DoBill job selected for round 2",
+      "passed": true,
+      "detail": "DoBill (Job_60) A = Thing_FueledStove45947"
+    },
+    {
+      "name": "native DoBill has explicit ingredient quantities",
+      "passed": true,
+      "detail": "round=2"
+    },
+    {
+      "name": "native bill selected requested ingredient",
+      "passed": true,
+      "detail": "RMush_RawMatsutake"
+    },
+    {
+      "name": "native cooking produced recipe output",
+      "passed": true,
+      "detail": "round=2"
+    },
+    {
+      "name": "native cooked meal has exposure comp",
+      "passed": true,
+      "detail": "MealSimple"
+    },
+    {
+      "name": "healthy human fixture prepared before jobs",
+      "passed": true,
+      "detail": "Human45980"
+    },
+    {
+      "name": "food policy inclusion reaches native WillEat",
+      "passed": true,
+      "detail": "MealSimple"
+    },
+    {
+      "name": "food policy exclusion blocks psycho meal but retains plain meal",
+      "passed": true,
+      "detail": "MealSimple"
+    },
+    {
+      "name": "psycho and plain native cooked meals cannot stack",
+      "passed": true,
+      "detail": "native CanStackWith both directions"
+    },
+    {
+      "name": "native SplitOff conserves per-serving provenance",
+      "passed": true,
+      "detail": "dose=1"
+    },
+    {
+      "name": "native matching stacks merge without exposure amplification",
+      "passed": true,
+      "detail": "count=4"
+    },
+    {
+      "name": "healthy human fixture prepared before jobs",
+      "passed": true,
+      "detail": "Human45984"
+    },
+    {
+      "name": "native cooked ingestion portion has recorded exposure",
+      "passed": true,
+      "detail": "RMush_RawCubensis=1"
+    },
+    {
+      "name": "native meal ingestion gives one psychoactive memory",
+      "passed": true,
+      "detail": "count=1"
+    },
+    {
+      "name": "native psychoactive memory follows live source mood and duration",
+      "passed": true,
+      "detail": "mood=15;expected=15;duration=15000"
+    },
+    {
+      "name": "native ingestion applies recorded units exactly once",
+      "passed": true,
+      "detail": "expected=1;actual=1"
+    },
+    {
+      "name": "native ingestion schedules bounded episode",
+      "passed": true,
+      "detail": "ticks=16755"
+    },
+    {
+      "name": "healthy human fixture prepared before jobs",
+      "passed": true,
+      "detail": "Human45992"
+    },
+    {
+      "name": "native cooked matsutake produces its flavor memory",
+      "passed": true,
+      "detail": "RMush_AteMatsutake"
+    },
+    {
+      "name": "native flavor memory follows live thought mood and duration",
+      "passed": true,
+      "detail": "baseMood=15;duration=120000"
+    }
+  ],
+  "observations": [
+    {
+      "name": "modCounts",
+      "value": "requested=80;loaded=80;missing=0"
+    },
+    {
+      "name": "fixture",
+      "value": "clearedThings=172;origin=(149, 0, 143);temperature=19.34638"
+    },
+    {
+      "name": "workerStats",
+      "value": "PlantHarvestYield=1.13;PlantWorkSpeed=2.38;CookingSpeed=1.6"
+    },
+    {
+      "name": "plantStats",
+      "value": "def=RMush_PlantButton;growth=1;growDays=6;harvestYield=10;harvestFailable=True"
+    },
+    {
+      "name": "defaultBillFilterRound0",
+      "value": "RMush_RawLibertyCap=True;RMush_RawCubensis=True;RMush_RawFlyAgaric=True;RMush_RawPantherCap=True"
+    },
+    {
+      "name": "recipeRound0",
+      "value": "source=RMush_RawCubensis;ingredientCount=40;rawNutrition=0.05;recipe=CookMealSimpleBulk;declaredOutput=MealSimple:4"
+    },
+    {
+      "name": "cookedRound0",
+      "value": "items=4;mealNutrition=0.9;doses=MealSimple45965:4:RMush_RawCubensis=1"
+    },
+    {
+      "name": "defaultBillFilterRound1",
+      "value": "RMush_RawLibertyCap=True;RMush_RawCubensis=True;RMush_RawFlyAgaric=True;RMush_RawPantherCap=True"
+    },
+    {
+      "name": "recipeRound1",
+      "value": "source=RawPotatoes;ingredientCount=40;rawNutrition=0.05;recipe=CookMealSimpleBulk;declaredOutput=MealSimple:4"
+    },
+    {
+      "name": "cookedRound1",
+      "value": "items=4;mealNutrition=0.9;doses=MealSimple45973:4:"
+    },
+    {
+      "name": "defaultBillFilterRound2",
+      "value": "RMush_RawLibertyCap=True;RMush_RawCubensis=True;RMush_RawFlyAgaric=True;RMush_RawPantherCap=True"
+    },
+    {
+      "name": "recipeRound2",
+      "value": "source=RMush_RawMatsutake;ingredientCount=40;rawNutrition=0.05;recipe=CookMealSimpleBulk;declaredOutput=MealSimple:4"
+    },
+    {
+      "name": "cookedRound2",
+      "value": "items=4;mealNutrition=0.9;doses=MealSimple45979:4:"
+    },
+    {
+      "name": "psychoactiveIngestion",
+      "value": "mood=15;memoryDuration=15000;dose=1;panic=False;mentalState=RMush_HallucinatoryWander;startAttempted=True"
+    },
+    {
+      "name": "flavorIngestion",
+      "value": "def=RMush_AteMatsutake;baseMood=15;effectiveMood=15;durationTicks=120000"
+    }
+  ],
+  "limitations": [
+    "Representative native harvest/cooking/ingestion cases only; not an absolute compatibility guarantee for all gameplay or all mod combinations.",
+    "Uses an isolated copied active-mod list with default settings for other mods; user ModSettings and external-service/API configuration are not copied or read.",
+    "Controlled fresh adult human fixtures, cleared soil, clear weather and disabled storyteller; not combat, alien-race, production UI or long-term ecology validation.",
+    "Live stats and recipe outputs are recorded rather than assumed equal to vanilla; Core and user-mod reports must be compared separately.",
+    "No save/reload or nutrient-paste-dispenser scenario in this component; those require separate suites."
+  ],
+  "failure": ""
+}

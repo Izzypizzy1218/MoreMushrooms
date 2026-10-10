@@ -65,6 +65,11 @@ namespace RimMushroomsTests
                     Find.TickManager.CurTimeSpeed = TimeSpeed.Superfast;
                     if (farmer != null)
                     {
+                        // Stop with the worker's actual condition instead of
+                        // dereferencing needs that native death can remove.
+                        if (farmer.Dead || farmer.Destroyed || !farmer.Spawned || farmer.Downed
+                            || farmer.needs?.food == null || farmer.needs?.rest == null)
+                            throw new InvalidOperationException("Crop worker became unavailable: " + WorkerDiagnostic(map));
                         farmer.needs.food.CurLevelPercentage = 1f;
                         farmer.needs.rest.CurLevelPercentage = 1f;
                         if (farmer.needs.mood != null) farmer.needs.mood.CurLevelPercentage = 1f;
@@ -74,17 +79,23 @@ namespace RimMushroomsTests
                 {
                     bool legacyLoaded = File.Exists(Path.Combine(GenFilePaths.SaveDataFolderPath, "new-save-verified.flag"));
                     LightTests.VerifyLoaded(map, legacyLoaded, Check);
-                    MoodTests.VerifyLoaded(map, Check);
+                    MoodTests.VerifyLoaded(map, Check, legacyLoaded);
+                    AssortedTests.VerifyLoaded(map, Check);
+                    HydroponicsTests.VerifyLoaded(map, Check);
                     if (!legacyLoaded)
                     {
-                        AssortedTests.VerifyLoaded(map, Check);
-                        HydroponicsTests.VerifyLoaded(map, Check);
+                        EcologyTests.VerifyLoaded(map, false, Check);
                         PoisonTests.VerifyLoaded(map, Check);
                         PsychoactiveTests.VerifyLoaded(map, Check);
                         ExpansionTests.VerifyLoaded(map, Check);
                         MealExposureTests.VerifyLoaded(map, Check);
                     }
-                    else PoisonTests.VerifyLegacy(map, Check);
+                    else
+                    {
+                        PoisonTests.VerifyLegacy(map, Check);
+                        PsychoactiveTests.VerifyLegacy(map, Check);
+                        EcologyTests.VerifyLoaded(map, true, Check);
+                    }
                     Check(map.listerThings.AllThings.Count(t => t.def.defName.StartsWith("RMush_Plant")) >= 33, "plant growth fixtures survive save/load");
                     foreach (var t in map.listerThings.AllThings.Where(t => t.def.defName.StartsWith("RMush_Raw")))
                         Check(Texture(t) == (t.stackCount <= 25 ? "01Low" : t.stackCount <= 50 ? "02Medium" : "03Full"), "saved stack graphic " + t.def.defName + ":" + t.stackCount);
@@ -110,7 +121,9 @@ namespace RimMushroomsTests
                 if (phase == 10)
                 {
                     farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
-                    var job = AssortedTests.Sower.JobOnCell(farmer, workCell);
+                    var members = AssortedTests.Selection.GetModExtension<AssortedMushroomSettings>().varieties;
+                    var expected = assortedCycles < members.Count ? members[assortedCycles] : ThingDef.Named("RMush_PlantPurpleBlewit");
+                    var job = AssortedTests.NativeSowJobForSpecies(farmer, workCell, expected);
                     if (job != null && job.def == JobDefOf.HaulToCell)
                     {
                         job.playerForced = true;
@@ -123,6 +136,7 @@ namespace RimMushroomsTests
                         + " job=" + job + " selection=" + AssortedMushrooms.SelectionAt(workCell, map) + " allowSow=" + growingZone.allowSow
                         + " skill=" + farmer.skills.GetSkill(SkillDefOf.Plants).Level + " temperature=" + workCell.GetTemperature(map)
                         + " things=" + string.Join(",", workCell.GetThingList(map).Select(t => t.def.defName)));
+                    Check(job.plantDefToSow == expected, "native assorted ground selection exercises " + expected.defName);
                     job.playerForced = true;
                     farmer.jobs.TryTakeOrderedJob(job, JobTag.Misc);
                     deadline = Time.realtimeSinceStartup + 40f;
@@ -136,7 +150,7 @@ namespace RimMushroomsTests
                     if (currentPlant == null || currentPlant.Growth <= 0f || farmer.CurJobDef == JobDefOf.Sow) return;
                     Check(AssortedTests.Selection.GetModExtension<AssortedMushroomSettings>().varieties.Contains(currentPlant.def) && currentPlant.sown, "pawn actually planted assorted member " + currentPlant.def.defName);
                     Check(AssortedTests.Sower.JobOnCell(farmer, workCell) == null, "actual assorted planting is kept until harvest");
-                    if (++assortedCycles >= 3)
+                    if (++assortedCycles > AssortedTests.Selection.GetModExtension<AssortedMushroomSettings>().varieties.Count)
                     {
                         currentPlant.Growth = 0.37f;
                         Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
@@ -233,6 +247,7 @@ namespace RimMushroomsTests
                 }
                 else if (phase == 5 && ++frames > 30)
                 {
+                    EcologyTests.PrepareSave(map, Check);
                     GameDataSaveLoader.SaveGame("RimMushrooms-SmokeFixture");
                     phase = 6;
                 }
@@ -250,10 +265,39 @@ namespace RimMushroomsTests
 
         private void Fail(Exception e)
         {
+            string diagnostic = WorkerDiagnostic(Find.CurrentMap);
+            File.AppendAllText(Report, "DIAGNOSTIC failure " + diagnostic + Environment.NewLine);
+            Log.Message("[Rim Mushrooms Tests] Failure diagnostic: " + diagnostic);
             File.AppendAllText(Report, "RESULT FAIL " + e + Environment.NewLine);
             Log.Error("[Rim Mushrooms Tests] " + e);
             finished = true;
             Application.Quit(1);
+        }
+
+        private string WorkerDiagnostic(Map map)
+        {
+            try
+            {
+                if (farmer == null) return "phase=" + phase + " worker=null";
+                string conditions = farmer.health?.hediffSet?.hediffs == null ? "unavailable"
+                    : string.Join(";", farmer.health.hediffSet.hediffs.Select(h => h.def.defName + ":" + h.Severity
+                        + ":part=" + (h.Part?.def?.defName ?? "whole") + ":source=" + (h.sourceDef?.defName ?? "none")
+                        + ":sourceLabel=" + (h.sourceLabel ?? "none")));
+                string nearby = map == null ? "map=null" : string.Join(";", map.mapPawns.AllPawnsSpawned
+                    .Where(p => p != farmer).OrderBy(p => p.Position.DistanceTo(farmer.PositionHeld)).Take(30)
+                    .Select(p => p.ThingID + ":" + p.def.defName + ":pos=" + p.Position + ":job=" + p.CurJob));
+                return "phase=" + phase + " crop=" + cropIndex + " assorted=" + assortedCycles
+                    + " tick=" + Find.TickManager.TicksGame + " worker=" + farmer.ThingID
+                    + " dead=" + farmer.Dead + " downed=" + farmer.Downed + " destroyed=" + farmer.Destroyed
+                    + " spawned=" + farmer.Spawned + " position=" + farmer.PositionHeld + " corpse=" + farmer.Corpse
+                    + " needs=" + (farmer.needs != null) + " food=" + (farmer.needs?.food != null)
+                    + " rest=" + (farmer.needs?.rest != null) + " body=" + farmer.RaceProps.body?.defName
+                    + " job=" + farmer.CurJob + " conditions=[" + conditions + "] nearby=[" + nearby + "]";
+            }
+            catch (Exception diagnosticError)
+            {
+                return "phase=" + phase + " diagnostic unavailable: " + diagnosticError.GetType().Name + ": " + diagnosticError.Message;
+            }
         }
 
         private void Setup(Map map)
@@ -276,7 +320,22 @@ namespace RimMushroomsTests
             Check(plants.Count(d => d.plant.Sowable) == 11, "exactly eleven cultivable varieties");
             Check(!DefDatabase<ThingDef>.GetNamed("RMush_PlantMatsutake").plant.Sowable, "matsutake wild only");
             foreach (var d in plants.Concat(items)) Check(!d.ConfigErrors().Any(), "resolved def config " + d.defName);
-            farmer = map.mapPawns.FreeColonistsSpawned.First(p => !p.Downed && !p.WorkTypeIsDisabled(WorkTypeDefOf.Growing));
+            farmer = map.mapPawns.FreeColonistsSpawned.First(p => !p.Downed && p.DevelopmentalStage == DevelopmentalStage.Adult
+                && !p.WorkTypeIsDisabled(WorkTypeDefOf.Growing));
+            File.AppendAllText(Report, "DIAGNOSTIC initial worker " + WorkerDiagnostic(map) + Environment.NewLine);
+            // Prepare a healthy adult before any test cases, as the medical suites
+            // do for their patients. Never heal or revive this worker during jobs.
+            foreach (var condition in farmer.health.hediffSet.hediffs.ToList()) farmer.health.RemoveHediff(condition);
+            var ambientWildlife = map.mapPawns.AllPawnsSpawned
+                .Where(p => p.Faction != Faction.OfPlayer && (p.RaceProps.Animal || p.HostileTo(Faction.OfPlayer))).ToList();
+            File.AppendAllText(Report, "DIAGNOSTIC initial ambient wildlife isolated: "
+                + string.Join(";", ambientWildlife.Select(p => p.ThingID + ":" + p.def.defName + ":job=" + p.CurJob)) + Environment.NewLine);
+            // Native predators keep hunting with the storyteller disabled. These
+            // crop/health fixtures do not exercise combat or ambient predation.
+            foreach (var pawn in ambientWildlife) pawn.Destroy(DestroyMode.Vanish);
+            Check(!farmer.Dead && !farmer.Downed && farmer.health.hediffSet.hediffs.Count == 0
+                && farmer.needs?.food != null && farmer.needs?.rest != null,
+                "healthy adult crop worker prepared before tests; initial ambient wildlife isolated=" + ambientWildlife.Count);
             // Keep ordered fixture jobs from competing with automatic farming.
             // Automatic sow/harvest scans are checked separately in the suites.
             farmer.workSettings.SetPriority(WorkTypeDefOf.Growing, 0);
@@ -289,7 +348,13 @@ namespace RimMushroomsTests
             farmer.skills.GetSkill(SkillDefOf.Plants).Level = 20;
             farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
             workCell = map.Center + new IntVec3(18, 0, 0);
-            foreach (var cell in CellRect.CenteredOn(map.Center, 47, 35))
+            // GenSpawn permits a plant to overlap a natural rock. Clear through
+            // the lowest actual artwork row, so native compressed rocks cannot
+            // correctly wipe an invalid fixture overlap when the save is loaded.
+            int lowestArtworkRow = Math.Min(-17, 14 - (plants.Length - 1) * 3) - 1;
+            var fixtureRect = new CellRect(map.Center.x - 23, map.Center.z + lowestArtworkRow, 47, 18 - lowestArtworkRow);
+            Check(fixtureRect.Cells.All(c => c.InBounds(map)), "crop/art fixture clearing covers every initial growth row");
+            foreach (var cell in fixtureRect)
             {
                 foreach (var thing in cell.GetThingList(map).ToList())
                     if (!(thing is Pawn)) thing.Destroy(DestroyMode.Vanish);
@@ -297,6 +362,16 @@ namespace RimMushroomsTests
                 map.roofGrid.SetRoof(cell, null);
                 map.snowGrid.SetDepth(cell, 0f);
             }
+            // Fresh quicktest maps can still cache freezing room temperatures
+            // after the biome target is set. Establish the declared warm fixture
+            // in the actual native rooms intersecting only this cleared patch.
+            map.regionAndRoomUpdater.TryRebuildDirtyRegionsAndRooms();
+            float previousWorkTemperature = workCell.GetTemperature(map);
+            var fixtureRooms = fixtureRect.Cells.Select(c => c.GetRoom(map)).Where(r => r != null).Distinct().ToArray();
+            foreach (var room in fixtureRooms) room.Temperature = 21f;
+            Check(fixtureRooms.Length > 0 && fixtureRect.Cells.All(c => Math.Abs(c.GetTemperature(map) - 21f) < 0.001f),
+                "crop/art fixture native room temperatures are 21C; rooms=" + fixtureRooms.Length
+                + " previousWorkCell=" + previousWorkTemperature + " actualWorkCell=" + workCell.GetTemperature(map));
             map.fogGrid.ClearAllFog();
             farmer.Position = workCell + IntVec3.West;
             farmer.Notify_Teleported();
@@ -354,6 +429,7 @@ namespace RimMushroomsTests
             Find.CameraDriver.SetRootSize(19f);
             LightTests.Run(map, workCell, Check);
             AssortedTests.Run(map, farmer, growingZone, workCell, Check);
+            EcologyTests.Verify(map, farmer, Check);
             Check(true, "fixture created; live sow/harvest jobs starting");
         }
 

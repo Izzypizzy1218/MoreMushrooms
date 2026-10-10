@@ -1,23 +1,23 @@
 {
-  "contentVersion": "0.5.0",
+  "contentVersion": "0.6.4",
   "status": "Provisional game balance; not real-world health, edibility or cultivation advice.",
   "catalog": "Art/ExpansionMushrooms/v0.1.1-2026-10-09/species.json",
   "assetBase": "Art/ExpansionMushrooms/v0.1-2026-10-09",
   "notes": [
     "Only Cauliflower and PurpleBlewit are newly cultivable; both support Ground and Hydroponic.",
-    "Existing edible species, existing assorted nine-species selection and their statistics are unchanged.",
+    "v0.6.1: assorted sowing includes Cauliflower and PurpleBlewit (eleven equal-probability cultivars). Premium five foods grant +15 mood for 48 hours; other cultivation and food statistics remain unchanged.",
     "Medicinal fungi are nonfood collection/trade resources while medicinal gameplay is paused.",
-    "Host, rain, stump, tree and wooden-floor dependent generation remains a separate future feature. Current generation uses conservative vanilla wildBiomes only.",
+    "Host, rain, stump, tree and wooden-floor dependent generation remains deferred. v0.6.0 adds limited rings, seasonal emergence and harvest-site regrowth on ordinary fertile wild soil.",
     "Biomes and all growth/yield/price/rot values are game abstractions, not claims about exact natural habitats.",
-    "GhostFungus and Chlorophos artwork is preserved; actual emitted light is not added in this version."
+    "GhostFungus and Chlorophos retain their approved artwork and now emit a small amount of actual native light."
   ],
   "newWildCommonalityTotals": {
-    "TemperateForest": 0.0245,
-    "BorealForest": 0.0089,
-    "TemperateSwamp": 0.0036,
-    "AridShrubland": 0.0013,
-    "TropicalRainforest": 0.007,
-    "TropicalSwamp": 0.0027
+    "AridShrubland": 0.00221,
+    "BorealForest": 0.01452,
+    "TemperateForest": 0.04124998,
+    "TemperateSwamp": 0.00629,
+    "TropicalRainforest": 0.0114,
+    "TropicalSwamp": 0.00463
   },
   "mushrooms": [
     {
@@ -35,8 +35,8 @@
       "mood": 7,
       "cultivable": true,
       "biomes": {
-        "TemperateForest": 0.002,
-        "BorealForest": 0.0015
+        "TemperateForest": 0.00342742,
+        "BorealForest": 0.00255
       },
       "description": {
         "en": "A pale mushroom with densely folded, ruffled branches.",
@@ -45,11 +45,11 @@
       "moodText": {
         "ko": {
           "label": "꽃송이의 풍미",
-          "description": "겹겹이 접힌 버섯을 씹는 맛이 좋았다."
+          "description": "오도독 씹을수록 고소한 맛이 퍼져. 꽃잎처럼 생긴 녀석이 입안에서는 꽤 야무지네."
         },
         "en": {
           "label": "cauliflower flavor",
-          "description": "The folded mushroom made for a satisfying bite."
+          "description": "Every crisp bite brings out more nutty flavor. For something shaped like flower petals, it has quite a bite."
         }
       }
     },
@@ -68,8 +68,8 @@
       "mood": 5,
       "cultivable": true,
       "biomes": {
-        "TemperateForest": 0.002,
-        "TemperateSwamp": 0.001
+        "TemperateForest": 0.00342742,
+        "TemperateSwamp": 0.0017
       },
       "description": {
         "en": "A purple-toned mushroom with a firm cap and pleasant mushroom flavor.",
@@ -78,11 +78,11 @@
       "moodText": {
         "ko": {
           "label": "자주방망이의 풍미",
-          "description": "은은한 단맛과 버섯 향이 잘 어울렸다."
+          "description": "진한 버섯 향 사이로 단맛이 살짝 고개를 내미네. 뜻밖의 간식을 발견한 기분이야."
         },
         "en": {
           "label": "purple blewit flavor",
-          "description": "Its gentle sweetness and mushroom aroma worked well together."
+          "description": "A little sweetness peeks through that rich mushroom aroma. What an unexpected little treat."
         }
       }
     },
@@ -98,10 +98,10 @@
       "skill": 0,
       "value": 8,
       "rotDays": 15,
-      "mood": 7,
+      "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0005
+        "TemperateForest": 0.00070565
       },
       "description": {
         "en": "A dark, knobbly woodland fungus prized for its strong and complex aroma.",
@@ -110,13 +110,14 @@
       "moodText": {
         "ko": {
           "label": "트러플의 깊은 향",
-          "description": "짙은 향이 입안에 오래 남았다."
+          "description": "짙은 향이 입안을 가득 채우는군. 평범한 내 식사가 잠깐은 사치스러운 만찬처럼 느껴져."
         },
         "en": {
           "label": "rich truffle aroma",
-          "description": "The rich aroma lingered pleasantly."
+          "description": "That deep aroma fills my mouth. For a moment, my ordinary meal feels like a lavish feast."
         }
-      }
+      },
+      "moodDurationHours": 48
     },
     {
       "id": "Porcini",
@@ -130,11 +131,11 @@
       "skill": 0,
       "value": 3,
       "rotDays": 15,
-      "mood": 7,
+      "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.001,
-        "BorealForest": 0.0008
+        "TemperateForest": 0.00141129,
+        "BorealForest": 0.00112
       },
       "description": {
         "en": "A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor.",
@@ -143,13 +144,14 @@
       "moodText": {
         "ko": {
           "label": "포르치니의 고소함",
-          "description": "두툼한 살에서 깊고 고소한 맛이 났다."
+          "description": "두툼한 살에 견과 같은 고소함이 숨어 있네. 숲에서 작은 별미를 주워 온 기분이야."
         },
         "en": {
           "label": "nutty porcini flavor",
-          "description": "The thick flesh had a rich, nutty flavor."
+          "description": "There's a gentle nutty flavor hiding in that thick flesh. It feels like I've brought home a little treasure from the woods."
         }
-      }
+      },
+      "moodDurationHours": 48
     },
     {
       "id": "Morel",
@@ -163,11 +165,11 @@
       "skill": 0,
       "value": 2.6,
       "rotDays": 12,
-      "mood": 5,
+      "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.001,
-        "BorealForest": 0.0007
+        "TemperateForest": 0.00141129,
+        "BorealForest": 0.00098
       },
       "description": {
         "en": "A spring woodland mushroom with a honeycomb-like cap and a gentle aroma.",
@@ -176,13 +178,14 @@
       "moodText": {
         "ko": {
           "label": "곰보의 풍미",
-          "description": "은은한 향과 탄력 있는 식감이 좋았다."
+          "description": "작은 벌집 같은 갓이 탄력 있게 씹혀. 순한 맛 덕분에 이 씹는 재미를 느긋하게 즐기게 돼."
         },
         "en": {
           "label": "morel flavor",
-          "description": "The gentle aroma and springy texture were pleasing."
+          "description": "That little honeycomb of a cap has a springy bite. Its mild flavor lets me take my time enjoying the texture."
         }
-      }
+      },
+      "moodDurationHours": 48
     },
     {
       "id": "BlackTrumpet",
@@ -196,11 +199,11 @@
       "skill": 0,
       "value": 2.4,
       "rotDays": 18,
-      "mood": 5,
+      "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.001,
-        "TemperateSwamp": 0.0005
+        "TemperateForest": 0.00141129,
+        "TemperateSwamp": 0.0007
       },
       "description": {
         "en": "A dark, thin-fleshed mushroom shaped like a small trumpet.",
@@ -209,13 +212,14 @@
       "moodText": {
         "ko": {
           "label": "블랙트럼펫의 풍미",
-          "description": "얇은 버섯이 식사에 기분 좋은 풍미를 더했다."
+          "description": "이 얇은 조각에 이렇게 진한 맛을 숨겨 뒀다니. 작은 나팔이 입안에서 존재감을 뽐내네."
         },
         "en": {
           "label": "black trumpet flavor",
-          "description": "The thin mushroom added a pleasant note to the meal."
+          "description": "So much rich flavor hidden in such a thin piece. This little trumpet certainly makes itself heard in my mouth."
         }
-      }
+      },
+      "moodDurationHours": 48
     },
     {
       "id": "GiantPuffball",
@@ -232,8 +236,8 @@
       "mood": 3,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0015,
-        "AridShrubland": 0.0008
+        "TemperateForest": 0.00257056,
+        "AridShrubland": 0.00136
       },
       "description": {
         "en": "A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage.",
@@ -242,11 +246,11 @@
       "moodText": {
         "ko": {
           "label": "댕구알의 담백함",
-          "description": "크고 담백한 버섯으로 배를 채웠다."
+          "description": "이 커다란 덩어리가 이렇게 부드럽다니. 버섯 맛을 머금은 구름 한 조각을 베어 문 것 같아."
         },
         "en": {
           "label": "mild puffball flavor",
-          "description": "The large, mild mushroom made a satisfying meal."
+          "description": "How can something this huge be so soft? It's like biting into a cloud with a gentle mushroom flavor."
         }
       }
     },
@@ -265,8 +269,8 @@
       "mood": 5,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.001,
-        "TropicalRainforest": 0.0005
+        "TemperateForest": 0.00171371,
+        "TropicalRainforest": 0.0008
       },
       "description": {
         "en": "A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste.",
@@ -275,11 +279,11 @@
       "moodText": {
         "ko": {
           "label": "파란젖의 풍미",
-          "description": "낯선 푸른 버섯도 먹고 나니 맛이 좋았다."
+          "description": "색깔만 별난 줄 알았는데 풍미도 짙네. 눈을 감으면 숲 한가운데 앉아 있는 것 같아."
         },
         "en": {
           "label": "indigo milkcap flavor",
-          "description": "The unfamiliar blue mushroom tasted surprisingly pleasant."
+          "description": "I thought the color was the unusual part, but that earthy flavor has depth too. I close my eyes and feel as if I'm sitting in the woods."
         }
       }
     },
@@ -298,8 +302,8 @@
       "mood": 5,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.0015,
-        "TropicalSwamp": 0.001
+        "TropicalRainforest": 0.0024,
+        "TropicalSwamp": 0.0017
       },
       "description": {
         "en": "A mushroom with a delicate white net and sponge-like edible tissue.",
@@ -308,11 +312,11 @@
       "moodText": {
         "ko": {
           "label": "망태의 식감",
-          "description": "스펀지 같은 버섯이 식사에 색다른 식감을 더했다."
+          "description": "비단처럼 매끈한데 씹으면 살짝 아삭해. 한입 안에 식감이 둘이나 숨어 있네."
         },
         "en": {
           "label": "veiled stinkhorn texture",
-          "description": "The sponge-like mushroom added a pleasing texture."
+          "description": "Smooth as silk, then a little crunch. There's more going on in this bite than I expected."
         }
       }
     },
@@ -331,8 +335,8 @@
       "mood": 3,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0015,
-        "AridShrubland": 0.0005
+        "TemperateForest": 0.00257056,
+        "AridShrubland": 0.00085
       },
       "description": {
         "en": "A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly.",
@@ -341,11 +345,11 @@
       "moodText": {
         "ko": {
           "label": "먹물의 풍미",
-          "description": "연한 버섯 살의 순한 맛이 좋았다."
+          "description": "부드러운 살을 씹으니 먹물이 터지듯 풍미가 입안에 번져."
         },
         "en": {
           "label": "shaggy inkcap flavor",
-          "description": "The delicate flesh had a pleasant mild flavor."
+          "description": "As I bite into the tender flesh, its flavor spreads through my mouth like a little burst of ink."
         }
       }
     },
@@ -364,8 +368,8 @@
       "mood": 5,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0008,
-        "BorealForest": 0.0005
+        "TemperateForest": 0.00137097,
+        "BorealForest": 0.00085
       },
       "description": {
         "en": "An orange fungus growing over the fruit body of another mushroom, giving it firm flesh.",
@@ -374,11 +378,11 @@
       "moodText": {
         "ko": {
           "label": "랍스터버섯의 식감",
-          "description": "단단하고 탄력 있는 버섯 살이 씹기 좋았다."
+          "description": "도톰한 살이 단단하게 씹히는 게, 꼭 랍스터 한 점을 먹는 기분이야."
         },
         "en": {
           "label": "lobster mushroom texture",
-          "description": "The firm, springy mushroom flesh made a satisfying bite."
+          "description": "That thick, firm flesh makes every bite feel like a piece of lobster."
         }
       }
     },
@@ -397,8 +401,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.001,
-        "TropicalRainforest": 0.001
+        "TemperateForest": 0.00191532,
+        "TropicalRainforest": 0.0018
       },
       "description": {
         "en": "A tough, bitter bracket fungus collected as a fungal resource and trade good.",
@@ -420,9 +424,9 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0015,
-        "BorealForest": 0.001,
-        "TemperateSwamp": 0.0008
+        "TemperateForest": 0.00287298,
+        "BorealForest": 0.0019,
+        "TemperateSwamp": 0.00152
       },
       "description": {
         "en": "A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good.",
@@ -444,7 +448,7 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0005
+        "TemperateForest": 0.00095766
       },
       "description": {
         "en": "A hard, woody bracket fungus collected as a fungal resource and trade good.",
@@ -466,8 +470,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0005,
-        "BorealForest": 0.0005
+        "TemperateForest": 0.00095766,
+        "BorealForest": 0.00095
       },
       "description": {
         "en": "A small orange club-shaped fungus collected as a fungal resource and trade good.",
@@ -489,8 +493,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "BorealForest": 0.0008,
-        "TemperateForest": 0.0004
+        "BorealForest": 0.00152,
+        "TemperateForest": 0.00076613
       },
       "description": {
         "en": "A dark, rough fungal growth collected as a fungal resource and trade good.",
@@ -512,8 +516,8 @@
       "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.001,
-        "BorealForest": 0.0006
+        "TemperateForest": 0.0016129,
+        "BorealForest": 0.00096
       },
       "description": {
         "en": "A small mushroom with a pointed cap and psychoactive effects.",
@@ -521,8 +525,8 @@
       },
       "doseUnitCount": 10,
       "hallucinationHours": [
-        1,
-        2
+        6,
+        8
       ]
     },
     {
@@ -540,8 +544,8 @@
       "mood": 10,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0008,
-        "BorealForest": 0.0006
+        "TemperateForest": 0.00096774,
+        "BorealForest": 0.00072
       },
       "description": {
         "en": "A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma.",
@@ -549,8 +553,8 @@
       },
       "doseUnitCount": 10,
       "hallucinationHours": [
-        3,
-        4
+        12,
+        24
       ],
       "poisonHediff": "RMush_PoisonPantherCap"
     },
@@ -569,8 +573,8 @@
       "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.001,
-        "TropicalSwamp": 0.0005
+        "TropicalRainforest": 0.00135,
+        "TropicalSwamp": 0.0008
       },
       "description": {
         "en": "A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects.",
@@ -578,8 +582,8 @@
       },
       "doseUnitCount": 10,
       "hallucinationHours": [
-        1,
-        2
+        6,
+        8
       ]
     },
     {
@@ -597,7 +601,7 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0005
+        "TemperateForest": 0.00055444
       },
       "description": {
         "en": "Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal.",
@@ -620,8 +624,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.0007,
-        "TropicalSwamp": 0.0005
+        "TropicalRainforest": 0.00091,
+        "TropicalSwamp": 0.0008
       },
       "description": {
         "en": "A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness.",
@@ -644,7 +648,7 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0008
+        "TemperateForest": 0.00129032
       },
       "description": {
         "en": "A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning.",
@@ -667,8 +671,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "BorealForest": 0.0006,
-        "TemperateForest": 0.0004
+        "BorealForest": 0.00066,
+        "TemperateForest": 0.00044355
       },
       "description": {
         "en": "Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal.",
@@ -691,8 +695,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.0005,
-        "TropicalSwamp": 0.0003
+        "TropicalRainforest": 0.0009,
+        "TropicalSwamp": 0.00057
       },
       "description": {
         "en": "A slender fungus associated with insect hosts. Collected as a specimen and trade good.",
@@ -714,9 +718,9 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0015,
-        "BorealForest": 0.0008,
-        "TemperateSwamp": 0.0005
+        "TemperateForest": 0.00257056,
+        "BorealForest": 0.00136,
+        "TemperateSwamp": 0.00085
       },
       "description": {
         "en": "A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient.",
@@ -738,8 +742,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0003,
-        "TemperateSwamp": 0.0003
+        "TemperateForest": 0.0005746,
+        "TemperateSwamp": 0.00057
       },
       "description": {
         "en": "A broad, crust-like fungal growth collected as a specimen and trade good.",
@@ -761,8 +765,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0005,
-        "TropicalRainforest": 0.0005
+        "TemperateForest": 0.00095766,
+        "TropicalRainforest": 0.0009
       },
       "description": {
         "en": "A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning.",
@@ -785,8 +789,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.001,
-        "TemperateSwamp": 0.0005
+        "TemperateForest": 0.00191532,
+        "TemperateSwamp": 0.00095
       },
       "description": {
         "en": "A folded yellow fungus with a jelly-like texture and little distinctive flavor.",
@@ -808,8 +812,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0005,
-        "TropicalRainforest": 0.0005
+        "TemperateForest": 0.00095766,
+        "TropicalRainforest": 0.0009
       },
       "description": {
         "en": "A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good.",
@@ -831,8 +835,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.001,
-        "BorealForest": 0.0005
+        "TemperateForest": 0.00191532,
+        "BorealForest": 0.00095
       },
       "description": {
         "en": "A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good.",
@@ -854,8 +858,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.0008,
-        "TropicalSwamp": 0.0004
+        "TropicalRainforest": 0.00144,
+        "TropicalSwamp": 0.00076
       },
       "description": {
         "en": "A tiny, pale-capped fungus collected as a specimen and trade good.",

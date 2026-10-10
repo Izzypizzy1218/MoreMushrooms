@@ -10,9 +10,14 @@
     <Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Xml"/>
     <Reference Include="Assembly-CSharp"><HintPath>$(Managed)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityEngine.CoreModule"><HintPath>$(Managed)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule"><HintPath>$(Managed)\UnityEngine.ScreenCaptureModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(Managed)\UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="netstandard"><HintPath>$(Managed)\netstandard.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="RimMushrooms"><HintPath>..\..\Assemblies\RimMushrooms.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
-  <ItemGroup><Compile Include="SmokeTests.cs"/><Compile Include="MoodTests.cs"/><Compile Include="LightTests.cs"/><Compile Include="AssortedTests.cs"/><Compile Include="HydroponicsTests.cs"/><Compile Include="PoisonTests.cs"/><Compile Include="PsychoactiveTests.cs"/><Compile Include="ExpansionTests.cs"/><Compile Include="MealExposureTests.cs"/><Compile Include="NutrientPasteTests.cs"/></ItemGroup>
+  <ItemGroup><Compile Include="SmokeTests.cs"/><Compile Include="RuntimeDiagnostics.cs"/><Compile Include="MoodTests.cs"/><Compile Include="LightTests.cs"/><Compile Include="AssortedTests.cs"/><Compile Include="HydroponicsTests.cs"/><Compile Include="PoisonTests.cs"/><Compile Include="PsychoactiveTests.cs"/><Compile Include="ExpansionTests.cs"/><Compile Include="MealExposureTests.cs"/><Compile Include="NutrientPasteTests.cs"/><Compile Include="EcologyTests.cs"/></ItemGroup>
+  <ItemGroup><Compile Include="FieldVisualTests.cs"/></ItemGroup>
+  <ItemGroup><Compile Include="FieldEcologyTests.cs"/><Compile Include="FieldBalanceTests.cs"/><Compile Include="FieldCompatibilityTests.cs"/></ItemGroup>
+  <ItemGroup><Compile Include="FieldWorkBalanceTests.cs"/></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 </Project>

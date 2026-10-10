@@ -1,5 +1,5 @@
 {
-  "status": "v0.5.0 game balance. Fictional exposure units and disease courses; not real medical doses. Existing nonpsychedelic poisons remain excluded from normal cooking.",
+  "status": "v0.6.4 game balance. Fictional exposure units and disease courses; not real medical doses. Existing nonpsychedelic poisons remain excluded from normal cooking.",
   "handoff": "Art/PoisonMushrooms/Handoff-2026-10-05",
   "common": {
     "stackLimit": 75,
@@ -78,6 +78,10 @@
             "Consciousness": -0.8
           }
         }
+      ],
+      "hallucinationHours": [
+        8,
+        12
       ]
     },
     {

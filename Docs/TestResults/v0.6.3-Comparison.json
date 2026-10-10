@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": 565,
+  "baseline": "v0.6.2",
+  "foodDescriptionsChanged": 21,
+  "psychoactiveDescriptionsChanged": 3,
+  "localizedDescriptionsChanged": 48,
+  "baseEnglishDescriptionsChanged": 24,
+  "effectNamesAndAllGameplayValuesUnchanged": true,
+  "productionSourceFilesUnchanged": 9,
+  "assemblyUnchanged": true,
+  "artworkUnchanged": true,
+  "originalArchivesUnchanged": 32,
+  "historicalMoodDocsUnchanged": true,
+  "userModsConfigUnchanged": true,
+  "differences": []
+}

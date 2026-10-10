@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": 531,
+  "baseline": "v0.6.0",
+  "existingDefinitions": 139,
+  "runtimeFiles": 291,
+  "productionSourceFiles": 9,
+  "unchangedSourceFiles": 7,
+  "originalReleaseArchives": 28,
+  "scope": "Five premium moods; two flavor descriptions; eleven-species assorted selector; four psychoactive timing profiles. Other runtime definitions, art, poison, ecology and seven production sources preserved.",
+  "differences": []
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": 412,
+  "baseline": "v0.6.1",
+  "foodDescriptionsChanged": 9,
+  "psychoactiveDescriptionsChanged": 3,
+  "localizedDescriptionsChanged": 24,
+  "retainedTasteAnchors": [
+    "Cauliflower",
+    "PurpleBlewit"
+  ],
+  "productionSourceFilesUnchanged": 9,
+  "assemblyUnchanged": true,
+  "originalArchivesUnchanged": 30,
+  "allGameplayValuesAndArtworkUnchanged": true,
+  "userModsConfigUnchanged": true,
+  "differences": []
+}

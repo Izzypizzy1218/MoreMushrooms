@@ -1,0 +1,370 @@
+Mono path[0] = 'C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/Managed'
+Mono config path = 'C:/Program Files (x86)/Steam/steamapps/common/RimWorld/MonoBleedingEdge/etc'
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Initialize engine version: 2022.3.35f1 (011206c7a712)
+[Subsystems] Discovering subsystems at path C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12113 MB
+    Driver:   32.0.16.1088
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.173 seconds
+- Finished resetting the current domain, in  0.002 seconds
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+UnloadTime: 0.638900 ms
+Command line arguments: -batchmode -screen-fullscreen 0 -screen-width 1600 -screen-height 1000 -quicktest -mushroomSmoke -mushroomLanguage=Korean -savedatafolder=C:\Users\집\Desktop\codex\MoreMushrooms\Tests\Runtime\20261010-233542-DLC-Mood -logFile C:\Users\집\Desktop\codex\MoreMushrooms\Tests\Runtime\20261010-233542-DLC-Mood\Player.log -mushroomMoodOnly -mushroomLegacySave
+RimWorld 1.6.4871 rev591
+Save data folder overridden to C:\Users\집\Desktop\codex\MoreMushrooms\Tests\Runtime\20261010-233542-DLC-Mood
+Created WorkshopItem for 2590957984 but there is no folder for it.
+Mod RimTalk - Expand Toddlers dependency (cyanobot.toddlers) needs to have <downloadUrl> and/or <steamWorkshopUrl> specified.
+Mod RimTalk - Expand Toddlers dependency (cj.rimtalk) needs to have <downloadUrl> and/or <steamWorkshopUrl> specified.
+Fallback handler could not load library C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/MonoBleedingEdge/data-000001F426E97040.dll
+Fallback handler could not load library C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/MonoBleedingEdge/data-000001F427176150.dll
+[Rim Mushrooms Tests] Diagnostics: full exception stacks enabled; Harmony stacktrace caching disabled for this process only.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 5)
+Unloading 99 unused Assets to reduce memory usage. Loaded Objects now: 27172.
+Total: 176.931900 ms (FindLiveObjects: 1.079500 ms CreateObjectMapping: 0.954100 ms MarkObjects: 174.440900 ms  DeleteObjects: 0.457100 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 5)
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+UnloadTime: 3.152800 ms
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 27187.
+Total: 196.048000 ms (FindLiveObjects: 0.852900 ms CreateObjectMapping: 0.925100 ms MarkObjects: 194.189000 ms  DeleteObjects: 0.080700 ms)
+
+Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - Ludeon.RimWorld.Ideology
+  - Ludeon.RimWorld.Biotech
+  - Ludeon.RimWorld.Anomaly
+  - Ludeon.RimWorld.Odyssey
+  - izzypizzy.rimmushrooms
+  - izzypizzy.rimmushrooms.tests
+Unloading 0 Unused Serialized files (Serialized files now loaded: 5)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 32692.
+Total: 154.536900 ms (FindLiveObjects: 1.125600 ms CreateObjectMapping: 0.969300 ms MarkObjects: 152.320400 ms  DeleteObjects: 0.121300 ms)
+
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+Geyser spray sustainer still playing after 1000 ticks. Force-ending.
+[Rim Mushrooms Tests] Failure diagnostic: phase=20 crop=13 assorted=12 tick=1455000 worker=Human203 dead=False downed=False destroyed=False spawned=True position=(140, 0, 115) corpse= needs=True food=True rest=True body=Human job= conditions=[] nearby=[Crow3621:Crow:pos=(147, 0, 113):job=GotoWander (Job_2836) A = (142, 0, 111) Giver = JobGiver_WanderColony [workGiverDef: null];Human209:Human:pos=(139, 0, 128):job=Wait_Combat (Job_2231) A = (139, 0, 128) Giver = JobGiver_Orders [workGiverDef: null];Human206:Human:pos=(139, 0, 130):job=Wait_Combat (Job_2230) A = (139, 0, 130) Giver = JobGiver_Orders [workGiverDef: null];Toughspike3230:Toughspike:pos=(32, 0, 137):job=GotoWander (Job_2817) A = (33, 0, 138) Giver = JobGiver_WanderAnywhere [workGiverDef: null];Toughspike3231:Toughspike:pos=(32, 0, 138):job=GotoWander (Job_2837) A = (28, 0, 133) Giver = JobGiver_WanderAnywhere [workGiverDef: null]]
+[Rim Mushrooms Tests] System.InvalidOperationException: poison: one poor treatment cannot stabilize dangerous poison
+  at RimMushroomsTests.SmokeTests.Check (System.Boolean valid, System.String message) [0x00009] in <7287f988e9364acfa4437de60e23676b>:0 
+  at RimMushroomsTests.PoisonTests.Check (System.Action`2[T1,T2] check, System.Boolean valid, System.String message) [0x0000d] in <7287f988e9364acfa4437de60e23676b>:0 
+  at RimMushroomsTests.PoisonTests.ValidatePoorCare (System.Action`2[T1,T2] check) [0x00042] in <7287f988e9364acfa4437de60e23676b>:0 
+  at RimMushroomsTests.PoisonTests+<>c__DisplayClass19_0.<Run>b__5 () [0x00000] in <7287f988e9364acfa4437de60e23676b>:0 
+  at RimMushroomsTests.PoisonTests.WithClock (System.Action action) [0x0000d] in <7287f988e9364acfa4437de60e23676b>:0 
+  at RimMushroomsTests.PoisonTests.Run (Verse.Pawn farmer, Verse.Map map, System.Action`2[T1,T2] check) [0x00203] in <7287f988e9364acfa4437de60e23676b>:0 
+  at RimMushroomsTests.SmokeTests.GameComponentUpdate () [0x00be5] in <7287f988e9364acfa4437de60e23676b>:0 
+Memory Statistics:
+[ALLOC_TEMP_TLS] TLS Allocator
+  StackAllocators : 
+    [ALLOC_TEMP_MAIN]
+      Peak usage frame count: [0-1.0 KB]: 5308 frames, [1.0 KB-2.0 KB]: 1 frames, [2.0 KB-4.0 KB]: 4 frames, [4.0 KB-8.0 KB]: 1 frames, [32.0 KB-64.0 KB]: 1 frames, [128.0 KB-256.0 KB]: 1 frames, [2.0 MB-4.0 MB]: 4 frames
+      Initial Block Size 4.0 MB
+      Current Block Size 4.0 MB
+      Peak Allocated Bytes 3.9 MB
+      Overflow Count 1
+    [ALLOC_TEMP_Loading.AsyncRead]
+      Initial Block Size 64.0 KB
+      Current Block Size 120.0 KB
+      Peak Allocated Bytes 117.2 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Loading.PreloadManager]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 3.8 KB
+      Overflow Count 8
+    [ALLOC_TEMP_Background Job.Worker 8]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 6]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 0]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 10]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 9]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 5]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 14]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 6]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 4]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 112 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 3]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 128 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 12]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_EnlightenWorker] x 6
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 15]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 1]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 2]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 7]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_AssetGarbageCollectorHelper] x 11
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 138 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 5]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 9]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 13]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 8]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 7]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 1]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 507 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 2]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 480 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 3]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 11]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.Worker 10]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 0]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 4]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+    [ALLOC_TEMP_BatchDeleteObjects]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 54 B
+      Overflow Count 0
+[ALLOC_DEFAULT] Dual Thread Allocator
+  Peak main deferred allocation count 29876
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 4 Subsections = 4096 buckets. Failed count: 34828
+        32B: 33 Subsections = 16896 buckets. Failed count: 55104
+        48B: 48 Subsections = 16384 buckets. Failed count: 93388
+        64B: 39 Subsections = 9984 buckets. Failed count: 35299
+        80B: 85 Subsections = 17408 buckets. Failed count: 23400
+        96B: 31 Subsections = 5290 buckets. Failed count: 41582
+        112B: 10 Subsections = 1462 buckets. Failed count: 10205
+        128B: 6 Subsections = 768 buckets. Failed count: 9722
+    [ALLOC_DEFAULT_MAIN]
+      Peak usage frame count: [16.0 MB-32.0 MB]: 1287 frames, [128.0 MB-256.0 MB]: 4033 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 12
+      Peak Allocated memory 179.9 MB
+      Peak Large allocation bytes 11.3 MB
+    [ALLOC_DEFAULT_THREAD]
+      Peak usage frame count: [4.0 MB-8.0 MB]: 1 frames, [8.0 MB-16.0 MB]: 1380 frames, [16.0 MB-32.0 MB]: 15 frames, [32.0 MB-64.0 MB]: 1041 frames, [64.0 MB-128.0 MB]: 2883 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 5
+      Peak Allocated memory 75.6 MB
+      Peak Large allocation bytes 0 B
+[ALLOC_TEMP_JOB_1_FRAME]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_2_FRAMES]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_4_FRAMES (JobTemp)]
+  Initial Block Size 2.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_ASYNC (Background)]
+  Initial Block Size 1.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_GFX] Dual Thread Allocator
+  Peak main deferred allocation count 0
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 4 Subsections = 4096 buckets. Failed count: 34828
+        32B: 33 Subsections = 16896 buckets. Failed count: 55104
+        48B: 48 Subsections = 16384 buckets. Failed count: 93388
+        64B: 39 Subsections = 9984 buckets. Failed count: 35299
+        80B: 85 Subsections = 17408 buckets. Failed count: 23400
+        96B: 31 Subsections = 5290 buckets. Failed count: 41582
+        112B: 10 Subsections = 1462 buckets. Failed count: 10205
+        128B: 6 Subsections = 768 buckets. Failed count: 9722
+    [ALLOC_GFX_MAIN]
+      Peak usage frame count: [64.0 KB-128.0 KB]: 1 frames, [2.0 MB-4.0 MB]: 2435 frames, [32.0 MB-64.0 MB]: 2883 frames, [128.0 MB-256.0 MB]: 1 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 3
+      Peak Allocated memory 216.7 MB
+      Peak Large allocation bytes 213.1 MB
+    [ALLOC_GFX_THREAD]
+      Peak usage frame count: [0-1.0 KB]: 5319 frames, [1.0 KB-2.0 KB]: 1 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 1
+      Peak Allocated memory 1.0 KB
+      Peak Large allocation bytes 0 B
+[ALLOC_CACHEOBJECTS] Dual Thread Allocator
+  Peak main deferred allocation count 101
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 4 Subsections = 4096 buckets. Failed count: 34828
+        32B: 33 Subsections = 16896 buckets. Failed count: 55104
+        48B: 48 Subsections = 16384 buckets. Failed count: 93388
+        64B: 39 Subsections = 9984 buckets. Failed count: 35299
+        80B: 85 Subsections = 17408 buckets. Failed count: 23400
+        96B: 31 Subsections = 5290 buckets. Failed count: 41582
+        112B: 10 Subsections = 1462 buckets. Failed count: 10205
+        128B: 6 Subsections = 768 buckets. Failed count: 9722
+    [ALLOC_CACHEOBJECTS_MAIN]
+      Peak usage frame count: [4.0 MB-8.0 MB]: 1287 frames, [8.0 MB-16.0 MB]: 1151 frames, [16.0 MB-32.0 MB]: 2882 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 5
+      Peak Allocated memory 16.2 MB
+      Peak Large allocation bytes 0 B
+    [ALLOC_CACHEOBJECTS_THREAD]
+      Peak usage frame count: [4.0 KB-8.0 KB]: 1286 frames, [32.0 KB-64.0 KB]: 1 frames, [64.0 KB-128.0 KB]: 4031 frames, [256.0 KB-0.5 MB]: 1 frames, [0.5 MB-1.0 MB]: 1 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 1
+      Peak Allocated memory 0.6 MB
+      Peak Large allocation bytes 0 B
+[ALLOC_TYPETREE] Dual Thread Allocator
+  Peak main deferred allocation count 0
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 4 Subsections = 4096 buckets. Failed count: 34828
+        32B: 33 Subsections = 16896 buckets. Failed count: 55104
+        48B: 48 Subsections = 16384 buckets. Failed count: 93388
+        64B: 39 Subsections = 9984 buckets. Failed count: 35299
+        80B: 85 Subsections = 17408 buckets. Failed count: 23400
+        96B: 31 Subsections = 5290 buckets. Failed count: 41582
+        112B: 10 Subsections = 1462 buckets. Failed count: 10205
+        128B: 6 Subsections = 768 buckets. Failed count: 9722
+    [ALLOC_TYPETREE_MAIN]
+      Peak usage frame count: [4.0 KB-8.0 KB]: 1 frames, [8.0 KB-16.0 KB]: 1286 frames, [32.0 KB-64.0 KB]: 4033 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 1
+      Peak Allocated memory 50.0 KB
+      Peak Large allocation bytes 0 B
+    [ALLOC_TYPETREE_THREAD]
+      Peak usage frame count: [0-1.0 KB]: 5320 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 0
+      Peak Allocated memory 0 B
+      Peak Large allocation bytes 0 B

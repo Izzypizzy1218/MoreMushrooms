@@ -152,9 +152,10 @@ namespace RimMushroomsTests
         {
             var memories = pawn.needs.mood.thoughts.memories.Memories.OfType<Thought_MushroomEnjoyment>().ToArray();
             var expected = raw.ingestible.specialThoughtDirect;
-            Check(check, memories.Length == 1 && memories[0].def == expected && memories[0].DurationTicks == 15000
+            bool premium = new[] { "BlackTruffle", "Porcini", "Morel", "BlackTrumpet" }.Any(id => raw.defName == "RMush_Raw" + id);
+            Check(check, memories.Length == 1 && memories[0].def == expected && memories[0].DurationTicks == (premium ? 120000 : 15000)
                 && memories[0].MoodOffset() == expected.stages[0].baseMoodEffect,
-                "single correct six-hour taste memory " + context + " " + raw.defName);
+                "single correct " + (premium ? "48-hour" : "six-hour") + " taste memory " + context + " " + raw.defName);
         }
         public static void VerifyLoaded(Map map, Action<bool, string> check)
         {

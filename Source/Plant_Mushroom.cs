@@ -24,6 +24,54 @@ namespace RimMushrooms
 
     public sealed class Plant_Mushroom : Plant
     {
+        private int wildRegrowthGeneration;
+        private bool wildRegrowthSpent;
+        private int successfulHarvestTick = -1;
+
+        public int WildRegrowthGeneration => wildRegrowthGeneration;
+        public bool WildRegrowthSpent => wildRegrowthSpent;
+
+        public void SetWildRegrowthGeneration(int generation) { wildRegrowthGeneration = generation <= 0 ? 0 : 1; }
+        public void MarkWildRegrowthSpent() { wildRegrowthSpent = true; }
+        public void NotifySuccessfulHarvest()
+        {
+            if (Spawned && HarvestableNow && CanYieldNow()) successfulHarvestTick = Find.TickManager.TicksGame;
+        }
+
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            map.GetComponent<MapComponent_WildMushrooms>()?.Register(this);
+        }
+
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            Map map = Map;
+            map?.GetComponent<MapComponent_WildMushrooms>()?.Unregister(this);
+            base.DeSpawn(mode);
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref wildRegrowthGeneration, "mushroomWildRegrowthGeneration");
+            Scribe_Values.Look(ref wildRegrowthSpent, "mushroomWildRegrowthSpent");
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                wildRegrowthGeneration = wildRegrowthGeneration <= 0 ? 0 : 1;
+                successfulHarvestTick = -1;
+            }
+        }
+
+        public override void PlantCollected(Pawn by, PlantDestructionMode plantDestructionMode)
+        {
+            bool success = successfulHarvestTick == Find.TickManager.TicksGame;
+            successfulHarvestTick = -1;
+            if (success && plantDestructionMode == PlantDestructionMode.Chop && by != null && Spawned)
+                Map.GetComponent<MapComponent_WildMushrooms>()?.TryQueueRegrowth(this);
+            base.PlantCollected(by, plantDestructionMode);
+        }
+
         public float BrightLightGrowthFactor
         {
             get

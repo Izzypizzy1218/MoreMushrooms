@@ -1,0 +1,218 @@
+{
+  "auditedVersion": "0.5.0",
+  "savePath": "C:/Users/집/Desktop/codex/MoreMushrooms/Tests/Runtime/20261010-014454-Core/Saves/RimMushrooms-SmokeFixture.rws",
+  "saveSha256": "bdb80bdc3504684f7c212565f57ab50618d6b600030971900fbdcf413e5d04a0",
+  "mapSize": "(250, 1, 250)",
+  "ticksGame": 1034999,
+  "totalMushroomPlants": 491,
+  "initialSpawnTickZeroPlants": 357,
+  "nonInitialPlants": 134,
+  "conservativeExcludedRectangle": {
+    "minX": 75,
+    "maxX": 175,
+    "minZ": 85,
+    "maxZ": 165,
+    "width": 101,
+    "height": 81
+  },
+  "plantsOutsideConservativeFixtureRectangle": 316,
+  "initialPlantsOutsideConservativeFixtureRectangle": 316,
+  "nonInitialPlantsOutsideConservativeFixtureRectangle": 0,
+  "bySpawnTick": [
+    {
+      "tick": 0,
+      "count": 357
+    },
+    {
+      "tick": 1034999,
+      "count": 93
+    },
+    {
+      "tick": 1,
+      "count": 39
+    },
+    {
+      "tick": 17867,
+      "count": 1
+    },
+    {
+      "tick": 975107,
+      "count": 1
+    }
+  ],
+  "initialPlantByDef": [
+    {
+      "defName": "RMush_PlantBeech",
+      "count": 27
+    },
+    {
+      "defName": "RMush_PlantBirdsNest",
+      "count": 3
+    },
+    {
+      "defName": "RMush_PlantBlackTruffle",
+      "count": 2
+    },
+    {
+      "defName": "RMush_PlantBlackTrumpet",
+      "count": 3
+    },
+    {
+      "defName": "RMush_PlantButton",
+      "count": 46
+    },
+    {
+      "defName": "RMush_PlantCauliflower",
+      "count": 6
+    },
+    {
+      "defName": "RMush_PlantChaga",
+      "count": 2
+    },
+    {
+      "defName": "RMush_PlantCordyceps",
+      "count": 2
+    },
+    {
+      "defName": "RMush_PlantDeadlyWebcap",
+      "count": 2
+    },
+    {
+      "defName": "RMush_PlantDeathCap",
+      "count": 1
+    },
+    {
+      "defName": "RMush_PlantDestroyingAngel",
+      "count": 4
+    },
+    {
+      "defName": "RMush_PlantDevilsFingers",
+      "count": 2
+    },
+    {
+      "defName": "RMush_PlantDryRot",
+      "count": 1
+    },
+    {
+      "defName": "RMush_PlantEnokiWild",
+      "count": 35
+    },
+    {
+      "defName": "RMush_PlantFlyAgaric",
+      "count": 15
+    },
+    {
+      "defName": "RMush_PlantGhostFungus",
+      "count": 1
+    },
+    {
+      "defName": "RMush_PlantGiantPuffball",
+      "count": 4
+    },
+    {
+      "defName": "RMush_PlantHoneyFungus",
+      "count": 2
+    },
+    {
+      "defName": "RMush_PlantIndigoMilkcap",
+      "count": 1
+    },
+    {
+      "defName": "RMush_PlantJackOLantern",
+      "count": 3
+    },
+    {
+      "defName": "RMush_PlantKingOyster",
+      "count": 25
+    },
+    {
+      "defName": "RMush_PlantLibertyCap",
+      "count": 3
+    },
+    {
+      "defName": "RMush_PlantLionsMane",
+      "count": 16
+    },
+    {
+      "defName": "RMush_PlantLobster",
+      "count": 2
+    },
+    {
+      "defName": "RMush_PlantMaitake",
+      "count": 13
+    },
+    {
+      "defName": "RMush_PlantMatsutake",
+      "count": 10
+    },
+    {
+      "defName": "RMush_PlantMorel",
+      "count": 4
+    },
+    {
+      "defName": "RMush_PlantOyster",
+      "count": 38
+    },
+    {
+      "defName": "RMush_PlantPantherCap",
+      "count": 2
+    },
+    {
+      "defName": "RMush_PlantPoisonFireCoral",
+      "count": 4
+    },
+    {
+      "defName": "RMush_PlantPorcini",
+      "count": 3
+    },
+    {
+      "defName": "RMush_PlantPurpleBlewit",
+      "count": 4
+    },
+    {
+      "defName": "RMush_PlantReishi",
+      "count": 3
+    },
+    {
+      "defName": "RMush_PlantSanghuang",
+      "count": 1
+    },
+    {
+      "defName": "RMush_PlantShaggyInkcap",
+      "count": 5
+    },
+    {
+      "defName": "RMush_PlantShiitake",
+      "count": 30
+    },
+    {
+      "defName": "RMush_PlantSulfurTuft",
+      "count": 16
+    },
+    {
+      "defName": "RMush_PlantTsukiyotake",
+      "count": 10
+    },
+    {
+      "defName": "RMush_PlantTurkeyTail",
+      "count": 3
+    },
+    {
+      "defName": "RMush_PlantYellowBrain",
+      "count": 3
+    }
+  ],
+  "oldCapAt250": 112,
+  "adoptedCapAt250": 500,
+  "adoptedAreaRatePer10000Cells": 80,
+  "adoptedMinWildCap": 80,
+  "adoptedMaxWildCap": 1500,
+  "interpretation": "The save retains 357 native initial plants. All 134 noninitial plants are inside the excluded central rectangle; 132 match the 39 legacy and 93 expansion artwork plants, with 2 crop-job plants. Even excluding the entire 101x81 central rectangle leaves 316 initial wild plants. Counts are lower bounds after the smoke harness cleared test patches, not an exact untouched new-map census.",
+  "initialGenerationCallChain": [
+    "RimWorld.GenStep_Plants.Generate",
+    "RimWorld.WildPlantSpawner.CheckSpawnWildPlantAt",
+    "RimWorld.WildPlantSpawner.PlantChoiceWeight",
+    "RimWorld.WildPlantSpawner.SpawnPlant"
+  ],
+  "nativeCacheFinding": "GetCommonalityOfPlant calls CachePlantCommonalitiesIfShould itself before returning cached commonality; missing support in a random fixture biome is not a cold-cache defect."
+}

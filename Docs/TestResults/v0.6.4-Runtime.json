@@ -1,0 +1,264 @@
+{
+  "schema": 1,
+  "candidate": "v0.6.4",
+  "nativeInstalledVersion": "v0.6.3",
+  "gameVersion": "1.6.4871 rev591",
+  "productionDllSha256": "90c72dedaa7b2504f93f42375cc467b9c5aaf08739f24ff20310c9796a8ba24d",
+  "recordedAtUtc": "2026-10-10T16:05:22.520741+00:00",
+  "attempts": [
+    {
+      "profile": "20261011-002557-004-Field-Visual-Core",
+      "status": "invalid",
+      "reason": "Hidden-window capture and asynchronous screenshot file timing; not visual evidence",
+      "pid": 21724,
+      "mode": "Visual",
+      "userMods": false,
+      "harnessSha256": "056067B6FFD8FB929092B3AB5FBAADC61A743D35244ADE60FFE9C3530A880556",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "Player.log": "2f97615b1ae5fa07d6369d9039e54058319e504e385b615621dfeef14ba57161"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-002643-323-Field-Visual-Core",
+      "status": "invalid",
+      "reason": "Fixture attempted to destroy an indestructible geyser; error window obscured capture",
+      "pid": 35136,
+      "mode": "Visual",
+      "userMods": false,
+      "harnessSha256": "8C9EF218AA35941306683A1D31687F8B5F1561C593F1D482633722D450098585",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "Player.log": "1320fdeb1913e50adbe19bbd7c66ba052abe4f158a152034a4016347e2a38e1e"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-002827-779-FieldEcology-Core",
+      "status": "failed",
+      "reason": "Harness species selection included selector/cultivated variant; corrected to 46",
+      "pid": 7728,
+      "mode": "Ecology",
+      "userMods": false,
+      "harnessSha256": "084430B936F06C17AD45821600C290AEEDD320A500CCF98C605503A3F6492F7F",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "field-ecology-report.txt": "434f070fcbc72ddd7d1076b748d58914b9c0ae1bbdd17a1fcb99036a4c6cc161",
+        "Player.log": "08bedb0d5f84034689bdf1af878b57cfb96396cb42ce6f42923f5d069ed56c5d"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-002921-040-FieldBalance-Core",
+      "status": "passed",
+      "reason": "130 clinical cases passed",
+      "pid": 37848,
+      "mode": "Balance",
+      "userMods": false,
+      "harnessSha256": "084430B936F06C17AD45821600C290AEEDD320A500CCF98C605503A3F6492F7F",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "field-balance-cases.csv": "b47906228d84654683b59de1ae61916bb7ed38c556c1a894b21389fe3c73d594",
+        "field-balance-events.csv": "db2f8d7b1c38558ba1c981f3a0f9700ddfb3d4152831e05df48a75a6503afb95",
+        "field-balance-report.json": "fdfe4076da41ad406ac520696c16c0f9a0f586160d1ec65e9184abd64abbe17a",
+        "field-balance-report.txt": "98b08bc3b7c3d359bdfadb1a2dc9824bd914e05c6c8f73f90aa60cd0b9b3ed05",
+        "Player.log": "77e6517a07c29340d4d38a52a3ac9bd8be71503cba705556f7fcdf62d6db90ef"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-003013-359-FieldEcology-Core",
+      "status": "failed",
+      "reason": "Harness IDictionary serializer failed; earlier RNG stack handling also logged native error",
+      "pid": 7936,
+      "mode": "Ecology",
+      "userMods": false,
+      "harnessSha256": "28A83CC3EE7D764EC58CF14EBB2C729BA31E17ABB33CF5FBF66C0EEDC1AAACA8",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "daily-census.csv": "2a54ba9c3d22ce72e6d488ddefc0decb92471da7213cbf12f0863a66bc49d652",
+        "field-ecology-report.txt": "3d65745893aada3b60695b57fc4f93708d9a9e161806ead47bf09719fedb0224",
+        "field-events.csv": "8675437c5372246af24d0e4d9dfeb95c57e0725e26fb118f4ae0ac4450bfd191",
+        "initial-census.csv": "ffee92dd3147d23a73eb3fdaa40742eacee0901a87fe52733a7f2e1fac45f71e",
+        "Player.log": "1a5efd40739fc2e4f5750461fe72da9f8ad7efd13ac3261ce961acf57c8cc6b5"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-003149-166-FieldVisual-Core",
+      "status": "passed",
+      "reason": "10 native frames inspected, all 46 species; small early sprites have low contrast",
+      "pid": 12004,
+      "mode": "Visual",
+      "userMods": false,
+      "harnessSha256": "26B3B574479CBEA7223E839B84CF5F25A414C360E226641A790AC5139889884D",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "Player.log": "025ababe3bb1d15ef69fbad9712ef499738bc833313c790f2a15e13eed323811"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-003315-840-FieldEcology-Core",
+      "status": "discarded",
+      "reason": "Longitudinal temperature cache was frozen; terminated and replaced with final native-cache/snow model run",
+      "pid": 32120,
+      "mode": "Ecology",
+      "userMods": false,
+      "harnessSha256": "169743DEA72CCAD5EE414436E40CB96755A55473821E75D08BB7D37BBAC67C14",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "daily-census.csv": "78b7bd0799b28734e6f74c909c813c90a0489afc3137e5f1de3f054d129ea5ce",
+        "field-ecology-report.txt": "adb402f02b4a641e6bdfd370b6fb67af3aa86661adb5c5a598d84e1aca839418",
+        "field-ecology-results.json": "22b1473d9d849f9e6441a01d8f4451364e82b06bf0d126746903c5969cbe1914",
+        "field-events.csv": "b054038df887813e1aec2df311eb4b3e9322ca8239a48d0169a45aabdb2a1520",
+        "initial-census.csv": "5a9af11b9dac39a7a228d2feded5641476d4351ac6f45ec7d13183e407dd6357",
+        "Player.log": "0cad5fc9cdc4f29d86444e27d24db7296a7911592f4a50a5200d89ba95e34b0b"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-003914-359-FieldCompatibility-Core",
+      "status": "discarded",
+      "reason": "Harness compared pooled Job object identity; replaced with loadID plus JobDef comparison",
+      "pid": 19868,
+      "mode": "Compatibility",
+      "userMods": false,
+      "harnessSha256": "169743DEA72CCAD5EE414436E40CB96755A55473821E75D08BB7D37BBAC67C14",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "compatibility-report.txt": "2900c5456dfe45d0748324c3821eecfde78d21d3195321cfd0571ccde306b7fe",
+        "compatibility-result.json": "af4df2c9c6585f2f57365585fda2faaa30655b4b95e9460eaa9054fbd21eb28e",
+        "Player.log": "b602e52a159659e21b41f937e7763d129863a27d3b85da45e12b54604db824ae"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-004105-527-FieldCompatibility-Core",
+      "status": "passed",
+      "reason": "42 Core native workflow checks passed",
+      "pid": 12432,
+      "mode": "Compatibility",
+      "userMods": false,
+      "harnessSha256": "D3714EF87E8D484907C9CB40C2493457F0FE0821A433675B1777399FB7186073",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "compatibility-report.txt": "5eb54f0222537b44707104bf8363b702719a7a717f1cdb6db5685be8d68deecd",
+        "compatibility-result.json": "15021def95c7b460531360c86080b1a471be72f74d29bbc3a588c4b5aba0a6b6",
+        "Player.log": "32bd01b2f1685236522c44abf871a5720e5cf1de1d9518d6569174fa9ee91971"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-004245-262-FieldCompatibility-UserMods",
+      "status": "launcher-failed",
+      "reason": "PowerShell case-insensitive variable collision; no game launched",
+      "pid": null,
+      "mode": null,
+      "userMods": null,
+      "harnessSha256": null,
+      "outputSha256": {},
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-004257-525-FieldCompatibility-UserMods",
+      "status": "passed",
+      "reason": "42 checks passed; 79 user mods plus harness loaded, default settings; translation warnings separated",
+      "pid": 29644,
+      "mode": "Compatibility",
+      "userMods": true,
+      "harnessSha256": "D3714EF87E8D484907C9CB40C2493457F0FE0821A433675B1777399FB7186073",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "5490ed575b2d8823503f54ca01eba6b623e71a1e908524016a0d70b967ffb819",
+        "compatibility-report.txt": "93f7de1cc39ec2834781beb90e76c4e9273bca8ec509ee6c7f738e005ad35e9c",
+        "compatibility-result.json": "42603436387f779e9c6d6d071fd388dc5208ec937a002e067c6534fbb7025882",
+        "Player.log": "42955d046878dfae10c5b17025d8b6ba8c0f7571dd31b4f9f52a1c2034a1676a"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-004505-144-FieldWorkBalance-Core",
+      "status": "failed-before-observation",
+      "reason": "Prepared pawns differed in cosmetic genes; 0 observation ticks; corrected before next run",
+      "pid": 26644,
+      "mode": "WorkBalance",
+      "userMods": false,
+      "harnessSha256": "9C423A9F86491A2B6DC6247EED4D4551F22F011C2C2C815AFDA76D2D1B2D658F",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "field-work-balance-cases.csv": "bba752f192bd4e1f5077f699e517c86e7e729509bf59fa73e3fb8e4708038382",
+        "field-work-balance-events.csv": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+        "field-work-balance-hourly.csv": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+        "field-work-balance-report.txt": "7c8d1b6778c4aa7e24c52e052235786ae736bf3c7baca5fdc937be3be289b191",
+        "field-work-balance-result.json": "ebe95d31fad2ac9f64d0c9c2fd8594477280715a934dad800bbe82340e0246d8",
+        "Player.log": "229e9eea808762e0596ef6cb137562fab6f4fb6a29c64dcb84f2634c2088f484"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-004823-717-FieldEcology-Core",
+      "status": "passed",
+      "reason": "34 native maps and twelve controlled 120-day series; see Ecology summary for model exclusions",
+      "pid": 5236,
+      "mode": "Ecology",
+      "userMods": false,
+      "harnessSha256": "9C423A9F86491A2B6DC6247EED4D4551F22F011C2C2C815AFDA76D2D1B2D658F",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "daily-census.csv": "72a486a126838b29937f4be4fdfb9e1fb6b3f7883d573ec9e56611b1bcf5c2db",
+        "field-ecology-report.txt": "8b247b9a6901556622e0a1661737057fddf391ac7d92fa339266cc2bfc7a2410",
+        "field-ecology-results.json": "375913a3f8f239254c4a3901f98a4cd002234b899de805267790f871eaef8b36",
+        "field-events.csv": "ebdc874d5e775c39faf02a090df2ee0b7cec4f0e4f1169852d6ce42d24423813",
+        "initial-census.csv": "2d1429cb5ff9297d52554c7cc915040ace1c6c9a3a9e1dfa29c7083bb15627c1",
+        "Player.log": "5ea8210202d80e71d21ec5b8cbd00d8aead242ac700211f04bfca677ec3dc332"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-005808-678-FieldWorkBalance-Core",
+      "status": "discarded",
+      "reason": "Stopped near the one-day boundary with synchronous autosave waiting for UI in batchmode; 23.29h persisted observation is not a completed 24h result",
+      "pid": 25912,
+      "mode": "WorkBalance",
+      "userMods": false,
+      "harnessSha256": "7332A41198A6ADAA45A4C8D5BA46DBC760F616315BAF70D9C4D6CEF87CC8B11D",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "field-work-balance-cases.csv": "feda273f9957a1c9fd860aa6f5fcc6036330a19e0ab278b95e17cda1c47e5f03",
+        "field-work-balance-events.csv": "3728d8b626d3fb877676e07b8d325017f218dfadc74db62d08f663d292ac9bde",
+        "field-work-balance-hourly.csv": "ed22f79a0713a67f6caf5b0d1e9e4e595d2d3f71d64fb1c0f5f8b2f75776c5e3",
+        "field-work-balance-report.txt": "94646b9b15a87e508174a628a6e8ac146d73ef5ed30a270e2b97e6a16e3b86cd",
+        "field-work-balance-result.json": "a961c494b65b3dae50a0c33de4ad0b4583ce78c0621cd488fa93be24fa527e61",
+        "Player.log": "f6c8d9ca778a3b0ecd280795174da7e12708a38890dc14da05ae68a92acb0dc5",
+        "root-termination.json": "cf668e0c5ee3028094708f7dabe88a2eba528cac651968d2eae9dd3ccc324f03"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    },
+    {
+      "profile": "20261011-010309-998-FieldWorkBalance-Core",
+      "status": "passed",
+      "reason": "Three matched pawns each observed for 60,000 native ticks; one sample per treatment; autosave interval 99 days in isolated batch profile",
+      "pid": 35420,
+      "mode": "WorkBalance",
+      "userMods": false,
+      "harnessSha256": "DA1113EF5F37CBE8B423770EA6B2C6A8348CC86848E33F077206DC79AE139341",
+      "outputSha256": {
+        "compatibility-expected-mod-ids.txt": "94e6158be848e13ff3a4f71f559db77eada4516c41dad8c0dbfe92d673f1ee26",
+        "field-work-balance-cases.csv": "608f265972cb42995fafb791b9705b297e7f5dff70662657abf252170a9ebcdf",
+        "field-work-balance-events.csv": "6800b9176192057fc2c70fc20413cda4edae64ec289b43ab1027b1af71002fb8",
+        "field-work-balance-hourly.csv": "7eedaa1b39230b402f14b5bdaab8943c4f53332e096dfed88891dad310203c0d",
+        "field-work-balance-report.txt": "824d1980e68962e397fabcd28035d41511f631b7b367b153ca496f9b397a3155",
+        "field-work-balance-result.json": "f3bb922ed2554ee26426dbef03f7ec2d6e6d4f46769b60e067dd7c8858c36c9c",
+        "Player.log": "90be03870258245eb520fb32e55471c6062120792d693f3bdf74453da40c910e"
+      },
+      "privacy": "Hashes only for private runtime logs; full user-mod logs and settings are not published"
+    }
+  ],
+  "steamWorkshopUploaded": false,
+  "limitations": [
+    "Native test payload is byte-identical to candidate gameplay payload; About metadata and documentation differ.",
+    "Invalid and discarded runs are not included as passing evidence.",
+    "Existing-save and nutrient-paste results from v0.6.1 are historical, not new v0.6.4 runs."
+  ]
+}

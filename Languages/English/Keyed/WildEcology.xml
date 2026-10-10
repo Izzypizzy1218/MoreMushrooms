@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <MM_WildEcologySeasonFactor>Seasonal wild emergence multiplier: {0}</MM_WildEcologySeasonFactor>
+  <MM_WildEcologyRing>May form a fairy ring in the wild.</MM_WildEcologyRing>
+  <MM_WildEcologyRegrowth>Harvested wild mycelium may fruit again after {0} days.</MM_WildEcologyRegrowth>
+</LanguageData>

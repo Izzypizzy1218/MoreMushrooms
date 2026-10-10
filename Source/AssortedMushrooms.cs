@@ -14,8 +14,8 @@ namespace RimMushrooms
 
         public override IEnumerable<string> ConfigErrors()
         {
-            if (varieties == null || varieties.Count != 9 || varieties.Distinct().Count() != 9)
-                yield return "Assorted mushrooms require nine distinct varieties.";
+            if (varieties == null || varieties.Count != 11 || varieties.Distinct().Count() != 11)
+                yield return "Assorted mushrooms require eleven distinct varieties.";
             else if (varieties.Any(d => d == null || d.plant == null || !d.plant.Sowable || d.GetModExtension<AssortedMushroomSettings>() != null))
                 yield return "Assorted mushroom varieties must be individual sowable plants.";
         }

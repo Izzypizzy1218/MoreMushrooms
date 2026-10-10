@@ -51,7 +51,15 @@ if (Test-Path -LiteralPath (Join-Path $projectRoot 'Docs\VALIDATION.md')) {
     New-Item -ItemType Directory -Path (Join-Path $installTarget 'Docs') | Out-Null
     Copy-Item -LiteralPath (Join-Path $projectRoot 'Docs\VALIDATION.md') -Destination (Join-Path $installTarget 'Docs')
 }
-foreach ($doc in @('Docs\CONTENT-v0.5.0.md','Docs\History\README-v0.4.0.md')) {
+foreach ($doc in @('Docs\CONTENT-v0.5.0.md','Docs\CONTENT-v0.6.0.md','Docs\CONTENT-v0.6.1.md','Docs\CONTENT-v0.6.2.md','Docs\CONTENT-v0.6.3.md','Docs\MOOD-v0.6.3.md','Docs\History\README-v0.6.2.md','Docs\BALANCE-v0.6.1.md','Docs\MOOD-v0.6.2.md','Docs\WILD-ECOLOGY-v0.6.0.md','Docs\History\README-v0.4.0.md','Docs\History\README-v0.5.0.md','Docs\History\README-v0.6.0.md','Docs\History\README-v0.6.1.md')) {
+    $docSource = Join-Path $projectRoot $doc
+    if (Test-Path -LiteralPath $docSource) {
+        $docTarget = Join-Path $installTarget $doc
+        New-Item -ItemType Directory -Path (Split-Path $docTarget -Parent) -Force | Out-Null
+        Copy-Item -LiteralPath $docSource -Destination $docTarget
+    }
+}
+foreach ($doc in @('Docs\CONTENT-v0.6.4.md','Docs\QA-v0.6.4.md','Docs\History\README-v0.6.3.md') + @(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Docs\Publication\v0.6.4') -File | ForEach-Object { $_.FullName.Substring($projectRoot.Length + 1) }) + @(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Docs\TestResults') -File -Recurse | Where-Object { $_.FullName.Substring((Join-Path $projectRoot 'Docs\TestResults').Length + 1).StartsWith('v0.6.4-') } | ForEach-Object { $_.FullName.Substring($projectRoot.Length + 1) })) {
     $docSource = Join-Path $projectRoot $doc
     if (Test-Path -LiteralPath $docSource) {
         $docTarget = Join-Path $installTarget $doc

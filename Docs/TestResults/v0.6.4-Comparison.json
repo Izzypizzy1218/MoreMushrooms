@@ -1,0 +1,1774 @@
+{
+  "status": "PASS",
+  "checks": 8009,
+  "passed": 8009,
+  "errors": [],
+  "baseline": "v0.6.3",
+  "candidate": "v0.6.4",
+  "capturedAtUtc": "2026-10-10T16:07:46.384282+00:00",
+  "groups": {
+    "archiveStructure": 4,
+    "snapshot": 310,
+    "source": 11,
+    "runtimeDocuments": 17,
+    "runtimeBytes": 290,
+    "runtimeInventory": 1,
+    "about": 2,
+    "identity": 3,
+    "artwork": 2,
+    "balance": 2141,
+    "metadata": 15,
+    "xml": 44,
+    "xmlLeaves": 3254,
+    "mood": 3,
+    "sourceArchiveBytes": 1112,
+    "sourceInventory": 13,
+    "addedFiles": 52,
+    "allPng": 698,
+    "releaseArchives": 35,
+    "userSettingsHashOnly": 2
+  },
+  "snapshot": {
+    "path": "Tests/Runtime/v0.6.4-before.json",
+    "sha256": "855d9c82428887554b25cfc0083a6928af18e6305837ecc7b6831fd0c7e6eed5",
+    "runtimeFiles": 308,
+    "productionSources": 9,
+    "releaseHashes": 34
+  },
+  "baselineArchives": [
+    {
+      "path": "Releases/v0.6.3/MoreMushrooms-v0.6.3.zip",
+      "sha256": "f5f4587e653886d80a495900d29f003682340356befea3ff302f4d7acba7aa3c",
+      "files": 308
+    },
+    {
+      "path": "Releases/v0.6.3/MoreMushrooms-v0.6.3-source.zip",
+      "sha256": "a3d0e320497f3af46accc9ffe075a0513ed8e70e4d8c9b24c48259bb6c5f0f38",
+      "files": 1125
+    }
+  ],
+  "production": {
+    "sourceFilesUnchanged": 9,
+    "assemblyUnchanged": true,
+    "assemblySha256": "90c72dedaa7b2504f93f42375cc467b9c5aaf08739f24ff20310c9796a8ba24d",
+    "runtimeByteIdenticalFilesExcludingAllowedDocumentsAndAbout": 290,
+    "runtimeProductionInventoryCount": 291,
+    "defsFiles": 12,
+    "languageFiles": 32,
+    "defIdentityCount": 135,
+    "defIdentitySha256": "8d347643b04d9d516dc7095a0325a15c240f158eadd08613da3b736bef5a0766",
+    "xmlLeafValuesCompared": 3210,
+    "numericXmlLeavesCompared": 1256,
+    "balanceNumericValuesCompared": 970,
+    "allSourcePngUnchanged": 698,
+    "approvedArtworkPngInventoryCount": 696,
+    "coverUnchanged": true,
+    "foodMoodDescriptionsUnchanged": 21,
+    "sharedPsychoactiveDescriptionsUnchanged": 3,
+    "localizedMoodDescriptionsUnchanged": 48,
+    "packageIdUnchanged": true,
+    "workshopIdUnchanged": true
+  },
+  "allowedScope": [
+    "README.md",
+    "CHANGELOG.md",
+    "Docs/** additions/changes",
+    "About.modVersion 0.6.3 -> 0.6.4 only",
+    "Balance exact top-level version/contentVersion/status metadata; poison status only",
+    "QA harness/fixtures/validators/launcher",
+    "packaging/install scripts"
+  ],
+  "allowedModifiedFilesObserved": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "documentation",
+      "archive": "8e5889e7458d0855e6d0e49b4e9fee0305eda1b9ba5e84f223c7ce1915e44397",
+      "current": "d6e0617f41a23d69e6a61d5c2d53c2982b48bc1994072cdd202f00223ce40425"
+    },
+    {
+      "path": "README.md",
+      "kind": "documentation",
+      "archive": "d2d653607090b49f4a6567e38450d978f57bd031e674f3f956b8e7588af2c129",
+      "current": "8e80659906d516d97141a26a1e054bbdf26b04dc18b7afa024c784e9cc689b87"
+    },
+    {
+      "path": "About/About.xml",
+      "kind": "modVersion-only",
+      "archive": "0dc1367eceec500aacb019b01f4bfd8957ef3f3853b22e6782a2bfb87365c2e8",
+      "current": "16511d0833d523c730cdc20d81a7522b1e8f35ada53e32c0d2cd909f9692b428"
+    },
+    {
+      "path": "Balance/expansion_mushrooms.json",
+      "kind": "validated top-level Balance metadata only",
+      "archive": "6f802aef4de3ed212ba7f938995555bee27d411c9964c8c8dbe5bef9cb86013b",
+      "current": "02e68bd50c7993df3a88d17e075a1400f59eb7e24c0ddbfbfc336f958b2c20e7"
+    },
+    {
+      "path": "Balance/mushrooms.json",
+      "kind": "validated top-level Balance metadata only",
+      "archive": "34e07aafeeaa0d77b94ecb434caaad437f518fc3e4baf001be10d96872c716a5",
+      "current": "623779e7aaec18f1f9b2752bc0d4196bf9165be119de4c8c3973961c62846c6c"
+    },
+    {
+      "path": "Balance/poison_mushrooms.json",
+      "kind": "validated top-level Balance metadata only",
+      "archive": "5cad7cbaa9cef71d47ba7358dbe1e654fdd89c6b2c2a5ac49f2c739b4987b7eb",
+      "current": "1e6b3bfe4f3ef9a3a274a15d704377a11e108fcfa3cb087830b07b2a13003097"
+    },
+    {
+      "path": "Balance/wild_ecology.json",
+      "kind": "validated top-level Balance metadata only",
+      "archive": "7d765b294859ff3ab507172c250c90587cb0281c605fd98eddd2bfa9bc4db403",
+      "current": "94e38dc6687b280973213489b45e203f8889f8a37a99f38222b6d33b2ab92394"
+    },
+    {
+      "path": "Docs/VALIDATION.md",
+      "kind": "documentation",
+      "archive": "6ab571fc52ad6027aeab5459c7e577ec1aab9d24248b79136aca09d69f4a78a7",
+      "current": "235e50a1b341cc8b8d46c4985f214f6e93f3216a803eb551fd25597902ac426c"
+    },
+    {
+      "path": "Scripts/Install.ps1",
+      "kind": "packaging/install",
+      "archive": "b6810516a203d2f4bbc316b333b6d486d36bae00770cd2935f44d36fbf837ceb",
+      "current": "ec30ed151ee8c62185240883af62c79a32e13b7893a3ead221cff00b6c186197"
+    },
+    {
+      "path": "Scripts/package_release.py",
+      "kind": "packaging/install",
+      "archive": "78a02bf1a69b2ca91eaa5d19648883d0ad7a1722e27ee070b136a0f5cb8be0de",
+      "current": "e419c63e7c313d4a388a365e7f03da087770a24b34d302279178271ba7c393f9"
+    },
+    {
+      "path": "Tests/validate_assets.py",
+      "kind": "QA harness/fixture/validator",
+      "archive": "70d33a6e1ba76887ee4377c4a1891eca6ddb0ecab7045b129cf08615792f09b9",
+      "current": "0a62f818ef3c7c4f1623cea92ee43bce85b35ebe814e41ecc1e0511503f63ada"
+    },
+    {
+      "path": "Tests/Harness/SmokeTests.csproj",
+      "kind": "QA harness/fixture/validator",
+      "archive": "61e02e8e8af3457cc3af798e9ed23a884dea884ce1fd7557fa168d8ca1e01e13",
+      "current": "9572e709daa039c9787b377593684b8b4d1abd7f9b4194086fb08c424fc25d43"
+    },
+    {
+      "path": "Tests/Harness/About/About.xml",
+      "kind": "QA harness/fixture/validator",
+      "archive": "d241243dea122533f44b68fc4b7a4494f8429ee6e548311a500c2c1de813092d",
+      "current": "2489fe56a0698003097bcaeef2f6700a77ee54768a040d424e40b533df468bae"
+    }
+  ],
+  "addedFilesObserved": [
+    "Docs/CONTENT-v0.6.4.md",
+    "Docs/History/README-v0.6.3.md",
+    "Docs/Publication/v0.6.4/GitHub-Release.md",
+    "Docs/Publication/v0.6.4/Release-Notes.md",
+    "Docs/Publication/v0.6.4/Workshop-ChangeNote.txt",
+    "Docs/Publication/v0.6.4/Workshop-English.bbcode.txt",
+    "Docs/Publication/v0.6.4/Workshop-Korean.bbcode.txt",
+    "Docs/QA-v0.6.4.md",
+    "Docs/TestResults/v0.6.4-Balance-Summary.md",
+    "Docs/TestResults/v0.6.4-Balance/Player.log",
+    "Docs/TestResults/v0.6.4-Balance/field-balance-cases.csv",
+    "Docs/TestResults/v0.6.4-Balance/field-balance-events.csv",
+    "Docs/TestResults/v0.6.4-Balance/field-balance-report.json",
+    "Docs/TestResults/v0.6.4-Balance/field-balance-report.txt",
+    "Docs/TestResults/v0.6.4-Balance/integrity.json",
+    "Docs/TestResults/v0.6.4-Comparison.json",
+    "Docs/TestResults/v0.6.4-Compatibility-Summary.md",
+    "Docs/TestResults/v0.6.4-Compatibility/Core.json",
+    "Docs/TestResults/v0.6.4-Compatibility/UserMods.json",
+    "Docs/TestResults/v0.6.4-Ecology-Summary.md",
+    "Docs/TestResults/v0.6.4-Ecology/daily-census.csv",
+    "Docs/TestResults/v0.6.4-Ecology/field-ecology-report.txt",
+    "Docs/TestResults/v0.6.4-Ecology/field-ecology-results.json",
+    "Docs/TestResults/v0.6.4-Ecology/field-events.csv",
+    "Docs/TestResults/v0.6.4-Ecology/initial-census.csv",
+    "Docs/TestResults/v0.6.4-Runtime.json",
+    "Docs/TestResults/v0.6.4-Static.json",
+    "Docs/TestResults/v0.6.4-Visual-Summary.md",
+    "Docs/TestResults/v0.6.4-Visual/growth-stack-page-1-normal.png",
+    "Docs/TestResults/v0.6.4-Visual/growth-stack-page-1-small.png",
+    "Docs/TestResults/v0.6.4-Visual/growth-stack-page-2-normal.png",
+    "Docs/TestResults/v0.6.4-Visual/growth-stack-page-2-small.png",
+    "Docs/TestResults/v0.6.4-Visual/growth-stack-page-3-normal.png",
+    "Docs/TestResults/v0.6.4-Visual/growth-stack-page-3-small.png",
+    "Docs/TestResults/v0.6.4-Visual/growth-stack-page-4-normal.png",
+    "Docs/TestResults/v0.6.4-Visual/growth-stack-page-4-small.png",
+    "Docs/TestResults/v0.6.4-Visual/night-normal.png",
+    "Docs/TestResults/v0.6.4-Visual/night-small.png",
+    "Docs/TestResults/v0.6.4-Visual/visual-report.txt",
+    "Docs/TestResults/v0.6.4-Work-Summary.md",
+    "Docs/TestResults/v0.6.4-Work/field-work-balance-cases.csv",
+    "Docs/TestResults/v0.6.4-Work/field-work-balance-events.csv",
+    "Docs/TestResults/v0.6.4-Work/field-work-balance-hourly.csv",
+    "Docs/TestResults/v0.6.4-Work/field-work-balance-report.txt",
+    "Docs/TestResults/v0.6.4-Work/field-work-balance-result.json",
+    "Scripts/Start-FieldQA.ps1",
+    "Tests/Fixtures/v0.5-wild-weights.csv",
+    "Tests/Harness/FieldBalanceTests.cs",
+    "Tests/Harness/FieldCompatibilityTests.cs",
+    "Tests/Harness/FieldEcologyTests.cs",
+    "Tests/Harness/FieldVisualTests.cs",
+    "Tests/Harness/FieldWorkBalanceTests.cs"
+  ],
+  "missingFiles": [],
+  "unexpectedNonDocumentChanges": [],
+  "balanceMetadataChanges": [
+    {
+      "path": "Balance/expansion_mushrooms.json",
+      "key": "contentVersion",
+      "before": "0.6.3",
+      "current": "0.6.4"
+    },
+    {
+      "path": "Balance/mushrooms.json",
+      "key": "status",
+      "before": "v0.6.3 figurative description update. All v0.6.2 gameplay values, labels, artwork and production code remain unchanged.",
+      "current": "v0.6.4 pre-release qualification and publication documentation. Gameplay values, descriptions, approved artwork and production code are unchanged from v0.6.3."
+    },
+    {
+      "path": "Balance/mushrooms.json",
+      "key": "version",
+      "before": "0.6.3",
+      "current": "0.6.4"
+    },
+    {
+      "path": "Balance/poison_mushrooms.json",
+      "key": "status",
+      "before": "v0.6.3 game balance. Fictional exposure units and disease courses; not real medical doses. Existing nonpsychedelic poisons remain excluded from normal cooking.",
+      "current": "v0.6.4 game balance. Fictional exposure units and disease courses; not real medical doses. Existing nonpsychedelic poisons remain excluded from normal cooking."
+    },
+    {
+      "path": "Balance/wild_ecology.json",
+      "key": "contentVersion",
+      "before": "0.6.3",
+      "current": "0.6.4"
+    }
+  ],
+  "oldReleaseArchivesPreserved": 34,
+  "oldReleaseArchiveHashes": [
+    {
+      "path": "Releases/v0.1.0/RimMushrooms-v0.1.0-source.zip",
+      "expected": "003f89184148c970c7edaf70406187cae808c986d7f5f8a714fdc68eff0ebeac",
+      "current": "003f89184148c970c7edaf70406187cae808c986d7f5f8a714fdc68eff0ebeac",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.0/RimMushrooms-v0.1.0.zip",
+      "expected": "312a49e101f2d76cdb4c8e1bd066bab10401b540f0a9bcc1a8d4483c5d4b4945",
+      "current": "312a49e101f2d76cdb4c8e1bd066bab10401b540f0a9bcc1a8d4483c5d4b4945",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.1/RimMushrooms-v0.1.1-source.zip",
+      "expected": "4ef985c1234eb6186bd0aa1a0be94bc9eec59566822b64b8e6fa399dc9c29dce",
+      "current": "4ef985c1234eb6186bd0aa1a0be94bc9eec59566822b64b8e6fa399dc9c29dce",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.1/RimMushrooms-v0.1.1.zip",
+      "expected": "2697651911b6e8090e7656adbd1eeddb2bd641708281cdf12ce09d15b8f0b16f",
+      "current": "2697651911b6e8090e7656adbd1eeddb2bd641708281cdf12ce09d15b8f0b16f",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.2/RimMushrooms-v0.1.2-source.zip",
+      "expected": "6802b9acf94998db1cb0fc33e4bad9428a342e26b09ffe1d50468d3380a70a4c",
+      "current": "6802b9acf94998db1cb0fc33e4bad9428a342e26b09ffe1d50468d3380a70a4c",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.2/RimMushrooms-v0.1.2.zip",
+      "expected": "9e06abf0f47439bd9c1c133c7739304776458b77a26ca85b7040e702e2bc9131",
+      "current": "9e06abf0f47439bd9c1c133c7739304776458b77a26ca85b7040e702e2bc9131",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.3/MoreMushrooms-v0.1.3-source.zip",
+      "expected": "6f22ac196962e9109f90cda0fa00debd9303816707389922d729f25e6a7264a0",
+      "current": "6f22ac196962e9109f90cda0fa00debd9303816707389922d729f25e6a7264a0",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.3/MoreMushrooms-v0.1.3.zip",
+      "expected": "99ae59aadc2d3626603c7444d27b32c48d5fb660ca202df92d51b368a23654c2",
+      "current": "99ae59aadc2d3626603c7444d27b32c48d5fb660ca202df92d51b368a23654c2",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.4/MoreMushrooms-v0.1.4-source.zip",
+      "expected": "2753f1561a07765039d7e5f73963439fc8948b7e0bf6da9aa256c7c5e5469ac5",
+      "current": "2753f1561a07765039d7e5f73963439fc8948b7e0bf6da9aa256c7c5e5469ac5",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.1.4/MoreMushrooms-v0.1.4.zip",
+      "expected": "63bbf6e6f945426b51500cc838f16be723bb911b6533ac31468fb8d79526498f",
+      "current": "63bbf6e6f945426b51500cc838f16be723bb911b6533ac31468fb8d79526498f",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.2.0/MoreMushrooms-v0.2.0-source.zip",
+      "expected": "682b888ef81ce854efe3c5466aefe9af6a5daabd144b566c90db797651a25e57",
+      "current": "682b888ef81ce854efe3c5466aefe9af6a5daabd144b566c90db797651a25e57",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.2.0/MoreMushrooms-v0.2.0.zip",
+      "expected": "39b10212d02cbe030465df9f6295e76475bb6694f5db67ebbd01a11af74501f9",
+      "current": "39b10212d02cbe030465df9f6295e76475bb6694f5db67ebbd01a11af74501f9",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.2.1/MoreMushrooms-v0.2.1-source.zip",
+      "expected": "686a7595510446e5128b0e46fcdf5ff9b58a564123002069692228fa6f9792ae",
+      "current": "686a7595510446e5128b0e46fcdf5ff9b58a564123002069692228fa6f9792ae",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.2.1/MoreMushrooms-v0.2.1.zip",
+      "expected": "c9ab4624fde76dbb60e4952719545f9b09907b607e92a4412f57a591b52a5fe4",
+      "current": "c9ab4624fde76dbb60e4952719545f9b09907b607e92a4412f57a591b52a5fe4",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.3.0/MoreMushrooms-v0.3.0-source.zip",
+      "expected": "1b4fc5b6e150cbc7519e13d4ac99220c377cee272af84da42fdce20f5a377866",
+      "current": "1b4fc5b6e150cbc7519e13d4ac99220c377cee272af84da42fdce20f5a377866",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.3.0/MoreMushrooms-v0.3.0.zip",
+      "expected": "34924f124f532e17a7c324570369a6d6d527b9b188a49a5a64a44611322a0ffb",
+      "current": "34924f124f532e17a7c324570369a6d6d527b9b188a49a5a64a44611322a0ffb",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.3.1/MoreMushrooms-v0.3.1-source.zip",
+      "expected": "90d141d52c7362d7679f2299d6982671f7ec4d7702fb5a9af58cb9c92cfb7cd1",
+      "current": "90d141d52c7362d7679f2299d6982671f7ec4d7702fb5a9af58cb9c92cfb7cd1",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.3.1/MoreMushrooms-v0.3.1.zip",
+      "expected": "e135ceee9635f6c678e5ce9bd63b29b62b238c7acf5a45f920a34eeaa0ee549c",
+      "current": "e135ceee9635f6c678e5ce9bd63b29b62b238c7acf5a45f920a34eeaa0ee549c",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.3.2/MoreMushrooms-v0.3.2-source.zip",
+      "expected": "c0acd5735599ee9eb3a7a5e24000f4ad3a5122a3db1fa54c70c4737be4a8066a",
+      "current": "c0acd5735599ee9eb3a7a5e24000f4ad3a5122a3db1fa54c70c4737be4a8066a",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.3.2/MoreMushrooms-v0.3.2.zip",
+      "expected": "6203f284ac25a0eed3ed4e4929f4ee91baaab56e46c8b3865dd0ebd6cef7363b",
+      "current": "6203f284ac25a0eed3ed4e4929f4ee91baaab56e46c8b3865dd0ebd6cef7363b",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.3.3/MoreMushrooms-v0.3.3-source.zip",
+      "expected": "f5a0376cf9fcb482635efb7eaf86a5615ffbe6ffc6583356d905d9db48dc878f",
+      "current": "f5a0376cf9fcb482635efb7eaf86a5615ffbe6ffc6583356d905d9db48dc878f",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.3.3/MoreMushrooms-v0.3.3.zip",
+      "expected": "bb9f241b21467032d0c1f2c33ac3d0e529a016b05e4ee30ecfe8f6e525d1d9bc",
+      "current": "bb9f241b21467032d0c1f2c33ac3d0e529a016b05e4ee30ecfe8f6e525d1d9bc",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.4.0/MoreMushrooms-v0.4.0-source.zip",
+      "expected": "38889599001321703c5242fe845cb499241af9a86f603a70ba07f5770cfcd463",
+      "current": "38889599001321703c5242fe845cb499241af9a86f603a70ba07f5770cfcd463",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.4.0/MoreMushrooms-v0.4.0.zip",
+      "expected": "99113c7f20bdae2394e4c755c585c53fc1bd71c04d235bdb2e8a09dc6f1bc3d7",
+      "current": "99113c7f20bdae2394e4c755c585c53fc1bd71c04d235bdb2e8a09dc6f1bc3d7",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.5.0/MoreMushrooms-v0.5.0-source.zip",
+      "expected": "6d7418dba3fc970afc0cd586bb92769bfffa737ebb0a0e6de11b85ce75ee1439",
+      "current": "6d7418dba3fc970afc0cd586bb92769bfffa737ebb0a0e6de11b85ce75ee1439",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.5.0/MoreMushrooms-v0.5.0.zip",
+      "expected": "ae0063a36ca74e8eb7b0ff0c35ab34fc19762630cbec950fc35a69728da053d1",
+      "current": "ae0063a36ca74e8eb7b0ff0c35ab34fc19762630cbec950fc35a69728da053d1",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.6.0/MoreMushrooms-v0.6.0-source.zip",
+      "expected": "c682093b2771ff03ce5393a4147444fe0be00b84b1ccb769f05134cfb2d4e3c4",
+      "current": "c682093b2771ff03ce5393a4147444fe0be00b84b1ccb769f05134cfb2d4e3c4",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.6.0/MoreMushrooms-v0.6.0.zip",
+      "expected": "711dc5982ce52b43f035998fabbbdf3668d4f966eb1a1f31cb391e5f71733222",
+      "current": "711dc5982ce52b43f035998fabbbdf3668d4f966eb1a1f31cb391e5f71733222",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.6.1/MoreMushrooms-v0.6.1-source.zip",
+      "expected": "67a2ca7ddef0270a6a845f56bb80de130fd313a009803f6253030fc9a2a3a70a",
+      "current": "67a2ca7ddef0270a6a845f56bb80de130fd313a009803f6253030fc9a2a3a70a",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.6.1/MoreMushrooms-v0.6.1.zip",
+      "expected": "f01fac7e97e5907e95da46058df7329c121362b5a4d8d0bca721335b7cb08ef6",
+      "current": "f01fac7e97e5907e95da46058df7329c121362b5a4d8d0bca721335b7cb08ef6",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.6.2/MoreMushrooms-v0.6.2-source.zip",
+      "expected": "2b41d3667a47cb758b5ad2269822b0ca376c9fd650cc64850eb719e85d55ffca",
+      "current": "2b41d3667a47cb758b5ad2269822b0ca376c9fd650cc64850eb719e85d55ffca",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.6.2/MoreMushrooms-v0.6.2.zip",
+      "expected": "280e09f1f4018d4330af8ca55ceaea5036c3a5b187cbe73477c16db43db6886d",
+      "current": "280e09f1f4018d4330af8ca55ceaea5036c3a5b187cbe73477c16db43db6886d",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.6.3/MoreMushrooms-v0.6.3-source.zip",
+      "expected": "a3d0e320497f3af46accc9ffe075a0513ed8e70e4d8c9b24c48259bb6c5f0f38",
+      "current": "a3d0e320497f3af46accc9ffe075a0513ed8e70e4d8c9b24c48259bb6c5f0f38",
+      "preserved": true
+    },
+    {
+      "path": "Releases/v0.6.3/MoreMushrooms-v0.6.3.zip",
+      "expected": "f5f4587e653886d80a495900d29f003682340356befea3ff302f4d7acba7aa3c",
+      "current": "f5f4587e653886d80a495900d29f003682340356befea3ff302f4d7acba7aa3c",
+      "preserved": true
+    }
+  ],
+  "userSettings": {
+    "ModsConfig.xml": {
+      "expected": "b9a3f70fbe9a6f4f71b6df4311bacd2724f385133ec1a84d50d7ad3ab3b119b8",
+      "current": "b9a3f70fbe9a6f4f71b6df4311bacd2724f385133ec1a84d50d7ad3ab3b119b8",
+      "preserved": true,
+      "method": "SHA-256 only; body not parsed, displayed or copied"
+    },
+    "Prefs.xml": {
+      "expected": "296efddf30a90c9616fb16424a842d798fe2071230d2462a867a7dc12b220f8a",
+      "current": "296efddf30a90c9616fb16424a842d798fe2071230d2462a867a7dc12b220f8a",
+      "preserved": true,
+      "method": "SHA-256 only; body not parsed, displayed or copied"
+    }
+  },
+  "fileHashes": {
+    "Source/AssortedMushrooms.cs": {
+      "before": "b5b2e6275518c823a5fc3742ad674226617e8b0e0c0d21d3f536bc58408f0e1d",
+      "archive": "b5b2e6275518c823a5fc3742ad674226617e8b0e0c0d21d3f536bc58408f0e1d",
+      "current": "b5b2e6275518c823a5fc3742ad674226617e8b0e0c0d21d3f536bc58408f0e1d"
+    },
+    "Source/Graphic_MushroomStack.cs": {
+      "before": "cfb4f46ff284f86dc6d1dc123e98371a4116773ab5ed16098d3e17881869867a",
+      "archive": "cfb4f46ff284f86dc6d1dc123e98371a4116773ab5ed16098d3e17881869867a",
+      "current": "cfb4f46ff284f86dc6d1dc123e98371a4116773ab5ed16098d3e17881869867a"
+    },
+    "Source/MushroomMealExposure.cs": {
+      "before": "243152e1adaeae7583affb5427d94816516e98a052014854d5f2a423f466471a",
+      "archive": "243152e1adaeae7583affb5427d94816516e98a052014854d5f2a423f466471a",
+      "current": "243152e1adaeae7583affb5427d94816516e98a052014854d5f2a423f466471a"
+    },
+    "Source/MushroomPoisoning.cs": {
+      "before": "7a34fc81f828d9ec7f912f839caa5e2882b4e030f862a622af24534aacff6dfd",
+      "archive": "7a34fc81f828d9ec7f912f839caa5e2882b4e030f862a622af24534aacff6dfd",
+      "current": "7a34fc81f828d9ec7f912f839caa5e2882b4e030f862a622af24534aacff6dfd"
+    },
+    "Source/MushroomPsychoactive.cs": {
+      "before": "eccbbe726ad2663b37ac07ab96332c48476f2b2ec11446fa90d53b13d2eba3e0",
+      "archive": "eccbbe726ad2663b37ac07ab96332c48476f2b2ec11446fa90d53b13d2eba3e0",
+      "current": "eccbbe726ad2663b37ac07ab96332c48476f2b2ec11446fa90d53b13d2eba3e0"
+    },
+    "Source/MushroomSaveCompatibility.cs": {
+      "before": "d36608aee069550ba79ce0be6ec7e07e395b38a41cb27f0b1b42602557ba2afa",
+      "archive": "d36608aee069550ba79ce0be6ec7e07e395b38a41cb27f0b1b42602557ba2afa",
+      "current": "d36608aee069550ba79ce0be6ec7e07e395b38a41cb27f0b1b42602557ba2afa"
+    },
+    "Source/Plant_Mushroom.cs": {
+      "before": "c8faad7344c9006c3a47be29e761eb5d75d2b93afbf0f549b31125ff9975ef14",
+      "archive": "c8faad7344c9006c3a47be29e761eb5d75d2b93afbf0f549b31125ff9975ef14",
+      "current": "c8faad7344c9006c3a47be29e761eb5d75d2b93afbf0f549b31125ff9975ef14"
+    },
+    "Source/Thought_MushroomEnjoyment.cs": {
+      "before": "9edab892beb5482aa45957fa363f1b0eb7e46b56a5eba4043892982c873e8759",
+      "archive": "9edab892beb5482aa45957fa363f1b0eb7e46b56a5eba4043892982c873e8759",
+      "current": "9edab892beb5482aa45957fa363f1b0eb7e46b56a5eba4043892982c873e8759"
+    },
+    "Source/WildMushroomEcology.cs": {
+      "before": "7012f66df57350ba631b998977bddad62e7f8535b7ebaf4791b50f6a21a38575",
+      "archive": "7012f66df57350ba631b998977bddad62e7f8535b7ebaf4791b50f6a21a38575",
+      "current": "7012f66df57350ba631b998977bddad62e7f8535b7ebaf4791b50f6a21a38575"
+    },
+    "CHANGELOG.md": {
+      "archive": "8e5889e7458d0855e6d0e49b4e9fee0305eda1b9ba5e84f223c7ce1915e44397",
+      "current": "d6e0617f41a23d69e6a61d5c2d53c2982b48bc1994072cdd202f00223ce40425"
+    },
+    "README.md": {
+      "archive": "d2d653607090b49f4a6567e38450d978f57bd031e674f3f956b8e7588af2c129",
+      "current": "8e80659906d516d97141a26a1e054bbdf26b04dc18b7afa024c784e9cc689b87"
+    },
+    "About/About.xml": {
+      "archive": "0dc1367eceec500aacb019b01f4bfd8957ef3f3853b22e6782a2bfb87365c2e8",
+      "current": "16511d0833d523c730cdc20d81a7522b1e8f35ada53e32c0d2cd909f9692b428"
+    },
+    "About/Preview.png": {
+      "archive": "128286225c8e6d70b432a82e2e87d15489b1cba3d6a7d89e9e4b3d6d27e2f010",
+      "current": "128286225c8e6d70b432a82e2e87d15489b1cba3d6a7d89e9e4b3d6d27e2f010"
+    },
+    "About/PublishedFileId.txt": {
+      "archive": "54028ea673f5b31fd69fe7ed54bd156f1ea4970a0fd0fbd2bf34cb03dee23f6f",
+      "current": "54028ea673f5b31fd69fe7ed54bd156f1ea4970a0fd0fbd2bf34cb03dee23f6f"
+    },
+    "Assemblies/RimMushrooms.dll": {
+      "archive": "90c72dedaa7b2504f93f42375cc467b9c5aaf08739f24ff20310c9796a8ba24d",
+      "current": "90c72dedaa7b2504f93f42375cc467b9c5aaf08739f24ff20310c9796a8ba24d"
+    },
+    "Credits/ASSORTED-ICON.txt": {
+      "archive": "cb756e328f00f43397b73f4f53b23f8c27af6e1f3a63c5ae6b980c3b9ead150e",
+      "current": "cb756e328f00f43397b73f4f53b23f8c27af6e1f3a63c5ae6b980c3b9ead150e"
+    },
+    "Credits/BOXED-CREDITS.txt": {
+      "archive": "959ae4d5055751ce6cdfa9058b00d3d484a3659b3e32024aa9c717b7eaad45f8",
+      "current": "959ae4d5055751ce6cdfa9058b00d3d484a3659b3e32024aa9c717b7eaad45f8"
+    },
+    "Credits/COVER-CREDITS.txt": {
+      "archive": "6a2470f38ddd1f463d125d964c5cd8739725254995ece9ee414e3fd7c11b7b61",
+      "current": "6a2470f38ddd1f463d125d964c5cd8739725254995ece9ee414e3fd7c11b7b61"
+    },
+    "Credits/EXPANSION-MUSHROOMS-ART-CREDITS.txt": {
+      "archive": "07f8e77c4ff1b230ead1b1e0696c1dcc2f72243d73dc245b63c3efa7effc10d4",
+      "current": "07f8e77c4ff1b230ead1b1e0696c1dcc2f72243d73dc245b63c3efa7effc10d4"
+    },
+    "Credits/EXPANSION-MUSHROOMS-PHOTO-CREDITS.txt": {
+      "archive": "982425baf2588305f2e534a8197bf949c1f81a27328ddfec74d8e25ea0412220",
+      "current": "982425baf2588305f2e534a8197bf949c1f81a27328ddfec74d8e25ea0412220"
+    },
+    "Credits/GROWING-CREDITS.txt": {
+      "archive": "376cd90395d3053013f64530d5ab12f060fbd7ea90bf81c24e5dc20ce9c9c750",
+      "current": "376cd90395d3053013f64530d5ab12f060fbd7ea90bf81c24e5dc20ce9c9c750"
+    },
+    "Credits/MUSHROOM-REFERENCE-CREDITS.txt": {
+      "archive": "a7a9ae730053f61a5ce965caa1a4e2984b293b1b9d605ebc9d09246436c2b9c4",
+      "current": "a7a9ae730053f61a5ce965caa1a4e2984b293b1b9d605ebc9d09246436c2b9c4"
+    },
+    "Credits/PoisonMushrooms-ART-CREDITS.txt": {
+      "archive": "9877598c2875c5f81dcae522fbdb5d850a50db493cb121fd3da72a6905f7b178",
+      "current": "9877598c2875c5f81dcae522fbdb5d850a50db493cb121fd3da72a6905f7b178"
+    },
+    "Credits/RIMSHARE-LICENSE.txt": {
+      "archive": "eb1006974a8c13f8987e69a23d0bf1791f24609c687d48553fe4ec96a7035d4d",
+      "current": "eb1006974a8c13f8987e69a23d0bf1791f24609c687d48553fe4ec96a7035d4d"
+    },
+    "Defs/ExpansionMushrooms/Categories.xml": {
+      "archive": "31dffee1be00205268448cdf525af3051d8acdad20cd794e6aa85cd667292220",
+      "current": "31dffee1be00205268448cdf525af3051d8acdad20cd794e6aa85cd667292220"
+    },
+    "Defs/ExpansionMushrooms/Enjoyment.xml": {
+      "archive": "ad58dc029f0fd73f25a3b3b46a0b4861e021a9b8325f88d8d941136aa1d62b97",
+      "current": "ad58dc029f0fd73f25a3b3b46a0b4861e021a9b8325f88d8d941136aa1d62b97"
+    },
+    "Defs/ExpansionMushrooms/Mushrooms.xml": {
+      "archive": "1642ed1cbbcf8eba7c967d36d6d492ac71e81980852be5aeb3d8ed2f979598e9",
+      "current": "1642ed1cbbcf8eba7c967d36d6d492ac71e81980852be5aeb3d8ed2f979598e9"
+    },
+    "Defs/PoisonMushrooms/Categories.xml": {
+      "archive": "7ba41837a0527bc7109aeba30673fb83da38fa4fafb690ca4672d82bbae04c2a",
+      "current": "7ba41837a0527bc7109aeba30673fb83da38fa4fafb690ca4672d82bbae04c2a"
+    },
+    "Defs/PoisonMushrooms/Hediffs.xml": {
+      "archive": "0d13fb22eb00390894882f4044a51d5fcf036cf18b1732a1b267d4073be2b5fd",
+      "current": "0d13fb22eb00390894882f4044a51d5fcf036cf18b1732a1b267d4073be2b5fd"
+    },
+    "Defs/PoisonMushrooms/PoisonMushrooms.xml": {
+      "archive": "b1d8c9a56065c07a8c8b45bb673dd6415838fa5bb575a606f4c3ddf301080f6e",
+      "current": "b1d8c9a56065c07a8c8b45bb673dd6415838fa5bb575a606f4c3ddf301080f6e"
+    },
+    "Defs/PsychoactiveMushrooms/PsychoactiveEffects.xml": {
+      "archive": "d46d9cd24e23eaa52c05bbc5dda1e72533c82da6081ac9835f815b1ee718783d",
+      "current": "d46d9cd24e23eaa52c05bbc5dda1e72533c82da6081ac9835f815b1ee718783d"
+    },
+    "Defs/SpecialThingFilterDefs/MushroomMeals.xml": {
+      "archive": "1694c8a3f58325aa0fe36111ebb9b774a826ca177c80c5a186870c2ff7b75142",
+      "current": "1694c8a3f58325aa0fe36111ebb9b774a826ca177c80c5a186870c2ff7b75142"
+    },
+    "Defs/ThingDefs_Items/RawMushrooms.xml": {
+      "archive": "5fa4d494ab67fe1f59b0cad98c7b01ec1de8b833b78e295c6da76a098de84afa",
+      "current": "5fa4d494ab67fe1f59b0cad98c7b01ec1de8b833b78e295c6da76a098de84afa"
+    },
+    "Defs/ThingDefs_Plants/Mushrooms.xml": {
+      "archive": "b1f4681b2e4afbb47ecf7cd98dee6f73ad83d9397a487f785f75ca92d53a6843",
+      "current": "b1f4681b2e4afbb47ecf7cd98dee6f73ad83d9397a487f785f75ca92d53a6843"
+    },
+    "Defs/ThoughtDefs/MushroomEnjoyment.xml": {
+      "archive": "1bb0bf22d92a0b02c68308ff6895203966078ea04d8401f2f95a8e98c3e62224",
+      "current": "1bb0bf22d92a0b02c68308ff6895203966078ea04d8401f2f95a8e98c3e62224"
+    },
+    "Defs/WildEcology/WildEcology.xml": {
+      "archive": "f996eb2b19b6f353a5bdf79f0527e0669a9a492911676ca33fcb2da6b34f5f15",
+      "current": "f996eb2b19b6f353a5bdf79f0527e0669a9a492911676ca33fcb2da6b34f5f15"
+    },
+    "Docs/BALANCE-v0.6.1.md": {
+      "archive": "99b67a565c0ec5279acea9d74709c6d4321dc9cf8c04602ce995b6b30e6c1f34",
+      "current": "99b67a565c0ec5279acea9d74709c6d4321dc9cf8c04602ce995b6b30e6c1f34"
+    },
+    "Docs/CONTENT-v0.5.0.md": {
+      "archive": "67ba074d52a7db0d1dfbd9e07f6e93ebd4c6755fb0ddf907a1c3b81167b0556b",
+      "current": "67ba074d52a7db0d1dfbd9e07f6e93ebd4c6755fb0ddf907a1c3b81167b0556b"
+    },
+    "Docs/CONTENT-v0.6.0.md": {
+      "archive": "d7f60e0a3daa8bbab6a02705173717185306fc93e107ffc3123604209700414a",
+      "current": "d7f60e0a3daa8bbab6a02705173717185306fc93e107ffc3123604209700414a"
+    },
+    "Docs/CONTENT-v0.6.1.md": {
+      "archive": "3408dd66ad595565fb75f48555e02324abf62bc32e030c9aa5b7c15f3b161099",
+      "current": "3408dd66ad595565fb75f48555e02324abf62bc32e030c9aa5b7c15f3b161099"
+    },
+    "Docs/CONTENT-v0.6.2.md": {
+      "archive": "724768db5666c3752fa3b53fcf438a7aac901810fc76411c33e83ffb18be512d",
+      "current": "724768db5666c3752fa3b53fcf438a7aac901810fc76411c33e83ffb18be512d"
+    },
+    "Docs/CONTENT-v0.6.3.md": {
+      "archive": "f2bf2ca032897a30c4cfcf73388f19f3835342b2eb5c19c55ceb513c5c59110d",
+      "current": "f2bf2ca032897a30c4cfcf73388f19f3835342b2eb5c19c55ceb513c5c59110d"
+    },
+    "Docs/MOOD-v0.6.2.md": {
+      "archive": "4f3ae0687488c39f6f1302f55cda16dc795c56cc89e536470f0e2bc50afc8fac",
+      "current": "4f3ae0687488c39f6f1302f55cda16dc795c56cc89e536470f0e2bc50afc8fac"
+    },
+    "Docs/MOOD-v0.6.3.md": {
+      "archive": "2ef3d09bc95dbd384dc2ca8c589fc5faa55996ff29ff26d21634653a1f32a26e",
+      "current": "2ef3d09bc95dbd384dc2ca8c589fc5faa55996ff29ff26d21634653a1f32a26e"
+    },
+    "Docs/VALIDATION.md": {
+      "archive": "6ab571fc52ad6027aeab5459c7e577ec1aab9d24248b79136aca09d69f4a78a7",
+      "current": "235e50a1b341cc8b8d46c4985f214f6e93f3216a803eb551fd25597902ac426c"
+    },
+    "Docs/WILD-ECOLOGY-v0.6.0.md": {
+      "archive": "4cbe0e2ee3438b83d890c8c6b3b37559d0c7279b9a4ab0d4260fdb3183218956",
+      "current": "4cbe0e2ee3438b83d890c8c6b3b37559d0c7279b9a4ab0d4260fdb3183218956"
+    },
+    "Docs/History/README-v0.4.0.md": {
+      "archive": "98d051b827421023449fc8ad4cf6b5f17d81d99e252bae989fe47f57abe9428f",
+      "current": "98d051b827421023449fc8ad4cf6b5f17d81d99e252bae989fe47f57abe9428f"
+    },
+    "Docs/History/README-v0.5.0.md": {
+      "archive": "c89edb3251b98ba81cee96dcdde981ec85e7abae4e2af0677bce60ba0e0d44b9",
+      "current": "c89edb3251b98ba81cee96dcdde981ec85e7abae4e2af0677bce60ba0e0d44b9"
+    },
+    "Docs/History/README-v0.6.0.md": {
+      "archive": "a1b1c17a0b3b19895df6e3e1dcf9254cd245f90fcd183ace51b4940546be10e2",
+      "current": "a1b1c17a0b3b19895df6e3e1dcf9254cd245f90fcd183ace51b4940546be10e2"
+    },
+    "Docs/History/README-v0.6.1.md": {
+      "archive": "d79b969202a0a3450de4c9a4b14c694463c98e2147b8eb72f3c1dd8088c8d19b",
+      "current": "d79b969202a0a3450de4c9a4b14c694463c98e2147b8eb72f3c1dd8088c8d19b"
+    },
+    "Docs/History/README-v0.6.2.md": {
+      "archive": "8725415057b6e5aff840814c3849e55a014e75e63572bfba4d0350b3fd0c995e",
+      "current": "8725415057b6e5aff840814c3849e55a014e75e63572bfba4d0350b3fd0c995e"
+    },
+    "Languages/English/DefInjected/HediffDef/PoisonMushrooms.xml": {
+      "archive": "db5fccb60803bb40ba26a8cdd4b9a7da488941a9c2fefa58602c99f1ae4d2d14",
+      "current": "db5fccb60803bb40ba26a8cdd4b9a7da488941a9c2fefa58602c99f1ae4d2d14"
+    },
+    "Languages/English/DefInjected/HediffDef/PsychoactiveMushrooms.xml": {
+      "archive": "6064b7c5f97ea8c10ca90b4dab9c6a0f1964e5ee89c3fc666487dd481bb33278",
+      "current": "6064b7c5f97ea8c10ca90b4dab9c6a0f1964e5ee89c3fc666487dd481bb33278"
+    },
+    "Languages/English/DefInjected/MentalStateDef/PsychoactiveMushrooms.xml": {
+      "archive": "65c4cb6e40a77ac379219f13ab9793ed5153517823321cbf39936d38c3000bc8",
+      "current": "65c4cb6e40a77ac379219f13ab9793ed5153517823321cbf39936d38c3000bc8"
+    },
+    "Languages/English/DefInjected/SpecialThingFilterDef/MushroomMeals.xml": {
+      "archive": "391e0e85f0fb3fe3507d54d7b430c088820de5feec119d4a439241ecacf33aa1",
+      "current": "391e0e85f0fb3fe3507d54d7b430c088820de5feec119d4a439241ecacf33aa1"
+    },
+    "Languages/English/DefInjected/ThingCategoryDef/ExpansionMushrooms.xml": {
+      "archive": "a638d63b8b33eb7e086cacb21308f60aeb75ca8bf54269f40c16dcc00c24a882",
+      "current": "a638d63b8b33eb7e086cacb21308f60aeb75ca8bf54269f40c16dcc00c24a882"
+    },
+    "Languages/English/DefInjected/ThingCategoryDef/PoisonMushrooms.xml": {
+      "archive": "a1605d5e387e6a4ac862f0ca19e29b785090005349f45cd89b46714353100c72",
+      "current": "a1605d5e387e6a4ac862f0ca19e29b785090005349f45cd89b46714353100c72"
+    },
+    "Languages/English/DefInjected/ThingDef/ExpansionMushrooms.xml": {
+      "archive": "29e1f8c7141eacba5e3d45ae11d9511f1c82e7a66a2e702c7e11001e8b8e9d12",
+      "current": "29e1f8c7141eacba5e3d45ae11d9511f1c82e7a66a2e702c7e11001e8b8e9d12"
+    },
+    "Languages/English/DefInjected/ThingDef/Mushrooms.xml": {
+      "archive": "4beba78a217aae432ccbde128ef08d3c68a21cfdff8c0ff6e69ef0e32f10c589",
+      "current": "4beba78a217aae432ccbde128ef08d3c68a21cfdff8c0ff6e69ef0e32f10c589"
+    },
+    "Languages/English/DefInjected/ThingDef/PoisonMushrooms.xml": {
+      "archive": "2141573502ea0f497aadc0c989b0c76b27a913accd0c31c1326c577454a8a254",
+      "current": "2141573502ea0f497aadc0c989b0c76b27a913accd0c31c1326c577454a8a254"
+    },
+    "Languages/English/DefInjected/ThoughtDef/ExpansionMushrooms.xml": {
+      "archive": "e436f3493659aacaf812506e67669a161f4140384165a61bf1eaef3b63991f9d",
+      "current": "e436f3493659aacaf812506e67669a161f4140384165a61bf1eaef3b63991f9d"
+    },
+    "Languages/English/DefInjected/ThoughtDef/MushroomEnjoyment.xml": {
+      "archive": "b8b4d040e3b6fdd99e8e78f877c1bb1f9a70945f80c94a94ce09ced79110594d",
+      "current": "b8b4d040e3b6fdd99e8e78f877c1bb1f9a70945f80c94a94ce09ced79110594d"
+    },
+    "Languages/English/DefInjected/ThoughtDef/PsychoactiveMushrooms.xml": {
+      "archive": "c1e0c88a57ba668f31fa2c30a3ff6fb079322a6b331c5383b63e58351c1d0ec0",
+      "current": "c1e0c88a57ba668f31fa2c30a3ff6fb079322a6b331c5383b63e58351c1d0ec0"
+    },
+    "Languages/English/Keyed/Mushrooms.xml": {
+      "archive": "d77f2b19f21d2ac8d6770ee544924ea15d4d172d09254f897d5667b9bde308c3",
+      "current": "d77f2b19f21d2ac8d6770ee544924ea15d4d172d09254f897d5667b9bde308c3"
+    },
+    "Languages/English/Keyed/PoisonMushrooms.xml": {
+      "archive": "0654df80004ed7d5b6ad3a480bf84fb38bfd5e0666d3dddc612705ab26be38c9",
+      "current": "0654df80004ed7d5b6ad3a480bf84fb38bfd5e0666d3dddc612705ab26be38c9"
+    },
+    "Languages/English/Keyed/PsychoactiveMushrooms.xml": {
+      "archive": "7faafb4e86154ff2903b1ff1fd331d17008be141c0ee4c0c13b4ced51003a689",
+      "current": "7faafb4e86154ff2903b1ff1fd331d17008be141c0ee4c0c13b4ced51003a689"
+    },
+    "Languages/English/Keyed/WildEcology.xml": {
+      "archive": "6be41915e501f311712c0b11e94c9933e80a1db800c301968b9a95f73366753c",
+      "current": "6be41915e501f311712c0b11e94c9933e80a1db800c301968b9a95f73366753c"
+    },
+    "Languages/Korean/DefInjected/HediffDef/PoisonMushrooms.xml": {
+      "archive": "3065e7f71a1a6b2a4fc11dba78a6cada7bc461612a7b4d7ab4d7502b520bd42e",
+      "current": "3065e7f71a1a6b2a4fc11dba78a6cada7bc461612a7b4d7ab4d7502b520bd42e"
+    },
+    "Languages/Korean/DefInjected/HediffDef/PsychoactiveMushrooms.xml": {
+      "archive": "ecf9c2f01ace1c566ca4f4f2505a5171db40631f921a54d2e815fa07e6b6168d",
+      "current": "ecf9c2f01ace1c566ca4f4f2505a5171db40631f921a54d2e815fa07e6b6168d"
+    },
+    "Languages/Korean/DefInjected/MentalStateDef/PsychoactiveMushrooms.xml": {
+      "archive": "51fb166345baa9480cc26e4b20e49ae2f813043cb03b08e242551aafd4953a17",
+      "current": "51fb166345baa9480cc26e4b20e49ae2f813043cb03b08e242551aafd4953a17"
+    },
+    "Languages/Korean/DefInjected/SpecialThingFilterDef/MushroomMeals.xml": {
+      "archive": "5749513db935013e0a612179534ab3457ade77b60c9173e5c729f343dd4071e7",
+      "current": "5749513db935013e0a612179534ab3457ade77b60c9173e5c729f343dd4071e7"
+    },
+    "Languages/Korean/DefInjected/ThingCategoryDef/ExpansionMushrooms.xml": {
+      "archive": "1b28aa12f43e7cbf5c6ac0de3fe749e6967a5cac3063ab30391dbd25a32d79b8",
+      "current": "1b28aa12f43e7cbf5c6ac0de3fe749e6967a5cac3063ab30391dbd25a32d79b8"
+    },
+    "Languages/Korean/DefInjected/ThingCategoryDef/PoisonMushrooms.xml": {
+      "archive": "8d4919d662478637657c51abc7db7d3e48ae89d41ffcb9166d55c5e339aa5773",
+      "current": "8d4919d662478637657c51abc7db7d3e48ae89d41ffcb9166d55c5e339aa5773"
+    },
+    "Languages/Korean/DefInjected/ThingDef/ExpansionMushrooms.xml": {
+      "archive": "33a10325972a04b523eaba0a9533e27ecc80e4c25ba64904d02d6d964bfbff9b",
+      "current": "33a10325972a04b523eaba0a9533e27ecc80e4c25ba64904d02d6d964bfbff9b"
+    },
+    "Languages/Korean/DefInjected/ThingDef/Mushrooms.xml": {
+      "archive": "615721d4cfd9572ec86bc2718a50880d00843b57376c25686b8934aec96d8457",
+      "current": "615721d4cfd9572ec86bc2718a50880d00843b57376c25686b8934aec96d8457"
+    },
+    "Languages/Korean/DefInjected/ThingDef/PoisonMushrooms.xml": {
+      "archive": "61f4411c80306b23394ab1bdc06658ca225543cc588c8549a023350aa28f1867",
+      "current": "61f4411c80306b23394ab1bdc06658ca225543cc588c8549a023350aa28f1867"
+    },
+    "Languages/Korean/DefInjected/ThoughtDef/ExpansionMushrooms.xml": {
+      "archive": "8e5bf65e5191744a929d8934958c4ca6cc85352995ee2ff031619fa78bfcc39c",
+      "current": "8e5bf65e5191744a929d8934958c4ca6cc85352995ee2ff031619fa78bfcc39c"
+    },
+    "Languages/Korean/DefInjected/ThoughtDef/MushroomEnjoyment.xml": {
+      "archive": "4f6ec93a71ddffcdb7db87aa62c3c48d67e6373487ea52195fde22334dff362f",
+      "current": "4f6ec93a71ddffcdb7db87aa62c3c48d67e6373487ea52195fde22334dff362f"
+    },
+    "Languages/Korean/DefInjected/ThoughtDef/PsychoactiveMushrooms.xml": {
+      "archive": "065526c1e4ffb4d2d0ec38844d3938141794bdd7ae3c083cd99de6e7f84c0bdf",
+      "current": "065526c1e4ffb4d2d0ec38844d3938141794bdd7ae3c083cd99de6e7f84c0bdf"
+    },
+    "Languages/Korean/Keyed/Mushrooms.xml": {
+      "archive": "399f20c473e14ddb195430bbb89ff7e8d7520c497e4930ea9cfcc515483092b7",
+      "current": "399f20c473e14ddb195430bbb89ff7e8d7520c497e4930ea9cfcc515483092b7"
+    },
+    "Languages/Korean/Keyed/PoisonMushrooms.xml": {
+      "archive": "542d50ce5d9c020a96c6555d09062b6148659dd45646e0a47e3540e17c0a3f3d",
+      "current": "542d50ce5d9c020a96c6555d09062b6148659dd45646e0a47e3540e17c0a3f3d"
+    },
+    "Languages/Korean/Keyed/PsychoactiveMushrooms.xml": {
+      "archive": "6b3135daf497542859c5933769b804d2eeca9332527f9dde192a67d4bd84048b",
+      "current": "6b3135daf497542859c5933769b804d2eeca9332527f9dde192a67d4bd84048b"
+    },
+    "Languages/Korean/Keyed/WildEcology.xml": {
+      "archive": "ef5726668c4cf2616c2999694c812190e7d154c7f26d5e08951cc5a4d3f1a212",
+      "current": "ef5726668c4cf2616c2999694c812190e7d154c7f26d5e08951cc5a4d3f1a212"
+    },
+    "Patches/AssortedMushroomWork.xml": {
+      "archive": "387f68888096950f2b719a8fc68eb02e15bf4fd44dbc01c0541294a04c0c7b21",
+      "current": "387f68888096950f2b719a8fc68eb02e15bf4fd44dbc01c0541294a04c0c7b21"
+    },
+    "Textures/Things/Item/RimMushrooms/Beech/01Low.png": {
+      "archive": "286d60f50b4bd53111df66e4faafdb46568ed23d7d25c5a4207dee8cc6f17598",
+      "current": "286d60f50b4bd53111df66e4faafdb46568ed23d7d25c5a4207dee8cc6f17598"
+    },
+    "Textures/Things/Item/RimMushrooms/Beech/02Medium.png": {
+      "archive": "218d946105e5471f155311f193af9cf48c4996efad3287a8400cb72867f7a607",
+      "current": "218d946105e5471f155311f193af9cf48c4996efad3287a8400cb72867f7a607"
+    },
+    "Textures/Things/Item/RimMushrooms/Beech/03Full.png": {
+      "archive": "1679b40b830dac244d3b2a44f79a709ceee92dabf7c4f123ee446e476ffbf807",
+      "current": "1679b40b830dac244d3b2a44f79a709ceee92dabf7c4f123ee446e476ffbf807"
+    },
+    "Textures/Things/Item/RimMushrooms/BirdsNest/01Low.png": {
+      "archive": "5ec8c5dabb27349662487996d93e09cd8888e0b152474547e28e9999e6062d74",
+      "current": "5ec8c5dabb27349662487996d93e09cd8888e0b152474547e28e9999e6062d74"
+    },
+    "Textures/Things/Item/RimMushrooms/BirdsNest/02Medium.png": {
+      "archive": "52f9832db95a1a27b8ec558fc4e10bbe84e80055ab1326e8689878301b55b449",
+      "current": "52f9832db95a1a27b8ec558fc4e10bbe84e80055ab1326e8689878301b55b449"
+    },
+    "Textures/Things/Item/RimMushrooms/BirdsNest/03Full.png": {
+      "archive": "0cb1111c37e58fc0236f2a194167f6c04f6212f0fa27890baffcad14a2f6b6f8",
+      "current": "0cb1111c37e58fc0236f2a194167f6c04f6212f0fa27890baffcad14a2f6b6f8"
+    },
+    "Textures/Things/Item/RimMushrooms/BlackTruffle/01Low.png": {
+      "archive": "889e771c689ac733dd0c82c50390ea26541874dcd1b7916ecf2bcde655e1f6b7",
+      "current": "889e771c689ac733dd0c82c50390ea26541874dcd1b7916ecf2bcde655e1f6b7"
+    },
+    "Textures/Things/Item/RimMushrooms/BlackTruffle/02Medium.png": {
+      "archive": "ee80f548166180281c5e464553446991d8626d908701c9d3c4253760b34d1420",
+      "current": "ee80f548166180281c5e464553446991d8626d908701c9d3c4253760b34d1420"
+    },
+    "Textures/Things/Item/RimMushrooms/BlackTruffle/03Full.png": {
+      "archive": "cdc5f9b9b6f0638f00efed77ddabfd2a69f115a2c4145a5980679903696d35cd",
+      "current": "cdc5f9b9b6f0638f00efed77ddabfd2a69f115a2c4145a5980679903696d35cd"
+    },
+    "Textures/Things/Item/RimMushrooms/BlackTrumpet/01Low.png": {
+      "archive": "a35768258535b941cdddd8183f1edb152295e095321af978455925f15ad2414f",
+      "current": "a35768258535b941cdddd8183f1edb152295e095321af978455925f15ad2414f"
+    },
+    "Textures/Things/Item/RimMushrooms/BlackTrumpet/02Medium.png": {
+      "archive": "4b0db74e777db06513288760345b54824e7bdb12cb823f3ad6bd626893e4b4d7",
+      "current": "4b0db74e777db06513288760345b54824e7bdb12cb823f3ad6bd626893e4b4d7"
+    },
+    "Textures/Things/Item/RimMushrooms/BlackTrumpet/03Full.png": {
+      "archive": "85dff0d35ac1a6f40774b838b6f2a84ea7d4cff848f4e9c9959ca35cda0471af",
+      "current": "85dff0d35ac1a6f40774b838b6f2a84ea7d4cff848f4e9c9959ca35cda0471af"
+    },
+    "Textures/Things/Item/RimMushrooms/Button/01Low.png": {
+      "archive": "e7d26adeba54dded607e525a8177b6a861fc2b6d2ae77520c9e1b964dfb4ad11",
+      "current": "e7d26adeba54dded607e525a8177b6a861fc2b6d2ae77520c9e1b964dfb4ad11"
+    },
+    "Textures/Things/Item/RimMushrooms/Button/02Medium.png": {
+      "archive": "b18150ed4cd54fca087f83b26713bdfc78587e94ff99ed91ef58462943c0110f",
+      "current": "b18150ed4cd54fca087f83b26713bdfc78587e94ff99ed91ef58462943c0110f"
+    },
+    "Textures/Things/Item/RimMushrooms/Button/03Full.png": {
+      "archive": "c559da75d94fe73ebd0600809e11ea2124931c4173d179becf98f6e7916efb93",
+      "current": "c559da75d94fe73ebd0600809e11ea2124931c4173d179becf98f6e7916efb93"
+    },
+    "Textures/Things/Item/RimMushrooms/Cauliflower/01Low.png": {
+      "archive": "515c3028295e8dff5b12b6167dfcd17e88c2275790e1a92592abdae1c17c9260",
+      "current": "515c3028295e8dff5b12b6167dfcd17e88c2275790e1a92592abdae1c17c9260"
+    },
+    "Textures/Things/Item/RimMushrooms/Cauliflower/02Medium.png": {
+      "archive": "7a266773fb64f210bd95e056fd4376a62276ad8e872141297b9916ad1431bf16",
+      "current": "7a266773fb64f210bd95e056fd4376a62276ad8e872141297b9916ad1431bf16"
+    },
+    "Textures/Things/Item/RimMushrooms/Cauliflower/03Full.png": {
+      "archive": "a5d340110aed9d52a7b7882e74e44472f829a2243a6694e5d070f2d9c53369af",
+      "current": "a5d340110aed9d52a7b7882e74e44472f829a2243a6694e5d070f2d9c53369af"
+    },
+    "Textures/Things/Item/RimMushrooms/Chaga/01Low.png": {
+      "archive": "f5bdb0df0b74c8e113d83505282e2dcf080e818a81ba92f6d1af00f0d42c5982",
+      "current": "f5bdb0df0b74c8e113d83505282e2dcf080e818a81ba92f6d1af00f0d42c5982"
+    },
+    "Textures/Things/Item/RimMushrooms/Chaga/02Medium.png": {
+      "archive": "e4b5d618167935297a43debccdf282fe5c2423bffa0f2e719af3ec2119f73ad4",
+      "current": "e4b5d618167935297a43debccdf282fe5c2423bffa0f2e719af3ec2119f73ad4"
+    },
+    "Textures/Things/Item/RimMushrooms/Chaga/03Full.png": {
+      "archive": "169b669aa752568918e523502ffdd11f2fd301708788ea5d3fcb230cb5773d49",
+      "current": "169b669aa752568918e523502ffdd11f2fd301708788ea5d3fcb230cb5773d49"
+    },
+    "Textures/Things/Item/RimMushrooms/Chlorophos/01Low.png": {
+      "archive": "4e0549224f7350e967829f426860e3b20de175068168601024c342852f45c4a2",
+      "current": "4e0549224f7350e967829f426860e3b20de175068168601024c342852f45c4a2"
+    },
+    "Textures/Things/Item/RimMushrooms/Chlorophos/02Medium.png": {
+      "archive": "5129fb276bd9fd238bdd36f835bb3722d1d5c6a0ffed4cd4233c863567cdc76a",
+      "current": "5129fb276bd9fd238bdd36f835bb3722d1d5c6a0ffed4cd4233c863567cdc76a"
+    },
+    "Textures/Things/Item/RimMushrooms/Chlorophos/03Full.png": {
+      "archive": "6f73b77b507c1028c69ca241c586a5590c9d5e2909d7856ba66dd2521e969c8a",
+      "current": "6f73b77b507c1028c69ca241c586a5590c9d5e2909d7856ba66dd2521e969c8a"
+    },
+    "Textures/Things/Item/RimMushrooms/Cordyceps/01Low.png": {
+      "archive": "a4cea9088138799103effa57ebe6fefbfb025e422a79d64ab076029bd4fdc079",
+      "current": "a4cea9088138799103effa57ebe6fefbfb025e422a79d64ab076029bd4fdc079"
+    },
+    "Textures/Things/Item/RimMushrooms/Cordyceps/02Medium.png": {
+      "archive": "2981fdc920f9a8b4b5f59d6d72a2590797e61321807ac38b0e5cf9686bc6dc31",
+      "current": "2981fdc920f9a8b4b5f59d6d72a2590797e61321807ac38b0e5cf9686bc6dc31"
+    },
+    "Textures/Things/Item/RimMushrooms/Cordyceps/03Full.png": {
+      "archive": "fd9a393f0029a27813080665c1aa74fab2cd58cf422690b431233801f7bc99dc",
+      "current": "fd9a393f0029a27813080665c1aa74fab2cd58cf422690b431233801f7bc99dc"
+    },
+    "Textures/Things/Item/RimMushrooms/Cubensis/01Low.png": {
+      "archive": "460618e444b3bb131d7490483050efc2fef36dfa31bf545d0a76f35480d0f602",
+      "current": "460618e444b3bb131d7490483050efc2fef36dfa31bf545d0a76f35480d0f602"
+    },
+    "Textures/Things/Item/RimMushrooms/Cubensis/02Medium.png": {
+      "archive": "6f066b92d081919a3f8da120846682ff01eef7e760d6ea6b82b1387025123347",
+      "current": "6f066b92d081919a3f8da120846682ff01eef7e760d6ea6b82b1387025123347"
+    },
+    "Textures/Things/Item/RimMushrooms/Cubensis/03Full.png": {
+      "archive": "d50c4ac9380fc0d2fc5b9e2be8c86fc20917abf53bb29d137766829b2a02146d",
+      "current": "d50c4ac9380fc0d2fc5b9e2be8c86fc20917abf53bb29d137766829b2a02146d"
+    },
+    "Textures/Things/Item/RimMushrooms/DeadlyWebcap/01Low.png": {
+      "archive": "e689d323ff61869fa3d571c953928b0b9dfc4d151f6f5dd47874059705ca9d3d",
+      "current": "e689d323ff61869fa3d571c953928b0b9dfc4d151f6f5dd47874059705ca9d3d"
+    },
+    "Textures/Things/Item/RimMushrooms/DeadlyWebcap/02Medium.png": {
+      "archive": "e210c927399f57669f5f2ee1875b72be5cd9dff31b48f52d000e0dbe5e94dd87",
+      "current": "e210c927399f57669f5f2ee1875b72be5cd9dff31b48f52d000e0dbe5e94dd87"
+    },
+    "Textures/Things/Item/RimMushrooms/DeadlyWebcap/03Full.png": {
+      "archive": "e88fcea77d1fc4dd70d06cc3628fd26b446b084fe84a087ecd52b5b0b3818526",
+      "current": "e88fcea77d1fc4dd70d06cc3628fd26b446b084fe84a087ecd52b5b0b3818526"
+    },
+    "Textures/Things/Item/RimMushrooms/DeathCap/01Low.png": {
+      "archive": "185fe1baf7cb24b27a2922745eda99cf86e3e012dd4f3b6615f4539948d758f0",
+      "current": "185fe1baf7cb24b27a2922745eda99cf86e3e012dd4f3b6615f4539948d758f0"
+    },
+    "Textures/Things/Item/RimMushrooms/DeathCap/02Medium.png": {
+      "archive": "d9d804818e435b28f98aefbd4d15f6a248b1e00770d35a84ef861d864f323f8b",
+      "current": "d9d804818e435b28f98aefbd4d15f6a248b1e00770d35a84ef861d864f323f8b"
+    },
+    "Textures/Things/Item/RimMushrooms/DeathCap/03Full.png": {
+      "archive": "5072449e799ae88601efc991ad57a11c1c8ee09e2eee116c7e745c8d1f56571a",
+      "current": "5072449e799ae88601efc991ad57a11c1c8ee09e2eee116c7e745c8d1f56571a"
+    },
+    "Textures/Things/Item/RimMushrooms/DestroyingAngel/01Low.png": {
+      "archive": "c31e824be54c3676b4f7731e5a39df0875fc40a15e9765901f9618c0b4110357",
+      "current": "c31e824be54c3676b4f7731e5a39df0875fc40a15e9765901f9618c0b4110357"
+    },
+    "Textures/Things/Item/RimMushrooms/DestroyingAngel/02Medium.png": {
+      "archive": "2ad99c8f4d9004916053fe215f2882c0a61abe6110314727a5be531ae17d56ad",
+      "current": "2ad99c8f4d9004916053fe215f2882c0a61abe6110314727a5be531ae17d56ad"
+    },
+    "Textures/Things/Item/RimMushrooms/DestroyingAngel/03Full.png": {
+      "archive": "b213987f6d71449b68786039233f7971eef6005e984fc22c78f520f90aea914b",
+      "current": "b213987f6d71449b68786039233f7971eef6005e984fc22c78f520f90aea914b"
+    },
+    "Textures/Things/Item/RimMushrooms/DevilsFingers/01Low.png": {
+      "archive": "3e37c7bcc4e7d08cf1f9312ada62913ce413379705ec618a628c67e4a811a8a5",
+      "current": "3e37c7bcc4e7d08cf1f9312ada62913ce413379705ec618a628c67e4a811a8a5"
+    },
+    "Textures/Things/Item/RimMushrooms/DevilsFingers/02Medium.png": {
+      "archive": "540569d91887cc99d7fa693cc28b0bef079706dcd8c86bd861423be698f18ca2",
+      "current": "540569d91887cc99d7fa693cc28b0bef079706dcd8c86bd861423be698f18ca2"
+    },
+    "Textures/Things/Item/RimMushrooms/DevilsFingers/03Full.png": {
+      "archive": "9310a4eb33ed33f776758bc9b40aaafe816d83d26a568e51eb00632e90ef23db",
+      "current": "9310a4eb33ed33f776758bc9b40aaafe816d83d26a568e51eb00632e90ef23db"
+    },
+    "Textures/Things/Item/RimMushrooms/DryRot/01Low.png": {
+      "archive": "8642f356620abc06ed92263506f6957d32d9fb8b4da6c569cca4e61b43956b82",
+      "current": "8642f356620abc06ed92263506f6957d32d9fb8b4da6c569cca4e61b43956b82"
+    },
+    "Textures/Things/Item/RimMushrooms/DryRot/02Medium.png": {
+      "archive": "e0a97f5a47dfee2692980ebeee547c848893f36f16071a04ee5880d78b667671",
+      "current": "e0a97f5a47dfee2692980ebeee547c848893f36f16071a04ee5880d78b667671"
+    },
+    "Textures/Things/Item/RimMushrooms/DryRot/03Full.png": {
+      "archive": "cd7d338b8b4dd2446d0c5749454d1fb3532ced91ca41bb7d5d4bc351bdeaf962",
+      "current": "cd7d338b8b4dd2446d0c5749454d1fb3532ced91ca41bb7d5d4bc351bdeaf962"
+    },
+    "Textures/Things/Item/RimMushrooms/Enoki/01Low.png": {
+      "archive": "d7272c20d31e4163131c3766a5c347b5f4438433a40664f030aab3a1eff668c8",
+      "current": "d7272c20d31e4163131c3766a5c347b5f4438433a40664f030aab3a1eff668c8"
+    },
+    "Textures/Things/Item/RimMushrooms/Enoki/02Medium.png": {
+      "archive": "ae9bb5e15f07b230466011895745950ea151acc9f3b2e43654da4a50e3ac4fdb",
+      "current": "ae9bb5e15f07b230466011895745950ea151acc9f3b2e43654da4a50e3ac4fdb"
+    },
+    "Textures/Things/Item/RimMushrooms/Enoki/03Full.png": {
+      "archive": "911ccc6bbac8775442ba1bae7b938d3d51cad351068fcd5eb312a4b6c147b4bb",
+      "current": "911ccc6bbac8775442ba1bae7b938d3d51cad351068fcd5eb312a4b6c147b4bb"
+    },
+    "Textures/Things/Item/RimMushrooms/FlyAgaric/01Low.png": {
+      "archive": "1c21af9f6ce603ad310f2ea4138138fdb5f77289fa36dd2255abdbb9a69da710",
+      "current": "1c21af9f6ce603ad310f2ea4138138fdb5f77289fa36dd2255abdbb9a69da710"
+    },
+    "Textures/Things/Item/RimMushrooms/FlyAgaric/02Medium.png": {
+      "archive": "61ff1ae6cd6d3b53da69d4729eb04901a14477b7c7bfdabebb4231251d99741c",
+      "current": "61ff1ae6cd6d3b53da69d4729eb04901a14477b7c7bfdabebb4231251d99741c"
+    },
+    "Textures/Things/Item/RimMushrooms/FlyAgaric/03Full.png": {
+      "archive": "cfd8b9aa41c5f6145b999aebb4b9c25f67589ada113a1389877a151cf34f0fcf",
+      "current": "cfd8b9aa41c5f6145b999aebb4b9c25f67589ada113a1389877a151cf34f0fcf"
+    },
+    "Textures/Things/Item/RimMushrooms/GhostFungus/01Low.png": {
+      "archive": "36480039cdbd6ff3f1eaf19c1c9e9c40075b94e12fb620a87bcab1edcb1d188f",
+      "current": "36480039cdbd6ff3f1eaf19c1c9e9c40075b94e12fb620a87bcab1edcb1d188f"
+    },
+    "Textures/Things/Item/RimMushrooms/GhostFungus/02Medium.png": {
+      "archive": "6d30f5a0cb0a87b9166874e9f82aa803cb81b8f72d3d10d42a444535a9a89db0",
+      "current": "6d30f5a0cb0a87b9166874e9f82aa803cb81b8f72d3d10d42a444535a9a89db0"
+    },
+    "Textures/Things/Item/RimMushrooms/GhostFungus/03Full.png": {
+      "archive": "644a29cb5c376fc61e4bed36eaca1e0ff710a0d12d08210dd6ac3e81a8f7a35e",
+      "current": "644a29cb5c376fc61e4bed36eaca1e0ff710a0d12d08210dd6ac3e81a8f7a35e"
+    },
+    "Textures/Things/Item/RimMushrooms/GiantPuffball/01Low.png": {
+      "archive": "9525788fa41bf87b83120ce992d86cc13df3f03d15d98aa49341b122f232daba",
+      "current": "9525788fa41bf87b83120ce992d86cc13df3f03d15d98aa49341b122f232daba"
+    },
+    "Textures/Things/Item/RimMushrooms/GiantPuffball/02Medium.png": {
+      "archive": "6b6dc1c055914b9a9f25f626972483fb7b0689fc0fe4bce6ca90e33c4ec95c6e",
+      "current": "6b6dc1c055914b9a9f25f626972483fb7b0689fc0fe4bce6ca90e33c4ec95c6e"
+    },
+    "Textures/Things/Item/RimMushrooms/GiantPuffball/03Full.png": {
+      "archive": "caa7c7e381036df72505a390e05d2df68330887b01f19f6bc90b949b3201e62d",
+      "current": "caa7c7e381036df72505a390e05d2df68330887b01f19f6bc90b949b3201e62d"
+    },
+    "Textures/Things/Item/RimMushrooms/HoneyFungus/01Low.png": {
+      "archive": "82a6d0f760c47a3e866c7e93a76571b26d7f21df794146f7110044e68e34ca4d",
+      "current": "82a6d0f760c47a3e866c7e93a76571b26d7f21df794146f7110044e68e34ca4d"
+    },
+    "Textures/Things/Item/RimMushrooms/HoneyFungus/02Medium.png": {
+      "archive": "b9767d121265108c3cf22d4aa2748c0a145964dc83b8c0d1ef99d35b3b39d192",
+      "current": "b9767d121265108c3cf22d4aa2748c0a145964dc83b8c0d1ef99d35b3b39d192"
+    },
+    "Textures/Things/Item/RimMushrooms/HoneyFungus/03Full.png": {
+      "archive": "be8f0dca68cfb57a9f2c220007df9da77bb06ae000e555210a62779eea5f36da",
+      "current": "be8f0dca68cfb57a9f2c220007df9da77bb06ae000e555210a62779eea5f36da"
+    },
+    "Textures/Things/Item/RimMushrooms/IndigoMilkcap/01Low.png": {
+      "archive": "920a6406b0405792c932e38db0e0c7f2b82104b7eff67764cadb77470e5a93af",
+      "current": "920a6406b0405792c932e38db0e0c7f2b82104b7eff67764cadb77470e5a93af"
+    },
+    "Textures/Things/Item/RimMushrooms/IndigoMilkcap/02Medium.png": {
+      "archive": "e3224789d7fdf65ac6a045325b0ec300412f57c5bc4df5a0087b18a68702aefa",
+      "current": "e3224789d7fdf65ac6a045325b0ec300412f57c5bc4df5a0087b18a68702aefa"
+    },
+    "Textures/Things/Item/RimMushrooms/IndigoMilkcap/03Full.png": {
+      "archive": "596f9c44f64fcf98ee73d2cb5bd71000e37f74975a780573a5a82bbc2e23c1c4",
+      "current": "596f9c44f64fcf98ee73d2cb5bd71000e37f74975a780573a5a82bbc2e23c1c4"
+    },
+    "Textures/Things/Item/RimMushrooms/JackOLantern/01Low.png": {
+      "archive": "0d1b58dc39c7a17392008db9517b5360cd304bf42fe01e827728a8d750069f34",
+      "current": "0d1b58dc39c7a17392008db9517b5360cd304bf42fe01e827728a8d750069f34"
+    },
+    "Textures/Things/Item/RimMushrooms/JackOLantern/02Medium.png": {
+      "archive": "80d333506ca0c9a326cdfa30d23aa77a84c540af4bac74518627e37392f55ec6",
+      "current": "80d333506ca0c9a326cdfa30d23aa77a84c540af4bac74518627e37392f55ec6"
+    },
+    "Textures/Things/Item/RimMushrooms/JackOLantern/03Full.png": {
+      "archive": "0e2e5fc6f4ffa40cc38fd424e4d1be7752777bec9ee83d1ae4e77fd57f9dc8b7",
+      "current": "0e2e5fc6f4ffa40cc38fd424e4d1be7752777bec9ee83d1ae4e77fd57f9dc8b7"
+    },
+    "Textures/Things/Item/RimMushrooms/KingOyster/01Low.png": {
+      "archive": "99b7d8fea43e36cd078beacc0ae14e51aa47f66b132c6432d5502ff7137948ed",
+      "current": "99b7d8fea43e36cd078beacc0ae14e51aa47f66b132c6432d5502ff7137948ed"
+    },
+    "Textures/Things/Item/RimMushrooms/KingOyster/02Medium.png": {
+      "archive": "273bcf3f442adadb17d9c60ce56f48c96cf25b5da15804a872ffb129823e67f8",
+      "current": "273bcf3f442adadb17d9c60ce56f48c96cf25b5da15804a872ffb129823e67f8"
+    },
+    "Textures/Things/Item/RimMushrooms/KingOyster/03Full.png": {
+      "archive": "6bee07e5d91164f8b02f33d655e0c7a157324bf8a8d4d402599523fecc7ccc79",
+      "current": "6bee07e5d91164f8b02f33d655e0c7a157324bf8a8d4d402599523fecc7ccc79"
+    },
+    "Textures/Things/Item/RimMushrooms/LibertyCap/01Low.png": {
+      "archive": "131a5f3529ae3c03a5b2bd187b9a73813453ffa97ffa933ffa288e5dbf7edafc",
+      "current": "131a5f3529ae3c03a5b2bd187b9a73813453ffa97ffa933ffa288e5dbf7edafc"
+    },
+    "Textures/Things/Item/RimMushrooms/LibertyCap/02Medium.png": {
+      "archive": "3ba23cf1c5f9bc9713cfa478f6ee99fb216e11d0b710cb7be74aad1df5e2ec7a",
+      "current": "3ba23cf1c5f9bc9713cfa478f6ee99fb216e11d0b710cb7be74aad1df5e2ec7a"
+    },
+    "Textures/Things/Item/RimMushrooms/LibertyCap/03Full.png": {
+      "archive": "52d67ba7526a8d26683c08ecc58e796d3f8efb04110ab08d393018b4325164b3",
+      "current": "52d67ba7526a8d26683c08ecc58e796d3f8efb04110ab08d393018b4325164b3"
+    },
+    "Textures/Things/Item/RimMushrooms/LionsMane/01Low.png": {
+      "archive": "76044dc9d3051fd5efb42a7c6b2413a9c3f2e1516c3f92c2e47930674388612a",
+      "current": "76044dc9d3051fd5efb42a7c6b2413a9c3f2e1516c3f92c2e47930674388612a"
+    },
+    "Textures/Things/Item/RimMushrooms/LionsMane/02Medium.png": {
+      "archive": "6fe7f6cf9b3ab6cc177c88b4ec4dcc2cee7ad9c7a50237f79f9ed449a616f7ef",
+      "current": "6fe7f6cf9b3ab6cc177c88b4ec4dcc2cee7ad9c7a50237f79f9ed449a616f7ef"
+    },
+    "Textures/Things/Item/RimMushrooms/LionsMane/03Full.png": {
+      "archive": "1195ba84e388b90b400fba178fab6c41e43893e5cc90c95ddd9d4c7abf1d74e8",
+      "current": "1195ba84e388b90b400fba178fab6c41e43893e5cc90c95ddd9d4c7abf1d74e8"
+    },
+    "Textures/Things/Item/RimMushrooms/Lobster/01Low.png": {
+      "archive": "8f6ec781e093be1bf3efc203ee0b5ca3049656b64ae3baaabd4038f01a541a1e",
+      "current": "8f6ec781e093be1bf3efc203ee0b5ca3049656b64ae3baaabd4038f01a541a1e"
+    },
+    "Textures/Things/Item/RimMushrooms/Lobster/02Medium.png": {
+      "archive": "b639b9c0e5b250c0c853f508dee02ff5a95dc6157b3f58f27a04a774a68a86db",
+      "current": "b639b9c0e5b250c0c853f508dee02ff5a95dc6157b3f58f27a04a774a68a86db"
+    },
+    "Textures/Things/Item/RimMushrooms/Lobster/03Full.png": {
+      "archive": "a7bafe04ecfbef9fa69414ee8525e55ebedc47ad645b22e6809c897ff322826c",
+      "current": "a7bafe04ecfbef9fa69414ee8525e55ebedc47ad645b22e6809c897ff322826c"
+    },
+    "Textures/Things/Item/RimMushrooms/Maitake/01Low.png": {
+      "archive": "9239898e52af42dcb2e05a84681bd0b276226165b42ca1f43dd5e36fb54c340a",
+      "current": "9239898e52af42dcb2e05a84681bd0b276226165b42ca1f43dd5e36fb54c340a"
+    },
+    "Textures/Things/Item/RimMushrooms/Maitake/02Medium.png": {
+      "archive": "ff7817bc2d946640f2c00ad1f453012bc4fc49007759cf8a94116d56c0f83390",
+      "current": "ff7817bc2d946640f2c00ad1f453012bc4fc49007759cf8a94116d56c0f83390"
+    },
+    "Textures/Things/Item/RimMushrooms/Maitake/03Full.png": {
+      "archive": "bd52d5f9dda51759a5a88b0a1d0adf0183d6b2a86a71796a4c5c29e71265919b",
+      "current": "bd52d5f9dda51759a5a88b0a1d0adf0183d6b2a86a71796a4c5c29e71265919b"
+    },
+    "Textures/Things/Item/RimMushrooms/Matsutake/01Low.png": {
+      "archive": "99229b600d2982e0960eacdf1ef95351d0433dda1b4fc79ea16ac8df3298e80a",
+      "current": "99229b600d2982e0960eacdf1ef95351d0433dda1b4fc79ea16ac8df3298e80a"
+    },
+    "Textures/Things/Item/RimMushrooms/Matsutake/02Medium.png": {
+      "archive": "7c800b9e9e21b53d2238417fe7dc5a7a6738908fd406e6d790d30744d098ffcb",
+      "current": "7c800b9e9e21b53d2238417fe7dc5a7a6738908fd406e6d790d30744d098ffcb"
+    },
+    "Textures/Things/Item/RimMushrooms/Matsutake/03Full.png": {
+      "archive": "c929ad09fc384cdda060b318d64ba2532c5a17879e5092bf6a87da5d9cf3765b",
+      "current": "c929ad09fc384cdda060b318d64ba2532c5a17879e5092bf6a87da5d9cf3765b"
+    },
+    "Textures/Things/Item/RimMushrooms/Morel/01Low.png": {
+      "archive": "ef2410ab26fe3a2bd0ce3dd77ed708f605a703f30d9855dde2fe344035a8a885",
+      "current": "ef2410ab26fe3a2bd0ce3dd77ed708f605a703f30d9855dde2fe344035a8a885"
+    },
+    "Textures/Things/Item/RimMushrooms/Morel/02Medium.png": {
+      "archive": "f9e25c379da0cc60f6f888e9b60fb6c48318423e62ae1d3e1ea7504bc9da2f77",
+      "current": "f9e25c379da0cc60f6f888e9b60fb6c48318423e62ae1d3e1ea7504bc9da2f77"
+    },
+    "Textures/Things/Item/RimMushrooms/Morel/03Full.png": {
+      "archive": "902f6bdb30104ca067e9f295fdaf43da3e0248b12e9f4f320fb5051fcdb2c5e9",
+      "current": "902f6bdb30104ca067e9f295fdaf43da3e0248b12e9f4f320fb5051fcdb2c5e9"
+    },
+    "Textures/Things/Item/RimMushrooms/Oyster/01Low.png": {
+      "archive": "e663063ddabaf62f3489909530f61b04137b06b22631bc8a4f1a9d47283b89f1",
+      "current": "e663063ddabaf62f3489909530f61b04137b06b22631bc8a4f1a9d47283b89f1"
+    },
+    "Textures/Things/Item/RimMushrooms/Oyster/02Medium.png": {
+      "archive": "c241f191fc0d3077f4668b4a8a6df8b0dc1dacfd0090fb97a7c81509feb02e6f",
+      "current": "c241f191fc0d3077f4668b4a8a6df8b0dc1dacfd0090fb97a7c81509feb02e6f"
+    },
+    "Textures/Things/Item/RimMushrooms/Oyster/03Full.png": {
+      "archive": "0028310fdf33656a848ed84ca87b64dac042b7347ea7972c900f110aaddbed2c",
+      "current": "0028310fdf33656a848ed84ca87b64dac042b7347ea7972c900f110aaddbed2c"
+    },
+    "Textures/Things/Item/RimMushrooms/PantherCap/01Low.png": {
+      "archive": "8691268a3f75e0ed2f101b99100229f24892500bde97abc4fe0f2a6a7e61c8b8",
+      "current": "8691268a3f75e0ed2f101b99100229f24892500bde97abc4fe0f2a6a7e61c8b8"
+    },
+    "Textures/Things/Item/RimMushrooms/PantherCap/02Medium.png": {
+      "archive": "a0b6a20ec47cbc73aed0f7ea6fb791fd3bf81571cb8b148c79a04007b2339677",
+      "current": "a0b6a20ec47cbc73aed0f7ea6fb791fd3bf81571cb8b148c79a04007b2339677"
+    },
+    "Textures/Things/Item/RimMushrooms/PantherCap/03Full.png": {
+      "archive": "3bf0e2a6280f8d550d59b9f3f8addb53813db045924f7cc43b9164a1b7dc4e62",
+      "current": "3bf0e2a6280f8d550d59b9f3f8addb53813db045924f7cc43b9164a1b7dc4e62"
+    },
+    "Textures/Things/Item/RimMushrooms/PoisonFireCoral/01Low.png": {
+      "archive": "2b548245daff5edccae0b579cef518a1ebbdd151b703a245cc97140c141a3c01",
+      "current": "2b548245daff5edccae0b579cef518a1ebbdd151b703a245cc97140c141a3c01"
+    },
+    "Textures/Things/Item/RimMushrooms/PoisonFireCoral/02Medium.png": {
+      "archive": "af50002c9210d5f2e136d20fc333d8033eb96d00d205be3b7c2692f54c333cac",
+      "current": "af50002c9210d5f2e136d20fc333d8033eb96d00d205be3b7c2692f54c333cac"
+    },
+    "Textures/Things/Item/RimMushrooms/PoisonFireCoral/03Full.png": {
+      "archive": "777e894d57ef6d12199909a3b1cdb009125f1bec8d55730bc5409344706a700c",
+      "current": "777e894d57ef6d12199909a3b1cdb009125f1bec8d55730bc5409344706a700c"
+    },
+    "Textures/Things/Item/RimMushrooms/Porcini/01Low.png": {
+      "archive": "c318b3f954f0abf7c5408d749428322f0fd14d1d63afcc576b6b838bf8b838fa",
+      "current": "c318b3f954f0abf7c5408d749428322f0fd14d1d63afcc576b6b838bf8b838fa"
+    },
+    "Textures/Things/Item/RimMushrooms/Porcini/02Medium.png": {
+      "archive": "3bde418741d0406ca51bcc7ef1c8a9216ff1657deba0f557d0c36d84749f61c5",
+      "current": "3bde418741d0406ca51bcc7ef1c8a9216ff1657deba0f557d0c36d84749f61c5"
+    },
+    "Textures/Things/Item/RimMushrooms/Porcini/03Full.png": {
+      "archive": "e43e64c4647d004c8cba71979060b73f0dff6a3d9ab8e6c59cc381aeee6c6b02",
+      "current": "e43e64c4647d004c8cba71979060b73f0dff6a3d9ab8e6c59cc381aeee6c6b02"
+    },
+    "Textures/Things/Item/RimMushrooms/PurpleBlewit/01Low.png": {
+      "archive": "768962a982228a0a86e77d5e33431a894fc4d879d788d4a325fa797b447564e5",
+      "current": "768962a982228a0a86e77d5e33431a894fc4d879d788d4a325fa797b447564e5"
+    },
+    "Textures/Things/Item/RimMushrooms/PurpleBlewit/02Medium.png": {
+      "archive": "3959f0a23ca291a02adb04bce2bc9215c4c91c6de7addb63fa80be681e45833d",
+      "current": "3959f0a23ca291a02adb04bce2bc9215c4c91c6de7addb63fa80be681e45833d"
+    },
+    "Textures/Things/Item/RimMushrooms/PurpleBlewit/03Full.png": {
+      "archive": "625c0cec685e0fa49a1e96fde6b25471f355af644d820041fce026bf3d4ddc37",
+      "current": "625c0cec685e0fa49a1e96fde6b25471f355af644d820041fce026bf3d4ddc37"
+    },
+    "Textures/Things/Item/RimMushrooms/Reishi/01Low.png": {
+      "archive": "8488ceec4e9a040fae3bc238b964f299b0971a6f1b3e16c8b295f136cbd6d8ed",
+      "current": "8488ceec4e9a040fae3bc238b964f299b0971a6f1b3e16c8b295f136cbd6d8ed"
+    },
+    "Textures/Things/Item/RimMushrooms/Reishi/02Medium.png": {
+      "archive": "5d5fb60b6a88c0fbca57ae5ba3df4ee6b644985b2f10c203e138438c6d5d1211",
+      "current": "5d5fb60b6a88c0fbca57ae5ba3df4ee6b644985b2f10c203e138438c6d5d1211"
+    },
+    "Textures/Things/Item/RimMushrooms/Reishi/03Full.png": {
+      "archive": "01ec75d47c6efe3bd15b4cda6de3dff65a8470418c40c8251cd995455d8f2106",
+      "current": "01ec75d47c6efe3bd15b4cda6de3dff65a8470418c40c8251cd995455d8f2106"
+    },
+    "Textures/Things/Item/RimMushrooms/Sanghuang/01Low.png": {
+      "archive": "7c913bfeb117b049f10457c66a4ee99f888e29a23d6752180eaf3933062e2639",
+      "current": "7c913bfeb117b049f10457c66a4ee99f888e29a23d6752180eaf3933062e2639"
+    },
+    "Textures/Things/Item/RimMushrooms/Sanghuang/02Medium.png": {
+      "archive": "7fdf70c86b1f4b15910e46946295c11cbd9fb1e1c18dccc8bd55d30e12c1185b",
+      "current": "7fdf70c86b1f4b15910e46946295c11cbd9fb1e1c18dccc8bd55d30e12c1185b"
+    },
+    "Textures/Things/Item/RimMushrooms/Sanghuang/03Full.png": {
+      "archive": "95c4c7fc13dcd7a8c62f3a4af40c79fcfdc1ca3855c4e0945a66e3bbe63282ab",
+      "current": "95c4c7fc13dcd7a8c62f3a4af40c79fcfdc1ca3855c4e0945a66e3bbe63282ab"
+    },
+    "Textures/Things/Item/RimMushrooms/ShaggyInkcap/01Low.png": {
+      "archive": "0ab5a9e23166ec2d42233eabae18170c8fd9abf047706c2d3c7e4ddacf3c5993",
+      "current": "0ab5a9e23166ec2d42233eabae18170c8fd9abf047706c2d3c7e4ddacf3c5993"
+    },
+    "Textures/Things/Item/RimMushrooms/ShaggyInkcap/02Medium.png": {
+      "archive": "295a95341d1b341e380361b2d91613637284755e6f2974bdf60e64a2f0eabc7a",
+      "current": "295a95341d1b341e380361b2d91613637284755e6f2974bdf60e64a2f0eabc7a"
+    },
+    "Textures/Things/Item/RimMushrooms/ShaggyInkcap/03Full.png": {
+      "archive": "8742f90463db0133c3c4e58373dfac1b2f26b7c1eb04eb4a0df9cbac763aa1cf",
+      "current": "8742f90463db0133c3c4e58373dfac1b2f26b7c1eb04eb4a0df9cbac763aa1cf"
+    },
+    "Textures/Things/Item/RimMushrooms/Shiitake/01Low.png": {
+      "archive": "f0f9f4be7b057185e1e9ba0794310a787c95bc8c756008d5d63210ec3a07c31c",
+      "current": "f0f9f4be7b057185e1e9ba0794310a787c95bc8c756008d5d63210ec3a07c31c"
+    },
+    "Textures/Things/Item/RimMushrooms/Shiitake/02Medium.png": {
+      "archive": "14fdbb0d9f5dd07e71241dae0da7ccbf940f7cb92caed99865a953a8a18645f5",
+      "current": "14fdbb0d9f5dd07e71241dae0da7ccbf940f7cb92caed99865a953a8a18645f5"
+    },
+    "Textures/Things/Item/RimMushrooms/Shiitake/03Full.png": {
+      "archive": "fbcc4782fbf54619ef3d6188cce9e64ad60f72da93fdbc84d73103066b18b36a",
+      "current": "fbcc4782fbf54619ef3d6188cce9e64ad60f72da93fdbc84d73103066b18b36a"
+    },
+    "Textures/Things/Item/RimMushrooms/SulfurTuft/01Low.png": {
+      "archive": "f354cb09ae09fbd183e76b3cc38892112cb8683e921e803365ee01b1763fde06",
+      "current": "f354cb09ae09fbd183e76b3cc38892112cb8683e921e803365ee01b1763fde06"
+    },
+    "Textures/Things/Item/RimMushrooms/SulfurTuft/02Medium.png": {
+      "archive": "6091f85abaeb23999cd433010bf62d4239b2379b6ce69b2b144497e8a81adec7",
+      "current": "6091f85abaeb23999cd433010bf62d4239b2379b6ce69b2b144497e8a81adec7"
+    },
+    "Textures/Things/Item/RimMushrooms/SulfurTuft/03Full.png": {
+      "archive": "29e915c71aa3ac286a95b0b4fe317dbf440f61978d3fd821c4ab7537c710f84d",
+      "current": "29e915c71aa3ac286a95b0b4fe317dbf440f61978d3fd821c4ab7537c710f84d"
+    },
+    "Textures/Things/Item/RimMushrooms/Tsukiyotake/01Low.png": {
+      "archive": "f31849456eeb8e150e04109a62cee0b68b538a7c3da2852538e6f511be7d9266",
+      "current": "f31849456eeb8e150e04109a62cee0b68b538a7c3da2852538e6f511be7d9266"
+    },
+    "Textures/Things/Item/RimMushrooms/Tsukiyotake/02Medium.png": {
+      "archive": "eef0f8a4b3d88fa518502e2dfa781c8ad6bc1943800b6e60d713100598a7f734",
+      "current": "eef0f8a4b3d88fa518502e2dfa781c8ad6bc1943800b6e60d713100598a7f734"
+    },
+    "Textures/Things/Item/RimMushrooms/Tsukiyotake/03Full.png": {
+      "archive": "786d157288599070f5593855b957f05da0adc3ad490e44535cdba27b0e52e72c",
+      "current": "786d157288599070f5593855b957f05da0adc3ad490e44535cdba27b0e52e72c"
+    },
+    "Textures/Things/Item/RimMushrooms/TurkeyTail/01Low.png": {
+      "archive": "c5dfbd12f5b3e771806c784b669f50c1a68694959734348c06e766b6d6d54cde",
+      "current": "c5dfbd12f5b3e771806c784b669f50c1a68694959734348c06e766b6d6d54cde"
+    },
+    "Textures/Things/Item/RimMushrooms/TurkeyTail/02Medium.png": {
+      "archive": "eb12cf17b0f21c2399d1c48925f54d4e450e577824d44841ab035578913485f2",
+      "current": "eb12cf17b0f21c2399d1c48925f54d4e450e577824d44841ab035578913485f2"
+    },
+    "Textures/Things/Item/RimMushrooms/TurkeyTail/03Full.png": {
+      "archive": "26997e9425742873af48f61973915ed8fbca5f824f03588b366a2e2dbd5ced08",
+      "current": "26997e9425742873af48f61973915ed8fbca5f824f03588b366a2e2dbd5ced08"
+    },
+    "Textures/Things/Item/RimMushrooms/VeiledStinkhorn/01Low.png": {
+      "archive": "555ec23a180190f295a2ca87e36e9a201629eb2c6c66e5116256643e40f768cd",
+      "current": "555ec23a180190f295a2ca87e36e9a201629eb2c6c66e5116256643e40f768cd"
+    },
+    "Textures/Things/Item/RimMushrooms/VeiledStinkhorn/02Medium.png": {
+      "archive": "2de12dec52553e87db3c29f444842d21a63f6620d4ea9a7fb2f4b2c2565994a4",
+      "current": "2de12dec52553e87db3c29f444842d21a63f6620d4ea9a7fb2f4b2c2565994a4"
+    },
+    "Textures/Things/Item/RimMushrooms/VeiledStinkhorn/03Full.png": {
+      "archive": "8f2fb02d1e88d4fd599e4429e1ade58560068ee31b31119c32a60208aa06f074",
+      "current": "8f2fb02d1e88d4fd599e4429e1ade58560068ee31b31119c32a60208aa06f074"
+    },
+    "Textures/Things/Item/RimMushrooms/WoodEar/01Low.png": {
+      "archive": "cfa67158ac0c5528392fa25e656a447550c3413f97f7b144b566e9d339e6b97c",
+      "current": "cfa67158ac0c5528392fa25e656a447550c3413f97f7b144b566e9d339e6b97c"
+    },
+    "Textures/Things/Item/RimMushrooms/WoodEar/02Medium.png": {
+      "archive": "2dec4bfd5a77c5588ea9dc4d10172c87b0d9426becd7b4024595cf2993e69804",
+      "current": "2dec4bfd5a77c5588ea9dc4d10172c87b0d9426becd7b4024595cf2993e69804"
+    },
+    "Textures/Things/Item/RimMushrooms/WoodEar/03Full.png": {
+      "archive": "044eb9f0ba92b8a3c8068e68a6ac4333792e0f56a5391bb8b33dcfedf18bd778",
+      "current": "044eb9f0ba92b8a3c8068e68a6ac4333792e0f56a5391bb8b33dcfedf18bd778"
+    },
+    "Textures/Things/Item/RimMushrooms/YellowBrain/01Low.png": {
+      "archive": "d7b5a979c7e9b2d70d2bd5fd0af869c7a22a7e9c626ac7112277a97b1243cf02",
+      "current": "d7b5a979c7e9b2d70d2bd5fd0af869c7a22a7e9c626ac7112277a97b1243cf02"
+    },
+    "Textures/Things/Item/RimMushrooms/YellowBrain/02Medium.png": {
+      "archive": "0143a882cd4ea34e15e83a46dfe140c40eb7f3c4756adc6c2b46006b08049530",
+      "current": "0143a882cd4ea34e15e83a46dfe140c40eb7f3c4756adc6c2b46006b08049530"
+    },
+    "Textures/Things/Item/RimMushrooms/YellowBrain/03Full.png": {
+      "archive": "226dc6fb4d6f77168c1985fc1e0408a5b0d60d8806dadd5ade915f52a099c23d",
+      "current": "226dc6fb4d6f77168c1985fc1e0408a5b0d60d8806dadd5ade915f52a099c23d"
+    },
+    "Textures/Things/Item/RimMushrooms/YellowDapperling/01Low.png": {
+      "archive": "bb162b0b0f8dc6555cc770b8f7e9082464d38bff530e5c4c2c573d808bab3f35",
+      "current": "bb162b0b0f8dc6555cc770b8f7e9082464d38bff530e5c4c2c573d808bab3f35"
+    },
+    "Textures/Things/Item/RimMushrooms/YellowDapperling/02Medium.png": {
+      "archive": "e6e41545759d9df3ed5b9af11448273afa72c360fd9b80edf53bc0955c4afb1f",
+      "current": "e6e41545759d9df3ed5b9af11448273afa72c360fd9b80edf53bc0955c4afb1f"
+    },
+    "Textures/Things/Item/RimMushrooms/YellowDapperling/03Full.png": {
+      "archive": "133af6898b835d3fc26c625a7b7f0a86857b406683e7fc54fdd838b4517ddaab",
+      "current": "133af6898b835d3fc26c625a7b7f0a86857b406683e7fc54fdd838b4517ddaab"
+    },
+    "Textures/Things/Item/RimMushrooms/ZombieAntFungus/01Low.png": {
+      "archive": "3090a0bda55e47f20574fe30371196cd84659dd863a121085c801e578dca15c7",
+      "current": "3090a0bda55e47f20574fe30371196cd84659dd863a121085c801e578dca15c7"
+    },
+    "Textures/Things/Item/RimMushrooms/ZombieAntFungus/02Medium.png": {
+      "archive": "b51b2bb6b877161ec9ab06df21b38838095307ea0fa2511e3a25145387c6cab8",
+      "current": "b51b2bb6b877161ec9ab06df21b38838095307ea0fa2511e3a25145387c6cab8"
+    },
+    "Textures/Things/Item/RimMushrooms/ZombieAntFungus/03Full.png": {
+      "archive": "fa013e14def2ceb55cea9a4f78defe923108d60c0e7c23581df4dd631d75ec50",
+      "current": "fa013e14def2ceb55cea9a4f78defe923108d60c0e7c23581df4dd631d75ec50"
+    },
+    "Textures/Things/Plant/RimMushrooms/Beech/BeechA.png": {
+      "archive": "263842c6a5e6f9f27dcf6c2961170807cf5a637e7988e31e06a26182ea75a2c2",
+      "current": "263842c6a5e6f9f27dcf6c2961170807cf5a637e7988e31e06a26182ea75a2c2"
+    },
+    "Textures/Things/Plant/RimMushrooms/Beech/BeechB.png": {
+      "archive": "def7d00e9aac9fce889e7e3d3815caabf512870ee59de3353aee64bbc76b7466",
+      "current": "def7d00e9aac9fce889e7e3d3815caabf512870ee59de3353aee64bbc76b7466"
+    },
+    "Textures/Things/Plant/RimMushrooms/BirdsNest/BirdsNestA.png": {
+      "archive": "28f887a6e337c8d262ec0b124bc1e3214f80ed1fee1713ec41b49ccbb2be78c1",
+      "current": "28f887a6e337c8d262ec0b124bc1e3214f80ed1fee1713ec41b49ccbb2be78c1"
+    },
+    "Textures/Things/Plant/RimMushrooms/BirdsNest/BirdsNestB.png": {
+      "archive": "aab6ccdfff17e7379ce27a77127afb81293385ba133d8d0230004a1cd77627b6",
+      "current": "aab6ccdfff17e7379ce27a77127afb81293385ba133d8d0230004a1cd77627b6"
+    },
+    "Textures/Things/Plant/RimMushrooms/BlackTruffle/BlackTruffleA.png": {
+      "archive": "791d7b9878a990e04e93e6f27dd30bc473535df6050c3754187217dc1b48feb5",
+      "current": "791d7b9878a990e04e93e6f27dd30bc473535df6050c3754187217dc1b48feb5"
+    },
+    "Textures/Things/Plant/RimMushrooms/BlackTruffle/BlackTruffleB.png": {
+      "archive": "a90962da98b057e2c531146a5480cb78e7f58266060ac89114352306f6c41b96",
+      "current": "a90962da98b057e2c531146a5480cb78e7f58266060ac89114352306f6c41b96"
+    },
+    "Textures/Things/Plant/RimMushrooms/BlackTrumpet/BlackTrumpetA.png": {
+      "archive": "e79215db0fa81c8c23f78605dd2b7647c98c7b3177b3a4c9f7c12fcf00cecd54",
+      "current": "e79215db0fa81c8c23f78605dd2b7647c98c7b3177b3a4c9f7c12fcf00cecd54"
+    },
+    "Textures/Things/Plant/RimMushrooms/BlackTrumpet/BlackTrumpetB.png": {
+      "archive": "ff93cd38d671ab8d3755018af3f48bdc0fa1b7cb7845eb674d5083d8d3ca8a50",
+      "current": "ff93cd38d671ab8d3755018af3f48bdc0fa1b7cb7845eb674d5083d8d3ca8a50"
+    },
+    "Textures/Things/Plant/RimMushrooms/Button/ButtonA.png": {
+      "archive": "9aaf0eb23a079a3f668e9266d2d60be3667d6c82e45f28af0c701de0d9d6d374",
+      "current": "9aaf0eb23a079a3f668e9266d2d60be3667d6c82e45f28af0c701de0d9d6d374"
+    },
+    "Textures/Things/Plant/RimMushrooms/Button/ButtonB.png": {
+      "archive": "2cae100fd21764299e871702a3c6ae3c96aadac8a5e111845140e6f13b5f47b6",
+      "current": "2cae100fd21764299e871702a3c6ae3c96aadac8a5e111845140e6f13b5f47b6"
+    },
+    "Textures/Things/Plant/RimMushrooms/Cauliflower/CauliflowerA.png": {
+      "archive": "92aa4e63d09481cb516e6a1a569a8d90038ea859caaab9ebd2e9063c4d7bb3f5",
+      "current": "92aa4e63d09481cb516e6a1a569a8d90038ea859caaab9ebd2e9063c4d7bb3f5"
+    },
+    "Textures/Things/Plant/RimMushrooms/Cauliflower/CauliflowerB.png": {
+      "archive": "f2a20b8bf236e236fa294adc89cd5b03a81a80beb727aa408e2319ede98efcd0",
+      "current": "f2a20b8bf236e236fa294adc89cd5b03a81a80beb727aa408e2319ede98efcd0"
+    },
+    "Textures/Things/Plant/RimMushrooms/Chaga/ChagaA.png": {
+      "archive": "4d8ab15f6a3f521377fbf0624eed9f9fb091d7eb1a7f9f6a3baa0b7a523ed645",
+      "current": "4d8ab15f6a3f521377fbf0624eed9f9fb091d7eb1a7f9f6a3baa0b7a523ed645"
+    },
+    "Textures/Things/Plant/RimMushrooms/Chaga/ChagaB.png": {
+      "archive": "bca8e67e5f7914656f94d905060bb3473f76b55845e9d9e8e859b38833a43310",
+      "current": "bca8e67e5f7914656f94d905060bb3473f76b55845e9d9e8e859b38833a43310"
+    },
+    "Textures/Things/Plant/RimMushrooms/Chlorophos/ChlorophosA.png": {
+      "archive": "cd0b9cdf1d0c48afa1843b7a1ffd5bd2fcb08b1ed3f386a438c22f778459d4dc",
+      "current": "cd0b9cdf1d0c48afa1843b7a1ffd5bd2fcb08b1ed3f386a438c22f778459d4dc"
+    },
+    "Textures/Things/Plant/RimMushrooms/Chlorophos/ChlorophosB.png": {
+      "archive": "65a050aab8aef752c676071230fca238fafe6ffd8a8c4c6c5447f62106a8ee51",
+      "current": "65a050aab8aef752c676071230fca238fafe6ffd8a8c4c6c5447f62106a8ee51"
+    },
+    "Textures/Things/Plant/RimMushrooms/Cordyceps/CordycepsA.png": {
+      "archive": "31dde58025b0c5a18f4d60f87684c95aab0d934393e765589b09fbce7ab0600b",
+      "current": "31dde58025b0c5a18f4d60f87684c95aab0d934393e765589b09fbce7ab0600b"
+    },
+    "Textures/Things/Plant/RimMushrooms/Cordyceps/CordycepsB.png": {
+      "archive": "d526bd82d53c91b08cb9d60a3dbf843513feb920591cf97b959664ee96ab51dd",
+      "current": "d526bd82d53c91b08cb9d60a3dbf843513feb920591cf97b959664ee96ab51dd"
+    },
+    "Textures/Things/Plant/RimMushrooms/Cubensis/CubensisA.png": {
+      "archive": "c9014d17fe484516f06164c8b2101624c55c521aba4b029bd4feb0744a0233dd",
+      "current": "c9014d17fe484516f06164c8b2101624c55c521aba4b029bd4feb0744a0233dd"
+    },
+    "Textures/Things/Plant/RimMushrooms/Cubensis/CubensisB.png": {
+      "archive": "2457928b962bb6231fc5925353b270887e512e0922d0b1422284ef83d25529d6",
+      "current": "2457928b962bb6231fc5925353b270887e512e0922d0b1422284ef83d25529d6"
+    },
+    "Textures/Things/Plant/RimMushrooms/DeadlyWebcap/DeadlyWebcapA.png": {
+      "archive": "3cdbdcd031815448f8253a6f49a8433287e849e64b2e375211465ce286807e09",
+      "current": "3cdbdcd031815448f8253a6f49a8433287e849e64b2e375211465ce286807e09"
+    },
+    "Textures/Things/Plant/RimMushrooms/DeadlyWebcap/DeadlyWebcapB.png": {
+      "archive": "3aa15bfcf41ab6ddd37c39db1debb4f104348eb0bf9dd05bef52a3aa480d4292",
+      "current": "3aa15bfcf41ab6ddd37c39db1debb4f104348eb0bf9dd05bef52a3aa480d4292"
+    },
+    "Textures/Things/Plant/RimMushrooms/DeathCap/DeathCapA.png": {
+      "archive": "744d13745fc3177da4aece8d7871ff2a74a6f7f6ed1c2b96fd50d7e660878fe7",
+      "current": "744d13745fc3177da4aece8d7871ff2a74a6f7f6ed1c2b96fd50d7e660878fe7"
+    },
+    "Textures/Things/Plant/RimMushrooms/DeathCap/DeathCapB.png": {
+      "archive": "10e969a910d5900a871cf3d2d59107cb5659641d04bcca75fe82e16d47c1645e",
+      "current": "10e969a910d5900a871cf3d2d59107cb5659641d04bcca75fe82e16d47c1645e"
+    },
+    "Textures/Things/Plant/RimMushrooms/DestroyingAngel/DestroyingAngelA.png": {
+      "archive": "b0b6e43a43eeac7ea2d4baae96b951af78b960067460f0762c254792ee2571b6",
+      "current": "b0b6e43a43eeac7ea2d4baae96b951af78b960067460f0762c254792ee2571b6"
+    },
+    "Textures/Things/Plant/RimMushrooms/DestroyingAngel/DestroyingAngelB.png": {
+      "archive": "9c7a377e415cdf3800df317710bfa6e4009956875aaa42b872e2c138a1cee4ed",
+      "current": "9c7a377e415cdf3800df317710bfa6e4009956875aaa42b872e2c138a1cee4ed"
+    },
+    "Textures/Things/Plant/RimMushrooms/DevilsFingers/DevilsFingersA.png": {
+      "archive": "54bf2fa7ff2a29289fcab2d6b3f06ac57454bed6d33e7ac605c0d3caa549def6",
+      "current": "54bf2fa7ff2a29289fcab2d6b3f06ac57454bed6d33e7ac605c0d3caa549def6"
+    },
+    "Textures/Things/Plant/RimMushrooms/DevilsFingers/DevilsFingersB.png": {
+      "archive": "f7372306f0c0d3e338b1275641962ab524f803358edcdd77c9097f83ed2b535b",
+      "current": "f7372306f0c0d3e338b1275641962ab524f803358edcdd77c9097f83ed2b535b"
+    },
+    "Textures/Things/Plant/RimMushrooms/DryRot/DryRotA.png": {
+      "archive": "6f5c6619949fe56ed71a44d4e5612a9cf453020d561cbf7b8bda4fc4d2ee28e4",
+      "current": "6f5c6619949fe56ed71a44d4e5612a9cf453020d561cbf7b8bda4fc4d2ee28e4"
+    },
+    "Textures/Things/Plant/RimMushrooms/DryRot/DryRotB.png": {
+      "archive": "56ad0146e05b89e7ab76a43a313c8db7f7cf6ddc0b379d95ef02f120c7f276bf",
+      "current": "56ad0146e05b89e7ab76a43a313c8db7f7cf6ddc0b379d95ef02f120c7f276bf"
+    },
+    "Textures/Things/Plant/RimMushrooms/Enoki/EnokiA.png": {
+      "archive": "e6407106b8462f127d16d67d6040be0816e408711bfbfdbe1951a32b97bc22bc",
+      "current": "e6407106b8462f127d16d67d6040be0816e408711bfbfdbe1951a32b97bc22bc"
+    },
+    "Textures/Things/Plant/RimMushrooms/Enoki/EnokiB.png": {
+      "archive": "3acc3c83211940f0e10fff09ca844a370154cf364a04f4603fec4a6f652658c6",
+      "current": "3acc3c83211940f0e10fff09ca844a370154cf364a04f4603fec4a6f652658c6"
+    },
+    "Textures/Things/Plant/RimMushrooms/EnokiWild/EnokiWildA.png": {
+      "archive": "4d106529f308c15aebf645d2f184c5c25e24d2b22d918ce3c6156206fc4f0bb4",
+      "current": "4d106529f308c15aebf645d2f184c5c25e24d2b22d918ce3c6156206fc4f0bb4"
+    },
+    "Textures/Things/Plant/RimMushrooms/EnokiWild/EnokiWildB.png": {
+      "archive": "24db1902ba3c89260c338e2ef377e658f18b2b097db5da9c6bd11eaadbe7ad92",
+      "current": "24db1902ba3c89260c338e2ef377e658f18b2b097db5da9c6bd11eaadbe7ad92"
+    },
+    "Textures/Things/Plant/RimMushrooms/FlyAgaric/FlyAgaricA.png": {
+      "archive": "5c760e1aa39b35d2900b4b931b54a9ac3882893e9ac4a2d8af91cdf8fa174b6c",
+      "current": "5c760e1aa39b35d2900b4b931b54a9ac3882893e9ac4a2d8af91cdf8fa174b6c"
+    },
+    "Textures/Things/Plant/RimMushrooms/FlyAgaric/FlyAgaricB.png": {
+      "archive": "70fab6d6df0a9474f082c0b930451ac5f51972b2757a8dd51d0cc270fdc9d3e3",
+      "current": "70fab6d6df0a9474f082c0b930451ac5f51972b2757a8dd51d0cc270fdc9d3e3"
+    },
+    "Textures/Things/Plant/RimMushrooms/GhostFungus/GhostFungusA.png": {
+      "archive": "5569fb7f2b37364771f5da54f1173af949d4b5fb35b40dd144f724ab0561379d",
+      "current": "5569fb7f2b37364771f5da54f1173af949d4b5fb35b40dd144f724ab0561379d"
+    },
+    "Textures/Things/Plant/RimMushrooms/GhostFungus/GhostFungusB.png": {
+      "archive": "84036b121b04b7b55583457f22c45591b49483d9cd5e8a818520461212b728fb",
+      "current": "84036b121b04b7b55583457f22c45591b49483d9cd5e8a818520461212b728fb"
+    },
+    "Textures/Things/Plant/RimMushrooms/GiantPuffball/GiantPuffballA.png": {
+      "archive": "afa9a0f077a96686d1ec2b0741050fedd0a0ee2b2740165edad2be3973c4f2bc",
+      "current": "afa9a0f077a96686d1ec2b0741050fedd0a0ee2b2740165edad2be3973c4f2bc"
+    },
+    "Textures/Things/Plant/RimMushrooms/GiantPuffball/GiantPuffballB.png": {
+      "archive": "479282435480ccb64daa8fb25fe08fa23a6350589d0d13880893d498ea1e929a",
+      "current": "479282435480ccb64daa8fb25fe08fa23a6350589d0d13880893d498ea1e929a"
+    },
+    "Textures/Things/Plant/RimMushrooms/HoneyFungus/HoneyFungusA.png": {
+      "archive": "6fc566675d06d8110b5ccee0fa90f0fe8f8ee96099669d359f861ae14edd504d",
+      "current": "6fc566675d06d8110b5ccee0fa90f0fe8f8ee96099669d359f861ae14edd504d"
+    },
+    "Textures/Things/Plant/RimMushrooms/HoneyFungus/HoneyFungusB.png": {
+      "archive": "b52ad1bb1bca53b702c20fb61420a0d74fdf5d9dac9f844030ed90efa24f8c1e",
+      "current": "b52ad1bb1bca53b702c20fb61420a0d74fdf5d9dac9f844030ed90efa24f8c1e"
+    },
+    "Textures/Things/Plant/RimMushrooms/IndigoMilkcap/IndigoMilkcapA.png": {
+      "archive": "19af5853dc7ec2b21ab759b09ce794d39c80e1d89f798413292bd581d411fe87",
+      "current": "19af5853dc7ec2b21ab759b09ce794d39c80e1d89f798413292bd581d411fe87"
+    },
+    "Textures/Things/Plant/RimMushrooms/IndigoMilkcap/IndigoMilkcapB.png": {
+      "archive": "950c733b78d28fbce291800b4b265a04c8aa7ed81055341e5d25f5884fe15891",
+      "current": "950c733b78d28fbce291800b4b265a04c8aa7ed81055341e5d25f5884fe15891"
+    },
+    "Textures/Things/Plant/RimMushrooms/JackOLantern/JackOLanternA.png": {
+      "archive": "e1e75ed2c4f090b5f539c1fe63770928763cef3d61c795e24ef15280ca032e29",
+      "current": "e1e75ed2c4f090b5f539c1fe63770928763cef3d61c795e24ef15280ca032e29"
+    },
+    "Textures/Things/Plant/RimMushrooms/JackOLantern/JackOLanternB.png": {
+      "archive": "2cca199a4f30b846e5255efbee3aff2d5e444a24898b31cbc91ab7888bc62c69",
+      "current": "2cca199a4f30b846e5255efbee3aff2d5e444a24898b31cbc91ab7888bc62c69"
+    },
+    "Textures/Things/Plant/RimMushrooms/KingOyster/KingOysterA.png": {
+      "archive": "c1200f1a60a4da4ef16f7c1fe9f750f6ceecd7d0d720826991bc55f3a4bb8309",
+      "current": "c1200f1a60a4da4ef16f7c1fe9f750f6ceecd7d0d720826991bc55f3a4bb8309"
+    },
+    "Textures/Things/Plant/RimMushrooms/KingOyster/KingOysterB.png": {
+      "archive": "dd7e834741f688eafde4782809cd293a5c6bfd90b6c1058ae597beb6b34e1727",
+      "current": "dd7e834741f688eafde4782809cd293a5c6bfd90b6c1058ae597beb6b34e1727"
+    },
+    "Textures/Things/Plant/RimMushrooms/LibertyCap/LibertyCapA.png": {
+      "archive": "f157ed534618f41fd8be7dd4d172fbbf97ee80bcae9f7728b5583eaaf3bab454",
+      "current": "f157ed534618f41fd8be7dd4d172fbbf97ee80bcae9f7728b5583eaaf3bab454"
+    },
+    "Textures/Things/Plant/RimMushrooms/LibertyCap/LibertyCapB.png": {
+      "archive": "231808407a2b155a44d2e1c5a1bbfe14cd14c55c6371700facd1ec8f8ce05c1a",
+      "current": "231808407a2b155a44d2e1c5a1bbfe14cd14c55c6371700facd1ec8f8ce05c1a"
+    },
+    "Textures/Things/Plant/RimMushrooms/LionsMane/LionsManeA.png": {
+      "archive": "3878ac8faf0dc43e0b99d328e8aee1b65a9aa7dcb04f24f7db1971a2783ff7dd",
+      "current": "3878ac8faf0dc43e0b99d328e8aee1b65a9aa7dcb04f24f7db1971a2783ff7dd"
+    },
+    "Textures/Things/Plant/RimMushrooms/LionsMane/LionsManeB.png": {
+      "archive": "5b572a834fc09c1d2a797ba127207d54c46710de46e5ee8cdfecde10046c8001",
+      "current": "5b572a834fc09c1d2a797ba127207d54c46710de46e5ee8cdfecde10046c8001"
+    },
+    "Textures/Things/Plant/RimMushrooms/Lobster/LobsterA.png": {
+      "archive": "6e7344daada5e4467260a7daac378f20b624f6a5d761c3050779ebff38266b23",
+      "current": "6e7344daada5e4467260a7daac378f20b624f6a5d761c3050779ebff38266b23"
+    },
+    "Textures/Things/Plant/RimMushrooms/Lobster/LobsterB.png": {
+      "archive": "37da7512770cacea17a02046c7e91dccad001680a977688bc36a365ce417d49f",
+      "current": "37da7512770cacea17a02046c7e91dccad001680a977688bc36a365ce417d49f"
+    },
+    "Textures/Things/Plant/RimMushrooms/Maitake/MaitakeA.png": {
+      "archive": "987c81e706b724d975065f442e8bdc549bad7e90075cd981df661bd2c6edd21a",
+      "current": "987c81e706b724d975065f442e8bdc549bad7e90075cd981df661bd2c6edd21a"
+    },
+    "Textures/Things/Plant/RimMushrooms/Maitake/MaitakeB.png": {
+      "archive": "81b7ddbe120f9c58327255b7d19337bd4223c2341139ed4fced28400100dba0b",
+      "current": "81b7ddbe120f9c58327255b7d19337bd4223c2341139ed4fced28400100dba0b"
+    },
+    "Textures/Things/Plant/RimMushrooms/Matsutake/MatsutakeA.png": {
+      "archive": "09811d66b1522b2692e96e14be9ef891044e2005594fa6488f13112c85baa679",
+      "current": "09811d66b1522b2692e96e14be9ef891044e2005594fa6488f13112c85baa679"
+    },
+    "Textures/Things/Plant/RimMushrooms/Matsutake/MatsutakeB.png": {
+      "archive": "508db69c783c76c0a98c071b6f1d1d88eb1622ed148eac63e1fdef00d73c9afd",
+      "current": "508db69c783c76c0a98c071b6f1d1d88eb1622ed148eac63e1fdef00d73c9afd"
+    },
+    "Textures/Things/Plant/RimMushrooms/Morel/MorelA.png": {
+      "archive": "ac265a06bf2baa15b382eef1947a42fcae2a0eca4195e24a45c8e8421da81651",
+      "current": "ac265a06bf2baa15b382eef1947a42fcae2a0eca4195e24a45c8e8421da81651"
+    },
+    "Textures/Things/Plant/RimMushrooms/Morel/MorelB.png": {
+      "archive": "fe8431bb2e07dcad0160580296ad79996ea4d4b6f3f8190d1538f351c55ab07c",
+      "current": "fe8431bb2e07dcad0160580296ad79996ea4d4b6f3f8190d1538f351c55ab07c"
+    },
+    "Textures/Things/Plant/RimMushrooms/Oyster/OysterA.png": {
+      "archive": "0bc0be628e6bd5f5475835ef4c372055c7a9f24d52e3b1d7c9a7615d9ffe0da0",
+      "current": "0bc0be628e6bd5f5475835ef4c372055c7a9f24d52e3b1d7c9a7615d9ffe0da0"
+    },
+    "Textures/Things/Plant/RimMushrooms/Oyster/OysterB.png": {
+      "archive": "ddd449ad25fd84eb06d766d43068adb7459772c98a0a73c5ddcd4cb9e0e8d7f9",
+      "current": "ddd449ad25fd84eb06d766d43068adb7459772c98a0a73c5ddcd4cb9e0e8d7f9"
+    },
+    "Textures/Things/Plant/RimMushrooms/PantherCap/PantherCapA.png": {
+      "archive": "a71c1f587dafe2b8b9c3d8dfc4eb80c19464eb7e02e6deadfe8b4993c3ba444b",
+      "current": "a71c1f587dafe2b8b9c3d8dfc4eb80c19464eb7e02e6deadfe8b4993c3ba444b"
+    },
+    "Textures/Things/Plant/RimMushrooms/PantherCap/PantherCapB.png": {
+      "archive": "a5aba29891ec6f13c42d7de73b94d5c91eb2490449d537dcff97caaca454f96e",
+      "current": "a5aba29891ec6f13c42d7de73b94d5c91eb2490449d537dcff97caaca454f96e"
+    },
+    "Textures/Things/Plant/RimMushrooms/PoisonFireCoral/PoisonFireCoralA.png": {
+      "archive": "2366bb15d9fac04df594f9c93fecb52052019c125b2dfe87fcf66450402a462f",
+      "current": "2366bb15d9fac04df594f9c93fecb52052019c125b2dfe87fcf66450402a462f"
+    },
+    "Textures/Things/Plant/RimMushrooms/PoisonFireCoral/PoisonFireCoralB.png": {
+      "archive": "5bca24ffbe8148f13294f04eca98812363aa3bd7fe974053a6af83be8a9e662b",
+      "current": "5bca24ffbe8148f13294f04eca98812363aa3bd7fe974053a6af83be8a9e662b"
+    },
+    "Textures/Things/Plant/RimMushrooms/Porcini/PorciniA.png": {
+      "archive": "732358f2f53645a3cf19fdb4ac9c6e41f905661fc2102d3f608a72f1654b5480",
+      "current": "732358f2f53645a3cf19fdb4ac9c6e41f905661fc2102d3f608a72f1654b5480"
+    },
+    "Textures/Things/Plant/RimMushrooms/Porcini/PorciniB.png": {
+      "archive": "faf004f2521a852f7ea17291bb035ebe9fd74ff3846ae7d8cbd02ac84f6f7b16",
+      "current": "faf004f2521a852f7ea17291bb035ebe9fd74ff3846ae7d8cbd02ac84f6f7b16"
+    },
+    "Textures/Things/Plant/RimMushrooms/PurpleBlewit/PurpleBlewitA.png": {
+      "archive": "a71df0d6d7c84ad26be4a204f24119a49b62a7759150a9b822b2ac5dc5cc54af",
+      "current": "a71df0d6d7c84ad26be4a204f24119a49b62a7759150a9b822b2ac5dc5cc54af"
+    },
+    "Textures/Things/Plant/RimMushrooms/PurpleBlewit/PurpleBlewitB.png": {
+      "archive": "4891b93251e8cdea9b207dc3584511ca34ff6d106225b3905b76d16d1435bbd7",
+      "current": "4891b93251e8cdea9b207dc3584511ca34ff6d106225b3905b76d16d1435bbd7"
+    },
+    "Textures/Things/Plant/RimMushrooms/Reishi/ReishiA.png": {
+      "archive": "6067b8326581e4a9327b38015096d4f9a518331c7f1cc6ab647069632a161b20",
+      "current": "6067b8326581e4a9327b38015096d4f9a518331c7f1cc6ab647069632a161b20"
+    },
+    "Textures/Things/Plant/RimMushrooms/Reishi/ReishiB.png": {
+      "archive": "c341bc92663bbed87dd63187076e6b2129b8f5803e695034ca0b1784ef03526d",
+      "current": "c341bc92663bbed87dd63187076e6b2129b8f5803e695034ca0b1784ef03526d"
+    },
+    "Textures/Things/Plant/RimMushrooms/Sanghuang/SanghuangA.png": {
+      "archive": "16b2d409eb0a0b95bfe96c39593d8c5727811a83a2a9ced63f6540895d8a92e0",
+      "current": "16b2d409eb0a0b95bfe96c39593d8c5727811a83a2a9ced63f6540895d8a92e0"
+    },
+    "Textures/Things/Plant/RimMushrooms/Sanghuang/SanghuangB.png": {
+      "archive": "61049edac4c7c8901701bfb17b300ba1eece1ebb4a1fe1616ed0b95b7b8a2f24",
+      "current": "61049edac4c7c8901701bfb17b300ba1eece1ebb4a1fe1616ed0b95b7b8a2f24"
+    },
+    "Textures/Things/Plant/RimMushrooms/ShaggyInkcap/ShaggyInkcapA.png": {
+      "archive": "34308cb70c6ff5caee8c428fdb7391a72e677d85603faae57cdd48dd5b5f4ad9",
+      "current": "34308cb70c6ff5caee8c428fdb7391a72e677d85603faae57cdd48dd5b5f4ad9"
+    },
+    "Textures/Things/Plant/RimMushrooms/ShaggyInkcap/ShaggyInkcapB.png": {
+      "archive": "f3eba8896c55d48066ea98ddfbef134ee542080aa3e6b57df63c44c161bc475b",
+      "current": "f3eba8896c55d48066ea98ddfbef134ee542080aa3e6b57df63c44c161bc475b"
+    },
+    "Textures/Things/Plant/RimMushrooms/Shiitake/ShiitakeA.png": {
+      "archive": "18f595ad32cca519f5e2fcf139ba4757b09737e699e0289000fa20003133a48b",
+      "current": "18f595ad32cca519f5e2fcf139ba4757b09737e699e0289000fa20003133a48b"
+    },
+    "Textures/Things/Plant/RimMushrooms/Shiitake/ShiitakeB.png": {
+      "archive": "40a74ff5840ff6e7d09484979d9da5c136b86cc6db8df54a22e99a53faa71a05",
+      "current": "40a74ff5840ff6e7d09484979d9da5c136b86cc6db8df54a22e99a53faa71a05"
+    },
+    "Textures/Things/Plant/RimMushrooms/SulfurTuft/SulfurTuftA.png": {
+      "archive": "8315d2a355e4fc7ec20d2b5b21a021cb5ed7d6cdcb846a8e0ec509847ba9f896",
+      "current": "8315d2a355e4fc7ec20d2b5b21a021cb5ed7d6cdcb846a8e0ec509847ba9f896"
+    },
+    "Textures/Things/Plant/RimMushrooms/SulfurTuft/SulfurTuftB.png": {
+      "archive": "a1d0b7e03ea8c3093c040459fdc113fb421dace21b60eb2416ece1e994f767b1",
+      "current": "a1d0b7e03ea8c3093c040459fdc113fb421dace21b60eb2416ece1e994f767b1"
+    },
+    "Textures/Things/Plant/RimMushrooms/Tsukiyotake/TsukiyotakeA.png": {
+      "archive": "cdc6c14244583a085c161eb268df0a726fe515a54cea04c173cdc3ddd7588e58",
+      "current": "cdc6c14244583a085c161eb268df0a726fe515a54cea04c173cdc3ddd7588e58"
+    },
+    "Textures/Things/Plant/RimMushrooms/Tsukiyotake/TsukiyotakeB.png": {
+      "archive": "4d22d2fd507bd8f61942d972e4afaf3a6c5d49042f57a5df7e1a2a925e8a8c0e",
+      "current": "4d22d2fd507bd8f61942d972e4afaf3a6c5d49042f57a5df7e1a2a925e8a8c0e"
+    },
+    "Textures/Things/Plant/RimMushrooms/TurkeyTail/TurkeyTailA.png": {
+      "archive": "7ecd579ef58a425dd7ca6da07ad224edb66ec9a4048da7ffb687533e3304d001",
+      "current": "7ecd579ef58a425dd7ca6da07ad224edb66ec9a4048da7ffb687533e3304d001"
+    },
+    "Textures/Things/Plant/RimMushrooms/TurkeyTail/TurkeyTailB.png": {
+      "archive": "62e69c86d4589bcb95316dc398b05bf1f711850b3fc1cc89749ed73e8e6ee2d1",
+      "current": "62e69c86d4589bcb95316dc398b05bf1f711850b3fc1cc89749ed73e8e6ee2d1"
+    },
+    "Textures/Things/Plant/RimMushrooms/VeiledStinkhorn/VeiledStinkhornA.png": {
+      "archive": "19429fc2b3e626e74486897377762b1b50203c9f2a9908211c0815284918b069",
+      "current": "19429fc2b3e626e74486897377762b1b50203c9f2a9908211c0815284918b069"
+    },
+    "Textures/Things/Plant/RimMushrooms/VeiledStinkhorn/VeiledStinkhornB.png": {
+      "archive": "6738291196d53026d393147c2a902e4a9b80b65fef045929fd4bd1c6a29f907e",
+      "current": "6738291196d53026d393147c2a902e4a9b80b65fef045929fd4bd1c6a29f907e"
+    },
+    "Textures/Things/Plant/RimMushrooms/WoodEar/WoodEarA.png": {
+      "archive": "5dcdb3265168b5a464d1356dc8d85bace749eea49628cdc959df21067f21e2bf",
+      "current": "5dcdb3265168b5a464d1356dc8d85bace749eea49628cdc959df21067f21e2bf"
+    },
+    "Textures/Things/Plant/RimMushrooms/WoodEar/WoodEarB.png": {
+      "archive": "c3aa434102f84986a9d73fbc50521681f26831a36bf076c62b3551ffa5db2787",
+      "current": "c3aa434102f84986a9d73fbc50521681f26831a36bf076c62b3551ffa5db2787"
+    },
+    "Textures/Things/Plant/RimMushrooms/YellowBrain/YellowBrainA.png": {
+      "archive": "4ac95a22e27976f6f8f0492aacce9a867519e42eefa52cdd064abbdbcaa48f2f",
+      "current": "4ac95a22e27976f6f8f0492aacce9a867519e42eefa52cdd064abbdbcaa48f2f"
+    },
+    "Textures/Things/Plant/RimMushrooms/YellowBrain/YellowBrainB.png": {
+      "archive": "b0a5a11b075784b3dc05ef6efc3e67ed5f4a2f34a9aa524c6ee31802c07a2dbb",
+      "current": "b0a5a11b075784b3dc05ef6efc3e67ed5f4a2f34a9aa524c6ee31802c07a2dbb"
+    },
+    "Textures/Things/Plant/RimMushrooms/YellowDapperling/YellowDapperlingA.png": {
+      "archive": "02c8ec277ad3aa904dd8cdf01e3e628e2704c46537d789e23764dc7c95a44c5a",
+      "current": "02c8ec277ad3aa904dd8cdf01e3e628e2704c46537d789e23764dc7c95a44c5a"
+    },
+    "Textures/Things/Plant/RimMushrooms/YellowDapperling/YellowDapperlingB.png": {
+      "archive": "29345b21642abdafd65e19f88bbd1a11f1ef89aada807195fab9bf5ad8193570",
+      "current": "29345b21642abdafd65e19f88bbd1a11f1ef89aada807195fab9bf5ad8193570"
+    },
+    "Textures/Things/Plant/RimMushrooms/ZombieAntFungus/ZombieAntFungusA.png": {
+      "archive": "0479ebbcbc70e4d229902a3630e24685a1df71824bbabe838dff3d7fb3abe3f4",
+      "current": "0479ebbcbc70e4d229902a3630e24685a1df71824bbabe838dff3d7fb3abe3f4"
+    },
+    "Textures/Things/Plant/RimMushrooms/ZombieAntFungus/ZombieAntFungusB.png": {
+      "archive": "415562c520f053d4dc4216be83bf605c5921f2a3ef68d80fd0364973ee201f4f",
+      "current": "415562c520f053d4dc4216be83bf605c5921f2a3ef68d80fd0364973ee201f4f"
+    },
+    "Textures/UI/Icons/AssortedMushrooms.png": {
+      "archive": "905e0825c6b14c595a2f5d0bb45e6ed2c6b4914e9ea60b3f83b85985c939f21c",
+      "current": "905e0825c6b14c595a2f5d0bb45e6ed2c6b4914e9ea60b3f83b85985c939f21c"
+    },
+    "Balance/expansion_mushrooms.json": {
+      "archive": "6f802aef4de3ed212ba7f938995555bee27d411c9964c8c8dbe5bef9cb86013b",
+      "current": "02e68bd50c7993df3a88d17e075a1400f59eb7e24c0ddbfbfc336f958b2c20e7"
+    },
+    "Balance/mood_text.json": {
+      "archive": "eb0df1b7abac6a7261a7b622db7cc1828e3499cdc1d8af310d3197f02d23c760",
+      "current": "eb0df1b7abac6a7261a7b622db7cc1828e3499cdc1d8af310d3197f02d23c760"
+    },
+    "Balance/mushrooms.json": {
+      "archive": "34e07aafeeaa0d77b94ecb434caaad437f518fc3e4baf001be10d96872c716a5",
+      "current": "623779e7aaec18f1f9b2752bc0d4196bf9165be119de4c8c3973961c62846c6c"
+    },
+    "Balance/poison_mushrooms.json": {
+      "archive": "5cad7cbaa9cef71d47ba7358dbe1e654fdd89c6b2c2a5ac49f2c739b4987b7eb",
+      "current": "1e6b3bfe4f3ef9a3a274a15d704377a11e108fcfa3cb087830b07b2a13003097"
+    },
+    "Balance/wild_ecology.json": {
+      "archive": "7d765b294859ff3ab507172c250c90587cb0281c605fd98eddd2bfa9bc4db403",
+      "current": "94e38dc6687b280973213489b45e203f8889f8a37a99f38222b6d33b2ab92394"
+    }
+  },
+  "limitations": [
+    "Documentation may continue changing during root finalization; all Docs plus README/CHANGELOG are explicitly allowed and their final bytes are not a production-preservation requirement.",
+    "This artifact compares candidate workspace to v0.6.3 and the before snapshot; a v0.6.4 package/install hash audit remains a separate step.",
+    "Comparison artifact self hash is omitted to avoid a circular hash. No production files or user settings were changed by this audit."
+  ]
+}

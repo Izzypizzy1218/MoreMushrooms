@@ -1,0 +1,103 @@
+[h1]More Mushrooms[/h1]
+Adds [b]46 mushroom varieties[/b] to RimWorld. Grow 11 varieties yourself, and discover premium edible, psychoactive, poisonous and material mushrooms in the wild.
+
+[b]RimWorld 1.6 · Requires Harmony · No DLC required · Korean and English[/b]
+
+[h2]11 cultivable mushrooms[/h2]
+Grow them in growing zones or hydroponics basins. They grow in darkness without a sun lamp, slow down under bright light, and retain their nighttime resting period.
+
+Base grow days and flavor mood bonuses are listed below. All flavor bonuses in this group last [b]6 hours[/b].
+[list]
+[*]Button mushroom — 6 days · mood +3
+[*]Shiitake — 7 days · mood +5
+[*]Oyster mushroom — 5.5 days · mood +3
+[*]King oyster mushroom — 6.5 days · mood +5
+[*]Enoki — 5 days · mood +3
+[*]Wood ear — 6.5 days · mood +7
+[*]Beech mushroom — 6.5 days · mood +5
+[*]Maitake — 8 days · mood +7
+[*]Lion's mane — 8 days · mood +7
+[*]Cauliflower mushroom — 7.5 days · mood +7
+[*]Purple blewit — 6 days · mood +5
+[/list]
+
+[h2]Assorted mushroom cultivation[/h2]
+Choose [b]Assorted mushrooms[/b] from the crop menu to sow one of the 11 cultivable varieties in each cell, with equal probability (1/11 each). Includes cauliflower and purple blewit, works in growing zones and hydroponics basins, and requires Plants skill 6.
+
+[h2]Five premium wild edibles[/h2]
+All five are [b]wild-only[/b] and grant a flavor bonus of [b]+15 mood for 48 hours[/b].
+[list]
+[*]Matsutake — 12 base grow days
+[*]Black truffle — 12 base grow days
+[*]Porcini — 9 base grow days
+[*]Morel — 8 base grow days
+[*]Black trumpet — 8 base grow days
+[/list]
+
+[h2]Five unusual wild edibles[/h2]
+These varieties are also wild-only. Their flavor bonuses last [b]6 hours[/b].
+[list]
+[*]Giant puffball — 9 days · mood +3
+[*]Indigo milkcap — 7 days · mood +5
+[*]Veiled stinkhorn — 8 days · mood +5
+[*]Shaggy inkcap — 5 days · mood +3
+[*]Lobster mushroom — 8 days · mood +5
+[/list]
+
+The 21 varieties with flavor memories grant their bonuses when eaten directly or used in meals. [b]Only the strongest flavor memory applies[/b]; a weaker bonus cannot extend the remaining duration of a stronger one. Grow days are base values. Temperature, light, fertility and nighttime rest affect the actual time until harvest.
+
+[h2]Wild mushroom ecology[/h2]
+[list]
+[*][b]More wild variety:[/b] Additional varieties receive more of each biome's existing base mushroom weight. Actual discoveries depend on the map and environment.
+[*][b]Seasonal emergence:[/b] Species-specific seasons affect new wild emergence. They do not remove existing mushrooms or change cultivated growth and yields.
+[*][b]Fairy rings:[/b] Button, purple blewit, giant puffball and shaggy inkcap can rarely appear in rings or partial rings of 4–7 plants.
+[*][b]Mycelium regrowth:[/b] Successfully harvesting a mature wild mushroom of an eligible variety has a 30% chance to leave a single young replacement after 4–6 days. That replacement cannot schedule another regrowth.
+[*][b]Bioluminescence:[/b] Ghost fungus and green-glowing mycena gently light their surroundings while growing. Harvested crates do not glow.
+[/list]
+Fairy rings and regrowth share an extra-spawn budget and map cap. They do not spawn in growing zones, hydroponics basins, roofed cells or constructed floors.
+
+[h2]Four psychoactive mushrooms[/h2]
+These wild-only mushrooms are ordinary cooking ingredients and work both raw and in meals. New cooking bills allow them by default. There are no extracts or drug-crafting recipes.
+
+Base effects of a first standard exposure (10 raw mushrooms):
+[list]
+[*]Liberty cap and cubensis — +15 mood for 6 hours · loss of control for 6–8 hours
+[*]Fly agaric — +10 mood for 6 hours · loss of control for 8–12 hours
+[*]Panther cap — +10 mood for 6 hours · loss of control for 12–24 hours
+[/list]
+Actual mood and duration depend on the amount eaten. A new exposure schedules at least 6 hours of loss of control. One episode, including repeated intake, cannot extend beyond 24 hours from its first exposure. Sleeping or incapacitation can end wandering early.
+
+Affected pawns wander or stand still. Repeated intake builds shared tolerance, reduces mood benefits and increases the risk of an unpleasant hallucination. Psychoactive memories do not stack across the four varieties and are separate from ordinary mushroom flavor memories. Fly agaric and panther cap also cause [b]poisoning[/b].
+
+Meals record the actual ingredient amount per serving and preserve it through splitting and saves. Disable [b]Allow meals containing psychoactive mushrooms[/b] in food policies and storage filters to exclude those meals. Raw mushrooms have their own ingredient entries. The duration ranges are game balance choices informed by real-world sources.
+
+[h2]Poisoning and treatment[/h2]
+Includes death cap, destroying angel, poison fire coral, deadly webcap, yellow dapperling, jack-o-lantern, sulfur tuft and tsukiyotake. Fly agaric, panther cap and ghost fungus also have poisoning effects.
+
+Death cap, destroying angel, poison fire coral and deadly webcap can be fatal at sufficient exposure without treatment. High exposure can make fly agaric and sulfur tuft poisoning fatal too. Fatal poisoning has at least 24 in-game hours of grace after the first symptom warning. Treatment uses ordinary doctors, medicine, beds and repeated tending; treatment quality matters.
+
+Poisonous harvests other than fly agaric and panther cap are excluded from ordinary automatic eating and basic cooking. Direct ingestion or use as ingredients by another mod still applies poisoning.
+
+[h2]Medicinal, environmental and decorative varieties[/h2]
+[list]
+[*][b]Five medicinal-theme resources:[/b] Reishi, turkey tail, sanghuang, cordyceps and chaga. Currently for wild gathering, storage and trade; medicinal effects and medicine crafting are not implemented.
+[*][b]Three host/environment-themed varieties:[/b] Zombie-ant fungus, honey fungus and dry rot fungus. They do not infect hosts or damage buildings.
+[*][b]Five decorative/material varieties:[/b] Ghost fungus, yellow brain fungus, devil's fingers, bird's nest fungus and green-glowing mycena. Ghost fungus is poisonous.
+[/list]
+
+[h2]Artwork and mood descriptions[/h2]
+Plants have dedicated growing artwork whose size and cluster appearance vary with growth. Harvested crates use low, medium and full artwork at 1–25, 26–50 and 51–75 mushrooms respectively.
+
+v0.6.3 revised the Korean and English descriptions of all 21 flavor memories and the three shared hallucination stages. They use individual reactions and imagery suited to each mushroom's aroma or texture. These comparisons describe a pawn's impressions, without adding ingredients or gameplay effects.
+
+[h2]Deferred features[/h2]
+Medicinal effects and medicine crafting, unidentified mushrooms and identification, gathering quests, dedicated log/substrate growing facilities, and tree-, stump-, insect-, wood- or recent-rain-specific emergence rules remain deferred.
+
+[h2]v0.6.4 validation record[/h2]
+Gameplay, values and artwork remain unchanged from v0.6.3. Passed 2,984 static checks; preservation comparisons passed with zero unexpected changes. Controlled native pawn health/mental-state tests passed 130/130 cases. Actual harvest, cooking and ingestion checks passed 42/42 in the Core setup and 42/42 with the user's 79 active entries plus the test harness.
+
+Ten actual game frames confirmed growth artwork and three harvested-crate stages for all 46 varieties. Some dark or thin early growth remains difficult to distinguish when zoomed out. The user-mod setup also reported separate translation errors and an external automatic-translation service limit; these results do not guarantee every mod feature, personal setting or existing save.
+
+Ecology tests passed 34 initial censuses and twelve controlled 120-day series with no captured native errors. The native-AI work observation followed one pawn each for the potato control, cubensis and panther cap through 60,000 native ticks. They produced 400/260/0 stone blocks respectively. This small controlled fixture has one observation per treatment and does not guarantee general colony productivity. Existing-save restoration was not rerun for this version.
+
+[url=https://github.com/Izzypizzy1218/MoreMushrooms]Source and detailed settings[/url]

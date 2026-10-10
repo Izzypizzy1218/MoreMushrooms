@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 441,
+  "baseline": "v0.5.0",
+  "existingDefinitions": 138,
+  "originalReleaseArchives": 26,
+  "legacySaveSha256": "bdb80bdc3504684f7c212565f57ab50618d6b600030971900fbdcf413e5d04a0",
+  "scope": "Only wildBiomes, ecology extensions, the two plant glowers, and appended plant ecology descriptions may change in existing Defs."
+}

@@ -1,0 +1,66 @@
+More Mushrooms v0.6.4
+검증 결과와 하루 작업 관찰 / Validation results and one-day work observation
+
+[한국어]
+v0.6.4
+- 누적 기능 소개와 한국어·영어 창작마당 설명, 배포 기록을 정리했습니다.
+- 게임 동작·수치·그림은 v0.6.3을 유지합니다.
+- 정적 검사 2,984건과 실제 폰 건강·정신상태 통제 시험 130/130사례를 통과했습니다. 보존 대조는 PASS·예상 밖 변경 0입니다.
+- 기본 조합 42/42항목, 사용자 활성 목록 79개+시험 하네스 조합 42/42항목의 실제 수확·조리·섭취·정책·스택 검사를 통과했습니다. 요청 모드 누락은 0개였습니다.
+- 실제 게임 프레임 10장으로 46종 그림을 확인했습니다. 축소 상태의 일부 초기 개체는 저대비이며 원화를 유지했습니다.
+- 사용자 조합의 번역 오류·Google HTTP 429 제한은 별도 환경 문제로 기록했습니다. 개인 API 설정과 기존 저장은 복사하지 않았습니다.
+- 생태 초기 개체 조사 34건과 120일 통제 시계열 12개를 통과했고 기록된 native 오류는 0개였습니다.
+- 감자 대조·주사위환각·마귀광대 각1폰의 실제 AI 하루 관찰을 완료했습니다(각60,000 native 틱, 오류0). 석재 생산400/260/0개는 작은 통제 환경의 조건당1표본이며 일반 노동 손실률을 보장하지 않습니다. 기존 저장 복원은 이번에 새로 실행하지 않았으며 과거 검증과 구분합니다.
+
+v0.6.3
+- 맛 무드 21종 전체와 공유 환각 3단계의 한국어·영어 설명을 다양하게 다듬었습니다.
+- 반복되던 도입·종결 대신 종별 향·식감과 주민의 개인적인 비유를 담았습니다.
+- 효과 이름, 무드, 지속시간, 재배·수확·가치, 독성·치료, 생태와 그림을 유지했습니다.
+
+v0.6.2
+- 추가 식용 9종의 맛 설명과 공유 환각 3단계 설명을 실제 시식·종별 자료에 맞춰 갱신했습니다.
+- 수치와 효과 이름은 유지하고 출처와 종 혼동의 한계를 기록했습니다.
+
+v0.6.1
+- 고급 야생 식용 5종(송이·트러플·포르치니·곰보·블랙트럼펫): 무드 +15, 48시간.
+- 모둠버섯에 꽃송이·자주방망이를 포함해 총 11종을 동일 확률로 파종합니다.
+- 향정신성 표준 통제 상실: 자유모자·주사위환각 6~8시간, 광대 8~12시간, 마귀광대 12~24시간.
+- 새 노출은 예정 시간 최소 6시간, 반복 섭취를 포함한 에피소드는 최초 섭취부터 최대 24시간입니다. 수면·쓰러짐으로 배회가 먼저 끝날 수 있습니다.
+
+v0.6.0
+- 전체 기본 버섯 가중치를 유지하며 야생의 추가 종류 비중을 늘렸습니다.
+- 종별 제철, 드문 원·반원 고리 군락, 제한된 1회 균사 재생을 추가했습니다.
+- 발광버섯·받침애주름버섯의 실제 주변 조명을 추가했습니다.
+- 현재 총 46종과 재배 가능한 11종을 유지합니다. 약용 효과·채집 의뢰·전용 재배시설은 보류 상태입니다.
+
+[English]
+v0.6.4
+- Prepared cumulative feature information, Korean/English Workshop descriptions and release documentation.
+- Gameplay, values and artwork remain unchanged from v0.6.3.
+- Passed 2,984 static checks and 130/130 controlled native pawn health/mental-state cases. Preservation comparisons passed with zero unexpected changes.
+- Actual harvest, cooking, ingestion, policy and stack checks passed 42/42 in Core and 42/42 with the user's 79 active entries plus the harness. No requested mod IDs were missing.
+- Ten actual game frames confirmed all 46 varieties. Some early growth remains low contrast when zoomed out; approved artwork was retained.
+- User-mod translation errors and Google HTTP 429 were recorded separately as environment issues. Personal API configuration and existing saves were not copied.
+- Ecology tests passed 34 initial censuses and twelve controlled 120-day series with no captured native errors.
+- Completed a native-AI day for one pawn each with potatoes, cubensis and panther cap (60,000 native ticks each, no captured errors). Stone-block output of 400/260/0 is one observation per treatment in a small fixture, not a general labor-loss estimate. Existing-save restoration was not rerun; historical verification remains separate.
+
+v0.6.3
+- Reworked the Korean and English descriptions of all 21 flavor memories and the three shared hallucination stages.
+- Replaced repetitive openings and endings with individual impressions suited to each mushroom's aroma and texture.
+- Retained effect labels, mood, durations, cultivation, yields, value, poisoning, treatment, ecology and artwork.
+
+v0.6.2
+- Updated nine additional edible flavor descriptions and three shared hallucination descriptions using firsthand food accounts and species-specific sources.
+- Retained values and labels, and recorded sources and identification limitations.
+
+v0.6.1
+- All five premium wild edibles (matsutake, black truffle, porcini, morel and black trumpet): +15 mood for 48 hours.
+- Assorted cultivation now includes cauliflower and purple blewit, for 11 equally likely varieties.
+- Standard loss-of-control ranges: liberty cap/cubensis 6–8 hours, fly agaric 8–12 hours, panther cap 12–24 hours.
+- New exposures schedule at least 6 hours; an episode including repeated intake is capped at 24 hours from first exposure. Sleep or incapacitation can end wandering early.
+
+v0.6.0
+- Increased the share of additional wild varieties while retaining each biome's total base mushroom weight.
+- Added species-specific seasons, rare full/partial fairy rings and limited one-time mycelium regrowth.
+- Added actual surrounding light for ghost fungus and green-glowing mycena.
+- Current content totals 46 varieties with 11 cultivable varieties. Medicinal effects, gathering quests and dedicated growing facilities remain deferred.

@@ -100,14 +100,17 @@ def generate():
             description_ko += " 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다."
         if use == "psychoactive":
             minimum, maximum = mushroom["hallucinationHours"]
-            description_en += f" Grants +{mushroom['mood']} mood for 6 hours and causes {minimum:g}–{maximum:g} hours of uncontrolled hallucination wandering. These effects also occur when used as a meal ingredient. Psychoactive mushroom mood bonuses do not stack with each other."
-            description_ko += f" 섭취하면 6시간 동안 무드 +{mushroom['mood']}, {minimum:g}~{maximum:g}시간 동안 통제할 수 없는 환각성 배회가 발생합니다. 요리에 넣어 먹어도 같은 효과가 나타나며, 향정신성 버섯의 무드 효과끼리는 중첩되지 않습니다."
+            description_en += f" A first standard exposure (10 mushrooms) grants +{mushroom['mood']} mood for 6 hours and causes {minimum:g}–{maximum:g} hours of uncontrolled hallucination wandering. These effects also occur when used as a meal ingredient. Psychoactive mushroom mood bonuses do not stack with each other."
+            description_ko += f" 첫 표준 노출(원물 10개)은 6시간 동안 무드 +{mushroom['mood']}, {minimum:g}~{maximum:g}시간 동안 통제할 수 없는 환각성 배회를 일으킵니다. 요리에 넣어 먹어도 같은 효과가 나타나며, 향정신성 버섯의 무드 효과끼리는 중첩되지 않습니다."
+            description_en += " Amount affects mood and duration; new episodes are scheduled for 6–24 hours. Repeated intake cannot extend an episode beyond 24 hours from first exposure. Sleep or incapacitation can end wandering early."
+            description_ko += " 섭취량에 따라 무드와 시간이 달라지며, 새 노출의 예정 시간은 6~24시간입니다. 반복 섭취도 최초 노출부터 24시간을 넘기지 않습니다. 수면이나 쓰러짐으로 배회가 먼저 끝날 수 있습니다."
         elif use == "food" and mushroom.get("mood", 0):
+            mood_hours = mushroom.get("moodDurationHours", common["moodDurationHours"])
             thought_id = "RMush_Ate" + identifier
             thought = node(thoughts, "ThoughtDef")
             node(thought, "defName", thought_id)
             node(thought, "thoughtClass", "RimMushrooms.Thought_MushroomEnjoyment")
-            node(thought, "durationDays", common["moodDurationHours"] / 24)
+            node(thought, "durationDays", mood_hours / 24)
             node(thought, "stackLimit", 1)
             node(thought, "showBubble", True)
             node(thought, "icon", "Things/Mote/ThoughtSymbol/Food")
@@ -118,8 +121,8 @@ def generate():
             for tree, language in ((thoughts_ko, "ko"), (thoughts_en, "en")):
                 for field in ("label", "description"):
                     node(tree, thought_id + ".stages.0." + field, mushroom["moodText"][language][field])
-            description_en += f" Grants +{mushroom['mood']} mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies."
-            description_ko += f" 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +{mushroom['mood']}. 버섯 보너스는 가장 높은 하나만 적용됩니다."
+            description_en += f" Grants +{mushroom['mood']} mood for {mood_hours} hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies."
+            description_ko += f" 직접 먹거나 요리에 넣어 먹으면 {mood_hours}시간 동안 무드 +{mushroom['mood']}. 버섯 보너스는 가장 높은 하나만 적용됩니다."
             ingestible = node(raw, "ingestible")
             node(ingestible, "specialThoughtDirect", thought_id)
             node(ingestible, "specialThoughtAsIngredient", thought_id)

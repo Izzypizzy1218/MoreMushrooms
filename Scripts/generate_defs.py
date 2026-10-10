@@ -64,12 +64,13 @@ def generate(handoff):
     node(ext, "mediumMaxCount", c["mediumMaxCount"])
 
     for m in config["mushrooms"]:
+        mood_hours = m.get("moodDurationHours", c["moodDurationHours"])
         raw_id = "RMush_Raw" + m["id"]
         thought_id = "RMush_Ate" + m["id"]
         thought = node(thoughts, "ThoughtDef")
         node(thought, "defName", thought_id)
         node(thought, "thoughtClass", "RimMushrooms.Thought_MushroomEnjoyment")
-        node(thought, "durationDays", c["moodDurationHours"] / 24)
+        node(thought, "durationDays", mood_hours / 24)
         node(thought, "stackLimit", 1)
         node(thought, "showBubble", True)
         node(thought, "icon", "Things/Mote/ThoughtSymbol/Food")
@@ -90,8 +91,8 @@ def generate(handoff):
         node(raw, "label", m["en"])
         desc_en = "Edible " + m["en"] + "s. Can be cooked in ordinary meals or eaten raw. Counts as fungus."
         desc_ko = "식용 " + m["ko"] + ". 일반 요리의 재료로 쓰거나 생으로 먹을 수 있으며, 균류 식재료로 취급됩니다."
-        desc_en += f" Eating it raw or in a meal grants +{m['mood']} mood for {c['moodDurationHours']} hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply."
-        desc_ko += f" 생식하거나 요리에 넣어 먹으면 {c['moodDurationHours']}시간 동안 무드 +{m['mood']}. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다."
+        desc_en += f" Eating it raw or in a meal grants +{m['mood']} mood for {mood_hours} hours. Only the strongest mushroom bonus applies; eating a weaker mushroom does not extend it. Normal food and ideology effects still apply."
+        desc_ko += f" 생식하거나 요리에 넣어 먹으면 {mood_hours}시간 동안 무드 +{m['mood']}. 버섯 보너스는 가장 높은 하나만 적용되며, 더 약한 버섯으로는 지속시간을 연장할 수 없습니다. 기존 식사 및 사상 효과도 적용됩니다."
         node(raw, "description", desc_en)
         node(node(raw, "graphicData"), "texPath", "Things/Item/RimMushrooms/" + m["id"])
         node(node(raw, "statBases"), "MarketValue", m["value"])
@@ -150,12 +151,14 @@ def generate(handoff):
                 shutil.copy2(handoff / "outputs/mushrooms-growing/textures-256" / (asset + "_" + v + ".png"), folder / (plant_id + v + ".png"))
 
     cultivable = [m for m in config["mushrooms"] if not m.get("wildOnly", False)]
+    expansion = json.loads((ROOT / "Balance/expansion_mushrooms.json").read_text(encoding="utf-8"))
+    cultivable += [m for m in expansion["mushrooms"] if m["cultivable"]]
     assorted_id = "RMush_PlantAssorted"
     assorted = node(plants, "ThingDef", ParentName="RMush_PlantBase")
     node(assorted, "defName", assorted_id)
     label_en, label_ko = "assorted mushrooms", "모둠버섯"
-    desc_en = "Sow one of nine cultivated mushroom varieties at random in growing zones or hydroponics basins, each with an equal chance. Excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6. Native hydroponics power requirements apply."
-    desc_ko = "재배 구역이나 수경분지에서 재배 가능한 버섯 9종 중 하나를 같은 확률로 무작위 파종합니다. 송이와 야생 팽이는 제외하며, 수확 후 다시 심을 때도 새로 뽑습니다. 심어진 종류의 성장·수확·섭취 효과가 그대로 적용됩니다. 식물 기술 6이 필요합니다. 수경분지는 기본 게임의 전력 규칙을 따릅니다."
+    desc_en = "Sow one of eleven cultivated mushroom varieties at random in growing zones or hydroponics basins, each with an equal chance. Includes cauliflower and purple blewit; excludes matsutake and wild enoki. Each new sowing picks again. The chosen variety keeps its own growth, harvest and food effects. Requires Plants skill 6. Native hydroponics power requirements apply."
+    desc_ko = "재배 구역이나 수경분지에서 재배 가능한 버섯 11종 중 하나를 같은 확률로 무작위 파종합니다. 꽃송이와 자주방망이를 포함하며, 송이와 야생 팽이는 제외합니다. 수확 후 다시 심을 때도 새로 뽑습니다. 심어진 종류의 성장·수확·섭취 효과가 그대로 적용됩니다. 식물 기술 6이 필요합니다. 수경분지는 기본 게임의 전력 규칙을 따릅니다."
     node(assorted, "label", label_en)
     node(assorted, "description", desc_en)
     node(node(assorted, "graphicData"), "texPath", "Things/Plant/RimMushrooms/Button")
@@ -210,3 +213,5 @@ if __name__ == "__main__":
     generate_poison()
     from generate_expansion_defs import generate as generate_expansion
     generate_expansion()
+    from generate_ecology_defs import generate as generate_ecology
+    generate_ecology()
