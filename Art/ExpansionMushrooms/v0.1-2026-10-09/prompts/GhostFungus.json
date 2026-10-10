@@ -1,0 +1,71 @@
+[
+  {
+    "asset": "GhostFungus/PlantA",
+    "prompt": "Use case: stylized-concept. Asset: one isolated RimWorld MoreMushrooms GhostFungus PlantA sprite. Image1 is reference only for flat RimWorld outline style; image2 is actual species anatomy/color reference.\nSubject: Australian ghost fungus Omphalotus nidiformis: BROAD pale cream/ivory asymmetrical fan-to-funnel caps with gently wavy rolled edges and distinct recessed gray-brown centers. Several simple long decurrent gill strokes descend onto SHORT THICK OFF-CENTER pale stems. It is a large fan/funnel morphology, NOT tiny round pleated umbrellas, NOT long thread-like Mycena stems. Natural daylight cream colors, no glow or green halo.\nGenerate one compact minimal mature fruiting unit, two overlapping mature broad cream funnel fans, left larger high cap opens toward viewer exposing recessed gray-brown center, right shorter sideways fan with a few cream underside gills. Short off-center stems join in a tiny bare base, compact broad silhouette. PlantA and PlantB are alternate mature silhouettes, never different growth stages. Omit host wood, ground, leaves, soil, ant or any scenic substrate. No box.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-GhostFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-aad79bba-19ca-41be-bc9c-3c483563ba2c.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\PlantA.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/GhostFungus.json for morphology and caveats"
+  },
+  {
+    "asset": "GhostFungus/PlantB",
+    "prompt": "Use case: stylized-concept. Asset: one isolated RimWorld MoreMushrooms GhostFungus PlantB sprite. Image1 is the approved mature PlantA to match species and palette; image2 is an existing alternate mature plant unit style reference; image3 is species anatomy.\nSubject: Australian ghost fungus Omphalotus nidiformis: BROAD pale cream/ivory asymmetrical fan-to-funnel caps with gently wavy rolled edges and distinct recessed gray-brown centers. Several simple long decurrent gill strokes descend onto SHORT THICK OFF-CENTER pale stems. It is a large fan/funnel morphology, NOT tiny round pleated umbrellas, NOT long thread-like Mycena stems. Natural daylight cream colors, no glow or green halo.\nGenerate one compact minimal mature fruiting unit, THREE broad mature fans: largest high on right, lower broad left fan faces upward, third small front fan angled sideways. All have pale rims and recessed gray-brown centers, short off-center thick stems. Wider layered three-fan silhouette distinct from PlantA's two-fan silhouette, same mature size/color. PlantA and PlantB are alternate mature silhouettes, never different growth stages. Omit host wood, ground, leaves, soil, ant or any scenic substrate. No box.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonB.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-GhostFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-ff757b8a-3641-4821-bf4c-c0c3ca330591.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\PlantB.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/GhostFungus.json for morphology and caveats"
+  },
+  {
+    "asset": "GhostFungus/01Low",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms GhostFungus 01Low sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Australian ghost fungus Omphalotus nidiformis: BROAD pale cream/ivory asymmetrical fan-to-funnel caps with gently wavy rolled edges and distinct recessed gray-brown centers. Several simple long decurrent gill strokes descend onto SHORT THICK OFF-CENTER pale stems. It is a large fan/funnel morphology, NOT tiny round pleated umbrellas, NOT long thread-like Mycena stems. Natural daylight cream colors, no glow or green halo.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of GhostFungus. Low amount: exactly THREE small separate harvested pale cream fan/funnel mushrooms resting low in tray, gray-brown recessed center visible in two and cream underside gills in one. Wide spacing, most dark interior visible, below back rim. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-GhostFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-53ba301c-02e9-4c20-8e61-57854855b735.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\01Low.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/GhostFungus.json for morphology and caveats"
+  },
+  {
+    "asset": "GhostFungus/02Medium",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms GhostFungus 02Medium sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Australian ghost fungus Omphalotus nidiformis: BROAD pale cream/ivory asymmetrical fan-to-funnel caps with gently wavy rolled edges and distinct recessed gray-brown centers. Several simple long decurrent gill strokes descend onto SHORT THICK OFF-CENTER pale stems. It is a large fan/funnel morphology, NOT tiny round pleated umbrellas, NOT long thread-like Mycena stems. Natural daylight cream colors, no glow or green halo.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of GhostFungus. Medium amount: SIX to SEVEN harvested pale cream broad fan/funnel mushrooms overlapping loosely to half-fill tray. Several recessed gray-brown centers and one or two decurrent underside gills visible. Keep rear wall/dark interior visible, caps around rim but not in a tall pile; clearly fuller than Low3. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-GhostFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-ed7006ce-a7be-4f3d-8616-d1ef9334583d.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\02Medium.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/GhostFungus.json for morphology and caveats"
+  },
+  {
+    "asset": "GhostFungus/03Full",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms GhostFungus 03Full sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Australian ghost fungus Omphalotus nidiformis: BROAD pale cream/ivory asymmetrical fan-to-funnel caps with gently wavy rolled edges and distinct recessed gray-brown centers. Several simple long decurrent gill strokes descend onto SHORT THICK OFF-CENTER pale stems. It is a large fan/funnel morphology, NOT tiny round pleated umbrellas, NOT long thread-like Mycena stems. Natural daylight cream colors, no glow or green halo.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of GhostFungus. Full amount: TWELVE to FOURTEEN small harvested broad cream fan/funnel mushrooms overlapping in a shallow mound just above back rim. Many pale fan rims and recessed gray-brown centers visible, a few underside gills between caps. Dense contents cover rear interior, distinctly more than Medium, box front panel fully readable. No tall tower. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-GhostFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-95d4d90a-2de6-46b0-8c88-ca7486c6aaae.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GhostFungus\\03Full.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/GhostFungus.json for morphology and caveats"
+  }
+]

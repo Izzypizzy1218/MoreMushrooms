@@ -1,0 +1,78 @@
+{
+  "id": "ZombieAntFungus",
+  "review_status": "PASS with documented morphology simplification",
+  "visual_inspection": "All five original generated images viewed; not in-game captures",
+  "morphology": "Species-complex draft based on saved Ophiocordyceps unilateralis s.l. photo: slim brown stromata, pale tapered upper continuation and lateral golden-ochre fertile pad. A2-stalk mature unit vs B3-stalk unit. Infected ant and leaf intentionally omitted under minimal-fruiting-unit art contract; tiny basal attachment nub is simplified, not free-living habitat claim.",
+  "style": "Warm dark-brown outline, flat-color anatomy, existing ochre storage tray perspective/notch/front preserved",
+  "real_alpha": "PASS: all original masters RGBA with alpha extrema [0,255]",
+  "mature_variants": "PASS: A/B are alternate mature silhouettes, visibly different arrangement, not growth stages",
+  "quantity_gap": "Low3 laid-down stromata, Medium7 around rim, Full about12–14 visible overlapping pieces/tips in two low layers above rim.",
+  "regeneration_cautions": "Provisional color/anatomy abstraction for species complex, not species-level identification. Do not add umbrella caps/gills or render ant/leaf scene; do not confuse ochre fertile swelling with conventional mushroom cap. Native alpha checked all5.",
+  "assets": [
+    {
+      "asset": "01Low",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "bd254d24b0c4786b0cdfe7b905e61a7a06c28a3431084a9946b54a5b31721b09"
+    },
+    {
+      "asset": "02Medium",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4b3ead547f7b3e328cee27c66a728a2fe4d94da2d782732ec4dae988aeaa40f4"
+    },
+    {
+      "asset": "03Full",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "6319a6cb2f2a4d86b640858b4f2c909cb1374a1c4f2b05d28febf1fb6af2718f"
+    },
+    {
+      "asset": "PlantA",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "26ecc6537219347e0f030a2ab8eef9aeb32c7ccb688ce559b8a8f71b50c1014d"
+    },
+    {
+      "asset": "PlantB",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "744436c9d414e7fae6594fb85ee01ce503e19fa6c9621083a5a12fc1130b8def"
+    }
+  ]
+}

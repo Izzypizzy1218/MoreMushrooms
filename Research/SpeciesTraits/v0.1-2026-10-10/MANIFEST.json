@@ -1,0 +1,34 @@
+{
+  "research_version": "v0.1-2026-10-10",
+  "species_count": 46,
+  "existing_count": 15,
+  "new_art_count": 31,
+  "source_records": 118,
+  "unique_source_urls": 118,
+  "categories": {
+    "기존 식용 10종": 10,
+    "추가 식용 후보 11종": 11,
+    "약용 후보 5종": 5,
+    "향정신성 4종": 4,
+    "숙주·환경 3종": 3,
+    "독성 8종": 8,
+    "관상·소재 5종": 5
+  },
+  "checks": {
+    "catalog_ids_match": true,
+    "unique_ids": true,
+    "all_source_references_resolve": true,
+    "runtime_and_source_files_unchanged": true,
+    "runtime_and_source_files_checked": 109
+  },
+  "files": {
+    "species-traits.json": {
+      "sha256": "9e0032237e50a281c05170d10095bf3df3e24eac3000eab7b28df408a9c28a3e",
+      "bytes": 138772
+    },
+    "report.html": {
+      "sha256": "3b17e6938fe31d4e54511c104b2c8a2a3c754590df851a91547ae8f2548cb326",
+      "bytes": 110992
+    }
+  }
+}

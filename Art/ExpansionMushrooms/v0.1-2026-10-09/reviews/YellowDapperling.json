@@ -1,0 +1,179 @@
+{
+  "id": "YellowDapperling",
+  "reviewed_on": "2026-10-09",
+  "reviewer": "description_fact_check",
+  "review_scope": "Five generated masters viewed individually; exact 256 export and cross-species contact-sheet review remain parent task. No game execution claim.",
+  "species_morphology": {
+    "status": "pass",
+    "evidence": "Lemon-yellow expanded bell/parasol cap with simplified striated rim, yellow stalk and delicate yellow ring."
+  },
+  "style": {
+    "status": "pass_with_note",
+    "evidence": "Warm dark-brown outlines, simplified color regions and slight elevated three-quarter presentation match the supplied baseline sprites. No photographic texture, text, labels or habitat scene.",
+    "note": "Some generated color planes contain subtle smooth shading/highlights rather than mathematically constant flat colors; final small-size style comparison remains parent review."
+  },
+  "transparent_background": {
+    "status": "pass",
+    "evidence": "All five already RGBA with alpha 0..255 and transparent corner pixels; original generation bytes preserved. Very low-alpha edge specks exist in some masters; documented alpha>=16 framing ignores them for crop bounds without modifying master alpha."
+  },
+  "plant_variations": {
+    "status": "pass",
+    "evidence": "A broader upright adult cap; B tilted wavy adult cap and curved stalk, neither a closed juvenile.",
+    "same_mature_stage": true
+  },
+  "box_fill_levels": {
+    "status": "pass",
+    "evidence": "Low four loose pieces and large empty interior; Medium several below-rim overlaps with rear gaps; Full many overlapping yellow forms in an above-rim mound.",
+    "container": "Existing ochre front panel, right notch/end block, dark interior and camera retained across three fill variants.",
+    "quantity_counts_are_visual_estimates": true
+  },
+  "notes": [
+    "Official Korean species name recorded as 노란각시버섯 in the photo metadata; shorter 노란각시 is a game label.",
+    "Reference photos include young forms but generated A/B deliberately use mature expanded caps."
+  ],
+  "regenerations": [],
+  "assets": [
+    {
+      "asset": "PlantA",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowDapperling\\PlantA.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        209,
+        169,
+        1044,
+        1087
+      ],
+      "sha256": "a1d74ea60152d1e9b645962a9e0b22f0172984fd17388982cbd761de180f81b9",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "PlantB",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowDapperling\\PlantB.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        266,
+        135,
+        1060,
+        1106
+      ],
+      "sha256": "f1a204c8ce07ef5cf264768bb5f69ed7d9b74d23ed04c1d426dd62de3739b1fb",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "01Low",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowDapperling\\01Low.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        95,
+        332,
+        1158,
+        1004
+      ],
+      "sha256": "e3f4b35f6c0bea05c854e5e1f1338d5b7be7801d4d0d80f1a008d231a598fba7",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "02Medium",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowDapperling\\02Medium.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        91,
+        317,
+        1163,
+        1000
+      ],
+      "sha256": "9c4c7f8c3cecdc2e2126e72db627f3c9bb0728e426f11ee189e68e1d2f7c04ec",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "03Full",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowDapperling\\03Full.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        82,
+        249,
+        1174,
+        1025
+      ],
+      "sha256": "1aff6fc5806562310b792856ca2d3d665be9adb77b0747d8d9c3869dfe9a1ea2",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    }
+  ],
+  "runtime_untouched": true,
+  "export_review_pending": true
+}

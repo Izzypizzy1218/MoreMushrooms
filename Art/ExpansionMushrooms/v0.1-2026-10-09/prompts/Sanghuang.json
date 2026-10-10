@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the first reference's oyster mushroom unit into ONE mature Sanghuangporus sanghuang woody shelf/bracket mushroom, matching the same More Mushrooms sprite style. The second reference is a six-panel scientific photo figure: ONLY USE PANEL C, middle row LEFT, for this species' anatomy. IGNORE the other five species panels, tree trunks, photo scale bars and all text. Panel C shows a thick irregular semicircular/hoof-shaped woody bracket: dark chestnut-brown upper crust inside a broad vivid MUSTARD YELLOW / golden ochre growing edge, thick yellow-ochre lower side; no conventional central stalk or radial gills. Illustrate ONE compact detached-looking bracket unit in elevated three-quarter view with readable brown top and yellow broad rim, no tree/log/bark prop, no soil or backdrop. Existing game sprite look: thick warm dark-brown outline, TWO OR THREE simple flat shaded color planes, clean rounded geometry, no photoreal texture, no gradients or microscopic detail. Centered mature unit in a square, fully transparent alpha background, no box or other objects. This is PlantA, a mature alternate growth unit rather than a juvenile stage.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Plant/RimMushrooms/Oyster/OysterA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-1-Im1.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-4d758edf-2865-4795-99f0-d76a91a7bd43.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit approved Sanghuang PlantA into a visibly different alternate MATURE PlantB of Sanghuangporus sanghuang: a wider flatter semi-circular dark chestnut upper crust, broad mustard-yellow/ochre thick growing rim and lower edge, its own irregular rounded outline and simpler flatter top. Preserve same palette and strong outline, comparable visual size. NOT earlier growth stage or mirrored copy. One compact woody shelf bracket; NO stem, radial gills, tree, log, bark, soil or box. Thick warm dark-brown outlines, TWO OR THREE simple flat shaded color planes, elevated three-quarter view, no photoreal texture or gradients. Real transparent alpha background, centered single game sprite, no text/labels/poison symbols/ground shadow/scene. Use ONLY middle-left PANEL C of the six-panel photo; other five panels are different species and must be ignored.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-1-Im1.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-aabff5fc-6dc6-4461-b5b6-ece470ae3bc3.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY contents of FIRST reference's 01Low produce tray to harvested Sanghuangporus sanghuang woody brackets. Preserve exact existing ochre tray shape, solid flat front panel, dark interior, RIGHT SIDE NOTCH and tall end block, viewpoint and linework. SECOND is approved species sprite. Use its thick irregular dark brown semi-circular woody shelf bodies with broad vivid mustard-yellow growing edges and ochre lower sides, no stems or gills. Pieces lie naturally in the tray at varied angles. LOW: three modest-size loose harvested brackets at bottom, majority of dark interior empty, back rim fully clear. No wooden slats, grain, nails, handles or extra objects. Thick warm dark-brown outlines, TWO OR THREE simple flat shaded color planes, elevated three-quarter view, no photoreal texture or gradients. Real transparent alpha background, centered single game sprite, no text/labels/poison symbols/ground shadow/scene. Use ONLY middle-left PANEL C of the six-panel photo; other five panels are different species and must be ignored.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-1-Im1.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-26b6683b-b355-483d-aa6c-645880d06e89.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY contents of FIRST reference's 02Medium produce tray to harvested Sanghuangporus sanghuang woody brackets. Preserve exact existing ochre tray shape, solid flat front panel, dark interior, RIGHT SIDE NOTCH and tall end block, viewpoint and linework. SECOND is approved species sprite. Use its thick irregular dark brown semi-circular woody shelf bodies with broad vivid mustard-yellow growing edges and ochre lower sides, no stems or gills. Pieces lie naturally in the tray at varied angles. MEDIUM: six or seven modest-size brackets about half-full below rim, clearly more than Low; rear rim and empty dark gaps remain. No wooden slats, grain, nails, handles or extra objects. Thick warm dark-brown outlines, TWO OR THREE simple flat shaded color planes, elevated three-quarter view, no photoreal texture or gradients. Real transparent alpha background, centered single game sprite, no text/labels/poison symbols/ground shadow/scene. Use ONLY middle-left PANEL C of the six-panel photo; other five panels are different species and must be ignored.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-1-Im1.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-35021a59-ca9b-49d0-b18b-dc95e9a3eaec.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY contents of FIRST reference's 03Full produce tray to harvested Sanghuangporus sanghuang woody brackets. Preserve exact existing ochre tray shape, solid flat front panel, dark interior, RIGHT SIDE NOTCH and tall end block, viewpoint and linework. SECOND is approved species sprite. Use its thick irregular dark brown semi-circular woody shelf bodies with broad vivid mustard-yellow growing edges and ochre lower sides, no stems or gills. Pieces lie naturally in the tray at varied angles. FULL: twelve to fourteen modest-size brackets in a dense shallow mound just above rim, clearly more than Medium, front tray panel unobscured. No wooden slats, grain, nails, handles or extra objects. Thick warm dark-brown outlines, TWO OR THREE simple flat shaded color planes, elevated three-quarter view, no photoreal texture or gradients. Real transparent alpha background, centered single game sprite, no text/labels/poison symbols/ground shadow/scene. Use ONLY middle-left PANEL C of the six-panel photo; other five panels are different species and must be ignored.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-1-Im1.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-0c33382d-526b-42bd-b9c1-019c8d964b73.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/03Full.png"
+  }
+]

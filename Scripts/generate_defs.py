@@ -208,3 +208,5 @@ if __name__ == "__main__":
     generate(parser.parse_args().handoff)
     from generate_poison_defs import generate as generate_poison
     generate_poison()
+    from generate_expansion_defs import generate as generate_expansion
+    generate_expansion()

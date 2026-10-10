@@ -1,0 +1,179 @@
+{
+  "id": "LibertyCap",
+  "reviewed_on": "2026-10-09",
+  "reviewer": "description_fact_check",
+  "review_scope": "Five generated masters viewed individually; exact 256 export and cross-species contact-sheet review remain parent task. No game execution claim.",
+  "species_morphology": {
+    "status": "pass",
+    "evidence": "Pointed ochre/tan bell with conspicuous nipple, pale slender ringless curved stalk. Harvested caps retain pointed bell shape."
+  },
+  "style": {
+    "status": "pass_with_note",
+    "evidence": "Warm dark-brown outlines, simplified color regions and slight elevated three-quarter presentation match the supplied baseline sprites. No photographic texture, text, labels or habitat scene.",
+    "note": "Some generated color planes contain subtle smooth shading/highlights rather than mathematically constant flat colors; final small-size style comparison remains parent review."
+  },
+  "transparent_background": {
+    "status": "pass",
+    "evidence": "All five already RGBA with alpha 0..255 and transparent corner pixels; original generation bytes preserved. Very low-alpha edge specks exist in some masters; documented alpha>=16 framing ignores them for crop bounds without modifying master alpha."
+  },
+  "plant_variations": {
+    "status": "pass",
+    "evidence": "A narrower cap and rightward-bowing stem; B wider cap tilted right and opposite stem bend, both mature.",
+    "same_mature_stage": true
+  },
+  "box_fill_levels": {
+    "status": "pass",
+    "evidence": "Low four sparse pieces with large rear/right empty floor; Medium about seven spread with clear rear gaps; Full abundant overlapping mound above the rim.",
+    "container": "Existing ochre front panel, right notch/end block, dark interior and camera retained across three fill variants.",
+    "quantity_counts_are_visual_estimates": true
+  },
+  "notes": [
+    "Korean 자유모자 is a working game label.",
+    "Long stalk is proportionally much thinner/taller than the compact baseline Button unit."
+  ],
+  "regenerations": [],
+  "assets": [
+    {
+      "asset": "PlantA",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\PlantA.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        426,
+        176,
+        823,
+        1106
+      ],
+      "sha256": "09b92118eddfff0714169f69fdd908a20c4d0aacf3a6117935cfa6185d2d0fa7",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "PlantB",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\PlantB.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        471,
+        191,
+        908,
+        1114
+      ],
+      "sha256": "4e8fe30e9d36b250e68e60fb9e809ffb1b8159c0b58ede7678b21e781b9cc7cb",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "01Low",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\01Low.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        90,
+        313,
+        1165,
+        991
+      ],
+      "sha256": "431a84e6a7392ca2c227de8c435e4b5f93970edf4761c94cde0cb8115cd67108",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "02Medium",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\02Medium.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        85,
+        313,
+        1170,
+        987
+      ],
+      "sha256": "567136b056fa7958475425682ebb9f049f46487d839a615a15d2a08bf0ad9249",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "03Full",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\03Full.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        77,
+        241,
+        1178,
+        1022
+      ],
+      "sha256": "6f11991b7ab308b12cb342f3d9e8bed09037ba961e2fb08f31454d98259aa90a",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    }
+  ],
+  "runtime_untouched": true,
+  "export_review_pending": true
+}

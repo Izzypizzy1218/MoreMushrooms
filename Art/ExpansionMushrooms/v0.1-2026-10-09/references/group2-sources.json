@@ -1,0 +1,532 @@
+[
+  {
+    "id": "PantherCap",
+    "ko": "마귀광대",
+    "scientific": "Amanita pantherina",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Panther_cap_(Amanita_pantherina).jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Panther_cap_%28Amanita_pantherina%29.jpg/1280px-Panther_cap_%28Amanita_pantherina%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Panther_cap_%28Amanita_pantherina%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "photographer": "hedera.baltica",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-PantherCap.jpg",
+    "morphology": "Brown umbrella cap covered with numerous separate white wart spots; pale stem, ring and bulbous basal volva.",
+    "selection_note": "Keep brown cap with white warts distinct from red fly agaric.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "additional_references": [
+      {
+        "id": "PantherCap",
+        "ko": "마귀광대",
+        "scientific": "Amanita pantherina",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Amanita_pantherina.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Amanita_pantherina.jpg",
+        "photographer": "Walter J. Pilsak, Waldsassen",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-PantherCap-02.jpg",
+        "morphology": "Mature brown cap with white warts, pale ringed stalk and bulbous basal volva.",
+        "selection_note": "Supplement to young brown warted cap.",
+        "retrieved_on": "2026-10-09",
+        "reference_only": true,
+        "sha256": "f620cf2420ae4bb514f2193e6edaede3e20a489f21cce5246899c3a39ab1f047",
+        "dimensions": [
+          624,
+          420
+        ],
+        "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Amanita_pantherina.jpg"
+      }
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "sha256": "8115fd73e3c0bb118eb40a2aba2ce1bd1df0e24e85501a259776f94db805dfdc",
+    "dimensions": [
+      1280,
+      1185
+    ]
+  },
+  {
+    "id": "DeathCap",
+    "ko": "알광대",
+    "scientific": "Amanita phalloides",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Amanita_phalloides_2025_G1.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Amanita_phalloides_2025_G1.jpg/1280px-Amanita_phalloides_2025_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Amanita_phalloides_2025_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "photographer": "George Chernilevsky",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DeathCap.jpg",
+    "morphology": "Olive green to yellow-green smooth cap, white slender stalk and ring, swollen base enclosed in white sac-like volva.",
+    "selection_note": "Do not add the white cap warts typical of panther/fly agarics.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "sha256": "1736c5503b7175f755ece98c85e3b285f567b708b72018bb680dced4ae3dbc64",
+    "dimensions": [
+      1280,
+      1948
+    ]
+  },
+  {
+    "id": "YellowDapperling",
+    "ko": "노란각시",
+    "scientific": "Leucocoprinus birnbaumii",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Leucocoprinus_birnbaumii_56044.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Leucocoprinus_birnbaumii_56044.jpg/1280px-Leucocoprinus_birnbaumii_56044.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Leucocoprinus_birnbaumii_56044.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "photographer": "Dan Molter (shroomydan)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowDapperling.jpg",
+    "morphology": "Lemon yellow cap and stem; pointed young caps and expanded striate-edged mature cap; delicate yellow ring.",
+    "selection_note": "Keep all-yellow body recognizable.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "additional_references": [
+      {
+        "id": "YellowDapperling",
+        "ko": "노란각시",
+        "scientific": "Leucocoprinus birnbaumii",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Leucocoprinus_birnbaumii_56047.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Leucocoprinus_birnbaumii_56047.jpg/1280px-Leucocoprinus_birnbaumii_56047.jpg",
+        "photographer": "Dan Molter (shroomydan)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowDapperling-02.jpg",
+        "morphology": "Lemon yellow caps and stems, mature expanded parasol cap with radial ridges.",
+        "selection_note": "Supplement for mature form.",
+        "retrieved_on": "2026-10-09",
+        "reference_only": true,
+        "sha256": "fd3838dc0412f0c07017353f419a35e7a477bddbca965a93dddcf01fb3d85956",
+        "dimensions": [
+          1280,
+          960
+        ],
+        "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Leucocoprinus_birnbaumii_56047.jpg"
+      },
+      {
+        "id": "YellowDapperling",
+        "scientific": "Leucocoprinus birnbaumii",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Two_yellow_Leucocoprinus_birnbaumii_in_a_row.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Two_yellow_Leucocoprinus_birnbaumii_in_a_row.jpg/1280px-Two_yellow_Leucocoprinus_birnbaumii_in_a_row.jpg",
+        "photographer": "Arria Belli (Arria Belli)",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowDapperling-03.jpg",
+        "morphology": "Leucocoprinus birnbaumii invading one of the pots again. Previous invasions can be seen here.\n\nIf you look closely, you can see cat hair on these.",
+        "selection_note": "Supplementary anatomical reference; not a final sprite.",
+        "retrieved_on": "2026-10-09",
+        "reference_only": true,
+        "dimensions": [
+          1280,
+          960
+        ],
+        "sha256": "3561956b7439f92dda81e143ba57bb9cbb6d176301b2e8056cfcb138d15e9cac",
+        "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Two_yellow_Leucocoprinus_birnbaumii_in_a_row.jpg"
+      }
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "sha256": "9444dc7bf78a1f48b29cb460dc447b4d7761a8afc0aad4f5c29b72f1fdc09f46",
+    "dimensions": [
+      1280,
+      960
+    ],
+    "name_sources": [
+      "https://www.bris.go.kr/portal/book/childIlustbkDetailPopup.do?ilustbkNo=3565&menuId=114"
+    ],
+    "korean_taxonomic_name": "노란각시버섯"
+  },
+  {
+    "id": "LibertyCap",
+    "ko": "자유모자",
+    "scientific": "Psilocybe semilanceata",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Psilocybe_semilanceata_(49152848998).jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Psilocybe_semilanceata_%2849152848998%29.jpg/1280px-Psilocybe_semilanceata_%2849152848998%29.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Psilocybe_semilanceata_%2849152848998%29.jpg",
+    "photographer": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-LibertyCap-01.jpg",
+    "morphology": "Pointed straw/ochre bell caps with pronounced central nipple; slender curved pale stems.",
+    "selection_note": "Replace underside-only initial photo with side views. Korean label is a game working name.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "4d7b08dd7d3a21fd578a6a94a80128462742de595800343b6a1ecd16a9ad3413",
+    "dimensions": [
+      1280,
+      853
+    ],
+    "additional_references": [
+      {
+        "id": "LibertyCap",
+        "ko": "자유모자",
+        "scientific": "Psilocybe semilanceata",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Psilocybe_semilanceata_255455690.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Psilocybe_semilanceata_255455690.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Psilocybe_semilanceata_255455690.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "photographer": "jakelee",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-LibertyCap.jpg",
+        "morphology": "Small narrow conical/bell cap with sharp central nipple, slender pale slightly curved stalk; straw/ochre moist cap.",
+        "selection_note": "Reference identity as documented Commons specimen; Korean working name is game label.",
+        "retrieved_on": "2026-10-09",
+        "reference_only": true,
+        "sha256": "4f64aeca0bbdcb3e079557bfe5418f3d93d8bb27bad9bf38ea23ade2d51cb80e",
+        "dimensions": [
+          996,
+          2048
+        ]
+      }
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification."
+  },
+  {
+    "id": "Cubensis",
+    "ko": "추가 실로시빈종",
+    "scientific": "Psilocybe cubensis",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Psilocybe_cubensis.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Psilocybe_cubensis.jpg/1280px-Psilocybe_cubensis.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Psilocybe_cubensis.jpg",
+    "photographer": "Hyperborea",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-Cubensis-02.jpg",
+    "morphology": "Golden-caramel bell-to-convex cap with darker center; thick pale stalk and membranous ring, blue staining on damaged white stalk possible.",
+    "selection_note": "PROVISIONAL art-draft species selection; Cubensis is the routine default pending final species approval. Distinct from semilanceata.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "1af91caf180c4162753939cae8a162409f709a5767f02f3759b3976e8d0be544",
+    "dimensions": [
+      1280,
+      853
+    ],
+    "additional_references": [
+      {
+        "id": "Cubensis",
+        "ko": "추가 실로시빈종",
+        "scientific": "Psilocybe cubensis",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Psilocybe_Cubensis_Imire_(Psilocybe_Cubensis_Zimbabwe)_4.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Psilocybe_Cubensis_Imire_%28Psilocybe_Cubensis_Zimbabwe%29_4.jpg/1280px-Psilocybe_Cubensis_Imire_%28Psilocybe_Cubensis_Zimbabwe%29_4.jpg",
+        "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Psilocybe_Cubensis_Imire_%28Psilocybe_Cubensis_Zimbabwe%29_4.jpg",
+        "photographer": "Robert van der Horst",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-Cubensis-01.jpg",
+        "morphology": "Golden-caramel bell-to-convex cap with darker center; thick pale stalk and membranous ring, blue staining on damaged white stalk possible.",
+        "selection_note": "PROVISIONAL art-draft species selection; Cubensis is the routine default pending final species approval. Distinct from semilanceata.",
+        "retrieved_on": "2026-10-09",
+        "reference_only": true,
+        "sha256": "3b0c776418484a4eeea25934031d3df5b87cb26d1f394f7eca4441b4e57ae408",
+        "dimensions": [
+          1280,
+          1707
+        ]
+      }
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "provisional_species_choice": true,
+    "metadata_correction": "2026-10-09: replaced stale original_image_url inherited from prior primary reference; selected photo/page/author/license/local file unchanged."
+  },
+  {
+    "id": "JackOLantern",
+    "ko": "잭오랜턴",
+    "scientific": "Omphalotus olearius",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Omphalotus_olearius.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Omphalotus_olearius.jpg/1280px-Omphalotus_olearius.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Omphalotus_olearius.jpg",
+    "photographer": "Tim Rushing",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-JackOLantern-01.jpg",
+    "morphology": "Orange to deep orange clustered mushrooms; depressed/funnel cap, strongly decurrent close orange gills, curved central stalks.",
+    "selection_note": "European Omphalotus olearius; do not replace with North American O. illudens.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "f380b2ce4a411344932705478e1b06166676fb383ea72c6181885433470cbe37",
+    "dimensions": [
+      1280,
+      853
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification."
+  },
+  {
+    "id": "DeadlyWebcap",
+    "ko": "녹슨끈적",
+    "scientific": "Cortinarius rubellus",
+    "source_page": "https://commons.wikimedia.org/wiki/File:2006-07-12_Cortinarius_rubellus_2.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2006-07-12_Cortinarius_rubellus_2.jpg/1280px-2006-07-12_Cortinarius_rubellus_2.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/2006-07-12_Cortinarius_rubellus_2.jpg",
+    "photographer": "Andreas Kunze",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DeadlyWebcap-01.jpg",
+    "morphology": "Rust orange-brown conical cap with raised central bump, ochre stalk with pale yellowish bands/cortina remnants, rusty gills.",
+    "selection_note": "Scientific identity explicit; Korean game working label not claimed as official vernacular name.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "5516a22c2e74df51241b81dc204fc80ec66eb14558b780a1dc314bf97b7c500b",
+    "dimensions": [
+      1280,
+      1024
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification."
+  },
+  {
+    "id": "ZombieAntFungus",
+    "ko": "좀비개미",
+    "scientific": "Ophiocordyceps unilateralis s.l.",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Complex_Ophiocordyceps_unilateralis_(Zombie_Ant_Fungus).jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Complex_Ophiocordyceps_unilateralis_%28Zombie_Ant_Fungus%29.jpg/1280px-Complex_Ophiocordyceps_unilateralis_%28Zombie_Ant_Fungus%29.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Complex_Ophiocordyceps_unilateralis_%28Zombie_Ant_Fungus%29.jpg",
+    "photographer": "Aloony loon",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-ZombieAntFungus-01.jpg",
+    "morphology": "Dark slender fungal stalk emerges from infected ant body; ant clamped to plant, small terminal reproductive pad.",
+    "selection_note": "Species complex/sensu lato reference; do not claim species-level molecular identification.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "9662b5c6279e202abafc5e71a18f40b7adca1a2a4261adb0308b53692e6bf49d",
+    "dimensions": [
+      1280,
+      2274
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification."
+  },
+  {
+    "id": "HoneyFungus",
+    "ko": "뽕나무버섯",
+    "scientific": "Armillaria mellea",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Armillaria_mellea,_Honey_Fungus,_UK_1.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg/1280px-Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg",
+    "photographer": "Stu's Images",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-HoneyFungus-01.jpg",
+    "morphology": "Dense honey-yellow/brown cap clusters with darker small central scales; cream/tan stems with clear pale ring.",
+    "selection_note": "Armillaria mellea=뽕나무버섯; distinct from ringless 뽕나무버섯부치 (Desarmillaria/Armillaria tabescens).",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "7d5fb55f05bdfcabbec043eeec94d3b80ddbf13e4f60b7ad839cff3f28f3b56f",
+    "dimensions": [
+      1280,
+      853
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "name_sources": [
+      "https://fbp.nnibr.re.kr/ebook/ListofFreshwaterSpecies_total/files/basic-html/page989.html",
+      "https://www.nibr.go.kr/aiibook/access/ecatalogt.jsp?Dir=1483&callmode=admin&catimage=&eclang=ko&start=122&um=s"
+    ]
+  },
+  {
+    "id": "DryRot",
+    "ko": "집버섯",
+    "scientific": "Serpula lacrymans",
+    "source_page": "https://commons.wikimedia.org/wiki/File:2011-10-27_Serpula_lacrymans_cropped.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/2011-10-27_Serpula_lacrymans_cropped.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/2011-10-27_Serpula_lacrymans_cropped.jpg",
+    "photographer": "Epp; derivative work by Ak ccm",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DryRot-01.jpg",
+    "morphology": "Flat spreading rusty-orange/brown wrinkled crust with thick irregular white mycelial margin over wood; no conventional umbrella cap or upright stem.",
+    "selection_note": "Dry-rot fungus candidate, game label 집버섯. Korean mycology literature uses 진황녹슨버짐버섯; keep scientific identity explicit.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "05ceba1c923969bd9f11378b6eb519e45e5916576d1b837aa3a29cae80ae1dae",
+    "dimensions": [
+      1050,
+      800
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "name_sources": [
+      "https://www.kjmycology.or.kr/wp-content/uploads/2025/02/KJM-3301-07.pdf"
+    ],
+    "korean_taxonomic_name": "진황녹슨버짐버섯",
+    "provisional_species_choice": true,
+    "photographer_original_metadata": "Majavamm.jpg: Epp\nderivative work: Ak ccm (talk)"
+  },
+  {
+    "id": "GhostFungus",
+    "ko": "발광버섯",
+    "scientific": "Omphalotus nidiformis",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Omphalotus_nidiformis_(Berk.)_O.K._Mill_41981.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Omphalotus_nidiformis_%28Berk.%29_O.K._Mill_41981.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Omphalotus_nidiformis_%28Berk.%29_O.K._Mill_41981.jpg",
+    "photographer": "Ian Dodd (kundabungkid)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-GhostFungus-01.jpg",
+    "morphology": "Broad pale cream fan/funnel caps in overlapping clusters; darker gray-brown center, decurrent gills, short off-center stem.",
+    "selection_note": "PROVISIONAL art-draft species selection. Australian ghost fungus, DISTINCT from Mycena chlorophos and existing Tsukiyotake; greenish low-light bioluminescence is an optional stylized cue.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "eb6fbc00498527664f2a622e190fcb7e791f709ed934a2c6d398b3c56c94017b",
+    "dimensions": [
+      653,
+      817
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "provisional_species_choice": true,
+    "photographer_original_metadata": "This image was created by user Ian Dodd  (kk)   (www.kundabungkid.com) Australia (kundabungkid) at Mushroom Observer, a source for mycological images.You can contact this user here."
+  },
+  {
+    "id": "YellowBrain",
+    "ko": "노란뇌버섯",
+    "scientific": "Tremella mesenterica",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Goldgelber_Zitterling-Tremella_mesenterica_stack32_-20191227-RM-152807.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Goldgelber_Zitterling-Tremella_mesenterica_stack32_-20191227-RM-152807.jpg/1280px-Goldgelber_Zitterling-Tremella_mesenterica_stack32_-20191227-RM-152807.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Goldgelber_Zitterling-Tremella_mesenterica_stack32_-20191227-RM-152807.jpg",
+    "photographer": "Ermell",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowBrain-01.jpg",
+    "morphology": "Bright golden-yellow gelatinous irregular folded lobes like a small brain; rounded translucent frills, no umbrella cap/stem.",
+    "selection_note": "Korean game working label; reference T. mesenterica rather than similar T. aurantia.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "68d8d273b89d7ec9e1b4588926ef14f5f63df86d3b9ce5e845cb55a323e55d04",
+    "dimensions": [
+      1280,
+      960
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification."
+  },
+  {
+    "id": "DevilsFingers",
+    "ko": "악마손가락",
+    "scientific": "Clathrus archeri",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Tintenfischpilz_Clathrus_archeri.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Tintenfischpilz_Clathrus_archeri.jpg/1280px-Tintenfischpilz_Clathrus_archeri.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Tintenfischpilz_Clathrus_archeri.jpg",
+    "photographer": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DevilsFingers-01.jpg",
+    "morphology": "Four to eight red fleshy tapering arms radiate/curl outward from pale egg-like base; black/dark olive sticky patches along inner arm surfaces.",
+    "selection_note": "Clathrus archeri, not red lattice Clathrus ruber.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "8e1f4eac4ff023590a8c0ecad6352cfcb7c3ee511b57862e458ea9b1edb8850d",
+    "dimensions": [
+      1280,
+      836
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification."
+  },
+  {
+    "id": "BirdsNest",
+    "ko": "새둥지버섯",
+    "scientific": "Cyathus striatus",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Cyathus_striatus_(37923015511).jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Cyathus_striatus_%2837923015511%29.jpg/1280px-Cyathus_striatus_%2837923015511%29.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Cyathus_striatus_%2837923015511%29.jpg",
+    "photographer": "Björn S...",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-BirdsNest-03.jpg",
+    "morphology": "Tiny brown shaggy conical cups; distinctly vertically fluted inner walls containing a few pale gray flattened egg-like peridioles.",
+    "selection_note": "Reference specifically fluted bird nest Cyathus striatus, not smooth-walled Crucibulum.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "cc241914019a0c6420e350eefe6f224e77dd9b6b82e7ed06e471535818b324e5",
+    "dimensions": [
+      1280,
+      853
+    ],
+    "additional_references": [
+      {
+        "id": "BirdsNest",
+        "ko": "새둥지버섯",
+        "scientific": "Cyathus striatus",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Gestreifte-Teuerling-Cyathus-striatus.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Gestreifte-Teuerling-Cyathus-striatus.jpg/1280px-Gestreifte-Teuerling-Cyathus-striatus.jpg",
+        "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Gestreifte-Teuerling-Cyathus-striatus.jpg",
+        "photographer": "Holger Krisp",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-BirdsNest-01.jpg",
+        "morphology": "Tiny brown shaggy conical cups; distinctly vertically fluted inner walls containing a few pale gray flattened egg-like peridioles.",
+        "selection_note": "Reference specifically fluted bird nest Cyathus striatus, not smooth-walled Crucibulum.",
+        "retrieved_on": "2026-10-09",
+        "reference_only": true,
+        "sha256": "aa43dbc828e3045f2cae36aca4f83819458ca833d6fa27a702ab89dd25db7293",
+        "dimensions": [
+          1280,
+          910
+        ]
+      }
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "metadata_correction": "2026-10-09: replaced stale original_image_url inherited from prior primary reference; selected photo/page/author/license/local file unchanged."
+  },
+  {
+    "id": "Chlorophos",
+    "ko": "받침애주름",
+    "scientific": "Mycena chlorophos",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Mycena_chlorophos_(Berk._%26_M.A._Curtis)_Sacc_77081.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mycena_chlorophos_%28Berk._%26_M.A._Curtis%29_Sacc_77081.jpg",
+    "photographer": "Steve Axford (steveaxford)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-Chlorophos-01.jpg",
+    "morphology": "Tiny grayish translucent pleated umbrella caps and thread-thin pale stems on woody substrate; basal disc.",
+    "selection_note": "Mycena chlorophos DISTINCT from broad fan-capped Omphalotus nidiformis; photographed by mycological nature photographer.",
+    "retrieved_on": "2026-10-09",
+    "reference_only": true,
+    "sha256": "0381fa6d8b97458dc68fcfc63aee893a6ce34baa3c0ecd6be07bae020e61b335",
+    "dimensions": [
+      1280,
+      800
+    ],
+    "additional_references": [
+      {
+        "id": "Chlorophos",
+        "scientific": "Mycena chlorophos",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Mycena_chlorophos.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Mycena_chlorophos.jpg/1280px-Mycena_chlorophos.jpg",
+        "photographer": "Anonymous Powered (Commons uploader; source author field is self)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "local_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-Chlorophos-03.jpg",
+        "morphology": "Mycena chlorophos at Hachijojima botanical park(ヤコウタケ・八丈島植物公園)",
+        "selection_note": "Supplementary anatomical reference; not a final sprite.",
+        "retrieved_on": "2026-10-09",
+        "reference_only": true,
+        "dimensions": [
+          1280,
+          720
+        ],
+        "sha256": "b15051b97809337927ca17c96ea98e943e79c4e53b8b5abe482dc1993add7554",
+        "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Mycena_chlorophos.jpg",
+        "photographer_original_metadata": "self",
+        "uploader": "Anonymous Powered",
+        "uploader_url": "https://commons.wikimedia.org/wiki/User:Anonymous_Powered",
+        "attribution_note": "Source is Own work and author field self; current original upload is credited to Commons user Anonymous Powered on 2008-04-30. No real name is stated, so uploader identity is provided with this qualification.",
+        "attribution_verified_on": "2026-10-09"
+      }
+    ],
+    "identity_verified": true,
+    "verification_method": "Commons scientific identity and description cross-checked; downloaded photograph visually inspected for reference use, not DNA identification.",
+    "name_sources": [
+      "https://patents.google.com/patent/KR102594240B1/ko"
+    ],
+    "name_note": "받침애주름 버섯 is attested in Korean primary patent translation; not asserted as a current national checklist name.",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mycena_chlorophos_%28Berk._%26_M.A._Curtis%29_Sacc_77081.jpg"
+  }
+]

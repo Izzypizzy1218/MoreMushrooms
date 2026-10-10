@@ -1,0 +1,380 @@
+{
+  "art_version": "0.1.1",
+  "date": "2026-10-09",
+  "deliverable": "Korean display-name metadata patch; reuses unchanged v0.1 artwork",
+  "baseline_mod_version": "0.4.0",
+  "expected_species": 31,
+  "expected_master_assets": 155,
+  "asset_kinds": [
+    "PlantA",
+    "PlantB",
+    "01Low",
+    "02Medium",
+    "03Full"
+  ],
+  "existing_species_excluded": [
+    "Button",
+    "Shiitake",
+    "Oyster",
+    "KingOyster",
+    "Enoki",
+    "WoodEar",
+    "Beech",
+    "Maitake",
+    "LionsMane",
+    "Matsutake",
+    "FlyAgaric",
+    "DestroyingAngel",
+    "SulfurTuft",
+    "Tsukiyotake",
+    "PoisonFireCoral"
+  ],
+  "species": [
+    {
+      "id": "Cauliflower",
+      "ko": "꽃송이버섯",
+      "en": "cauliflower mushroom",
+      "scientific": "Sparassis latifolia",
+      "group": "cultivated-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "Research-grade observation in Kiso, Nagano, Japan. Select East Asian species for Korean 꽃송이버섯, not European S. crispa. Korea Forest Service explicitly maps crispa -> latifolia. Original photo downloaded unchanged; reference only.",
+      "source_korean_label": "꽃송이버섯"
+    },
+    {
+      "id": "PurpleBlewit",
+      "ko": "자주방망이버섯아재비",
+      "en": "purple blewit",
+      "scientific": "Collybia sordida",
+      "group": "cultivated-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "Research-grade iNaturalist observation in Budapest with current taxon Collybia sordida. Korean NIBR lists old synonym Lepista sordida as 자주방망이버섯아재비, distinct from L. nuda 민자주방망이버섯. Interpret user abbreviation 자주방망이 as sordida, with naming ambiguity made explicit. Commons photo original returned HTTP403; independent licensed primary iNaturalist photo selected instead. Reference only.",
+      "scientific_aliases": [
+        "Lepista sordida"
+      ],
+      "source_korean_label": "자주방망이버섯 (표준명 자주방망이버섯아재비)",
+      "provisional_species_choice": true
+    },
+    {
+      "id": "BlackTruffle",
+      "ko": "트러플",
+      "en": "black truffle",
+      "scientific": "Tuber melanosporum",
+      "group": "premium-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "French exact-species research-grade observation; choose black winter truffle rather than white truffle or Tuber aestivum. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "검은트러플"
+    },
+    {
+      "id": "Porcini",
+      "ko": "포르치니",
+      "en": "porcini",
+      "scientific": "Boletus edulis",
+      "group": "premium-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "German exact-species research-grade observation; excludes California B. edulis grandedulis variety shown in other search results. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "포르치니"
+    },
+    {
+      "id": "Morel",
+      "ko": "곰보버섯",
+      "en": "morel",
+      "scientific": "Morchella esculenta",
+      "group": "premium-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "Bulgarian research-grade observation explicitly identified as M. esculenta; not a false morel or a North American substitute. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "곰보버섯"
+    },
+    {
+      "id": "BlackTrumpet",
+      "ko": "블랙트럼펫",
+      "en": "black trumpet",
+      "scientific": "Craterellus cornucopioides",
+      "group": "premium-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "English research-grade observation; avoids geographical species ambiguity of similar North American black trumpets. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "블랙트럼펫"
+    },
+    {
+      "id": "GiantPuffball",
+      "ko": "댕구알버섯",
+      "en": "giant puffball",
+      "scientific": "Calvatia gigantea",
+      "group": "unusual-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "Research-grade primary photo of the giant puffball. Young pale whole fruit body should guide the game art, not a mature broken spore sac. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "댕구알버섯"
+    },
+    {
+      "id": "IndigoMilkcap",
+      "ko": "파란젖버섯",
+      "en": "indigo milkcap",
+      "scientific": "Lactarius indigo",
+      "group": "unusual-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "Mexican research-grade exact-species photo. Preserve real blue zones and morphology; not a generic blue toadstool. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "파란젖버섯"
+    },
+    {
+      "id": "VeiledStinkhorn",
+      "ko": "망태버섯",
+      "en": "veiled stinkhorn",
+      "scientific": "Phallus indusiatus",
+      "group": "unusual-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "Research-grade observation of the white-net veiled stinkhorn. Yellow-net Phallus species are not substituted. Korean NIBR maps 망태버섯 to P. indusiatus. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "망태버섯"
+    },
+    {
+      "id": "ShaggyInkcap",
+      "ko": "먹물버섯",
+      "en": "shaggy inkcap",
+      "scientific": "Coprinus comatus",
+      "group": "unusual-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "Korean forest/BRIS sources identify 먹물버섯 as C. comatus. It is the shaggy inkcap, not smooth gray Coprinopsis atramentaria. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "먹물버섯"
+    },
+    {
+      "id": "Lobster",
+      "ko": "랍스터버섯",
+      "en": "lobster mushroom",
+      "scientific": "Hypomyces lactifluorum",
+      "group": "unusual-wild-edible",
+      "identity_status": "photo-verified",
+      "selection_note": "Exact parasite taxon research-grade observation; the visible fruit body is the infected Russula/Lactarius host, not an independent standard-shaped Hypomyces cap. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "랍스터버섯"
+    },
+    {
+      "id": "Reishi",
+      "ko": "영지버섯",
+      "en": "reishi",
+      "scientific": "Ganoderma sichuanense (syn. Ganoderma lingzhi)",
+      "group": "medicinal",
+      "identity_status": "photo-verified",
+      "selection_note": "Photograph of taxonomically studied Thai collection MFU16-2668. Exact original JPEG extracted from the deposited CC BY4 publication PDF (page11/Figure2), without repainting or changing pixels. Select East Asian reishi under G. sichuanense / G. lingzhi naming; European G. lucidum sensu stricto is excluded. A 2023 type-material study treats G. lingzhi as a later synonym of G. sichuanense. Commons image CDN returned429; source publisher deposited PDF accessed normally at Zenodo.",
+      "source_korean_label": "영지버섯"
+    },
+    {
+      "id": "TurkeyTail",
+      "ko": "구름버섯",
+      "en": "turkey tail",
+      "scientific": "Trametes versicolor",
+      "group": "medicinal",
+      "identity_status": "photo-verified",
+      "selection_note": "Research-grade exact-species photo. Many differently colored thin fans are characteristic; avoid the thicker orange pore surface of lookalikes. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "구름버섯"
+    },
+    {
+      "id": "Sanghuang",
+      "ko": "상황버섯",
+      "en": "sanghuang",
+      "scientific": "Sanghuangporus sanghuang",
+      "group": "medicinal",
+      "identity_status": "photo-verified",
+      "selection_note": "Original photograph in Figure1 of a primary taxonomy/phylogeny paper. Figure contains six species: A alpinus, B lonicerinus, C sanghuang, D baumii, E vaninii, F lonicericola. C is the required exact species; other panels must not be used as sanghuang. Exact original JPEG extracted unchanged from CC BY article PDF page6. Commons exact-species CC0 photos identified but CDN429. Museum holotype source also verified identity; museum canDownload=false so museum photos were not downloaded.",
+      "source_korean_label": "상황버섯"
+    },
+    {
+      "id": "Cordyceps",
+      "ko": "동충하초",
+      "en": "cordyceps",
+      "scientific": "Cordyceps militaris",
+      "group": "medicinal",
+      "identity_status": "photo-verified",
+      "selection_note": "Choose C. militaris as the exact artistic species rather than Ophiocordyceps sinensis or zombie-ant fungus. Primary research-grade photo. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "동충하초"
+    },
+    {
+      "id": "Chaga",
+      "ko": "차가버섯",
+      "en": "chaga",
+      "scientific": "Inonotus obliquus",
+      "group": "medicinal",
+      "identity_status": "photo-verified",
+      "selection_note": "Research-grade species observation. Game reference is the black sterile chaga mass, not the rare resupinate fertile fruit body. Downloaded unchanged as anatomy reference only. Photo license confirmed through public API; community research-grade identification is not a genetic identification.",
+      "source_korean_label": "차가버섯"
+    },
+    {
+      "id": "LibertyCap",
+      "ko": "자유모자버섯",
+      "en": "liberty cap",
+      "scientific": "Psilocybe semilanceata",
+      "group": "psychoactive",
+      "identity_status": "photo-verified",
+      "selection_note": "Replace underside-only initial photo with side views. Korean label is a game working name.",
+      "source_korean_label": "자유모자"
+    },
+    {
+      "id": "PantherCap",
+      "ko": "마귀광대버섯",
+      "en": "panther cap",
+      "scientific": "Amanita pantherina",
+      "group": "psychoactive-toxic",
+      "identity_status": "photo-verified",
+      "selection_note": "Keep brown cap with white warts distinct from red fly agaric.",
+      "source_korean_label": "마귀광대"
+    },
+    {
+      "id": "Cubensis",
+      "ko": "주사위환각버섯",
+      "en": "cubensis",
+      "scientific": "Psilocybe cubensis",
+      "group": "psychoactive",
+      "identity_status": "photo-verified",
+      "selection_note": "PROVISIONAL art-draft species selection; Cubensis is the routine default pending final species approval. Distinct from semilanceata.",
+      "source_korean_label": "추가 실로시빈종",
+      "provisional_species_choice": true,
+      "korean_display_aliases": [
+        "실로시빈 버섯 추가종"
+      ],
+      "korean_name_status": "국내 사용명; 공식 표준국명 여부 미확인",
+      "korean_name_note": "기존 그림의 학명과 종 선택은 유지. 국내 과학매체에서 실제 사용한 한국어 이름을 채택.",
+      "korean_name_sources": [
+        {
+          "title": "어린이과학동아 2020년 8호 · 도전! 섭섭박사 실험실",
+          "url": "https://images.dongascience.com/uploads/article/pdf/202008/164-167_08%ED%98%B8_%EC%84%AD%EC%84%AD%EC%8B%A4%ED%97%98%EC%8B%A4.pdf",
+          "page": 2,
+          "printed_page": 166,
+          "evidence_summary": "사진 설명에서 Psilocybe cubensis와 주사위환각버섯 이름을 함께 표기함."
+        }
+      ]
+    },
+    {
+      "id": "DeathCap",
+      "ko": "알광대버섯",
+      "en": "death cap",
+      "scientific": "Amanita phalloides",
+      "group": "toxic",
+      "identity_status": "photo-verified",
+      "selection_note": "Do not add the white cap warts typical of panther/fly agarics.",
+      "source_korean_label": "알광대"
+    },
+    {
+      "id": "YellowDapperling",
+      "ko": "노란각시버섯",
+      "en": "yellow dapperling",
+      "scientific": "Leucocoprinus birnbaumii",
+      "group": "toxic",
+      "identity_status": "photo-verified",
+      "selection_note": "Keep all-yellow body recognizable.",
+      "source_korean_label": "노란각시"
+    },
+    {
+      "id": "JackOLantern",
+      "ko": "잭오랜턴버섯",
+      "en": "jack-o-lantern mushroom",
+      "scientific": "Omphalotus olearius",
+      "group": "toxic",
+      "identity_status": "photo-verified",
+      "selection_note": "European Omphalotus olearius; do not replace with North American O. illudens.",
+      "source_korean_label": "잭오랜턴"
+    },
+    {
+      "id": "DeadlyWebcap",
+      "ko": "녹슨끈적버섯",
+      "en": "deadly webcap",
+      "scientific": "Cortinarius rubellus",
+      "group": "toxic",
+      "identity_status": "photo-verified",
+      "selection_note": "Scientific identity explicit; Korean game working label not claimed as official vernacular name.",
+      "source_korean_label": "녹슨끈적"
+    },
+    {
+      "id": "ZombieAntFungus",
+      "ko": "개미동충하초",
+      "en": "zombie-ant fungus",
+      "scientific": "Ophiocordyceps unilateralis s.l.",
+      "group": "host-environment",
+      "identity_status": "photo-verified",
+      "selection_note": "Species complex/sensu lato reference; do not claim species-level molecular identification.",
+      "source_korean_label": "좀비개미",
+      "korean_display_aliases": [
+        "좀비개미 균류"
+      ],
+      "korean_name_status": "국내 통용명; 공식 표준국명 여부 미확인",
+      "korean_name_note": "좀비개미균의 국내 통용명으로 채택. 다른 개미 기생 동충하초에도 이름이 쓰이므로 학명과 s.l. 범위를 보존. O. formicarum으로 종을 바꾸지 않음.",
+      "korean_name_sources": [
+        {
+          "title": "최종수 · 버섯에 관한 8가지 놀라운 사실: 야생버섯의 신비(190)",
+          "url": "https://www.jadam.kr/news/articleView.html?idxno=16333",
+          "section": "3. 어떤 버섯은 개미를 좀비로 만든다",
+          "evidence_summary": "사진3과 본문에서 Ophiocordyceps unilateralis를 개미동충하초로 표기함."
+        }
+      ]
+    },
+    {
+      "id": "HoneyFungus",
+      "ko": "뽕나무버섯",
+      "en": "honey fungus",
+      "scientific": "Armillaria mellea",
+      "group": "host-environment",
+      "identity_status": "photo-verified",
+      "selection_note": "Armillaria mellea=뽕나무버섯; distinct from ringless 뽕나무버섯부치 (Desarmillaria/Armillaria tabescens).",
+      "source_korean_label": "뽕나무버섯"
+    },
+    {
+      "id": "DryRot",
+      "ko": "집버섯",
+      "en": "dry rot fungus",
+      "scientific": "Serpula lacrymans",
+      "group": "host-environment",
+      "identity_status": "photo-verified",
+      "selection_note": "Dry-rot fungus candidate, game label 집버섯. Korean mycology literature uses 진황녹슨버짐버섯; keep scientific identity explicit.",
+      "source_korean_label": "집버섯",
+      "provisional_species_choice": true
+    },
+    {
+      "id": "GhostFungus",
+      "ko": "발광버섯",
+      "en": "ghost fungus",
+      "scientific": "Omphalotus nidiformis",
+      "group": "ornamental-material",
+      "identity_status": "photo-verified",
+      "selection_note": "PROVISIONAL art-draft species selection. Australian ghost fungus, DISTINCT from Mycena chlorophos and existing Tsukiyotake; greenish low-light bioluminescence is an optional stylized cue.",
+      "source_korean_label": "발광버섯",
+      "provisional_species_choice": true
+    },
+    {
+      "id": "YellowBrain",
+      "ko": "노란뇌버섯",
+      "en": "yellow brain fungus",
+      "scientific": "Tremella mesenterica",
+      "group": "ornamental-material",
+      "identity_status": "photo-verified",
+      "selection_note": "Korean game working label; reference T. mesenterica rather than similar T. aurantia.",
+      "source_korean_label": "노란뇌버섯"
+    },
+    {
+      "id": "DevilsFingers",
+      "ko": "악마손가락버섯",
+      "en": "devil's fingers",
+      "scientific": "Clathrus archeri",
+      "group": "ornamental-material",
+      "identity_status": "photo-verified",
+      "selection_note": "Clathrus archeri, not red lattice Clathrus ruber.",
+      "source_korean_label": "악마손가락"
+    },
+    {
+      "id": "BirdsNest",
+      "ko": "새둥지버섯",
+      "en": "bird's nest fungus",
+      "scientific": "Cyathus striatus",
+      "group": "ornamental-material",
+      "identity_status": "photo-verified",
+      "selection_note": "Reference specifically fluted bird nest Cyathus striatus, not smooth-walled Crucibulum.",
+      "source_korean_label": "새둥지버섯"
+    },
+    {
+      "id": "Chlorophos",
+      "ko": "받침애주름버섯",
+      "en": "green-glowing mycena",
+      "scientific": "Mycena chlorophos",
+      "group": "ornamental-material",
+      "identity_status": "photo-verified",
+      "selection_note": "Mycena chlorophos DISTINCT from broad fan-capped Omphalotus nidiformis; photographed by mycological nature photographer.",
+      "source_korean_label": "받침애주름"
+    }
+  ],
+  "baseline_art_version": "0.1",
+  "asset_base": "../v0.1-2026-10-09"
+}

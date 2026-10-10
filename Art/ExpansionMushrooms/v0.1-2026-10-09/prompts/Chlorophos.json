@@ -1,0 +1,70 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit/replace the FIRST reference mushroom sprite's species into the following mushroom, keeping the exact established More Mushrooms game sprite style. Subsequent reference images are real species photos for morphology only. A tiny mature unit of Mycena chlorophos: exactly TWO delicate shallow pleated umbrella caps on very slender curved pale mint-gray stalks, each cap has a small flat/depressed center and six to eight simplified broad radial pleat marks. Use cool pale mint-green cap planes with a slightly darker green central dimple, inspired by the real GREEN BIOLUMINESCENCE photographs. NOT chunky green button mushrooms, not broad shelf fans. No bloom/glow halo outside the silhouette; the green is represented through flat drawn color only, while alpha background stays clear. Match thick warm dark-brown outlines, TWO OR THREE simple flat shaded color planes, modest elevated three-quarter view and a clean silhouette. No realistic texture, gradients, photoreal shine, soil, ground shadow, grass, root patches, tree trunks, logs, box, labels or surrounding scene. One alternate MATURE PlantA fruiting unit, not a juvenile stage. Full subject centered within a square canvas; fully transparent background with real alpha.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Plant/RimMushrooms/EnokiWild/EnokiWildA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-01.jpg",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-03.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-3bd9b203-1fbd-40dd-b4a4-e8aaa5821e24.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit approved FIRST reference Chlorophos PlantA into a clearly different alternate MATURE PlantB of the SAME species and palette. Exactly THREE delicate small shallow umbrella caps in a different mature arrangement, one taller and leaning slightly right, very slender curved mint-gray stalks, radial cap pleats and the SAME mint-green palette; not early growth. It is NOT early growth, NOT a mirror-only copy. A tiny mature unit of Mycena chlorophos: exactly TWO delicate shallow pleated umbrella caps on very slender curved pale mint-gray stalks, each cap has a small flat/depressed center and six to eight simplified broad radial pleat marks. Use cool pale mint-green cap planes with a slightly darker green central dimple, inspired by the real GREEN BIOLUMINESCENCE photographs. NOT chunky green button mushrooms, not broad shelf fans. No bloom/glow halo outside the silhouette; the green is represented through flat drawn color only, while alpha background stays clear. No box. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-01.jpg",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-03.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-1f030db3-1183-4b92-a8f6-7b8b737a73fb.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY contents of FIRST reference 01Low produce tray into harvested Chlorophos. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. A tiny mature unit of Mycena chlorophos: exactly TWO delicate shallow pleated umbrella caps on very slender curved pale mint-gray stalks, each cap has a small flat/depressed center and six to eight simplified broad radial pleat marks. Use cool pale mint-green cap planes with a slightly darker green central dimple, inspired by the real GREEN BIOLUMINESCENCE photographs. NOT chunky green button mushrooms, not broad shelf fans. No bloom/glow halo outside the silhouette; the green is represented through flat drawn color only, while alpha background stays clear. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). LOW: three modest-size harvested pieces resting on the bottom, most interior dark and empty, back rim clearly visible. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-01.jpg",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-03.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-8f520a18-d4d4-4618-a8a4-fcbefb228f8d.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY contents of FIRST reference 02Medium produce tray into harvested Chlorophos. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. A tiny mature unit of Mycena chlorophos: exactly TWO delicate shallow pleated umbrella caps on very slender curved pale mint-gray stalks, each cap has a small flat/depressed center and six to eight simplified broad radial pleat marks. Use cool pale mint-green cap planes with a slightly darker green central dimple, inspired by the real GREEN BIOLUMINESCENCE photographs. NOT chunky green button mushrooms, not broad shelf fans. No bloom/glow halo outside the silhouette; the green is represented through flat drawn color only, while alpha background stays clear. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). MEDIUM: six to seven modest-size pieces filling about half the tray below its rim, visibly more than Low, rear rim and dark interior gaps still visible. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-01.jpg",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-03.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-8bdd0746-2c73-4058-9739-79df14802110.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY contents of FIRST reference 03Full produce tray into harvested Chlorophos. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. A tiny mature unit of Mycena chlorophos: exactly TWO delicate shallow pleated umbrella caps on very slender curved pale mint-gray stalks, each cap has a small flat/depressed center and six to eight simplified broad radial pleat marks. Use cool pale mint-green cap planes with a slightly darker green central dimple, inspired by the real GREEN BIOLUMINESCENCE photographs. NOT chunky green button mushrooms, not broad shelf fans. No bloom/glow halo outside the silhouette; the green is represented through flat drawn color only, while alpha background stays clear. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). FULL: twelve to fourteen modest-size pieces in a dense shallow heap slightly above rim, visibly more than Medium, avoid a tall overflow, front panel stays clear. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-01.jpg",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-03.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-4886b0af-de7d-49b4-bbfe-0bc28505c6fc.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/03Full.png"
+  }
+]

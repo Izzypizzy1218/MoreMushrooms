@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_RawCauliflower.label>꽃송이버섯</RMush_RawCauliflower.label>
+  <RMush_RawCauliflower.description>연한 색의 가지가 촘촘하게 접혀 꽃송이처럼 보이는 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +7. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawCauliflower.description>
+  <RMush_PlantCauliflower.label>꽃송이버섯 군락</RMush_PlantCauliflower.label>
+  <RMush_PlantCauliflower.description>꽃송이버섯 군락입니다. 재배 구역과 수경분지에서 재배할 수 있습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 연한 색의 가지가 촘촘하게 접혀 꽃송이처럼 보이는 버섯입니다.</RMush_PlantCauliflower.description>
+  <RMush_RawPurpleBlewit.label>자주방망이버섯아재비</RMush_RawPurpleBlewit.label>
+  <RMush_RawPurpleBlewit.description>자줏빛 갓과 탄탄한 살, 기분 좋은 버섯 풍미가 특징인 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +5. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawPurpleBlewit.description>
+  <RMush_PlantPurpleBlewit.label>자주방망이버섯아재비 군락</RMush_PlantPurpleBlewit.label>
+  <RMush_PlantPurpleBlewit.description>자주방망이버섯아재비 군락입니다. 재배 구역과 수경분지에서 재배할 수 있습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 자줏빛 갓과 탄탄한 살, 기분 좋은 버섯 풍미가 특징인 버섯입니다.</RMush_PlantPurpleBlewit.description>
+  <RMush_RawBlackTruffle.label>트러플</RMush_RawBlackTruffle.label>
+  <RMush_RawBlackTruffle.description>어둡고 울퉁불퉁한 표면과 진하고 복합적인 향으로 귀하게 여겨지는 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +7. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawBlackTruffle.description>
+  <RMush_PlantBlackTruffle.label>트러플 군락</RMush_PlantBlackTruffle.label>
+  <RMush_PlantBlackTruffle.description>트러플 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 어둡고 울퉁불퉁한 표면과 진하고 복합적인 향으로 귀하게 여겨지는 버섯입니다.</RMush_PlantBlackTruffle.description>
+  <RMush_RawPorcini.label>포르치니</RMush_RawPorcini.label>
+  <RMush_RawPorcini.description>둥근 갈색 갓과 굵은 대, 깊고 고소한 풍미가 특징인 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +7. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawPorcini.description>
+  <RMush_PlantPorcini.label>포르치니 군락</RMush_PlantPorcini.label>
+  <RMush_PlantPorcini.description>포르치니 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 둥근 갈색 갓과 굵은 대, 깊고 고소한 풍미가 특징인 버섯입니다.</RMush_PlantPorcini.description>
+  <RMush_RawMorel.label>곰보버섯</RMush_RawMorel.label>
+  <RMush_RawMorel.description>벌집처럼 패인 갓과 은은한 향이 특징인 숲속 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +5. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawMorel.description>
+  <RMush_PlantMorel.label>곰보버섯 군락</RMush_PlantMorel.label>
+  <RMush_PlantMorel.description>곰보버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 벌집처럼 패인 갓과 은은한 향이 특징인 숲속 버섯입니다.</RMush_PlantMorel.description>
+  <RMush_RawBlackTrumpet.label>블랙트럼펫</RMush_RawBlackTrumpet.label>
+  <RMush_RawBlackTrumpet.description>검은 나팔처럼 생긴 갓과 얇은 살을 가진 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +5. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawBlackTrumpet.description>
+  <RMush_PlantBlackTrumpet.label>블랙트럼펫 군락</RMush_PlantBlackTrumpet.label>
+  <RMush_PlantBlackTrumpet.description>블랙트럼펫 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 검은 나팔처럼 생긴 갓과 얇은 살을 가진 버섯입니다.</RMush_PlantBlackTrumpet.description>
+  <RMush_RawGiantPuffball.label>댕구알버섯</RMush_RawGiantPuffball.label>
+  <RMush_RawGiantPuffball.description>크고 둥근 몸체와 담백한 맛을 가진 버섯입니다. 수확물은 식용으로 이용되는 어린 단계로 표현됩니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +3. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawGiantPuffball.description>
+  <RMush_PlantGiantPuffball.label>댕구알버섯 군락</RMush_PlantGiantPuffball.label>
+  <RMush_PlantGiantPuffball.description>댕구알버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 크고 둥근 몸체와 담백한 맛을 가진 버섯입니다. 수확물은 식용으로 이용되는 어린 단계로 표현됩니다.</RMush_PlantGiantPuffball.description>
+  <RMush_RawIndigoMilkcap.label>파란젖버섯</RMush_RawIndigoMilkcap.label>
+  <RMush_RawIndigoMilkcap.description>푸른색 갓에 띠무늬가 있으며, 순하면서 때로 약간 아린 맛이 나는 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +5. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawIndigoMilkcap.description>
+  <RMush_PlantIndigoMilkcap.label>파란젖버섯 군락</RMush_PlantIndigoMilkcap.label>
+  <RMush_PlantIndigoMilkcap.description>파란젖버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 푸른색 갓에 띠무늬가 있으며, 순하면서 때로 약간 아린 맛이 나는 버섯입니다.</RMush_PlantIndigoMilkcap.description>
+  <RMush_RawVeiledStinkhorn.label>망태버섯</RMush_RawVeiledStinkhorn.label>
+  <RMush_RawVeiledStinkhorn.description>섬세한 흰 망사와 스펀지 같은 조직을 가진 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +5. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawVeiledStinkhorn.description>
+  <RMush_PlantVeiledStinkhorn.label>망태버섯 군락</RMush_PlantVeiledStinkhorn.label>
+  <RMush_PlantVeiledStinkhorn.description>망태버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 섬세한 흰 망사와 스펀지 같은 조직을 가진 버섯입니다.</RMush_PlantVeiledStinkhorn.description>
+  <RMush_RawShaggyInkcap.label>먹물버섯</RMush_RawShaggyInkcap.label>
+  <RMush_RawShaggyInkcap.description>하얗고 거친 갓과 순한 맛을 가진 버섯입니다. 연약한 조직 때문에 보관 기간이 짧습니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +3. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawShaggyInkcap.description>
+  <RMush_PlantShaggyInkcap.label>먹물버섯 군락</RMush_PlantShaggyInkcap.label>
+  <RMush_PlantShaggyInkcap.description>먹물버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 하얗고 거친 갓과 순한 맛을 가진 버섯입니다. 연약한 조직 때문에 보관 기간이 짧습니다.</RMush_PlantShaggyInkcap.description>
+  <RMush_RawLobster.label>랍스터버섯</RMush_RawLobster.label>
+  <RMush_RawLobster.description>다른 버섯의 몸체를 주황색으로 덮어 자라는 균류입니다. 살이 단단하고 탄력 있습니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 직접 먹거나 요리에 넣어 먹으면 6시간 동안 무드 +5. 버섯 보너스는 가장 높은 하나만 적용됩니다.</RMush_RawLobster.description>
+  <RMush_PlantLobster.label>랍스터버섯 군락</RMush_PlantLobster.label>
+  <RMush_PlantLobster.description>랍스터버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 다른 버섯의 몸체를 주황색으로 덮어 자라는 균류입니다. 살이 단단하고 탄력 있습니다.</RMush_PlantLobster.description>
+  <RMush_RawReishi.label>영지버섯</RMush_RawReishi.label>
+  <RMush_RawReishi.description>단단하고 쓴맛이 나는 선반 모양 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_RawReishi.description>
+  <RMush_PlantReishi.label>영지버섯 군락</RMush_PlantReishi.label>
+  <RMush_PlantReishi.description>영지버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 단단하고 쓴맛이 나는 선반 모양 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_PlantReishi.description>
+  <RMush_RawTurkeyTail.label>구름버섯</RMush_RawTurkeyTail.label>
+  <RMush_RawTurkeyTail.description>얇고 질긴 갓에 여러 색의 띠가 있는 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_RawTurkeyTail.description>
+  <RMush_PlantTurkeyTail.label>구름버섯 군락</RMush_PlantTurkeyTail.label>
+  <RMush_PlantTurkeyTail.description>구름버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 얇고 질긴 갓에 여러 색의 띠가 있는 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_PlantTurkeyTail.description>
+  <RMush_RawSanghuang.label>상황버섯</RMush_RawSanghuang.label>
+  <RMush_RawSanghuang.description>단단한 목질의 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_RawSanghuang.description>
+  <RMush_PlantSanghuang.label>상황버섯 군락</RMush_PlantSanghuang.label>
+  <RMush_PlantSanghuang.description>상황버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 단단한 목질의 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_PlantSanghuang.description>
+  <RMush_RawCordyceps.label>동충하초</RMush_RawCordyceps.label>
+  <RMush_RawCordyceps.description>주황색 곤봉 모양으로 자라는 작은 균류입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_RawCordyceps.description>
+  <RMush_PlantCordyceps.label>동충하초 군락</RMush_PlantCordyceps.label>
+  <RMush_PlantCordyceps.description>동충하초 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 주황색 곤봉 모양으로 자라는 작은 균류입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_PlantCordyceps.description>
+  <RMush_RawChaga.label>차가버섯</RMush_RawChaga.label>
+  <RMush_RawChaga.description>검고 거친 덩어리 모양의 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_RawChaga.description>
+  <RMush_PlantChaga.label>차가버섯 군락</RMush_PlantChaga.label>
+  <RMush_PlantChaga.description>차가버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 검고 거친 덩어리 모양의 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다.</RMush_PlantChaga.description>
+  <RMush_RawLibertyCap.label>자유모자버섯</RMush_RawLibertyCap.label>
+  <RMush_RawLibertyCap.description>끝이 뾰족한 작은 갓을 가진 향정신성 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 섭취하면 6시간 동안 무드 +15, 1~2시간 동안 통제할 수 없는 환각성 배회가 발생합니다. 요리에 넣어 먹어도 같은 효과가 나타나며, 향정신성 버섯의 무드 효과끼리는 중첩되지 않습니다.</RMush_RawLibertyCap.description>
+  <RMush_PlantLibertyCap.label>자유모자버섯 군락</RMush_PlantLibertyCap.label>
+  <RMush_PlantLibertyCap.description>자유모자버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 끝이 뾰족한 작은 갓을 가진 향정신성 버섯입니다.</RMush_PlantLibertyCap.description>
+  <RMush_RawPantherCap.label>마귀광대버섯</RMush_RawPantherCap.label>
+  <RMush_RawPantherCap.description>갈색 갓에 연한 반점이 있는 버섯입니다. 향정신성 효과와 함께 신경중독, 혼란, 의식 저하가 나타나며 심한 노출은 혼수로 이어질 수 있습니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 섭취하면 6시간 동안 무드 +10, 3~4시간 동안 통제할 수 없는 환각성 배회가 발생합니다. 요리에 넣어 먹어도 같은 효과가 나타나며, 향정신성 버섯의 무드 효과끼리는 중첩되지 않습니다.</RMush_RawPantherCap.description>
+  <RMush_PlantPantherCap.label>마귀광대버섯 군락</RMush_PlantPantherCap.label>
+  <RMush_PlantPantherCap.description>마귀광대버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 갈색 갓에 연한 반점이 있는 버섯입니다. 향정신성 효과와 함께 신경중독, 혼란, 의식 저하가 나타나며 심한 노출은 혼수로 이어질 수 있습니다.</RMush_PlantPantherCap.description>
+  <RMush_RawCubensis.label>주사위환각버섯</RMush_RawCubensis.label>
+  <RMush_RawCubensis.description>연한 대와 둥근 황갈색 갓을 가진 향정신성 버섯입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다. 섭취하면 6시간 동안 무드 +15, 1~2시간 동안 통제할 수 없는 환각성 배회가 발생합니다. 요리에 넣어 먹어도 같은 효과가 나타나며, 향정신성 버섯의 무드 효과끼리는 중첩되지 않습니다.</RMush_RawCubensis.description>
+  <RMush_PlantCubensis.label>주사위환각버섯 군락</RMush_PlantCubensis.label>
+  <RMush_PlantCubensis.description>주사위환각버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 연한 대와 둥근 황갈색 갓을 가진 향정신성 버섯입니다.</RMush_PlantCubensis.description>
+  <RMush_RawDeathCap.label>알광대버섯</RMush_RawDeathCap.label>
+  <RMush_RawDeathCap.description>잠복 후 간 손상이 진행되는 버섯입니다. 증상이 잠시 줄어도 회복한 것은 아니며, 치료가 부족하면 사망할 수 있습니다. 자동 섭취와 일반 요리에서 제외되며, 직접 명령으로만 먹을 수 있습니다. 중독은 의사의 일반 치료와 약품, 휴식으로 관리합니다.</RMush_RawDeathCap.description>
+  <RMush_PlantDeathCap.label>알광대버섯 군락</RMush_PlantDeathCap.label>
+  <RMush_PlantDeathCap.description>알광대버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 잠복 후 간 손상이 진행되는 버섯입니다. 증상이 잠시 줄어도 회복한 것은 아니며, 치료가 부족하면 사망할 수 있습니다.</RMush_PlantDeathCap.description>
+  <RMush_RawYellowDapperling.label>노란각시버섯</RMush_RawYellowDapperling.label>
+  <RMush_RawYellowDapperling.description>작고 노란 버섯입니다. 섭취하면 위장 중독과 일시적인 쇠약을 일으킵니다. 자동 섭취와 일반 요리에서 제외되며, 직접 명령으로만 먹을 수 있습니다. 중독은 의사의 일반 치료와 약품, 휴식으로 관리합니다.</RMush_RawYellowDapperling.description>
+  <RMush_PlantYellowDapperling.label>노란각시버섯 군락</RMush_PlantYellowDapperling.label>
+  <RMush_PlantYellowDapperling.description>노란각시버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 작고 노란 버섯입니다. 섭취하면 위장 중독과 일시적인 쇠약을 일으킵니다.</RMush_PlantYellowDapperling.description>
+  <RMush_RawJackOLantern.label>잭오랜턴버섯</RMush_RawJackOLantern.label>
+  <RMush_RawJackOLantern.description>밝은 주황색 버섯입니다. 섭취하면 심한 구토와 통증, 위장 중독을 일으킵니다. 자동 섭취와 일반 요리에서 제외되며, 직접 명령으로만 먹을 수 있습니다. 중독은 의사의 일반 치료와 약품, 휴식으로 관리합니다.</RMush_RawJackOLantern.description>
+  <RMush_PlantJackOLantern.label>잭오랜턴버섯 군락</RMush_PlantJackOLantern.label>
+  <RMush_PlantJackOLantern.description>잭오랜턴버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 밝은 주황색 버섯입니다. 섭취하면 심한 구토와 통증, 위장 중독을 일으킵니다.</RMush_PlantJackOLantern.description>
+  <RMush_RawDeadlyWebcap.label>녹슨끈적버섯</RMush_RawDeadlyWebcap.label>
+  <RMush_RawDeadlyWebcap.description>오랜 잠복 후 신장 손상이 진행되는 버섯입니다. 먹은 뒤 한참 지나 증상이 나타날 수 있으며, 치료가 부족하면 사망할 수 있습니다. 자동 섭취와 일반 요리에서 제외되며, 직접 명령으로만 먹을 수 있습니다. 중독은 의사의 일반 치료와 약품, 휴식으로 관리합니다.</RMush_RawDeadlyWebcap.description>
+  <RMush_PlantDeadlyWebcap.label>녹슨끈적버섯 군락</RMush_PlantDeadlyWebcap.label>
+  <RMush_PlantDeadlyWebcap.description>녹슨끈적버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 오랜 잠복 후 신장 손상이 진행되는 버섯입니다. 먹은 뒤 한참 지나 증상이 나타날 수 있으며, 치료가 부족하면 사망할 수 있습니다.</RMush_PlantDeadlyWebcap.description>
+  <RMush_RawZombieAntFungus.label>개미동충하초</RMush_RawZombieAntFungus.label>
+  <RMush_RawZombieAntFungus.description>곤충 숙주와 연관된 가느다란 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_RawZombieAntFungus.description>
+  <RMush_PlantZombieAntFungus.label>개미동충하초 군락</RMush_PlantZombieAntFungus.label>
+  <RMush_PlantZombieAntFungus.description>개미동충하초 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 곤충 숙주와 연관된 가느다란 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_PlantZombieAntFungus.description>
+  <RMush_RawHoneyFungus.label>뽕나무버섯</RMush_RawHoneyFungus.label>
+  <RMush_RawHoneyFungus.description>탄탄한 갓과 질긴 대를 가진 숲속 버섯입니다. 일반 균류 식재료로 이용됩니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawHoneyFungus.description>
+  <RMush_PlantHoneyFungus.label>뽕나무버섯 군락</RMush_PlantHoneyFungus.label>
+  <RMush_PlantHoneyFungus.description>뽕나무버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 탄탄한 갓과 질긴 대를 가진 숲속 버섯입니다. 일반 균류 식재료로 이용됩니다.</RMush_PlantHoneyFungus.description>
+  <RMush_RawDryRot.label>집버섯</RMush_RawDryRot.label>
+  <RMush_RawDryRot.description>넓고 납작한 딱지 모양의 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_RawDryRot.description>
+  <RMush_PlantDryRot.label>집버섯 군락</RMush_PlantDryRot.label>
+  <RMush_PlantDryRot.description>집버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 넓고 납작한 딱지 모양의 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_PlantDryRot.description>
+  <RMush_RawGhostFungus.label>발광버섯</RMush_RawGhostFungus.label>
+  <RMush_RawGhostFungus.description>연한 부채 모양의 갓을 가진 버섯입니다. 섭취하면 구토와 통증, 위장 중독을 일으킵니다. 자동 섭취와 일반 요리에서 제외되며, 직접 명령으로만 먹을 수 있습니다. 중독은 의사의 일반 치료와 약품, 휴식으로 관리합니다.</RMush_RawGhostFungus.description>
+  <RMush_PlantGhostFungus.label>발광버섯 군락</RMush_PlantGhostFungus.label>
+  <RMush_PlantGhostFungus.description>발광버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 연한 부채 모양의 갓을 가진 버섯입니다. 섭취하면 구토와 통증, 위장 중독을 일으킵니다.</RMush_PlantGhostFungus.description>
+  <RMush_RawYellowBrain.label>노란뇌버섯</RMush_RawYellowBrain.label>
+  <RMush_RawYellowBrain.description>노란 주름이 겹친 젤리 같은 버섯입니다. 고유한 맛은 약한 편입니다. 직접 먹거나 일반 요리의 재료로 사용할 수 있으며, 균류 식재료로 취급됩니다.</RMush_RawYellowBrain.description>
+  <RMush_PlantYellowBrain.label>노란뇌버섯 군락</RMush_PlantYellowBrain.label>
+  <RMush_PlantYellowBrain.description>노란뇌버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 노란 주름이 겹친 젤리 같은 버섯입니다. 고유한 맛은 약한 편입니다.</RMush_PlantYellowBrain.description>
+  <RMush_RawDevilsFingers.label>악마손가락버섯</RMush_RawDevilsFingers.label>
+  <RMush_RawDevilsFingers.description>붉은 손가락이 펼쳐진 듯한 모습과 강한 악취가 특징인 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_RawDevilsFingers.description>
+  <RMush_PlantDevilsFingers.label>악마손가락버섯 군락</RMush_PlantDevilsFingers.label>
+  <RMush_PlantDevilsFingers.description>악마손가락버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 붉은 손가락이 펼쳐진 듯한 모습과 강한 악취가 특징인 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_PlantDevilsFingers.description>
+  <RMush_RawBirdsNest.label>새둥지버섯</RMush_RawBirdsNest.label>
+  <RMush_RawBirdsNest.description>작은 컵 안에 포자 덩어리가 담긴 새둥지 모양 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_RawBirdsNest.description>
+  <RMush_PlantBirdsNest.label>새둥지버섯 군락</RMush_PlantBirdsNest.label>
+  <RMush_PlantBirdsNest.description>새둥지버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 작은 컵 안에 포자 덩어리가 담긴 새둥지 모양 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_PlantBirdsNest.description>
+  <RMush_RawChlorophos.label>받침애주름버섯</RMush_RawChlorophos.label>
+  <RMush_RawChlorophos.description>작고 연한 갓을 가진 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_RawChlorophos.description>
+  <RMush_PlantChlorophos.label>받침애주름버섯 군락</RMush_PlantChlorophos.label>
+  <RMush_PlantChlorophos.description>받침애주름버섯 군락입니다. 야생에서 채집할 수 있으며 재배할 수 없습니다. 태양등 없이 자라며 강한 빛에서는 성장 속도가 느려집니다. 작고 연한 갓을 가진 균류입니다. 표본 수집과 거래에 이용됩니다.</RMush_PlantChlorophos.description>
+</LanguageData>

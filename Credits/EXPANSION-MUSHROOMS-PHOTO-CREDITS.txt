@@ -1,0 +1,330 @@
+MORE MUSHROOMS EXPANSION ART v0.1 — PHOTO REFERENCES AND ATTRIBUTION
+Photographs remain unchanged, used as morphology references only.
+They retain their original source licenses; they are not generated game textures.
+Generated art: built-in OpenAI ImageGen, individual assets, exact prompts in prompts/.
+Existing style: MoreMushrooms v0.4.0 sprites and Sera rimshare produce-container template.
+Sera rimshare MIT license copied in RIMSHARE-LICENSE.txt.
+Game runtime and existing 15 species remain unchanged.
+
+Cauliflower — Sparassis latifolia
+File: Cauliflower-Sparassis-latifolia-JessMullins.jpg
+Photo by: Jess Mullins
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/399190332
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/732370518/original.jpg
+
+PurpleBlewit — Collybia sordida
+File: PurpleBlewit-Collybia-sordida-RossKrisztina.jpeg
+Photo by: Ross Krisztina
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/191402850
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/335767418/original.jpeg
+
+Species selection: provisional art-draft representative; not a final implemented game species.
+
+BlackTruffle — Tuber melanosporum
+File: BlackTruffle-Tuber-melanosporum.jpg
+Photo by: Adrien Nouailhane
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/19588598
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/30155586/original.jpg
+
+Porcini — Boletus edulis
+File: Porcini-Boletus-edulis.jpeg
+Photo by: Felicia Seichter
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/60205772
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/96239042/original.jpeg
+
+Morel — Morchella esculenta
+File: Morel-Morchella-esculenta.jpeg
+Photo by: Philip Precey (philip_precey)
+License: CC0 1.0 (iNaturalist cc0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://www.inaturalist.org/observations/249501694
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/446014878/original.jpeg
+
+BlackTrumpet — Craterellus cornucopioides
+File: BlackTrumpet-Craterellus-cornucopioides.jpg
+Photo by: Cara Ennis
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/319831841
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/578187483/original.jpg
+
+GiantPuffball — Calvatia gigantea
+File: GiantPuffball-Calvatia-gigantea.jpg
+Photo by: Adam Wilson
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/41834267
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/66381049/original.jpg
+
+IndigoMilkcap — Lactarius indigo
+File: IndigoMilkcap-Lactarius-indigo.jpg
+Photo by: Elliott Gordon
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/96415367
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/160173001/original.jpg
+
+VeiledStinkhorn — Phallus indusiatus
+File: VeiledStinkhorn-Phallus-indusiatus.jpg
+Photo by: bushbrat (iNaturalist observer)
+License: CC0 1.0 (iNaturalist cc0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://www.inaturalist.org/observations/108495371
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/182681757/original.jpg
+
+ShaggyInkcap — Coprinus comatus
+File: ShaggyInkcap-Coprinus-comatus.jpeg
+Photo by: Tom Norton
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/58497477
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/93399523/original.jpeg
+
+Lobster — Hypomyces lactifluorum
+File: Lobster-Hypomyces-lactifluorum.jpg
+Photo by: creaturecalledkate (iNaturalist observer)
+License: CC0 1.0 (iNaturalist cc0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://www.inaturalist.org/observations/142827381
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/244936640/original.jpg
+
+Reishi — Ganoderma sichuanense (syn. Ganoderma lingzhi)
+File: Reishi-Ganoderma-sichuanense-MycoKeys2017-1-Im0.jpg
+Photo by: Anan Thawthong, Kalani K. Hapuarachchi, Ting-Chi Wen, Olivier Raspé, Naritsada Thongklang, Ji-Chuan Kang, Kevin D. Hyde (2017 paper authors; individual photographer not separately credited)
+License: CC BY 4.0
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://doi.org/10.3897/mycokeys.22.13083
+Image: https://zenodo.org/records/816474/files/MC_article_13083.pdf
+
+TurkeyTail — Trametes versicolor
+File: TurkeyTail-Trametes-versicolor.jpg
+Photo by: Ken Kneidel (kenkneidel)
+License: CC0 1.0 (iNaturalist cc0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://www.inaturalist.org/observations/17714364
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/27005174/original.jpg
+
+Sanghuang — Sanghuangporus sanghuang
+File: Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-1-Im1.jpg
+Photo by: Lin Zhu, Jie Song, Jun-Liang Zhou, Jing Si, Bao-Kai Cui (2019 paper authors; individual photographer not separately credited)
+License: CC BY 4.0
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2019.00812/full
+Image: https://public-pages-files-2025.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2019.00812/pdf
+
+Morphology reference: ONLY panel C of Figure 1 is Sanghuangporus sanghuang; the other five panels show other species.
+
+Cordyceps — Cordyceps militaris
+File: Cordyceps-Cordyceps-militaris.jpg
+Photo by: Enrico Tomschke
+License: CC BY 4.0 (iNaturalist cc-by)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source: https://www.inaturalist.org/observations/35697710
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/56322174/original.jpg
+
+Chaga — Inonotus obliquus
+File: Chaga-Inonotus-obliquus.jpg
+Photo by: etvehe (iNaturalist observer)
+License: CC0 1.0 (iNaturalist cc0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://www.inaturalist.org/observations/17498475
+Image: https://inaturalist-open-data.s3.amazonaws.com/photos/26620566/original.jpg
+
+LibertyCap — Psilocybe semilanceata
+File: group2-LibertyCap-01.jpg
+Photo by: Lukas from London, England
+License: CC BY-SA 2.0
+License URL: https://creativecommons.org/licenses/by-sa/2.0
+Source: https://commons.wikimedia.org/wiki/File:Psilocybe_semilanceata_(49152848998).jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Psilocybe_semilanceata_%2849152848998%29.jpg/1280px-Psilocybe_semilanceata_%2849152848998%29.jpg
+
+LibertyCap — Psilocybe semilanceata
+File: group2-LibertyCap.jpg
+Photo by: jakelee
+License: CC0
+License URL: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+Source: https://commons.wikimedia.org/wiki/File:Psilocybe_semilanceata_255455690.jpg
+Image: https://upload.wikimedia.org/wikipedia/commons/5/52/Psilocybe_semilanceata_255455690.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+
+PantherCap — Amanita pantherina
+File: group2-PantherCap.jpg
+Photo by: hedera.baltica
+License: CC BY-SA 2.0
+License URL: https://creativecommons.org/licenses/by-sa/2.0
+Source: https://commons.wikimedia.org/wiki/File:Panther_cap_(Amanita_pantherina).jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Panther_cap_%28Amanita_pantherina%29.jpg/1280px-Panther_cap_%28Amanita_pantherina%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+
+PantherCap — Amanita pantherina
+File: group2-PantherCap-02.jpg
+Photo by: Walter J. Pilsak, Waldsassen
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+Source: https://commons.wikimedia.org/wiki/File:Amanita_pantherina.jpg
+Image: https://upload.wikimedia.org/wikipedia/commons/4/4b/Amanita_pantherina.jpg
+
+Cubensis — Psilocybe cubensis
+File: group2-Cubensis-02.jpg
+Photo by: Hyperborea
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+Source: https://commons.wikimedia.org/wiki/File:Psilocybe_cubensis.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Psilocybe_cubensis.jpg/1280px-Psilocybe_cubensis.jpg
+
+Species selection: provisional art-draft representative; not a final implemented game species.
+
+Cubensis — Psilocybe cubensis
+File: group2-Cubensis-01.jpg
+Photo by: Robert van der Horst
+License: CC BY-SA 4.0
+License URL: https://creativecommons.org/licenses/by-sa/4.0
+Source: https://commons.wikimedia.org/wiki/File:Psilocybe_Cubensis_Imire_(Psilocybe_Cubensis_Zimbabwe)_4.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Psilocybe_Cubensis_Imire_%28Psilocybe_Cubensis_Zimbabwe%29_4.jpg/1280px-Psilocybe_Cubensis_Imire_%28Psilocybe_Cubensis_Zimbabwe%29_4.jpg
+
+Species selection: provisional art-draft representative; not a final implemented game species.
+
+DeathCap — Amanita phalloides
+File: group2-DeathCap.jpg
+Photo by: George Chernilevsky
+License: CC BY 4.0
+License URL: https://creativecommons.org/licenses/by/4.0
+Source: https://commons.wikimedia.org/wiki/File:Amanita_phalloides_2025_G1.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Amanita_phalloides_2025_G1.jpg/1280px-Amanita_phalloides_2025_G1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+
+YellowDapperling — Leucocoprinus birnbaumii
+File: group2-YellowDapperling.jpg
+Photo by: Dan Molter (shroomydan)
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0
+Source: https://commons.wikimedia.org/wiki/File:Leucocoprinus_birnbaumii_56044.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Leucocoprinus_birnbaumii_56044.jpg/1280px-Leucocoprinus_birnbaumii_56044.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+
+YellowDapperling — Leucocoprinus birnbaumii
+File: group2-YellowDapperling-02.jpg
+Photo by: Dan Molter (shroomydan)
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+Source: https://commons.wikimedia.org/wiki/File:Leucocoprinus_birnbaumii_56047.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Leucocoprinus_birnbaumii_56047.jpg/1280px-Leucocoprinus_birnbaumii_56047.jpg
+
+YellowDapperling — Leucocoprinus birnbaumii
+File: group2-YellowDapperling-03.jpg
+Photo by: Arria Belli (Arria Belli)
+License: CC BY-SA 2.0
+License URL: https://creativecommons.org/licenses/by-sa/2.0
+Source: https://commons.wikimedia.org/wiki/File:Two_yellow_Leucocoprinus_birnbaumii_in_a_row.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Two_yellow_Leucocoprinus_birnbaumii_in_a_row.jpg/1280px-Two_yellow_Leucocoprinus_birnbaumii_in_a_row.jpg
+
+JackOLantern — Omphalotus olearius
+File: group2-JackOLantern-01.jpg
+Photo by: Tim Rushing
+License: CC BY 2.5
+License URL: https://creativecommons.org/licenses/by/2.5
+Source: https://commons.wikimedia.org/wiki/File:Omphalotus_olearius.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Omphalotus_olearius.jpg/1280px-Omphalotus_olearius.jpg
+
+DeadlyWebcap — Cortinarius rubellus
+File: group2-DeadlyWebcap-01.jpg
+Photo by: Andreas Kunze
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0
+Source: https://commons.wikimedia.org/wiki/File:2006-07-12_Cortinarius_rubellus_2.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2006-07-12_Cortinarius_rubellus_2.jpg/1280px-2006-07-12_Cortinarius_rubellus_2.jpg
+
+ZombieAntFungus — Ophiocordyceps unilateralis s.l.
+File: group2-ZombieAntFungus-01.jpg
+Photo by: Aloony loon
+License: CC BY 4.0
+License URL: https://creativecommons.org/licenses/by/4.0
+Source: https://commons.wikimedia.org/wiki/File:Complex_Ophiocordyceps_unilateralis_(Zombie_Ant_Fungus).jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Complex_Ophiocordyceps_unilateralis_%28Zombie_Ant_Fungus%29.jpg/1280px-Complex_Ophiocordyceps_unilateralis_%28Zombie_Ant_Fungus%29.jpg
+
+HoneyFungus — Armillaria mellea
+File: group2-HoneyFungus-01.jpg
+Photo by: Stu's Images
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0
+Source: https://commons.wikimedia.org/wiki/File:Armillaria_mellea,_Honey_Fungus,_UK_1.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg/1280px-Armillaria_mellea%2C_Honey_Fungus%2C_UK_1.jpg
+
+DryRot — Serpula lacrymans
+File: group2-DryRot-01.jpg
+Photo by: Epp; derivative work by Ak ccm
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0
+Source: https://commons.wikimedia.org/wiki/File:2011-10-27_Serpula_lacrymans_cropped.jpg
+Image: https://upload.wikimedia.org/wikipedia/commons/f/f7/2011-10-27_Serpula_lacrymans_cropped.jpg
+
+Species selection: provisional art-draft representative; not a final implemented game species.
+
+GhostFungus — Omphalotus nidiformis
+File: group2-GhostFungus-01.jpg
+Photo by: Ian Dodd (kundabungkid)
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0
+Source: https://commons.wikimedia.org/wiki/File:Omphalotus_nidiformis_(Berk.)_O.K._Mill_41981.jpg
+Image: https://upload.wikimedia.org/wikipedia/commons/b/b5/Omphalotus_nidiformis_%28Berk.%29_O.K._Mill_41981.jpg
+
+Species selection: provisional art-draft representative; not a final implemented game species.
+
+YellowBrain — Tremella mesenterica
+File: group2-YellowBrain-01.jpg
+Photo by: Ermell
+License: CC BY-SA 4.0
+License URL: https://creativecommons.org/licenses/by-sa/4.0
+Source: https://commons.wikimedia.org/wiki/File:Goldgelber_Zitterling-Tremella_mesenterica_stack32_-20191227-RM-152807.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Goldgelber_Zitterling-Tremella_mesenterica_stack32_-20191227-RM-152807.jpg/1280px-Goldgelber_Zitterling-Tremella_mesenterica_stack32_-20191227-RM-152807.jpg
+
+DevilsFingers — Clathrus archeri
+File: group2-DevilsFingers-01.jpg
+Photo by: Holger Krisp
+License: CC BY 3.0
+License URL: https://creativecommons.org/licenses/by/3.0
+Source: https://commons.wikimedia.org/wiki/File:Tintenfischpilz_Clathrus_archeri.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Tintenfischpilz_Clathrus_archeri.jpg/1280px-Tintenfischpilz_Clathrus_archeri.jpg
+
+BirdsNest — Cyathus striatus
+File: group2-BirdsNest-03.jpg
+Photo by: Björn S...
+License: CC BY-SA 2.0
+License URL: https://creativecommons.org/licenses/by-sa/2.0
+Source: https://commons.wikimedia.org/wiki/File:Cyathus_striatus_(37923015511).jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Cyathus_striatus_%2837923015511%29.jpg/1280px-Cyathus_striatus_%2837923015511%29.jpg
+
+BirdsNest — Cyathus striatus
+File: group2-BirdsNest-01.jpg
+Photo by: Holger Krisp
+License: CC BY 3.0
+License URL: https://creativecommons.org/licenses/by/3.0
+Source: https://commons.wikimedia.org/wiki/File:Gestreifte-Teuerling-Cyathus-striatus.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Gestreifte-Teuerling-Cyathus-striatus.jpg/1280px-Gestreifte-Teuerling-Cyathus-striatus.jpg
+
+Chlorophos — Mycena chlorophos
+File: group2-Chlorophos-01.jpg
+Photo by: Steve Axford (steveaxford)
+License: CC BY-SA 3.0
+License URL: https://creativecommons.org/licenses/by-sa/3.0/
+Source: https://commons.wikimedia.org/wiki/File:Mycena_chlorophos_(Berk._%26_M.A._Curtis)_Sacc_77081.jpg
+Image: https://upload.wikimedia.org/wikipedia/commons/4/4a/Mycena_chlorophos_%28Berk._%26_M.A._Curtis%29_Sacc_77081.jpg
+
+Chlorophos — Mycena chlorophos
+File: group2-Chlorophos-03.jpg
+Photo by: Anonymous Powered (Commons uploader; source author field is self)
+License: CC BY-SA 3.0
+License URL: http://creativecommons.org/licenses/by-sa/3.0/
+Source: https://commons.wikimedia.org/wiki/File:Mycena_chlorophos.jpg
+Image: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Mycena_chlorophos.jpg/1280px-Mycena_chlorophos.jpg
+
+INTERMEDIATE RESEARCH COPIES — excluded from the 38 selected photo-reference records
+Files: Sanghuang-Frontiers2019-source.pdf and all Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-* extraction copies.
+Derived without repainting from the same source article; not separate species identifications.
+Credit: Lin Zhu, Jie Song, Jun-Liang Zhou, Jing Si, Bao-Kai Cui (2019 paper authors; individual photographer not separately credited)
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Source: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2019.00812/full

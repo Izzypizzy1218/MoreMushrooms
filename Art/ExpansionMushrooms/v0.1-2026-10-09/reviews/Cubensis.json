@@ -1,0 +1,179 @@
+{
+  "id": "Cubensis",
+  "reviewed_on": "2026-10-09",
+  "reviewer": "description_fact_check",
+  "review_scope": "Five generated masters viewed individually; exact 256 export and cross-species contact-sheet review remain parent task. No game execution claim.",
+  "species_morphology": {
+    "status": "pass",
+    "evidence": "Golden caramel cap with darker center, cream stalk and off-white membranous ring, no cap wart pattern."
+  },
+  "style": {
+    "status": "pass_with_note",
+    "evidence": "Warm dark-brown outlines, simplified color regions and slight elevated three-quarter presentation match the supplied baseline sprites. No photographic texture, text, labels or habitat scene.",
+    "note": "Some generated color planes contain subtle smooth shading/highlights rather than mathematically constant flat colors; final small-size style comparison remains parent review."
+  },
+  "transparent_background": {
+    "status": "pass",
+    "evidence": "All five already RGBA with alpha 0..255 and transparent corner pixels; original generation bytes preserved. Very low-alpha edge specks exist in some masters; documented alpha>=16 framing ignores them for crop bounds without modifying master alpha."
+  },
+  "plant_variations": {
+    "status": "pass",
+    "evidence": "A more domed cap and centered shorter stalk; B expanded flatter cap and rightward-curved stalk, both mature.",
+    "same_mature_stage": true
+  },
+  "box_fill_levels": {
+    "status": "pass",
+    "evidence": "Low four loose pieces and large rear/right empty interior; Medium several overlaps with rear strip visible; Full crowded higher mound covering most interior.",
+    "container": "Existing ochre front panel, right notch/end block, dark interior and camera retained across three fill variants.",
+    "quantity_counts_are_visual_estimates": true
+  },
+  "notes": [
+    "Psilocybe cubensis is the provisional art-draft species choice, not final naming approval.",
+    "Compact stalk proportion simplifies the photograph for game readability."
+  ],
+  "regenerations": [],
+  "assets": [
+    {
+      "asset": "PlantA",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cubensis\\PlantA.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        241,
+        248,
+        1021,
+        1062
+      ],
+      "sha256": "a7fad08e78cff256d52671fd0dada2c244aa80f5b6ddb6ebc198f149225f485c",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "PlantB",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cubensis\\PlantB.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        228,
+        259,
+        1044,
+        1076
+      ],
+      "sha256": "4f33a329686e22586aff0005b6bc319004ff7cc98476f5548ff5aaa5d6fb3179",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "01Low",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cubensis\\01Low.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        122,
+        320,
+        1156,
+        984
+      ],
+      "sha256": "0f75d67df48024d6e5e22079cec4e1b99996a09dbd1e50ae67d57490c2896fa7",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "02Medium",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cubensis\\02Medium.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        60,
+        289,
+        1203,
+        1019
+      ],
+      "sha256": "e5dc8518e00f25d0e40773add8ae20d3bb8327ec09d1cc416730be48dbcd7498",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "03Full",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cubensis\\03Full.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        72,
+        260,
+        1182,
+        1026
+      ],
+      "sha256": "d802ab25c6bc442e59f368b006d8ad6d9ddc877923c1d01d8e7a86d4daffa7a0",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    }
+  ],
+  "runtime_untouched": true,
+  "export_review_pending": true
+}

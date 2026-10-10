@@ -1,0 +1,12 @@
+{
+  "asset": "PlantB",
+  "prompt": "Edit the first reference, approved VeiledStinkhorn PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. A slightly wider hanging white lace skirt, tilted olive cone, and taller visible ivory stalk. Keep large clear net holes. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. One mature veiled stinkhorn Phallus indusiatus: upright ivory spongy stalk, small olive-tan conical pitted tip, and a distinctive broad bell-shaped hanging WHITE NET LACE SKIRT with several large diamond-shaped transparent holes. The lace skirt hangs from just beneath the tip and ends above the small ivory basal egg. The subject is the white-net species, not yellow net; no conventional wide umbrella cap. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/VeiledStinkhorn/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/VeiledStinkhorn-Phallus-indusiatus.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-af692f3e-94ad-403d-85ab-d96b778529cb.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/VeiledStinkhorn/PlantB.png"
+}

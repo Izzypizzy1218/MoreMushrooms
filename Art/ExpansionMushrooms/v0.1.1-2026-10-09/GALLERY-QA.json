@@ -1,0 +1,227 @@
+{
+  "version": "0.1.1",
+  "species": 31,
+  "displayed_images_checked": 124,
+  "growth_stages_checked": 124,
+  "layouts": [
+    {
+      "width": 320,
+      "id": "Cubensis",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "id": "ZombieAntFungus",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "id": "Cubensis",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "id": "ZombieAntFungus",
+      "overflow": false
+    },
+    {
+      "width": 736,
+      "id": "Cubensis",
+      "overflow": false
+    },
+    {
+      "width": 736,
+      "id": "ZombieAntFungus",
+      "overflow": false
+    }
+  ],
+  "js_errors": [],
+  "results": [
+    {
+      "id": "Cauliflower",
+      "name": "꽃송이버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "PurpleBlewit",
+      "name": "자주방망이버섯아재비",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "BlackTruffle",
+      "name": "트러플",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Porcini",
+      "name": "포르치니",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Morel",
+      "name": "곰보버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "BlackTrumpet",
+      "name": "블랙트럼펫",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "GiantPuffball",
+      "name": "댕구알버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "IndigoMilkcap",
+      "name": "파란젖버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "VeiledStinkhorn",
+      "name": "망태버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "ShaggyInkcap",
+      "name": "먹물버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Lobster",
+      "name": "랍스터버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Reishi",
+      "name": "영지버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "TurkeyTail",
+      "name": "구름버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Sanghuang",
+      "name": "상황버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Cordyceps",
+      "name": "동충하초",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Chaga",
+      "name": "차가버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "LibertyCap",
+      "name": "자유모자버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "PantherCap",
+      "name": "마귀광대버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Cubensis",
+      "name": "주사위환각버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "DeathCap",
+      "name": "알광대버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "YellowDapperling",
+      "name": "노란각시버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "JackOLantern",
+      "name": "잭오랜턴버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "DeadlyWebcap",
+      "name": "녹슨끈적버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "ZombieAntFungus",
+      "name": "개미동충하초",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "HoneyFungus",
+      "name": "뽕나무버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "DryRot",
+      "name": "집버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "GhostFungus",
+      "name": "발광버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "YellowBrain",
+      "name": "노란뇌버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "DevilsFingers",
+      "name": "악마손가락버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "BirdsNest",
+      "name": "새둥지버섯",
+      "images": true,
+      "growth_stages": 4
+    },
+    {
+      "id": "Chlorophos",
+      "name": "받침애주름버섯",
+      "images": true,
+      "growth_stages": 4
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "asset": "HoneyFungus/PlantA",
+    "prompt": "Use case: stylized-concept.\nAsset: More Mushrooms HoneyFungus PlantA MATURE UNIT, not a juvenile.\nCreate one isolated small game sprite matching attached reference 1 exactly in drawing language: simple flat 2D, thick continuous warm dark-brown outlines, two or three solid color planes, slight elevated three-quarter view, no grain or photographic detail. Genuine alpha transparency, no white/black/checkerboard backdrop. Center the entire subject with at least 15% clear margin. No text, faces, poison symbols, props, soil, ground, leaves, logs, box or external cast shadow.\nReference 2 is real Armillaria mellea for species anatomy/colors only. Depict a compact mature tuft of THREE complete honey-yellow mushrooms connected at the stem bases: rounded honey-gold umbrella caps with darker caramel center and a few tiny simple brown scales near the center; pale cream undersides; tan/slightly curved upright stems each with a clearly readable pale ivory skirt-like ring below the cap. Cap of the middle mushroom higher, smaller flanking caps at distinct heights. Draw simplified broad gill planes, not dozens of lines. Ringed honey fungus, NOT ringless Desarmillaria. Keep the unit compact and readable at small size; exactly one natural tuft, no environmental substrate. A is the primary adult silhouette.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-HoneyFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-f3e37832-84ed-4a71-adba-b8797ee30add.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\PlantA.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/HoneyFungus.json for morphology and caveats"
+  },
+  {
+    "asset": "HoneyFungus/PlantB",
+    "prompt": "Use case: stylized-concept.\nAsset: HoneyFungus PlantB — alternate MATURE adult tuft, not a young growth stage.\nReference 1 is the approved PlantA art and anatomy. Match its thick warm brown outlines, honey-gold palette, simple flat 2D color planes and isolated transparent presentation. Reference 2 is the established mod mature B style; reference 3 is real Armillaria mellea for anatomy only.\nCreate a DIFFERENT compact complete adult tuft: THREE ringed mushrooms with wider/flatter honey-yellow mature caps, a few dark caramel central scales, pale gill undersides, slender tan gently curved stems and distinct ivory skirt rings. Highest broad cap on left, medium cap right and small fully open adult cap front center. Connected stem bases, low and wide silhouette compared with A. Do not simply mirror A. No giant stem or conventional woodland scene. Authentic Armillaria mellea ringed honey fungus, not ringless species. Same drawing complexity as existing mod artwork.\nGenuine alpha transparent background, entire subject centered with at least 15 percent clear margin; no checkerboard, text, soil, logs, leaves, box, symbols or external cast shadow.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonB.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-HoneyFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-62a8360f-6568-4394-a259-1a4f5b20d2c4.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\PlantB.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/HoneyFungus.json for morphology and caveats"
+  },
+  {
+    "asset": "HoneyFungus/01Low",
+    "prompt": "Use case: precise-object-edit.\nAsset: HoneyFungus 01Low harvested resource sprite.\nEDIT REFERENCE 1. Preserve the ochre tray EXACTLY: same rectangular front panel, same right side stepped notch/end block, same warm dark-brown outlines, palette, silhouette, viewpoint and canvas position. Change ONLY mushrooms inside. No woodgrain, planks, nails, handles or redesign. Reference 2 provides the approved mature species sprite and flat drawing style; reference 3 real Armillaria mellea anatomy only. Thick warm brown contour, two or three flat shading planes, no realism.\nLOW quantity: exactly THREE small separate harvested honey-yellow mushrooms resting low inside tray, mostly empty dark interior visible, none above the back rim. Golden rounded caps with darker small central brown scales, pale/tan stems with ivory skirt rings. Not three large multi-mushroom tufts; individual harvested pieces. Keep all contents inside tray. Match LOW reference amount and shell precisely.\nSquare image with genuine alpha transparent background. No ground, external shadow, checkerboard, text, badge, skull, loose mushrooms or background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-HoneyFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-9e272fd8-d036-4848-a43a-8a0505119e88.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\01Low.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/HoneyFungus.json for morphology and caveats"
+  },
+  {
+    "asset": "HoneyFungus/02Medium",
+    "prompt": "Use case: precise-object-edit.\nAsset: HoneyFungus 02Medium harvested resource sprite.\nEDIT REFERENCE 1. Preserve its ochre tray EXACTLY: same front rectangle, right-hand stepped notch/end block, warm dark-brown contours, shell palette and perspective. Change ONLY contained mushrooms; no shell redesign, planks, nails, handles or woodgrain. References 2/3 establish the approved species appearance and real Armillaria mellea anatomy.\nMEDIUM fill: SIX small individual harvested honey-yellow ringed mushrooms loosely filling approximately half the tray. Golden umbrella caps with tiny dark caramel central scales, short tan stems and pale cream skirt rings. Caps sit near/below the back rim, interior back wall still visibly open. Do not use full tall 3-mushroom tufts; separate modest-size pieces. More contents than LOW, substantially less than FULL. Keep every piece within tray silhouette.\nFlat simple 2D game art, thick warm brown outline, two or three flat shading planes; genuine transparent alpha background, no symbols, text, checkerboard, ground, loose pieces or external shadow.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-HoneyFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-fb197549-42a6-4dc3-a1a7-0a4cbccbe647.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\02Medium.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/HoneyFungus.json for morphology and caveats"
+  },
+  {
+    "asset": "HoneyFungus/03Full",
+    "prompt": "Use case: precise-object-edit.\nAsset: HoneyFungus 03Full harvested resource sprite.\nEDIT REFERENCE 1. Lock exact established ochre tray shell: same front panel, right stepped notch/end block, dark brown contours, palette, perspective and size. Only replace the interior mushrooms. No woodgrain/planks/handles/nails. Reference 2 mature art and reference 3 real Armillaria mellea supply species anatomy.\nFULL quantity: about TWELVE to FIFTEEN separate small harvested honey-gold ringed mushrooms packed into a dense shallow mound rising slightly above the rear rim, as in reference 1. Rounded golden caps with small brown central scales; glimpses of pale gills and tan stems with ivory skirt rings. Almost no interior floor visible. Many readable separate caps rather than giant few mushrooms or a towering pyramid. All pieces remain inside tray.\nVery simple flat 2D game sprite, thick warm brown outline, two or three flat shading planes, genuine alpha transparent backdrop. No text, symbols, skull, ground, checkerboard, loose items or external cast shadow.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-HoneyFungus-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-71603878-8a92-4b88-ba79-c99f57a01178.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\HoneyFungus\\03Full.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/HoneyFungus.json for morphology and caveats"
+  }
+]

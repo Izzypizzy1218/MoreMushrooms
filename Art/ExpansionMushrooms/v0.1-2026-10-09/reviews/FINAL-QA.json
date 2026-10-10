@@ -1,0 +1,35 @@
+{
+  "art_version": "v0.1",
+  "date": "2026-10-09",
+  "reviewer": "root",
+  "deliverable": "art assets only",
+  "review_method": "Direct visual inspection of all five complete 256px contact sheets plus per-species master reviews by assigned generation agents",
+  "species_count": 31,
+  "textures": 155,
+  "box_textures": 93,
+  "plant_textures": 62,
+  "selected_photo_references": 38,
+  "contact_sheets": [
+    "reviews/contact-sheets/review-01.png",
+    "reviews/contact-sheets/review-02.png",
+    "reviews/contact-sheets/review-03.png",
+    "reviews/contact-sheets/review-04.png",
+    "reviews/contact-sheets/review-05.png"
+  ],
+  "checks": {
+    "complete_five_asset_sets": "pass",
+    "recognizable_species_morphology": "pass - intentionally stylized, exact selected taxa and provisional choices in species.json",
+    "existing_style_and_tray": "pass - ochre solid-sided notch tray and warm dark outlines preserved; minor generated shading variations documented",
+    "sparse_medium_full_quantity": "pass - all 31 ordered sets visibly distinct; piece counts vary by harvested unit size",
+    "mature_A_B_alternates": "pass - silhouette/count/orientation variation; not earlier or later life stages",
+    "alpha_and_size": "pass - strict build validates 256 RGBA, actual transparent corners and master provenance",
+    "photo_source_author_license_links": "pass - independent source audit completed",
+    "baseline_source_runtime_preservation": "pass - 108 source/runtime files unchanged"
+  },
+  "limitations": [
+    "Art staging only; no additional species Defs, game light emission, toxic/medical effects or habitat-generation code implemented.",
+    "Native growth scenes in comparison.html are illustrative browser simulations, not in-game test captures.",
+    "Four provisional representative species choices are flagged in species.json: PurpleBlewit, Cubensis, DryRot, GhostFungus."
+  ],
+  "corrections_preserved": "DeadlyWebcap ring anatomy and medium fill correction history retained in prompts and provenance snapshots"
+}

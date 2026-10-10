@@ -1,0 +1,78 @@
+{
+  "id": "HoneyFungus",
+  "review_status": "PASS with documented morphology simplification",
+  "visual_inspection": "All five original generated images viewed; not in-game captures",
+  "morphology": "Honey-gold/ochre caps with brown central scales and pale stem rings preserved; A3 compact domes, B3 wider flatter caps in different mature arrangement.",
+  "style": "Warm dark-brown outline, flat-color anatomy, existing ochre storage tray perspective/notch/front preserved",
+  "real_alpha": "PASS: all original masters RGBA with alpha extrema [0,255]",
+  "mature_variants": "PASS: A/B are alternate mature silhouettes, visibly different arrangement, not growth stages",
+  "quantity_gap": "Low3 sparse, Medium6 near rim, Full about13 dense above rim.",
+  "regeneration_cautions": "Keep stem ring, central scales and honey/ochre color; do not turn into ringless honey fungus. Surface detail simplified for small sprite.",
+  "assets": [
+    {
+      "asset": "01Low",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "0e03c73370efe3951a2a6c615b6e92e81556e9348450f81f1c458664663e6d6d"
+    },
+    {
+      "asset": "02Medium",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "5b877ab4c56fe1bb23c6b9b31588181d2d1ed44e84ccc5c62f37a40edaae5c65"
+    },
+    {
+      "asset": "03Full",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b89edd99473113b8def34aba298156b14c8bed4a5e2336aa8ad9871eec2b0a5f"
+    },
+    {
+      "asset": "PlantA",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "dbeccb815613f49cef7b6a1891517695880ce238083915c50cee57cb152f850e"
+    },
+    {
+      "asset": "PlantB",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4120945d2d2e3d7686f0f9ec4afd90798ebdc66545fd5274928fca81fe89933d"
+    }
+  ]
+}

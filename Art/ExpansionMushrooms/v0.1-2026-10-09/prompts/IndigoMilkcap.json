@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the FIRST image, the approved More Mushrooms Button PlantA sprite, into a single mature IndigoMilkcap mushroom (Lactarius indigo) growth unit. The SECOND image is a real species photograph used for anatomy only, never copy photographic pixels or its habitat. Anatomy: One natural indigo to muted slate-blue broad cap, centrally depressed with gently curled in rim and two or three broad concentric darker blue zones, on a short stout blue stem. Show a few simple close blue gill lines below the rim. Real natural blue fungus, no cyan glow, stars, fantasy effects, white amanita warts or volva. Match the approved RimWorld mod sprite style: thick warm dark-brown outlines, only two or three broad flat color planes, simple clean shapes, no photorealistic surface texture, slightly top-down three-quarter view. This is ONE compact repeatable mature growth unit, not a field or several stages; the game repeats these units. Center the subject with generous clear padding in a square canvas. No ground, soil, grass, roots, log, trunk, box, text, labels, cast ground shadow, gradients or extra objects. Real transparent alpha background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\IndigoMilkcap-Lactarius-indigo.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-8b61d863-36f9-4b07-8475-864cd91806eb.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit the FIRST image, the approved IndigoMilkcap PlantA sprite, into PlantB, an alternate fully mature Lactarius indigo unit. SECOND image is real anatomy only. Preserve the natural muted indigo/slate-blue palette, thick warm dark-brown contours, broad concentric cap zones, depressed center, short stout blue stem and simple blue gills. Make the mature cap a little more asymmetrical, with a curled dip on the right rim, the center depression shifted slightly left, a gentle stem bend and a different tilt that reveals more left underside gills. A and B must show the same maturity with clearly different silhouette, not a young stage or scaled duplicate. Keep simple broad flat color planes and the approved three-quarter camera. One compact unit. No soil, ground, log, roots, box, text, labels, gradients, glow, fantasy effects, scenery or cast ground shadow. Square canvas with padding and genuine transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\IndigoMilkcap-Lactarius-indigo.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-d3c04b52-8dd9-41cc-9ffb-7e0b9847534e.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference, approved More Mushrooms 01Low ochre storage tray, into harvested INDIGO MILKCAPS (Lactarius indigo). SECOND reference is the approved new PlantA sprite for style and identity. Preserve the FIRST image's exact box silhouette, front panel, right end notch/block, rim thickness, ochre/brown palette, dark interior and three-quarter camera. Contents: small muted natural slate/indigo-blue depressed caps with two broad concentric darker zones, short stout blue stems, simple blue gills where visible, lying at varied natural angles. They must retain milkcap form and not become glossy blue buttons or fantasy glowing objects. Fill: LOW: only three small whole blue milkcaps lying loose at floor level, about one fifth full. Most dark interior is empty and rear rim fully visible. Keep warm dark-brown contours and only broad simple flat planes. Change contents only. No slats, nails, grain, handles, labels, symbols, text, background, ground, cast ground shadow, glow or gradients. Square canvas with padding and genuine transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-e65802ae-eb5a-460e-bb27-21495ac2528a.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference, approved More Mushrooms 02Medium ochre storage tray, into harvested INDIGO MILKCAPS (Lactarius indigo). SECOND reference is the approved new PlantA sprite for style and identity. Preserve the FIRST image's exact box silhouette, front panel, right end notch/block, rim thickness, ochre/brown palette, dark interior and three-quarter camera. Contents: small muted natural slate/indigo-blue depressed caps with two broad concentric darker zones, short stout blue stems, simple blue gills where visible, lying at varied natural angles. They must retain milkcap form and not become glossy blue buttons or fantasy glowing objects. Fill: MEDIUM: about half full with seven smaller harvested blue milkcaps, visibly denser and higher than Low but entirely beneath rear rim, with some dark interior visible. Keep warm dark-brown contours and only broad simple flat planes. Change contents only. No slats, nails, grain, handles, labels, symbols, text, background, ground, cast ground shadow, glow or gradients. Square canvas with padding and genuine transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-a9ac2a72-7cd4-441a-827d-2eb56286cad4.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference, approved More Mushrooms 03Full ochre storage tray, into harvested INDIGO MILKCAPS (Lactarius indigo). SECOND reference is the approved new PlantA sprite for style and identity. Preserve the FIRST image's exact box silhouette, front panel, right end notch/block, rim thickness, ochre/brown palette, dark interior and three-quarter camera. Contents: small muted natural slate/indigo-blue depressed caps with two broad concentric darker zones, short stout blue stems, simple blue gills where visible, lying at varied natural angles. They must retain milkcap form and not become glossy blue buttons or fantasy glowing objects. Fill: FULL: twelve or more small overlapping blue milkcaps form a dense pile that reaches and rises slightly above the rear rim, much taller and fuller than Medium. Keep warm dark-brown contours and only broad simple flat planes. Change contents only. No slats, nails, grain, handles, labels, symbols, text, background, ground, cast ground shadow, glow or gradients. Square canvas with padding and genuine transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-66619217-4851-48f6-bbca-8585a008ff37.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\IndigoMilkcap\\03Full.png"
+  }
+]

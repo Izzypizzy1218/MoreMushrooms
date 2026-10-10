@@ -1,0 +1,13 @@
+{
+  "asset": "01Low",
+  "prompt": "Edit ONLY contents of FIRST reference 01Low produce tray into harvested Reishi. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. ONE mature East Asian Reishi (Ganoderma sichuanense, synonym G. lingzhi): a broad kidney/fan-shaped lacquer-red / deep reddish chestnut cap with a thin golden-yellow outer growing edge, pale ochre pore underside (NO radial gills), and one clearly visible short-to-medium DARK BROWN curved LATERAL stalk. Keep a very readable kidney-shaped cap with an indentation by the side attachment, not a symmetrical button cap. In the scientific figure use ONLY macroscopic panels A/B at the TOP, not microscopic panels, slices, text or scale bars. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). LOW: three modest-size harvested pieces resting on the bottom, most interior dark and empty, back rim clearly visible. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Reishi/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Reishi-Ganoderma-sichuanense-MycoKeys2017-1-Im0.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-4449fafd-e57b-4673-a534-068948f7575c.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Reishi/01Low.png"
+}

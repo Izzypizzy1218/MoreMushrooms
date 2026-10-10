@@ -1,0 +1,13 @@
+{
+  "asset": "03Full",
+  "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested Lobster mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature lobster mushroom infected by Hypomyces lactifluorum: strong orange-red/lobster-orange irregular folded depressed cap, uneven wavy margin, broad wrinkled rim and squat thick orange stalk. The parasitic coating hides the usual gills; cap must look lopsided and distorted, not a perfect orange button mushroom, not an actual lobster animal. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Lobster-Hypomyces-lactifluorum.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-bc2d7668-9a15-48fd-97d7-7eab5d199a08.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/03Full.png"
+}

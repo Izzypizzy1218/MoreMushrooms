@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit/replace the FIRST reference mushroom sprite's species into the following mushroom, keeping the exact established More Mushrooms game sprite style. Subsequent reference images are real species photos for morphology only. A compact mature unit of TurkeyTail Trametes versicolor made of TWO overlapping thin semicircular FAN-SHAPED woody brackets with scalloped cream-white edges and three or four broad concentric zones of muted blue-gray, gray-brown and cream. Very short side attachments, NO long central stems, NO radial gills, NO log or bark prop. Differentiate concentric cap color bands clearly at small game size. Match thick warm dark-brown outlines, TWO OR THREE simple flat shaded color planes, modest elevated three-quarter view and a clean silhouette. No realistic texture, gradients, photoreal shine, soil, ground shadow, grass, root patches, tree trunks, logs, box, labels or surrounding scene. One alternate MATURE PlantA fruiting unit, not a juvenile stage. Full subject centered within a square canvas; fully transparent background with real alpha.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Plant/RimMushrooms/Oyster/OysterA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/TurkeyTail-Trametes-versicolor.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-f08e0e34-92cc-411a-822b-d2d1760d031f.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit approved FIRST reference TurkeyTail PlantA into a clearly different alternate MATURE PlantB of the SAME species and palette. THREE compact mature overlapping fan brackets in a different asymmetrical arrangement, pale scalloped outer edges, the SAME broad muted blue-gray/brown/cream concentric color zones; no tall stems. It is NOT early growth, NOT a mirror-only copy. A compact mature unit of TurkeyTail Trametes versicolor made of TWO overlapping thin semicircular FAN-SHAPED woody brackets with scalloped cream-white edges and three or four broad concentric zones of muted blue-gray, gray-brown and cream. Very short side attachments, NO long central stems, NO radial gills, NO log or bark prop. Differentiate concentric cap color bands clearly at small game size. No box. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/TurkeyTail-Trametes-versicolor.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-48b9eb8e-0966-4ed7-8a3e-03725c912f7c.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY contents of FIRST reference 01Low produce tray into harvested TurkeyTail. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. A compact mature unit of TurkeyTail Trametes versicolor made of TWO overlapping thin semicircular FAN-SHAPED woody brackets with scalloped cream-white edges and three or four broad concentric zones of muted blue-gray, gray-brown and cream. Very short side attachments, NO long central stems, NO radial gills, NO log or bark prop. Differentiate concentric cap color bands clearly at small game size. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). LOW: three modest-size harvested pieces resting on the bottom, most interior dark and empty, back rim clearly visible. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/TurkeyTail-Trametes-versicolor.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-2436c150-edf7-4f03-ae96-b37252e9de64.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY contents of FIRST reference 02Medium produce tray into harvested TurkeyTail. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. A compact mature unit of TurkeyTail Trametes versicolor made of TWO overlapping thin semicircular FAN-SHAPED woody brackets with scalloped cream-white edges and three or four broad concentric zones of muted blue-gray, gray-brown and cream. Very short side attachments, NO long central stems, NO radial gills, NO log or bark prop. Differentiate concentric cap color bands clearly at small game size. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). MEDIUM: six to seven modest-size pieces filling about half the tray below its rim, visibly more than Low, rear rim and dark interior gaps still visible. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/TurkeyTail-Trametes-versicolor.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-a2bcd25d-a8c5-406c-94ee-683f6d4d1985.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY contents of FIRST reference 03Full produce tray into harvested TurkeyTail. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. A compact mature unit of TurkeyTail Trametes versicolor made of TWO overlapping thin semicircular FAN-SHAPED woody brackets with scalloped cream-white edges and three or four broad concentric zones of muted blue-gray, gray-brown and cream. Very short side attachments, NO long central stems, NO radial gills, NO log or bark prop. Differentiate concentric cap color bands clearly at small game size. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). FULL: twelve to fourteen modest-size pieces in a dense shallow heap slightly above rim, visibly more than Medium, avoid a tall overflow, front panel stays clear. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/TurkeyTail-Trametes-versicolor.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-4fdd54b0-56f6-4a53-ac02-21bb2a774a64.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/03Full.png"
+  }
+]

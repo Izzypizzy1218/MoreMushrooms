@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the first reference image, an existing More Mushrooms growing FlyAgaric unit sprite, into a matching PAN THER CAP mushroom (Amanita pantherina), PlantA mature growth unit. The second reference is a real species photo for morphology only. Preserve the exact simple RimWorld sprite style: thick warm dark-brown outlines, two or three flat color planes, a slightly top-down three-quarter view, no photoreal texture or gradients. One compact mature mushroom only. Replace the red cap with a medium earthy chestnut-brown broadly domed umbrella cap carrying a few clearly separated ivory white wart patches; retain the short visible ivory stem and small ivory ring. The illustration must clearly read brown-capped panther mushroom, not red fly agaric or smooth death cap. No ground, grass, soil, roots, log, box, labels, skulls, icons, surrounding habitat or cast ground shadow. This is one alternate mature growth unit, not an early growth stage. Centered single subject filling most of a square canvas, fully transparent background with real alpha.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Plant/RimMushrooms/FlyAgaric/FlyAgaricA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-PantherCap.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-0b240ab4-6a8e-481e-8cc2-8434509e2c90.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit the first reference PantherCap PlantA sprite into PlantB: a visibly different alternate MATURE unit of the SAME species and art style. Make the brown domed cap a little flatter and narrower, tilted slightly left, with its own arrangement of 6–8 ivory wart patches and short pale stalk/ring. Not an early growth stage, not a recolored duplicate, not a group of tiny juveniles. Keep comparable visual size and same thick outline. No box. Match the existing More Mushrooms simplified RimWorld game sprite: thick warm dark-brown contour, two or three FLAT shaded color planes, slight elevated three-quarter camera, no gradients or realistic texture. Amanita pantherina has a chestnut-brown cap with separate ivory wart patches and ivory stalk/ring; never red cap. No text, poison symbol, skull, scenic ground, extra objects, or ground shadow. Real transparent alpha background; one isolated centered sprite, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-PantherCap.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-dd93ab97-1005-448d-bb69-4055f435ed38.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit the FIRST image, the existing 01Low mushroom tray sprite: preserve its ochre solid-sided tray shape, front panel, dark interior, right-side notch and raised end block, camera and linework exactly. The second image supplies the new PantherCap sprite and the third its real morphology. Replace ALL white button mushrooms inside the tray with harvested brown Amanita pantherina mushrooms in the same simple sprite style. LOW quantity: only three loose modest-sized harvested mushrooms, lying inside the bottom; most of the dark tray interior visibly empty and rear rim fully visible. Keep a mix of readable brown caps with ivory spots and pale stems; mushroom fill changes, tray design does not. No extra wooden slats, wood grain, handles, nails or decorations. Match the existing More Mushrooms simplified RimWorld game sprite: thick warm dark-brown contour, two or three FLAT shaded color planes, slight elevated three-quarter camera, no gradients or realistic texture. Amanita pantherina has a chestnut-brown cap with separate ivory wart patches and ivory stalk/ring; never red cap. No text, poison symbol, skull, scenic ground, extra objects, or ground shadow. Real transparent alpha background; one isolated centered sprite, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-PantherCap.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-3b0bd054-fbf0-4955-9247-8ff99e28b4c8.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit the FIRST image, the existing 02Medium mushroom tray sprite: preserve its ochre solid-sided tray shape, front panel, dark interior, right-side notch and raised end block, camera and linework exactly. The second image supplies the new PantherCap sprite and the third its real morphology. Replace ALL white button mushrooms inside the tray with harvested brown Amanita pantherina mushrooms in the same simple sprite style. MEDIUM quantity: about seven harvested mushrooms, half-filled below the rim, more contents than Low but still clear rear rim and visible dark interior pockets. Keep a mix of readable brown caps with ivory spots and pale stems; mushroom fill changes, tray design does not. No extra wooden slats, wood grain, handles, nails or decorations. Match the existing More Mushrooms simplified RimWorld game sprite: thick warm dark-brown contour, two or three FLAT shaded color planes, slight elevated three-quarter camera, no gradients or realistic texture. Amanita pantherina has a chestnut-brown cap with separate ivory wart patches and ivory stalk/ring; never red cap. No text, poison symbol, skull, scenic ground, extra objects, or ground shadow. Real transparent alpha background; one isolated centered sprite, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-PantherCap.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-f596f7e0-2311-43f2-bda7-bbf0f3f9b792.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit the FIRST image, the existing 03Full mushroom tray sprite: preserve its ochre solid-sided tray shape, front panel, dark interior, right-side notch and raised end block, camera and linework exactly. The second image supplies the new PantherCap sprite and the third its real morphology. Replace ALL white button mushrooms inside the tray with harvested brown Amanita pantherina mushrooms in the same simple sprite style. FULL quantity: about thirteen harvested mushrooms in a dense shallow mound rising a little above the rim, more contents than Medium, with the front tray panel still clear. Keep a mix of readable brown caps with ivory spots and pale stems; mushroom fill changes, tray design does not. No extra wooden slats, wood grain, handles, nails or decorations. Match the existing More Mushrooms simplified RimWorld game sprite: thick warm dark-brown contour, two or three FLAT shaded color planes, slight elevated three-quarter camera, no gradients or realistic texture. Amanita pantherina has a chestnut-brown cap with separate ivory wart patches and ivory stalk/ring; never red cap. No text, poison symbol, skull, scenic ground, extra objects, or ground shadow. Real transparent alpha background; one isolated centered sprite, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-PantherCap.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-86c8d7b5-e9cd-4e82-ac38-0d43c9c40440.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/PantherCap/03Full.png"
+  }
+]

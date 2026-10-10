@@ -1,0 +1,13 @@
+{
+  "asset": "03Full",
+  "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested Chaga mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-a9ed3e83-deb9-4cc8-899c-b23827e113f0.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/03Full.png"
+}

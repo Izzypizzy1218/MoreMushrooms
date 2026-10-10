@@ -1,0 +1,78 @@
+{
+  "id": "BirdsNest",
+  "review_status": "PASS with documented morphology simplification",
+  "visual_inspection": "All five original generated images viewed; not in-game captures",
+  "morphology": "Cyathus striatus brown shaggy inverted-conical cups with clearly vertical fluted gray-brown inner walls and 3–4 pale-gray flat peridioles. A3 compact upright cups vs B2 wider tilted cups, both mature. Exterior hairs reduced to jagged edge/flat marks, no conventional mushroom caps.",
+  "style": "Warm dark-brown outline, flat-color anatomy, existing ochre storage tray perspective/notch/front preserved",
+  "real_alpha": "PASS: all original masters RGBA with alpha extrema [0,255]",
+  "mature_variants": "PASS: A/B are alternate mature silhouettes, visibly different arrangement, not growth stages",
+  "quantity_gap": "Low3 well separated below rim, Medium6 loosely overlapping around rim with rear wall visible, Full9 broad visible cups stacked above rim (cup overlap/scale reduces literal12 count but clear fill difference).",
+  "regeneration_cautions": "Preserve inner vertical grooves to distinguish fluted Cyathus striatus from smooth Crucibulum; peridioles are flattened fungal structures, not bird eggs. No bird/twig nest or host soil/leaf scene.",
+  "assets": [
+    {
+      "asset": "01Low",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "a941332b9d7001c67ed1ccecddb82f46fc8ab2a74001526598f8e90dc046de79"
+    },
+    {
+      "asset": "02Medium",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b4d9ad5424154a92e722ef38140a504ee315699a6ee38d13a8c1718a89d5aa26"
+    },
+    {
+      "asset": "03Full",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "10731f1409d1b2c2f977ebe0ba3d3c7b621fdebd4b169c47e28aeac214d40ea5"
+    },
+    {
+      "asset": "PlantA",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "c97607956736e3cd75bc87560f5fd15827ff76c6560fea9b83b3fcfbd0d4f6f6"
+    },
+    {
+      "asset": "PlantB",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "79c2ca70a0eebcaef041f274ec2448e1c7ec8e3df35f5082410f560c51ff926c"
+    }
+  ]
+}

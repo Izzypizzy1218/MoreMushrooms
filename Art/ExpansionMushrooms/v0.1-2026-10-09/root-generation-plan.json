@@ -1,0 +1,200 @@
+{
+  "status": "planned prompts; actual final tool calls are recorded separately in prompts/",
+  "jobs": [
+    {
+      "id": "VeiledStinkhorn",
+      "asset": "PlantB",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/VeiledStinkhorn/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/VeiledStinkhorn-Phallus-indusiatus.jpg"
+      ],
+      "prompt": "Edit the first reference, approved VeiledStinkhorn PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. A slightly wider hanging white lace skirt, tilted olive cone, and taller visible ivory stalk. Keep large clear net holes. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. One mature veiled stinkhorn Phallus indusiatus: upright ivory spongy stalk, small olive-tan conical pitted tip, and a distinctive broad bell-shaped hanging WHITE NET LACE SKIRT with several large diamond-shaped transparent holes. The lace skirt hangs from just beneath the tip and ends above the small ivory basal egg. The subject is the white-net species, not yellow net; no conventional wide umbrella cap. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "VeiledStinkhorn",
+      "asset": "01Low",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/VeiledStinkhorn/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/VeiledStinkhorn-Phallus-indusiatus.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 01Low produce tray into harvested VeiledStinkhorn mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature veiled stinkhorn Phallus indusiatus: upright ivory spongy stalk, small olive-tan conical pitted tip, and a distinctive broad bell-shaped hanging WHITE NET LACE SKIRT with several large diamond-shaped transparent holes. The lace skirt hangs from just beneath the tip and ends above the small ivory basal egg. The subject is the white-net species, not yellow net; no conventional wide umbrella cap. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. LOW fill: only three loose modest-size harvested pieces in the bottom, tray interior mostly visibly empty, back rim fully exposed. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "VeiledStinkhorn",
+      "asset": "02Medium",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/VeiledStinkhorn/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/VeiledStinkhorn-Phallus-indusiatus.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 02Medium produce tray into harvested VeiledStinkhorn mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature veiled stinkhorn Phallus indusiatus: upright ivory spongy stalk, small olive-tan conical pitted tip, and a distinctive broad bell-shaped hanging WHITE NET LACE SKIRT with several large diamond-shaped transparent holes. The lace skirt hangs from just beneath the tip and ends above the small ivory basal egg. The subject is the white-net species, not yellow net; no conventional wide umbrella cap. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. MEDIUM fill: six to seven harvested pieces fill about half the tray below its rim; visibly more than Low but clear back rim and empty interior gaps remain. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "VeiledStinkhorn",
+      "asset": "03Full",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/VeiledStinkhorn/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/VeiledStinkhorn-Phallus-indusiatus.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested VeiledStinkhorn mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature veiled stinkhorn Phallus indusiatus: upright ivory spongy stalk, small olive-tan conical pitted tip, and a distinctive broad bell-shaped hanging WHITE NET LACE SKIRT with several large diamond-shaped transparent holes. The lace skirt hangs from just beneath the tip and ends above the small ivory basal egg. The subject is the white-net species, not yellow net; no conventional wide umbrella cap. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "ShaggyInkcap",
+      "asset": "PlantB",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/ShaggyInkcap-Coprinus-comatus.jpeg"
+      ],
+      "prompt": "Edit the first reference, approved ShaggyInkcap PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. A slightly broader white shaggy bell cap tilted right, different placement of tan tip and shaggy scales, thin black lower edge. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. One mature shaggy inkcap Coprinus comatus: tall ivory ovoid/cylindrical bell cap enclosing much of the thin white stalk, tan patch at the tip, four or five simple large white shaggy scales, and a thin charcoal-black ink-darkening band along the lower hanging cap edge. A mature compact icon with small visible stalk, no dripping liquid scene, no wide red toadstool cap. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "ShaggyInkcap",
+      "asset": "01Low",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/ShaggyInkcap-Coprinus-comatus.jpeg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 01Low produce tray into harvested ShaggyInkcap mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature shaggy inkcap Coprinus comatus: tall ivory ovoid/cylindrical bell cap enclosing much of the thin white stalk, tan patch at the tip, four or five simple large white shaggy scales, and a thin charcoal-black ink-darkening band along the lower hanging cap edge. A mature compact icon with small visible stalk, no dripping liquid scene, no wide red toadstool cap. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. LOW fill: only three loose modest-size harvested pieces in the bottom, tray interior mostly visibly empty, back rim fully exposed. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "ShaggyInkcap",
+      "asset": "02Medium",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/ShaggyInkcap-Coprinus-comatus.jpeg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 02Medium produce tray into harvested ShaggyInkcap mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature shaggy inkcap Coprinus comatus: tall ivory ovoid/cylindrical bell cap enclosing much of the thin white stalk, tan patch at the tip, four or five simple large white shaggy scales, and a thin charcoal-black ink-darkening band along the lower hanging cap edge. A mature compact icon with small visible stalk, no dripping liquid scene, no wide red toadstool cap. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. MEDIUM fill: six to seven harvested pieces fill about half the tray below its rim; visibly more than Low but clear back rim and empty interior gaps remain. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "ShaggyInkcap",
+      "asset": "03Full",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/ShaggyInkcap-Coprinus-comatus.jpeg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested ShaggyInkcap mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature shaggy inkcap Coprinus comatus: tall ivory ovoid/cylindrical bell cap enclosing much of the thin white stalk, tan patch at the tip, four or five simple large white shaggy scales, and a thin charcoal-black ink-darkening band along the lower hanging cap edge. A mature compact icon with small visible stalk, no dripping liquid scene, no wide red toadstool cap. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Lobster",
+      "asset": "PlantB",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Lobster-Hypomyces-lactifluorum.jpg"
+      ],
+      "prompt": "Edit the first reference, approved Lobster PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. A broader lopsided orange folded cap with a more clearly indented center and a different uneven waved rim, short thick orange stalk. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. One mature lobster mushroom infected by Hypomyces lactifluorum: strong orange-red/lobster-orange irregular folded depressed cap, uneven wavy margin, broad wrinkled rim and squat thick orange stalk. The parasitic coating hides the usual gills; cap must look lopsided and distorted, not a perfect orange button mushroom, not an actual lobster animal. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Lobster",
+      "asset": "01Low",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Lobster-Hypomyces-lactifluorum.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 01Low produce tray into harvested Lobster mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature lobster mushroom infected by Hypomyces lactifluorum: strong orange-red/lobster-orange irregular folded depressed cap, uneven wavy margin, broad wrinkled rim and squat thick orange stalk. The parasitic coating hides the usual gills; cap must look lopsided and distorted, not a perfect orange button mushroom, not an actual lobster animal. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. LOW fill: only three loose modest-size harvested pieces in the bottom, tray interior mostly visibly empty, back rim fully exposed. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Lobster",
+      "asset": "02Medium",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Lobster-Hypomyces-lactifluorum.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 02Medium produce tray into harvested Lobster mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature lobster mushroom infected by Hypomyces lactifluorum: strong orange-red/lobster-orange irregular folded depressed cap, uneven wavy margin, broad wrinkled rim and squat thick orange stalk. The parasitic coating hides the usual gills; cap must look lopsided and distorted, not a perfect orange button mushroom, not an actual lobster animal. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. MEDIUM fill: six to seven harvested pieces fill about half the tray below its rim; visibly more than Low but clear back rim and empty interior gaps remain. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Lobster",
+      "asset": "03Full",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Lobster-Hypomyces-lactifluorum.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested Lobster mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature lobster mushroom infected by Hypomyces lactifluorum: strong orange-red/lobster-orange irregular folded depressed cap, uneven wavy margin, broad wrinkled rim and squat thick orange stalk. The parasitic coating hides the usual gills; cap must look lopsided and distorted, not a perfect orange button mushroom, not an actual lobster animal. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Cordyceps",
+      "asset": "PlantB",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+      ],
+      "prompt": "Edit the first reference, approved Cordyceps PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. Exactly TWO orange mature slender clubs with thicker rounded tips, one gently leaning left, joined at tiny base, comparable overall size. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Cordyceps",
+      "asset": "01Low",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 01Low produce tray into harvested Cordyceps mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. LOW fill: only three loose modest-size harvested pieces in the bottom, tray interior mostly visibly empty, back rim fully exposed. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Cordyceps",
+      "asset": "02Medium",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 02Medium produce tray into harvested Cordyceps mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. MEDIUM fill: six to seven harvested pieces fill about half the tray below its rim; visibly more than Low but clear back rim and empty interior gaps remain. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Cordyceps",
+      "asset": "03Full",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested Cordyceps mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Chaga",
+      "asset": "PlantB",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+      ],
+      "prompt": "Edit the first reference, approved Chaga PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. A visibly different wider irregular charcoal-black lobed conk, chunkier jagged outline and its own four big cracked facets with narrow rusty-orange fissures. No stem. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Chaga",
+      "asset": "01Low",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 01Low produce tray into harvested Chaga mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. LOW fill: only three loose modest-size harvested pieces in the bottom, tray interior mostly visibly empty, back rim fully exposed. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Chaga",
+      "asset": "02Medium",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 02Medium produce tray into harvested Chaga mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. MEDIUM fill: six to seven harvested pieces fill about half the tray below its rim; visibly more than Low but clear back rim and empty interior gaps remain. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    },
+    {
+      "id": "Chaga",
+      "asset": "03Full",
+      "refs": [
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+        "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+      ],
+      "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested Chaga mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet."
+    }
+  ]
+}

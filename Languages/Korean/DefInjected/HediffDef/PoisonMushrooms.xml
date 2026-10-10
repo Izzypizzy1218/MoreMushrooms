@@ -6,21 +6,21 @@
   <RMush_PoisonFlyAgaric.stages.3.label>심한 신경계 중독</RMush_PoisonFlyAgaric.stages.3.label>
   <RMush_PoisonFlyAgaric.stages.4.label>깊은 의식 저하</RMush_PoisonFlyAgaric.stages.4.label>
   <RMush_PoisonFlyAgaric.label>광대버섯 중독</RMush_PoisonFlyAgaric.label>
-  <RMush_PoisonFlyAgaric.description>혼란과 졸림, 의식 저하가 나타나며 심한 중독은 행동을 크게 제한합니다. 발병 뒤 서서히 회복하며, 일반적인 치료는 회복을 도울 수 있습니다.</RMush_PoisonFlyAgaric.description>
+  <RMush_PoisonFlyAgaric.description>혼란과 졸림, 의식 저하가 나타납니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. 보통 노출은 서서히 회복하지만 고노출·반복 섭취는 치명적 경과로 진행할 수 있습니다.</RMush_PoisonFlyAgaric.description>
   <RMush_PoisonDestroyingAngel.stages.0.label>무증상</RMush_PoisonDestroyingAngel.stages.0.label>
   <RMush_PoisonDestroyingAngel.stages.1.label>초기 위장 증상</RMush_PoisonDestroyingAngel.stages.1.label>
   <RMush_PoisonDestroyingAngel.stages.2.label>위장 증상 완화 · 간 손상 진행</RMush_PoisonDestroyingAngel.stages.2.label>
   <RMush_PoisonDestroyingAngel.stages.3.label>심한 간 손상</RMush_PoisonDestroyingAngel.stages.3.label>
   <RMush_PoisonDestroyingAngel.stages.4.label>위중한 간 중독</RMush_PoisonDestroyingAngel.stages.4.label>
   <RMush_PoisonDestroyingAngel.label>독우산광대버섯 중독</RMush_PoisonDestroyingAngel.label>
-  <RMush_PoisonDestroyingAngel.description>잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 1회 섭취로 인한 이 중독 자체는 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환, 부상과 추가 섭취까지 포함한 생존 보장은 아닙니다.</RMush_PoisonDestroyingAngel.description>
+  <RMush_PoisonDestroyingAngel.description>잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다.</RMush_PoisonDestroyingAngel.description>
   <RMush_PoisonSulfurTuft.stages.0.label>무증상</RMush_PoisonSulfurTuft.stages.0.label>
   <RMush_PoisonSulfurTuft.stages.1.label>복통</RMush_PoisonSulfurTuft.stages.1.label>
   <RMush_PoisonSulfurTuft.stages.2.label>위장염과 쇠약</RMush_PoisonSulfurTuft.stages.2.label>
   <RMush_PoisonSulfurTuft.stages.3.label>심한 위장염</RMush_PoisonSulfurTuft.stages.3.label>
   <RMush_PoisonSulfurTuft.stages.4.label>극심한 쇠약</RMush_PoisonSulfurTuft.stages.4.label>
   <RMush_PoisonSulfurTuft.label>노란다발버섯 중독</RMush_PoisonSulfurTuft.label>
-  <RMush_PoisonSulfurTuft.description>심한 위장염과 구토, 통증, 쇠약이 이어집니다. 중증일수록 치료가 필요하고 회복에 더 오래 걸립니다. 발병 뒤 서서히 회복하며, 일반적인 치료는 회복을 도울 수 있습니다.</RMush_PoisonSulfurTuft.description>
+  <RMush_PoisonSulfurTuft.description>위장염과 구토, 통증, 쇠약이 이어집니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. 보통 노출은 서서히 회복하지만 고노출·반복 섭취는 치명적 경과로 진행할 수 있습니다.</RMush_PoisonSulfurTuft.description>
   <RMush_PoisonTsukiyotake.stages.0.label>무증상</RMush_PoisonTsukiyotake.stages.0.label>
   <RMush_PoisonTsukiyotake.stages.1.label>급성 구역질</RMush_PoisonTsukiyotake.stages.1.label>
   <RMush_PoisonTsukiyotake.stages.2.label>구토와 장염</RMush_PoisonTsukiyotake.stages.2.label>
@@ -34,5 +34,47 @@
   <RMush_PoisonPoisonFireCoral.stages.3.label>심한 전신 중독</RMush_PoisonPoisonFireCoral.stages.3.label>
   <RMush_PoisonPoisonFireCoral.stages.4.label>위중한 전신 중독</RMush_PoisonPoisonFireCoral.stages.4.label>
   <RMush_PoisonPoisonFireCoral.label>붉은사슴뿔버섯 중독</RMush_PoisonPoisonFireCoral.label>
-  <RMush_PoisonPoisonFireCoral.description>구토와 통증으로 시작해 쇠약, 면역 획득 저하, 의식 저하가 진행하는 전신 중독입니다. 방치하거나 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 1회 섭취로 인한 이 중독 자체는 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환, 부상과 추가 섭취까지 포함한 생존 보장은 아닙니다.</RMush_PoisonPoisonFireCoral.description>
+  <RMush_PoisonPoisonFireCoral.description>구토와 통증으로 시작해 쇠약, 면역 획득 저하, 의식 저하가 진행하는 전신 중독입니다. 방치하거나 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다.</RMush_PoisonPoisonFireCoral.description>
+  <RMush_PoisonDeathCap.stages.0.label>무증상</RMush_PoisonDeathCap.stages.0.label>
+  <RMush_PoisonDeathCap.stages.1.label>초기 위장 증상</RMush_PoisonDeathCap.stages.1.label>
+  <RMush_PoisonDeathCap.stages.2.label>위장 증상 완화 · 간 손상 진행</RMush_PoisonDeathCap.stages.2.label>
+  <RMush_PoisonDeathCap.stages.3.label>심한 간 손상</RMush_PoisonDeathCap.stages.3.label>
+  <RMush_PoisonDeathCap.stages.4.label>위중한 간 중독</RMush_PoisonDeathCap.stages.4.label>
+  <RMush_PoisonDeathCap.label>알광대버섯 중독</RMush_PoisonDeathCap.label>
+  <RMush_PoisonDeathCap.description>잠복 후 위장 증상과 간 손상이 진행합니다. 치료가 부족하면 사망할 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다.</RMush_PoisonDeathCap.description>
+  <RMush_PoisonYellowDapperling.stages.0.label>무증상</RMush_PoisonYellowDapperling.stages.0.label>
+  <RMush_PoisonYellowDapperling.stages.1.label>급성 구역질</RMush_PoisonYellowDapperling.stages.1.label>
+  <RMush_PoisonYellowDapperling.stages.2.label>구토와 장염</RMush_PoisonYellowDapperling.stages.2.label>
+  <RMush_PoisonYellowDapperling.stages.3.label>심한 장염</RMush_PoisonYellowDapperling.stages.3.label>
+  <RMush_PoisonYellowDapperling.stages.4.label>극심한 장염과 쇠약</RMush_PoisonYellowDapperling.stages.4.label>
+  <RMush_PoisonYellowDapperling.label>노란각시버섯 중독</RMush_PoisonYellowDapperling.label>
+  <RMush_PoisonYellowDapperling.description>위장 불편과 구역질, 복통이 잠시 이어집니다. 발병 뒤 서서히 회복하며, 일반적인 치료는 회복을 도울 수 있습니다.</RMush_PoisonYellowDapperling.description>
+  <RMush_PoisonJackOLantern.stages.0.label>무증상</RMush_PoisonJackOLantern.stages.0.label>
+  <RMush_PoisonJackOLantern.stages.1.label>급성 구역질</RMush_PoisonJackOLantern.stages.1.label>
+  <RMush_PoisonJackOLantern.stages.2.label>구토와 장염</RMush_PoisonJackOLantern.stages.2.label>
+  <RMush_PoisonJackOLantern.stages.3.label>심한 장염</RMush_PoisonJackOLantern.stages.3.label>
+  <RMush_PoisonJackOLantern.stages.4.label>극심한 장염과 쇠약</RMush_PoisonJackOLantern.stages.4.label>
+  <RMush_PoisonJackOLantern.label>잭오랜턴버섯 중독</RMush_PoisonJackOLantern.label>
+  <RMush_PoisonJackOLantern.description>강한 구토와 복통 뒤 위장 장애와 쇠약이 남습니다. 발병 뒤 서서히 회복하며, 일반적인 치료는 회복을 도울 수 있습니다.</RMush_PoisonJackOLantern.description>
+  <RMush_PoisonDeadlyWebcap.stages.0.label>무증상</RMush_PoisonDeadlyWebcap.stages.0.label>
+  <RMush_PoisonDeadlyWebcap.stages.1.label>초기 신장 증상</RMush_PoisonDeadlyWebcap.stages.1.label>
+  <RMush_PoisonDeadlyWebcap.stages.2.label>진행성 신장 기능 저하</RMush_PoisonDeadlyWebcap.stages.2.label>
+  <RMush_PoisonDeadlyWebcap.stages.3.label>심한 신장 중독</RMush_PoisonDeadlyWebcap.stages.3.label>
+  <RMush_PoisonDeadlyWebcap.stages.4.label>위중한 신장 기능 저하</RMush_PoisonDeadlyWebcap.stages.4.label>
+  <RMush_PoisonDeadlyWebcap.label>녹슨끈적버섯 중독</RMush_PoisonDeadlyWebcap.label>
+  <RMush_PoisonDeadlyWebcap.description>긴 잠복기 뒤 신장 중독이 진행합니다. 심한 신장 손상을 치료하지 않으면 사망할 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다.</RMush_PoisonDeadlyWebcap.description>
+  <RMush_PoisonPantherCap.stages.0.label>무증상</RMush_PoisonPantherCap.stages.0.label>
+  <RMush_PoisonPantherCap.stages.1.label>혼란과 졸림</RMush_PoisonPantherCap.stages.1.label>
+  <RMush_PoisonPantherCap.stages.2.label>뚜렷한 의식 저하</RMush_PoisonPantherCap.stages.2.label>
+  <RMush_PoisonPantherCap.stages.3.label>심한 신경계 중독</RMush_PoisonPantherCap.stages.3.label>
+  <RMush_PoisonPantherCap.stages.4.label>깊은 의식 저하</RMush_PoisonPantherCap.stages.4.label>
+  <RMush_PoisonPantherCap.label>마귀광대버섯 중독</RMush_PoisonPantherCap.label>
+  <RMush_PoisonPantherCap.description>강한 혼란과 의식 저하가 나타나며 심한 노출은 긴 혼수 상태를 일으킬 수 있습니다. 발병 뒤 서서히 회복하며, 일반적인 치료는 회복을 도울 수 있습니다.</RMush_PoisonPantherCap.description>
+  <RMush_PoisonGhostFungus.stages.0.label>무증상</RMush_PoisonGhostFungus.stages.0.label>
+  <RMush_PoisonGhostFungus.stages.1.label>급성 구역질</RMush_PoisonGhostFungus.stages.1.label>
+  <RMush_PoisonGhostFungus.stages.2.label>구토와 장염</RMush_PoisonGhostFungus.stages.2.label>
+  <RMush_PoisonGhostFungus.stages.3.label>심한 장염</RMush_PoisonGhostFungus.stages.3.label>
+  <RMush_PoisonGhostFungus.stages.4.label>극심한 장염과 쇠약</RMush_PoisonGhostFungus.stages.4.label>
+  <RMush_PoisonGhostFungus.label>발광버섯 중독</RMush_PoisonGhostFungus.label>
+  <RMush_PoisonGhostFungus.description>구토와 복통, 일시적인 위장 쇠약을 일으킵니다. 발병 뒤 서서히 회복하며, 일반적인 치료는 회복을 도울 수 있습니다.</RMush_PoisonGhostFungus.description>
 </LanguageData>

@@ -1,0 +1,30 @@
+{
+  "version": "0.1.1",
+  "date": "2026-10-09",
+  "changed_names": {
+    "Cubensis": "주사위환각버섯",
+    "ZombieAntFungus": "개미동충하초"
+  },
+  "scientific_identities_unchanged": true,
+  "all_186_embedded_image_uris_unchanged": true,
+  "baseline_art_unchanged": true,
+  "baseline_art_files": 572,
+  "existing_runtime_files_unchanged": 108,
+  "gallery_checks": {
+    "species": 31,
+    "growth_stages": 124,
+    "js_errors": [],
+    "widths": [
+      320,
+      360,
+      736
+    ]
+  },
+  "visual_review": {
+    "Cubensis": "passed",
+    "ZombieAntFungus": "passed"
+  },
+  "gallery_sha256": "28936faf356e5cda3ddce1fbf45808f8fa4f9b807f730b726f637330f5f9711b",
+  "preview_sha256": "8218a93be1bc3ba4cd1aef0062cd33c90f41cca5821c291a318d768ff813f3d5",
+  "release_type": "Korean names and preview only; uses unchanged v0.1 art; no runtime installation"
+}

@@ -1,0 +1,13 @@
+{
+  "asset": "03Full",
+  "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested Cordyceps mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-6a18656c-ab68-4390-b9c3-7c8bbc90bfce.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/03Full.png"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SpecialThingFilterDef>
+    <defName>RMush_AllowPsychoactiveMeals</defName>
+    <label>allow meals with psychoactive mushrooms</label>
+    <description>Allow meals containing a recorded dose of a psychoactive mushroom. Disable this to keep these meals out of a food restriction or stockpile.</description>
+    <parentCategory>Foods</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>RMush_AllowPsychoactiveMeals</saveKey>
+    <workerClass>RimMushrooms.SpecialThingFilterWorker_PsychoactiveMushroomMeal</workerClass>
+  </SpecialThingFilterDef>
+</Defs>

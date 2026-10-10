@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RMush_HallucinatoryWander.label>환각성 배회</RMush_HallucinatoryWander.label>
+  <RMush_HallucinatoryWander.beginLetterLabel>버섯 환각</RMush_HallucinatoryWander.beginLetterLabel>
+  <RMush_HallucinatoryWander.beginLetter>{0}이(가) 향정신성 버섯을 먹고 환각에 빠져 주변을 배회하고 있습니다. 환각이 끝날 때까지 일반 명령을 내릴 수 없습니다.</RMush_HallucinatoryWander.beginLetter>
+  <RMush_HallucinatoryWander.recoveryMessage>{0}의 버섯 환각이 가라앉았습니다.</RMush_HallucinatoryWander.recoveryMessage>
+  <RMush_HallucinatoryWander.baseInspectLine>정신 상태: 버섯 환각</RMush_HallucinatoryWander.baseInspectLine>
+</LanguageData>

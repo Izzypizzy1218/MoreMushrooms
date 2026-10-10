@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RMush_HallucinationTime>환각 남은 시간: {0}</RMush_HallucinationTime>
+  <RMush_HallucinationReason>향정신성 버섯 섭취: {0}</RMush_HallucinationReason>
+  <RMush_HallucinationWander>버섯 환각에 빠져 배회 중</RMush_HallucinationWander>
+  <RMush_HallucinationPanic>무서운 버섯 환각에 불안해하는 중</RMush_HallucinationPanic>
+</LanguageData>

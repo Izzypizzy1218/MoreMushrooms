@@ -1,5 +1,5 @@
 {
-  "status": "Game balance for the approved 2026-10-05 poison mushroom handoff. These are fictional gameplay values, not medical guidance.",
+  "status": "v0.5.0 game balance. Fictional exposure units and disease courses; not real medical doses. Existing nonpsychedelic poisons remain excluded from normal cooking.",
   "handoff": "Art/PoisonMushrooms/Handoff-2026-10-05",
   "common": {
     "stackLimit": 75,
@@ -26,18 +26,19 @@
         "TemperateForest": 0.006,
         "BorealForest": 0.005
       },
-      "effectEn": "Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act.",
-      "effectKo": "혼란과 졸림, 의식 저하가 나타나며 심한 중독은 행동을 크게 제한합니다.",
+      "effectEn": "Confusion, drowsiness and impaired consciousness. High or repeated exposure can become life-threatening without sufficient care.",
+      "effectKo": "혼란과 졸림, 의식 저하가 나타납니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다.",
       "settings": {
         "latencyHoursMin": 1,
         "latencyHoursMax": 1,
         "recoveryDaysMin": 0.5,
         "recoveryDaysMax": 1,
-        "untreatedSeverityPerDay": 0.1,
+        "untreatedSeverityPerDay": 0.25,
         "maximumSeverity": 1,
         "fatal": false,
         "peakSeverity": 0.48,
-        "vomitMtbHours": 0
+        "vomitMtbHours": 0,
+        "conditionalFatalThreshold": 3
       },
       "stages": [
         {
@@ -170,18 +171,19 @@
         "TemperateSwamp": 0.006,
         "BorealForest": 0.003
       },
-      "effectEn": "Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover.",
-      "effectKo": "심한 위장염과 구토, 통증, 쇠약이 이어집니다. 중증일수록 치료가 필요하고 회복에 더 오래 걸립니다.",
+      "effectEn": "Persistent gastroenteritis, vomiting, pain and weakness. High or repeated exposure can become life-threatening without sufficient care.",
+      "effectKo": "위장염과 구토, 통증, 쇠약이 이어집니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다.",
       "settings": {
         "latencyHoursMin": 3,
         "latencyHoursMax": 3,
         "recoveryDaysMin": 2,
         "recoveryDaysMax": 3,
-        "untreatedSeverityPerDay": 0.1,
+        "untreatedSeverityPerDay": 0.22,
         "maximumSeverity": 1,
         "fatal": false,
         "peakSeverity": 0.65,
-        "vomitMtbHours": 10
+        "vomitMtbHours": 10,
+        "conditionalFatalThreshold": 3
       },
       "stages": [
         {
@@ -380,6 +382,396 @@
           "capacities": {
             "Consciousness": -0.55,
             "Moving": -0.45
+          }
+        }
+      ]
+    }
+  ],
+  "additionalPoisons": [
+    {
+      "id": "DeathCap",
+      "en": "death cap",
+      "ko": "알광대버섯",
+      "effectEn": "Delayed gastrointestinal symptoms and progressive liver injury. Untreated poisoning can be fatal.",
+      "effectKo": "잠복 후 위장 증상과 간 손상이 진행합니다. 치료가 부족하면 사망할 수 있습니다.",
+      "settings": {
+        "latencyHoursMin": 8,
+        "latencyHoursMax": 12,
+        "recoveryDaysMin": 3,
+        "recoveryDaysMax": 5,
+        "untreatedSeverityPerDay": 0.24,
+        "maximumSeverity": 1,
+        "fatal": true,
+        "peakSeverity": 0.6,
+        "vomitMtbHours": 8
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "gastrointestinal symptoms",
+          "ko": "초기 위장 증상",
+          "painOffset": 0.08,
+          "capacities": {
+            "Consciousness": -0.08,
+            "Moving": -0.1
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "quieter symptoms; liver injury continues",
+          "ko": "위장 증상 완화 · 간 손상 진행",
+          "painOffset": 0.05,
+          "capacities": {
+            "Consciousness": -0.1,
+            "Moving": -0.1,
+            "BloodFiltration": -0.2
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe liver injury",
+          "ko": "심한 간 손상",
+          "painOffset": 0.12,
+          "capacities": {
+            "Consciousness": -0.3,
+            "Moving": -0.25,
+            "BloodFiltration": -0.35
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "critical liver poisoning",
+          "ko": "위중한 간 중독",
+          "painOffset": 0.25,
+          "capacities": {
+            "Consciousness": -0.55,
+            "Moving": -0.45,
+            "BloodFiltration": -0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "YellowDapperling",
+      "en": "yellow dapperling",
+      "ko": "노란각시버섯",
+      "effectEn": "Short-lived gastrointestinal upset, nausea and abdominal pain.",
+      "effectKo": "위장 불편과 구역질, 복통이 잠시 이어집니다.",
+      "settings": {
+        "latencyHoursMin": 1,
+        "latencyHoursMax": 2,
+        "recoveryDaysMin": 0.5,
+        "recoveryDaysMax": 1,
+        "untreatedSeverityPerDay": 0.1,
+        "maximumSeverity": 1,
+        "fatal": false,
+        "peakSeverity": 0.4,
+        "vomitMtbHours": 8
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "acute nausea",
+          "ko": "급성 구역질",
+          "painOffset": 0.1,
+          "capacities": {
+            "Moving": -0.1,
+            "Manipulation": -0.05
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "vomiting and enteritis",
+          "ko": "구토와 장염",
+          "painOffset": 0.2,
+          "capacities": {
+            "Moving": -0.2,
+            "Manipulation": -0.1
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe enteritis",
+          "ko": "심한 장염",
+          "painOffset": 0.28,
+          "capacities": {
+            "Moving": -0.4,
+            "Manipulation": -0.25
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "severe enteritis and weakness",
+          "ko": "극심한 장염과 쇠약",
+          "painOffset": 0.35,
+          "capacities": {
+            "Moving": -0.5,
+            "Manipulation": -0.35
+          }
+        }
+      ]
+    },
+    {
+      "id": "JackOLantern",
+      "en": "jack-o'-lantern mushroom",
+      "ko": "잭오랜턴버섯",
+      "effectEn": "Strong vomiting, abdominal pain and lingering gastrointestinal weakness.",
+      "effectKo": "강한 구토와 복통 뒤 위장 장애와 쇠약이 남습니다.",
+      "settings": {
+        "latencyHoursMin": 0.5,
+        "latencyHoursMax": 1,
+        "recoveryDaysMin": 1.5,
+        "recoveryDaysMax": 2.5,
+        "untreatedSeverityPerDay": 0.12,
+        "maximumSeverity": 1,
+        "fatal": false,
+        "peakSeverity": 0.7,
+        "vomitMtbHours": 4
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "acute nausea",
+          "ko": "급성 구역질",
+          "painOffset": 0.1,
+          "capacities": {
+            "Moving": -0.1,
+            "Manipulation": -0.05
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "vomiting and enteritis",
+          "ko": "구토와 장염",
+          "painOffset": 0.2,
+          "capacities": {
+            "Moving": -0.2,
+            "Manipulation": -0.1
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe enteritis",
+          "ko": "심한 장염",
+          "painOffset": 0.28,
+          "capacities": {
+            "Moving": -0.4,
+            "Manipulation": -0.25
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "severe enteritis and weakness",
+          "ko": "극심한 장염과 쇠약",
+          "painOffset": 0.35,
+          "capacities": {
+            "Moving": -0.5,
+            "Manipulation": -0.35
+          }
+        }
+      ]
+    },
+    {
+      "id": "DeadlyWebcap",
+      "en": "deadly webcap",
+      "ko": "녹슨끈적버섯",
+      "effectEn": "A long symptom-free period precedes progressive kidney poisoning. Untreated severe kidney failure can be fatal.",
+      "effectKo": "긴 잠복기 뒤 신장 중독이 진행합니다. 심한 신장 손상을 치료하지 않으면 사망할 수 있습니다.",
+      "settings": {
+        "latencyHoursMin": 24,
+        "latencyHoursMax": 48,
+        "recoveryDaysMin": 4,
+        "recoveryDaysMax": 6,
+        "untreatedSeverityPerDay": 0.23,
+        "maximumSeverity": 1,
+        "fatal": true,
+        "peakSeverity": 0.6,
+        "vomitMtbHours": 12
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "early kidney symptoms",
+          "ko": "초기 신장 증상",
+          "painOffset": 0.05,
+          "capacities": {
+            "Moving": -0.1,
+            "BloodFiltration": -0.1
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "progressive kidney impairment",
+          "ko": "진행성 신장 기능 저하",
+          "painOffset": 0.1,
+          "capacities": {
+            "Consciousness": -0.1,
+            "Moving": -0.15,
+            "BloodFiltration": -0.25
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe kidney poisoning",
+          "ko": "심한 신장 중독",
+          "painOffset": 0.15,
+          "capacities": {
+            "Consciousness": -0.2,
+            "Moving": -0.3,
+            "BloodFiltration": -0.45
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "critical kidney failure",
+          "ko": "위중한 신장 기능 저하",
+          "painOffset": 0.2,
+          "capacities": {
+            "Consciousness": -0.35,
+            "Moving": -0.45,
+            "BloodFiltration": -0.65
+          }
+        }
+      ]
+    },
+    {
+      "id": "PantherCap",
+      "en": "panther cap",
+      "ko": "마귀광대버섯",
+      "effectEn": "Strong confusion and impaired consciousness; severe exposure can cause a prolonged coma-like state.",
+      "effectKo": "강한 혼란과 의식 저하가 나타나며 심한 노출은 긴 혼수 상태를 일으킬 수 있습니다.",
+      "settings": {
+        "latencyHoursMin": 0.5,
+        "latencyHoursMax": 1,
+        "recoveryDaysMin": 1,
+        "recoveryDaysMax": 2,
+        "untreatedSeverityPerDay": 0.1,
+        "maximumSeverity": 1,
+        "fatal": false,
+        "peakSeverity": 0.62,
+        "vomitMtbHours": 8
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "confused and drowsy",
+          "ko": "혼란과 졸림",
+          "capacities": {
+            "Consciousness": -0.15
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "impaired consciousness",
+          "ko": "뚜렷한 의식 저하",
+          "capacities": {
+            "Consciousness": -0.35
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe neurological poisoning",
+          "ko": "심한 신경계 중독",
+          "capacities": {
+            "Consciousness": -0.55
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "profound drowsiness",
+          "ko": "깊은 의식 저하",
+          "capacities": {
+            "Consciousness": -0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "GhostFungus",
+      "en": "ghost fungus",
+      "ko": "발광버섯",
+      "effectEn": "Vomiting, abdominal pain and temporary gastrointestinal weakness.",
+      "effectKo": "구토와 복통, 일시적인 위장 쇠약을 일으킵니다.",
+      "settings": {
+        "latencyHoursMin": 0.5,
+        "latencyHoursMax": 1,
+        "recoveryDaysMin": 1,
+        "recoveryDaysMax": 2,
+        "untreatedSeverityPerDay": 0.12,
+        "maximumSeverity": 1,
+        "fatal": false,
+        "peakSeverity": 0.65,
+        "vomitMtbHours": 5
+      },
+      "stages": [
+        {
+          "minSeverity": 0,
+          "en": "asymptomatic",
+          "ko": "무증상"
+        },
+        {
+          "minSeverity": 0.1,
+          "en": "acute nausea",
+          "ko": "급성 구역질",
+          "painOffset": 0.1,
+          "capacities": {
+            "Moving": -0.1,
+            "Manipulation": -0.05
+          }
+        },
+        {
+          "minSeverity": 0.35,
+          "en": "vomiting and enteritis",
+          "ko": "구토와 장염",
+          "painOffset": 0.2,
+          "capacities": {
+            "Moving": -0.2,
+            "Manipulation": -0.1
+          }
+        },
+        {
+          "minSeverity": 0.6,
+          "en": "severe enteritis",
+          "ko": "심한 장염",
+          "painOffset": 0.28,
+          "capacities": {
+            "Moving": -0.4,
+            "Manipulation": -0.25
+          }
+        },
+        {
+          "minSeverity": 0.85,
+          "en": "severe enteritis and weakness",
+          "ko": "극심한 장염과 쇠약",
+          "painOffset": 0.35,
+          "capacities": {
+            "Moving": -0.5,
+            "Manipulation": -0.35
           }
         }
       ]

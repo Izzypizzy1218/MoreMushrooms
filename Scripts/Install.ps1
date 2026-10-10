@@ -51,6 +51,14 @@ if (Test-Path -LiteralPath (Join-Path $projectRoot 'Docs\VALIDATION.md')) {
     New-Item -ItemType Directory -Path (Join-Path $installTarget 'Docs') | Out-Null
     Copy-Item -LiteralPath (Join-Path $projectRoot 'Docs\VALIDATION.md') -Destination (Join-Path $installTarget 'Docs')
 }
+foreach ($doc in @('Docs\CONTENT-v0.5.0.md','Docs\History\README-v0.4.0.md')) {
+    $docSource = Join-Path $projectRoot $doc
+    if (Test-Path -LiteralPath $docSource) {
+        $docTarget = Join-Path $installTarget $doc
+        New-Item -ItemType Directory -Path (Split-Path $docTarget -Parent) -Force | Out-Null
+        Copy-Item -LiteralPath $docSource -Destination $docTarget
+    }
+}
 foreach ($file in Get-ChildItem -LiteralPath $installTarget -File -Recurse) {
     $relative = $file.FullName.Substring($installTarget.Length + 1)
     if ((Get-FileHash -LiteralPath $file.FullName).Hash -ne (Get-FileHash -LiteralPath (Join-Path $projectRoot $relative)).Hash) { throw "Install hash mismatch: $relative" }

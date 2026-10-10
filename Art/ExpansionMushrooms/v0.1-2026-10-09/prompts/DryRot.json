@@ -1,0 +1,71 @@
+[
+  {
+    "asset": "DryRot/PlantA",
+    "prompt": "Use case: stylized-concept. Asset: one isolated RimWorld MoreMushrooms DryRot PlantA sprite. Image1 is reference only for flat RimWorld outline style; image2 is actual species anatomy/color reference.\nSubject: Serpula lacrymans (dry rot): a flattened irregular oval rust-orange/cinnamon-brown crust fruiting body with a broad creamy white uneven rounded margin. Central fertile surface has a few thick simplified winding maze-like folds in dark rust and ochre. It has NO umbrella cap and NO stem, no circular gills, no coral branches. The white margin is fungus itself, not a separate soil patch.\nGenerate one compact minimal mature fruiting unit, one broad low asymmetrical oval crust with a central rust maze, white outer edge, slight curled front lip. PlantA and PlantB are alternate mature silhouettes, never different growth stages. Omit host wood, ground, leaves, soil, ant or any scenic substrate. No box.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DryRot-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-cee1baa4-d38e-455d-9b99-e725cd06c6cb.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\PlantA.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/DryRot.json for morphology and caveats"
+  },
+  {
+    "asset": "DryRot/PlantB",
+    "prompt": "Use case: stylized-concept. Asset: one isolated RimWorld MoreMushrooms DryRot PlantB sprite. Image1 is the approved mature PlantA to match species and palette; image2 is an existing alternate mature plant unit style reference; image3 is species anatomy.\nSubject: Serpula lacrymans (dry rot): a flattened irregular oval rust-orange/cinnamon-brown crust fruiting body with a broad creamy white uneven rounded margin. Central fertile surface has a few thick simplified winding maze-like folds in dark rust and ochre. It has NO umbrella cap and NO stem, no circular gills, no coral branches. The white margin is fungus itself, not a separate soil patch.\nGenerate one compact minimal mature fruiting unit, one mature bilobed crust with a deep notch at upper left, two broad connected rust fertile centers, lower wide white uneven rim. More lobed and diagonally compact than PlantA; same maturity and colors, not simply mirrored. PlantA and PlantB are alternate mature silhouettes, never different growth stages. Omit host wood, ground, leaves, soil, ant or any scenic substrate. No box.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonB.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DryRot-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-0da07d9e-060d-49e4-8d48-2491c699c7bb.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\PlantB.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/DryRot.json for morphology and caveats"
+  },
+  {
+    "asset": "DryRot/01Low",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms DryRot 01Low sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Serpula lacrymans (dry rot): a flattened irregular oval rust-orange/cinnamon-brown crust fruiting body with a broad creamy white uneven rounded margin. Central fertile surface has a few thick simplified winding maze-like folds in dark rust and ochre. It has NO umbrella cap and NO stem, no circular gills, no coral branches. The white margin is fungus itself, not a separate soil patch.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of DryRot. Low amount: exactly THREE small separate flat white-edged rust crust pieces resting low inside the tray, widely spaced. Keep most dark interior visible and all pieces below back rim. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DryRot-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-5c295cad-c00b-466a-a3f9-8f4c6ca60f6e.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\01Low.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/DryRot.json for morphology and caveats"
+  },
+  {
+    "asset": "DryRot/02Medium",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms DryRot 02Medium sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Serpula lacrymans (dry rot): a flattened irregular oval rust-orange/cinnamon-brown crust fruiting body with a broad creamy white uneven rounded margin. Central fertile surface has a few thick simplified winding maze-like folds in dark rust and ochre. It has NO umbrella cap and NO stem, no circular gills, no coral branches. The white margin is fungus itself, not a separate soil patch.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of DryRot. Medium amount: SIX small separate overlapping flat white-edged rust crust pieces filling about half the tray. All pieces around or below rear rim; rear inner wall and some dark interior remain plainly visible. Clearly more contents than Low, no mound yet. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DryRot-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-a1880cdf-34ee-4cf1-a976-28c4043a6b92.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\02Medium.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/DryRot.json for morphology and caveats"
+  },
+  {
+    "asset": "DryRot/03Full",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms DryRot 03Full sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Serpula lacrymans (dry rot): a flattened irregular oval rust-orange/cinnamon-brown crust fruiting body with a broad creamy white uneven rounded margin. Central fertile surface has a few thick simplified winding maze-like folds in dark rust and ochre. It has NO umbrella cap and NO stem, no circular gills, no coral branches. The white margin is fungus itself, not a separate soil patch.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of DryRot. Full amount: TWELVE to FOURTEEN small distinct flat white-edged rust crust pieces, densely overlapped in a shallow heap just above rear rim. Full width of tray covered with fungus pieces; one low extra layer over Medium. Front tray panel clearly unobscured. No tower or huge single crust. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-DryRot-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-4b3f7c94-0c5f-4fb7-b846-bcf7cb1b2cf5.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DryRot\\03Full.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/DryRot.json for morphology and caveats"
+  }
+]

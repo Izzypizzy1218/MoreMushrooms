@@ -2,6 +2,7 @@ using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Xml;
 using RimMushrooms;
 using RimWorld;
@@ -30,7 +31,9 @@ namespace RimMushroomsTests
                     plant.Growth = 0.25f;
                     map.roofGrid.SetRoof(cell, null);
                     float nativeFactors = plant.GrowthRateFactor_Fertility * plant.GrowthRateFactor_Temperature * plant.GrowthRateFactor_Light * plant.GrowthRateFactor_NoxiousHaze * plant.GrowthRateFactor_Drought;
-                    check(nativeFactors > 0f, "fixture supports growth " + def.defName);
+                    check(nativeFactors > 0f, "fixture supports growth " + def.defName + " temp=" + cell.GetTemperature(map)
+                        + " fertility=" + plant.GrowthRateFactor_Fertility + " light=" + plant.GrowthRateFactor_Light
+                        + " temperature=" + plant.GrowthRateFactor_Temperature + " haze=" + plant.GrowthRateFactor_NoxiousHaze + " drought=" + plant.GrowthRateFactor_Drought);
                     foreach (float glow in new[] {0f, 0.49f, 0.5f, 0.51f, 0.75f, 1f})
                     {
                         map.skyManager.ForceSetCurSkyGlow(glow);
@@ -84,7 +87,7 @@ namespace RimMushroomsTests
             var doc = new XmlDocument();
             doc.Load(Path.Combine(GenFilePaths.SaveDataFolderPath, "Saves", "MoreMushrooms-LegacyFixture.rws"));
             int compared = 0;
-            foreach (XmlNode node in doc.SelectNodes("//thing[@Class='Plant' or @Class='RimWorld.Plant']"))
+            foreach (XmlNode node in doc.SelectNodes("//thing[@Class='Plant' or @Class='RimWorld.Plant' or @Class='RimMushrooms.Plant_Mushroom']"))
             {
                 string defName = node["def"]?.InnerText;
                 if (defName == null || !defName.StartsWith("RMush_Plant")) continue;
@@ -95,10 +98,12 @@ namespace RimMushroomsTests
                 if (node["health"] != null) check(plant.HitPoints == int.Parse(node["health"].InnerText), "legacy health preserved " + plant.ThingID);
                 compared++;
             }
-            check(compared >= 33, "old save plants upgraded without replacing IDs or growth");
+            check(compared >= 33, "old save plants restored without replacing IDs or growth");
             check(map.listerThings.AllThings.OfType<Plant>().Where(p => !p.def.defName.StartsWith("RMush_Plant")).All(p => !(p is Plant_Mushroom)), "legacy vanilla plants not converted");
             // Check that loading did not write the class migration back into the source file.
-            check(doc.SelectNodes("//thing[@Class='RimMushrooms.Plant_Mushroom']").Count == 0, "legacy input save remains unchanged on disk");
+            using (var stream = File.OpenRead(Path.Combine(GenFilePaths.SaveDataFolderPath, "Saves", "MoreMushrooms-LegacyFixture.rws")))
+            using (var hash = SHA256.Create())
+                check(BitConverter.ToString(hash.ComputeHash(stream)).Replace("-", "") == File.ReadAllText(Path.Combine(GenFilePaths.SaveDataFolderPath, "legacy-input.sha256")).Trim(), "legacy input save remains unchanged on disk");
         }
     }
 }

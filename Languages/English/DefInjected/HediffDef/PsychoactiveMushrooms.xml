@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_Hallucination.label>mushroom hallucinations</RMush_Hallucination.label>
+  <RMush_Hallucination.description>Distorted perceptions make ordinary work and commands difficult. The pawn may wander nearby until the effect passes. Rest or incapacitation stops the wandering. Further doses can prolong the episode and cause panic.</RMush_Hallucination.description>
+  <RMush_PsychedelicTolerance.label>psychoactive mushroom tolerance</RMush_PsychedelicTolerance.label>
+  <RMush_PsychedelicTolerance.description>Shared tolerance to psychoactive mushrooms. Repeated consumption reduces their mood benefit and raises the chance of an unpleasant experience. Tolerance fades gradually without further consumption.</RMush_PsychedelicTolerance.description>
+</LanguageData>

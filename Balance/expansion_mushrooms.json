@@ -1,0 +1,866 @@
+{
+  "contentVersion": "0.5.0",
+  "status": "Provisional game balance; not real-world health, edibility or cultivation advice.",
+  "catalog": "Art/ExpansionMushrooms/v0.1.1-2026-10-09/species.json",
+  "assetBase": "Art/ExpansionMushrooms/v0.1-2026-10-09",
+  "notes": [
+    "Only Cauliflower and PurpleBlewit are newly cultivable; both support Ground and Hydroponic.",
+    "Existing edible species, existing assorted nine-species selection and their statistics are unchanged.",
+    "Medicinal fungi are nonfood collection/trade resources while medicinal gameplay is paused.",
+    "Host, rain, stump, tree and wooden-floor dependent generation remains a separate future feature. Current generation uses conservative vanilla wildBiomes only.",
+    "Biomes and all growth/yield/price/rot values are game abstractions, not claims about exact natural habitats.",
+    "GhostFungus and Chlorophos artwork is preserved; actual emitted light is not added in this version."
+  ],
+  "newWildCommonalityTotals": {
+    "TemperateForest": 0.0245,
+    "BorealForest": 0.0089,
+    "TemperateSwamp": 0.0036,
+    "AridShrubland": 0.0013,
+    "TropicalRainforest": 0.007,
+    "TropicalSwamp": 0.0027
+  },
+  "mushrooms": [
+    {
+      "id": "Cauliflower",
+      "en": "cauliflower mushroom",
+      "ko": "꽃송이버섯",
+      "scientific": "Sparassis latifolia",
+      "group": "cultivated-edible",
+      "use": "food",
+      "growDays": 7.5,
+      "yield": 13,
+      "skill": 5,
+      "value": 1.8,
+      "rotDays": 20,
+      "mood": 7,
+      "cultivable": true,
+      "biomes": {
+        "TemperateForest": 0.002,
+        "BorealForest": 0.0015
+      },
+      "description": {
+        "en": "A pale mushroom with densely folded, ruffled branches.",
+        "ko": "연한 색의 가지가 촘촘하게 접혀 꽃송이처럼 보이는 버섯입니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "꽃송이의 풍미",
+          "description": "겹겹이 접힌 버섯을 씹는 맛이 좋았다."
+        },
+        "en": {
+          "label": "cauliflower flavor",
+          "description": "The folded mushroom made for a satisfying bite."
+        }
+      }
+    },
+    {
+      "id": "PurpleBlewit",
+      "en": "purple blewit",
+      "ko": "자주방망이버섯아재비",
+      "scientific": "Collybia sordida",
+      "group": "cultivated-edible",
+      "use": "food",
+      "growDays": 6,
+      "yield": 10,
+      "skill": 3,
+      "value": 1.3,
+      "rotDays": 18,
+      "mood": 5,
+      "cultivable": true,
+      "biomes": {
+        "TemperateForest": 0.002,
+        "TemperateSwamp": 0.001
+      },
+      "description": {
+        "en": "A purple-toned mushroom with a firm cap and pleasant mushroom flavor.",
+        "ko": "자줏빛 갓과 탄탄한 살, 기분 좋은 버섯 풍미가 특징인 버섯입니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "자주방망이의 풍미",
+          "description": "은은한 단맛과 버섯 향이 잘 어울렸다."
+        },
+        "en": {
+          "label": "purple blewit flavor",
+          "description": "Its gentle sweetness and mushroom aroma worked well together."
+        }
+      }
+    },
+    {
+      "id": "BlackTruffle",
+      "en": "black truffle",
+      "ko": "트러플",
+      "scientific": "Tuber melanosporum",
+      "group": "premium-wild-edible",
+      "use": "food",
+      "growDays": 12,
+      "yield": 4,
+      "skill": 0,
+      "value": 8,
+      "rotDays": 15,
+      "mood": 7,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0005
+      },
+      "description": {
+        "en": "A dark, knobbly woodland fungus prized for its strong and complex aroma.",
+        "ko": "어둡고 울퉁불퉁한 표면과 진하고 복합적인 향으로 귀하게 여겨지는 버섯입니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "트러플의 깊은 향",
+          "description": "짙은 향이 입안에 오래 남았다."
+        },
+        "en": {
+          "label": "rich truffle aroma",
+          "description": "The rich aroma lingered pleasantly."
+        }
+      }
+    },
+    {
+      "id": "Porcini",
+      "en": "porcini",
+      "ko": "포르치니",
+      "scientific": "Boletus edulis",
+      "group": "premium-wild-edible",
+      "use": "food",
+      "growDays": 9,
+      "yield": 8,
+      "skill": 0,
+      "value": 3,
+      "rotDays": 15,
+      "mood": 7,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.001,
+        "BorealForest": 0.0008
+      },
+      "description": {
+        "en": "A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor.",
+        "ko": "둥근 갈색 갓과 굵은 대, 깊고 고소한 풍미가 특징인 버섯입니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "포르치니의 고소함",
+          "description": "두툼한 살에서 깊고 고소한 맛이 났다."
+        },
+        "en": {
+          "label": "nutty porcini flavor",
+          "description": "The thick flesh had a rich, nutty flavor."
+        }
+      }
+    },
+    {
+      "id": "Morel",
+      "en": "morel",
+      "ko": "곰보버섯",
+      "scientific": "Morchella esculenta",
+      "group": "premium-wild-edible",
+      "use": "food",
+      "growDays": 8,
+      "yield": 8,
+      "skill": 0,
+      "value": 2.6,
+      "rotDays": 12,
+      "mood": 5,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.001,
+        "BorealForest": 0.0007
+      },
+      "description": {
+        "en": "A spring woodland mushroom with a honeycomb-like cap and a gentle aroma.",
+        "ko": "벌집처럼 패인 갓과 은은한 향이 특징인 숲속 버섯입니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "곰보의 풍미",
+          "description": "은은한 향과 탄력 있는 식감이 좋았다."
+        },
+        "en": {
+          "label": "morel flavor",
+          "description": "The gentle aroma and springy texture were pleasing."
+        }
+      }
+    },
+    {
+      "id": "BlackTrumpet",
+      "en": "black trumpet",
+      "ko": "블랙트럼펫",
+      "scientific": "Craterellus cornucopioides",
+      "group": "premium-wild-edible",
+      "use": "food",
+      "growDays": 8,
+      "yield": 8,
+      "skill": 0,
+      "value": 2.4,
+      "rotDays": 18,
+      "mood": 5,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.001,
+        "TemperateSwamp": 0.0005
+      },
+      "description": {
+        "en": "A dark, thin-fleshed mushroom shaped like a small trumpet.",
+        "ko": "검은 나팔처럼 생긴 갓과 얇은 살을 가진 버섯입니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "블랙트럼펫의 풍미",
+          "description": "얇은 버섯이 식사에 기분 좋은 풍미를 더했다."
+        },
+        "en": {
+          "label": "black trumpet flavor",
+          "description": "The thin mushroom added a pleasant note to the meal."
+        }
+      }
+    },
+    {
+      "id": "GiantPuffball",
+      "en": "giant puffball",
+      "ko": "댕구알버섯",
+      "scientific": "Calvatia gigantea",
+      "group": "unusual-wild-edible",
+      "use": "food",
+      "growDays": 9,
+      "yield": 20,
+      "skill": 0,
+      "value": 1.2,
+      "rotDays": 15,
+      "mood": 3,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0015,
+        "AridShrubland": 0.0008
+      },
+      "description": {
+        "en": "A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage.",
+        "ko": "크고 둥근 몸체와 담백한 맛을 가진 버섯입니다. 수확물은 식용으로 이용되는 어린 단계로 표현됩니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "댕구알의 담백함",
+          "description": "크고 담백한 버섯으로 배를 채웠다."
+        },
+        "en": {
+          "label": "mild puffball flavor",
+          "description": "The large, mild mushroom made a satisfying meal."
+        }
+      }
+    },
+    {
+      "id": "IndigoMilkcap",
+      "en": "indigo milkcap",
+      "ko": "파란젖버섯",
+      "scientific": "Lactarius indigo",
+      "group": "unusual-wild-edible",
+      "use": "food",
+      "growDays": 7,
+      "yield": 10,
+      "skill": 0,
+      "value": 1.5,
+      "rotDays": 15,
+      "mood": 5,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.001,
+        "TropicalRainforest": 0.0005
+      },
+      "description": {
+        "en": "A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste.",
+        "ko": "푸른색 갓에 띠무늬가 있으며, 순하면서 때로 약간 아린 맛이 나는 버섯입니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "파란젖의 풍미",
+          "description": "낯선 푸른 버섯도 먹고 나니 맛이 좋았다."
+        },
+        "en": {
+          "label": "indigo milkcap flavor",
+          "description": "The unfamiliar blue mushroom tasted surprisingly pleasant."
+        }
+      }
+    },
+    {
+      "id": "VeiledStinkhorn",
+      "en": "veiled stinkhorn",
+      "ko": "망태버섯",
+      "scientific": "Phallus indusiatus",
+      "group": "unusual-wild-edible",
+      "use": "food",
+      "growDays": 8,
+      "yield": 9,
+      "skill": 0,
+      "value": 1.7,
+      "rotDays": 12,
+      "mood": 5,
+      "cultivable": false,
+      "biomes": {
+        "TropicalRainforest": 0.0015,
+        "TropicalSwamp": 0.001
+      },
+      "description": {
+        "en": "A mushroom with a delicate white net and sponge-like edible tissue.",
+        "ko": "섬세한 흰 망사와 스펀지 같은 조직을 가진 버섯입니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "망태의 식감",
+          "description": "스펀지 같은 버섯이 식사에 색다른 식감을 더했다."
+        },
+        "en": {
+          "label": "veiled stinkhorn texture",
+          "description": "The sponge-like mushroom added a pleasing texture."
+        }
+      }
+    },
+    {
+      "id": "ShaggyInkcap",
+      "en": "shaggy inkcap",
+      "ko": "먹물버섯",
+      "scientific": "Coprinus comatus",
+      "group": "unusual-wild-edible",
+      "use": "food",
+      "growDays": 5,
+      "yield": 8,
+      "skill": 0,
+      "value": 1,
+      "rotDays": 7,
+      "mood": 3,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0015,
+        "AridShrubland": 0.0005
+      },
+      "description": {
+        "en": "A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly.",
+        "ko": "하얗고 거친 갓과 순한 맛을 가진 버섯입니다. 연약한 조직 때문에 보관 기간이 짧습니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "먹물의 풍미",
+          "description": "연한 버섯 살의 순한 맛이 좋았다."
+        },
+        "en": {
+          "label": "shaggy inkcap flavor",
+          "description": "The delicate flesh had a pleasant mild flavor."
+        }
+      }
+    },
+    {
+      "id": "Lobster",
+      "en": "lobster mushroom",
+      "ko": "랍스터버섯",
+      "scientific": "Hypomyces lactifluorum",
+      "group": "unusual-wild-edible",
+      "use": "food",
+      "growDays": 8,
+      "yield": 8,
+      "skill": 0,
+      "value": 2,
+      "rotDays": 15,
+      "mood": 5,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0008,
+        "BorealForest": 0.0005
+      },
+      "description": {
+        "en": "An orange fungus growing over the fruit body of another mushroom, giving it firm flesh.",
+        "ko": "다른 버섯의 몸체를 주황색으로 덮어 자라는 균류입니다. 살이 단단하고 탄력 있습니다."
+      },
+      "moodText": {
+        "ko": {
+          "label": "랍스터버섯의 식감",
+          "description": "단단하고 탄력 있는 버섯 살이 씹기 좋았다."
+        },
+        "en": {
+          "label": "lobster mushroom texture",
+          "description": "The firm, springy mushroom flesh made a satisfying bite."
+        }
+      }
+    },
+    {
+      "id": "Reishi",
+      "en": "reishi",
+      "ko": "영지버섯",
+      "scientific": "Ganoderma sichuanense (syn. Ganoderma lingzhi)",
+      "group": "medicinal",
+      "use": "resource",
+      "growDays": 10,
+      "yield": 6,
+      "skill": 0,
+      "value": 3,
+      "rotDays": 35,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.001,
+        "TropicalRainforest": 0.001
+      },
+      "description": {
+        "en": "A tough, bitter bracket fungus collected as a fungal resource and trade good.",
+        "ko": "단단하고 쓴맛이 나는 선반 모양 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
+      }
+    },
+    {
+      "id": "TurkeyTail",
+      "en": "turkey tail",
+      "ko": "구름버섯",
+      "scientific": "Trametes versicolor",
+      "group": "medicinal",
+      "use": "resource",
+      "growDays": 9,
+      "yield": 8,
+      "skill": 0,
+      "value": 2,
+      "rotDays": 35,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0015,
+        "BorealForest": 0.001,
+        "TemperateSwamp": 0.0008
+      },
+      "description": {
+        "en": "A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good.",
+        "ko": "얇고 질긴 갓에 여러 색의 띠가 있는 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
+      }
+    },
+    {
+      "id": "Sanghuang",
+      "en": "sanghuang",
+      "ko": "상황버섯",
+      "scientific": "Sanghuangporus sanghuang",
+      "group": "medicinal",
+      "use": "resource",
+      "growDays": 12,
+      "yield": 4,
+      "skill": 0,
+      "value": 5,
+      "rotDays": 40,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0005
+      },
+      "description": {
+        "en": "A hard, woody bracket fungus collected as a fungal resource and trade good.",
+        "ko": "단단한 목질의 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
+      }
+    },
+    {
+      "id": "Cordyceps",
+      "en": "cordyceps",
+      "ko": "동충하초",
+      "scientific": "Cordyceps militaris",
+      "group": "medicinal",
+      "use": "resource",
+      "growDays": 8,
+      "yield": 6,
+      "skill": 0,
+      "value": 4,
+      "rotDays": 20,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0005,
+        "BorealForest": 0.0005
+      },
+      "description": {
+        "en": "A small orange club-shaped fungus collected as a fungal resource and trade good.",
+        "ko": "주황색 곤봉 모양으로 자라는 작은 균류입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
+      }
+    },
+    {
+      "id": "Chaga",
+      "en": "chaga",
+      "ko": "차가버섯",
+      "scientific": "Inonotus obliquus",
+      "group": "medicinal",
+      "use": "resource",
+      "growDays": 12,
+      "yield": 5,
+      "skill": 0,
+      "value": 3.5,
+      "rotDays": 40,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "BorealForest": 0.0008,
+        "TemperateForest": 0.0004
+      },
+      "description": {
+        "en": "A dark, rough fungal growth collected as a fungal resource and trade good.",
+        "ko": "검고 거친 덩어리 모양의 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
+      }
+    },
+    {
+      "id": "LibertyCap",
+      "en": "liberty cap",
+      "ko": "자유모자버섯",
+      "scientific": "Psilocybe semilanceata",
+      "group": "psychoactive",
+      "use": "psychoactive",
+      "growDays": 6,
+      "yield": 8,
+      "skill": 0,
+      "value": 2.2,
+      "rotDays": 12,
+      "mood": 15,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.001,
+        "BorealForest": 0.0006
+      },
+      "description": {
+        "en": "A small mushroom with a pointed cap and psychoactive effects.",
+        "ko": "끝이 뾰족한 작은 갓을 가진 향정신성 버섯입니다."
+      },
+      "doseUnitCount": 10,
+      "hallucinationHours": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "PantherCap",
+      "en": "panther cap",
+      "ko": "마귀광대버섯",
+      "scientific": "Amanita pantherina",
+      "group": "psychoactive-toxic",
+      "use": "psychoactive",
+      "growDays": 8,
+      "yield": 6,
+      "skill": 0,
+      "value": 1,
+      "rotDays": 15,
+      "mood": 10,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0008,
+        "BorealForest": 0.0006
+      },
+      "description": {
+        "en": "A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma.",
+        "ko": "갈색 갓에 연한 반점이 있는 버섯입니다. 향정신성 효과와 함께 신경중독, 혼란, 의식 저하가 나타나며 심한 노출은 혼수로 이어질 수 있습니다."
+      },
+      "doseUnitCount": 10,
+      "hallucinationHours": [
+        3,
+        4
+      ],
+      "poisonHediff": "RMush_PoisonPantherCap"
+    },
+    {
+      "id": "Cubensis",
+      "en": "cubensis",
+      "ko": "주사위환각버섯",
+      "scientific": "Psilocybe cubensis",
+      "group": "psychoactive",
+      "use": "psychoactive",
+      "growDays": 7,
+      "yield": 8,
+      "skill": 0,
+      "value": 2.2,
+      "rotDays": 12,
+      "mood": 15,
+      "cultivable": false,
+      "biomes": {
+        "TropicalRainforest": 0.001,
+        "TropicalSwamp": 0.0005
+      },
+      "description": {
+        "en": "A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects.",
+        "ko": "연한 대와 둥근 황갈색 갓을 가진 향정신성 버섯입니다."
+      },
+      "doseUnitCount": 10,
+      "hallucinationHours": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "DeathCap",
+      "en": "death cap",
+      "ko": "알광대버섯",
+      "scientific": "Amanita phalloides",
+      "group": "toxic",
+      "use": "poisonous",
+      "growDays": 9,
+      "yield": 6,
+      "skill": 0,
+      "value": 1,
+      "rotDays": 15,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0005
+      },
+      "description": {
+        "en": "Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal.",
+        "ko": "잠복 후 간 손상이 진행되는 버섯입니다. 증상이 잠시 줄어도 회복한 것은 아니며, 치료가 부족하면 사망할 수 있습니다."
+      },
+      "poisonHediff": "RMush_PoisonDeathCap"
+    },
+    {
+      "id": "YellowDapperling",
+      "en": "yellow dapperling",
+      "ko": "노란각시버섯",
+      "scientific": "Leucocoprinus birnbaumii",
+      "group": "toxic",
+      "use": "poisonous",
+      "growDays": 6,
+      "yield": 8,
+      "skill": 0,
+      "value": 0.6,
+      "rotDays": 15,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TropicalRainforest": 0.0007,
+        "TropicalSwamp": 0.0005
+      },
+      "description": {
+        "en": "A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness.",
+        "ko": "작고 노란 버섯입니다. 섭취하면 위장 중독과 일시적인 쇠약을 일으킵니다."
+      },
+      "poisonHediff": "RMush_PoisonYellowDapperling"
+    },
+    {
+      "id": "JackOLantern",
+      "en": "jack-o-lantern mushroom",
+      "ko": "잭오랜턴버섯",
+      "scientific": "Omphalotus olearius",
+      "group": "toxic",
+      "use": "poisonous",
+      "growDays": 7,
+      "yield": 9,
+      "skill": 0,
+      "value": 0.8,
+      "rotDays": 15,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0008
+      },
+      "description": {
+        "en": "A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning.",
+        "ko": "밝은 주황색 버섯입니다. 섭취하면 심한 구토와 통증, 위장 중독을 일으킵니다."
+      },
+      "poisonHediff": "RMush_PoisonJackOLantern"
+    },
+    {
+      "id": "DeadlyWebcap",
+      "en": "deadly webcap",
+      "ko": "녹슨끈적버섯",
+      "scientific": "Cortinarius rubellus",
+      "group": "toxic",
+      "use": "poisonous",
+      "growDays": 9,
+      "yield": 6,
+      "skill": 0,
+      "value": 1,
+      "rotDays": 15,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "BorealForest": 0.0006,
+        "TemperateForest": 0.0004
+      },
+      "description": {
+        "en": "Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal.",
+        "ko": "오랜 잠복 후 신장 손상이 진행되는 버섯입니다. 먹은 뒤 한참 지나 증상이 나타날 수 있으며, 치료가 부족하면 사망할 수 있습니다."
+      },
+      "poisonHediff": "RMush_PoisonDeadlyWebcap"
+    },
+    {
+      "id": "ZombieAntFungus",
+      "en": "zombie-ant fungus",
+      "ko": "개미동충하초",
+      "scientific": "Ophiocordyceps unilateralis s.l.",
+      "group": "host-environment",
+      "use": "resource",
+      "growDays": 10,
+      "yield": 4,
+      "skill": 0,
+      "value": 3,
+      "rotDays": 25,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TropicalRainforest": 0.0005,
+        "TropicalSwamp": 0.0003
+      },
+      "description": {
+        "en": "A slender fungus associated with insect hosts. Collected as a specimen and trade good.",
+        "ko": "곤충 숙주와 연관된 가느다란 균류입니다. 표본 수집과 거래에 이용됩니다."
+      }
+    },
+    {
+      "id": "HoneyFungus",
+      "en": "honey fungus",
+      "ko": "뽕나무버섯",
+      "scientific": "Armillaria mellea",
+      "group": "host-environment",
+      "use": "food",
+      "growDays": 7,
+      "yield": 10,
+      "skill": 0,
+      "value": 1.2,
+      "rotDays": 18,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0015,
+        "BorealForest": 0.0008,
+        "TemperateSwamp": 0.0005
+      },
+      "description": {
+        "en": "A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient.",
+        "ko": "탄탄한 갓과 질긴 대를 가진 숲속 버섯입니다. 일반 균류 식재료로 이용됩니다."
+      }
+    },
+    {
+      "id": "DryRot",
+      "en": "dry rot fungus",
+      "ko": "집버섯",
+      "scientific": "Serpula lacrymans",
+      "group": "host-environment",
+      "use": "resource",
+      "growDays": 10,
+      "yield": 6,
+      "skill": 0,
+      "value": 0.5,
+      "rotDays": 40,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0003,
+        "TemperateSwamp": 0.0003
+      },
+      "description": {
+        "en": "A broad, crust-like fungal growth collected as a specimen and trade good.",
+        "ko": "넓고 납작한 딱지 모양의 균류입니다. 표본 수집과 거래에 이용됩니다."
+      }
+    },
+    {
+      "id": "GhostFungus",
+      "en": "ghost fungus",
+      "ko": "발광버섯",
+      "scientific": "Omphalotus nidiformis",
+      "group": "ornamental-material",
+      "use": "poisonous",
+      "growDays": 8,
+      "yield": 8,
+      "skill": 0,
+      "value": 0.8,
+      "rotDays": 15,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0005,
+        "TropicalRainforest": 0.0005
+      },
+      "description": {
+        "en": "A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning.",
+        "ko": "연한 부채 모양의 갓을 가진 버섯입니다. 섭취하면 구토와 통증, 위장 중독을 일으킵니다."
+      },
+      "poisonHediff": "RMush_PoisonGhostFungus"
+    },
+    {
+      "id": "YellowBrain",
+      "en": "yellow brain fungus",
+      "ko": "노란뇌버섯",
+      "scientific": "Tremella mesenterica",
+      "group": "ornamental-material",
+      "use": "food",
+      "growDays": 6,
+      "yield": 8,
+      "skill": 0,
+      "value": 1,
+      "rotDays": 20,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.001,
+        "TemperateSwamp": 0.0005
+      },
+      "description": {
+        "en": "A folded yellow fungus with a jelly-like texture and little distinctive flavor.",
+        "ko": "노란 주름이 겹친 젤리 같은 버섯입니다. 고유한 맛은 약한 편입니다."
+      }
+    },
+    {
+      "id": "DevilsFingers",
+      "en": "devil's fingers",
+      "ko": "악마손가락버섯",
+      "scientific": "Clathrus archeri",
+      "group": "ornamental-material",
+      "use": "resource",
+      "growDays": 7,
+      "yield": 5,
+      "skill": 0,
+      "value": 1.5,
+      "rotDays": 12,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.0005,
+        "TropicalRainforest": 0.0005
+      },
+      "description": {
+        "en": "A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good.",
+        "ko": "붉은 손가락이 펼쳐진 듯한 모습과 강한 악취가 특징인 균류입니다. 표본 수집과 거래에 이용됩니다."
+      }
+    },
+    {
+      "id": "BirdsNest",
+      "en": "bird's nest fungus",
+      "ko": "새둥지버섯",
+      "scientific": "Cyathus striatus",
+      "group": "ornamental-material",
+      "use": "resource",
+      "growDays": 6,
+      "yield": 6,
+      "skill": 0,
+      "value": 1,
+      "rotDays": 35,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TemperateForest": 0.001,
+        "BorealForest": 0.0005
+      },
+      "description": {
+        "en": "A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good.",
+        "ko": "작은 컵 안에 포자 덩어리가 담긴 새둥지 모양 균류입니다. 표본 수집과 거래에 이용됩니다."
+      }
+    },
+    {
+      "id": "Chlorophos",
+      "en": "green-glowing mycena",
+      "ko": "받침애주름버섯",
+      "scientific": "Mycena chlorophos",
+      "group": "ornamental-material",
+      "use": "resource",
+      "growDays": 6,
+      "yield": 6,
+      "skill": 0,
+      "value": 2,
+      "rotDays": 12,
+      "mood": 0,
+      "cultivable": false,
+      "biomes": {
+        "TropicalRainforest": 0.0008,
+        "TropicalSwamp": 0.0004
+      },
+      "description": {
+        "en": "A tiny, pale-capped fungus collected as a specimen and trade good.",
+        "ko": "작고 연한 갓을 가진 균류입니다. 표본 수집과 거래에 이용됩니다."
+      }
+    }
+  ]
+}

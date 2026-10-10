@@ -108,6 +108,65 @@ def inject(languages, def_name, labels, descriptions=None):
             node(languages[lang], def_name + ".description", description)
 
 
+def generate_hediff(mushroom, common, hediffs, hediff_languages):
+    identity = mushroom["id"]
+    poison_name = "RMush_Poison" + identity
+    en, ko = mushroom["en"], mushroom["ko"]
+    settings = mushroom["settings"]
+    hediff = node(hediffs, "HediffDef")
+    node(hediff, "defName", poison_name)
+    node(hediff, "label", en + " poisoning")
+    if settings["fatal"] or settings.get("conditionalFatalThreshold", 0) > 0:
+        description_en = mushroom["effectEn"] + " Care must be repeated using the normal medical system. Recovery is gradual after stabilization."
+        description_ko = mushroom["effectKo"] + " 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다."
+    else:
+        description_en = mushroom["effectEn"] + " Symptoms resolve gradually after onset. Ordinary medical care can speed recovery."
+        description_ko = mushroom["effectKo"] + " 발병 뒤 서서히 회복하며, 일반적인 치료는 회복을 도울 수 있습니다."
+    if settings["fatal"] or settings.get("conditionalFatalThreshold", 0) > 0:
+        description_en += " This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered."
+        description_ko += " 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다."
+    if settings.get("conditionalFatalThreshold", 0) > 0:
+        description_en += " Ordinary exposure resolves gradually; only high or repeated exposure enters the life-threatening course."
+        description_ko += " 보통 노출은 서서히 회복하지만 고노출·반복 섭취는 치명적 경과로 진행할 수 있습니다."
+    node(hediff, "description", description_en)
+    for key, value in {"hediffClass": "RimMushrooms.Hediff_MushroomPoisoning", "defaultLabelColor": "(0.85, 0.65, 0.35)", "initialSeverity": common["initialSeverity"], "maxSeverity": 1, "lethalSeverity": -1, "tendable": True, "isBad": True, "alwaysShowSeverity": True, "makesSickThought": True, "scenarioCanAdd": False}.items():
+        node(hediff, key, value)
+    comp = node(node(hediff, "comps"), "li", Class="HediffCompProperties_TendDuration")
+    node(comp, "baseTendDurationHours", common["tendDurationHours"])
+    node(comp, "tendOverlapHours", 0)
+    node(comp, "severityPerDayTended", 0)
+    extension = node(node(hediff, "modExtensions"), "li", Class="RimMushrooms.MushroomPoisonSettings")
+    for key, value in settings.items():
+        if key != "vomitMtbHours":
+            node(extension, key, value)
+    for key in ("responseGraceHours", "lethalSeverity", "stabilizationTreatment"):
+        node(extension, key, common[key])
+    stages = node(hediff, "stages")
+    for index, specification in enumerate(mushroom["stages"]):
+        stage = node(stages, "li")
+        node(stage, "minSeverity", specification["minSeverity"])
+        node(stage, "label", specification["en"])
+        # Native stage vomiting interrupts ordinary jobs without custom
+        # repeated jobs. The angel's apparent remission does not stop its
+        # underlying poisoning progression.
+        vomit_hours = settings.get("vomitMtbHours", 0)
+        if index > 0 and vomit_hours > 0 and not (identity in ("DestroyingAngel", "DeathCap") and index == 2):
+            node(stage, "vomitMtbDays", vomit_hours / 24)
+        if "painOffset" in specification:
+            node(stage, "painOffset", specification["painOffset"])
+        if "immunityGainSpeedFactor" in specification:
+            node(node(stage, "statFactors"), "ImmunityGainSpeed", specification["immunityGainSpeedFactor"])
+        if specification.get("capacities"):
+            modifiers = node(stage, "capMods")
+            for capacity, offset in specification["capacities"].items():
+                modifier = node(modifiers, "li")
+                node(modifier, "capacity", capacity)
+                node(modifier, "offset", offset)
+        for lang, text in (("English", specification["en"]), ("Korean", specification["ko"])):
+            node(hediff_languages[lang], poison_name + f".stages.{index}.label", text)
+    inject(hediff_languages, poison_name, (en + " poisoning", ko + " 중독"), (description_en, description_ko))
+
+
 def generate(config=None, handoff=None):
     if config is None:
         config = json.loads(CONFIG.read_text(encoding="utf-8"))
@@ -154,25 +213,39 @@ def generate(config=None, handoff=None):
         poison_name = "RMush_Poison" + identity
         en, ko = mushroom["en"], mushroom["ko"]
         settings = mushroom["settings"]
-        raw = node(definitions, "ThingDef", ParentName="RMush_PoisonRawBase")
+        psychedelic = identity == "FlyAgaric"
+        raw = node(definitions, "ThingDef", ParentName="RMush_RawBase" if psychedelic else "RMush_PoisonRawBase")
         node(raw, "defName", raw_name)
         raw_en = "Poisonous " + en + ". " + mushroom["effectEn"] + " Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required."
         raw_ko = "독성이 있는 " + ko + ". " + mushroom["effectKo"] + " 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다."
+        if psychedelic:
+            raw_en = "Fly agaric mushrooms. Can be eaten raw or used automatically in ordinary cooking. A standard exposure grants +10 mood for 6 hours and 2–3 hours of uncontrolled hallucination wandering, together with neurological poisoning. " + mushroom["effectEn"] + " Effects and poisoning remain when used in meals."
+            raw_ko = "광대버섯입니다. 직접 먹거나 일반 요리에 자동으로 사용할 수 있습니다. 표준 노출은 6시간 동안 무드 +10과 2~3시간의 통제 불가 환각 배회, 신경계 중독을 함께 일으킵니다. " + mushroom["effectKo"] + " 요리에 넣어도 환각과 중독 효과가 전달됩니다."
         node(raw, "label", en)
         node(raw, "description", raw_en)
         node(node(raw, "graphicData"), "texPath", "Things/Item/RimMushrooms/" + identity)
         node(node(raw, "statBases"), "MarketValue", mushroom["value"])
         ingestion = node(raw, "ingestible")
-        node(ingestion, "ingestCommandString", "Eat {0} (poisonous)")
-        node(ingestion, "ingestReportString", "Eating {0} (poisonous).")
-        outcome = node(node(ingestion, "outcomeDoers"), "li", Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison")
-        node(outcome, "hediff", poison_name)
-        node(outcome, "doseUnitCount", 1)
+        node(ingestion, "ingestCommandString", "Eat {0}" if psychedelic else "Eat {0} (poisonous)")
+        node(ingestion, "ingestReportString", "Eating {0}." if psychedelic else "Eating {0} (poisonous).")
+        if psychedelic:
+            node(node(ingestion, "outcomeDoers"), "li", Class="RimMushrooms.IngestionOutcomeDoer_MushroomExposure")
+            exposure = node(node(raw, "modExtensions"), "li", Class="RimMushrooms.MushroomExposureProperties")
+            for key, value in {"doseUnitCount": 10, "psychoactive": True, "moodBonus": 10, "moodDurationHours": 6, "hallucinationHoursMin": 2, "hallucinationHoursMax": 3, "poisonHediff": poison_name}.items():
+                node(exposure, key, value)
+        else:
+            outcome = node(node(ingestion, "outcomeDoers"), "li", Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison")
+            node(outcome, "hediff", poison_name)
+            node(outcome, "doseUnitCount", 1)
+            exposure = node(node(raw, "modExtensions"), "li", Class="RimMushrooms.MushroomExposureProperties")
+            node(exposure, "doseUnitCount", 1)
+            node(exposure, "poisonHediff", poison_name)
         rot = node(node(raw, "comps"), "li", Class="CompProperties_Rottable")
         node(rot, "daysToRotStart", mushroom["rotDays"])
         node(rot, "rotDestroys", True)
         inject(languages, raw_name, (en, ko), (raw_en, raw_ko))
-        for lang, command, report in (("English", "Eat {0} (poisonous)", "Eating {0} (poisonous)."), ("Korean", "{0} 먹기 (독버섯)", "{0} 먹는 중 (독버섯).")):
+        commands = (("English", "Eat {0}", "Eating {0}."), ("Korean", "{0} 먹기", "{0} 먹는 중.")) if psychedelic else (("English", "Eat {0} (poisonous)", "Eating {0} (poisonous)."), ("Korean", "{0} 먹기 (독버섯)", "{0} 먹는 중 (독버섯)."))
+        for lang, command, report in commands:
             node(languages[lang], raw_name + ".ingestible.ingestCommandString", command)
             node(languages[lang], raw_name + ".ingestible.ingestReportString", report)
 
@@ -180,6 +253,9 @@ def generate(config=None, handoff=None):
         node(plant, "defName", plant_name)
         plant_en = "A wild cluster of poisonous " + en + ". Can be harvested but cannot be sown. " + mushroom["effectEn"] + " The harvested mushrooms are excluded from automatic eating and ordinary cooking."
         plant_ko = "야생에서 자라는 " + ko + " 군락입니다. 채집할 수 있지만 재배할 수 없습니다. " + mushroom["effectKo"] + " 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다."
+        if psychedelic:
+            plant_en = "A wild fly agaric cluster. Can be harvested but cannot be sown. The harvested mushrooms can be eaten raw or used in ordinary meals, causing mood effects, uncontrolled hallucination wandering and neurological poisoning."
+            plant_ko = "야생에서 자라는 광대버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 수확물은 직접 먹거나 일반 요리에 넣을 수 있으며 무드 효과와 통제 불가 환각 배회, 신경계 중독을 함께 일으킵니다."
         node(plant, "label", en + " cluster")
         node(plant, "description", plant_en)
         node(node(plant, "graphicData"), "texPath", "Things/Plant/RimMushrooms/" + identity)
@@ -197,55 +273,12 @@ def generate(config=None, handoff=None):
             node(wild_biomes, biome, weight)
         inject(languages, plant_name, (en + " cluster", ko + " 군락"), (plant_en, plant_ko))
 
-        hediff = node(hediffs, "HediffDef")
-        node(hediff, "defName", poison_name)
-        node(hediff, "label", en + " poisoning")
-        if settings["fatal"]:
-            description_en = mushroom["effectEn"] + " Care must be repeated using the normal medical system. Recovery is gradual after stabilization."
-            description_ko = mushroom["effectKo"] + " 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다."
-        else:
-            description_en = mushroom["effectEn"] + " Symptoms resolve gradually after onset. Ordinary medical care can speed recovery."
-            description_ko = mushroom["effectKo"] + " 발병 뒤 서서히 회복하며, 일반적인 치료는 회복을 도울 수 있습니다."
-        if settings["fatal"]:
-            description_en += " After the first symptom warning, a single exposure grants at least 24 hours before this poisoning itself can enter its lethal stage. Other illnesses, injuries and additional exposures are not covered."
-            description_ko += " 1회 섭취로 인한 이 중독 자체는 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환, 부상과 추가 섭취까지 포함한 생존 보장은 아닙니다."
-        node(hediff, "description", description_en)
-        for key, value in {"hediffClass": "RimMushrooms.Hediff_MushroomPoisoning", "defaultLabelColor": "(0.85, 0.65, 0.35)", "initialSeverity": common["initialSeverity"], "maxSeverity": 1, "lethalSeverity": -1, "tendable": True, "isBad": True, "alwaysShowSeverity": True, "makesSickThought": True, "scenarioCanAdd": False}.items():
-            node(hediff, key, value)
-        comp = node(node(hediff, "comps"), "li", Class="HediffCompProperties_TendDuration")
-        node(comp, "baseTendDurationHours", common["tendDurationHours"])
-        node(comp, "tendOverlapHours", 0)
-        node(comp, "severityPerDayTended", 0)
-        extension = node(node(hediff, "modExtensions"), "li", Class="RimMushrooms.MushroomPoisonSettings")
-        for key, value in settings.items():
-            if key != "vomitMtbHours":
-                node(extension, key, value)
-        for key in ("responseGraceHours", "lethalSeverity", "stabilizationTreatment"):
-            node(extension, key, common[key])
-        stages = node(hediff, "stages")
-        for index, specification in enumerate(mushroom["stages"]):
-            stage = node(stages, "li")
-            node(stage, "minSeverity", specification["minSeverity"])
-            node(stage, "label", specification["en"])
-            # Native stage vomiting interrupts ordinary jobs without custom
-            # repeated jobs. The angel's apparent remission does not stop its
-            # underlying poisoning progression.
-            vomit_hours = settings.get("vomitMtbHours", 0)
-            if index > 0 and vomit_hours > 0 and not (identity == "DestroyingAngel" and index == 2):
-                node(stage, "vomitMtbDays", vomit_hours / 24)
-            if "painOffset" in specification:
-                node(stage, "painOffset", specification["painOffset"])
-            if "immunityGainSpeedFactor" in specification:
-                node(node(stage, "statFactors"), "ImmunityGainSpeed", specification["immunityGainSpeedFactor"])
-            if specification.get("capacities"):
-                modifiers = node(stage, "capMods")
-                for capacity, offset in specification["capacities"].items():
-                    modifier = node(modifiers, "li")
-                    node(modifier, "capacity", capacity)
-                    node(modifier, "offset", offset)
-            for lang, text in (("English", specification["en"]), ("Korean", specification["ko"])):
-                node(hediff_languages[lang], poison_name + f".stages.{index}.label", text)
-        inject(hediff_languages, poison_name, (en + " poisoning", ko + " 중독"), (description_en, description_ko))
+        generate_hediff(mushroom, common, hediffs, hediff_languages)
+
+    # Expansion raw items/plants belong to generate_expansion_defs.py.
+    # This generator owns only their medical conditions and translations.
+    for mushroom in config.get("additionalPoisons", []):
+        generate_hediff(mushroom, common, hediffs, hediff_languages)
 
     write_xml(ROOT / "Defs/PoisonMushrooms/PoisonMushrooms.xml", definitions)
     write_xml(ROOT / "Defs/PoisonMushrooms/Hediffs.xml", hediffs)
@@ -255,7 +288,7 @@ def generate(config=None, handoff=None):
             write_xml(ROOT / "Languages" / lang / "DefInjected" / def_type / "PoisonMushrooms.xml", element)
     generate_keyed()
     generate_credits(handoff)
-    print("Generated 5 wild poison plants, 5 harvest items, 5 poisoning conditions and bilingual text; copied 25 unchanged PNGs.")
+    print(f"Generated {len(config['mushrooms'])} legacy wild plants/items and {len(config['mushrooms']) + len(config.get('additionalPoisons', []))} poisoning conditions with bilingual text; copied 25 unchanged PNGs.")
 
 
 def generate_keyed():

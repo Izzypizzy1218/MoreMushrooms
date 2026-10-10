@@ -1,0 +1,12 @@
+{
+  "asset": "PlantB",
+  "prompt": "Edit the first reference, approved Lobster PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. A broader lopsided orange folded cap with a more clearly indented center and a different uneven waved rim, short thick orange stalk. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. One mature lobster mushroom infected by Hypomyces lactifluorum: strong orange-red/lobster-orange irregular folded depressed cap, uneven wavy margin, broad wrinkled rim and squat thick orange stalk. The parasitic coating hides the usual gills; cap must look lopsided and distorted, not a perfect orange button mushroom, not an actual lobster animal. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Lobster-Hypomyces-lactifluorum.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-fab26116-8b57-4014-9d5c-321b64258bb7.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Lobster/PlantB.png"
+}

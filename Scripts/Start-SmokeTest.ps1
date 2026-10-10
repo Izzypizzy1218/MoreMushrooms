@@ -18,8 +18,9 @@ if ($LegacySave) {
     $saveRoot = Join-Path $testRoot 'Saves'
     New-Item -ItemType Directory -Path $saveRoot -Force | Out-Null
     Copy-Item -LiteralPath $LegacySave -Destination (Join-Path $saveRoot 'MoreMushrooms-LegacyFixture.rws')
+    Set-Content -LiteralPath (Join-Path $testRoot 'legacy-input.sha256') -Value (Get-FileHash -LiteralPath $LegacySave -Algorithm SHA256).Hash
 }
-$mods = @('ludeon.rimworld')
+$mods = @('brrainz.harmony','ludeon.rimworld')
 if ($AllDlc) { $mods += @('ludeon.rimworld.royalty','ludeon.rimworld.ideology','ludeon.rimworld.biotech','ludeon.rimworld.anomaly','ludeon.rimworld.odyssey') }
 $mods += @('izzypizzy.rimmushrooms','izzypizzy.rimmushrooms.tests')
 $modList = ($mods | ForEach-Object { '<li>' + $_ + '</li>' }) -join ''

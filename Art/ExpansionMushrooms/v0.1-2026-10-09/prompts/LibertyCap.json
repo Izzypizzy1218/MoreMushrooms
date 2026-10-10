@@ -1,0 +1,69 @@
+[
+  {
+    "id": "LibertyCap",
+    "asset": "LibertyCap/PlantA",
+    "prompt": "Create ONE new isolated mature Psilocybe semilanceata mushroom unit sprite for the existing RimWorld More Mushrooms mod. Reference image 1 is a real specimen photograph for anatomy only. Reference images 2 and 3 are existing mod sprites and define the exact illustration language: warm dark brown contour lines, a few clean simplified organic shapes, only 2 or 3 flat color planes, no realistic texture and no gradients, slight elevated three-quarter view. Newly draw the fungus, do not copy the photo. Species anatomy: a small ochre-tan pointed bell-shaped cap with a conspicuous central nipple, subtle dark lower rim, long slender gently curved pale ochre stalk, no ring. The whole mushroom is complete and unobstructed, centered upright with normal transparent margin; species silhouette must be legible when reduced to a small game sprite. A single mature cap and stem, not a scenic cluster. Use the reference sprite's restrained line weight and flat treatment. No ground, grass, soil, leaves, root patch, log, pot, box, symbols, text, label, decorative glow or cast ground shadow. Genuine transparent RGBA background. This is PlantA: a mature natural form.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-LibertyCap-01.jpg",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\FlyAgaric\\FlyAgaricA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-14511d50-3c69-4490-a34a-f967d1158fd7.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\PlantA.png"
+  },
+  {
+    "asset": "LibertyCap/PlantB",
+    "prompt": "Edit the first reference mature Psilocybe semilanceata game sprite into an alternate mature PlantB silhouette of the SAME species, maturity, color palette and restrained illustrated style. The second image is a real anatomy reference only. Make this specific natural alternate pose: a slightly wider and shorter mature pointed bell cap tilted to the right, still with conspicuous central nipple; slender stalk gently bows left, comparable overall mature size. PlantB is NOT a smaller juvenile, NOT a growth stage and NOT an exact mirrored copy of A. Maintain species anatomy: a small ochre-tan pointed bell-shaped cap with a conspicuous central nipple, subtle dark lower rim, long slender gently curved pale ochre stalk, no ring. Preserve thick warm dark-brown outlines, simple clean shapes and two or three FLAT color planes with hard-edged shading; no gradients, gloss, realistic texture or complex small detail. Slight elevated three-quarter camera. Single complete unobstructed mature fungus unit, centered, no box, ground, grass, roots, log, props, labels, icons or cast ground shadow. Real transparent RGBA background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-LibertyCap-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-ce6e0734-5dc7-4ec2-bed2-b4d08703826f.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\PlantB.png"
+  },
+  {
+    "asset": "LibertyCap/01Low",
+    "prompt": "Edit reference image 1, the existing More Mushrooms 01Low harvested-food tray sprite, by replacing ONLY its cream button mushroom contents with harvested Psilocybe semilanceata mushrooms matching reference sprite 2. Reference photo 3 is anatomy only. Preserve the SAME ochre tray shell, front panel silhouette, thick warm brown contour, right-side stepped notch and right end block, dark interior, colors and slight elevated three-quarter camera. The tray must remain recognizably identical to the existing first reference, no redesign. LOW quantity: only a sparse loose shallow scattering of three to five harvested mushrooms in the bottom left/center. Most dark interior floor must remain visibly empty, especially the rear half and right half. Every cap lies well below the back rim. No heap and no upright growing fungi. Contents should be loose harvested whole mushrooms lying naturally in varied orientations and overlapping only lightly, not upright fungi growing from the tray. Species anatomy/colors: a small ochre-tan pointed bell-shaped cap with a conspicuous central nipple, subtle dark lower rim, long slender gently curved pale ochre stalk, no ring. Use the existing game sprite's extremely simple flat color treatment, two or three color planes per shape, no gradients, realistic texture or tiny fussy details. Preserve species-defining cap silhouette and stalk colors at small icon scale. No slats, nails, handles, woodgrain, label, text, skull, poison marker, pictograms, symbols, scenery or cast ground shadow. One centered single tray sprite on genuine transparent RGBA background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-LibertyCap-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-2047b8c8-13d5-4e77-963e-c0196de8dac4.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\01Low.png"
+  },
+  {
+    "asset": "LibertyCap/02Medium",
+    "prompt": "Edit reference image 1, the existing More Mushrooms 02Medium harvested-food tray sprite, by replacing ONLY its cream button mushroom contents with harvested Psilocybe semilanceata mushrooms matching reference sprite 2. Reference photo 3 is anatomy only, and image 4 is this species' already-created LOW tray for matching design/color only, not for quantity. Preserve the same ochre tray shell, front panel silhouette, thick warm brown contour, right-side stepped notch and right end block, dark interior, colors and slight elevated three-quarter camera. Do not redesign the container. MEDIUM quantity: roughly half-full with a loose layer of several harvested mushrooms, more than Low but still substantial clear dark gaps visible between pieces and along the rear edge. Contents reach around the middle of the tray's depth and mostly remain below the back rim. Do not fill the tray solidly and do not form an above-rim mound. Compared with reference 4, show visibly more overlapping contents spread across the tray and a slightly higher shallow pile, while retaining obvious dark floor gaps behind and between the mushrooms. Contents are loose harvested whole mushrooms lying naturally in varied orientations, not upright fungi growing from the tray. Species anatomy/colors: a small ochre-tan pointed bell-shaped cap with a conspicuous central nipple, subtle dark lower rim, long slender gently curved pale ochre stalk, no ring. Match the simple existing game illustration with two or three clean flat color planes per shape, no gradients, realistic texture or fine photographic details. Preserve cap morphology and stalk colors. No slats, nails, handles, woodgrain, labels, text, skull, poison marker, pictograms, scenery or cast ground shadow. One centered single tray sprite on genuine transparent RGBA background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-LibertyCap-01.jpg",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\01Low.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-49a04fe0-0b79-4658-96ad-90551aebfeff.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\02Medium.png"
+  },
+  {
+    "asset": "LibertyCap/03Full",
+    "prompt": "Edit reference image 1, the existing More Mushrooms 03Full harvested-food tray sprite, by replacing ONLY its cream button mushroom contents with harvested Psilocybe semilanceata mushrooms matching reference sprite 2. Reference photo 3 is anatomy only; reference image 4 is this species' MEDIUM tray and defines the same species/box design, not the target quantity. Preserve the same ochre tray shell, front panel silhouette, thick warm brown contour, right-side stepped notch and right end block, dark interior, colors and slight elevated three-quarter camera. Do not redesign the container. FULL quantity: a clear abundant overlapping heap of harvested mushrooms occupying almost all the tray interior, with an obvious small mound rising slightly above the back rim. Substantially fuller than Medium. Keep the front panel and right notch/end block completely visible. Compared with reference 4, roughly double the visible quantity and substantially raise the contents to make an abundant above-rim mound; only tiny dark gaps may remain among overlapping pieces. Contents must be loose harvested mushrooms, in varied natural orientations with several whole cap-and-stalk forms visible; not upright fungi growing in the tray. Species anatomy/colors: a small ochre-tan pointed bell-shaped cap with a conspicuous central nipple, subtle dark lower rim, long slender gently curved pale ochre stalk, no ring. Use the established game's extremely simple flat color treatment with two or three solid color planes per shape, no gradients, realistic texture or fussy microscopic details. Keep species-defining silhouettes visible. No slats, nails, handles, woodgrain, labels, text, skull, poison marker, symbols, scenery or cast ground shadow. One centered single tray sprite on genuine transparent RGBA background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-LibertyCap-01.jpg",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\02Medium.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-e9b5c0bd-588a-4a54-b485-1de47fe46093.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\LibertyCap\\03Full.png"
+  }
+]

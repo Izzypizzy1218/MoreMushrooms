@@ -1,0 +1,14 @@
+{
+  "asset": "01Low",
+  "prompt": "Edit ONLY contents of FIRST reference 01Low produce tray into harvested Chlorophos. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. A tiny mature unit of Mycena chlorophos: exactly TWO delicate shallow pleated umbrella caps on very slender curved pale mint-gray stalks, each cap has a small flat/depressed center and six to eight simplified broad radial pleat marks. Use cool pale mint-green cap planes with a slightly darker green central dimple, inspired by the real GREEN BIOLUMINESCENCE photographs. NOT chunky green button mushrooms, not broad shelf fans. No bloom/glow halo outside the silhouette; the green is represented through flat drawn color only, while alpha background stays clear. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). LOW: three modest-size harvested pieces resting on the bottom, most interior dark and empty, back rim clearly visible. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-01.jpg",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/group2-Chlorophos-03.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-8f520a18-d4d4-4618-a8a4-fcbefb228f8d.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chlorophos/01Low.png"
+}

@@ -3,7 +3,7 @@
   <HediffDef>
     <defName>RMush_PoisonFlyAgaric</defName>
     <label>fly agaric poisoning</label>
-    <description>Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</description>
+    <description>Confusion, drowsiness and impaired consciousness. High or repeated exposure can become life-threatening without sufficient care. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered. Ordinary exposure resolves gradually; only high or repeated exposure enters the life-threatening course.</description>
     <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
     <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
     <initialSeverity>0.01</initialSeverity>
@@ -27,10 +27,11 @@
         <latencyHoursMax>1</latencyHoursMax>
         <recoveryDaysMin>0.5</recoveryDaysMin>
         <recoveryDaysMax>1</recoveryDaysMax>
-        <untreatedSeverityPerDay>0.1</untreatedSeverityPerDay>
+        <untreatedSeverityPerDay>0.25</untreatedSeverityPerDay>
         <maximumSeverity>1</maximumSeverity>
         <fatal>false</fatal>
         <peakSeverity>0.48</peakSeverity>
+        <conditionalFatalThreshold>3</conditionalFatalThreshold>
         <responseGraceHours>24</responseGraceHours>
         <lethalSeverity>0.95</lethalSeverity>
         <stabilizationTreatment>1</stabilizationTreatment>
@@ -86,7 +87,7 @@
   <HediffDef>
     <defName>RMush_PoisonDestroyingAngel</defName>
     <label>destroying angel poisoning</label>
-    <description>Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. After the first symptom warning, a single exposure grants at least 24 hours before this poisoning itself can enter its lethal stage. Other illnesses, injuries and additional exposures are not covered.</description>
+    <description>Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered.</description>
     <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
     <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
     <initialSeverity>0.01</initialSeverity>
@@ -204,7 +205,7 @@
   <HediffDef>
     <defName>RMush_PoisonSulfurTuft</defName>
     <label>sulfur tuft poisoning</label>
-    <description>Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</description>
+    <description>Persistent gastroenteritis, vomiting, pain and weakness. High or repeated exposure can become life-threatening without sufficient care. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered. Ordinary exposure resolves gradually; only high or repeated exposure enters the life-threatening course.</description>
     <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
     <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
     <initialSeverity>0.01</initialSeverity>
@@ -228,10 +229,11 @@
         <latencyHoursMax>3</latencyHoursMax>
         <recoveryDaysMin>2</recoveryDaysMin>
         <recoveryDaysMax>3</recoveryDaysMax>
-        <untreatedSeverityPerDay>0.1</untreatedSeverityPerDay>
+        <untreatedSeverityPerDay>0.22</untreatedSeverityPerDay>
         <maximumSeverity>1</maximumSeverity>
         <fatal>false</fatal>
         <peakSeverity>0.65</peakSeverity>
+        <conditionalFatalThreshold>3</conditionalFatalThreshold>
         <responseGraceHours>24</responseGraceHours>
         <lethalSeverity>0.95</lethalSeverity>
         <stabilizationTreatment>1</stabilizationTreatment>
@@ -418,7 +420,7 @@
   <HediffDef>
     <defName>RMush_PoisonPoisonFireCoral</defName>
     <label>poison fire coral poisoning</label>
-    <description>Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. After the first symptom warning, a single exposure grants at least 24 hours before this poisoning itself can enter its lethal stage. Other illnesses, injuries and additional exposures are not covered.</description>
+    <description>Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered.</description>
     <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
     <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
     <initialSeverity>0.01</initialSeverity>
@@ -529,6 +531,651 @@
           <li>
             <capacity>Moving</capacity>
             <offset>-0.45</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>RMush_PoisonDeathCap</defName>
+    <label>death cap poisoning</label>
+    <description>Delayed gastrointestinal symptoms and progressive liver injury. Untreated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered.</description>
+    <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
+    <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>true</tendable>
+    <isBad>true</isBad>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <makesSickThought>true</makesSickThought>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>6</baseTendDurationHours>
+        <tendOverlapHours>0</tendOverlapHours>
+        <severityPerDayTended>0</severityPerDayTended>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomPoisonSettings">
+        <latencyHoursMin>8</latencyHoursMin>
+        <latencyHoursMax>12</latencyHoursMax>
+        <recoveryDaysMin>3</recoveryDaysMin>
+        <recoveryDaysMax>5</recoveryDaysMax>
+        <untreatedSeverityPerDay>0.24</untreatedSeverityPerDay>
+        <maximumSeverity>1</maximumSeverity>
+        <fatal>true</fatal>
+        <peakSeverity>0.6</peakSeverity>
+        <responseGraceHours>24</responseGraceHours>
+        <lethalSeverity>0.95</lethalSeverity>
+        <stabilizationTreatment>1</stabilizationTreatment>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>asymptomatic</label>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <label>gastrointestinal symptoms</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <painOffset>0.08</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.08</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.35</minSeverity>
+        <label>quieter symptoms; liver injury continues</label>
+        <painOffset>0.05</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>severe liver injury</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <painOffset>0.12</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.35</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>critical liver poisoning</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <painOffset>0.25</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.55</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.45</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>RMush_PoisonYellowDapperling</defName>
+    <label>yellow dapperling poisoning</label>
+    <description>Short-lived gastrointestinal upset, nausea and abdominal pain. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</description>
+    <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
+    <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>true</tendable>
+    <isBad>true</isBad>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <makesSickThought>true</makesSickThought>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>6</baseTendDurationHours>
+        <tendOverlapHours>0</tendOverlapHours>
+        <severityPerDayTended>0</severityPerDayTended>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomPoisonSettings">
+        <latencyHoursMin>1</latencyHoursMin>
+        <latencyHoursMax>2</latencyHoursMax>
+        <recoveryDaysMin>0.5</recoveryDaysMin>
+        <recoveryDaysMax>1</recoveryDaysMax>
+        <untreatedSeverityPerDay>0.1</untreatedSeverityPerDay>
+        <maximumSeverity>1</maximumSeverity>
+        <fatal>false</fatal>
+        <peakSeverity>0.4</peakSeverity>
+        <responseGraceHours>24</responseGraceHours>
+        <lethalSeverity>0.95</lethalSeverity>
+        <stabilizationTreatment>1</stabilizationTreatment>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>asymptomatic</label>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <label>acute nausea</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.35</minSeverity>
+        <label>vomiting and enteritis</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <painOffset>0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>severe enteritis</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <painOffset>0.28</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>severe enteritis and weakness</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <painOffset>0.35</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.5</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.35</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>RMush_PoisonJackOLantern</defName>
+    <label>jack-o'-lantern mushroom poisoning</label>
+    <description>Strong vomiting, abdominal pain and lingering gastrointestinal weakness. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</description>
+    <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
+    <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>true</tendable>
+    <isBad>true</isBad>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <makesSickThought>true</makesSickThought>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>6</baseTendDurationHours>
+        <tendOverlapHours>0</tendOverlapHours>
+        <severityPerDayTended>0</severityPerDayTended>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomPoisonSettings">
+        <latencyHoursMin>0.5</latencyHoursMin>
+        <latencyHoursMax>1</latencyHoursMax>
+        <recoveryDaysMin>1.5</recoveryDaysMin>
+        <recoveryDaysMax>2.5</recoveryDaysMax>
+        <untreatedSeverityPerDay>0.12</untreatedSeverityPerDay>
+        <maximumSeverity>1</maximumSeverity>
+        <fatal>false</fatal>
+        <peakSeverity>0.7</peakSeverity>
+        <responseGraceHours>24</responseGraceHours>
+        <lethalSeverity>0.95</lethalSeverity>
+        <stabilizationTreatment>1</stabilizationTreatment>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>asymptomatic</label>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <label>acute nausea</label>
+        <vomitMtbDays>0.16666666666666666</vomitMtbDays>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.35</minSeverity>
+        <label>vomiting and enteritis</label>
+        <vomitMtbDays>0.16666666666666666</vomitMtbDays>
+        <painOffset>0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>severe enteritis</label>
+        <vomitMtbDays>0.16666666666666666</vomitMtbDays>
+        <painOffset>0.28</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>severe enteritis and weakness</label>
+        <vomitMtbDays>0.16666666666666666</vomitMtbDays>
+        <painOffset>0.35</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.5</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.35</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>RMush_PoisonDeadlyWebcap</defName>
+    <label>deadly webcap poisoning</label>
+    <description>A long symptom-free period precedes progressive kidney poisoning. Untreated severe kidney failure can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered.</description>
+    <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
+    <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>true</tendable>
+    <isBad>true</isBad>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <makesSickThought>true</makesSickThought>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>6</baseTendDurationHours>
+        <tendOverlapHours>0</tendOverlapHours>
+        <severityPerDayTended>0</severityPerDayTended>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomPoisonSettings">
+        <latencyHoursMin>24</latencyHoursMin>
+        <latencyHoursMax>48</latencyHoursMax>
+        <recoveryDaysMin>4</recoveryDaysMin>
+        <recoveryDaysMax>6</recoveryDaysMax>
+        <untreatedSeverityPerDay>0.23</untreatedSeverityPerDay>
+        <maximumSeverity>1</maximumSeverity>
+        <fatal>true</fatal>
+        <peakSeverity>0.6</peakSeverity>
+        <responseGraceHours>24</responseGraceHours>
+        <lethalSeverity>0.95</lethalSeverity>
+        <stabilizationTreatment>1</stabilizationTreatment>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>asymptomatic</label>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <label>early kidney symptoms</label>
+        <vomitMtbDays>0.5</vomitMtbDays>
+        <painOffset>0.05</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.35</minSeverity>
+        <label>progressive kidney impairment</label>
+        <vomitMtbDays>0.5</vomitMtbDays>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>severe kidney poisoning</label>
+        <vomitMtbDays>0.5</vomitMtbDays>
+        <painOffset>0.15</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.45</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>critical kidney failure</label>
+        <vomitMtbDays>0.5</vomitMtbDays>
+        <painOffset>0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.35</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.45</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.65</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>RMush_PoisonPantherCap</defName>
+    <label>panther cap poisoning</label>
+    <description>Strong confusion and impaired consciousness; severe exposure can cause a prolonged coma-like state. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</description>
+    <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
+    <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>true</tendable>
+    <isBad>true</isBad>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <makesSickThought>true</makesSickThought>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>6</baseTendDurationHours>
+        <tendOverlapHours>0</tendOverlapHours>
+        <severityPerDayTended>0</severityPerDayTended>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomPoisonSettings">
+        <latencyHoursMin>0.5</latencyHoursMin>
+        <latencyHoursMax>1</latencyHoursMax>
+        <recoveryDaysMin>1</recoveryDaysMin>
+        <recoveryDaysMax>2</recoveryDaysMax>
+        <untreatedSeverityPerDay>0.1</untreatedSeverityPerDay>
+        <maximumSeverity>1</maximumSeverity>
+        <fatal>false</fatal>
+        <peakSeverity>0.62</peakSeverity>
+        <responseGraceHours>24</responseGraceHours>
+        <lethalSeverity>0.95</lethalSeverity>
+        <stabilizationTreatment>1</stabilizationTreatment>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>asymptomatic</label>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <label>confused and drowsy</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.35</minSeverity>
+        <label>impaired consciousness</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.35</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>severe neurological poisoning</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.55</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>profound drowsiness</label>
+        <vomitMtbDays>0.3333333333333333</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.8</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>RMush_PoisonGhostFungus</defName>
+    <label>ghost fungus poisoning</label>
+    <description>Vomiting, abdominal pain and temporary gastrointestinal weakness. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</description>
+    <hediffClass>RimMushrooms.Hediff_MushroomPoisoning</hediffClass>
+    <defaultLabelColor>(0.85, 0.65, 0.35)</defaultLabelColor>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>true</tendable>
+    <isBad>true</isBad>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <makesSickThought>true</makesSickThought>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>6</baseTendDurationHours>
+        <tendOverlapHours>0</tendOverlapHours>
+        <severityPerDayTended>0</severityPerDayTended>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomPoisonSettings">
+        <latencyHoursMin>0.5</latencyHoursMin>
+        <latencyHoursMax>1</latencyHoursMax>
+        <recoveryDaysMin>1</recoveryDaysMin>
+        <recoveryDaysMax>2</recoveryDaysMax>
+        <untreatedSeverityPerDay>0.12</untreatedSeverityPerDay>
+        <maximumSeverity>1</maximumSeverity>
+        <fatal>false</fatal>
+        <peakSeverity>0.65</peakSeverity>
+        <responseGraceHours>24</responseGraceHours>
+        <lethalSeverity>0.95</lethalSeverity>
+        <stabilizationTreatment>1</stabilizationTreatment>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <label>asymptomatic</label>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <label>acute nausea</label>
+        <vomitMtbDays>0.20833333333333334</vomitMtbDays>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.35</minSeverity>
+        <label>vomiting and enteritis</label>
+        <vomitMtbDays>0.20833333333333334</vomitMtbDays>
+        <painOffset>0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>severe enteritis</label>
+        <vomitMtbDays>0.20833333333333334</vomitMtbDays>
+        <painOffset>0.28</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>severe enteritis and weakness</label>
+        <vomitMtbDays>0.20833333333333334</vomitMtbDays>
+        <painOffset>0.35</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.5</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.35</offset>
           </li>
         </capMods>
       </li>

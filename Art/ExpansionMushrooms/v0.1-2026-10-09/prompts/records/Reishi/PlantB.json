@@ -1,0 +1,12 @@
+{
+  "asset": "PlantB",
+  "prompt": "Edit approved FIRST reference Reishi PlantA into a clearly different alternate MATURE PlantB of the SAME species and palette. A wider kidney-shaped red-brown cap tilted slightly right, a thinner yellow rim and a distinctly curved lateral dark brown stalk angled left; same mature species and palette. It is NOT early growth, NOT a mirror-only copy. ONE mature East Asian Reishi (Ganoderma sichuanense, synonym G. lingzhi): a broad kidney/fan-shaped lacquer-red / deep reddish chestnut cap with a thin golden-yellow outer growing edge, pale ochre pore underside (NO radial gills), and one clearly visible short-to-medium DARK BROWN curved LATERAL stalk. Keep a very readable kidney-shaped cap with an indentation by the side attachment, not a symmetrical button cap. In the scientific figure use ONLY macroscopic panels A/B at the TOP, not microscopic panels, slices, text or scale bars. No box. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Reishi/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Reishi-Ganoderma-sichuanense-MycoKeys2017-1-Im0.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-08fd1b29-4960-468b-9b2b-fab9e99434b2.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Reishi/PlantB.png"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RMush_HallucinationTime>Hallucinations remaining: {0}</RMush_HallucinationTime>
+  <RMush_HallucinationReason>Psychoactive mushroom: {0}</RMush_HallucinationReason>
+  <RMush_HallucinationWander>Wandering in mushroom hallucinations</RMush_HallucinationWander>
+  <RMush_HallucinationPanic>Distressed by frightening mushroom visions</RMush_HallucinationPanic>
+</LanguageData>

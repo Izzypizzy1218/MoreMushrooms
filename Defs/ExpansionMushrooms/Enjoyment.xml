@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThoughtDef>
+    <defName>RMush_AteCauliflower</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>cauliflower flavor</label>
+        <description>The folded mushroom made for a satisfying bite.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AtePurpleBlewit</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>purple blewit flavor</label>
+        <description>Its gentle sweetness and mushroom aroma worked well together.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteBlackTruffle</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>rich truffle aroma</label>
+        <description>The rich aroma lingered pleasantly.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AtePorcini</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>nutty porcini flavor</label>
+        <description>The thick flesh had a rich, nutty flavor.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteMorel</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>morel flavor</label>
+        <description>The gentle aroma and springy texture were pleasing.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteBlackTrumpet</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>black trumpet flavor</label>
+        <description>The thin mushroom added a pleasant note to the meal.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteGiantPuffball</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>mild puffball flavor</label>
+        <description>The large, mild mushroom made a satisfying meal.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteIndigoMilkcap</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>indigo milkcap flavor</label>
+        <description>The unfamiliar blue mushroom tasted surprisingly pleasant.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteVeiledStinkhorn</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>veiled stinkhorn texture</label>
+        <description>The sponge-like mushroom added a pleasing texture.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteShaggyInkcap</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>shaggy inkcap flavor</label>
+        <description>The delicate flesh had a pleasant mild flavor.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>RMush_AteLobster</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomEnjoyment</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <stages>
+      <li>
+        <label>lobster mushroom texture</label>
+        <description>The firm, springy mushroom flesh made a satisfying bite.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

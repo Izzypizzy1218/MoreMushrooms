@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Replace the first reference's shiitake subject with the following DIFFERENT mushroom species, keeping the exact existing More Mushrooms game sprite drawing language. The second image is the real species photograph for anatomy, not style. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Use thick warm dark-brown contour lines and only TWO OR THREE flat color planes, slight elevated three-quarter game view, clean compact silhouette. NO photoreal texture, gradients, realistic shine, ground, cast ground shadow, logs, box, labels or extra props. One alternate MATURE plant unit, not an early growth stage; full subject centered in square canvas, real transparent alpha background. Keep the species-specific silhouette; do not carry over the first reference's conventional shiitake cap anatomy.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Plant/RimMushrooms/Shiitake/ShiitakeA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-80f502b7-607d-4e41-ac43-4fa63428d3f8.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit the first reference, approved Chaga PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. A visibly different wider irregular charcoal-black lobed conk, chunkier jagged outline and its own four big cracked facets with narrow rusty-orange fissures. No stem. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-53e2b8a6-3802-442b-b495-33c9b6834c80.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference 01Low produce tray into harvested Chaga mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. LOW fill: only three loose modest-size harvested pieces in the bottom, tray interior mostly visibly empty, back rim fully exposed. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-39825d0f-3b8e-4557-ba71-b7825e6162b3.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference 02Medium produce tray into harvested Chaga mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. MEDIUM fill: six to seven harvested pieces fill about half the tray below its rim; visibly more than Low but clear back rim and empty interior gaps remain. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-6b08c93c-919b-49cc-89d8-478710b71405.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested Chaga mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One compact mature CHAGA sterile conk Inonotus obliquus: an irregular charcoal-black knobbly rounded mass with a jagged outline, four or five chunky cracked black facets and a few narrow rusty-orange fissures. NO mushroom umbrella cap, stalk, gills, leaves, tree trunk or bark prop. Organic charcoal-black fungal conk with restrained rusty accents, simplified enough to read at 64 pixels, not a polished stone. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Chaga-Inonotus-obliquus.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-a9ed3e83-deb9-4cc8-899c-b23827e113f0.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Chaga/03Full.png"
+  }
+]

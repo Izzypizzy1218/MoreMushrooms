@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the FIRST image, the approved More Mushrooms Button PlantA sprite, into a single mature Morel mushroom (Morchella esculenta) growth unit. The SECOND image is a real species photograph used for anatomy only, never copy photographic pixels or its habitat. Anatomy: One yellow-tan to ochre ovoid tall honeycomb cap with deep irregular enclosed pits bounded by thick raised ridges, attached directly to a short pale cream hollow stem. Simplify honeycomb into 12-18 clearly readable uneven pits. Not a brain-like false morel, not umbrella shape, no radial gills. Match the approved RimWorld mod sprite style: thick warm dark-brown outlines, only two or three broad flat color planes, simple clean shapes, no photorealistic surface texture, slightly top-down three-quarter view. This is ONE compact repeatable mature growth unit, not a field or several stages; the game repeats these units. Center the subject with generous clear padding in a square canvas. No ground, soil, grass, roots, log, trunk, box, text, labels, cast ground shadow, gradients or extra objects. Real transparent alpha background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\Morel-Morchella-esculenta.jpeg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-8d814117-339c-441d-ac8d-51f382423f03.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit the FIRST image, the approved mature Morel PlantA sprite, into PlantB: a different fully mature unit of the SAME exact species Morchella esculenta. The SECOND reference photo is anatomy only. Preserve its thick warm dark-brown outlines, golden-tan raised honeycomb ridges, deep enclosed brown pits, pale cream short stem, simple flat palette and three-quarter camera. Make the overall cap broader and more rounded, leaning slightly to the other side, with different honeycomb pit positions and a gently curved stem, so its silhouette clearly differs from A while retaining the same maturity and species. Keep enclosed pits and ridges, no brain-like folds, umbrella cap or gills. One compact mature unit, no duplicated group. No soil, roots, log, scenery, box, text, labels, gradients or cast ground shadow. Square canvas and genuine transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\Morel-Morchella-esculenta.jpeg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-deefd117-bfc1-4833-8572-16c495bc50ea.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST image, approved More Mushrooms 01Low ochre storage tray, into harvested MOREL mushrooms (Morchella esculenta). The SECOND image is the approved new Morel PlantA, a style and identity reference. Preserve the FIRST image's exact box silhouette, front panel, right-side notch/end block, rim thickness, ochre/brown colors, dark interior and three-quarter perspective. Contents: Golden-tan ovoid honeycomb caps with a few bold deep enclosed pits and short pale cream stems. Draw each whole harvested morel tilted naturally rather than cloning vertical units. Fill: LOW: only three small loose whole morels lying on the floor, about one fifth full; most dark interior is empty and rear rim unobstructed. Use the same warm dark-brown outlines and broad simple flat planes. Change contents only; do not add slats, nails, wood grain, handles, labels, symbols, text or scenery. No ground or cast ground shadow. Square canvas with padding and real transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-085bc945-c4b4-443d-b565-839c38963d54.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST image, approved More Mushrooms 02Medium ochre storage tray, into harvested MOREL mushrooms (Morchella esculenta). The SECOND image is the approved new Morel PlantA, a style and identity reference. Preserve the FIRST image's exact box silhouette, front panel, right-side notch/end block, rim thickness, ochre/brown colors, dark interior and three-quarter perspective. Contents: Golden-tan ovoid honeycomb caps with a few bold deep enclosed pits and short pale cream stems. Draw each whole harvested morel tilted naturally rather than cloning vertical units. Fill: MEDIUM: about half full with about seven smaller loose morels, higher and denser than Low, but still below the rear rim with some empty interior. Use the same warm dark-brown outlines and broad simple flat planes. Change contents only; do not add slats, nails, wood grain, handles, labels, symbols, text or scenery. No ground or cast ground shadow. Square canvas with padding and real transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-732c6743-e2de-405d-b0da-cda648904abe.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST image, approved More Mushrooms 03Full ochre storage tray, into harvested MOREL mushrooms (Morchella esculenta). The SECOND image is the approved new Morel PlantA, a style and identity reference. Preserve the FIRST image's exact box silhouette, front panel, right-side notch/end block, rim thickness, ochre/brown colors, dark interior and three-quarter perspective. Contents: Golden-tan ovoid honeycomb caps with a few bold deep enclosed pits and short pale cream stems. Draw each whole harvested morel tilted naturally rather than cloning vertical units. Fill: FULL: a dense overlapping pile of at least twelve small harvested morels reaches and rises slightly above the rear rim, much taller and fuller than Medium. Use the same warm dark-brown outlines and broad simple flat planes. Change contents only; do not add slats, nails, wood grain, handles, labels, symbols, text or scenery. No ground or cast ground shadow. Square canvas with padding and real transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-207d74d1-040c-4fbe-9ea6-e93dd5903cc3.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Morel\\03Full.png"
+  }
+]

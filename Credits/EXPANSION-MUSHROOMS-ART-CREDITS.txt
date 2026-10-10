@@ -1,0 +1,30 @@
+More Mushrooms — expansion artwork integration v0.5.0
+Integrated: 2026-10-10
+
+31 species / 155 runtime PNGs:
+- 93 harvested mushroom box images: 01Low, 02Medium, 03Full
+- 62 growing mushroom units: two mature forms, A and B, per species
+
+The runtime PNGs are unchanged copies of approved final textures in:
+Art/ExpansionMushrooms/v0.1-2026-10-09/Textures/
+The display names use the unchanged species identities from:
+Art/ExpansionMushrooms/v0.1.1-2026-10-09/species.json
+
+The expansion artwork was generated with the built-in image_gen tool in the
+earlier approved art workflow. Referenced mushroom photographs informed
+anatomy; they were not pasted into game textures. The source photographs,
+authors, licenses, URLs and hashes are retained in the art pack's
+PHOTO-CREDITS.txt and references/sources.json. The runtime reference-credit
+copy is EXPANSION-MUSHROOMS-PHOTO-CREDITS.txt.
+
+The mushroom box shape follows the existing project template. Its original
+credit and MIT license are retained in RIMSHARE-LICENSE.txt.
+
+A and B are different mature mushroom forms, not separate chronological
+growth stages. The game's plant renderer changes visual size and the number
+of repeated units with growth. No art regeneration or pixel alteration was
+performed for the v0.5.0 integration.
+
+Medicinal fungi are collection/trade resources in this release. The artwork
+does not itself establish real-world edibility, medicinal efficacy, toxicity,
+natural emission of in-game light or ecological simulation rules.

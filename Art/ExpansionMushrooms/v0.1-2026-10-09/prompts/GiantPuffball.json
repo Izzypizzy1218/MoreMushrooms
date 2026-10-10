@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the FIRST image, the approved More Mushrooms Button PlantA sprite, into a single mature GiantPuffball mushroom (Calvatia gigantea) growth unit. The SECOND image is a real species photograph used for anatomy only, never copy photographic pixels or its habitat. Anatomy: One large smooth off-white round to gently ovoid puffball, essentially stemless. A subtly uneven broad spherical silhouette and two or three broad cream shade planes. No cap/stem separation, no gills, no warts, no cracks or open spore hole. Mature-sized intact pale fruit body rather than old collapsed brown spore sac. Match the approved RimWorld mod sprite style: thick warm dark-brown outlines, only two or three broad flat color planes, simple clean shapes, no photorealistic surface texture, slightly top-down three-quarter view. This is ONE compact repeatable mature growth unit, not a field or several stages; the game repeats these units. Center the subject with generous clear padding in a square canvas. No ground, soil, grass, roots, log, trunk, box, text, labels, cast ground shadow, gradients or extra objects. Real transparent alpha background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\GiantPuffball-Calvatia-gigantea.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-bf1f5852-03b9-48a2-9125-2e61cdb3204d.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit the FIRST image, the approved GiantPuffball PlantA sprite, into PlantB, an alternate mature unit of the SAME species (Calvatia gigantea). The SECOND image is the real anatomy photo only. Keep the same warm dark-brown contour weight, natural colors, broad simple flat planes and three-quarter camera. Anatomy must remain: One large smooth off-white round to gently ovoid puffball, essentially stemless. A subtly uneven broad spherical silhouette and two or three broad cream shade planes. No cap/stem separation, no gills, no warts, no cracks or open spore hole. Mature-sized intact pale fruit body rather than old collapsed brown spore sac. Alternate silhouette: Make it a slightly taller ovoid ball with one broad shallow side indentation and a flatter lower edge, instead of A's broad round outline. Both variants must remain full-sized intact pale smooth stemless puffballs. This is an alternate fully mature growth unit, not a young stage or simple scaled duplicate. One compact subject. No ground, roots, log, scenery, box, text, labels, gradients, cast shadow or extra objects. Square canvas with padding and true transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\GiantPuffball-Calvatia-gigantea.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-30a4f4ac-9aad-49f9-9c81-5c635a734d31.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY the contents of the FIRST reference image, the approved More Mushrooms 01Low ochre storage tray, into harvested GiantPuffball mushrooms. The SECOND reference is the approved new PlantA sprite for species identity and style. Preserve the FIRST image's exact box shape, front panel, right end notch/block, ochre-brown palette, thick rim, dark interior and three-quarter camera. Contents: Chunky portions cut from a smooth white giant puffball, some with a broad rounded off-white outer rind and solid cream-white interior, only a few simple broad shade planes. Clearly stemless and gill-free; no button-mushroom stalks, warts or spore holes. Fill level: LOW: three small loose separated harvested pieces at floor level, roughly one fifth full. Most dark tray interior is empty and the rear rim fully visible. Match the warm dark-brown outlines and simple broad flat planes. Change contents only. No slats, nails, wood grain, handles, labels, symbols, text, ground, scenery or cast ground shadow. Real transparent alpha, square canvas with clear padding.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-17a547a2-84db-4c81-970e-8378ba8c805f.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY the contents of the FIRST reference image, the approved More Mushrooms 02Medium ochre storage tray, into harvested GiantPuffball mushrooms. The SECOND reference is the approved new PlantA sprite for species identity and style. Preserve the FIRST image's exact box shape, front panel, right end notch/block, ochre-brown palette, thick rim, dark interior and three-quarter camera. Contents: Chunky portions cut from a smooth white giant puffball, some with a broad rounded off-white outer rind and solid cream-white interior, only a few simple broad shade planes. Clearly stemless and gill-free; no button-mushroom stalks, warts or spore holes. Fill level: MEDIUM: about half full with seven small loose harvested pieces, visibly denser and higher than Low but entirely below rear rim. Some dark interior remains visible. Match the warm dark-brown outlines and simple broad flat planes. Change contents only. No slats, nails, wood grain, handles, labels, symbols, text, ground, scenery or cast ground shadow. Real transparent alpha, square canvas with clear padding.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-502e32eb-11ac-415d-a2f0-e5eba46e0147.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY the contents of the FIRST reference image, the approved More Mushrooms 03Full ochre storage tray, into harvested GiantPuffball mushrooms. The SECOND reference is the approved new PlantA sprite for species identity and style. Preserve the FIRST image's exact box shape, front panel, right end notch/block, ochre-brown palette, thick rim, dark interior and three-quarter camera. Contents: Chunky portions cut from a smooth white giant puffball, some with a broad rounded off-white outer rind and solid cream-white interior, only a few simple broad shade planes. Clearly stemless and gill-free; no button-mushroom stalks, warts or spore holes. Fill level: FULL: a dense overlapping pile of twelve or more small harvested pieces, reaching and rising slightly above the rear rim, visibly much fuller and higher than Medium. Match the warm dark-brown outlines and simple broad flat planes. Change contents only. No slats, nails, wood grain, handles, labels, symbols, text, ground, scenery or cast ground shadow. Real transparent alpha, square canvas with clear padding.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-99b69320-da82-44a4-ace1-c6268305cad8.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\GiantPuffball\\03Full.png"
+  }
+]

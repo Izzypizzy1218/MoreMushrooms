@@ -1,0 +1,15 @@
+{
+  "id": "TurkeyTail",
+  "art_version": "0.1",
+  "reviewer": "root",
+  "date": "2026-10-09",
+  "review_method": "Five generated masters inspected in tool output and five normalized 256px exports inspected in contact sheet review-Reishi-TurkeyTail-Chlorophos-01.png",
+  "species_morphology": "pass",
+  "style": "pass",
+  "transparent_background": "true alpha verified by exporter",
+  "plant_variations": "pass - alternate mature units; growth preview uses native count and scale",
+  "box_fill_levels": "pass - sparse/half/full visually distinct",
+  "notes": "Overlapping stalkless fan brackets retain cream edge and concentric muted blue-gray/brown bands; B changes fan count and arrangement.",
+  "corrected_assets": [],
+  "gameplay_tested": false
+}

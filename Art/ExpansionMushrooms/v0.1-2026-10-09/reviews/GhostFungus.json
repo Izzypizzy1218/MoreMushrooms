@@ -1,0 +1,78 @@
+{
+  "id": "GhostFungus",
+  "review_status": "PASS with documented morphology simplification",
+  "visual_inspection": "All five original generated images viewed; not in-game captures",
+  "morphology": "Broad cream asymmetric fan/funnel caps with recessed gray-brown centers and decurrent underside gills on short thick off-center stems. A2 fans vs B3 layered fans. Explicitly distinct from Chlorophos tiny pleated umbrellas/thread-thin stems; no glow halo or emissive effect drawn.",
+  "style": "Warm dark-brown outline, flat-color anatomy, existing ochre storage tray perspective/notch/front preserved",
+  "real_alpha": "PASS: all original masters RGBA with alpha extrema [0,255]",
+  "mature_variants": "PASS: A/B are alternate mature silhouettes, visibly different arrangement, not growth stages",
+  "quantity_gap": "Low3 sparse, Medium6 around rim with rear wall visible, Full about12 visible whole/partial fans in shallow mound above rim.",
+  "regeneration_cautions": "Provisional Omphalotus nidiformis selection retained; do not collapse to small round Mycena/Chlorophos umbrellas. Preserve off-center short stems and gray-brown recessed cap center. No unverified species/ecology claims from the art.",
+  "assets": [
+    {
+      "asset": "01Low",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "8900541b139baa2c98e4315b68f855ae8c2fb88e4eba5d41816fd5837f3c3742"
+    },
+    {
+      "asset": "02Medium",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "8bb4d3dc837917e29b8b6eea48be29e58d0ae1764dc3b5b2dc52fb3836eccb68"
+    },
+    {
+      "asset": "03Full",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "be0fde7aad298ba5a6e231e9a36bc989481535d041e591efe0a3abab8979bc73"
+    },
+    {
+      "asset": "PlantA",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4233d2aaf56fae75a6ea145fbf5333355589ffdc809951b5680e7f29517a4c22"
+    },
+    {
+      "asset": "PlantB",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "3e4c9ff10ec676aa20d6376bb3a3489c70628c64700f7b0da791cadae46806e0"
+    }
+  ]
+}

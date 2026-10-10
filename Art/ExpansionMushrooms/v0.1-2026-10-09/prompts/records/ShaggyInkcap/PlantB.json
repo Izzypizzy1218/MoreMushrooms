@@ -1,0 +1,12 @@
+{
+  "asset": "PlantB",
+  "prompt": "Edit the first reference, approved ShaggyInkcap PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. A slightly broader white shaggy bell cap tilted right, different placement of tan tip and shaggy scales, thin black lower edge. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. One mature shaggy inkcap Coprinus comatus: tall ivory ovoid/cylindrical bell cap enclosing much of the thin white stalk, tan patch at the tip, four or five simple large white shaggy scales, and a thin charcoal-black ink-darkening band along the lower hanging cap edge. A mature compact icon with small visible stalk, no dripping liquid scene, no wide red toadstool cap. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/ShaggyInkcap-Coprinus-comatus.jpeg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-a386ce41-c772-4a4a-aec6-7db23bfa207a.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/PlantB.png"
+}

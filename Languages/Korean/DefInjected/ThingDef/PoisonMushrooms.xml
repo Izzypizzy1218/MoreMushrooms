@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <RMush_RawFlyAgaric.label>광대버섯</RMush_RawFlyAgaric.label>
-  <RMush_RawFlyAgaric.description>독성이 있는 광대버섯. 혼란과 졸림, 의식 저하가 나타나며 심한 중독은 행동을 크게 제한합니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawFlyAgaric.description>
-  <RMush_RawFlyAgaric.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawFlyAgaric.ingestible.ingestCommandString>
-  <RMush_RawFlyAgaric.ingestible.ingestReportString>{0} 먹는 중 (독버섯).</RMush_RawFlyAgaric.ingestible.ingestReportString>
+  <RMush_RawFlyAgaric.description>광대버섯입니다. 직접 먹거나 일반 요리에 자동으로 사용할 수 있습니다. 표준 노출은 6시간 동안 무드 +10과 2~3시간의 통제 불가 환각 배회, 신경계 중독을 함께 일으킵니다. 혼란과 졸림, 의식 저하가 나타납니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다. 요리에 넣어도 환각과 중독 효과가 전달됩니다.</RMush_RawFlyAgaric.description>
+  <RMush_RawFlyAgaric.ingestible.ingestCommandString>{0} 먹기</RMush_RawFlyAgaric.ingestible.ingestCommandString>
+  <RMush_RawFlyAgaric.ingestible.ingestReportString>{0} 먹는 중.</RMush_RawFlyAgaric.ingestible.ingestReportString>
   <RMush_PlantFlyAgaric.label>광대버섯 군락</RMush_PlantFlyAgaric.label>
-  <RMush_PlantFlyAgaric.description>야생에서 자라는 광대버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 혼란과 졸림, 의식 저하가 나타나며 심한 중독은 행동을 크게 제한합니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantFlyAgaric.description>
+  <RMush_PlantFlyAgaric.description>야생에서 자라는 광대버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 수확물은 직접 먹거나 일반 요리에 넣을 수 있으며 무드 효과와 통제 불가 환각 배회, 신경계 중독을 함께 일으킵니다.</RMush_PlantFlyAgaric.description>
   <RMush_RawDestroyingAngel.label>독우산광대버섯</RMush_RawDestroyingAngel.label>
   <RMush_RawDestroyingAngel.description>독성이 있는 독우산광대버섯. 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawDestroyingAngel.description>
   <RMush_RawDestroyingAngel.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawDestroyingAngel.ingestible.ingestCommandString>
@@ -13,11 +13,11 @@
   <RMush_PlantDestroyingAngel.label>독우산광대버섯 군락</RMush_PlantDestroyingAngel.label>
   <RMush_PlantDestroyingAngel.description>야생에서 자라는 독우산광대버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantDestroyingAngel.description>
   <RMush_RawSulfurTuft.label>노란다발버섯</RMush_RawSulfurTuft.label>
-  <RMush_RawSulfurTuft.description>독성이 있는 노란다발버섯. 심한 위장염과 구토, 통증, 쇠약이 이어집니다. 중증일수록 치료가 필요하고 회복에 더 오래 걸립니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawSulfurTuft.description>
+  <RMush_RawSulfurTuft.description>독성이 있는 노란다발버섯. 위장염과 구토, 통증, 쇠약이 이어집니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawSulfurTuft.description>
   <RMush_RawSulfurTuft.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawSulfurTuft.ingestible.ingestCommandString>
   <RMush_RawSulfurTuft.ingestible.ingestReportString>{0} 먹는 중 (독버섯).</RMush_RawSulfurTuft.ingestible.ingestReportString>
   <RMush_PlantSulfurTuft.label>노란다발버섯 군락</RMush_PlantSulfurTuft.label>
-  <RMush_PlantSulfurTuft.description>야생에서 자라는 노란다발버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 심한 위장염과 구토, 통증, 쇠약이 이어집니다. 중증일수록 치료가 필요하고 회복에 더 오래 걸립니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantSulfurTuft.description>
+  <RMush_PlantSulfurTuft.description>야생에서 자라는 노란다발버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 위장염과 구토, 통증, 쇠약이 이어집니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다. 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다.</RMush_PlantSulfurTuft.description>
   <RMush_RawTsukiyotake.label>화경버섯</RMush_RawTsukiyotake.label>
   <RMush_RawTsukiyotake.description>독성이 있는 화경버섯. 빠르고 강한 구토 뒤 장염과 쇠약이 남습니다. 장 출혈을 포함한 중증 위장 증상은 게임에서 별도의 혈액 손실 대신 심한 장염, 통증과 쇠약으로 표현합니다. 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다.</RMush_RawTsukiyotake.description>
   <RMush_RawTsukiyotake.ingestible.ingestCommandString>{0} 먹기 (독버섯)</RMush_RawTsukiyotake.ingestible.ingestCommandString>

@@ -1,0 +1,78 @@
+{
+  "id": "DryRot",
+  "review_status": "PASS with documented morphology simplification",
+  "visual_inspection": "All five original generated images viewed; not in-game captures",
+  "morphology": "Flat rust/ochre fertile crust with winding ridges and creamy white growing margin; A one irregular oval, B connected bilobed crust; no stem/cap/wood substrate.",
+  "style": "Warm dark-brown outline, flat-color anatomy, existing ochre storage tray perspective/notch/front preserved",
+  "real_alpha": "PASS: all original masters RGBA with alpha extrema [0,255]",
+  "mature_variants": "PASS: A/B are alternate mature silhouettes, visibly different arrangement, not growth stages",
+  "quantity_gap": "Low3 below rim, Medium6 overlapping around rim, Full about9 visible pieces (overlap hides count) in clearly taller dense heap.",
+  "regeneration_cautions": "No umbrella cap/stem, no host planks. Keep broad white fungal margin and maze ridges. Full uses visible layering rather than literal12 because broad crust pieces occupy more area.",
+  "assets": [
+    {
+      "asset": "01Low",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "8a97302b1c082cf3b8ffd89d52ac1221592def8ed5025d5ba0890113de515d07"
+    },
+    {
+      "asset": "02Medium",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "71931064967cd06a13020d2677097001f66dbe9b868d3d7a86c225610d766ee4"
+    },
+    {
+      "asset": "03Full",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b7db2d40465bd85a7dbfedc6807529d725797719d7531e38a75c71be69e08355"
+    },
+    {
+      "asset": "PlantA",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "c8557831bbea446448b6bccf53af9b27d38d71a56e0143ab93483cf14f9f360d"
+    },
+    {
+      "asset": "PlantB",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "78a50e5126f4fadd2330415a7f72fc9f7f37cfee2a33f10b430476ad6fb8c8a5"
+    }
+  ]
+}

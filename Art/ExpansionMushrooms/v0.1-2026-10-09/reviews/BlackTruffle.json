@@ -1,0 +1,15 @@
+{
+  "id": "BlackTruffle",
+  "art_version": "0.1",
+  "reviewer": "root",
+  "date": "2026-10-09",
+  "review_method": "Real reference and PlantA viewed directly; remaining masters inspected in tool output; all five normalized 256px exports inspected in review-PurpleBlewit-BlackTruffle-Porcini-01.png",
+  "species_morphology": "pass",
+  "style": "pass",
+  "transparent_background": "true alpha verified by exporter",
+  "plant_variations": "pass - alternate mature silhouettes, not earlier/later stages",
+  "box_fill_levels": "pass - sparse/half/full distinguishable",
+  "notes": "Coarse dark knobbly tuber without ordinary cap/stalk/gills. B is a differently lobed single irregular tuber. Broad dark facet pattern stays readable after shrinking; distinct from orange-fissured Chaga.",
+  "corrected_assets": [],
+  "gameplay_tested": false
+}

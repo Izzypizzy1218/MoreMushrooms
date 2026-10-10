@@ -1,0 +1,55 @@
+{
+  "version": "0.1.1",
+  "date": "2026-10-09",
+  "type": "Korean display-name patch",
+  "baseline_art_version": "0.1",
+  "changes": [
+    {
+      "id": "Cubensis",
+      "old": "실로시빈 버섯 추가종",
+      "new": "주사위환각버섯",
+      "scientific": "Psilocybe cubensis",
+      "status": "국내 사용명; 공식 표준국명 여부 미확인"
+    },
+    {
+      "id": "ZombieAntFungus",
+      "old": "좀비개미 균류",
+      "new": "개미동충하초",
+      "scientific": "Ophiocordyceps unilateralis s.l.",
+      "status": "국내 통용명; 공식 표준국명 여부 미확인"
+    }
+  ],
+  "sources": {
+    "Cubensis": {
+      "new": "주사위환각버섯",
+      "scientific": "Psilocybe cubensis",
+      "name_status": "국내 사용명; 공식 표준국명 여부 미확인",
+      "source": {
+        "title": "어린이과학동아 2020년 8호 · 도전! 섭섭박사 실험실",
+        "url": "https://images.dongascience.com/uploads/article/pdf/202008/164-167_08%ED%98%B8_%EC%84%AD%EC%84%AD%EC%8B%A4%ED%97%98%EC%8B%A4.pdf",
+        "page": 2,
+        "printed_page": 166,
+        "evidence_summary": "사진 설명에서 Psilocybe cubensis와 주사위환각버섯 이름을 함께 표기함."
+      },
+      "note": "기존 그림의 학명과 종 선택은 유지. 국내 과학매체에서 실제 사용한 한국어 이름을 채택."
+    },
+    "ZombieAntFungus": {
+      "new": "개미동충하초",
+      "scientific": "Ophiocordyceps unilateralis s.l.",
+      "name_status": "국내 통용명; 공식 표준국명 여부 미확인",
+      "source": {
+        "title": "최종수 · 버섯에 관한 8가지 놀라운 사실: 야생버섯의 신비(190)",
+        "url": "https://www.jadam.kr/news/articleView.html?idxno=16333",
+        "section": "3. 어떤 버섯은 개미를 좀비로 만든다",
+        "evidence_summary": "사진3과 본문에서 Ophiocordyceps unilateralis를 개미동충하초로 표기함."
+      },
+      "note": "좀비개미균의 국내 통용명으로 채택. 다른 개미 기생 동충하초에도 이름이 쓰이므로 학명과 s.l. 범위를 보존. O. formicarum으로 종을 바꾸지 않음.",
+      "taxonomy_caveat_source": "https://www.nibr.go.kr/aiibook/catImage/37/Ascomycota.pdf"
+    }
+  },
+  "unchanged": "Scientific identities, internal IDs, all original photos and all 155 master/exported PNGs",
+  "base_art_directory": "../v0.1-2026-10-09",
+  "gallery_file": "C:\\Users\\집\\.codex\\visualizations\\2026\\10\\03\\01a10171-f755-7171-ad7d-eb5c9759582d\\mushroom-examples-v011.html",
+  "previous_gallery_sha256": "24facf30f1d1f73a6c47b9c493253b81dbec310e14476f81ebfe99addeb504d4",
+  "updated_gallery_sha256": "28936faf356e5cda3ddce1fbf45808f8fa4f9b807f730b726f637330f5f9711b"
+}

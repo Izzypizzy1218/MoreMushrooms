@@ -1,0 +1,181 @@
+{
+  "id": "Cauliflower",
+  "scientific": "Sparassis latifolia",
+  "reviewer": "balance_hydro_review",
+  "review_date": "2026-10-09",
+  "review_method": "Each saved PlantA, PlantB, 01Low, 02Medium and 03Full PNG was opened with view_image; specimen photo and approved Button plant/three tray assets were viewed first.",
+  "assets_reviewed": [
+    "PlantA",
+    "PlantB",
+    "01Low",
+    "02Medium",
+    "03Full"
+  ],
+  "species_morphology": {
+    "status": "PASS",
+    "notes": "Cream broad curled ribbons form a cauliflower-like mass; no umbrella cap, gills or tall stem. Harvest portions retain the same frilly identity."
+  },
+  "style": {
+    "status": "PASS",
+    "notes": "Warm dark-brown contour and simplified broad cream/beige planes match the approved mod language. Trays retain the ochre front panel, right end notch, dark interior and three-quarter viewpoint."
+  },
+  "transparent_background": {
+    "status": "PASS",
+    "checks": [
+      {
+        "asset": "PlantA",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\PlantA.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          65,
+          23,
+          1194,
+          1254
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "88063dea564ba0628f44f097fb77e58e960755f5d47fc582f7078aa1f919b1b2"
+      },
+      {
+        "asset": "PlantB",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\PlantB.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          47,
+          1234,
+          1231
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "3ec92e2d1ac623007dd97d177108a3acbc2d7995f2de209aedb8daad1d02a254"
+      },
+      {
+        "asset": "01Low",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\01Low.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          55,
+          1208,
+          1212
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "0339de49ff8c08ddb863b01f4c5dbea9a8b4bed1b739372ce056b741945d435a"
+      },
+      {
+        "asset": "02Medium",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\02Medium.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          27,
+          152,
+          1236,
+          1214
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "97a299bee44b410fd3ff746d36944f56bd3754379e4fb5daf093661a4df9c1cb"
+      },
+      {
+        "asset": "03Full",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\03Full.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          55,
+          1200,
+          1254
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "a5b6a60de1964dcc707b186897f20ebbda2783845b4d5eda030d4c809ef0b85c"
+      }
+    ],
+    "notes": "RGBA true alpha transparency verified numerically; masters were not modified."
+  },
+  "plant_variations": {
+    "status": "PASS",
+    "notes": "Both are fully mature single units. A is rounder and taller; B is wider/lower with reordered fronds and an off-center opening, not a growth stage or resize."
+  },
+  "box_fill_levels": {
+    "status": "PASS",
+    "notes": "Low has three small separated frond portions with most tray interior empty. Medium forms a low layer beneath the rear rim with visible interior. Full forms a tall overlapping heap clearly above the rear rim."
+  },
+  "corrected_assets": [],
+  "notes": [
+    "This is a new art draft; no existing runtime texture or definitions were changed.",
+    "Species simplification omits tiny ribbon folds to remain readable at final game scale."
+  ],
+  "prompt_record_count": 5,
+  "generation_record_verification": {
+    "status": "PASS",
+    "notes": "All five exact prompts, local reference inputs, original generated source and byte-identical selected master verified. Cross-cell append snapshots reconciled from per-asset durable records where required."
+  }
+}

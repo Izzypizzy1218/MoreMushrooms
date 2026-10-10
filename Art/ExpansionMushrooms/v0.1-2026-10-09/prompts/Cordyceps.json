@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Replace the first reference's shiitake subject with the following DIFFERENT mushroom species, keeping the exact existing More Mushrooms game sprite drawing language. The second image is the real species photograph for anatomy, not style. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Use thick warm dark-brown contour lines and only TWO OR THREE flat color planes, slight elevated three-quarter game view, clean compact silhouette. NO photoreal texture, gradients, realistic shine, ground, cast ground shadow, logs, box, labels or extra props. One alternate MATURE plant unit, not an early growth stage; full subject centered in square canvas, real transparent alpha background. Keep the species-specific silhouette; do not carry over the first reference's conventional shiitake cap anatomy.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Plant/RimMushrooms/Shiitake/ShiitakeA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-29fd7403-61c6-4d21-9062-2320e403d0c9.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit the first reference, approved Cordyceps PlantA, into a visibly different alternate MATURE PlantB silhouette of the same species. Exactly TWO orange mature slender clubs with thicker rounded tips, one gently leaning left, joined at tiny base, comparable overall size. Preserve the exact PlantA palette, strong outline and comparable size. The real second reference guides anatomy only. This must be a different mature shape, NOT an earlier growth stage and NOT a mirror-only copy. No container. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-1da62d67-42a0-4212-b476-28df22e604e3.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference 01Low produce tray into harvested Cordyceps mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. LOW fill: only three loose modest-size harvested pieces in the bottom, tray interior mostly visibly empty, back rim fully exposed. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-7d4cf361-0ebf-401b-8a56-ba1585ed3b19.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference 02Medium produce tray into harvested Cordyceps mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. MEDIUM fill: six to seven harvested pieces fill about half the tray below its rim; visibly more than Low but clear back rim and empty interior gaps remain. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-9635f90c-b9a4-40b0-8631-5ad7340a851c.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST reference 03Full produce tray into harvested Cordyceps mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. A small mature fruiting unit of Cordyceps militaris, exactly THREE vivid warm ORANGE slender upright clubs/fingers of uneven heights joined at a tiny orange base. Each club has a narrow lower stalk and thicker rounded slightly bumpy fertile upper half, shown using only two or three large shaded shapes. No umbrella cap, gills, insect, corpse, pupa, soil or scenic substrate. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. FULL fill: twelve to fourteen modest-size harvested pieces form a dense shallow heap slightly above the rim; visibly more than Medium; preserve clear front panel and avoid a tall overflowing tower. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Cordyceps-Cordyceps-militaris.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-6a18656c-ab68-4390-b9c3-7c8bbc90bfce.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Cordyceps/03Full.png"
+  }
+]

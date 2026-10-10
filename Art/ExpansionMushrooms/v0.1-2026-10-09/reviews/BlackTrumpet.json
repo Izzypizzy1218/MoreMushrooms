@@ -1,0 +1,183 @@
+{
+  "id": "BlackTrumpet",
+  "scientific": "Craterellus cornucopioides",
+  "reviewer": "balance_hydro_review",
+  "review_date": "2026-10-09",
+  "review_method": "Each saved PlantA, PlantB, 01Low, 02Medium and 03Full PNG was actually opened with view_image. Real specimen photo plus approved Button plant and Low/Medium/Full tray references were viewed before imagegen. Species form and quantity were visually inspected.",
+  "assets_reviewed": [
+    "PlantA",
+    "PlantB",
+    "01Low",
+    "02Medium",
+    "03Full"
+  ],
+  "species_morphology": {
+    "status": "PASS",
+    "notes": "Flared thin ruffled funnels with deep charcoal hollow centers and continuous tapered gray/taupe outer bodies; no separate umbrella caps or radial gills. Box contents show the same hollow trumpet anatomy."
+  },
+  "style": {
+    "status": "PASS",
+    "notes": "Warm dark-brown contour, simple broad color planes, clean silhouette and three-quarter viewpoint follow the approved mod sprites. Ochre tray front, right notch/end block and dark interior remain recognizable; no decorative hardware, text or scenery."
+  },
+  "transparent_background": {
+    "status": "PASS",
+    "checks": [
+      {
+        "asset": "PlantA",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\PlantA.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          97,
+          121,
+          1186,
+          1085
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "aa3921697ee11c3e74b1b2ae017b2fc3fbb05f2ffd834910515a50a4b9655b0a"
+      },
+      {
+        "asset": "PlantB",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\PlantB.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          33,
+          87,
+          1031,
+          1131
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "309d7435c71ecfb6359a53a0ab7c341da4f217e777e9852c320ba8d1b5be6217"
+      },
+      {
+        "asset": "01Low",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\01Low.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          222,
+          1218,
+          1182
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "f7b540e2b4c436d8264fd1febec1bddaad5c588b961655bd90407e2a47ea2706"
+      },
+      {
+        "asset": "02Medium",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\02Medium.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          183,
+          1230,
+          1229
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "fe06bb9154eae04829b5b0fc1d8d5eac4ebedc8d174cded73781b645cb4fd995"
+      },
+      {
+        "asset": "03Full",
+        "path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\03Full.png",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          69,
+          207,
+          1218,
+          1149
+        ],
+        "corners_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "has_transparent_pixels": true,
+        "sha256": "c48363ce088b89d5d11144be96a7456a6c66380de9ffda0a2aa793d5c288f2bd"
+      }
+    ],
+    "notes": "RGBA true alpha transparency verified numerically; masters were not modified."
+  },
+  "plant_variations": {
+    "status": "PASS",
+    "notes": "A has a wide, rounder opening and straighter lower body. B has a narrower asymmetric rim, folded right edge, different opening angle and curved lower body. Same mature stage."
+  },
+  "box_fill_levels": {
+    "status": "PASS",
+    "notes": "Low shows three small separated funnels and broad empty interior. Medium forms a low overlapping layer beneath the rear rim. Full forms a dense tall heap above the rear rim."
+  },
+  "corrected_assets": [],
+  "notes": [
+    "Outer folds are deliberately lighter gray/taupe than the deep charcoal interior, following the selected photo under warm mod lighting.",
+    "The hollow core is opaque shaded anatomy, not a hole in the PNG alpha.",
+    "New art draft masters only; no runtime textures/definitions were edited.",
+    "Final 256px normalization and full-pack contact-sheet QA remain parent-agent responsibility."
+  ],
+  "prompt_record_count": 5,
+  "generation_record_verification": {
+    "status": "PASS",
+    "notes": "All five exact prompts, local reference inputs, original generated source and byte-identical selected master verified. Cross-cell append snapshots reconciled from per-asset durable records where required."
+  }
+}

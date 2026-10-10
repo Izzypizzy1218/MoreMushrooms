@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the FIRST image, the approved More Mushrooms Button PlantA sprite, into a single mature BlackTruffle mushroom (Tuber melanosporum) growth unit. The SECOND image is a real species photograph used for anatomy only, never copy photographic pixels or its habitat. Anatomy: One irregular round black to charcoal-brown underground tuber, covered with simplified small angular pyramidal warts, a gently lumpy silhouette. Show it isolated as the game growth unit; no ordinary mushroom cap, gills, stem or soil. Use just a few broad dark planes and some coarse facets, no photorealistic stippling. Match the approved RimWorld mod sprite style: thick warm dark-brown outlines, only two or three broad flat color planes, simple clean shapes, no photorealistic surface texture, slightly top-down three-quarter view. This is ONE compact repeatable mature growth unit, not a field or several stages; the game repeats these units. Center the subject with generous clear padding in a square canvas. No ground, soil, grass, roots, log, trunk, box, text, labels, cast ground shadow, gradients or extra objects. Real transparent alpha background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\BlackTruffle-Tuber-melanosporum.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-228a7c75-0d98-4f59-a304-3ab4c5fa3fd6.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTruffle\\PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Create an alternate mature growth unit for BlackTruffle (Tuber melanosporum). First image is the approved PlantA sprite; preserve its exact warm dark-brown outlined flat cartoon style and palette. Second is the real species photograph for anatomy only. Irregular rounded black/charcoal-brown underground tubers, coarse simplified angular pyramidal warts and chunky dark facets. No cap, stalk, gills, cut surface or orange fissures. Make one mature tuber a more oval/lobed silhouette with a different coarse facet layout, clearly distinct from the first unit. This is an alternate mature unit, not an earlier growth stage and not merely a mirrored copy. One compact isolated repeatable plant unit. Slightly elevated three-quarter view, simple broad color planes, generous square padding. No box, soil, ground, log, roots, habitat, text, label, glow halo, ground shadow, gradient or scenic prop. True transparent alpha background.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/BlackTruffle-Tuber-melanosporum.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-e14859f9-9817-4cc7-a237-fd9cc78a781c.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit the FIRST image, the existing More Mushrooms 01Low ochre harvest tray sprite. Retain the SAME solid-sided angular tray geometry, elevated three-quarter camera, one flat front face, right-side notch with raised end block, ochre palette, thick warm dark-brown outlines and simple broad flat shading. Replace ONLY its mushrooms with harvested BlackTruffle (Tuber melanosporum) matching the SECOND image approved mature sprite. The THIRD photograph is for anatomy only, never copy photo pixels. Irregular rounded black/charcoal-brown underground tubers, coarse simplified angular pyramidal warts and chunky dark facets. No cap, stalk, gills, cut surface or orange fissures. LOW quantity: exactly THREE harvested units with most dark tray interior still visible, all contents below the rim. Keep each harvested unit recognizable. Container is plain solid-sided, no slats, woodgrain, nails, handles or writing. Transparent background, no soil, foliage, other species, people, ground shadow, text, scenic background or photorealism. Center entire uncut tray with clear padding. Output one independent final sprite with real alpha transparency.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/BlackTruffle-Tuber-melanosporum.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-5e205498-d6a1-428a-bbef-e576a9ffe0bf.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit the FIRST image, the existing More Mushrooms 02Medium ochre harvest tray sprite. Retain the SAME solid-sided angular tray geometry, elevated three-quarter camera, one flat front face, right-side notch with raised end block, ochre palette, thick warm dark-brown outlines and simple broad flat shading. Replace ONLY its mushrooms with harvested BlackTruffle (Tuber melanosporum) matching the SECOND image approved mature sprite. The THIRD photograph is for anatomy only, never copy photo pixels. Irregular rounded black/charcoal-brown underground tubers, coarse simplified angular pyramidal warts and chunky dark facets. No cap, stalk, gills, cut surface or orange fissures. MEDIUM quantity: about SIX harvested units, covering roughly half the tray volume, visibly more than the low version and below the rim. Keep each harvested unit recognizable. Container is plain solid-sided, no slats, woodgrain, nails, handles or writing. Transparent background, no soil, foliage, other species, people, ground shadow, text, scenic background or photorealism. Center entire uncut tray with clear padding. Output one independent final sprite with real alpha transparency.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/BlackTruffle-Tuber-melanosporum.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-c54a17f0-cd35-447c-b247-e23a4a50360e.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit the FIRST image, the existing More Mushrooms 03Full ochre harvest tray sprite. Retain the SAME solid-sided angular tray geometry, elevated three-quarter camera, one flat front face, right-side notch with raised end block, ochre palette, thick warm dark-brown outlines and simple broad flat shading. Replace ONLY its mushrooms with harvested BlackTruffle (Tuber melanosporum) matching the SECOND image approved mature sprite. The THIRD photograph is for anatomy only, never copy photo pixels. Irregular rounded black/charcoal-brown underground tubers, coarse simplified angular pyramidal warts and chunky dark facets. No cap, stalk, gills, cut surface or orange fissures. FULL quantity: about TWELVE harvested units, filling the tray and heaping slightly above the rim, clearly fuller than the medium version. Keep each harvested unit recognizable. Container is plain solid-sided, no slats, woodgrain, nails, handles or writing. Transparent background, no soil, foliage, other species, people, ground shadow, text, scenic background or photorealism. Center entire uncut tray with clear padding. Output one independent final sprite with real alpha transparency.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/BlackTruffle-Tuber-melanosporum.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-5447e985-8ae2-4feb-8b98-37730a4a4a35.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/BlackTruffle/03Full.png"
+  }
+]

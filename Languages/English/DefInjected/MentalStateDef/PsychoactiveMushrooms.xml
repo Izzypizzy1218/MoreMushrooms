@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_HallucinatoryWander.label>hallucinatory wandering</RMush_HallucinatoryWander.label>
+  <RMush_HallucinatoryWander.beginLetter>{0} is seeing things and wandering nearby after eating psychoactive mushrooms. Normal commands are unavailable until the episode ends.</RMush_HallucinatoryWander.beginLetter>
+  <RMush_HallucinatoryWander.beginLetterLabel>mushroom hallucinations</RMush_HallucinatoryWander.beginLetterLabel>
+  <RMush_HallucinatoryWander.recoveryMessage>{0}'s mushroom hallucinations have subsided.</RMush_HallucinatoryWander.recoveryMessage>
+  <RMush_HallucinatoryWander.baseInspectLine>Mental state: Mushroom hallucinations</RMush_HallucinatoryWander.baseInspectLine>
+</LanguageData>

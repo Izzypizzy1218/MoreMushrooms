@@ -1,0 +1,112 @@
+More Mushrooms expansion artwork — mechanical export contract
+Art version v0.1 / 2026-10-09 / art only, game runtime unchanged
+
+The exporter does not generate, repaint, recolor, retouch, or remove backgrounds.
+Every generated original is preserved in masters/. It must already have genuine
+RGBA transparency. Drawing and reference interpretation belong to built-in
+ImageGen, one requested asset at a time. This script only crops, resizes, and packs.
+
+Target count: 31 additional species × 5 assets = 155 masters and 155 textures.
+Existing 15 species and the existing golden EnokiWild plant are never replaced.
+
+Required inputs
+1. species.json: {"species": [{"id":"Identifier", "ko":"한국어 이름", "en":"name",
+   "scientific":"Reviewed scientific name", "identity_status":"photo-verified"}]}.
+   Identifier is a safe alphanumeric/underscore path component. It cannot be an
+   existing species ID. Optional scientific_aliases lists researched synonyms.
+2. references/sources.json: {"photos":[{"id":"Identifier", "scientific":"Reviewed
+   scientific name", "file":"photo.jpg", "page":"https://original-source-page",
+   "author":"Photographer", "license":"Source license", "license_url":"...",
+   "identity_verified":true, "morphology":"Visible species-specific features",
+   "selection_note":"Taxonomic ambiguity/why this photo was selected"}]}.
+   File is relative to references/; references/photo.jpg is also accepted. Files
+   may instead use an absolute path inside THIS versioned art folder. Alias keys
+   local_path, source_page, photographer are accepted and normalized to file,
+   page, author. An image URL alone is insufficient: preserve its source page.
+   A source photo must be saved locally before the species passes the audit.
+   The script checks provenance records, file integrity, and declared scientific
+   name agreement; it cannot biologically identify a photo. Research must record
+   identity_verified=true OR species identity_status=photo-verified. Pending and
+   unverified photos cannot count as finished artwork. Sources keep their license.
+3. masters/Identifier/PlantA.png, PlantB.png, 01Low.png, 02Medium.png, 03Full.png.
+   These are original generated PNG files, preserved byte-for-byte.
+4. prompts/Identifier.json: a list of EXACTLY ONE final record per required asset.
+   Record example: {"asset":"Identifier/PlantA", "prompt":"Exact final prompt",
+   "referenced_image_paths":["local/reference/path"], "transparent_background":true,
+   "mode":"built-in-imagegen", "generated_source":"Original generation path",
+   "saved_path":"Preserved local master path"}.
+   Relative references resolve against this art folder. Absolute references may
+   point to established existing style art; they are read only. Every listed
+   input reference must exist. Individual records preserve actual tool prompts;
+   planned but unused prompts must not be misrepresented as final generation.
+
+Source style shortlist (all read only)
+MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/{01Low,02Medium,03Full}.png
+  exact ochre tray geometry, right-hand notch/end block and fill compositions.
+MoreMushrooms/Textures/Things/Plant/RimMushrooms/Button/{ButtonA,ButtonB}.png
+  generic cap/stem mature unit, outline and shading language.
+MoreMushrooms/Textures/Things/Plant/RimMushrooms/Oyster/{OysterA,OysterB}.png
+  clustered fan/gill silhouette with simple flat shading.
+MoreMushrooms/Textures/Things/Plant/RimMushrooms/EnokiWild/{EnokiWildA,EnokiWildB}.png
+  small golden multi-stem unit, true mature variation.
+MoreMushrooms/Textures/Things/Plant/RimMushrooms/FlyAgaric/{FlyAgaricA,FlyAgaricB}.png
+  approved recent poison-art cap/ring simplification and saturated accents.
+MoreMushrooms/Textures/Things/Plant/RimMushrooms/PoisonFireCoral/
+  PoisonFireCoralA.png and PoisonFireCoralB.png: unusual upright coral-shaped unit.
+MoreMushrooms/Art/PoisonMushrooms/Handoff-2026-10-05/art/build_assets.py
+  approved mechanical export precedent; do not modify it.
+MoreMushrooms/Art/PoisonMushrooms/Handoff-2026-10-05/art/masters/
+  original recent 25 masters; helpful to compare scale before normalizing.
+
+Drawing requirements
+Thick warm dark-brown contours, two or three flat color planes, modest three-
+quarter elevated view. No photographic detail, wood grain, gradients, text,
+poison badges, skulls, faces, scenic ground, dirt/log props, or cast ground shadow.
+Keep actual species anatomy and color from reviewed photographs. A fruiting unit
+may contain a small natural cluster, but it must not become a habitat illustration.
+PlantA/PlantB are alternate MATURE silhouettes, not juvenile/mature growth stages.
+For containers keep the established tray shell, viewpoint, palette and notch.
+Low = sparse contents and much visible interior; Medium = about half full;
+Full = shallow dense mound a little above the rim. Piece counts can differ with
+species shape, but fill levels must be visibly distinct.
+
+Export mathematics — unchanged from prior poison-art mechanical exporter
+Crop bounds use alpha >=16 to ignore insignificant edge haze. Preserve alpha.
+Plant: scale longest bounding-box dimension to 192px, center x=128, bottom y=224.
+Item: scale bounding-box width to 226px, center x=128, bottom y=217.
+LANCZOS resize, then alpha-composite onto a transparent 256×256 RGBA canvas.
+Overheight or invalid-alpha originals fail instead of being cropped to fit or fixed.
+Exports go only to THIS art folder's Textures/Things/Plant or Item/RimMushrooms/ID.
+Master files, live mod textures, Defs, assemblies, installation and mod version
+are never modified. Existing 15-species reference sprites are copied unchanged
+into this folder's references/style/runtime/ for offline comparison only.
+
+Growth previews
+Current runtime Plant.Print uses max(1,ceil(9*g)) repeated meshes and
+plane side = 1.0*(0.3+0.35*g) tiles, with independently chosen mature A/B and flip.
+25% = 3 units, .3875 tile planes; 50% = 5, .4750; 75% = 7, .5625; 100% = 9, .6500.
+The HTML's placement and projection are illustrative and do not duplicate Unity
+seeded positions/material allocation exactly. It is explicitly a SIMULATION,
+never a gameplay screenshot or evidence that species already exist in the game.
+
+Commands
+python build_assets.py --self-test
+  Read only: normalize all 25 prior poison masters and compare actual RGBA pixels
+  with all 25 established exports. No output file is created. Verified PASS.
+python build_assets.py --audit-inputs
+  Read only: report per-species photos, prompt/master records and missing inputs.
+python build_assets.py --partial --species Identifier AnotherIdentifier
+  Export only species whose five masters/photos/prompts are complete. Manifest
+  and comparison remain explicitly unfinished; not a 31-species deliverable.
+python build_assets.py
+  Require all 31 species complete before writing textures. Then export 155,
+  audit source/export hashes, create manifest.json and offline comparison.html.
+python build_assets.py --validate-only
+  Read only: recheck inputs, 5-per-species counts, RGBA/dimensions/alpha, master
+  and export hashes, photo and prompt provenance, registry and comparison hashes.
+
+Outputs: Textures/, references/style/runtime/ unchanged baseline copies,
+manifest.json and comparison.html. A complete manifest has complete=true,
+species_count=31 and texture_count=155. Human artwork review remains required:
+the script cannot judge anatomy, style fidelity, correct box fill, or visual A/B
+distinctness. It does not mark live gameplay tests or runtime installation done.

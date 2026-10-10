@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RMush_AllowPsychoactiveMeals.label>allow meals with psychoactive mushrooms</RMush_AllowPsychoactiveMeals.label>
+  <RMush_AllowPsychoactiveMeals.description>Allow meals containing a recorded dose of a psychoactive mushroom. Disable this to keep these meals out of a food restriction or stockpile.</RMush_AllowPsychoactiveMeals.description>
+</LanguageData>

@@ -6,21 +6,21 @@
   <RMush_PoisonFlyAgaric.stages.3.label>severe neurological poisoning</RMush_PoisonFlyAgaric.stages.3.label>
   <RMush_PoisonFlyAgaric.stages.4.label>profound drowsiness</RMush_PoisonFlyAgaric.stages.4.label>
   <RMush_PoisonFlyAgaric.label>fly agaric poisoning</RMush_PoisonFlyAgaric.label>
-  <RMush_PoisonFlyAgaric.description>Confusion, drowsiness and impaired consciousness; severe poisoning can leave the victim unable to act. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonFlyAgaric.description>
+  <RMush_PoisonFlyAgaric.description>Confusion, drowsiness and impaired consciousness. High or repeated exposure can become life-threatening without sufficient care. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered. Ordinary exposure resolves gradually; only high or repeated exposure enters the life-threatening course.</RMush_PoisonFlyAgaric.description>
   <RMush_PoisonDestroyingAngel.stages.0.label>asymptomatic</RMush_PoisonDestroyingAngel.stages.0.label>
   <RMush_PoisonDestroyingAngel.stages.1.label>gastrointestinal symptoms</RMush_PoisonDestroyingAngel.stages.1.label>
   <RMush_PoisonDestroyingAngel.stages.2.label>quieter symptoms; liver injury continues</RMush_PoisonDestroyingAngel.stages.2.label>
   <RMush_PoisonDestroyingAngel.stages.3.label>severe liver injury</RMush_PoisonDestroyingAngel.stages.3.label>
   <RMush_PoisonDestroyingAngel.stages.4.label>critical liver poisoning</RMush_PoisonDestroyingAngel.stages.4.label>
   <RMush_PoisonDestroyingAngel.label>destroying angel poisoning</RMush_PoisonDestroyingAngel.label>
-  <RMush_PoisonDestroyingAngel.description>Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. After the first symptom warning, a single exposure grants at least 24 hours before this poisoning itself can enter its lethal stage. Other illnesses, injuries and additional exposures are not covered.</RMush_PoisonDestroyingAngel.description>
+  <RMush_PoisonDestroyingAngel.description>Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered.</RMush_PoisonDestroyingAngel.description>
   <RMush_PoisonSulfurTuft.stages.0.label>asymptomatic</RMush_PoisonSulfurTuft.stages.0.label>
   <RMush_PoisonSulfurTuft.stages.1.label>stomach pain</RMush_PoisonSulfurTuft.stages.1.label>
   <RMush_PoisonSulfurTuft.stages.2.label>gastroenteritis and weakness</RMush_PoisonSulfurTuft.stages.2.label>
   <RMush_PoisonSulfurTuft.stages.3.label>severe gastroenteritis</RMush_PoisonSulfurTuft.stages.3.label>
   <RMush_PoisonSulfurTuft.stages.4.label>profound weakness</RMush_PoisonSulfurTuft.stages.4.label>
   <RMush_PoisonSulfurTuft.label>sulfur tuft poisoning</RMush_PoisonSulfurTuft.label>
-  <RMush_PoisonSulfurTuft.description>Persistent severe gastroenteritis, vomiting, pain and weakness. More severe poisoning needs medical care and takes longer to recover. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonSulfurTuft.description>
+  <RMush_PoisonSulfurTuft.description>Persistent gastroenteritis, vomiting, pain and weakness. High or repeated exposure can become life-threatening without sufficient care. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered. Ordinary exposure resolves gradually; only high or repeated exposure enters the life-threatening course.</RMush_PoisonSulfurTuft.description>
   <RMush_PoisonTsukiyotake.stages.0.label>asymptomatic</RMush_PoisonTsukiyotake.stages.0.label>
   <RMush_PoisonTsukiyotake.stages.1.label>acute nausea</RMush_PoisonTsukiyotake.stages.1.label>
   <RMush_PoisonTsukiyotake.stages.2.label>vomiting and enteritis</RMush_PoisonTsukiyotake.stages.2.label>
@@ -34,5 +34,47 @@
   <RMush_PoisonPoisonFireCoral.stages.3.label>severe systemic poisoning</RMush_PoisonPoisonFireCoral.stages.3.label>
   <RMush_PoisonPoisonFireCoral.stages.4.label>critical systemic poisoning</RMush_PoisonPoisonFireCoral.stages.4.label>
   <RMush_PoisonPoisonFireCoral.label>poison fire coral poisoning</RMush_PoisonPoisonFireCoral.label>
-  <RMush_PoisonPoisonFireCoral.description>Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. After the first symptom warning, a single exposure grants at least 24 hours before this poisoning itself can enter its lethal stage. Other illnesses, injuries and additional exposures are not covered.</RMush_PoisonPoisonFireCoral.description>
+  <RMush_PoisonPoisonFireCoral.description>Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered.</RMush_PoisonPoisonFireCoral.description>
+  <RMush_PoisonDeathCap.stages.0.label>asymptomatic</RMush_PoisonDeathCap.stages.0.label>
+  <RMush_PoisonDeathCap.stages.1.label>gastrointestinal symptoms</RMush_PoisonDeathCap.stages.1.label>
+  <RMush_PoisonDeathCap.stages.2.label>quieter symptoms; liver injury continues</RMush_PoisonDeathCap.stages.2.label>
+  <RMush_PoisonDeathCap.stages.3.label>severe liver injury</RMush_PoisonDeathCap.stages.3.label>
+  <RMush_PoisonDeathCap.stages.4.label>critical liver poisoning</RMush_PoisonDeathCap.stages.4.label>
+  <RMush_PoisonDeathCap.label>death cap poisoning</RMush_PoisonDeathCap.label>
+  <RMush_PoisonDeathCap.description>Delayed gastrointestinal symptoms and progressive liver injury. Untreated poisoning can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered.</RMush_PoisonDeathCap.description>
+  <RMush_PoisonYellowDapperling.stages.0.label>asymptomatic</RMush_PoisonYellowDapperling.stages.0.label>
+  <RMush_PoisonYellowDapperling.stages.1.label>acute nausea</RMush_PoisonYellowDapperling.stages.1.label>
+  <RMush_PoisonYellowDapperling.stages.2.label>vomiting and enteritis</RMush_PoisonYellowDapperling.stages.2.label>
+  <RMush_PoisonYellowDapperling.stages.3.label>severe enteritis</RMush_PoisonYellowDapperling.stages.3.label>
+  <RMush_PoisonYellowDapperling.stages.4.label>severe enteritis and weakness</RMush_PoisonYellowDapperling.stages.4.label>
+  <RMush_PoisonYellowDapperling.label>yellow dapperling poisoning</RMush_PoisonYellowDapperling.label>
+  <RMush_PoisonYellowDapperling.description>Short-lived gastrointestinal upset, nausea and abdominal pain. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonYellowDapperling.description>
+  <RMush_PoisonJackOLantern.stages.0.label>asymptomatic</RMush_PoisonJackOLantern.stages.0.label>
+  <RMush_PoisonJackOLantern.stages.1.label>acute nausea</RMush_PoisonJackOLantern.stages.1.label>
+  <RMush_PoisonJackOLantern.stages.2.label>vomiting and enteritis</RMush_PoisonJackOLantern.stages.2.label>
+  <RMush_PoisonJackOLantern.stages.3.label>severe enteritis</RMush_PoisonJackOLantern.stages.3.label>
+  <RMush_PoisonJackOLantern.stages.4.label>severe enteritis and weakness</RMush_PoisonJackOLantern.stages.4.label>
+  <RMush_PoisonJackOLantern.label>jack-o'-lantern mushroom poisoning</RMush_PoisonJackOLantern.label>
+  <RMush_PoisonJackOLantern.description>Strong vomiting, abdominal pain and lingering gastrointestinal weakness. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonJackOLantern.description>
+  <RMush_PoisonDeadlyWebcap.stages.0.label>asymptomatic</RMush_PoisonDeadlyWebcap.stages.0.label>
+  <RMush_PoisonDeadlyWebcap.stages.1.label>early kidney symptoms</RMush_PoisonDeadlyWebcap.stages.1.label>
+  <RMush_PoisonDeadlyWebcap.stages.2.label>progressive kidney impairment</RMush_PoisonDeadlyWebcap.stages.2.label>
+  <RMush_PoisonDeadlyWebcap.stages.3.label>severe kidney poisoning</RMush_PoisonDeadlyWebcap.stages.3.label>
+  <RMush_PoisonDeadlyWebcap.stages.4.label>critical kidney failure</RMush_PoisonDeadlyWebcap.stages.4.label>
+  <RMush_PoisonDeadlyWebcap.label>deadly webcap poisoning</RMush_PoisonDeadlyWebcap.label>
+  <RMush_PoisonDeadlyWebcap.description>A long symptom-free period precedes progressive kidney poisoning. Untreated severe kidney failure can be fatal. Care must be repeated using the normal medical system. Recovery is gradual after stabilization. This poisoning's direct lethal check grants at least 24 hours after the first symptom warning. Other illnesses and injuries are not covered.</RMush_PoisonDeadlyWebcap.description>
+  <RMush_PoisonPantherCap.stages.0.label>asymptomatic</RMush_PoisonPantherCap.stages.0.label>
+  <RMush_PoisonPantherCap.stages.1.label>confused and drowsy</RMush_PoisonPantherCap.stages.1.label>
+  <RMush_PoisonPantherCap.stages.2.label>impaired consciousness</RMush_PoisonPantherCap.stages.2.label>
+  <RMush_PoisonPantherCap.stages.3.label>severe neurological poisoning</RMush_PoisonPantherCap.stages.3.label>
+  <RMush_PoisonPantherCap.stages.4.label>profound drowsiness</RMush_PoisonPantherCap.stages.4.label>
+  <RMush_PoisonPantherCap.label>panther cap poisoning</RMush_PoisonPantherCap.label>
+  <RMush_PoisonPantherCap.description>Strong confusion and impaired consciousness; severe exposure can cause a prolonged coma-like state. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonPantherCap.description>
+  <RMush_PoisonGhostFungus.stages.0.label>asymptomatic</RMush_PoisonGhostFungus.stages.0.label>
+  <RMush_PoisonGhostFungus.stages.1.label>acute nausea</RMush_PoisonGhostFungus.stages.1.label>
+  <RMush_PoisonGhostFungus.stages.2.label>vomiting and enteritis</RMush_PoisonGhostFungus.stages.2.label>
+  <RMush_PoisonGhostFungus.stages.3.label>severe enteritis</RMush_PoisonGhostFungus.stages.3.label>
+  <RMush_PoisonGhostFungus.stages.4.label>severe enteritis and weakness</RMush_PoisonGhostFungus.stages.4.label>
+  <RMush_PoisonGhostFungus.label>ghost fungus poisoning</RMush_PoisonGhostFungus.label>
+  <RMush_PoisonGhostFungus.description>Vomiting, abdominal pain and temporary gastrointestinal weakness. Symptoms resolve gradually after onset. Ordinary medical care can speed recovery.</RMush_PoisonGhostFungus.description>
 </LanguageData>

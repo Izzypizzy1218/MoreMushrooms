@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RMush_RawCauliflower.label>cauliflower mushroom</RMush_RawCauliflower.label>
+  <RMush_RawCauliflower.description>A pale mushroom with densely folded, ruffled branches. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +7 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawCauliflower.description>
+  <RMush_PlantCauliflower.label>cauliflower mushroom cluster</RMush_PlantCauliflower.label>
+  <RMush_PlantCauliflower.description>A cluster of cauliflower mushroom. Can be grown in soil or hydroponics basins. Grows without a sun lamp; stronger light slows its growth. A pale mushroom with densely folded, ruffled branches.</RMush_PlantCauliflower.description>
+  <RMush_RawPurpleBlewit.label>purple blewit</RMush_RawPurpleBlewit.label>
+  <RMush_RawPurpleBlewit.description>A purple-toned mushroom with a firm cap and pleasant mushroom flavor. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawPurpleBlewit.description>
+  <RMush_PlantPurpleBlewit.label>purple blewit cluster</RMush_PlantPurpleBlewit.label>
+  <RMush_PlantPurpleBlewit.description>A cluster of purple blewit. Can be grown in soil or hydroponics basins. Grows without a sun lamp; stronger light slows its growth. A purple-toned mushroom with a firm cap and pleasant mushroom flavor.</RMush_PlantPurpleBlewit.description>
+  <RMush_RawBlackTruffle.label>black truffle</RMush_RawBlackTruffle.label>
+  <RMush_RawBlackTruffle.description>A dark, knobbly woodland fungus prized for its strong and complex aroma. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +7 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawBlackTruffle.description>
+  <RMush_PlantBlackTruffle.label>black truffle cluster</RMush_PlantBlackTruffle.label>
+  <RMush_PlantBlackTruffle.description>A cluster of black truffle. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, knobbly woodland fungus prized for its strong and complex aroma.</RMush_PlantBlackTruffle.description>
+  <RMush_RawPorcini.label>porcini</RMush_RawPorcini.label>
+  <RMush_RawPorcini.description>A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +7 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawPorcini.description>
+  <RMush_PlantPorcini.label>porcini cluster</RMush_PlantPorcini.label>
+  <RMush_PlantPorcini.description>A cluster of porcini. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor.</RMush_PlantPorcini.description>
+  <RMush_RawMorel.label>morel</RMush_RawMorel.label>
+  <RMush_RawMorel.description>A spring woodland mushroom with a honeycomb-like cap and a gentle aroma. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawMorel.description>
+  <RMush_PlantMorel.label>morel cluster</RMush_PlantMorel.label>
+  <RMush_PlantMorel.description>A cluster of morel. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A spring woodland mushroom with a honeycomb-like cap and a gentle aroma.</RMush_PlantMorel.description>
+  <RMush_RawBlackTrumpet.label>black trumpet</RMush_RawBlackTrumpet.label>
+  <RMush_RawBlackTrumpet.description>A dark, thin-fleshed mushroom shaped like a small trumpet. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawBlackTrumpet.description>
+  <RMush_PlantBlackTrumpet.label>black trumpet cluster</RMush_PlantBlackTrumpet.label>
+  <RMush_PlantBlackTrumpet.description>A cluster of black trumpet. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, thin-fleshed mushroom shaped like a small trumpet.</RMush_PlantBlackTrumpet.description>
+  <RMush_RawGiantPuffball.label>giant puffball</RMush_RawGiantPuffball.label>
+  <RMush_RawGiantPuffball.description>A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +3 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawGiantPuffball.description>
+  <RMush_PlantGiantPuffball.label>giant puffball cluster</RMush_PlantGiantPuffball.label>
+  <RMush_PlantGiantPuffball.description>A cluster of giant puffball. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage.</RMush_PlantGiantPuffball.description>
+  <RMush_RawIndigoMilkcap.label>indigo milkcap</RMush_RawIndigoMilkcap.label>
+  <RMush_RawIndigoMilkcap.description>A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawIndigoMilkcap.description>
+  <RMush_PlantIndigoMilkcap.label>indigo milkcap cluster</RMush_PlantIndigoMilkcap.label>
+  <RMush_PlantIndigoMilkcap.description>A cluster of indigo milkcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste.</RMush_PlantIndigoMilkcap.description>
+  <RMush_RawVeiledStinkhorn.label>veiled stinkhorn</RMush_RawVeiledStinkhorn.label>
+  <RMush_RawVeiledStinkhorn.description>A mushroom with a delicate white net and sponge-like edible tissue. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawVeiledStinkhorn.description>
+  <RMush_PlantVeiledStinkhorn.label>veiled stinkhorn cluster</RMush_PlantVeiledStinkhorn.label>
+  <RMush_PlantVeiledStinkhorn.description>A cluster of veiled stinkhorn. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A mushroom with a delicate white net and sponge-like edible tissue.</RMush_PlantVeiledStinkhorn.description>
+  <RMush_RawShaggyInkcap.label>shaggy inkcap</RMush_RawShaggyInkcap.label>
+  <RMush_RawShaggyInkcap.description>A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +3 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawShaggyInkcap.description>
+  <RMush_PlantShaggyInkcap.label>shaggy inkcap cluster</RMush_PlantShaggyInkcap.label>
+  <RMush_PlantShaggyInkcap.description>A cluster of shaggy inkcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly.</RMush_PlantShaggyInkcap.description>
+  <RMush_RawLobster.label>lobster mushroom</RMush_RawLobster.label>
+  <RMush_RawLobster.description>An orange fungus growing over the fruit body of another mushroom, giving it firm flesh. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</RMush_RawLobster.description>
+  <RMush_PlantLobster.label>lobster mushroom cluster</RMush_PlantLobster.label>
+  <RMush_PlantLobster.description>A cluster of lobster mushroom. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. An orange fungus growing over the fruit body of another mushroom, giving it firm flesh.</RMush_PlantLobster.description>
+  <RMush_RawReishi.label>reishi</RMush_RawReishi.label>
+  <RMush_RawReishi.description>A tough, bitter bracket fungus collected as a fungal resource and trade good.</RMush_RawReishi.description>
+  <RMush_PlantReishi.label>reishi cluster</RMush_PlantReishi.label>
+  <RMush_PlantReishi.description>A cluster of reishi. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tough, bitter bracket fungus collected as a fungal resource and trade good.</RMush_PlantReishi.description>
+  <RMush_RawTurkeyTail.label>turkey tail</RMush_RawTurkeyTail.label>
+  <RMush_RawTurkeyTail.description>A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good.</RMush_RawTurkeyTail.description>
+  <RMush_PlantTurkeyTail.label>turkey tail cluster</RMush_PlantTurkeyTail.label>
+  <RMush_PlantTurkeyTail.description>A cluster of turkey tail. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good.</RMush_PlantTurkeyTail.description>
+  <RMush_RawSanghuang.label>sanghuang</RMush_RawSanghuang.label>
+  <RMush_RawSanghuang.description>A hard, woody bracket fungus collected as a fungal resource and trade good.</RMush_RawSanghuang.description>
+  <RMush_PlantSanghuang.label>sanghuang cluster</RMush_PlantSanghuang.label>
+  <RMush_PlantSanghuang.description>A cluster of sanghuang. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A hard, woody bracket fungus collected as a fungal resource and trade good.</RMush_PlantSanghuang.description>
+  <RMush_RawCordyceps.label>cordyceps</RMush_RawCordyceps.label>
+  <RMush_RawCordyceps.description>A small orange club-shaped fungus collected as a fungal resource and trade good.</RMush_RawCordyceps.description>
+  <RMush_PlantCordyceps.label>cordyceps cluster</RMush_PlantCordyceps.label>
+  <RMush_PlantCordyceps.description>A cluster of cordyceps. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small orange club-shaped fungus collected as a fungal resource and trade good.</RMush_PlantCordyceps.description>
+  <RMush_RawChaga.label>chaga</RMush_RawChaga.label>
+  <RMush_RawChaga.description>A dark, rough fungal growth collected as a fungal resource and trade good.</RMush_RawChaga.description>
+  <RMush_PlantChaga.label>chaga cluster</RMush_PlantChaga.label>
+  <RMush_PlantChaga.description>A cluster of chaga. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, rough fungal growth collected as a fungal resource and trade good.</RMush_PlantChaga.description>
+  <RMush_RawLibertyCap.label>liberty cap</RMush_RawLibertyCap.label>
+  <RMush_RawLibertyCap.description>A small mushroom with a pointed cap and psychoactive effects. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +15 mood for 6 hours and causes 1–2 hours of uncontrolled hallucination wandering. These effects also occur when used as a meal ingredient. Psychoactive mushroom mood bonuses do not stack with each other.</RMush_RawLibertyCap.description>
+  <RMush_PlantLibertyCap.label>liberty cap cluster</RMush_PlantLibertyCap.label>
+  <RMush_PlantLibertyCap.description>A cluster of liberty cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small mushroom with a pointed cap and psychoactive effects.</RMush_PlantLibertyCap.description>
+  <RMush_RawPantherCap.label>panther cap</RMush_RawPantherCap.label>
+  <RMush_RawPantherCap.description>A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +10 mood for 6 hours and causes 3–4 hours of uncontrolled hallucination wandering. These effects also occur when used as a meal ingredient. Psychoactive mushroom mood bonuses do not stack with each other.</RMush_RawPantherCap.description>
+  <RMush_PlantPantherCap.label>panther cap cluster</RMush_PlantPantherCap.label>
+  <RMush_PlantPantherCap.description>A cluster of panther cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma.</RMush_PlantPantherCap.description>
+  <RMush_RawCubensis.label>cubensis</RMush_RawCubensis.label>
+  <RMush_RawCubensis.description>A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +15 mood for 6 hours and causes 1–2 hours of uncontrolled hallucination wandering. These effects also occur when used as a meal ingredient. Psychoactive mushroom mood bonuses do not stack with each other.</RMush_RawCubensis.description>
+  <RMush_PlantCubensis.label>cubensis cluster</RMush_PlantCubensis.label>
+  <RMush_PlantCubensis.description>A cluster of cubensis. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects.</RMush_PlantCubensis.description>
+  <RMush_RawDeathCap.label>death cap</RMush_RawDeathCap.label>
+  <RMush_RawDeathCap.description>Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</RMush_RawDeathCap.description>
+  <RMush_PlantDeathCap.label>death cap cluster</RMush_PlantDeathCap.label>
+  <RMush_PlantDeathCap.description>A cluster of death cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal.</RMush_PlantDeathCap.description>
+  <RMush_RawYellowDapperling.label>yellow dapperling</RMush_RawYellowDapperling.label>
+  <RMush_RawYellowDapperling.description>A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</RMush_RawYellowDapperling.description>
+  <RMush_PlantYellowDapperling.label>yellow dapperling cluster</RMush_PlantYellowDapperling.label>
+  <RMush_PlantYellowDapperling.description>A cluster of yellow dapperling. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness.</RMush_PlantYellowDapperling.description>
+  <RMush_RawJackOLantern.label>jack-o-lantern mushroom</RMush_RawJackOLantern.label>
+  <RMush_RawJackOLantern.description>A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</RMush_RawJackOLantern.description>
+  <RMush_PlantJackOLantern.label>jack-o-lantern mushroom cluster</RMush_PlantJackOLantern.label>
+  <RMush_PlantJackOLantern.description>A cluster of jack-o-lantern mushroom. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning.</RMush_PlantJackOLantern.description>
+  <RMush_RawDeadlyWebcap.label>deadly webcap</RMush_RawDeadlyWebcap.label>
+  <RMush_RawDeadlyWebcap.description>Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</RMush_RawDeadlyWebcap.description>
+  <RMush_PlantDeadlyWebcap.label>deadly webcap cluster</RMush_PlantDeadlyWebcap.label>
+  <RMush_PlantDeadlyWebcap.description>A cluster of deadly webcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal.</RMush_PlantDeadlyWebcap.description>
+  <RMush_RawZombieAntFungus.label>zombie-ant fungus</RMush_RawZombieAntFungus.label>
+  <RMush_RawZombieAntFungus.description>A slender fungus associated with insect hosts. Collected as a specimen and trade good.</RMush_RawZombieAntFungus.description>
+  <RMush_PlantZombieAntFungus.label>zombie-ant fungus cluster</RMush_PlantZombieAntFungus.label>
+  <RMush_PlantZombieAntFungus.description>A cluster of zombie-ant fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A slender fungus associated with insect hosts. Collected as a specimen and trade good.</RMush_PlantZombieAntFungus.description>
+  <RMush_RawHoneyFungus.label>honey fungus</RMush_RawHoneyFungus.label>
+  <RMush_RawHoneyFungus.description>A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient. Can be eaten directly or used in ordinary meals. Counts as fungus.</RMush_RawHoneyFungus.description>
+  <RMush_PlantHoneyFungus.label>honey fungus cluster</RMush_PlantHoneyFungus.label>
+  <RMush_PlantHoneyFungus.description>A cluster of honey fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient.</RMush_PlantHoneyFungus.description>
+  <RMush_RawDryRot.label>dry rot fungus</RMush_RawDryRot.label>
+  <RMush_RawDryRot.description>A broad, crust-like fungal growth collected as a specimen and trade good.</RMush_RawDryRot.description>
+  <RMush_PlantDryRot.label>dry rot fungus cluster</RMush_PlantDryRot.label>
+  <RMush_PlantDryRot.description>A cluster of dry rot fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A broad, crust-like fungal growth collected as a specimen and trade good.</RMush_PlantDryRot.description>
+  <RMush_RawGhostFungus.label>ghost fungus</RMush_RawGhostFungus.label>
+  <RMush_RawGhostFungus.description>A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</RMush_RawGhostFungus.description>
+  <RMush_PlantGhostFungus.label>ghost fungus cluster</RMush_PlantGhostFungus.label>
+  <RMush_PlantGhostFungus.description>A cluster of ghost fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning.</RMush_PlantGhostFungus.description>
+  <RMush_RawYellowBrain.label>yellow brain fungus</RMush_RawYellowBrain.label>
+  <RMush_RawYellowBrain.description>A folded yellow fungus with a jelly-like texture and little distinctive flavor. Can be eaten directly or used in ordinary meals. Counts as fungus.</RMush_RawYellowBrain.description>
+  <RMush_PlantYellowBrain.label>yellow brain fungus cluster</RMush_PlantYellowBrain.label>
+  <RMush_PlantYellowBrain.description>A cluster of yellow brain fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A folded yellow fungus with a jelly-like texture and little distinctive flavor.</RMush_PlantYellowBrain.description>
+  <RMush_RawDevilsFingers.label>devil's fingers</RMush_RawDevilsFingers.label>
+  <RMush_RawDevilsFingers.description>A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good.</RMush_RawDevilsFingers.description>
+  <RMush_PlantDevilsFingers.label>devil's fingers cluster</RMush_PlantDevilsFingers.label>
+  <RMush_PlantDevilsFingers.description>A cluster of devil's fingers. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good.</RMush_PlantDevilsFingers.description>
+  <RMush_RawBirdsNest.label>bird's nest fungus</RMush_RawBirdsNest.label>
+  <RMush_RawBirdsNest.description>A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good.</RMush_RawBirdsNest.description>
+  <RMush_PlantBirdsNest.label>bird's nest fungus cluster</RMush_PlantBirdsNest.label>
+  <RMush_PlantBirdsNest.description>A cluster of bird's nest fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good.</RMush_PlantBirdsNest.description>
+  <RMush_RawChlorophos.label>green-glowing mycena</RMush_RawChlorophos.label>
+  <RMush_RawChlorophos.description>A tiny, pale-capped fungus collected as a specimen and trade good.</RMush_RawChlorophos.description>
+  <RMush_PlantChlorophos.label>green-glowing mycena cluster</RMush_PlantChlorophos.label>
+  <RMush_PlantChlorophos.description>A cluster of green-glowing mycena. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tiny, pale-capped fungus collected as a specimen and trade good.</RMush_PlantChlorophos.description>
+</LanguageData>

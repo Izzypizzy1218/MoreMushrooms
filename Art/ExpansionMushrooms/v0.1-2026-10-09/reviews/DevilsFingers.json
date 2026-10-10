@@ -1,0 +1,78 @@
+{
+  "id": "DevilsFingers",
+  "review_status": "PASS with documented morphology simplification",
+  "visual_inspection": "All five original generated images viewed; not in-game captures",
+  "morphology": "Clathrus archeri red fleshy separate tapering arms with dark charcoal/olive irregular inner gleba patches and pale small egg-sac base. A5-arm crown vs B6-arm crown in different mature arrangement. No lattice, coral branches, suckers/eyes or conventional caps.",
+  "style": "Warm dark-brown outline, flat-color anatomy, existing ochre storage tray perspective/notch/front preserved",
+  "real_alpha": "PASS: all original masters RGBA with alpha extrema [0,255]",
+  "mature_variants": "PASS: A/B are alternate mature silhouettes, visibly different arrangement, not growth stages",
+  "quantity_gap": "Low3 small crowns well separated below rim; Medium5 loosely overlapping near rim; Full about7–9 whole/partial crowns visibly stacked higher above rim. Arm overlap hides literal crown count, full fill difference remains clear.",
+  "regeneration_cautions": "Keep separate fleshy arms and cream basal sac; do not confuse with Clathrus ruber red lattice or existing PoisonFireCoral branching morphology. Clathrus dark gleba simplified to large patches.",
+  "assets": [
+    {
+      "asset": "01Low",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b79ccc19ff116cc29d81c998c58e64e7a41f867247ae848496857a0d3a5014db"
+    },
+    {
+      "asset": "02Medium",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "aeb4a2c9e111b5dc5ad710ef2978a22afe9d905db1db079925dfa5140b22a28f"
+    },
+    {
+      "asset": "03Full",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "c83c03b541e4a0af79606821c7682af90aaa13523d1d853113d722a0788c3154"
+    },
+    {
+      "asset": "PlantA",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "406438f4d28417696fd9e1a750622fd20d8361319fd00ce05a63a051075ed206"
+    },
+    {
+      "asset": "PlantB",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "f3730ced32c63eea148f1d6136674ba2ca9e7e4d42092eb22d2e01e886b496ef"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the first reference image, the approved More Mushrooms Button growing unit sprite, into a single mature CAULIFLOWER MUSHROOM (Sparassis latifolia), PlantA. The second reference is a real East Asian species photo for anatomy only; do not copy its photographic pixels or habitat. Keep the approved simple RimWorld sprite style: thick warm dark-brown outlines, only two or three broad flat cream/beige color planes, a slightly top-down three-quarter camera and clean readable silhouette. Make one compact rounded flower/cauliflower mass of thin broad ivory ribbons with strongly ruffled curled edges, simplified into a few clearly separated folded lobes. This species has no conventional umbrella cap, radial gills, or long visible stalk. This is ONE mature repeatable growth unit; the game repeats units to form colonies, so do not draw a field or nine separate plants. No ground, soil, roots, moss, leaves, trunk, log, box, text, labels, cast ground shadow, gradients, realistic texture or extra objects. Centered subject with clear padding in a square canvas. Genuinely transparent background with real alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\Cauliflower-Sparassis-latifolia-JessMullins.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-7a7362f0-fe87-4795-9104-72fec4bb228c.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Create PlantB, an alternate mature cauliflower mushroom (Sparassis latifolia) growth unit, by editing the first image (the approved new PlantA sprite). Second reference is the real species photo for anatomy only. Preserve the same warm dark-brown contour weight, cream/beige flat palette, simplified folded ribbon texture and slight top-down three-quarter view. Keep it one compact fully mature cauliflower-like frond mass, but make the silhouette a little wider and lower, with distinctly rearranged curled fronds and one off-center shallow opening so it visibly differs from PlantA. Do not make an early growth stage or a duplicate with only scale changed. No conventional umbrella cap or tall stalk. No ground, roots, leaves, log, box, text or cast shadow. Keep genuine transparent alpha and ample outer padding in square canvas.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\Cauliflower-Sparassis-latifolia-JessMullins.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-628e932f-e863-4614-aaba-69ec3e819228.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST image, the approved More Mushrooms 01Low ochre storage tray, into harvested CAULIFLOWER MUSHROOM (Sparassis latifolia) portions. The second image is the approved new species PlantA sprite, a style and identity reference. Preserve the FIRST image's exact box silhouette, front panel, right-side notch/end block, rim thickness, ochre/brown colors, dark interior and top-down three-quarter perspective. Contents: cream/ivory folded frilly ribbon portions without ordinary button caps or long stems, drawn with the same simple warm dark-brown outlines and two or three broad flat planes. Fill instruction: LOW, sparse: only three small loose harvested cauliflower frond portions low on the floor, roughly one fifth full, with most dark interior clearly empty and the entire rear rim visible. Change the contents only. Do not add slats, nails, grain, handles, labels, poison symbols, text or scenery. No ground or cast ground shadow. Square canvas with padding and real transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-2fec8e7a-120e-474a-87cf-734fcb4170f6.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST image, the approved More Mushrooms 02Medium ochre storage tray, into harvested CAULIFLOWER MUSHROOM (Sparassis latifolia) portions. The second image is the approved new species PlantA sprite, a style and identity reference. Preserve the FIRST image's exact box silhouette, front panel, right-side notch/end block, rim thickness, ochre/brown colors, dark interior and top-down three-quarter perspective. Contents: cream/ivory folded frilly ribbon portions without ordinary button caps or long stems, drawn with the same simple warm dark-brown outlines and two or three broad flat planes. Fill instruction: MEDIUM: about half full with several small cauliflower frond portions, clearly more than Low but well below the rear rim; some dark interior remains visible. Change the contents only. Do not add slats, nails, grain, handles, labels, poison symbols, text or scenery. No ground or cast ground shadow. Square canvas with padding and real transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-e2896805-e377-4875-b057-62b141887cde.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY the mushroom contents of the FIRST image, the approved More Mushrooms 03Full ochre storage tray, into harvested CAULIFLOWER MUSHROOM (Sparassis latifolia) portions. The second image is the approved new species PlantA sprite, a style and identity reference. Preserve the FIRST image's exact box silhouette, front panel, right-side notch/end block, rim thickness, ochre/brown colors, dark interior and top-down three-quarter perspective. Contents: cream/ivory folded frilly ribbon portions without ordinary button caps or long stems, drawn with the same simple warm dark-brown outlines and two or three broad flat planes. Fill instruction: FULL: a heap of compact cauliflower frond portions reaches and rises slightly above the rear rim, visibly fuller and higher than Medium. Change the contents only. Do not add slats, nails, grain, handles, labels, poison symbols, text or scenery. No ground or cast ground shadow. Square canvas with padding and real transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-49534aca-2ef1-4945-98c5-c26b28e9f233.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Cauliflower\\03Full.png"
+  }
+]

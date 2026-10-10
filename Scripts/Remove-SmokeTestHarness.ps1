@@ -14,3 +14,11 @@ $archive = [IO.Path]::GetFullPath((Join-Path $archiveRoot ('RetiredHarness-' + (
 if (!$archive.StartsWith($archiveRoot + [IO.Path]::DirectorySeparatorChar)) { throw 'Invalid archive path.' }
 Move-Item -LiteralPath $testTarget -Destination $archive
 Write-Output "Test harness preserved outside Mods: $archive"
+$testHarmony = [IO.Path]::GetFullPath((Join-Path $modsRoot 'RimMushroomsTestHarmony'))
+if (Test-Path -LiteralPath $testHarmony) {
+    if ((Split-Path $testHarmony -Parent) -ne $modsRoot -or !(Test-Path -LiteralPath (Join-Path $testHarmony 'more-mushrooms-test-only.marker'))) { throw 'Invalid temporary Harmony target.' }
+    $harmonyArchive = [IO.Path]::GetFullPath((Join-Path $archiveRoot ('RetiredHarmony-' + (Get-Date -Format 'yyyyMMdd-HHmmss-fff'))))
+    if (!$harmonyArchive.StartsWith($archiveRoot + [IO.Path]::DirectorySeparatorChar)) { throw 'Invalid Harmony archive path.' }
+    Move-Item -LiteralPath $testHarmony -Destination $harmonyArchive
+    Write-Output "Temporary Harmony preserved outside Mods: $harmonyArchive"
+}

@@ -1,0 +1,28 @@
+{
+  "Core-English": {
+    "checks": 5149,
+    "groups": {
+      "poison": 724,
+      "psychoactive": 121,
+      "expansion": 1135,
+      "meal exposure": 19,
+      "nutrient paste": 20
+    },
+    "profile": "20261010-014454-Core",
+    "reportSha256": "c76b307331118cbbf9f40c53a9f4d319b376823249a097f08ae210bdc50abc9c",
+    "logSha256": "f38205325ce3acdd5d5103c1e3fac86f4ed8b7547c2e5edc9c20f0b1115105cc"
+  },
+  "AllDLC-Korean": {
+    "checks": 4949,
+    "groups": {
+      "poison": 724,
+      "psychoactive": 122,
+      "expansion": 1387,
+      "meal exposure": 19,
+      "nutrient paste": 20
+    },
+    "profile": "20261010-014618-DLC-Mood",
+    "reportSha256": "dff7fd1328ab9e041d699adf2c269197574a9d417e397369324bf7cf9b6568b1",
+    "logSha256": "d04f2c1e982455225049b7aaafd4c2d9583830bead30573f2753f90d37c0e380"
+  }
+}

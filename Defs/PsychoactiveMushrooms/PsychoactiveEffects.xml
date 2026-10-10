@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>RMush_Hallucination</defName>
+    <label>mushroom hallucinations</label>
+    <description>Distorted perceptions make ordinary work and commands difficult. The pawn may wander nearby until the effect passes. Rest or incapacitation stops the wandering. Further doses can prolong the episode and cause panic.</description>
+    <hediffClass>RimMushrooms.Hediff_MushroomHallucination</hediffClass>
+    <defaultLabelColor>(0.65, 0.80, 0.95)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>false</tendable>
+    <isBad>true</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <stages>
+      <li>
+        <capMods>
+          <li><capacity>Consciousness</capacity><offset>-0.1</offset></li>
+          <li><capacity>Manipulation</capacity><offset>-0.1</offset></li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>RMush_PsychedelicTolerance</defName>
+    <label>psychoactive mushroom tolerance</label>
+    <description>Shared tolerance to psychoactive mushrooms. Repeated consumption reduces their mood benefit and raises the chance of an unpleasant experience. Tolerance fades gradually without further consumption.</description>
+    <hediffClass>RimMushrooms.Hediff_MushroomTolerance</hediffClass>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>-1</lethalSeverity>
+    <tendable>false</tendable>
+    <isBad>true</isBad>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+  <ThoughtDef>
+    <defName>RMush_PsychedelicExperience</defName>
+    <thoughtClass>RimMushrooms.Thought_MushroomHallucination</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li><label>vivid mushroom visions</label><description>Colors and shapes feel wonderfully alive. Everything seems strangely connected.</description><baseMoodEffect>0</baseMoodEffect></li>
+      <li><label>dreamlike mushroom visions</label><description>The world feels soft and distant. For a while, everyday worries seem far away.</description><baseMoodEffect>0</baseMoodEffect></li>
+      <li><label>frightening mushroom visions</label><description>Nothing feels quite real, and every strange shape seems threatening. I want this to stop.</description><baseMoodEffect>0</baseMoodEffect></li>
+    </stages>
+  </ThoughtDef>
+  <MentalStateDef>
+    <defName>RMush_HallucinatoryWander</defName>
+    <label>hallucinatory wandering</label>
+    <stateClass>RimMushrooms.MentalState_MushroomWander</stateClass>
+    <category>Misc</category>
+    <requiredCapacities><li>Consciousness</li><li>Moving</li></requiredCapacities>
+    <blockNormalThoughts>false</blockNormalThoughts>
+    <stopsJobs>true</stopsJobs>
+    <blockRandomInteraction>true</blockRandomInteraction>
+    <minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
+    <maxTicksBeforeRecovery>99999999</maxTicksBeforeRecovery>
+    <recoverFromSleep>false</recoverFromSleep>
+    <recoverFromDowned>false</recoverFromDowned>
+    <moodRecoveryThought IsNull="True"/>
+    <inCaravanCanDo>false</inCaravanCanDo>
+    <unspawnedNotInCaravanCanDo>false</unspawnedNotInCaravanCanDo>
+    <nameColor>(0.65, 0.80, 0.95)</nameColor>
+    <beginLetterLabel>mushroom hallucinations</beginLetterLabel>
+    <beginLetter>{0} is seeing things and wandering nearby after eating psychoactive mushrooms. Normal commands are unavailable until the episode ends.</beginLetter>
+    <beginLetterDef>NeutralEvent</beginLetterDef>
+    <recoveryMessage>{0}'s mushroom hallucinations have subsided.</recoveryMessage>
+    <baseInspectLine>Mental state: Mushroom hallucinations</baseInspectLine>
+  </MentalStateDef>
+  <ThinkTreeDef>
+    <defName>RMush_HallucinatoryWanderBehavior</defName>
+    <insertTag>Humanlike_PostMentalState</insertTag>
+    <insertPriority>100</insertPriority>
+    <thinkRoot Class="ThinkNode_ConditionalMentalState">
+      <state>RMush_HallucinatoryWander</state>
+      <subNodes>
+        <li Class="ThinkNode_PrioritySorter">
+          <subNodes>
+            <li Class="JobGiver_GetFood"><maxLevelPercentage>0.05</maxLevelPercentage></li>
+            <li Class="JobGiver_GetRest"><maxLevelPercentage>0.15</maxLevelPercentage></li>
+          </subNodes>
+        </li>
+        <li Class="RimMushrooms.JobGiver_MushroomWander"/>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

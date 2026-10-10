@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the FIRST image, the approved More Mushrooms Button PlantA sprite, into a single mature BlackTrumpet mushroom (Craterellus cornucopioides) growth unit. The SECOND image is a real species photograph used for anatomy only, never copy photographic pixels or its habitat. Anatomy: One charcoal-gray/black thin hollow trumpet-shaped funnel, with a wide flared ruffled curled rim and a deep black central opening continuous down to its tapered lower stalk. Outside is gray and folded; inside very dark charcoal. No separate umbrella cap, no radial gills, no musical brass instrument. Match the approved RimWorld mod sprite style: thick warm dark-brown outlines, only two or three broad flat color planes, simple clean shapes, no photorealistic surface texture, slightly top-down three-quarter view. This is ONE compact repeatable mature growth unit, not a field or several stages; the game repeats these units. Center the subject with generous clear padding in a square canvas. No ground, soil, grass, roots, log, trunk, box, text, labels, cast ground shadow, gradients or extra objects. Real transparent alpha background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\BlackTrumpet-Craterellus-cornucopioides.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-c86c2cdb-f38d-43b0-9517-05dee7ae4396.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Edit the FIRST image, the approved BlackTrumpet PlantA sprite, into PlantB, an alternate mature unit of the SAME species (Craterellus cornucopioides). The SECOND image is the real anatomy photo only. Keep the same warm dark-brown contour weight, natural colors, broad simple flat planes and three-quarter camera. Anatomy must remain: One charcoal-gray/black thin hollow trumpet-shaped funnel, with a wide flared ruffled curled rim and a deep black central opening continuous down to its tapered lower stalk. Outside is gray and folded; inside very dark charcoal. No separate umbrella cap, no radial gills, no musical brass instrument. Alternate silhouette: Make a narrower trumpet with a more asymmetric opening: curl one rim edge inward and lean its continuous tapered lower body slightly left. Keep the same deep hollow dark center and gray outer folds. The outer body is muted gray/taupe, not a white separate stem. This is an alternate fully mature growth unit, not a young stage or simple scaled duplicate. One compact subject. No ground, roots, log, scenery, box, text, labels, gradients, cast shadow or extra objects. Square canvas with padding and true transparent alpha.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\BlackTrumpet-Craterellus-cornucopioides.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-24a612f6-74b4-41aa-a841-a70bdb4a322b.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit ONLY the contents of the FIRST reference image, the approved More Mushrooms 01Low ochre storage tray, into harvested BlackTrumpet mushrooms. The SECOND reference is the approved new PlantA sprite for species identity and style. Preserve the FIRST image's exact box shape, front panel, right end notch/block, ochre-brown palette, thick rim, dark interior and three-quarter camera. Contents: Small whole charcoal-gray trumpet fungi laid at different natural angles, each a thin hollow flared funnel with ruffled rim and tapered continuous outer body, a deep dark opening, muted gray/taupe exterior. No separate umbrella caps or gills. Fill level: LOW: three small loose separated harvested pieces at floor level, roughly one fifth full. Most dark tray interior is empty and the rear rim fully visible. Match the warm dark-brown outlines and simple broad flat planes. Change contents only. No slats, nails, wood grain, handles, labels, symbols, text, ground, scenery or cast ground shadow. Real transparent alpha, square canvas with clear padding.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-0809d54d-fd9d-4987-bd5f-669bc90df7b3.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit ONLY the contents of the FIRST reference image, the approved More Mushrooms 02Medium ochre storage tray, into harvested BlackTrumpet mushrooms. The SECOND reference is the approved new PlantA sprite for species identity and style. Preserve the FIRST image's exact box shape, front panel, right end notch/block, ochre-brown palette, thick rim, dark interior and three-quarter camera. Contents: Small whole charcoal-gray trumpet fungi laid at different natural angles, each a thin hollow flared funnel with ruffled rim and tapered continuous outer body, a deep dark opening, muted gray/taupe exterior. No separate umbrella caps or gills. Fill level: MEDIUM: about half full with seven small loose harvested pieces, visibly denser and higher than Low but entirely below rear rim. Some dark interior remains visible. Match the warm dark-brown outlines and simple broad flat planes. Change contents only. No slats, nails, wood grain, handles, labels, symbols, text, ground, scenery or cast ground shadow. Real transparent alpha, square canvas with clear padding.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-f80fe81c-073f-485a-951e-c982d20cd8df.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit ONLY the contents of the FIRST reference image, the approved More Mushrooms 03Full ochre storage tray, into harvested BlackTrumpet mushrooms. The SECOND reference is the approved new PlantA sprite for species identity and style. Preserve the FIRST image's exact box shape, front panel, right end notch/block, ochre-brown palette, thick rim, dark interior and three-quarter camera. Contents: Small whole charcoal-gray trumpet fungi laid at different natural angles, each a thin hollow flared funnel with ruffled rim and tapered continuous outer body, a deep dark opening, muted gray/taupe exterior. No separate umbrella caps or gills. Fill level: FULL: a dense overlapping pile of twelve or more small harvested pieces, reaching and rising slightly above the rear rim, visibly much fuller and higher than Medium. Match the warm dark-brown outlines and simple broad flat planes. Change contents only. No slats, nails, wood grain, handles, labels, symbols, text, ground, scenery or cast ground shadow. Real transparent alpha, square canvas with clear padding.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\PlantA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-c01e0eb9-4fde-4a42-9257-90d989b2266b.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\BlackTrumpet\\03Full.png"
+  }
+]

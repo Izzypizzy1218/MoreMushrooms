@@ -11,6 +11,9 @@ namespace RimMushroomsTests
 {
     public sealed class SmokeTests : GameComponent
     {
+        private static readonly string[] LegacyIds = { "Button", "Shiitake", "Oyster", "KingOyster", "Enoki", "WoodEar", "Beech", "Maitake", "LionsMane", "Matsutake" };
+        internal static bool LegacyRaw(ThingDef def) => LegacyIds.Any(id => def.defName == "RMush_Raw" + id);
+        private static bool NewCultivated(ThingDef def) => def.defName == "RMush_RawCauliflower" || def.defName == "RMush_RawPurpleBlewit";
         private int phase, cropIndex, frames, assortedCycles;
         private bool finished;
         private Pawn farmer;
@@ -77,7 +80,11 @@ namespace RimMushroomsTests
                         AssortedTests.VerifyLoaded(map, Check);
                         HydroponicsTests.VerifyLoaded(map, Check);
                         PoisonTests.VerifyLoaded(map, Check);
+                        PsychoactiveTests.VerifyLoaded(map, Check);
+                        ExpansionTests.VerifyLoaded(map, Check);
+                        MealExposureTests.VerifyLoaded(map, Check);
                     }
+                    else PoisonTests.VerifyLegacy(map, Check);
                     Check(map.listerThings.AllThings.Count(t => t.def.defName.StartsWith("RMush_Plant")) >= 33, "plant growth fixtures survive save/load");
                     foreach (var t in map.listerThings.AllThings.Where(t => t.def.defName.StartsWith("RMush_Raw")))
                         Check(Texture(t) == (t.stackCount <= 25 ? "01Low" : t.stackCount <= 50 ? "02Medium" : "03Full"), "saved stack graphic " + t.def.defName + ":" + t.stackCount);
@@ -175,8 +182,12 @@ namespace RimMushroomsTests
                     // The ground fixture grew while the hydroponics jobs ran.
                     // Restore its documented value before save/load assertions.
                     workCell.GetPlant(map).Growth = 0.37f;
-                    MoodTests.Run(farmer, Check);
                     PoisonTests.Run(farmer, map, Check);
+                    PsychoactiveTests.Run(farmer, map, Check);
+                    ExpansionTests.Run(farmer, map, Check);
+                    MealExposureTests.Run(farmer, map, Check);
+                    NutrientPasteTests.Run(farmer, map, Check);
+                    MoodTests.Run(farmer, Check);
                     phase = 4; frames = 0;
                     return;
                 }
@@ -256,10 +267,13 @@ namespace RimMushroomsTests
             }
             foreach (var window in Find.WindowStack.Windows.ToList()) window.Close(false);
             Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
-            plants = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Plant") && d.GetModExtension<AssortedMushroomSettings>() == null && d.plant.harvestedThingDef.ingestible.specialThoughtDirect != null).OrderBy(d => d.defName).ToArray();
-            var items = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Raw") && d.ingestible.specialThoughtDirect != null).OrderBy(d => d.defName).ToArray();
-            Check(plants.Length == 11 && items.Length == 10, "11 plant and 10 ingredient defs loaded");
-            Check(plants.Count(d => d.plant.Sowable) == 9, "exactly nine cultivable varieties");
+            // Quicktest chooses a random world; these are crop fixtures at 21C.
+            map.Biome.constantOutdoorTemperature = 21f;
+            plants = DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Plant") && d.plant?.harvestedThingDef != null
+                && (LegacyRaw(d.plant.harvestedThingDef) || NewCultivated(d.plant.harvestedThingDef))).OrderBy(d => d.defName).ToArray();
+            var items = DefDatabase<ThingDef>.AllDefs.Where(LegacyRaw).OrderBy(d => d.defName).ToArray();
+            Check(plants.Length == 13 && items.Length == 10, "legacy eleven plus two new cultivable plants and ten legacy ingredients loaded");
+            Check(plants.Count(d => d.plant.Sowable) == 11, "exactly eleven cultivable varieties");
             Check(!DefDatabase<ThingDef>.GetNamed("RMush_PlantMatsutake").plant.Sowable, "matsutake wild only");
             foreach (var d in plants.Concat(items)) Check(!d.ConfigErrors().Any(), "resolved def config " + d.defName);
             farmer = map.mapPawns.FreeColonistsSpawned.First(p => !p.Downed && !p.WorkTypeIsDisabled(WorkTypeDefOf.Growing));

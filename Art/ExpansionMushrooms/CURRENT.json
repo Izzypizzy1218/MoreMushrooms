@@ -1,0 +1,12 @@
+{
+  "version": "0.1.1",
+  "date": "2026-10-09",
+  "release_type": "Korean display-name metadata patch",
+  "catalog": "v0.1.1-2026-10-09/species.json",
+  "baseline_art_version": "0.1",
+  "asset_base": "v0.1-2026-10-09",
+  "preview": "v0.1.1-2026-10-09/preview.html",
+  "name_changes": "v0.1.1-2026-10-09/NAME-CHANGES.json",
+  "archive": "MoreMushrooms-names-v0.1.1-2026-10-09.zip",
+  "runtime_mod_version": "0.4.0"
+}

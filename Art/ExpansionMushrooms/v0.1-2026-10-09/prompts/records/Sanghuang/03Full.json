@@ -1,0 +1,13 @@
+{
+  "asset": "03Full",
+  "prompt": "Edit ONLY contents of FIRST reference's 03Full produce tray to harvested Sanghuangporus sanghuang woody brackets. Preserve exact existing ochre tray shape, solid flat front panel, dark interior, RIGHT SIDE NOTCH and tall end block, viewpoint and linework. SECOND is approved species sprite. Use its thick irregular dark brown semi-circular woody shelf bodies with broad vivid mustard-yellow growing edges and ochre lower sides, no stems or gills. Pieces lie naturally in the tray at varied angles. FULL: twelve to fourteen modest-size brackets in a dense shallow mound just above rim, clearly more than Medium, front tray panel unobscured. No wooden slats, grain, nails, handles or extra objects. Thick warm dark-brown outlines, TWO OR THREE simple flat shaded color planes, elevated three-quarter view, no photoreal texture or gradients. Real transparent alpha background, centered single game sprite, no text/labels/poison symbols/ground shadow/scene. Use ONLY middle-left PANEL C of the six-panel photo; other five panels are different species and must be ignored.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-1-Im1.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-0c33382d-526b-42bd-b9c1-019c8d964b73.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/03Full.png"
+}

@@ -5,3 +5,6 @@ Tests/Runtime/
 Tests/Harness/obj/
 Tests/Harness/Assemblies/
 __pycache__/
+
+# Original artwork archives stay local and inside the versioned source release.
+Art/ExpansionMushrooms/*.zip

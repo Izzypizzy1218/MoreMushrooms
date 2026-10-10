@@ -7,6 +7,8 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Build failed.' }
     python .\Scripts\generate_poison_defs.py
     if ($LASTEXITCODE -ne 0) { throw 'Poison definition generation failed.' }
+    python .\Scripts\generate_expansion_defs.py
+    if ($LASTEXITCODE -ne 0) { throw 'Expansion definition generation failed.' }
     python .\Tests\validate_assets.py
     if ($LASTEXITCODE -ne 0) { throw 'Static validation failed.' }
     python .\Scripts\package_release.py

@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "PlantA",
+    "prompt": "Edit the FIRST image, the approved More Mushrooms Button PlantA sprite, into a single mature Porcini mushroom (Boletus edulis) growth unit. The SECOND image is a real species photograph used for anatomy only, never copy photographic pixels or its habitat. Anatomy: One chestnut-brown thick rounded bun-shaped convex cap with a pale cream outer margin, on a very stout off-white club-shaped stem. The broad thick cap overhangs the stem. Its pale underside is a sponge-like pore surface, not radial gills. Simplify the fine upper-stem reticulation into two or three subtle broad lines only; no ring, volva or white cap warts. Match the approved RimWorld mod sprite style: thick warm dark-brown outlines, only two or three broad flat color planes, simple clean shapes, no photorealistic surface texture, slightly top-down three-quarter view. This is ONE compact repeatable mature growth unit, not a field or several stages; the game repeats these units. Center the subject with generous clear padding in a square canvas. No ground, soil, grass, roots, log, trunk, box, text, labels, cast ground shadow, gradients or extra objects. Real transparent alpha background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\Porcini-Boletus-edulis.jpeg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generatedSource": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-7ce2-7a30-8f24-77ef3d625e79\\exec-240ea676-9777-4f3b-8dad-8f9a5e464fb7.png",
+    "output": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\Porcini\\PlantA.png"
+  },
+  {
+    "asset": "PlantB",
+    "prompt": "Create an alternate mature growth unit for Porcini (Boletus edulis). First image is the approved PlantA sprite; preserve its exact warm dark-brown outlined flat cartoon style and palette. Second is the real species photograph for anatomy only. Thick chestnut-brown bun-shaped caps with a pale cream margin, stout off-white club stems, smooth cream sponge-like pore underside, NO radial gills. No ring, volva or white cap warts. Use a mature wider, slightly flatter cap with a different lean and a very stout shorter club stem, preserving the same colors and maturity. This is an alternate mature unit, not an earlier growth stage and not merely a mirrored copy. One compact isolated repeatable plant unit. Slightly elevated three-quarter view, simple broad color planes, generous square padding. No box, soil, ground, log, roots, habitat, text, label, glow halo, ground shadow, gradient or scenic prop. True transparent alpha background.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Porcini-Boletus-edulis.jpeg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-7d74a797-2b02-4501-9205-8b037e367e13.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/PlantB.png"
+  },
+  {
+    "asset": "01Low",
+    "prompt": "Edit the FIRST image, the existing More Mushrooms 01Low ochre harvest tray sprite. Retain the SAME solid-sided angular tray geometry, elevated three-quarter camera, one flat front face, right-side notch with raised end block, ochre palette, thick warm dark-brown outlines and simple broad flat shading. Replace ONLY its mushrooms with harvested Porcini (Boletus edulis) matching the SECOND image approved mature sprite. The THIRD photograph is for anatomy only, never copy photo pixels. Thick chestnut-brown bun-shaped caps with a pale cream margin, stout off-white club stems, smooth cream sponge-like pore underside, NO radial gills. No ring, volva or white cap warts. LOW quantity: exactly THREE harvested units with most dark tray interior still visible, all contents below the rim. Keep each harvested unit recognizable. Container is plain solid-sided, no slats, woodgrain, nails, handles or writing. Transparent background, no soil, foliage, other species, people, ground shadow, text, scenic background or photorealism. Center entire uncut tray with clear padding. Output one independent final sprite with real alpha transparency.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/01Low.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Porcini-Boletus-edulis.jpeg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-55949c53-c904-45a0-9477-998df65c26c7.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/01Low.png"
+  },
+  {
+    "asset": "02Medium",
+    "prompt": "Edit the FIRST image, the existing More Mushrooms 02Medium ochre harvest tray sprite. Retain the SAME solid-sided angular tray geometry, elevated three-quarter camera, one flat front face, right-side notch with raised end block, ochre palette, thick warm dark-brown outlines and simple broad flat shading. Replace ONLY its mushrooms with harvested Porcini (Boletus edulis) matching the SECOND image approved mature sprite. The THIRD photograph is for anatomy only, never copy photo pixels. Thick chestnut-brown bun-shaped caps with a pale cream margin, stout off-white club stems, smooth cream sponge-like pore underside, NO radial gills. No ring, volva or white cap warts. MEDIUM quantity: about SIX harvested units, covering roughly half the tray volume, visibly more than the low version and below the rim. Keep each harvested unit recognizable. Container is plain solid-sided, no slats, woodgrain, nails, handles or writing. Transparent background, no soil, foliage, other species, people, ground shadow, text, scenic background or photorealism. Center entire uncut tray with clear padding. Output one independent final sprite with real alpha transparency.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Porcini-Boletus-edulis.jpeg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-5e4c07c7-6746-44cd-936b-431d46177e62.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/02Medium.png"
+  },
+  {
+    "asset": "03Full",
+    "prompt": "Edit the FIRST image, the existing More Mushrooms 03Full ochre harvest tray sprite. Retain the SAME solid-sided angular tray geometry, elevated three-quarter camera, one flat front face, right-side notch with raised end block, ochre palette, thick warm dark-brown outlines and simple broad flat shading. Replace ONLY its mushrooms with harvested Porcini (Boletus edulis) matching the SECOND image approved mature sprite. The THIRD photograph is for anatomy only, never copy photo pixels. Thick chestnut-brown bun-shaped caps with a pale cream margin, stout off-white club stems, smooth cream sponge-like pore underside, NO radial gills. No ring, volva or white cap warts. FULL quantity: about TWELVE harvested units, filling the tray and heaping slightly above the rim, clearly fuller than the medium version. Keep each harvested unit recognizable. Container is plain solid-sided, no slats, woodgrain, nails, handles or writing. Transparent background, no soil, foliage, other species, people, ground shadow, text, scenic background or photorealism. Center entire uncut tray with clear padding. Output one independent final sprite with real alpha transparency.",
+    "referenced_image_paths": [
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/PlantA.png",
+      "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Porcini-Boletus-edulis.jpeg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-9a600371-a5e7-4475-bb90-49c3b001a703.png",
+    "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Porcini/03Full.png"
+  }
+]

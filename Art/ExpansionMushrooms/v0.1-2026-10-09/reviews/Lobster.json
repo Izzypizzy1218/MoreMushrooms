@@ -1,0 +1,15 @@
+{
+  "id": "Lobster",
+  "art_version": "0.1",
+  "reviewer": "root",
+  "date": "2026-10-09",
+  "review_method": "All five generated masters viewed in built-in tool output and all five normalized 256px exports inspected in the seven-species contact sheet",
+  "species_morphology": "pass",
+  "style": "pass",
+  "transparent_background": "generated true; exact alpha/export audited by build_assets.py",
+  "plant_variations": "pass - mature A/B alternatives",
+  "box_fill_levels": "pass - sparse/half/full",
+  "notes": "Distorted orange-red folded host mushroom, thick orange short stalk, no exposed regular gills. B is wider with different depressed fold. Three tray quantities visibly distinct.",
+  "corrected_assets": [],
+  "gameplay_tested": false
+}

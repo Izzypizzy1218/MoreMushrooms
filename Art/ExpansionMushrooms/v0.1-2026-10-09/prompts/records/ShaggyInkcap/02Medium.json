@@ -1,0 +1,13 @@
+{
+  "asset": "02Medium",
+  "prompt": "Edit ONLY the mushroom contents of the FIRST reference 02Medium produce tray into harvested ShaggyInkcap mushrooms. Preserve that exact ochre solid-sided tray shell, single flat front panel, dark interior, right-hand notch and raised end block, viewpoint and proportions. Do not add wood slats, wood grain, handles or nails. The SECOND reference supplies the approved new species sprite; THIRD is its real anatomy. One mature shaggy inkcap Coprinus comatus: tall ivory ovoid/cylindrical bell cap enclosing much of the thin white stalk, tan patch at the tip, four or five simple large white shaggy scales, and a thin charcoal-black ink-darkening band along the lower hanging cap edge. A mature compact icon with small visible stalk, no dripping liquid scene, no wide red toadstool cap. Harvested mushrooms should lie loosely in the container in various angles while retaining their characteristic species silhouettes and colors. MEDIUM fill: six to seven harvested pieces fill about half the tray below its rim; visibly more than Low but clear back rim and empty interior gaps remain. Use the established More Mushrooms sprite style: thick warm dark-brown contours, TWO OR THREE flat color planes, modest elevated three-quarter view. No photoreal texture, gradients, soil/log/scene, text, labels, skulls, decorative effects or cast ground shadow. One isolated game sprite centered in a square canvas, real transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/02Medium.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/ShaggyInkcap-Coprinus-comatus.jpeg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-1e14a550-5f55-48df-af10-45b62fdd7c5d.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/ShaggyInkcap/02Medium.png"
+}

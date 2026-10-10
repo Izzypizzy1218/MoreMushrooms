@@ -1,0 +1,71 @@
+[
+  {
+    "asset": "YellowBrain/PlantA",
+    "prompt": "Use case: stylized-concept. Asset: one isolated RimWorld MoreMushrooms YellowBrain PlantA sprite. Image1 is reference only for flat RimWorld outline style; image2 is actual species anatomy/color reference.\nSubject: Tremella mesenterica yellow brain fungus: bright golden yellow gelatinous irregular brain-like rounded folded lobes and blunt ruffles. Compact soft mass has deep curved amber grooves and a few paler yellow flat highlights. It has NO mushroom cap, NO stem, NO gills, NO coral branches. Keep the folded jelly lobes large and simple rather than hundreds of thin frills. No wood substrate or realistic gloss.\nGenerate one compact minimal mature fruiting unit, one compact mature golden-yellow folded jelly mass, broader left side with two high rounded lobes and low rounded front lobes, asymmetrical brain-like mound. PlantA and PlantB are alternate mature silhouettes, never different growth stages. Omit host wood, ground, leaves, soil, ant or any scenic substrate. No box.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowBrain-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-5c9945e2-45b3-4509-b9f1-f562b74dfa10.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\PlantA.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/YellowBrain.json for morphology and caveats"
+  },
+  {
+    "asset": "YellowBrain/PlantB",
+    "prompt": "Use case: stylized-concept. Asset: one isolated RimWorld MoreMushrooms YellowBrain PlantB sprite. Image1 is the approved mature PlantA to match species and palette; image2 is an existing alternate mature plant unit style reference; image3 is species anatomy.\nSubject: Tremella mesenterica yellow brain fungus: bright golden yellow gelatinous irregular brain-like rounded folded lobes and blunt ruffles. Compact soft mass has deep curved amber grooves and a few paler yellow flat highlights. It has NO mushroom cap, NO stem, NO gills, NO coral branches. Keep the folded jelly lobes large and simple rather than hundreds of thin frills. No wood substrate or realistic gloss.\nGenerate one compact minimal mature fruiting unit, one mature golden-yellow folded jelly mass, a taller double-lobed center-right ridge with a deep central cleft and a lower broad left ruffle. Compact oval mound oriented diagonally opposite PlantA, visibly different folded outline and arrangement rather than mirrored copy. PlantA and PlantB are alternate mature silhouettes, never different growth stages. Omit host wood, ground, leaves, soil, ant or any scenic substrate. No box.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonB.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowBrain-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-5dee2ef1-d5a3-41e7-8784-00c9d2264867.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\PlantB.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/YellowBrain.json for morphology and caveats"
+  },
+  {
+    "asset": "YellowBrain/01Low",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms YellowBrain 01Low sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Tremella mesenterica yellow brain fungus: bright golden yellow gelatinous irregular brain-like rounded folded lobes and blunt ruffles. Compact soft mass has deep curved amber grooves and a few paler yellow flat highlights. It has NO mushroom cap, NO stem, NO gills, NO coral branches. Keep the folded jelly lobes large and simple rather than hundreds of thin frills. No wood substrate or realistic gloss.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of YellowBrain. Low amount: exactly THREE small separate harvested golden-yellow folded jelly clumps. Place far apart low inside tray, each a small rounded irregular brainfold mass, no stems/caps. Most dark interior visible and all contents below rear rim. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowBrain-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-114911d6-2e3c-482b-bcdc-aa5b01b47904.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\01Low.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/YellowBrain.json for morphology and caveats"
+  },
+  {
+    "asset": "YellowBrain/02Medium",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms YellowBrain 02Medium sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Tremella mesenterica yellow brain fungus: bright golden yellow gelatinous irregular brain-like rounded folded lobes and blunt ruffles. Compact soft mass has deep curved amber grooves and a few paler yellow flat highlights. It has NO mushroom cap, NO stem, NO gills, NO coral branches. Keep the folded jelly lobes large and simple rather than hundreds of thin frills. No wood substrate or realistic gloss.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of YellowBrain. Medium amount: SIX to SEVEN small harvested golden-yellow folded jelly clumps loosely overlapping to about half-fill tray. Around or slightly below rear rim, rear inner wall plainly visible and some dark gaps. No one giant fused mass; individual clump outlines visible. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowBrain-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-1c1fb481-400c-414c-8d62-699679917f6b.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\02Medium.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/YellowBrain.json for morphology and caveats"
+  },
+  {
+    "asset": "YellowBrain/03Full",
+    "prompt": "Use case: precise-object-edit. Asset: one isolated RimWorld MoreMushrooms YellowBrain 03Full sprite. Image1 is the EDIT TARGET: existing ochre storage tray. Image2 is the new species sprite to preserve morphology and palette. Image3 is actual species anatomy/color reference.\nSubject: Tremella mesenterica yellow brain fungus: bright golden yellow gelatinous irregular brain-like rounded folded lobes and blunt ruffles. Compact soft mass has deep curved amber grooves and a few paler yellow flat highlights. It has NO mushroom cap, NO stem, NO gills, NO coral branches. Keep the folded jelly lobes large and simple rather than hundreds of thin frills. No wood substrate or realistic gloss.\nReplace ONLY the mushrooms inside the image1 tray with harvested pieces of YellowBrain. Full amount: TWELVE to FIFTEEN small separate folded golden-yellow jelly clumps densely overlapped in a low mound just above rear rim. Individual dark outlines of clumps remain distinct, cover rear interior with a low extra layer, clearly more full than Medium. Box front panel unobscured, no huge tall mound. Keep exact same tray shell, same elevated three-quarter perspective, front panel, right stepped notch and end block, dark interior and ochre palette. Do not redesign the box; no extra planks, nails, labels or handles.\nStyle: directly match existing artwork: thick continuous warm dark-brown contour, clean simple flat 2D illustration, restrained 2-3 flat color planes, simplified large anatomy marks that remain legible at 256px. No photographic texture, gradients, glossy rendering or tiny realistic stippling. Slight elevated three-quarter view.\nComposition: centered whole isolated sprite with minimum15% clear transparent margin all around, no cropped parts. Genuine transparent alpha background, no filled background or checkerboard drawn into pixels. No cast ground shadow, text, diagram labels, scale bars, watermark, extra props, icons, skulls, symbols, glow halo.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-YellowBrain-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106bf-9738-75c3-bbe9-3a1b9fffed47\\exec-b33837c6-4554-4e6d-841f-9ef32a70ae77.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\YellowBrain\\03Full.png",
+    "visual_review": "PASS: originals viewed and alpha inspected; see reviews/YellowBrain.json for morphology and caveats"
+  }
+]

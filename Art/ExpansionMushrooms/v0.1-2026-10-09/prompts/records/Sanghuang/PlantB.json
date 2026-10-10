@@ -1,0 +1,12 @@
+{
+  "asset": "PlantB",
+  "prompt": "Edit approved Sanghuang PlantA into a visibly different alternate MATURE PlantB of Sanghuangporus sanghuang: a wider flatter semi-circular dark chestnut upper crust, broad mustard-yellow/ochre thick growing rim and lower edge, its own irregular rounded outline and simpler flatter top. Preserve same palette and strong outline, comparable visual size. NOT earlier growth stage or mirrored copy. One compact woody shelf bracket; NO stem, radial gills, tree, log, bark, soil or box. Thick warm dark-brown outlines, TWO OR THREE simple flat shaded color planes, elevated three-quarter view, no photoreal texture or gradients. Real transparent alpha background, centered single game sprite, no text/labels/poison symbols/ground shadow/scene. Use ONLY middle-left PANEL C of the six-panel photo; other five panels are different species and must be ignored.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/Sanghuang-Sanghuangporus-sanghuang-Frontiers2019-1-Im1.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-aabff5fc-6dc6-4461-b5b6-ece470ae3bc3.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/Sanghuang/PlantB.png"
+}

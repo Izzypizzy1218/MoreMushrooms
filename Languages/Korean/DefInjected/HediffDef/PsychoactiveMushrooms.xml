@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RMush_Hallucination.label>버섯 환각</RMush_Hallucination.label>
+  <RMush_Hallucination.description>감각이 뒤틀려 평소의 일과 명령을 따르기 어렵습니다. 효과가 가라앉을 때까지 주변을 배회할 수 있습니다. 수면이나 무력화로 배회가 멈추며, 추가 섭취는 환각을 연장하고 공황을 일으킬 수 있습니다.</RMush_Hallucination.description>
+  <RMush_PsychedelicTolerance.label>향정신성 버섯 내성</RMush_PsychedelicTolerance.label>
+  <RMush_PsychedelicTolerance.description>향정신성 버섯 사이에 공유되는 내성입니다. 반복 섭취하면 기분 상승 효과가 줄고 불쾌한 환각을 겪을 가능성이 높아집니다. 더 먹지 않으면 내성이 서서히 줄어듭니다.</RMush_PsychedelicTolerance.description>
+</LanguageData>

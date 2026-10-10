@@ -17,6 +17,7 @@ namespace RimMushroomsTests
         private readonly Pawn farmer;
         private readonly Action<bool, string> check;
         private readonly ThingDef[] varieties;
+        private readonly ThingDef[] crops;
         private readonly float originalSkyGlow;
         private readonly int originalGrowingPriority;
         private readonly Building_PlantGrower basin;
@@ -44,6 +45,7 @@ namespace RimMushroomsTests
             originalGrowingPriority = farmer.workSettings.GetPriority(WorkTypeDefOf.Growing);
             farmer.workSettings.SetPriority(WorkTypeDefOf.Growing, 0);
             varieties = Selection.GetModExtension<AssortedMushroomSettings>().varieties.OrderBy(d => d.defName).ToArray();
+            crops = varieties.Concat(new[] { ThingDef.Named("RMush_PlantCauliflower"), ThingDef.Named("RMush_PlantPurpleBlewit") }).OrderBy(d => d.defName).ToArray();
             Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
             farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
             farmer.pather.StopDead();
@@ -112,9 +114,9 @@ namespace RimMushroomsTests
             {
                 farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
                 farmer.pather.StopDead();
-                bool rice = cycle == varieties.Length;
-                bool assorted = cycle > varieties.Length;
-                ThingDef selected = assorted ? Selection : rice ? ThingDef.Named("Plant_Rice") : varieties[cycle];
+                bool rice = cycle == crops.Length;
+                bool assorted = cycle > crops.Length;
+                ThingDef selected = assorted ? Selection : rice ? ThingDef.Named("Plant_Rice") : crops[cycle];
                 basin.SetPlantDefToGrow(selected);
                 foreach (var c in basin.OccupiedRect()) map.roofGrid.SetRoof(c, rice ? null : RoofDefOf.RoofRockThick);
                 map.skyManager.ForceSetCurSkyGlow(rice ? 1f : 0f);
@@ -150,8 +152,8 @@ namespace RimMushroomsTests
                 if (plant == null || plant.Growth <= 0f) return false;
                 if (farmer.CurJobDef == JobDefOf.Sow && (farmer.CurJob.targetA.Thing == plant || farmer.CurJob.targetA.Cell == cell)) return false;
                 farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
-                bool rice = cycle == varieties.Length;
-                bool assorted = cycle > varieties.Length;
+                bool rice = cycle == crops.Length;
+                bool assorted = cycle > crops.Length;
                 check(plant.sown && (assorted ? varieties.Contains(plant.def) : plant.def == basin.GetPlantDefToGrow()),
                     "pawn actually sowed hydroponic " + plant.def.defName + " cycle=" + cycle);
                 check(plant.def != Selection, "hydroponics contains an ordinary crop rather than assorted selector plant");
@@ -161,7 +163,7 @@ namespace RimMushroomsTests
 
                 // Nine species, vanilla rice and three assorted sow/harvest
                 // cycles finish first. A fourth assorted sow remains for loading.
-                if (cycle == varieties.Length + 4)
+                if (cycle == crops.Length + 4)
                 {
                     plant.Growth = 0.37f;
                     foreach (var extra in basin.PlantsOnMe.Where(p => p != plant).ToList()) extra.Destroy();
@@ -240,7 +242,8 @@ namespace RimMushroomsTests
                         Find.Selector.Select(selected, playSound: false, forceDesignatorDeselect: false);
             }
             check(varieties.Length == 9, "hydroponics assorted pool still contains exactly nine real species");
-            foreach (var def in varieties.Concat(new[] { Selection }))
+            check(crops.Length == 11, "hydroponics individually cultivates all eleven species");
+            foreach (var def in crops.Concat(new[] { Selection }))
                 check(menu.Contains(def) && Command_SetPlantToGrow.IsPlantAvailable(def, map), "native hydroponics crop menu includes " + def.defName);
             foreach (string name in new[] { "RMush_PlantMatsutake", "RMush_PlantEnokiWild" })
                 check(!menu.Contains(ThingDef.Named(name)), "wild-only mushroom is excluded from hydroponics menu " + name);

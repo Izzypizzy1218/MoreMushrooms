@@ -1,0 +1,13 @@
+{
+  "asset": "03Full",
+  "prompt": "Edit ONLY contents of FIRST reference 03Full produce tray into harvested TurkeyTail. Preserve the exact same ochre solid-sided tray, flat front face, dark interior, right-side notch and raised right end block, proportions/viewpoint/outline. No wooden slats, woodgrain, handles, nails or decoration. SECOND reference is the approved new species sprite; remaining references are species anatomy only. A compact mature unit of TurkeyTail Trametes versicolor made of TWO overlapping thin semicircular FAN-SHAPED woody brackets with scalloped cream-white edges and three or four broad concentric zones of muted blue-gray, gray-brown and cream. Very short side attachments, NO long central stems, NO radial gills, NO log or bark prop. Differentiate concentric cap color bands clearly at small game size. Harvested pieces rest loosely at varied natural angles, preserving characteristic cap silhouettes, colors and stalks (where anatomically present). FULL: twelve to fourteen modest-size pieces in a dense shallow heap slightly above rim, visibly more than Medium, avoid a tall overflow, front panel stays clear. Match the approved More Mushrooms sprite style, thick warm dark-brown contour, flat simple shaded color planes, modest elevated three-quarter camera, no gradients/photoreal texture, no scenic ground/logs/bark, no text, poison symbols, skulls or cast ground shadow. A single centered sprite on real fully transparent alpha background, never a sprite sheet.",
+  "referenced_image_paths": [
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Textures/Things/Item/RimMushrooms/Button/03Full.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/PlantA.png",
+    "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/references/TurkeyTail-Trametes-versicolor.jpg"
+  ],
+  "transparent_background": true,
+  "mode": "built-in-imagegen",
+  "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a10171-f755-7171-ad7d-eb5c9759582d\\exec-4fdd54b0-56f6-4a53-ac02-21bb2a774a64.png",
+  "saved_path": "C:/Users/집/Desktop/codex/MoreMushrooms/Art/ExpansionMushrooms/v0.1-2026-10-09/masters/TurkeyTail/03Full.png"
+}

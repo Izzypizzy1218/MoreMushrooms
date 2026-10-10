@@ -1,0 +1,78 @@
+{
+  "id": "YellowBrain",
+  "review_status": "PASS with documented morphology simplification",
+  "visual_inspection": "All five original generated images viewed; not in-game captures",
+  "morphology": "Golden-yellow rounded gelatinous brainfold/jelly lobes with amber grooves and pale-yellow flat highlight shapes, no cap/stem/gills/wood. A broad irregular mound with taller left fold; B narrower higher right/center folds, clearly different mature outline.",
+  "style": "Warm dark-brown outline, flat-color anatomy, existing ochre storage tray perspective/notch/front preserved",
+  "real_alpha": "PASS: all original masters RGBA with alpha extrema [0,255]",
+  "mature_variants": "PASS: A/B are alternate mature silhouettes, visibly different arrangement, not growth stages",
+  "quantity_gap": "Low3 separate clumps, Medium6 around rim with rear wall visible, Full about10–12 visible overlapping clumps in low pile above rim.",
+  "regeneration_cautions": "Preserve round folded jelly lobes; no mushroom cap/stem or coral branches. Bright natural yellow reference simplified without realistic wet texture.",
+  "assets": [
+    {
+      "asset": "01Low",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "037041bd8dc12f857cdaf01a7865907cc95efe81f6cd95691fd290ee26840484"
+    },
+    {
+      "asset": "02Medium",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "869271b4a072d0fca6a85aa51d7a9d16bf5cdceb2a058642e8a22bed25aafad3"
+    },
+    {
+      "asset": "03Full",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "66be776978222ed33840ebe0752bb152ab416ee8664bb7ec1130fa40e692320a"
+    },
+    {
+      "asset": "PlantA",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "21cd3dbc637296f87899a05a24ec3b8585cb2d4948162870ad0902062c82bb0b"
+    },
+    {
+      "asset": "PlantB",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4578cba70492c298c3a6d370970a390042c5b09d8362baef16e277ffbcc1a4a9"
+    }
+  ]
+}

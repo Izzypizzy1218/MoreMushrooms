@@ -1,0 +1,15 @@
+{
+  "id": "Sanghuang",
+  "art_version": "0.1",
+  "reviewer": "root",
+  "date": "2026-10-09",
+  "review_method": "Generated masters viewed; PantherCap additionally viewed as normalized 256px contact sheet",
+  "species_morphology": "pass",
+  "style": "pass",
+  "transparent_background": "pass (RGBA export validation and visual checker)",
+  "plant_variations": "pass - mature A/B alternatives",
+  "box_fill_levels": "pass - sparse/half/full distinguishable",
+  "notes": "Only scientific figure panel C (middle-left) guided morphology: thick brown woody bracket with broad mustard yellow growth rim, no stalk/gills. PlantB is a flatter wider mature variant. Three tray quantities are visibly distinct. Source figure's other five species were excluded.",
+  "corrected_assets": [],
+  "gameplay_tested": false
+}

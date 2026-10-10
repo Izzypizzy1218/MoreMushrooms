@@ -1,0 +1,11 @@
+More Mushrooms expansion art v0.1, started 2026-10-09.
+Baseline: existing 15 species, MoreMushrooms v0.4.0.
+Built-in image_gen only, one generation call per asset. Real transparent background.
+Each new species: PlantA and PlantB are alternate mature unit silhouettes, never separate early/late stages; 01Low, 02Medium, 03Full are quantities in the same existing ochre storage tray.
+Native growth representation: ceil(9*growth) repeated units (minimum 1), visualSize=0.3+0.35*growth; A/B variations and mirror selected per unit. Preview simulations must be labelled, not screenshots of game execution.
+Match existing warm dark-brown contour lines, simplified 2-3 flat color planes, no photoreal texture, no gradients, slight top-down three-quarter camera.
+Plant units: no ground, log, root patch, scenic background, box, label, cast ground shadow. Subject must retain species morphology; parasitic/wood species use minimal attached fruiting unit, not a new habitat scene.
+Box edits: preserve box front panel, right-side notch and end block, ochre palette, dark interior, same viewpoint. No slats, nails, woodgrain, handles, labels, skulls or poison markers.
+Low: sparse loose harvested contents with interior mostly visible. Medium: approximately half full, rear rim still visible. Full: heaped contents slightly above rim. Species scale may change the number of pieces; the fill levels must remain distinct.
+Generated masters and exact prompts are preserved. Mechanical RGBA normalization follows the existing approved poison artwork export (256 square, plants long edge192/bottom224; containers width226/bottom217).
+No existing images overwritten. Outputs remain in this versioned art staging folder, not runtime installation.

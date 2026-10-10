@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Xml;
 using RimMushrooms;
 using RimWorld;
 using UnityEngine;
@@ -16,6 +18,8 @@ namespace RimMushroomsTests
     internal static class PoisonTests
     {
         private static readonly string[] Ids = { "FlyAgaric", "DestroyingAngel", "SulfurTuft", "Tsukiyotake", "PoisonFireCoral" };
+        private static readonly string[] ExpansionIds = { "DeathCap", "YellowDapperling", "JackOLantern", "DeadlyWebcap", "PantherCap", "GhostFungus" };
+        private static readonly string[] FatalIds = { "DestroyingAngel", "PoisonFireCoral", "DeathCap", "DeadlyWebcap" };
         private const int Hour = 2500, Day = 60000;
         private static readonly Dictionary<string, Snapshot> Saved = new Dictionary<string, Snapshot>();
         private static readonly HashSet<Pawn> TemporaryPawns = new HashSet<Pawn>();
@@ -73,10 +77,11 @@ namespace RimMushroomsTests
         private static Hediff_MushroomPoisoning Eat(Pawn pawn, string id, Action<bool, string> check)
         {
             var mushroom = ThingMaker.MakeThing(Raw(id));
-            mushroom.stackCount = 1;
-            mushroom.Ingested(pawn, 0.05f);
+            bool psychedelic = id == "FlyAgaric" || id == "PantherCap";
+            mushroom.stackCount = psychedelic ? 10 : 1;
+            mushroom.Ingested(pawn, psychedelic ? 0.5f : 0.05f);
             var condition = pawn.health.hediffSet.GetFirstHediffOfDef(Condition(id)) as Hediff_MushroomPoisoning;
-            Check(check, mushroom.Destroyed && condition != null, "actual native ingestion consumes one " + id + " and creates poisoning");
+            Check(check, mushroom.Destroyed && condition != null, "actual native ingestion consumes one standard exposure of " + id + " and creates poisoning");
             Check(check, pawn.health.hediffSet.hediffs.Count(h => h.def == Condition(id)) == 1, "single condition after ingestion " + id);
             return condition;
         }
@@ -125,14 +130,20 @@ namespace RimMushroomsTests
                 ValidateFoodSelection(map, check);
                 ValidateExplicitIngestEligibility(map, check);
                 foreach (var id in Ids) WithClock(() => ValidateCourse(id, doctor, check));
-                foreach (var id in new[] { "DestroyingAngel", "PoisonFireCoral" })
+                foreach (var id in ExpansionIds) WithClock(() => ValidateCourse(id, doctor, check));
+                foreach (var id in FatalIds)
                 {
                     WithClock(() => ValidateGraceAndDeath(id, check));
                     WithClock(() => ValidateTreatment(id, doctor, check));
                 }
+                foreach (var id in new[] { "FlyAgaric", "SulfurTuft" })
+                    WithClock(() => ValidateTreatment(id, doctor, check, 3f));
                 WithClock(() => ValidateMedicineQuality(doctor, check));
                 WithClock(() => ValidateRepeatedExposure(check));
-                WithClock(() => ValidateFlyAgaricComa(check));
+                WithClock(() => ValidateConditionalFatality(check));
+                WithClock(() => ValidateFractionalDose(check));
+                WithClock(() => ValidateMixedCapacityGrace(check));
+                WithClock(() => ValidatePoorCare(check));
             }
             finally
             {
@@ -157,8 +168,9 @@ namespace RimMushroomsTests
                 Check(check, condition.stages[0].vomitMtbDays <= 0f && (id == "FlyAgaric"
                     ? condition.stages.All(s => s.vomitMtbDays <= 0f) : condition.stages.Skip(1).Any(s => s.vomitMtbDays > 0f)),
                     "native vomiting stages are absent in latency and species-appropriate after symptoms " + id);
-                Check(check, raw.ingestible.preferability == FoodPreferability.NeverForNutrition && !raw.IsNutritionGivingIngestible && !raw.IsDrug,
-                    "harvested material is excluded from autonomous nutrition and drug taking " + id);
+                Check(check, !raw.IsDrug && (id == "FlyAgaric" ? raw.IsNutritionGivingIngestible
+                    : raw.ingestible.preferability == FoodPreferability.NeverForNutrition && !raw.IsNutritionGivingIngestible),
+                    "fly agaric is normal food; other legacy toxins remain explicit-order resources " + id);
                 Check(check, !crop.plant.Sowable && !crop.plant.humanFoodPlant && !crop.IsNutritionGivingIngestible && !selection.varieties.Contains(crop),
                     "wild-only poison excluded from sowing, assorted crop and direct plant food " + id);
                 Check(check, crop.ingestible == null && !crop.IsIngestible,
@@ -172,7 +184,8 @@ namespace RimMushroomsTests
                 foreach (var recipeName in new[] { "CookMealSimple", "CookMealFine", "CookMealLavish", "MakePemmican", "MakeKibble" })
                 {
                     var recipe = DefDatabase<RecipeDef>.GetNamedSilentFail(recipeName);
-                    if (recipe != null) Check(check, !recipe.ingredients.Any(i => i.filter.Allows(raw)), "ordinary recipe excludes poison " + recipeName + " " + id);
+                    if (recipe != null) Check(check, recipe.ingredients.Any(i => i.filter.Allows(raw)) == (id == "FlyAgaric"),
+                        "ordinary recipe includes psychedelic fly agaric and excludes other toxins " + recipeName + " " + id);
                 }
                 var plant = (Plant)ThingMaker.MakeThing(crop);
                 plant.Growth = 1f;
@@ -208,21 +221,22 @@ namespace RimMushroomsTests
             try
             {
                 foreach (var entry in restrictions) entry.Key.SetForbidden(true, false);
-                for (int i = 0; i < Ids.Length; i++)
-                    fixtures.Add(GenSpawn.Spawn(Raw(Ids[i]), eater.Position + new IntVec3(i % 3, 0, 1 + i / 3), map));
+                var excluded = Ids.Where(id => id != "FlyAgaric").ToArray();
+                for (int i = 0; i < excluded.Length; i++)
+                    fixtures.Add(GenSpawn.Spawn(Raw(excluded[i]), eater.Position + new IntVec3(i % 3, 0, 1 + i / 3), map));
                 ThingDef selectedDef;
                 foreach (bool desperate in new[] { false, true })
                 {
                     var found = FoodUtility.BestFoodSourceOnMap(eater, eater, desperate, out selectedDef,
                         allowPlant: false, allowCorpse: false, allowDispenserFull: false, allowDispenserEmpty: false, forceScanWholeMap: true);
-                    Check(check, found == null, "native map food search rejects all five poisons even with no safe food desperate=" + desperate);
+                    Check(check, found == null, "native map food search rejects nonpsychedelic poisons even with no safe food desperate=" + desperate);
                 }
                 var safe = GenSpawn.Spawn(ThingDefOf.MealSimple, eater.Position + new IntVec3(4, 0, 0), map);
                 fixtures.Add(safe);
                 var safeFound = FoodUtility.BestFoodSourceOnMap(eater, eater, true, out selectedDef,
                     allowPlant: false, allowCorpse: false, allowDispenserFull: false, allowDispenserEmpty: false, forceScanWholeMap: true);
                 Check(check, safeFound == safe, "native search finds a safe ordinary meal while nearer poisons are ignored");
-                foreach (var id in Ids) eater.inventory.innerContainer.TryAdd(ThingMaker.MakeThing(Raw(id)));
+                foreach (var id in excluded) eater.inventory.innerContainer.TryAdd(ThingMaker.MakeThing(Raw(id)));
                 Check(check, FoodUtility.BestFoodInInventory(eater) == null, "native inventory food search excludes poison nutrition");
             }
             finally
@@ -245,6 +259,7 @@ namespace RimMushroomsTests
             {
                 for (int i = 0; i < Ids.Length; i++)
                 {
+                    if (Ids[i] == "FlyAgaric") continue; // Psychedelic normal-food path is tested separately.
                     var poisonous = GenSpawn.Spawn(Raw(Ids[i]), eater.Position + new IntVec3(i % 3, 0, 1 + i / 3), map);
                     poisonous.stackCount = 75;
                     fixtures.Add(poisonous);
@@ -326,10 +341,11 @@ namespace RimMushroomsTests
             Check(check, patient.Dead && Find.TickManager.TicksGame - warning >= 24 * Hour, "unmodified single ingestion becomes fatal when left untreated " + id);
         }
 
-        private static void ValidateTreatment(string id, Pawn doctor, Action<bool, string> check)
+        private static void ValidateTreatment(string id, Pawn doctor, Action<bool, string> check, float doses = 1f)
         {
             var patient = Healthy();
-            var condition = Eat(patient, id, check);
+            var condition = doses == 1f ? Eat(patient, id, check)
+                : MushroomPoisoning.ApplyExposure(patient, Raw(id), Condition(id), doses);
             Advance(patient, condition.OnsetTick);
             int treatments = 0;
             while (!condition.IsStabilized && treatments < 10 && !patient.Dead)
@@ -401,31 +417,113 @@ namespace RimMushroomsTests
         {
             var patient = Healthy();
             var condition = Eat(patient, "SulfurTuft", check);
-            int originalEnd = condition.RecoveryEndTick;
             for (int i = 0; i < 12; i++) Eat(patient, "SulfurTuft", check);
             Check(check, condition.ExposureCount == 4 && condition.PeakSeverity <= condition.Settings.maximumSeverity, "repeated doses are capped at four exposures and bounded severity");
             Advance(patient, condition.OnsetTick);
-            Check(check, condition.RecoveryEndTick >= originalEnd && condition.RecoveryEndTick <= originalEnd + Day + 250,
-                "repeated doses add at most one recovery day instead of unlimited stacked conditions");
+            int extra = (int)typeof(Hediff_MushroomPoisoning).GetField("extraRecoveryTicks", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(condition);
+            Check(check, condition.IsLifeThreatening && condition.RecoveryEndTick < 0 && extra <= Day,
+                "repeated high exposure requires stabilization and recovery extension remains bounded by one day");
         }
 
-        private static void ValidateFlyAgaricComa(Action<bool, string> check)
+        private static void ValidateConditionalFatality(Action<bool, string> check)
+        {
+            foreach (var id in new[] { "FlyAgaric", "SulfurTuft" })
+            {
+                var patient = Healthy();
+                var condition = Eat(patient, id, check);
+                Check(check, !condition.IsLifeThreatening && condition.ExposureUnits == 1f && condition.RecoveryEndTick > 0,
+                    "ordinary exposure remains naturally recoverable " + id);
+                int end = condition.RecoveryEndTick + 500;
+                Advance(patient, end);
+                Check(check, !patient.Dead && !Active(patient, condition), "ordinary untreated dose recovers without direct fatality " + id);
+
+                patient = Healthy();
+                condition = MushroomPoisoning.ApplyExposure(patient, Raw(id), Condition(id), 3f);
+                Check(check, condition.IsLifeThreatening && condition.ExposureUnits == 3f && condition.RecoveryEndTick < 0,
+                    "high exposure enters conditionally fatal course " + id);
+                Advance(patient, condition.OnsetTick);
+                int warning = condition.FirstSymptomWarningTick;
+                condition.Severity = 1f;
+                Advance(patient, warning + 24 * Hour - 1);
+                Check(check, !patient.Dead && !condition.CauseDeathNow(), "high-dose conditional poison respects warning grace " + id);
+                Advance(patient, warning + 24 * Hour + 250);
+                Check(check, patient.Dead, "untreated critical conditional poison can be fatal after grace " + id);
+
+                patient = Healthy();
+                condition = MushroomPoisoning.ApplyExposure(patient, Raw(id), Condition(id), 3f);
+                Advance(patient, condition.OnsetTick);
+                warning = condition.FirstSymptomWarningTick;
+                Advance(patient, warning + 6 * Day);
+                Check(check, patient.Dead && Find.TickManager.TicksGame - warning >= 24 * Hour,
+                    "unmodified high exposure becomes fatal when neglected " + id);
+            }
+            var pantherPatient = Healthy();
+            var panther = MushroomPoisoning.ApplyExposure(pantherPatient, Raw("PantherCap"), Condition("PantherCap"), 4f);
+            Check(check, !panther.IsLifeThreatening && panther.PeakSeverity >= 0.85f,
+                "panther cap has severe neural symptoms but no unsupported direct fatal course");
+            Advance(pantherPatient, panther.OnsetTick + (panther.RecoveryEndTick - panther.OnsetTick) / 4);
+            float consciousness = pantherPatient.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness);
+            Check(check, !pantherPatient.Dead && pantherPatient.Downed && consciousness > 0f && consciousness <= 0.3f,
+                "severe panther poisoning causes native temporary unconsciousness with a positive capacity floor");
+            Advance(pantherPatient, panther.RecoveryEndTick + 500);
+            Check(check, !pantherPatient.Dead && !Active(pantherPatient, panther), "untreated nonfatal panther course recovers");
+        }
+
+        private static void ValidateFractionalDose(Action<bool, string> check)
         {
             var patient = Healthy();
-            var condition = Eat(patient, "FlyAgaric", check);
-            for (int dose = 1; dose < 4; dose++) Eat(patient, "FlyAgaric", check);
-            Check(check, condition.ExposureCount == 4 && !condition.Settings.fatal && condition.PeakSeverity >= 0.85f,
-                "four bounded fly agaric doses can reach the profound drowsiness stage");
+            var condition = MushroomPoisoning.ApplyExposure(patient, Raw("DeathCap"), Condition("DeathCap"), 0.125f);
+            Check(check, condition.ExposureUnits == 0.125f && !condition.IsLifeThreatening && condition.PeakSeverity < 0.1f,
+                "fractional ingredient dose is preserved instead of rounded to a full fatal exposure");
+            condition = MushroomPoisoning.ApplyExposure(patient, Raw("DeathCap"), Condition("DeathCap"), 0.125f);
+            Check(check, condition.ExposureUnits == 0.25f && condition.IsLifeThreatening
+                && patient.health.hediffSet.hediffs.Count(h => h.def == Condition("DeathCap")) == 1,
+                "fractional repeated doses accumulate into one condition and can reach effective fatal exposure");
+            var before = condition.ExposureUnits;
+            Check(check, MushroomPoisoning.ApplyExposure(patient, Raw("DeathCap"), Condition("DeathCap"), float.NaN) == null
+                && MushroomPoisoning.ApplyExposure(patient, Raw("DeathCap"), Condition("DeathCap"), -1f) == null
+                && condition.ExposureUnits == before, "invalid exposure values are rejected without changing the course");
+            var legacy = Healthy();
+            var old = MushroomPoisoning.ApplyExposure(legacy, Raw("DestroyingAngel"), Condition("DestroyingAngel"), 1f);
+            typeof(Hediff_MushroomPoisoning).GetField("exposureUnits", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(old, -1f);
+            Check(check, old.ExposureUnits == 1f && old.IsLifeThreatening,
+                "v0.4 integer-only exposure fallback retains the original dangerous dose");
+        }
+
+        private static void ValidateMixedCapacityGrace(Action<bool, string> check)
+        {
+            var patient = Healthy();
+            int now = Find.TickManager.TicksGame;
+            foreach (var id in FatalIds)
+            {
+                var condition = MushroomPoisoning.ApplyExposure(patient, Raw(id), Condition(id), 1f);
+                Check(check, condition != null && !patient.Dead,
+                    "mixed fixture remains alive while adding each poisoning " + id);
+                typeof(Hediff_MushroomPoisoning).GetField("onsetTick", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(condition, now);
+                condition.Severity = 0.9f;
+                Check(check, !patient.Dead && patient.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness) > 0f,
+                    "critical stage assignment cannot bypass warning grace through native capacity death " + id);
+            }
+            Advance(patient, now + 250);
+            Check(check, !patient.Dead && patient.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness) >= 0.19f,
+                "mixed mushroom conditions cannot stack consciousness offsets to lethal zero before grace");
+            MushroomPsychoactive.Apply(patient, Raw("FlyAgaric"), 1f);
+            Check(check, !patient.Dead && patient.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness) >= 0.1f,
+                "mixed critical poisoning plus psychedelic consciousness loss retains a positive native capacity");
+            Advance(patient, now + 24 * Hour);
+            Check(check, !patient.Dead, "multiple critical mushroom poisons preserve the first-warning response window");
+        }
+
+        private static void ValidatePoorCare(Action<bool, string> check)
+        {
+            var patient = Healthy();
+            var condition = Eat(patient, "DeathCap", check);
             Advance(patient, condition.OnsetTick);
-            int duration = condition.RecoveryEndTick - condition.OnsetTick;
-            Advance(patient, condition.OnsetTick + duration / 4);
-            float consciousness = patient.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness);
-            Check(check, !patient.Dead && patient.Downed && consciousness <= 0.3f,
-                "native health capacities produce temporary nonfatal unconsciousness after repeated fly agaric exposure level=" + consciousness);
-            int deadline = condition.OnsetTick + duration + 500;
-            while (Active(patient, condition) && !patient.Dead && Find.TickManager.TicksGame < deadline) Advance(patient, Find.TickManager.TicksGame + 250);
-            Check(check, !patient.Dead && !patient.Downed && !Active(patient, condition),
-                "native health tracker restores consciousness and removes recovered fly agaric poisoning");
+            condition.Tended(0.05f, 1f);
+            Check(check, !condition.IsStabilized && condition.TreatmentReserve < 0.3f,
+                "one poor treatment cannot stabilize dangerous poison");
+            Advance(patient, condition.FirstSymptomWarningTick + 6 * Day);
+            Check(check, patient.Dead, "insufficient low-quality care followed by neglect does not prevent fatal worsening");
         }
 
         private static Dictionary<string, string> CustomFields(Hediff_MushroomPoisoning condition)
@@ -478,7 +576,12 @@ namespace RimMushroomsTests
                     GenSpawn.Spawn(patient, map.Center + new IntVec3(-22 + index, 0, -14), map);
                     Capture(patient, condition);
                 }
-                Check(check, Saved.Count == 5 && Saved.Values.Any(s => s.Phase == MushroomPoisonPhase.Latent.ToString()), "five species including initial latent poisoning prepared for save");
+                var fractionalPatient = Healthy();
+                var fractional = MushroomPoisoning.ApplyExposure(fractionalPatient, Raw("GhostFungus"), Condition("GhostFungus"), 0.125f);
+                GenSpawn.Spawn(fractionalPatient, map.Center + new IntVec3(-16, 0, -14), map);
+                Capture(fractionalPatient, fractional);
+                Check(check, Saved.Count == 6 && Saved.Values.Any(s => s.Phase == MushroomPoisonPhase.Latent.ToString()),
+                    "legacy and new species including fractional latent exposure prepared for save");
             }
             finally
             {
@@ -507,7 +610,7 @@ namespace RimMushroomsTests
 
         public static void VerifyLoaded(Map map, Action<bool, string> check)
         {
-            Check(check, Saved.Count == 5, "expected poison save snapshots retained through native map reload");
+            Check(check, Saved.Count == 6, "expected poison save snapshots retained through native map reload");
             foreach (var saved in Saved.Values)
             {
                 var patient = map.mapPawns.AllPawnsSpawned.Single(p => p.GetUniqueLoadID() == saved.PawnId);
@@ -524,6 +627,91 @@ namespace RimMushroomsTests
                     Check(check, !patient.Dead && condition.FirstSymptomWarningTick >= 0, "loaded poison continues through native health ticks " + saved.DefName);
                 });
             }
+        }
+
+        public static void VerifyLegacy(Map map, Action<bool, string> check)
+        {
+            string path = Path.Combine(GenFilePaths.SaveDataFolderPath, "Saves", "MoreMushrooms-LegacyFixture.rws");
+            Check(check, File.Exists(path), "actual legacy save XML is available for poison compatibility comparison");
+            var document = new XmlDocument { XmlResolver = null };
+            document.Load(path);
+            var primitiveFields = typeof(Hediff_MushroomPoisoning)
+                .GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly)
+                .Where(field => field.FieldType == typeof(int) || field.FieldType == typeof(float) || field.FieldType == typeof(bool))
+                .ToList();
+            int verified = 0, upgradedHighDose = 0;
+            foreach (XmlNode savedPawn in document.SelectNodes("//thing[healthTracker/hediffSet/hediffs/li[starts-with(def, 'RMush_Poison')]]"))
+            {
+                string pawnId = savedPawn.SelectSingleNode("id")?.InnerText;
+                var patient = map.mapPawns.AllPawnsSpawned.SingleOrDefault(pawn => pawn.ThingID == pawnId);
+                Check(check, patient != null && !patient.Dead, "actual legacy poisoned pawn ID survives load " + pawnId);
+                foreach (XmlNode saved in savedPawn.SelectNodes("healthTracker/hediffSet/hediffs/li[starts-with(def, 'RMush_Poison')]"))
+                {
+                    string defName = saved.SelectSingleNode("def").InnerText;
+                    string hediffId = "Hediff_" + saved.SelectSingleNode("loadID").InnerText;
+                    var condition = patient.health.hediffSet.hediffs.SingleOrDefault(hediff => hediff.GetUniqueLoadID() == hediffId)
+                        as Hediff_MushroomPoisoning;
+                    Check(check, condition != null && condition.def.defName == defName
+                        && condition.GetType().FullName == saved.Attributes["Class"]?.Value,
+                        "actual legacy poison ID, Def and class are preserved " + pawnId + " " + defName);
+                    Check(check, condition.sourceDef?.defName == saved.SelectSingleNode("source")?.InnerText
+                        && condition.sourceLabel == saved.SelectSingleNode("sourceLabel")?.InnerText,
+                        "actual legacy poison source identity and label are preserved " + defName);
+                    Check(check, LegacyFloatEqual(condition.Severity, saved.SelectSingleNode("severity")?.InnerText ?? "0"),
+                        "actual legacy poison severity is unchanged before simulation " + defName);
+                    int exposures = int.Parse(saved.SelectSingleNode("mushroomExposureCount")?.InnerText ?? "0", CultureInfo.InvariantCulture);
+                    bool oldDoseFormat = saved.SelectSingleNode("mushroomExposureUnits") == null;
+                    float dose = oldDoseFormat ? Mathf.Clamp(exposures, 1, 4)
+                        : float.Parse(saved.SelectSingleNode("mushroomExposureUnits").InnerText, CultureInfo.InvariantCulture);
+                    Check(check, condition.ExposureCount == exposures && Mathf.Abs(condition.ExposureUnits - dose) < 0.00001f,
+                        "actual integer-only legacy exposure migrates to equal fractional units " + defName + " dose=" + dose);
+                    bool oldOnsetAnnounced = bool.Parse(saved.SelectSingleNode("mushroomOnsetAnnounced")?.InnerText ?? "false");
+                    bool oldStabilized = bool.Parse(saved.SelectSingleNode("mushroomStabilized")?.InnerText ?? "false");
+                    bool freshWarning = oldDoseFormat && condition.Settings.conditionalFatalThreshold > 0f
+                        && condition.IsLifeThreatening && oldOnsetAnnounced && !oldStabilized;
+                    foreach (var field in primitiveFields)
+                    {
+                        if (field.Name == "exposureUnits") continue; // The deliberate v0.4 migration was checked above.
+                        if (freshWarning && (field.Name == "firstSymptomWarningTick" || field.Name == "recoveryEndTick"
+                            || field.Name == "recoveryProgressTicks")) continue;
+                        string tag = "mushroom" + char.ToUpperInvariant(field.Name[0]) + field.Name.Substring(1);
+                        string defaultValue = field.FieldType == typeof(bool) ? "false" : field.Name.EndsWith("Tick") ? "-1" : "0";
+                        string expected = saved.SelectSingleNode(tag)?.InnerText ?? defaultValue;
+                        object actual = field.GetValue(condition);
+                        bool matches = field.FieldType == typeof(float)
+                            ? LegacyFloatEqual((float)actual, expected)
+                            : field.FieldType == typeof(bool) ? (bool)actual == bool.Parse(expected)
+                            : (int)actual == int.Parse(expected, CultureInfo.InvariantCulture);
+                        Check(check, matches, "actual legacy poison progression field preserved " + defName + " " + field.Name);
+                    }
+                    var tend = condition.TryGetComp<HediffComp_TendDuration>();
+                    Check(check, tend != null
+                        && tend.tendTicksLeft == int.Parse(saved.SelectSingleNode("tendTicksLeft")?.InnerText ?? "-1", CultureInfo.InvariantCulture)
+                        && LegacyFloatEqual(tend.tendQuality, saved.SelectSingleNode("tendQuality")?.InnerText ?? "0")
+                        && LegacyFloatEqual((float)typeof(HediffComp_TendDuration).GetField("totalTendQuality",
+                            BindingFlags.Instance | BindingFlags.NonPublic).GetValue(tend), saved.SelectSingleNode("totalTendQuality")?.InnerText ?? "0")
+                        && condition.IsStabilized == oldStabilized,
+                        "actual legacy tending timer, quality and stabilization remain intact " + defName);
+                    if (freshWarning)
+                    {
+                        Check(check, condition.FirstSymptomWarningTick == Find.TickManager.TicksGame
+                            && condition.RecoveryEndTick < 0 && !condition.CauseDeathNow()
+                            && condition.Settings.responseGraceHours >= 24f,
+                            "old high-dose nonfatal poison gets a fresh 24-hour warning window instead of load-time death " + defName);
+                        upgradedHighDose++;
+                    }
+                    verified++;
+                }
+            }
+            Check(check, true, "actual legacy poison XML comparisons=" + verified + "; high-dose warning migrations=" + upgradedHighDose
+                + (verified == 0 ? " (this older fixture contains no mushroom poison conditions)" : "")
+                + (verified > 0 && upgradedHighDose == 0 ? " (original fixture contains no symptomatic high-dose conditional case)" : ""));
+        }
+
+        private static bool LegacyFloatEqual(float actual, string expected)
+        {
+            float parsed = float.Parse(expected, CultureInfo.InvariantCulture);
+            return Mathf.Abs(actual - parsed) <= 0.000001f * Mathf.Max(1f, Mathf.Abs(parsed));
         }
     }
 }

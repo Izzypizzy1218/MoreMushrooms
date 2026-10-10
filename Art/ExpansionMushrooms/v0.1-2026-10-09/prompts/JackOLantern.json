@@ -1,0 +1,68 @@
+[
+  {
+    "asset": "JackOLantern/PlantA",
+    "prompt": "Edit reference image 1, the existing More Mushrooms FlyAgaric unit sprite, into a single mature Omphalotus olearius fungus unit. Reference image 2 is a real specimen for anatomy only; image 3 reinforces the existing flat illustration style. Preserve the first sprite's simple RimWorld visual language: thick warm dark-brown contours and TWO OR THREE clean solid flat color planes, slight elevated three-quarter camera, compact readable silhouette. Species anatomy: a saturated orange smooth depressed funnel cap, same orange central curved stalk and a few simple strongly decurrent orange gill lines under the cap; no ring and no cap dots. Newly redraw the species-specific mature cap and stalk to these proportions and colors. One complete isolated mature unit, not a pile of juvenile fungi. Flat color shapes only, NO gradients, gloss, photoreal texture, brush texture or complex highlights. No scenic ground, grass, leaves, roots, log, pot, box, symbols, poison marker, text, label or cast ground shadow. Centered on genuine transparent RGBA background with normal margin. This is PlantA, an adult/mature unit for repeated in-game growth drawing.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\FlyAgaric\\FlyAgaricA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-JackOLantern-01.jpg",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Plant\\RimMushrooms\\Button\\ButtonA.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-8f3ac61c-620f-4001-bc04-f8449191a8b9.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\PlantA.png"
+  },
+  {
+    "asset": "JackOLantern/PlantB",
+    "prompt": "Edit the first reference mature Omphalotus olearius game sprite into an alternate mature PlantB silhouette of the SAME species, maturity, color palette and restrained illustrated style. The second image is a real anatomy reference only. Make this specific natural alternate pose: a mature orange funnel with a more asymmetrical wavy rim, left side slightly lower and stalk curving left, with simple orange decurrent gill lines; comparable overall size. PlantB is NOT a smaller juvenile, NOT a growth stage and NOT an exact mirrored copy of A. Maintain species anatomy: a saturated orange smooth depressed funnel cap, same orange central curved stalk and a few simple strongly decurrent orange gill lines under the cap; no ring and no cap dots. Preserve thick warm dark-brown outlines, simple clean shapes and two or three FLAT color planes with hard-edged shading; no gradients, gloss, realistic texture or complex small detail. Slight elevated three-quarter camera. Single complete unobstructed mature fungus unit, centered, no box, ground, grass, roots, log, props, labels, icons or cast ground shadow. Real transparent RGBA background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-JackOLantern-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-c7204f75-db4c-4230-8d12-fc17ac111ca5.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\PlantB.png"
+  },
+  {
+    "asset": "JackOLantern/01Low",
+    "prompt": "Edit reference image 1, the existing More Mushrooms 01Low harvested-food tray sprite, by replacing ONLY its cream button mushroom contents with harvested Omphalotus olearius mushrooms matching reference sprite 2. Reference photo 3 is anatomy only. Preserve the SAME ochre tray shell, front panel silhouette, thick warm brown contour, right-side stepped notch and right end block, dark interior, colors and slight elevated three-quarter camera. The tray must remain recognizably identical to the existing first reference, no redesign. LOW quantity: only a sparse loose shallow scattering of three to five harvested mushrooms in the bottom left/center. Most dark interior floor must remain visibly empty, especially the rear half and right half. Every cap lies well below the back rim. No heap and no upright growing fungi. Contents should be loose harvested whole mushrooms lying naturally in varied orientations and overlapping only lightly, not upright fungi growing from the tray. Species anatomy/colors: a saturated orange smooth depressed funnel cap, same orange central curved stalk and a few simple strongly decurrent orange gill lines under the cap; no ring and no cap dots. Use the existing game sprite's extremely simple flat color treatment, two or three color planes per shape, no gradients, realistic texture or tiny fussy details. Preserve species-defining cap silhouette and stalk colors at small icon scale. No slats, nails, handles, woodgrain, label, text, skull, poison marker, pictograms, symbols, scenery or cast ground shadow. One centered single tray sprite on genuine transparent RGBA background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\01Low.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-JackOLantern-01.jpg"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-7ce62afc-c8b7-46e7-a2da-6dadefd6bbdf.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\01Low.png"
+  },
+  {
+    "asset": "JackOLantern/02Medium",
+    "prompt": "Edit reference image 1, the existing More Mushrooms 02Medium harvested-food tray sprite, by replacing ONLY its cream button mushroom contents with harvested Omphalotus olearius mushrooms matching reference sprite 2. Reference photo 3 is anatomy only, and image 4 is this species' already-created LOW tray for matching design/color only, not for quantity. Preserve the same ochre tray shell, front panel silhouette, thick warm brown contour, right-side stepped notch and right end block, dark interior, colors and slight elevated three-quarter camera. Do not redesign the container. MEDIUM quantity: roughly half-full with a loose layer of several harvested mushrooms, more than Low but still substantial clear dark gaps visible between pieces and along the rear edge. Contents reach around the middle of the tray's depth and mostly remain below the back rim. Do not fill the tray solidly and do not form an above-rim mound. Compared with reference 4, show visibly more overlapping contents spread across the tray and a slightly higher shallow pile, while retaining obvious dark floor gaps behind and between the mushrooms. Contents are loose harvested whole mushrooms lying naturally in varied orientations, not upright fungi growing from the tray. Species anatomy/colors: a saturated orange smooth depressed funnel cap, same orange central curved stalk and a few simple strongly decurrent orange gill lines under the cap; no ring and no cap dots. Match the simple existing game illustration with two or three clean flat color planes per shape, no gradients, realistic texture or fine photographic details. Preserve cap morphology and stalk colors. No slats, nails, handles, woodgrain, labels, text, skull, poison marker, pictograms, scenery or cast ground shadow. One centered single tray sprite on genuine transparent RGBA background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\02Medium.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-JackOLantern-01.jpg",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\01Low.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-2810144d-c0f9-4df4-b8ee-ef0b8beed1cf.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\02Medium.png"
+  },
+  {
+    "asset": "JackOLantern/03Full",
+    "prompt": "Edit reference image 1, the existing More Mushrooms 03Full harvested-food tray sprite, by replacing ONLY its cream button mushroom contents with harvested Omphalotus olearius mushrooms matching reference sprite 2. Reference photo 3 is anatomy only; reference image 4 is this species' MEDIUM tray and defines the same species/box design, not the target quantity. Preserve the same ochre tray shell, front panel silhouette, thick warm brown contour, right-side stepped notch and right end block, dark interior, colors and slight elevated three-quarter camera. Do not redesign the container. FULL quantity: a clear abundant overlapping heap of harvested mushrooms occupying almost all the tray interior, with an obvious small mound rising slightly above the back rim. Substantially fuller than Medium. Keep the front panel and right notch/end block completely visible. Compared with reference 4, roughly double the visible quantity and substantially raise the contents to make an abundant above-rim mound; only tiny dark gaps may remain among overlapping pieces. Contents must be loose harvested mushrooms, in varied natural orientations with several whole cap-and-stalk forms visible; not upright fungi growing in the tray. Species anatomy/colors: a saturated orange smooth depressed funnel cap, same orange central curved stalk and a few simple strongly decurrent orange gill lines under the cap; no ring and no cap dots. Use the established game's extremely simple flat color treatment with two or three solid color planes per shape, no gradients, realistic texture or fussy microscopic details. Keep species-defining silhouettes visible. No slats, nails, handles, woodgrain, labels, text, skull, poison marker, symbols, scenery or cast ground shadow. One centered single tray sprite on genuine transparent RGBA background.",
+    "referenced_image_paths": [
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Textures\\Things\\Item\\RimMushrooms\\Button\\03Full.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\PlantA.png",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\references\\group2-JackOLantern-01.jpg",
+      "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\02Medium.png"
+    ],
+    "transparent_background": true,
+    "mode": "built-in-imagegen",
+    "generated_source": "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-532ce5a3-d06b-417b-94d2-dae8b0b553f2.png",
+    "saved_path": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\JackOLantern\\03Full.png"
+  }
+]

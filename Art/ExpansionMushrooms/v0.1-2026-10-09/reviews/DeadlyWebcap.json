@@ -1,0 +1,195 @@
+{
+  "id": "DeadlyWebcap",
+  "reviewed_on": "2026-10-09",
+  "reviewer": "description_fact_check",
+  "review_scope": "Five generated masters viewed individually; exact 256 export and cross-species contact-sheet review remain parent task. No game execution claim.",
+  "species_morphology": {
+    "status": "pass",
+    "evidence": "Rust-orange broad conical/umbonate cap, ochre stalk, pale flush cortina-remnant bands; no flaring Amanita-style rings."
+  },
+  "style": {
+    "status": "pass_with_note",
+    "evidence": "Warm dark-brown outlines, simplified color regions and slight elevated three-quarter presentation match the supplied baseline sprites. No photographic texture, text, labels or habitat scene.",
+    "note": "Some generated color planes contain subtle smooth shading/highlights rather than mathematically constant flat colors; final small-size style comparison remains parent review."
+  },
+  "transparent_background": {
+    "status": "pass",
+    "evidence": "All five already RGBA with alpha 0..255 and transparent corner pixels; original generation bytes preserved. Very low-alpha edge specks exist in some masters; documented alpha>=16 framing ignores them for crop bounds without modifying master alpha."
+  },
+  "plant_variations": {
+    "status": "pass",
+    "evidence": "A upright broad cap; B visibly tilted cap and curved stalk, both same maturity.",
+    "same_mature_stage": true
+  },
+  "box_fill_levels": {
+    "status": "pass",
+    "evidence": "Low three loose pieces with most rear/right interior empty; corrected Medium around six recognizable caps loosely below rim; Full many overlaps in a clear above-rim mound.",
+    "container": "Existing ochre front panel, right notch/end block, dark interior and camera retained across three fill variants.",
+    "quantity_counts_are_visual_estimates": true
+  },
+  "notes": [
+    "PlantA regenerated once to remove flaring skirtlike rings; final bands lie against the stalk.",
+    "Medium regenerated once because initial four-versus-three cap quantity step was weak; corrected version visibly spreads more caps.",
+    "녹슨끈적 is a working Korean game label."
+  ],
+  "regenerations": [
+    {
+      "asset": "DeadlyWebcap/PlantA",
+      "reason": "Initial thin pale cortina bands were rendered as flaring skirtlike rings; corrected to flush surface bands.",
+      "previous_generated_sources": [
+        "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-8a75562f-9190-4c33-bae2-f4730fb074d7.png"
+      ]
+    },
+    {
+      "asset": "DeadlyWebcap/02Medium",
+      "reason": "Initial Medium had only four visible caps versus three in Low; increased to seven for a clearer quantity step.",
+      "previous_generated_sources": [
+        "C:\\Users\\집\\.codex\\generated_images\\01a106e0-9f22-7901-9618-f1f9c9a4f38d\\exec-feffd11b-f926-4953-b319-558fac215687.png"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "asset": "PlantA",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DeadlyWebcap\\PlantA.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        124,
+        112,
+        1132,
+        1143
+      ],
+      "sha256": "d90aa27d4628642febed9489b7d77b4a5236cb4f0243bf16235bfd702e0e385d",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "PlantB",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DeadlyWebcap\\PlantB.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        139,
+        109,
+        1119,
+        1149
+      ],
+      "sha256": "09b3a571c3ae2396e0ebd3b8c0f1f2bb18ff4fc1ae83481709f5b1016fb5dcd3",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "01Low",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DeadlyWebcap\\01Low.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        80,
+        290,
+        1174,
+        999
+      ],
+      "sha256": "9d521b6790520712fe996da2621a6445f13a0b46d3657138f8dad7471bc66db1",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "02Medium",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DeadlyWebcap\\02Medium.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        78,
+        290,
+        1176,
+        1003
+      ],
+      "sha256": "96822f8c9550dd5787c47a69b8c722be665d951a044ff3f9a7c8a9d45d121548",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    },
+    {
+      "asset": "03Full",
+      "master": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Art\\ExpansionMushrooms\\v0.1-2026-10-09\\masters\\DeadlyWebcap\\03Full.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alpha_bbox16": [
+        51,
+        222,
+        1204,
+        1068
+      ],
+      "sha256": "e4932086567901eddfeb5ece06752106b0f9dda6c3f2105e240aee7272541e16",
+      "generated_copy_identical": true,
+      "visually_inspected": true
+    }
+  ],
+  "runtime_untouched": true,
+  "export_review_pending": true
+}

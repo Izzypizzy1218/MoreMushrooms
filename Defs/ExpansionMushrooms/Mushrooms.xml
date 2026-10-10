@@ -1,0 +1,1504 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef Name="RMush_ExpansionResourceBase" ParentName="OrganicProductBase" Abstract="True">
+    <stackLimit>75</stackLimit>
+    <possessionCount>0</possessionCount>
+    <thingCategories>
+      <li>RMush_FungalResources</li>
+    </thingCategories>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <graphicData>
+      <graphicClass>RimMushrooms.Graphic_MushroomStack</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomStackThresholds">
+        <lowMaxCount>25</lowMaxCount>
+        <mediumMaxCount>50</mediumMaxCount>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawCauliflower</defName>
+    <label>cauliflower mushroom</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteCauliflower</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteCauliflower</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A pale mushroom with densely folded, ruffled branches. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +7 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Cauliflower</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.8</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantCauliflower</defName>
+    <label>cauliflower mushroom cluster</label>
+    <description>A cluster of cauliflower mushroom. Can be grown in soil or hydroponics basins. Grows without a sun lamp; stronger light slows its growth. A pale mushroom with densely folded, ruffled branches.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Cauliflower</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>7.5</growDays>
+      <harvestYield>13</harvestYield>
+      <harvestedThingDef>RMush_RawCauliflower</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowMinSkill>5</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.002</TemperateForest>
+        <BorealForest>0.0015</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawPurpleBlewit</defName>
+    <label>purple blewit</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AtePurpleBlewit</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AtePurpleBlewit</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A purple-toned mushroom with a firm cap and pleasant mushroom flavor. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/PurpleBlewit</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>18</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantPurpleBlewit</defName>
+    <label>purple blewit cluster</label>
+    <description>A cluster of purple blewit. Can be grown in soil or hydroponics basins. Grows without a sun lamp; stronger light slows its growth. A purple-toned mushroom with a firm cap and pleasant mushroom flavor.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/PurpleBlewit</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>6</growDays>
+      <harvestYield>10</harvestYield>
+      <harvestedThingDef>RMush_RawPurpleBlewit</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowMinSkill>3</sowMinSkill>
+      <wildBiomes>
+        <TemperateForest>0.002</TemperateForest>
+        <TemperateSwamp>0.001</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawBlackTruffle</defName>
+    <label>black truffle</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteBlackTruffle</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteBlackTruffle</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A dark, knobbly woodland fungus prized for its strong and complex aroma. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +7 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/BlackTruffle</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>8</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantBlackTruffle</defName>
+    <label>black truffle cluster</label>
+    <description>A cluster of black truffle. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, knobbly woodland fungus prized for its strong and complex aroma.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/BlackTruffle</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>12</growDays>
+      <harvestYield>4</harvestYield>
+      <harvestedThingDef>RMush_RawBlackTruffle</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0005</TemperateForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawPorcini</defName>
+    <label>porcini</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AtePorcini</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AtePorcini</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +7 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Porcini</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantPorcini</defName>
+    <label>porcini cluster</label>
+    <description>A cluster of porcini. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Porcini</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>9</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawPorcini</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.001</TemperateForest>
+        <BorealForest>0.0008</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawMorel</defName>
+    <label>morel</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteMorel</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteMorel</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A spring woodland mushroom with a honeycomb-like cap and a gentle aroma. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Morel</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.6</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantMorel</defName>
+    <label>morel cluster</label>
+    <description>A cluster of morel. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A spring woodland mushroom with a honeycomb-like cap and a gentle aroma.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Morel</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>8</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawMorel</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.001</TemperateForest>
+        <BorealForest>0.0007</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawBlackTrumpet</defName>
+    <label>black trumpet</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteBlackTrumpet</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteBlackTrumpet</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A dark, thin-fleshed mushroom shaped like a small trumpet. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/BlackTrumpet</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>18</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantBlackTrumpet</defName>
+    <label>black trumpet cluster</label>
+    <description>A cluster of black trumpet. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, thin-fleshed mushroom shaped like a small trumpet.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/BlackTrumpet</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>8</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawBlackTrumpet</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.001</TemperateForest>
+        <TemperateSwamp>0.0005</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawGiantPuffball</defName>
+    <label>giant puffball</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteGiantPuffball</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteGiantPuffball</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +3 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/GiantPuffball</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantGiantPuffball</defName>
+    <label>giant puffball cluster</label>
+    <description>A cluster of giant puffball. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/GiantPuffball</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>9</growDays>
+      <harvestYield>20</harvestYield>
+      <harvestedThingDef>RMush_RawGiantPuffball</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0015</TemperateForest>
+        <AridShrubland>0.0008</AridShrubland>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawIndigoMilkcap</defName>
+    <label>indigo milkcap</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteIndigoMilkcap</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteIndigoMilkcap</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/IndigoMilkcap</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantIndigoMilkcap</defName>
+    <label>indigo milkcap cluster</label>
+    <description>A cluster of indigo milkcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/IndigoMilkcap</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>7</growDays>
+      <harvestYield>10</harvestYield>
+      <harvestedThingDef>RMush_RawIndigoMilkcap</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.0005</TropicalRainforest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawVeiledStinkhorn</defName>
+    <label>veiled stinkhorn</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteVeiledStinkhorn</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteVeiledStinkhorn</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A mushroom with a delicate white net and sponge-like edible tissue. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/VeiledStinkhorn</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantVeiledStinkhorn</defName>
+    <label>veiled stinkhorn cluster</label>
+    <description>A cluster of veiled stinkhorn. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A mushroom with a delicate white net and sponge-like edible tissue.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/VeiledStinkhorn</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>8</growDays>
+      <harvestYield>9</harvestYield>
+      <harvestedThingDef>RMush_RawVeiledStinkhorn</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TropicalRainforest>0.0015</TropicalRainforest>
+        <TropicalSwamp>0.001</TropicalSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawShaggyInkcap</defName>
+    <label>shaggy inkcap</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteShaggyInkcap</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteShaggyInkcap</specialThoughtAsIngredient>
+    </ingestible>
+    <description>A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +3 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/ShaggyInkcap</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>7</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantShaggyInkcap</defName>
+    <label>shaggy inkcap cluster</label>
+    <description>A cluster of shaggy inkcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/ShaggyInkcap</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>5</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawShaggyInkcap</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0015</TemperateForest>
+        <AridShrubland>0.0005</AridShrubland>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawLobster</defName>
+    <label>lobster mushroom</label>
+    <ingestible>
+      <specialThoughtDirect>RMush_AteLobster</specialThoughtDirect>
+      <specialThoughtAsIngredient>RMush_AteLobster</specialThoughtAsIngredient>
+    </ingestible>
+    <description>An orange fungus growing over the fruit body of another mushroom, giving it firm flesh. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +5 mood for 6 hours, raw or as a meal ingredient. Only the strongest mushroom bonus applies.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Lobster</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantLobster</defName>
+    <label>lobster mushroom cluster</label>
+    <description>A cluster of lobster mushroom. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. An orange fungus growing over the fruit body of another mushroom, giving it firm flesh.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Lobster</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>8</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawLobster</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0008</TemperateForest>
+        <BorealForest>0.0005</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawReishi</defName>
+    <label>reishi</label>
+    <description>A tough, bitter bracket fungus collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Reishi</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>35</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantReishi</defName>
+    <label>reishi cluster</label>
+    <description>A cluster of reishi. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tough, bitter bracket fungus collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Reishi</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>10</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawReishi</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawTurkeyTail</defName>
+    <label>turkey tail</label>
+    <description>A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/TurkeyTail</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>35</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantTurkeyTail</defName>
+    <label>turkey tail cluster</label>
+    <description>A cluster of turkey tail. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/TurkeyTail</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>9</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawTurkeyTail</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0015</TemperateForest>
+        <BorealForest>0.001</BorealForest>
+        <TemperateSwamp>0.0008</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawSanghuang</defName>
+    <label>sanghuang</label>
+    <description>A hard, woody bracket fungus collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Sanghuang</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantSanghuang</defName>
+    <label>sanghuang cluster</label>
+    <description>A cluster of sanghuang. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A hard, woody bracket fungus collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Sanghuang</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>12</growDays>
+      <harvestYield>4</harvestYield>
+      <harvestedThingDef>RMush_RawSanghuang</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0005</TemperateForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawCordyceps</defName>
+    <label>cordyceps</label>
+    <description>A small orange club-shaped fungus collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Cordyceps</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantCordyceps</defName>
+    <label>cordyceps cluster</label>
+    <description>A cluster of cordyceps. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small orange club-shaped fungus collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Cordyceps</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>8</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawCordyceps</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0005</TemperateForest>
+        <BorealForest>0.0005</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawChaga</defName>
+    <label>chaga</label>
+    <description>A dark, rough fungal growth collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Chaga</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantChaga</defName>
+    <label>chaga cluster</label>
+    <description>A cluster of chaga. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, rough fungal growth collected as a fungal resource and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Chaga</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>12</growDays>
+      <harvestYield>5</harvestYield>
+      <harvestedThingDef>RMush_RawChaga</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <BorealForest>0.0008</BorealForest>
+        <TemperateForest>0.0004</TemperateForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawLibertyCap</defName>
+    <label>liberty cap</label>
+    <description>A small mushroom with a pointed cap and psychoactive effects. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +15 mood for 6 hours and causes 1–2 hours of uncontrolled hallucination wandering. These effects also occur when used as a meal ingredient. Psychoactive mushroom mood bonuses do not stack with each other.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/LibertyCap</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.2</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomExposureProperties">
+        <doseUnitCount>10</doseUnitCount>
+        <psychoactive>true</psychoactive>
+        <moodBonus>15</moodBonus>
+        <moodDurationHours>6</moodDurationHours>
+        <hallucinationHoursMin>1</hallucinationHoursMin>
+        <hallucinationHoursMax>2</hallucinationHoursMax>
+      </li>
+    </modExtensions>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomExposure" />
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantLibertyCap</defName>
+    <label>liberty cap cluster</label>
+    <description>A cluster of liberty cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small mushroom with a pointed cap and psychoactive effects.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/LibertyCap</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>6</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawLibertyCap</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.001</TemperateForest>
+        <BorealForest>0.0006</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawPantherCap</defName>
+    <label>panther cap</label>
+    <description>A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +10 mood for 6 hours and causes 3–4 hours of uncontrolled hallucination wandering. These effects also occur when used as a meal ingredient. Psychoactive mushroom mood bonuses do not stack with each other.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/PantherCap</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomExposureProperties">
+        <doseUnitCount>10</doseUnitCount>
+        <poisonHediff>RMush_PoisonPantherCap</poisonHediff>
+        <psychoactive>true</psychoactive>
+        <moodBonus>10</moodBonus>
+        <moodDurationHours>6</moodDurationHours>
+        <hallucinationHoursMin>3</hallucinationHoursMin>
+        <hallucinationHoursMax>4</hallucinationHoursMax>
+      </li>
+    </modExtensions>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomExposure" />
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantPantherCap</defName>
+    <label>panther cap cluster</label>
+    <description>A cluster of panther cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/PantherCap</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>8</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawPantherCap</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0008</TemperateForest>
+        <BorealForest>0.0006</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawCubensis</defName>
+    <label>cubensis</label>
+    <description>A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects. Can be eaten directly or used in ordinary meals. Counts as fungus. Grants +15 mood for 6 hours and causes 1–2 hours of uncontrolled hallucination wandering. These effects also occur when used as a meal ingredient. Psychoactive mushroom mood bonuses do not stack with each other.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Cubensis</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.2</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomExposureProperties">
+        <doseUnitCount>10</doseUnitCount>
+        <psychoactive>true</psychoactive>
+        <moodBonus>15</moodBonus>
+        <moodDurationHours>6</moodDurationHours>
+        <hallucinationHoursMin>1</hallucinationHoursMin>
+        <hallucinationHoursMax>2</hallucinationHoursMax>
+      </li>
+    </modExtensions>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomExposure" />
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantCubensis</defName>
+    <label>cubensis cluster</label>
+    <description>A cluster of cubensis. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Cubensis</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>7</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawCubensis</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TropicalRainforest>0.001</TropicalRainforest>
+        <TropicalSwamp>0.0005</TropicalSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawDeathCap</defName>
+    <label>death cap</label>
+    <description>Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/DeathCap</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomExposureProperties">
+        <doseUnitCount>1</doseUnitCount>
+        <poisonHediff>RMush_PoisonDeathCap</poisonHediff>
+      </li>
+    </modExtensions>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonDeathCap</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantDeathCap</defName>
+    <label>death cap cluster</label>
+    <description>A cluster of death cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/DeathCap</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>9</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawDeathCap</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0005</TemperateForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawYellowDapperling</defName>
+    <label>yellow dapperling</label>
+    <description>A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/YellowDapperling</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomExposureProperties">
+        <doseUnitCount>1</doseUnitCount>
+        <poisonHediff>RMush_PoisonYellowDapperling</poisonHediff>
+      </li>
+    </modExtensions>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonYellowDapperling</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantYellowDapperling</defName>
+    <label>yellow dapperling cluster</label>
+    <description>A cluster of yellow dapperling. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/YellowDapperling</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>6</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawYellowDapperling</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TropicalRainforest>0.0007</TropicalRainforest>
+        <TropicalSwamp>0.0005</TropicalSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawJackOLantern</defName>
+    <label>jack-o-lantern mushroom</label>
+    <description>A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/JackOLantern</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.8</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomExposureProperties">
+        <doseUnitCount>1</doseUnitCount>
+        <poisonHediff>RMush_PoisonJackOLantern</poisonHediff>
+      </li>
+    </modExtensions>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonJackOLantern</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantJackOLantern</defName>
+    <label>jack-o-lantern mushroom cluster</label>
+    <description>A cluster of jack-o-lantern mushroom. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/JackOLantern</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>7</growDays>
+      <harvestYield>9</harvestYield>
+      <harvestedThingDef>RMush_RawJackOLantern</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0008</TemperateForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawDeadlyWebcap</defName>
+    <label>deadly webcap</label>
+    <description>Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/DeadlyWebcap</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomExposureProperties">
+        <doseUnitCount>1</doseUnitCount>
+        <poisonHediff>RMush_PoisonDeadlyWebcap</poisonHediff>
+      </li>
+    </modExtensions>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonDeadlyWebcap</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantDeadlyWebcap</defName>
+    <label>deadly webcap cluster</label>
+    <description>A cluster of deadly webcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/DeadlyWebcap</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>9</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawDeadlyWebcap</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <BorealForest>0.0006</BorealForest>
+        <TemperateForest>0.0004</TemperateForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawZombieAntFungus</defName>
+    <label>zombie-ant fungus</label>
+    <description>A slender fungus associated with insect hosts. Collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/ZombieAntFungus</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantZombieAntFungus</defName>
+    <label>zombie-ant fungus cluster</label>
+    <description>A cluster of zombie-ant fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A slender fungus associated with insect hosts. Collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/ZombieAntFungus</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>10</growDays>
+      <harvestYield>4</harvestYield>
+      <harvestedThingDef>RMush_RawZombieAntFungus</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TropicalRainforest>0.0005</TropicalRainforest>
+        <TropicalSwamp>0.0003</TropicalSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawHoneyFungus</defName>
+    <label>honey fungus</label>
+    <description>A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/HoneyFungus</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>18</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantHoneyFungus</defName>
+    <label>honey fungus cluster</label>
+    <description>A cluster of honey fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/HoneyFungus</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>7</growDays>
+      <harvestYield>10</harvestYield>
+      <harvestedThingDef>RMush_RawHoneyFungus</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0015</TemperateForest>
+        <BorealForest>0.0008</BorealForest>
+        <TemperateSwamp>0.0005</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawDryRot</defName>
+    <label>dry rot fungus</label>
+    <description>A broad, crust-like fungal growth collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/DryRot</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantDryRot</defName>
+    <label>dry rot fungus cluster</label>
+    <description>A cluster of dry rot fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A broad, crust-like fungal growth collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/DryRot</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>10</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawDryRot</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0003</TemperateForest>
+        <TemperateSwamp>0.0003</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PoisonRawBase">
+    <defName>RMush_RawGhostFungus</defName>
+    <label>ghost fungus</label>
+    <description>A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/GhostFungus</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.8</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="RimMushrooms.MushroomExposureProperties">
+        <doseUnitCount>1</doseUnitCount>
+        <poisonHediff>RMush_PoisonGhostFungus</poisonHediff>
+      </li>
+    </modExtensions>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="RimMushrooms.IngestionOutcomeDoer_MushroomPoison">
+          <hediff>RMush_PoisonGhostFungus</hediff>
+          <doseUnitCount>1</doseUnitCount>
+        </li>
+      </outcomeDoers>
+      <ingestCommandString>Eat {0} (poisonous)</ingestCommandString>
+      <ingestReportString>Eating {0} (poisonous).</ingestReportString>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantGhostFungus</defName>
+    <label>ghost fungus cluster</label>
+    <description>A cluster of ghost fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/GhostFungus</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>8</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawGhostFungus</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0005</TemperateForest>
+        <TropicalRainforest>0.0005</TropicalRainforest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_RawBase">
+    <defName>RMush_RawYellowBrain</defName>
+    <label>yellow brain fungus</label>
+    <description>A folded yellow fungus with a jelly-like texture and little distinctive flavor. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/YellowBrain</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantYellowBrain</defName>
+    <label>yellow brain fungus cluster</label>
+    <description>A cluster of yellow brain fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A folded yellow fungus with a jelly-like texture and little distinctive flavor.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/YellowBrain</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+      <growDays>6</growDays>
+      <harvestYield>8</harvestYield>
+      <harvestedThingDef>RMush_RawYellowBrain</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.001</TemperateForest>
+        <TemperateSwamp>0.0005</TemperateSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawDevilsFingers</defName>
+    <label>devil's fingers</label>
+    <description>A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/DevilsFingers</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantDevilsFingers</defName>
+    <label>devil's fingers cluster</label>
+    <description>A cluster of devil's fingers. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/DevilsFingers</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>7</growDays>
+      <harvestYield>5</harvestYield>
+      <harvestedThingDef>RMush_RawDevilsFingers</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.0005</TemperateForest>
+        <TropicalRainforest>0.0005</TropicalRainforest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawBirdsNest</defName>
+    <label>bird's nest fungus</label>
+    <description>A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/BirdsNest</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>35</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantBirdsNest</defName>
+    <label>bird's nest fungus cluster</label>
+    <description>A cluster of bird's nest fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/BirdsNest</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>6</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawBirdsNest</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TemperateForest>0.001</TemperateForest>
+        <BorealForest>0.0005</BorealForest>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="RMush_ExpansionResourceBase">
+    <defName>RMush_RawChlorophos</defName>
+    <label>green-glowing mycena</label>
+    <description>A tiny, pale-capped fungus collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Item/RimMushrooms/Chlorophos</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="RMush_PlantBase">
+    <defName>RMush_PlantChlorophos</defName>
+    <label>green-glowing mycena cluster</label>
+    <description>A cluster of green-glowing mycena. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tiny, pale-capped fungus collected as a specimen and trade good.</description>
+    <graphicData>
+      <texPath>Things/Plant/RimMushrooms/Chlorophos</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible Inherit="False" IsNull="True" />
+    <plant>
+      <purpose>Misc</purpose>
+      <humanFoodPlant>false</humanFoodPlant>
+      <growDays>6</growDays>
+      <harvestYield>6</harvestYield>
+      <harvestedThingDef>RMush_RawChlorophos</harvestedThingDef>
+      <wildClusterWeight>1</wildClusterWeight>
+      <wildClusterRadius>2</wildClusterRadius>
+      <wildBiomes>
+        <TropicalRainforest>0.0008</TropicalRainforest>
+        <TropicalSwamp>0.0004</TropicalSwamp>
+      </wildBiomes>
+    </plant>
+  </ThingDef>
+</Defs>
