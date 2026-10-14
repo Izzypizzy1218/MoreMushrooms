@@ -4,11 +4,11 @@ $projectRoot = [IO.Path]::GetFullPath((Split-Path $PSScriptRoot -Parent))
 $modsRoot = [IO.Path]::GetFullPath((Join-Path $GameDir 'Mods'))
 $installTarget = [IO.Path]::GetFullPath((Join-Path $modsRoot 'MoreMushrooms'))
 $legacyTarget = [IO.Path]::GetFullPath((Join-Path $modsRoot 'RimMushrooms'))
-if (!(Test-Path -LiteralPath (Join-Path $GameDir 'RimWorldWin64.exe'))) { throw 'RimWorld executable not found.' }
+if (!(Test-Path -LiteralPath (Join-Path $GameDir 'RimWorldWin64.exe')) -and !(Test-Path -LiteralPath (Join-Path $GameDir 'RimWorld.exe'))) { throw 'RimWorld executable not found.' }
 foreach ($target in @($installTarget, $legacyTarget)) {
     if ((Split-Path $target -Parent) -ne $modsRoot) { throw 'Invalid installation target.' }
 }
-if (Get-Process -Name RimWorldWin64 -ErrorAction SilentlyContinue) { throw 'Close RimWorld before installing.' }
+if (Get-Process -Name RimWorldWin64,RimWorld -ErrorAction SilentlyContinue) { throw 'Close RimWorld before installing.' }
 foreach ($required in @('About\About.xml','Assemblies\RimMushrooms.dll','Defs','Languages','Textures','Credits','Patches')) {
     if (!(Test-Path -LiteralPath (Join-Path $projectRoot $required))) { throw "Missing source: $required. Build first." }
 }
@@ -59,7 +59,7 @@ foreach ($doc in @('Docs\CONTENT-v0.5.0.md','Docs\CONTENT-v0.6.0.md','Docs\CONTE
         Copy-Item -LiteralPath $docSource -Destination $docTarget
     }
 }
-foreach ($doc in @('Docs\CONTENT-v0.6.4.md','Docs\QA-v0.6.4.md','Docs\History\README-v0.6.3.md') + @(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Docs\Publication\v0.6.4') -File | ForEach-Object { $_.FullName.Substring($projectRoot.Length + 1) }) + @(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Docs\TestResults') -File -Recurse | Where-Object { $_.FullName.Substring((Join-Path $projectRoot 'Docs\TestResults').Length + 1).StartsWith('v0.6.4-') } | ForEach-Object { $_.FullName.Substring($projectRoot.Length + 1) })) {
+foreach ($doc in @('Docs\CONTENT-v0.6.4.md','Docs\QA-v0.6.4.md','Docs\History\README-v0.6.3.md','Docs\WILD-ECOLOGY-v0.6.5.md','Docs\History\README-v0.6.4.md','Docs\FOOD-SETTINGS-v0.7.0.md','Docs\History\README-v0.6.5.md','Docs\WILD-HABITATS-v0.8.0.md','Docs\History\README-v0.7.0.md','Docs\WILD-HABITATS-v0.9.0.md','Docs\History\README-v0.8.0.md','Docs\GROWTH-v0.9.1.md','Docs\History\README-v0.9.0.md','Docs\COMPATIBILITY-v0.9.2.md','Docs\History\README-v0.9.1.md') + @(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Docs\Publication\v0.9.2') -File | ForEach-Object { $_.FullName.Substring($projectRoot.Length + 1) }) + @(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Docs\Publication\v0.6.4') -File | ForEach-Object { $_.FullName.Substring($projectRoot.Length + 1) }) + @(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Docs\TestResults') -File -Recurse | Where-Object { $relativeResult=$_.FullName.Substring((Join-Path $projectRoot 'Docs\TestResults').Length + 1); $relativeResult.StartsWith('v0.6.4-') -or $relativeResult.StartsWith('v0.6.5-') -or $relativeResult.StartsWith('v0.7.0-') -or $relativeResult.StartsWith('v0.8.0-') -or $relativeResult.StartsWith('v0.9.0-') -or $relativeResult.StartsWith('v0.9.1-') -or $relativeResult.StartsWith('v0.9.2-') } | ForEach-Object { $_.FullName.Substring($projectRoot.Length + 1) })) {
     $docSource = Join-Path $projectRoot $doc
     if (Test-Path -LiteralPath $docSource) {
         $docTarget = Join-Path $installTarget $doc

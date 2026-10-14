@@ -182,17 +182,17 @@ def generate(config=None, handoff=None):
     category = node(categories, "ThingCategoryDef")
     node(category, "defName", "RMush_PoisonMushrooms")
     node(category, "label", "poison mushrooms")
-    node(category, "parent", "ResourcesRaw")
+    node(category, "parent", "PlantFoodRaw")
     node(category, "iconPath", "Things/Item/RimMushrooms/FlyAgaric/03Full")
     inject(category_languages, "RMush_PoisonMushrooms", ("poison mushrooms", "독버섯"))
 
-    # A separate resource branch avoids Foods/PlantFoodRaw recipe filters.
-    # No CompDrug or drugCategory: drug policies never automatically select it.
-    raw_base = node(definitions, "ThingDef", Name="RMush_PoisonRawBase", ParentName="OrganicProductBase", Abstract="True")
+    # Keep the existing category/base identities, now inside normal raw foods.
+    # Per-item poison outcomes and explicit serving sizes are preserved.
+    raw_base = node(definitions, "ThingDef", Name="RMush_PoisonRawBase", ParentName="RMush_RawBase", Abstract="True")
     node(raw_base, "stackLimit", common["stackLimit"])
     node(raw_base, "possessionCount", 0)
     node(raw_base, "socialPropernessMatters", True)
-    node(node(raw_base, "thingCategories"), "li", "RMush_PoisonMushrooms")
+    node(node(raw_base, "thingCategories", Inherit="False"), "li", "RMush_PoisonMushrooms")
     stats = node(raw_base, "statBases")
     node(stats, "Nutrition", common["nutrition"])
     node(stats, "FoodPoisonChanceFixedHuman", 0)
@@ -200,7 +200,7 @@ def generate(config=None, handoff=None):
     node(graphic, "graphicClass", "RimMushrooms.Graphic_MushroomStack")
     node(graphic, "drawSize", 1)
     ingestible = node(raw_base, "ingestible")
-    for key, value in {"foodType": "Fungus", "drugCategory": "None", "preferability": "NeverForNutrition", "maxNumToIngestAtOnce": 1, "defaultNumToIngestAtOnce": 1, "baseIngestTicks": 500, "chairSearchRadius": 0, "ingestEffect": "EatVegetarian", "ingestSound": "RawVegetable_Eat", "ingestHoldUsesTable": False}.items():
+    for key, value in {"foodType": "Fungus", "drugCategory": "None", "preferability": "RawBad", "maxNumToIngestAtOnce": 1, "defaultNumToIngestAtOnce": 1, "baseIngestTicks": 500, "chairSearchRadius": 0, "ingestEffect": "EatVegetarian", "ingestSound": "RawVegetable_Eat", "ingestHoldUsesTable": False}.items():
         node(ingestible, key, value)
     extension = node(node(raw_base, "modExtensions"), "li", Class="RimMushrooms.MushroomStackThresholds")
     node(extension, "lowMaxCount", common["lowMaxCount"])
@@ -216,8 +216,8 @@ def generate(config=None, handoff=None):
         psychedelic = identity == "FlyAgaric"
         raw = node(definitions, "ThingDef", ParentName="RMush_RawBase" if psychedelic else "RMush_PoisonRawBase")
         node(raw, "defName", raw_name)
-        raw_en = "Poisonous " + en + ". " + mushroom["effectEn"] + " Excluded from automatic eating and ordinary cooking. Can only be eaten by an explicit order. Treat poisoning with regular doctor care and medicine; no special antidote is required."
-        raw_ko = "독성이 있는 " + ko + ". " + mushroom["effectKo"] + " 자동 섭취와 일반 요리 재료에서 제외되며, 직접 섭취 명령을 내리면 먹을 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다."
+        raw_en = "Poisonous " + en + ". " + mushroom["effectEn"] + " Can be eaten raw or used in ordinary meals; cooking does not remove the poison. Automatic eating and cooking are allowed by default and can be restricted in the mod settings. Treat poisoning with regular doctor care and medicine; no special antidote is required."
+        raw_ko = "독성이 있는 " + ko + ". " + mushroom["effectKo"] + " 직접 먹거나 일반 요리에 사용할 수 있으며, 요리해도 독성이 사라지지 않습니다. 자동 섭취와 요리 사용은 기본 허용이며 모드 설정에서 금지할 수 있습니다. 기존 의사 작업과 의약품으로 치료하며 전용 해독제는 필요하지 않습니다."
         if psychedelic:
             minimum, maximum = mushroom["hallucinationHours"]
             raw_en = f"Fly agaric mushrooms. Can be eaten raw or used automatically in ordinary cooking. A first standard exposure (10 mushrooms) grants +10 mood for 6 hours and {minimum:g}–{maximum:g} hours of uncontrolled hallucination wandering, together with neurological poisoning. " + mushroom["effectEn"] + " Effects and poisoning remain when used in meals."
@@ -254,8 +254,8 @@ def generate(config=None, handoff=None):
 
         plant = node(definitions, "ThingDef", ParentName="RMush_PlantBase")
         node(plant, "defName", plant_name)
-        plant_en = "A wild cluster of poisonous " + en + ". Can be harvested but cannot be sown. " + mushroom["effectEn"] + " The harvested mushrooms are excluded from automatic eating and ordinary cooking."
-        plant_ko = "야생에서 자라는 " + ko + " 군락입니다. 채집할 수 있지만 재배할 수 없습니다. " + mushroom["effectKo"] + " 수확물은 자동 섭취와 일반 요리 재료에서 제외됩니다."
+        plant_en = "A wild cluster of poisonous " + en + ". Can be harvested but cannot be sown. " + mushroom["effectEn"] + " The harvested mushrooms can be eaten raw or used in ordinary meals; cooking does not remove their poison."
+        plant_ko = "야생에서 자라는 " + ko + " 군락입니다. 채집할 수 있지만 재배할 수 없습니다. " + mushroom["effectKo"] + " 수확물은 직접 먹거나 일반 요리에 사용할 수 있으며 요리해도 독성이 유지됩니다."
         if psychedelic:
             plant_en = "A wild fly agaric cluster. Can be harvested but cannot be sown. The harvested mushrooms can be eaten raw or used in ordinary meals, causing mood effects, uncontrolled hallucination wandering and neurological poisoning."
             plant_ko = "야생에서 자라는 광대버섯 군락입니다. 채집할 수 있지만 재배할 수 없습니다. 수확물은 직접 먹거나 일반 요리에 넣을 수 있으며 무드 효과와 통제 불가 환각 배회, 신경계 중독을 함께 일으킵니다."
@@ -263,7 +263,7 @@ def generate(config=None, handoff=None):
         node(plant, "description", plant_en)
         node(node(plant, "graphicData"), "texPath", "Things/Plant/RimMushrooms/" + identity)
         # Wild plants are not food candidates themselves: nibbling would bypass
-        # the harvested item's poison outcome and explicit-order restriction.
+        # the harvested item's poison outcome.
         node(node(plant, "statBases"), "Nutrition", 0)
         # Native IsNull prevents an empty ingestible-properties object, whose
         # missing food type would itself be an invalid ingestible definition.

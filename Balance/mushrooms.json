@@ -1,6 +1,6 @@
 {
-  "version": "0.6.4",
-  "status": "v0.6.4 pre-release qualification and publication documentation. Gameplay values, descriptions, approved artwork and production code are unchanged from v0.6.3.",
+  "version": "0.9.2",
+  "status": "v0.9.1: all eleven cultivable edible species use six base growth days. Harvest yields, food effects and wild ecology settings are preserved; wild-only growth durations remain unchanged.",
   "common": {
     "stackLimit": 75,
     "lowMaxCount": 25,
@@ -25,8 +25,8 @@
       "value": 1.1,
       "rotDays": 20,
       "biomes": {
-        "TemperateForest": 0.01468683,
-        "TemperateSwamp": 0.01131319
+        "TemperateForest": 0.00257997394,
+        "TemperateSwamp": 0.001552112668
       },
       "mood": 3
     },
@@ -35,14 +35,14 @@
       "asset": "02_shiitake",
       "en": "shiitake mushroom",
       "ko": "표고버섯",
-      "growDays": 7,
+      "growDays": 6,
       "yield": 12,
       "skill": 4,
       "value": 1.5,
       "rotDays": 25,
       "biomes": {
-        "TemperateForest": 0.00979121,
-        "TropicalRainforest": 0.0064
+        "TemperateForest": 0.00171998087,
+        "TropicalRainforest": 0.001127272727
       },
       "mood": 5
     },
@@ -51,15 +51,15 @@
       "asset": "03_oyster",
       "en": "oyster mushroom",
       "ko": "느타리버섯",
-      "growDays": 5.5,
+      "growDays": 6,
       "yield": 10,
       "skill": 0,
       "value": 1.0,
       "rotDays": 15,
       "biomes": {
-        "TemperateForest": 0.01305495,
-        "TemperateSwamp": 0.01508426,
-        "BorealForest": 0.00834706
+        "BorealForest": 0.001542434654,
+        "TemperateForest": 0.002293308412,
+        "TemperateSwamp": 0.002069484472
       },
       "mood": 3
     },
@@ -68,14 +68,14 @@
       "asset": "04_king_oyster",
       "en": "king oyster mushroom",
       "ko": "새송이버섯",
-      "growDays": 6.5,
+      "growDays": 6,
       "yield": 11,
       "skill": 3,
       "value": 1.4,
       "rotDays": 20,
       "biomes": {
-        "TemperateForest": 0.00815934,
-        "AridShrubland": 0.00409
+        "AridShrubland": 0.00067024377,
+        "TemperateForest": 0.001433317099
       },
       "mood": 5
     },
@@ -84,31 +84,32 @@
       "asset": "05_enoki",
       "en": "enoki mushroom",
       "ko": "팽이버섯",
-      "growDays": 5,
+      "growDays": 6,
       "yield": 9,
       "skill": 2,
       "value": 1.0,
       "rotDays": 12,
       "biomes": {
-        "TemperateForest": 0.00979121,
-        "BorealForest": 0.01001647
+        "BorealForest": 0.001850921216,
+        "TemperateForest": 0.00171998087
       },
-      "mood": 3
+      "mood": 3,
+      "wildGrowDays": 5
     },
     {
       "id": "WoodEar",
       "asset": "06_wood_ear",
       "en": "wood ear mushroom",
       "ko": "목이버섯",
-      "growDays": 6.5,
+      "growDays": 6,
       "yield": 10,
       "skill": 3,
       "value": 1.3,
       "rotDays": 30,
       "biomes": {
-        "TemperateSwamp": 0.01319872,
-        "TropicalRainforest": 0.0112,
-        "TropicalSwamp": 0.01207
+        "TemperateSwamp": 0.001810797884,
+        "TropicalRainforest": 0.001972727273,
+        "TropicalSwamp": 0.00167
       },
       "mood": 7
     },
@@ -117,14 +118,14 @@
       "asset": "07_beech",
       "en": "beech mushroom",
       "ko": "느티만가닥버섯",
-      "growDays": 6.5,
+      "growDays": 6,
       "yield": 12,
       "skill": 4,
       "value": 1.3,
       "rotDays": 20,
       "biomes": {
-        "TemperateForest": 0.00815934,
-        "BorealForest": 0.00667765
+        "BorealForest": 0.001233948093,
+        "TemperateForest": 0.001433317099
       },
       "mood": 5
     },
@@ -133,14 +134,14 @@
       "asset": "08_maitake",
       "en": "maitake mushroom",
       "ko": "잎새버섯",
-      "growDays": 8,
+      "growDays": 6,
       "yield": 14,
       "skill": 6,
       "value": 1.8,
       "rotDays": 18,
       "biomes": {
-        "TemperateForest": 0.00571154,
-        "TemperateSwamp": 0.00471383
+        "TemperateForest": 0.001003322321,
+        "TemperateSwamp": 0.000646713726
       },
       "mood": 7
     },
@@ -149,14 +150,14 @@
       "asset": "09_lions_mane",
       "en": "lion's mane mushroom",
       "ko": "노루궁뎅이버섯",
-      "growDays": 8,
+      "growDays": 6,
       "yield": 12,
       "skill": 6,
       "value": 2.0,
       "rotDays": 15,
       "biomes": {
-        "TemperateForest": 0.0048956,
-        "BorealForest": 0.00333882
+        "BorealForest": 0.000616973123,
+        "TemperateForest": 0.000859989557
       },
       "mood": 7
     },
@@ -172,8 +173,8 @@
       "rotDays": 12,
       "wildOnly": true,
       "biomes": {
-        "TemperateForest": 0.003,
-        "BorealForest": 0.004
+        "BorealForest": 0.003487064473,
+        "TemperateForest": 0.002785920965
       },
       "mood": 15,
       "moodDurationHours": 48

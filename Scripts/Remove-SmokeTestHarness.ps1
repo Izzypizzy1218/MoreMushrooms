@@ -1,6 +1,6 @@
 param([string]$GameDir = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld')
 $ErrorActionPreference = 'Stop'
-if (Get-Process -Name RimWorldWin64 -ErrorAction SilentlyContinue) { throw 'Close RimWorld first.' }
+if (Get-Process -Name RimWorldWin64,RimWorld -ErrorAction SilentlyContinue) { throw 'Close RimWorld first.' }
 $projectRoot = [IO.Path]::GetFullPath((Split-Path $PSScriptRoot -Parent))
 $modsRoot = [IO.Path]::GetFullPath((Join-Path $GameDir 'Mods'))
 $testTarget = [IO.Path]::GetFullPath((Join-Path $modsRoot 'RimMushroomsTestHarness'))

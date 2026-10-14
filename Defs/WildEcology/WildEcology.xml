@@ -16,5 +16,23 @@
     <ringMaxRadius>4.0</ringMaxRadius>
     <maxPendingRegrowth>64</maxPendingRegrowth>
     <regrowthExpiryDays>8.0</regrowthExpiryDays>
+    <smallClusterMinCount>2</smallClusterMinCount>
+    <smallClusterMaxCount>5</smallClusterMaxCount>
+    <smallClusterSearchRadius>18</smallClusterSearchRadius>
+    <smallClusterCellRadius>3</smallClusterCellRadius>
+    <environmentChancePerCheck>0.03</environmentChancePerCheck>
+    <environmentCooldownDays>15.0</environmentCooldownDays>
+    <environmentMinCount>1</environmentMinCount>
+    <environmentMaxCount>2</environmentMaxCount>
+    <rainMinHours>3.0</rainMinHours>
+    <rainWindowHours>48.0</rainWindowHours>
+    <rainChancePerCheck>0.035</rainChancePerCheck>
+    <rainCooldownDays>2.0</rainCooldownDays>
+    <rainClusterMinCount>2</rainClusterMinCount>
+    <rainClusterMaxCount>5</rainClusterMaxCount>
+    <treeAssistChancePerCheck>0.015</treeAssistChancePerCheck>
+    <treeAssistCooldownDays>5.0</treeAssistCooldownDays>
+    <treeAssistMinCount>2</treeAssistMinCount>
+    <treeAssistMaxCount>3</treeAssistMaxCount>
   </RimMushrooms.WildMushroomEcologyDef>
 </Defs>

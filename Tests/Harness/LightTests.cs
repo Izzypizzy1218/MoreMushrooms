@@ -105,7 +105,7 @@ namespace RimMushroomsTests
             var savedMap = doc.SelectSingleNode("/savegame/game/maps/li[uniqueID='" + map.uniqueID + "']");
             check(savedMap != null, "legacy plant comparison uses the same saved map ID " + map.uniqueID);
             var compressedStatics = ReadSavedCompressedStatics(savedMap, map, check);
-            int compared = 0;
+            int compared = 0, compressedOverlaps = 0, savedBuildingOverlaps = 0;
             foreach (XmlNode node in savedMap.SelectNodes("things/thing[@Class='Plant' or @Class='RimWorld.Plant' or @Class='RimMushrooms.Plant_Mushroom']"))
             {
                 string defName = node["def"]?.InnerText;
@@ -124,14 +124,19 @@ namespace RimMushroomsTests
                     // loading the saved compressed rock correctly wipes that plant.
                     // Accept only this fully proven native case, never an unexplained
                     // missing plant, changed ID, other map or held-object mismatch.
-                    check(hash != 0 && staticDef != null && blocker != null
-                        && GenSpawn.SpawningWipes(blocker.def, ThingDef.Named(defName)),
-                        "missing legacy plant must be explained by its original compressed static building and native wipe rule "
+                    bool compressedProof = hash != 0 && staticDef != null && blocker != null
+                        && GenSpawn.SpawningWipes(blocker.def, ThingDef.Named(defName));
+                    string proof = "compressedHash=" + hash;
+                    if (!compressedProof)
+                        blocker = FindProvenSavedBuildingOverlap(savedMap, node, map, cell, ThingDef.Named(defName), out proof);
+                    check(compressedProof || blocker != null,
+                        "missing legacy plant must be explained by its original compressed or explicitly saved building and native wipe rule "
                         + id + " cell=" + cell + " savedHash=" + hash + " resolvedDef=" + staticDef?.defName
                         + " loadedCell=" + string.Join(",", cell.GetThingList(map).Select(t => t.ThingID + ":" + t.def.defName)));
                     ProvenLegacyStaticOverlaps.Add(id);
-                    check(true, "preexisting v0.6 invalid artwork overlap receives native load wipe " + id
-                        + " cell=" + cell + " compressedHash=" + hash + " building=" + blocker.def.defName);
+                    if (compressedProof) compressedOverlaps++; else savedBuildingOverlaps++;
+                    check(true, "preexisting invalid artwork overlap receives native load wipe " + id
+                        + " cell=" + cell + " proof=" + proof + " loadedBuilding=" + blocker.ThingID + ":" + blocker.def.defName);
                     continue;
                 }
                 check(plant.def.defName == defName && plant.Position == cell, "legacy identity and position preserved " + plant.ThingID);
@@ -141,7 +146,8 @@ namespace RimMushroomsTests
                 compared++;
             }
             check(compared >= 33, "old save valid plants restored without replacing IDs or growth; compared=" + compared
-                + " provenPreexistingStaticOverlaps=" + ProvenLegacyStaticOverlaps.Count);
+                + " provenPreexistingStaticOverlaps=" + ProvenLegacyStaticOverlaps.Count
+                + " compressedOverlaps=" + compressedOverlaps + " explicitSavedBuildingOverlaps=" + savedBuildingOverlaps);
             check(compared + ProvenLegacyStaticOverlaps.Count == savedMap.SelectNodes("things/thing[starts-with(def,'RMush_Plant')]").Count,
                 "every saved legacy mushroom is compared or has an independently proven original static overlap");
             check(map.listerThings.AllThings.OfType<Plant>().Where(p => !p.def.defName.StartsWith("RMush_Plant")).All(p => !(p is Plant_Mushroom)), "legacy vanilla plants not converted");
@@ -149,6 +155,33 @@ namespace RimMushroomsTests
             using (var stream = File.OpenRead(Path.Combine(GenFilePaths.SaveDataFolderPath, "Saves", "MoreMushrooms-LegacyFixture.rws")))
             using (var hash = SHA256.Create())
                 check(BitConverter.ToString(hash.ComputeHash(stream)).Replace("-", "") == File.ReadAllText(Path.Combine(GenFilePaths.SaveDataFolderPath, "legacy-input.sha256")).Trim(), "legacy input save remains unchanged on disk");
+        }
+
+        private static Thing FindProvenSavedBuildingOverlap(XmlNode savedMap, XmlNode savedPlant, Map map,
+            IntVec3 cell, ThingDef plantDef, out string proof)
+        {
+            proof = null;
+            foreach (XmlNode saved in savedMap.SelectNodes("things/thing[def and id and pos and map]"))
+            {
+                var def = DefDatabase<ThingDef>.GetNamedSilentFail(saved["def"].InnerText);
+                if (def?.category != ThingCategory.Building || saved["map"].InnerText != savedPlant["map"]?.InnerText
+                    || int.Parse(saved["map"].InnerText, CultureInfo.InvariantCulture) < 0
+                    || int.Parse(saved["spawnedTick"]?.InnerText ?? "-1", CultureInfo.InvariantCulture) < 0
+                    || int.Parse(saved["despawnedTick"]?.InnerText ?? "-1", CultureInfo.InvariantCulture) >= 0) continue;
+                var position = IntVec3.FromString(saved["pos"].InnerText);
+                var rotation = Rot4.FromString(saved["rot"]?.InnerText ?? "0");
+                if (!GenAdj.OccupiedRect(position, rotation, def.Size).Contains(cell)
+                    || !GenSpawn.SpawningWipes(def, plantDef)) continue;
+                var loaded = cell.GetThingList(map).SingleOrDefault(t => t is Building && t.ThingID == saved["id"].InnerText
+                    && t.def == def && t.Position == position && t.Rotation == rotation);
+                string savedClass = saved.Attributes["Class"]?.Value;
+                if (loaded == null || savedClass != null && savedClass != loaded.GetType().Name && savedClass != loaded.GetType().FullName) continue;
+                proof = "explicitSavedBuilding=" + saved["id"].InnerText + ":" + def.defName
+                    + " originalMap=" + saved["map"].InnerText + " originalPos=" + position
+                    + " originalRot=" + rotation.AsInt + " nativeSize=" + def.Size + " nativeSpawningWipes=True";
+                return loaded;
+            }
+            return null;
         }
 
         private static Dictionary<IntVec3, ushort> ReadSavedCompressedStatics(XmlNode savedMap, Map map, Action<bool, string> check)

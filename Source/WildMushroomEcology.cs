@@ -19,6 +19,11 @@ namespace RimMushrooms
         public bool ringEligible;
         public float regrowthChance;
         public float regrowthDelayDays = 4f;
+        public string habitatTree;
+        public float habitatTreeMinGrowth = 0.5f;
+        public int habitatTreeRadius = 2;
+        public string habitat = "soil";
+        public int habitatRadius = 2;
 
         public override IEnumerable<string> ConfigErrors()
         {
@@ -29,6 +34,13 @@ namespace RimMushrooms
                 yield return "Mushroom regrowthChance must be between 0 and 1.";
             if (!WildMushroomEcology.Finite(regrowthDelayDays) || regrowthDelayDays < 1f || regrowthDelayDays > 60f)
                 yield return "Mushroom regrowthDelayDays must be between 1 and 60.";
+            if (!habitatTree.NullOrEmpty() && habitatTree != "pine" && habitatTree != "birch" && habitatTree != "any")
+                yield return "Mushroom habitatTree must be pine, birch or any.";
+            if (!WildMushroomEcology.Finite(habitatTreeMinGrowth) || habitatTreeMinGrowth < 0f || habitatTreeMinGrowth > 1f
+                || habitatTreeRadius < 1 || habitatTreeRadius > 4)
+                yield return "Mushroom host tree growth and search radius are invalid.";
+            if (!MushroomHabitatRules.IsKnownHabitat(habitat) || habitatRadius < 1 || habitatRadius > 4)
+                yield return "Mushroom habitat profile or radius is invalid.";
         }
     }
 
@@ -48,6 +60,24 @@ namespace RimMushrooms
         public float ringMaxRadius = 4.5f;
         public int maxPendingRegrowth = 64;
         public float regrowthExpiryDays = 8f;
+        public int smallClusterMinCount = 2;
+        public int smallClusterMaxCount = 5;
+        public int smallClusterSearchRadius = 18;
+        public int smallClusterCellRadius = 3;
+        public float environmentChancePerCheck = 0.03f;
+        public float environmentCooldownDays = 15f;
+        public int environmentMinCount = 1;
+        public int environmentMaxCount = 2;
+        public float rainMinHours = 3f;
+        public float rainWindowHours = 48f;
+        public float rainChancePerCheck = 0.035f;
+        public float rainCooldownDays = 2f;
+        public int rainClusterMinCount = 2;
+        public int rainClusterMaxCount = 5;
+        public float treeAssistChancePerCheck = 0.015f;
+        public float treeAssistCooldownDays = 5f;
+        public int treeAssistMinCount = 2;
+        public int treeAssistMaxCount = 3;
 
         public override IEnumerable<string> ConfigErrors()
         {
@@ -67,6 +97,23 @@ namespace RimMushrooms
             if (maxPendingRegrowth < 0 || maxPendingRegrowth > 256 || !WildMushroomEcology.Finite(regrowthExpiryDays)
                 || regrowthExpiryDays < 1f || regrowthExpiryDays > 60f)
                 yield return "Wild mushroom pending regrowth limits are invalid.";
+            if (smallClusterMinCount < 2 || smallClusterMaxCount < smallClusterMinCount || smallClusterMaxCount > 5
+                || smallClusterSearchRadius < 1 || smallClusterSearchRadius > 40
+                || smallClusterCellRadius < 1 || smallClusterCellRadius > 4)
+                yield return "Wild mushroom small clusters must use bounded counts and search radii.";
+            foreach (float chance in new[] { environmentChancePerCheck, rainChancePerCheck, treeAssistChancePerCheck })
+                if (!WildMushroomEcology.Finite(chance) || chance < 0f || chance > 0.1f)
+                    yield return "Special habitat emergence chance must be between zero and 0.1.";
+            foreach (float days in new[] { environmentCooldownDays, rainCooldownDays, treeAssistCooldownDays })
+                if (!WildMushroomEcology.Finite(days) || days < 1f || days > 60f)
+                    yield return "Special habitat emergence cooldown must be between one and sixty days.";
+            if (!WildMushroomEcology.Finite(rainMinHours) || rainMinHours < 1f || rainMinHours > 24f
+                || !WildMushroomEcology.Finite(rainWindowHours) || rainWindowHours < 1f || rainWindowHours > 72f)
+                yield return "Observed rain and post-rain window must be bounded.";
+            if (environmentMinCount < 1 || environmentMaxCount < environmentMinCount || environmentMaxCount > 2
+                || rainClusterMinCount < 2 || rainClusterMaxCount < rainClusterMinCount || rainClusterMaxCount > 5
+                || treeAssistMinCount < 2 || treeAssistMaxCount < treeAssistMinCount || treeAssistMaxCount > 3)
+                yield return "Special habitat cluster counts are invalid.";
         }
     }
 
@@ -94,12 +141,19 @@ namespace RimMushrooms
         private static readonly WildMushroomEcologyDef fallback = new WildMushroomEcologyDef();
         private static readonly Func<WildPlantSpawner, ThingDef, float> nativeCommonality =
             AccessTools.MethodDelegate<Func<WildPlantSpawner, ThingDef, float>>(AccessTools.Method(typeof(WildPlantSpawner), "GetCommonalityOfPlant"));
+        [ThreadStatic] private static Map nativeSpawnMap;
 
         static WildMushroomEcology()
         {
             var harmony = new Harmony("izzypizzy.rimmushrooms.wild-ecology");
             harmony.Patch(AccessTools.Method(typeof(WildPlantSpawner), "PlantChoiceWeight"),
                 postfix: new HarmonyMethod(typeof(WildMushroomEcology), nameof(PlantChoiceWeightPostfix)));
+            harmony.Patch(AccessTools.Method(typeof(WildPlantSpawner), nameof(WildPlantSpawner.CheckSpawnWildPlantAt)),
+                prefix: new HarmonyMethod(typeof(WildMushroomEcology), nameof(NativeCheckPrefix)),
+                finalizer: new HarmonyMethod(typeof(WildMushroomEcology), nameof(NativeCheckFinalizer)));
+            harmony.Patch(AccessTools.Method(typeof(WildPlantSpawner), nameof(WildPlantSpawner.SpawnPlant)),
+                prefix: new HarmonyMethod(typeof(WildMushroomEcology), nameof(NativeSpawnPrefix)),
+                postfix: new HarmonyMethod(typeof(WildMushroomEcology), nameof(NativeSpawnPostfix)));
             // The native harvest driver emits this notification only for a successful,
             // positive yield. PlantCollected alone also runs when the harvest fails.
             harmony.Patch(AccessTools.Method(typeof(QuestManager), nameof(QuestManager.Notify_PlantHarvested)),
@@ -112,6 +166,52 @@ namespace RimMushrooms
         public static float NativeCommonality(ThingDef def, Map map) => def == null || map?.wildPlantSpawner == null ? 0f : nativeCommonality(map.wildPlantSpawner, def);
         public static bool IsNativeSpeciesAt(ThingDef def, IntVec3 cell, Map map) => map != null && cell.InBounds(map)
             && (map.BiomeAt(cell).AllWildPlants.Contains(def) || map.wildPlantSpawner.MutatorWildPlants.Contains(def));
+
+        public static bool MeetsTreeHabitat(ThingDef def, IntVec3 cell, Map map)
+        {
+            var profile = def?.GetModExtension<MushroomEcologyExtension>();
+            if (profile == null || profile.habitatTree.NullOrEmpty()) return true;
+            if (map == null || !cell.InBounds(map)) return false;
+            int radius = Mathf.Clamp(profile.habitatTreeRadius, 1, 4);
+            for (int z = -radius; z <= radius; z++)
+                for (int x = -radius; x <= radius; x++)
+                {
+                    if (x == 0 && z == 0) continue;
+                    var candidate = cell + new IntVec3(x, 0, z);
+                    if (!candidate.InBounds(map)) continue;
+                    foreach (var tree in candidate.GetThingList(map).OfType<Plant>())
+                        if (tree.def.plant.IsTree && !tree.def.IsDeadPlant && tree.Growth >= profile.habitatTreeMinGrowth
+                            && (profile.habitatTree == "any" || tree.def.defName ==
+                                (profile.habitatTree == "pine" ? "Plant_TreePine" : "Plant_TreeBirch"))) return true;
+                }
+            return false;
+        }
+
+        public static void NativeCheckPrefix(Map ___map, out Map __state)
+        {
+            __state = nativeSpawnMap;
+            nativeSpawnMap = ___map;
+        }
+
+        public static Exception NativeCheckFinalizer(Exception __exception, Map __state)
+        {
+            nativeSpawnMap = __state;
+            return __exception;
+        }
+
+        public static void NativeSpawnPrefix(ThingDef plant, Map map, ref IntVec3 cell)
+        {
+            if (nativeSpawnMap == map && IsMushroom(plant) && MapGenerator.mapBeingGenerated != map)
+                cell = map.GetComponent<MapComponent_WildMushrooms>()?.SelectNativeClusterCell(plant, cell) ?? cell;
+        }
+
+        public static void NativeSpawnPostfix(Plant __result, Map map)
+        {
+            // Only plants selected by the native wild spawner during this new map's
+            // generation are movable. Loading an existing save never fills this set.
+            if (nativeSpawnMap == map && MapGenerator.mapBeingGenerated == map && __result is Plant_Mushroom plant)
+                map.GetComponent<MapComponent_WildMushrooms>()?.RecordInitialNativePlant(plant);
+        }
 
         public static float SeasonMultiplier(ThingDef def, Season season, bool tropical = false)
         {
@@ -181,9 +281,10 @@ namespace RimMushrooms
         }
     }
 
-    public sealed class MapComponent_WildMushrooms : MapComponent
+    public sealed partial class MapComponent_WildMushrooms : MapComponent
     {
         private readonly HashSet<Plant_Mushroom> plants = new HashSet<Plant_Mushroom>();
+        private readonly HashSet<Plant_Mushroom> initialNativePlants = new HashSet<Plant_Mushroom>();
         private List<MushroomMycelium> mycelia = new List<MushroomMycelium>();
         private int randomState;
         private int nextCheckTick;
@@ -203,6 +304,30 @@ namespace RimMushrooms
         public IReadOnlyList<MushroomMycelium> PendingRegrowth => mycelia;
         public int RandomState => randomState;
         public int NextRingTick => nextRingTick;
+        public int InitialClusterCandidates { get; private set; }
+        public int InitialClusterMoved { get; private set; }
+        public int InitialClusterGroups { get; private set; }
+
+        public void RecordInitialNativePlant(Plant_Mushroom plant)
+        {
+            if (plant != null && plant.Spawned && plant.Map == map && !plant.sown) initialNativePlants.Add(plant);
+        }
+
+        public List<Plant_Mushroom> ConnectedWildCluster(ThingDef def, IntVec3 root, int limit = 6)
+            => MushroomSmallClusters.Connected(map, def, root, limit);
+
+        public IntVec3 SelectNativeClusterCell(ThingDef def, IntVec3 original)
+            => MushroomSmallClusters.SelectCell(map, this, def, original);
+
+        public void ArrangeInitialNativeClusters()
+        {
+            var candidates = initialNativePlants.Where(p => p.Spawned && p.Map == map && !p.sown).ToList();
+            InitialClusterCandidates = candidates.Count;
+            int groups;
+            InitialClusterMoved = MushroomSmallClusters.Arrange(map, this, candidates, out groups);
+            InitialClusterGroups = groups;
+            initialNativePlants.Clear();
+        }
         public int WildPopulationCount
         {
             get
@@ -241,6 +366,7 @@ namespace RimMushrooms
         public override void MapGenerated()
         {
             base.MapGenerated();
+            ArrangeInitialNativeClusters();
             InitializeSchedule(Find.TickManager.TicksGame);
         }
 
@@ -251,6 +377,7 @@ namespace RimMushrooms
             if (nextCheckTick <= 0) nextCheckTick = now + 1 + Mathf.Abs(map.uniqueID % Mathf.Max(250, Settings.checkIntervalTicks));
             if (nextRingTick <= 0) nextRingTick = now + DaysToTicks(Settings.ringCooldownDays);
             RefreshBudget(now);
+            InitializeSpecialSchedule(now);
         }
 
         public override void MapComponentTick()
@@ -264,6 +391,7 @@ namespace RimMushrooms
             InitializeSchedule(now);
             nextCheckTick = now + Mathf.Clamp(Settings.checkIntervalTicks, 250, GenDate.TicksPerDay);
             ProcessRegrowth(now);
+            TickSpecialEcology(now);
             if (now < nextRingTick || RemainingBudget(now) < Settings.ringMinCount || WildPopulationCount >= WildCap) return;
             if (NextFloat() >= Mathf.Clamp01(Settings.ringChancePerCheck)) return;
             for (int i = 0; i < Mathf.Clamp(Settings.sampleAttempts, 1, 128); i++)
@@ -306,11 +434,15 @@ namespace RimMushrooms
 
         public bool IsPreservedRegrowthHabitat(IntVec3 cell, ThingDef def)
         {
-            if (!WildMushroomEcology.IsMushroom(def) || !cell.InBounds(map) || cell.Roofed(map) || !cell.Walkable(map)
-                || cell.GetPlantToGrowSettable(map) != null || map.zoneManager.ZoneAt(cell) is Zone_Growing) return false;
+            if (!WildMushroomEcology.IsMushroom(def) || !cell.InBounds(map) || !cell.Walkable(map)
+                || (cell.Roofed(map) && !MushroomHabitatRules.AllowsRoof(def))
+                || cell.GetPlantToGrowSettable(map) != null || map.zoneManager.ZoneAt(cell) is Zone_Growing
+                || !MushroomHabitatRules.MeetsHabitat(def, cell, map)) return false;
             var terrain = cell.GetTerrain(map);
-            if (terrain == null || terrain.IsFloor || terrain.IsWater || terrain.IsIce || terrain.fertility < def.plant.fertilityMin
-                || map.fertilityGrid.FertilityAt(cell) < def.plant.fertilityMin) return false;
+            bool woodFloor = MushroomHabitatRules.AllowsFloor(def, cell, map);
+            if (terrain == null || terrain.IsWater || terrain.IsIce || (terrain.IsFloor && !woodFloor)
+                || (!woodFloor && (terrain.fertility < def.plant.fertilityMin
+                    || map.fertilityGrid.FertilityAt(cell) < def.plant.fertilityMin))) return false;
             // Soil conversion or construction destroys the saved patch. A passing
             // pawn, fallen harvest, other plant, snow or cold only delays fruiting.
             return !cell.GetThingList(map).Any(t => t is Building || t is Blueprint || t is Frame);
@@ -329,7 +461,8 @@ namespace RimMushrooms
                 float temperature = cell.GetTemperature(map);
                 if (!WildMushroomEcology.Finite(temperature) || temperature <= def.plant.minGrowthTemperature || temperature >= def.plant.maxGrowthTemperature) return false;
             }
-            return ignorePlant != null || def.CanEverPlantAt(cell, map);
+            return ignorePlant != null || MushroomHabitatRules.AllowsFloor(def, cell, map)
+                || MushroomHabitatRules.AllowsRoof(def) || def.CanEverPlantAt(cell, map);
         }
 
         public Plant_Mushroom TrySpawnWild(ThingDef def, IntVec3 cell, float growth = 0.15f, bool regenerated = false)
@@ -435,6 +568,7 @@ namespace RimMushrooms
             Scribe_Values.Look(ref budgetDay, "mushroomEcologyBudgetDay", -1);
             Scribe_Values.Look(ref extraSpawnedToday, "mushroomEcologyExtraSpawnedToday");
             Scribe_Collections.Look(ref mycelia, "mushroomMycelia", LookMode.Deep);
+            ExposeSpecialData();
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 int now = Find.TickManager.TicksGame;

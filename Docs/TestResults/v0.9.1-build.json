@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "version": "0.9.1",
+  "command": "dotnet msbuild .\\MoreMushrooms.csproj -p:Configuration=Release -verbosity:minimal",
+  "exitCode": 0,
+  "productionSourceChanged": false,
+  "productionDllByteIdenticalToV090": true,
+  "productionDllSha256": "9e5a178a3e348b021fae35c81962368e51bfc643cc08e96fdefb5f2bcb2e0cf5",
+  "nativeGameRun": false
+}

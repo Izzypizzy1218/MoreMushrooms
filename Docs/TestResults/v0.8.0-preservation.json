@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 611,
+  "baselineVersion": "0.7.0",
+  "existingDefinitions": 139,
+  "gameplayPayloadFiles": 293,
+  "priorReleaseFilesPreserved": 68,
+  "userConfigFilesPreserved": 48,
+  "userSaveFilesPreserved": 45,
+  "scope": "Only bounded clump settings, six habitat extensions, appended ecology descriptions, version and the wild-ecology runtime may change."
+}

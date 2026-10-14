@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "version": "0.9.1",
+  "checks": 592,
+  "cultivars": [
+    "Beech",
+    "Button",
+    "Cauliflower",
+    "Enoki",
+    "KingOyster",
+    "LionsMane",
+    "Maitake",
+    "Oyster",
+    "PurpleBlewit",
+    "Shiitake",
+    "WoodEar"
+  ],
+  "baseGrowDays": 6,
+  "changedPlantDefinitions": [
+    "RMush_PlantAssorted",
+    "RMush_PlantBeech",
+    "RMush_PlantCauliflower",
+    "RMush_PlantEnoki",
+    "RMush_PlantKingOyster",
+    "RMush_PlantLionsMane",
+    "RMush_PlantMaitake",
+    "RMush_PlantOyster",
+    "RMush_PlantShiitake",
+    "RMush_PlantWoodEar"
+  ],
+  "runtimeFileSetMatchesV090": true,
+  "preserved": "yields, skills, prices, food/mood/poisoning, wild-only growth, ecology, production source/DLL, images, saves/config, prior release manifests",
+  "nativeGameValidation": "deferred by user; no game or save loaded"
+}

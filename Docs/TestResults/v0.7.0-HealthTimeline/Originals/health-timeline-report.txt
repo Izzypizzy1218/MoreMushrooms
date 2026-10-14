@@ -1,0 +1,38 @@
+Native RimWorld clinical visual demonstration; species=DestroyingAngel/Amanita virosa/독우산광대버섯.
+METHOD: real forced Ingest job of one raw mushroom and real TendPatient jobs using industrial medicine.
+METHOD: between jobs, DebugSetTicksGame plus patient.health.HealthTickInterval(250); other colony, needs, weather and work are not simulated across compressed time.
+No post-ingestion severity assignment, added poison, cure, immunity, damage suppression or removal of patient hediffs.
+The 35% stage reduces gastrointestinal symptoms while poisoning/liver injury progresses; severity does not improve at that stage.
+Native Health tab and native ScreenCapture frames; no image editing. Prepared healthy adult humans; doctor Medicine=20; medical bed; industrial medicine.
+Controlled isolated climate=21C, clear weather, no queued incidents; native room caches initialized before ingestion. Native vomiting jobs are allowed to finish and the patient returns to bed before further tending.
+Profile=C:\Users\집\Desktop\codex\MoreMushrooms\Tests\Runtime\20261011-185008-873-HealthTimeline-Core;gameVersion=1.6.4871 rev591
+INGEST_JOB started tick=1;loadID=2;food=RMush_RawDestroyingAngel24376
+INGEST_JOB completed tick=622;exposure=1;onsetTick=20615;hediffs=RMush_PoisonDestroyingAngel
+SNAPSHOT 01-latent;737;0.046;True;Latent;무증상;0.01;0;0;0;1;1;1;1;1;0;20615;-1
+NATIVE_HEALTH_TOOLTIP <color=#E6E64CFF>독우산광대버섯 중독 (무증상, 잠복 중)</color>: 1% |  | 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. |  | 치료 필요 | 중독 상태: 잠복 중 | 증상 발현까지: 8시간 | 누적 치료: 0% | 위험도가 높은 중독입니다. 조기 반복 치료로 안정화할 수 있으며, 증상이 잦아들어도 완치된 것은 아닙니다.
+FRAME 01-latent.png;bytes=1912952;screen=1600x1000;HealthTab630x430=True
+SNAPSHOT 02-onset;20865;8.0972;True;Worsening;초기 위장 증상;0.150447;0;0;0;0.92;0.92;0.82;1;1;0.08;20615;-1
+NATIVE_HEALTH_TOOLTIP <color=#E6E64CFF>독우산광대버섯 중독 (초기 위장 증상, 악화 중)</color>: 15% |  | 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. |  |   - 통증: +8% |   - 의식: -8% |   - 이동: -10% |  | 치료 필요 | 중독 상태: 악화 중 | 누적 치료: 0% | 위험도가 높은 중독입니다. 조기 반복 치료로 안정화할 수 있으며, 증상이 잦아들어도 완치된 것은 아닙니다. | 최소 대응 시간 잔여: 24시간
+FRAME 02-onset.png;bytes=2065759;screen=1600x1000;HealthTab630x430=True
+SNAPSHOT 03-gastrointestinal-remission;78122;31;True;Worsening;위장 증상 완화 · 간 손상 진행;0.360832;0;0;0;0.88;0.88;0.78;0.8;1;0.05;20615;-1
+NATIVE_HEALTH_TOOLTIP <color=#E6E64CFF>독우산광대버섯 중독 (위장 증상 완화 · 간 손상 진행, 악화 중)</color>: 36% |  | 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. |  |   - 통증: +5% |   - 의식: -10% |   - 이동: -10% |   - 혈액여과: -20% |  | 치료 필요 | 중독 상태: 악화 중 | 누적 치료: 0% | 위험도가 높은 중독입니다. 조기 반복 치료로 안정화할 수 있으며, 증상이 잦아들어도 완치된 것은 아닙니다. | 최소 대응 시간 잔여: 1시간
+FRAME 03-gastrointestinal-remission.png;bytes=2071436;screen=1600x1000;HealthTab630x430=True
+SNAPSHOT 04-severe;150622;60;True;Worsening;심한 간 손상;0.626689;0;0;0;0.66;0.66;0.41;0.65;1;0.12;20615;-1
+NATIVE_HEALTH_TOOLTIP <color=#E6E64CFF>독우산광대버섯 중독 (심한 간 손상, 악화 중)</color>: 63% |  | 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. |  |   - 통증: +12% |   - 의식: -30% |   - 이동: -25% |   - 혈액여과: -35% |  | 치료 필요 | 중독 상태: 악화 중 | 누적 치료: 0% | 위험도가 높은 중독입니다. 조기 반복 치료로 안정화할 수 있으며, 증상이 잦아들어도 완치된 것은 아닙니다.
+FRAME 04-severe.png;bytes=1905263;screen=1600x1000;HealthTab630x430=True
+TEND_JOB started tick=150622;loadID=10;medicine=MedicineIndustrial;priorReserve=0
+TEND_JOB completed tick=151351;loadID=10;tendCount=1;quality=1;reserve=0.65;nativeTendTicksLeft=14996;stabilized=False
+SNAPSHOT 05-first-treatment;151351;60.2916;True;Worsening;심한 간 손상;0.628522;1;1;0.65;0.66;0.66;0.41;0.65;1;0.12;20615;-1
+NATIVE_HEALTH_TOOLTIP <color=#E6E64CFF>독우산광대버섯 중독 (심한 간 손상, 악화 중)</color>: 63% |  | 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. |  |   - 통증: +12% |   - 의식: -30% |   - 이동: -25% |   - 혈액여과: -35% |  | 치료 품질: 100% | 후속 치료 필요: 6시간 후 | 치료 효과 만료: 6시간 후 | 중독 상태: 악화 중 | 누적 치료: 65% | 위험도가 높은 중독입니다. 조기 반복 치료로 안정화할 수 있으며, 증상이 잦아들어도 완치된 것은 아닙니다.
+FRAME 05-first-treatment.png;bytes=1895020;screen=1600x1000;HealthTab630x430=True
+TEND_JOB started tick=166601;loadID=15;medicine=MedicineIndustrial;priorReserve=0.649667
+TEND_JOB completed tick=167157;loadID=15;tendCount=2;quality=0.818735;reserve=1.279638;nativeTendTicksLeft=14997;stabilized=True
+SNAPSHOT 06-stabilized;167157;66.614;True;Stabilized;심한 간 손상;0.637681;2;0.818735;1.279638;0.66;0.66;0.41;0.65;1;0.12;20615;402120
+NATIVE_HEALTH_TOOLTIP <color=#E6E64CFF>독우산광대버섯 중독 (심한 간 손상, 안정화됨)</color>: 64% |  | 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. |  |   - 통증: +12% |   - 의식: -30% |   - 이동: -25% |   - 혈액여과: -35% |  | 치료 품질: 82% | 후속 치료 필요: 6시간 후 | 치료 효과 만료: 6시간 후 | 중독 상태: 안정화됨 | 누적 치료: 100% | 예상 회복 잔여 시간: 3.9일
+FRAME 06-stabilized.png;bytes=1869562;screen=1600x1000;HealthTab630x430=True
+SNAPSHOT 07-recovering;278657;111.214;True;Recovering;초기 위장 증상;0.299716;2;0.818735;1.279638;0.92;0.92;0.82;1;1;0.08;20615;379054
+NATIVE_HEALTH_TOOLTIP <color=#E6E64CFF>독우산광대버섯 중독 (초기 위장 증상, 회복 중)</color>: 30% |  | 잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다. 기본 의료 체계로 반복 치료하며, 안정화 뒤에도 서서히 회복합니다. 이 중독의 직접 사망 판정은 첫 증상 경고 후 최소 24시간의 대응 시간을 제공합니다. 다른 질환과 부상까지 포함한 생존 보장은 아닙니다. |  |   - 통증: +8% |   - 의식: -8% |   - 이동: -10% |  | 치료 필요 | 중독 상태: 회복 중 | 누적 치료: 100% | 예상 회복 잔여 시간: 1.7일
+FRAME 07-recovering.png;bytes=1867847;screen=1600x1000;HealthTab630x430=True
+SNAPSHOT 08-recovered;379157;151.414;False;Resolved;;0;2;0.818735;1.279638;1;1;1;1;1;0;20615;379054
+FRAME 08-recovered.png;bytes=2069710;screen=1600x1000;HealthTab630x430=True
+RESULT PASS;frames=8;actualIngestJobs=1;actualTendJobs=2;patientAlive=True;poisonResolved=True

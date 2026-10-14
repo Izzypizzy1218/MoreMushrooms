@@ -45,7 +45,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantCauliflower</defName>
     <label>cauliflower mushroom cluster</label>
-    <description>A cluster of cauliflower mushroom. Can be grown in soil or hydroponics basins. Grows without a sun lamp; stronger light slows its growth. A pale mushroom with densely folded, ruffled branches. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of cauliflower mushroom. Can be grown in soil or hydroponics basins. Grows without a sun lamp; stronger light slows its growth. A pale mushroom with densely folded, ruffled branches. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a stump, dead tree or living pine at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Cauliflower</texPath>
     </graphicData>
@@ -56,7 +56,7 @@
     <plant>
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>
-      <growDays>7.5</growDays>
+      <growDays>6</growDays>
       <harvestYield>13</harvestYield>
       <harvestedThingDef>RMush_RawCauliflower</harvestedThingDef>
       <wildClusterWeight>1</wildClusterWeight>
@@ -67,8 +67,8 @@
       </sowTags>
       <sowMinSkill>5</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.00342742</TemperateForest>
-        <BorealForest>0.00255</BorealForest>
+        <BorealForest>0.000471208829</BorealForest>
+        <TemperateForest>0.000602080523</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -80,6 +80,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>4.0</regrowthDelayDays>
+        <habitat>pineStump</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -107,7 +109,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantPurpleBlewit</defName>
     <label>purple blewit cluster</label>
-    <description>A cluster of purple blewit. Can be grown in soil or hydroponics basins. Grows without a sun lamp; stronger light slows its growth. A purple-toned mushroom with a firm cap and pleasant mushroom flavor. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. May form a small fairy ring. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 6 days if the site remains suitable.</description>
+    <description>A cluster of purple blewit. Can be grown in soil or hydroponics basins. Grows without a sun lamp; stronger light slows its growth. A purple-toned mushroom with a firm cap and pleasant mushroom flavor. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil with 1–3 living trees within 5 tiles. May form a small fairy ring. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 6 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/PurpleBlewit</texPath>
     </graphicData>
@@ -129,8 +131,8 @@
       </sowTags>
       <sowMinSkill>3</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.00342742</TemperateForest>
-        <TemperateSwamp>0.0017</TemperateSwamp>
+        <TemperateForest>0.000602080523</TemperateForest>
+        <TemperateSwamp>0.000233231435</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -142,6 +144,8 @@
         <ringEligible>true</ringEligible>
         <regrowthChance>0.3</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>forestEdge</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -169,7 +173,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantBlackTruffle</defName>
     <label>black truffle cluster</label>
-    <description>A cluster of black truffle. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, knobbly woodland fungus prized for its strong and complex aroma. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of black truffle. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, knobbly woodland fungus prized for its strong and complex aroma. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a living tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/BlackTruffle</texPath>
     </graphicData>
@@ -186,7 +190,7 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00070565</TemperateForest>
+        <TemperateForest>0.000655295043</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -198,6 +202,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>treeBase</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -225,7 +231,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantPorcini</defName>
     <label>porcini cluster</label>
-    <description>A cluster of porcini. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of porcini. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild emergence requires suitable soil within 2 tiles of a tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Porcini</texPath>
     </graphicData>
@@ -242,8 +248,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00141129</TemperateForest>
-        <BorealForest>0.00112</BorealForest>
+        <BorealForest>0.000976378052</BorealForest>
+        <TemperateForest>0.0013105808</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -255,6 +261,9 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitatTree>any</habitatTree>
+        <habitatTreeMinGrowth>0.5</habitatTreeMinGrowth>
+        <habitatTreeRadius>2</habitatTreeRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -282,7 +291,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantMorel</defName>
     <label>morel cluster</label>
-    <description>A cluster of morel. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A spring woodland mushroom with a honeycomb-like cap and a gentle aroma. Wild ecology: Most likely to appear during spring. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of morel. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A spring woodland mushroom with a honeycomb-like cap and a gentle aroma. Wild ecology: Most likely to appear during spring. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil with 1–3 living trees within 5 tiles.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Morel</texPath>
     </graphicData>
@@ -299,8 +308,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00141129</TemperateForest>
-        <BorealForest>0.00098</BorealForest>
+        <BorealForest>0.000854330796</BorealForest>
+        <TemperateForest>0.0013105808</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -312,6 +321,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>forestEdge</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -339,7 +350,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantBlackTrumpet</defName>
     <label>black trumpet cluster</label>
-    <description>A cluster of black trumpet. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, thin-fleshed mushroom shaped like a small trumpet. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of black trumpet. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, thin-fleshed mushroom shaped like a small trumpet. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild emergence requires suitable soil within 2 tiles of a tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/BlackTrumpet</texPath>
     </graphicData>
@@ -356,8 +367,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00141129</TemperateForest>
-        <TemperateSwamp>0.0007</TemperateSwamp>
+        <TemperateForest>0.0013105808</TemperateForest>
+        <TemperateSwamp>0.00103279013</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -369,6 +380,9 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitatTree>any</habitatTree>
+        <habitatTreeMinGrowth>0.5</habitatTreeMinGrowth>
+        <habitatTreeRadius>2</habitatTreeRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -396,7 +410,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantGiantPuffball</defName>
     <label>giant puffball cluster</label>
-    <description>A cluster of giant puffball. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. May form a small fairy ring.</description>
+    <description>A cluster of giant puffball. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: open soil with wild grass within 2 tiles and at most one living tree within 5 tiles. May form a small fairy ring.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/GiantPuffball</texPath>
     </graphicData>
@@ -413,8 +427,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00257056</TemperateForest>
-        <AridShrubland>0.00136</AridShrubland>
+        <AridShrubland>0.001395679639</AridShrubland>
+        <TemperateForest>0.002387125665</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -426,6 +440,8 @@
         <ringEligible>true</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>openField</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -453,7 +469,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantIndigoMilkcap</defName>
     <label>indigo milkcap cluster</label>
-    <description>A cluster of indigo milkcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste. Wild ecology: Most likely to appear during summer. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of indigo milkcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste. Wild ecology: Most likely to appear during summer. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a living tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/IndigoMilkcap</texPath>
     </graphicData>
@@ -470,8 +486,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00171371</TemperateForest>
-        <TropicalRainforest>0.0008</TropicalRainforest>
+        <TemperateForest>0.001591420206</TemperateForest>
+        <TropicalRainforest>0.000740298507</TropicalRainforest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -483,6 +499,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>treeBase</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -510,7 +528,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantVeiledStinkhorn</defName>
     <label>veiled stinkhorn cluster</label>
-    <description>A cluster of veiled stinkhorn. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A mushroom with a delicate white net and sponge-like edible tissue. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of veiled stinkhorn. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A mushroom with a delicate white net and sponge-like edible tissue. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil with 1–3 living trees within 5 tiles.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/VeiledStinkhorn</texPath>
     </graphicData>
@@ -527,8 +545,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TropicalRainforest>0.0024</TropicalRainforest>
-        <TropicalSwamp>0.0017</TropicalSwamp>
+        <TropicalRainforest>0.002220895522</TropicalRainforest>
+        <TropicalSwamp>0.002452699784</TropicalSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -540,6 +558,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>forestEdge</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -567,7 +587,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantShaggyInkcap</defName>
     <label>shaggy inkcap cluster</label>
-    <description>A cluster of shaggy inkcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. May form a small fairy ring. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 6 days if the site remains suitable.</description>
+    <description>A cluster of shaggy inkcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: open soil with wild grass within 2 tiles and at most one living tree within 5 tiles. May form a small fairy ring. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 6 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/ShaggyInkcap</texPath>
     </graphicData>
@@ -584,8 +604,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00257056</TemperateForest>
-        <AridShrubland>0.00085</AridShrubland>
+        <AridShrubland>0.000872299774</AridShrubland>
+        <TemperateForest>0.002387125665</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -597,6 +617,8 @@
         <ringEligible>true</ringEligible>
         <regrowthChance>0.3</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>openField</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -624,7 +646,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantLobster</defName>
     <label>lobster mushroom cluster</label>
-    <description>A cluster of lobster mushroom. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. An orange fungus growing over the fruit body of another mushroom, giving it firm flesh. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of lobster mushroom. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. An orange fungus growing over the fruit body of another mushroom, giving it firm flesh. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of an existing wild mushroom of another species.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Lobster</texPath>
     </graphicData>
@@ -641,8 +663,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00137097</TemperateForest>
-        <BorealForest>0.00085</BorealForest>
+        <BorealForest>0.000741001201</BorealForest>
+        <TemperateForest>0.001273138022</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -654,13 +676,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>mushroomHost</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawReishi</defName>
     <label>reishi</label>
-    <description>A tough, bitter bracket fungus collected as a fungal resource and trade good.</description>
+    <description>A tough, bitter bracket fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Reishi</texPath>
     </graphicData>
@@ -677,7 +701,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantReishi</defName>
     <label>reishi cluster</label>
-    <description>A cluster of reishi. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tough, bitter bracket fungus collected as a fungal resource and trade good. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of reishi. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tough, bitter bracket fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a living tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Reishi</texPath>
     </graphicData>
@@ -694,8 +718,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00191532</TemperateForest>
-        <TropicalRainforest>0.0018</TropicalRainforest>
+        <TemperateForest>0.001778643381</TemperateForest>
+        <TropicalRainforest>0.001665671642</TropicalRainforest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -707,13 +731,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>4.0</regrowthDelayDays>
+        <habitat>treeBase</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawTurkeyTail</defName>
     <label>turkey tail</label>
-    <description>A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good.</description>
+    <description>A thin, leathery bracket fungus with concentric colored bands. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/TurkeyTail</texPath>
     </graphicData>
@@ -730,7 +756,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantTurkeyTail</defName>
     <label>turkey tail cluster</label>
-    <description>A cluster of turkey tail. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
+    <description>A cluster of turkey tail. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A thin, leathery bracket fungus with concentric colored bands. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a stump or dead tree. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/TurkeyTail</texPath>
     </graphicData>
@@ -747,9 +773,9 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00287298</TemperateForest>
-        <BorealForest>0.0019</BorealForest>
-        <TemperateSwamp>0.00152</TemperateSwamp>
+        <BorealForest>0.001656355625</BorealForest>
+        <TemperateForest>0.002667965071</TemperateForest>
+        <TemperateSwamp>0.002242629997</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -761,13 +787,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0.3</regrowthChance>
         <regrowthDelayDays>4.0</regrowthDelayDays>
+        <habitat>stump</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawSanghuang</defName>
     <label>sanghuang</label>
-    <description>A hard, woody bracket fungus collected as a fungal resource and trade good.</description>
+    <description>A hard, woody bracket fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Sanghuang</texPath>
     </graphicData>
@@ -784,7 +812,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantSanghuang</defName>
     <label>sanghuang cluster</label>
-    <description>A cluster of sanghuang. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A hard, woody bracket fungus collected as a fungal resource and trade good. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of sanghuang. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A hard, woody bracket fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a living tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Sanghuang</texPath>
     </graphicData>
@@ -801,7 +829,7 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00095766</TemperateForest>
+        <TemperateForest>0.00088932169</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -813,13 +841,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>treeBase</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawCordyceps</defName>
     <label>cordyceps</label>
-    <description>A small orange club-shaped fungus collected as a fungal resource and trade good.</description>
+    <description>A small orange club-shaped fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Cordyceps</texPath>
     </graphicData>
@@ -836,7 +866,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantCordyceps</defName>
     <label>cordyceps cluster</label>
-    <description>A cluster of cordyceps. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small orange club-shaped fungus collected as a fungal resource and trade good. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of cordyceps. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small orange club-shaped fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a living RimWorld insect or an insect corpse. Host proximity is a game rule and does not infect the insect.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Cordyceps</texPath>
     </graphicData>
@@ -853,8 +883,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00095766</TemperateForest>
-        <BorealForest>0.00095</BorealForest>
+        <BorealForest>0.000828177812</BorealForest>
+        <TemperateForest>0.00088932169</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -866,13 +896,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>insectHost</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawChaga</defName>
     <label>chaga</label>
-    <description>A dark, rough fungal growth collected as a fungal resource and trade good.</description>
+    <description>A dark, rough fungal growth. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Chaga</texPath>
     </graphicData>
@@ -889,7 +921,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantChaga</defName>
     <label>chaga cluster</label>
-    <description>A cluster of chaga. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, rough fungal growth collected as a fungal resource and trade good. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of chaga. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A dark, rough fungal growth. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild emergence requires suitable soil within 2 tiles of a birch at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Chaga</texPath>
     </graphicData>
@@ -906,8 +938,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <BorealForest>0.00152</BorealForest>
-        <TemperateForest>0.00076613</TemperateForest>
+        <BorealForest>0.0013250845</BorealForest>
+        <TemperateForest>0.00071145921</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -919,6 +951,9 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitatTree>birch</habitatTree>
+        <habitatTreeMinGrowth>0.5</habitatTreeMinGrowth>
+        <habitatTreeRadius>2</habitatTreeRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -957,7 +992,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantLibertyCap</defName>
     <label>liberty cap cluster</label>
-    <description>A cluster of liberty cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small mushroom with a pointed cap and psychoactive effects. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of liberty cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small mushroom with a pointed cap and psychoactive effects. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: open soil with wild grass within 2 tiles and at most one living tree within 5 tiles.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/LibertyCap</texPath>
     </graphicData>
@@ -974,8 +1009,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.0016129</TemperateForest>
-        <BorealForest>0.00096</BorealForest>
+        <BorealForest>0.000836895474</BorealForest>
+        <TemperateForest>0.001497803975</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -987,6 +1022,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>openField</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1026,7 +1063,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantPantherCap</defName>
     <label>panther cap cluster</label>
-    <description>A cluster of panther cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of panther cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild emergence requires suitable soil within 2 tiles of a tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/PantherCap</texPath>
     </graphicData>
@@ -1043,8 +1080,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00096774</TemperateForest>
-        <BorealForest>0.00072</BorealForest>
+        <BorealForest>0.000627671605</BorealForest>
+        <TemperateForest>0.000898682385</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1056,6 +1093,9 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitatTree>any</habitatTree>
+        <habitatTreeMinGrowth>0.5</habitatTreeMinGrowth>
+        <habitatTreeRadius>2</habitatTreeRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1094,7 +1134,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantCubensis</defName>
     <label>cubensis cluster</label>
-    <description>A cluster of cubensis. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of cubensis. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Cubensis</texPath>
     </graphicData>
@@ -1111,8 +1151,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TropicalRainforest>0.00135</TropicalRainforest>
-        <TropicalSwamp>0.0008</TropicalSwamp>
+        <TropicalRainforest>0.001249253731</TropicalRainforest>
+        <TropicalSwamp>0.001154211663</TropicalSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1130,7 +1170,7 @@
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawDeathCap</defName>
     <label>death cap</label>
-    <description>Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <description>Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal. Can be eaten raw or used in ordinary meals; cooking does not remove the poison. Automatic eating and cooking are allowed by default and can be restricted in the mod settings. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/DeathCap</texPath>
     </graphicData>
@@ -1163,7 +1203,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantDeathCap</defName>
     <label>death cap cluster</label>
-    <description>A cluster of death cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of death cap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a living tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/DeathCap</texPath>
     </graphicData>
@@ -1180,7 +1220,7 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00055444</TemperateForest>
+        <TemperateForest>0.00051487534</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1192,13 +1232,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>7.0</regrowthDelayDays>
+        <habitat>treeBase</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawYellowDapperling</defName>
     <label>yellow dapperling</label>
-    <description>A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <description>A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness. Can be eaten raw or used in ordinary meals; cooking does not remove the poison. Automatic eating and cooking are allowed by default and can be restricted in the mod settings. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/YellowDapperling</texPath>
     </graphicData>
@@ -1231,7 +1273,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantYellowDapperling</defName>
     <label>yellow dapperling cluster</label>
-    <description>A cluster of yellow dapperling. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness. Wild ecology: Most likely to appear during summer. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of yellow dapperling. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness. Wild ecology: Most likely to appear during summer. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: dim, roofed fertile soil without constructed flooring.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/YellowDapperling</texPath>
     </graphicData>
@@ -1248,8 +1290,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TropicalRainforest>0.00091</TropicalRainforest>
-        <TropicalSwamp>0.0008</TropicalSwamp>
+        <TropicalRainforest>0.000842089552</TropicalRainforest>
+        <TropicalSwamp>0.001154211663</TropicalSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1261,13 +1303,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>indoorSoil</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawJackOLantern</defName>
     <label>jack-o-lantern mushroom</label>
-    <description>A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <description>A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning. Can be eaten raw or used in ordinary meals; cooking does not remove the poison. Automatic eating and cooking are allowed by default and can be restricted in the mod settings. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/JackOLantern</texPath>
     </graphicData>
@@ -1300,7 +1344,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantJackOLantern</defName>
     <label>jack-o-lantern mushroom cluster</label>
-    <description>A cluster of jack-o-lantern mushroom. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of jack-o-lantern mushroom. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a stump or dead tree.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/JackOLantern</texPath>
     </graphicData>
@@ -1317,7 +1361,7 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00129032</TemperateForest>
+        <TemperateForest>0.00119824318</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1329,13 +1373,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>stump</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawDeadlyWebcap</defName>
     <label>deadly webcap</label>
-    <description>Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <description>Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal. Can be eaten raw or used in ordinary meals; cooking does not remove the poison. Automatic eating and cooking are allowed by default and can be restricted in the mod settings. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/DeadlyWebcap</texPath>
     </graphicData>
@@ -1368,7 +1414,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantDeadlyWebcap</defName>
     <label>deadly webcap cluster</label>
-    <description>A cluster of deadly webcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of deadly webcap. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a living tree at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/DeadlyWebcap</texPath>
     </graphicData>
@@ -1385,8 +1431,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <BorealForest>0.00066</BorealForest>
-        <TemperateForest>0.00044355</TemperateForest>
+        <BorealForest>0.000575365638</BorealForest>
+        <TemperateForest>0.000411898415</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1398,13 +1444,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>7.0</regrowthDelayDays>
+        <habitat>treeBase</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawZombieAntFungus</defName>
     <label>zombie-ant fungus</label>
-    <description>A slender fungus associated with insect hosts. Collected as a specimen and trade good.</description>
+    <description>A slender fungus associated with insect hosts. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/ZombieAntFungus</texPath>
     </graphicData>
@@ -1421,7 +1469,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantZombieAntFungus</defName>
     <label>zombie-ant fungus cluster</label>
-    <description>A cluster of zombie-ant fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A slender fungus associated with insect hosts. Collected as a specimen and trade good. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of zombie-ant fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A slender fungus associated with insect hosts. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a living RimWorld insect or an insect corpse. Host proximity is a game rule and does not infect the insect.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/ZombieAntFungus</texPath>
     </graphicData>
@@ -1438,8 +1486,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TropicalRainforest>0.0009</TropicalRainforest>
-        <TropicalSwamp>0.00057</TropicalSwamp>
+        <TropicalRainforest>0.000832835821</TropicalRainforest>
+        <TropicalSwamp>0.00082237581</TropicalSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1451,6 +1499,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>insectHost</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1474,7 +1524,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantHoneyFungus</defName>
     <label>honey fungus cluster</label>
-    <description>A cluster of honey fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
+    <description>A cluster of honey fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a stump or dead tree. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/HoneyFungus</texPath>
     </graphicData>
@@ -1491,9 +1541,9 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00257056</TemperateForest>
-        <BorealForest>0.00136</BorealForest>
-        <TemperateSwamp>0.00085</TemperateSwamp>
+        <BorealForest>0.001185601921</BorealForest>
+        <TemperateForest>0.002387125665</TemperateForest>
+        <TemperateSwamp>0.001254102301</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1505,13 +1555,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0.3</regrowthChance>
         <regrowthDelayDays>4.0</regrowthDelayDays>
+        <habitat>stump</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawDryRot</defName>
     <label>dry rot fungus</label>
-    <description>A broad, crust-like fungal growth collected as a specimen and trade good.</description>
+    <description>A broad, crust-like fungal growth. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/DryRot</texPath>
     </graphicData>
@@ -1528,7 +1580,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantDryRot</defName>
     <label>dry rot fungus cluster</label>
-    <description>A cluster of dry rot fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A broad, crust-like fungal growth collected as a specimen and trade good. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of dry rot fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A broad, crust-like fungal growth. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: wooden flooring, or suitable soil within 2 tiles of a wooden building, exposed outdoors or beside a roof opening. Does not damage the floor or building.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/DryRot</texPath>
     </graphicData>
@@ -1545,8 +1597,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.0005746</TemperateForest>
-        <TemperateSwamp>0.00057</TemperateSwamp>
+        <TemperateForest>0.000533596729</TemperateForest>
+        <TemperateSwamp>0.000840986249</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1558,13 +1610,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>exposedWood</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="RMush_PoisonRawBase">
     <defName>RMush_RawGhostFungus</defName>
     <label>ghost fungus</label>
-    <description>A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning. Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
+    <description>A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning. Can be eaten raw or used in ordinary meals; cooking does not remove the poison. Automatic eating and cooking are allowed by default and can be restricted in the mod settings. Poisoning is treated with ordinary doctor care, medicine and rest.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/GhostFungus</texPath>
     </graphicData>
@@ -1597,7 +1651,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantGhostFungus</defName>
     <label>ghost fungus cluster</label>
-    <description>A cluster of ghost fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning. Wild ecology: Most likely to appear during summer. Seasonal emergence does not change cultivated growth. Emits a small amount of light.</description>
+    <description>A cluster of ghost fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning. Wild ecology: Most likely to appear during summer. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a stump or dead tree. Emits a small amount of light.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/GhostFungus</texPath>
     </graphicData>
@@ -1614,8 +1668,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00095766</TemperateForest>
-        <TropicalRainforest>0.0009</TropicalRainforest>
+        <TemperateForest>0.00088932169</TemperateForest>
+        <TropicalRainforest>0.000832835821</TropicalRainforest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1627,6 +1681,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>4.0</regrowthDelayDays>
+        <habitat>stump</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
     <comps>
@@ -1657,7 +1713,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantYellowBrain</defName>
     <label>yellow brain fungus cluster</label>
-    <description>A cluster of yellow brain fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A folded yellow fungus with a jelly-like texture and little distinctive flavor. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of yellow brain fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A folded yellow fungus with a jelly-like texture and little distinctive flavor. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a stump or dead tree.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/YellowBrain</texPath>
     </graphicData>
@@ -1674,8 +1730,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00191532</TemperateForest>
-        <TemperateSwamp>0.00095</TemperateSwamp>
+        <TemperateForest>0.001778643381</TemperateForest>
+        <TemperateSwamp>0.001401643748</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1687,13 +1743,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>4.0</regrowthDelayDays>
+        <habitat>stump</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawDevilsFingers</defName>
     <label>devil's fingers</label>
-    <description>A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good.</description>
+    <description>A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/DevilsFingers</texPath>
     </graphicData>
@@ -1710,7 +1768,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantDevilsFingers</defName>
     <label>devil's fingers cluster</label>
-    <description>A cluster of devil's fingers. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of devil's fingers. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil with 1–3 living trees within 5 tiles.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/DevilsFingers</texPath>
     </graphicData>
@@ -1727,8 +1785,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00095766</TemperateForest>
-        <TropicalRainforest>0.0009</TropicalRainforest>
+        <TemperateForest>0.00088932169</TemperateForest>
+        <TropicalRainforest>0.000832835821</TropicalRainforest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1740,13 +1798,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>forestEdge</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawBirdsNest</defName>
     <label>bird's nest fungus</label>
-    <description>A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good.</description>
+    <description>A tiny cup-shaped fungus containing small spore packets. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/BirdsNest</texPath>
     </graphicData>
@@ -1763,7 +1823,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantBirdsNest</defName>
     <label>bird's nest fungus cluster</label>
-    <description>A cluster of bird's nest fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of bird's nest fungus. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tiny cup-shaped fungus containing small spore packets. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during most of the year. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil with 1–3 living trees within 5 tiles.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/BirdsNest</texPath>
     </graphicData>
@@ -1780,8 +1840,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TemperateForest>0.00191532</TemperateForest>
-        <BorealForest>0.00095</BorealForest>
+        <BorealForest>0.000828177812</BorealForest>
+        <TemperateForest>0.001778643381</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1793,13 +1853,15 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>6.0</regrowthDelayDays>
+        <habitat>forestEdge</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
   </ThingDef>
-  <ThingDef ParentName="RMush_ExpansionResourceBase">
+  <ThingDef ParentName="RMush_RawBase">
     <defName>RMush_RawChlorophos</defName>
     <label>green-glowing mycena</label>
-    <description>A tiny, pale-capped fungus collected as a specimen and trade good.</description>
+    <description>A tiny, pale-capped fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Can be eaten directly or used in ordinary meals. Counts as fungus.</description>
     <graphicData>
       <texPath>Things/Item/RimMushrooms/Chlorophos</texPath>
     </graphicData>
@@ -1816,7 +1878,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantChlorophos</defName>
     <label>green-glowing mycena cluster</label>
-    <description>A cluster of green-glowing mycena. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tiny, pale-capped fungus collected as a specimen and trade good. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth. Emits a small amount of light.</description>
+    <description>A cluster of green-glowing mycena. Can be gathered in the wild but cannot be sown. Grows without a sun lamp; stronger light slows its growth. A tiny, pale-capped fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus. Wild ecology: Most likely to appear during warm seasons. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild habitat: soil within 2 tiles of a stump or dead tree. Emits a small amount of light.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Chlorophos</texPath>
     </graphicData>
@@ -1833,8 +1895,8 @@
       <wildClusterWeight>1</wildClusterWeight>
       <wildClusterRadius>2</wildClusterRadius>
       <wildBiomes>
-        <TropicalRainforest>0.00144</TropicalRainforest>
-        <TropicalSwamp>0.00076</TropicalSwamp>
+        <TropicalRainforest>0.001332537313</TropicalRainforest>
+        <TropicalSwamp>0.00109650108</TropicalSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -1846,6 +1908,8 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>4.0</regrowthDelayDays>
+        <habitat>stump</habitat>
+        <habitatRadius>2</habitatRadius>
       </li>
     </modExtensions>
     <comps>

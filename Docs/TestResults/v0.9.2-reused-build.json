@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "previousVersion": "0.9.1",
+  "productionSources": 13,
+  "productionDllSha256": "9e5a178a3e348b021fae35c81962368e51bfc643cc08e96fdefb5f2bcb2e0cf5",
+  "buildMode": "verified unchanged net472 binary; no new compilation claimed"
+}

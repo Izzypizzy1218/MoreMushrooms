@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "version": "0.9.2",
+  "profiles": [
+    {
+      "profile": "Core-Korean",
+      "status": "PASS",
+      "checks": 5972,
+      "gameVersion": "1.7.4977 rev1248",
+      "activeMods": [
+        "brrainz.harmony",
+        "ludeon.rimworld",
+        "izzypizzy.rimmushrooms",
+        "izzypizzy.rimmushrooms.tests"
+      ],
+      "compatibilitySpecificChecks": 46,
+      "newSaveRoundTrip": true,
+      "legacy16SaveLoaded": false,
+      "report": "v0.9.2-Core-Korean-smoke.txt"
+    },
+    {
+      "profile": "DLC-English",
+      "status": "PASS",
+      "checks": 7263,
+      "gameVersion": "1.7.4977 rev1248",
+      "activeMods": [
+        "brrainz.harmony",
+        "ludeon.rimworld",
+        "ludeon.rimworld.royalty",
+        "ludeon.rimworld.ideology",
+        "ludeon.rimworld.biotech",
+        "ludeon.rimworld.anomaly",
+        "ludeon.rimworld.odyssey",
+        "izzypizzy.rimmushrooms",
+        "izzypizzy.rimmushrooms.tests"
+      ],
+      "compatibilitySpecificChecks": 46,
+      "newSaveRoundTrip": true,
+      "legacy16SaveLoaded": true,
+      "report": "v0.9.2-DLC-English-smoke.txt",
+      "legacySourceGameVersion": "1.6.4871 rev591",
+      "legacyFixtureSha256": "694f8ca4ff0e901ade886c880c4ca8a25444791444661dff389c7637434e17a6",
+      "legacyPlantsCompared": 137
+    }
+  ],
+  "totalSuccessfulProfileChecks": 13235,
+  "initialAttempt": {
+    "checksBeforeFailure": 2319,
+    "result": "FAIL",
+    "profileLabelIncorrect": "Core label loaded all official DLC because knownExpansions list was missing",
+    "reason": "pre-v0.9 ecology fixture chose a species without satisfying its newer habitat conditions",
+    "resolution": "select and assert a native species actually eligible at the fixture cell; preserve positive-weight test; handle non-destroyable fixture objects with DeSpawn; provide knownExpansions list"
+  },
+  "intermediateCoreDiagnostic": {
+    "assertions": 5972,
+    "result": "PASS with rejected fixture diagnostic",
+    "cause": "cooking-disabled random test pawn used by native recipe tests",
+    "resolution": "require a normally cooking-capable fixture pawn; re-run both final profiles without Verse errors"
+  },
+  "productionDllReused": true,
+  "productionSourceFilesUnchanged": 13,
+  "userConfigSaveFilesUnchangedAfterNativeRuns": 90,
+  "priorReleaseManifestsUnchanged": 23,
+  "engineDiagnostics": "two pre-existing missing Vulkan overlay JSON paths for Epic/Rockstar; final profiles have no Verse/mod exceptions; Windows settings not changed",
+  "notValidated": [
+    "fresh 1.6 process run",
+    "full personal modpack",
+    "long-term ecological supply and rarity",
+    "comprehensive native visual inspection"
+  ]
+}

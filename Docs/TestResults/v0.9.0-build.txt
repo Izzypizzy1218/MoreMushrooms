@@ -1,0 +1,2 @@
+msbuild 버전 17.14.41+6f6d310b4(.NET용)
+  MoreMushrooms -> C:\Users\집\Desktop\codex\MoreMushrooms\Assemblies\RimMushrooms.dll

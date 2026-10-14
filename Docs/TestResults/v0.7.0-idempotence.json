@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "files": 298,
+  "changed": [],
+  "generator": "Scripts/generate_defs.py",
+  "historicalWildMigrationRun": false
+}

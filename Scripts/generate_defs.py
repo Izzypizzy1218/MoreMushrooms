@@ -134,7 +134,8 @@ def generate(handoff):
             node(p, "description", desc_en)
             node(node(p, "graphicData"), "texPath", "Things/Plant/RimMushrooms/" + plant_id)
             pp = node(p, "plant")
-            for key, value in {"growDays":m["growDays"], "harvestYield":m["yield"], "harvestedThingDef":raw_id}.items(): node(pp, key, value)
+            grow_days = m.get("wildGrowDays", m["growDays"]) if wild_only else m["growDays"]
+            for key, value in {"growDays":grow_days, "harvestYield":m["yield"], "harvestedThingDef":raw_id}.items(): node(pp, key, value)
             if not wild_only:
                 tags = node(pp, "sowTags")
                 for tag in ("Ground", "Hydroponic"): node(tags, "li", tag)

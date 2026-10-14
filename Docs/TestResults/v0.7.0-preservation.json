@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": 800,
+  "baselineVersion": "0.6.5",
+  "runtimePayloadBefore": 291,
+  "runtimePayloadAfter": 293,
+  "definitionCount": 139,
+  "approvedRuntimeChanges": [
+    "About/About.xml",
+    "Assemblies/RimMushrooms.dll",
+    "Defs/ExpansionMushrooms/Mushrooms.xml",
+    "Defs/PoisonMushrooms/Categories.xml",
+    "Defs/PoisonMushrooms/PoisonMushrooms.xml",
+    "Languages/English/DefInjected/ThingDef/ExpansionMushrooms.xml",
+    "Languages/English/DefInjected/ThingDef/PoisonMushrooms.xml",
+    "Languages/Korean/DefInjected/ThingDef/ExpansionMushrooms.xml",
+    "Languages/Korean/DefInjected/ThingDef/PoisonMushrooms.xml"
+  ],
+  "addedFiles": [
+    "Languages/English/Keyed/FoodSettings.xml",
+    "Languages/Korean/Keyed/FoodSettings.xml"
+  ],
+  "priorArchivesPreserved": 38
+}

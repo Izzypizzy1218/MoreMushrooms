@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "target": "net10.0",
+  "warnings": 0,
+  "errors": 0,
+  "productionDllRebuilt": false,
+  "testSourceSha256": {
+    "AssortedTests.cs": "deb8153af9f90624f4963f45d4bd59e7026dd8c90acb3f618facaf1a2b6e52b4",
+    "EcologyTests.cs": "8a2a7ad496820f3c6785c018e6bae013002b0ebd6ff8991b99f2596e56feec7f",
+    "ExpansionTests.cs": "85b3f46f532d41ca2ef23cb03e04aa450a7caad1f62f17e138c77ce2b508b615",
+    "FieldBalanceTests.cs": "e2d971b1b36c25329ef31e47eadad3895c8c37328ed2f6592b84222fe3a4bf5f",
+    "FieldCompatibilityTests.cs": "19fa9a7be8382f88d007dcd0ef00759e6dabb0accce9ab2932e9aca2ff9ec143",
+    "FieldEcologyTests.cs": "634fce7544720fbb4ff265f27931467436caf43e31f887dac43fef21caa5cc08",
+    "FieldVisualTests.cs": "3e7d365dd3d6d2efeb887c5a15ed5fe8f25c0069d3db2330ee2a086188ea1f1a",
+    "FieldWorkBalanceTests.cs": "e4779b795e31aa90e314b0e4821ab2816d5fc17dd027c73ca6f67a48750a313c",
+    "FoodSettingsTests.cs": "f8a3c59736fce142b4a803e698de0c5eb124ab98dc686c372600b1540195460f",
+    "HabitatClusterTests.cs": "88db4b35bfc18778edf783e2ea37ab42b07eb1f092aae5d78cb4029161065e9c",
+    "HealthLiveDemo.cs": "6518228d7008023ac5c0259f737e0171209948e3c72556c6e7543f5e15f80f48",
+    "HealthTimelineTests.cs": "41d0798fde7e8f0beda909907660fe6e87faffe9ebbbda1fc9e55b704c431dc9",
+    "HydroponicsTests.cs": "2afda79a2796f56847f2a478b859f830119e4d3acb5c4a73b7b90895bedbfb86",
+    "LightTests.cs": "11625c99d1dce5e8af79bdfeaa3600a6a8b46cb47b5ff7d5067faff0cba2b75e",
+    "MealExposureTests.cs": "3b1ac0ac26673fe12d3221e9c5b7d128b2c032b58918406fa23b38eb9da8a14b",
+    "MoodTests.cs": "6666020701abb340371732c3807ce9d5a91afac2d3b824d9fd4a0d8e042c0ec2",
+    "NutrientPasteTests.cs": "f58edd2e89fa4cece6260dc330d965f6d2eecd36d1cea67314b7d4d1ee529d5f",
+    "PoisonTests.cs": "104b1e6a0bc12d9727b00304d1df4d0f5b7a92485617d3c09dc8bdec294fc52c",
+    "Port17CompatibilityTests.cs": "794b8f7dd77592df6cc7681cc65869007e39bf78e0d8ca41bc2eeb1da5e0ac53",
+    "PsychoactiveTests.cs": "516969dac24e17a67abd327320b5d4d16185e6d53d1362b50022ee1a93837179",
+    "RuntimeDiagnostics.cs": "4511291b68e20f8308be13cb1b52850bba4968b79da0358c6e579a78e50c7f4b",
+    "SmokeTests.cs": "e472e55f229fd8745e8c1570d0b2213a82f65d774ee4f2642fce416ff224e0bf"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "version": "0.9.0",
+  "gameAssembly": "Installed RimWorld 1.6.4871 rev591 Assembly-CSharp.dll",
+  "compiler": "dotnet msbuild Release .NET Framework 4.7.2",
+  "productionDllSha256": "9e5a178a3e348b021fae35c81962368e51bfc643cc08e96fdefb5f2bcb2e0cf5",
+  "gameLaunched": false,
+  "nativeRuntimeValidated": false,
+  "deferred": "Native spawn/weather/save-load/screenshots/full mod combination/long-term balance are deferred by user until medicinal and cooking features are added."
+}

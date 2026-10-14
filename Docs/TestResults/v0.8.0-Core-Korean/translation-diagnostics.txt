@@ -1,0 +1,37 @@
+﻿Active language=Korean errors=36
+Found no Verse.HediffDef named PsychicAmplifier to match PsychicAmplifier.label (Hediffs_Psycasts.xml)
+Found no Verse.HediffDef named PsychicAmplifier to match PsychicAmplifier.description (Hediffs_Psycasts.xml)
+Found no Verse.HediffDef named PsychicAmplifier to match PsychicAmplifier.descriptionShort (Hediffs_Psycasts.xml)
+Couldn't inject Humanlike.root.children.0.children.4.debugLabel into Verse.PawnRenderTreeDef (PawnRenderTreeDefs.xml): Index out of bounds (max index is 3)
+Couldn't inject Humanlike.root.children.2.children.6.debugLabel into Verse.PawnRenderTreeDef (PawnRenderTreeDefs.xml): Index out of bounds (max index is 5)
+Couldn't inject ThreatReward_Raid_Joiner.LetterLabelChasing.value.slateRef (ThreatReward_Raid_Joiner.root.nodes.7.node.parms.5.value.slateRef) into RimWorld.QuestScriptDef (Scripts_JoinerThreatCore.xml): Field or TKey parms does not exist.
+Couldn't inject ThreatReward_Raid_Joiner.LetterTextChasing.value.slateRef (ThreatReward_Raid_Joiner.root.nodes.7.node.parms.6.value.slateRef) into RimWorld.QuestScriptDef (Scripts_JoinerThreatCore.xml): Field or TKey parms does not exist.
+Found no RimWorld.StatDef named PsychicEntropyMaxOffset to match PsychicEntropyMaxOffset.label (Stats_Basics_Special.xml)
+Found no RimWorld.StatDef named PsychicEntropyMaxOffset to match PsychicEntropyMaxOffset.description (Stats_Basics_Special.xml)
+Found no RimWorld.StatDef named PsychicEntropyRecoveryRateOffset to match PsychicEntropyRecoveryRateOffset.label (Stats_Basics_Special.xml)
+Found no RimWorld.StatDef named PsychicEntropyRecoveryRateOffset to match PsychicEntropyRecoveryRateOffset.description (Stats_Basics_Special.xml)
+Found no RimWorld.StatDef named PsychicEntropyRecoveryRateOffset to match PsychicEntropyRecoveryRateOffset.formatString (Stats_Basics_Special.xml)
+Found no RimWorld.StatDef named EMPResistance to match EMPResistance.label (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named EMPResistance to match EMPResistance.description (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named MeditationFocusGain to match MeditationFocusGain.label (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named MeditationFocusGain to match MeditationFocusGain.description (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named MeditationFocusGain to match MeditationFocusGain.formatString (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named MeditationFocusGain to match MeditationFocusGain.formatStringUnfinalized (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named PsychicEntropyMax to match PsychicEntropyMax.label (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named PsychicEntropyMax to match PsychicEntropyMax.description (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named PsychicEntropyRecoveryRate to match PsychicEntropyRecoveryRate.label (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named PsychicEntropyRecoveryRate to match PsychicEntropyRecoveryRate.description (Stats_Pawns_General.xml)
+Found no RimWorld.StatDef named PsychicEntropyRecoveryRate to match PsychicEntropyRecoveryRate.formatString (Stats_Pawns_General.xml)
+Couldn't inject WorkSpeedGlobal.parts.2.label into RimWorld.StatDef (Stats_Pawns_WorkGeneral.xml): Index out of bounds (max index is 0)
+Found no Verse.ThingDef named Apparel_Cape to match Apparel_Cape.label (Apparel_Various.xml)
+Found no Verse.ThingDef named Apparel_Cape to match Apparel_Cape.description (Apparel_Various.xml)
+Couldn't inject CommsConsole.comps.CompUsable.useLabel into Verse.ThingDef (Buildings_Misc.xml): None of the list elements have a handle named CompUsable.
+Found no Verse.ThingDef named PsychicAmplifier to match PsychicAmplifier.label (Hediffs_Psycasts.xml)
+Found no Verse.ThingDef named PsychicAmplifier to match PsychicAmplifier.description (Hediffs_Psycasts.xml)
+Found no Verse.ThingDef named PsychicAmplifier to match PsychicAmplifier.comps.CompUsableImplant.useLabel (Hediffs_Psycasts.xml)
+Found no Verse.ThingDef named Mote_TerrorHalo to match Mote_TerrorHalo.label (Mote_Visual.xml)
+Couldn't inject Mechanoid.thinkRoot.subNodes.8.subNodes.0.subNodes.1.subNodes.4.subNodes.1.subNodes.0.reportStringOverride into Verse.ThinkTreeDef (Mechanoid.xml): Index out of bounds (max index is 0)
+Couldn't inject KnowColonistExecuted.stages.colonist_ripscanned.label into RimWorld.ThoughtDef (Thoughts_Memory_Death.xml): None of the list elements have a handle named colonist_ripscanned.
+Couldn't inject KnowColonistExecuted.stages.colonist_ripscanned.description into RimWorld.ThoughtDef (Thoughts_Memory_Death.xml): None of the list elements have a handle named colonist_ripscanned.
+Couldn't inject KnowGuestExecuted.stages.someone_was_ripscanned.label into RimWorld.ThoughtDef (Thoughts_Memory_Death.xml): None of the list elements have a handle named someone_was_ripscanned.
+Couldn't inject KnowGuestExecuted.stages.someone_was_ripscanned.description into RimWorld.ThoughtDef (Thoughts_Memory_Death.xml): None of the list elements have a handle named someone_was_ripscanned.

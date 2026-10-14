@@ -8,3 +8,10 @@ __pycache__/
 
 # Original artwork archives stay local and inside the versioned source release.
 Art/ExpansionMushrooms/*.zip
+
+# Paused, unimplemented medicinal prototypes remain local until approved.
+Art/Medicinal/
+Docs/Design/README-v0.10.0-paused.md
+Docs/MUSHROOM-MEDICINE-v0.10.0.md
+Tests/validate_v0100_preservation.py
+Tests/verify_v0100_install.py

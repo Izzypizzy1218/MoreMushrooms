@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": 7232,
+  "profile": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Tests\\Runtime\\20261011-091136-Core",
+  "game": "RimWorld1.6.4871rev591",
+  "language": "English",
+  "mods": "Core+Harmony+MoreMushrooms+isolated test harness",
+  "legacyFixtureVersion": "v0.6.1 Core test fixture",
+  "legacySourceSha256": "D523D151AA975EBF382528B5261C334DD592CD42C4DBC8157975C588B029AD14",
+  "legacySourcePreserved": true,
+  "scope": "Native smoke, fixture save/load and prior v0.6.1 fixture loading. Player saves/settings not copied. This is not a new long-duration or full user-mod-combination qualification."
+}

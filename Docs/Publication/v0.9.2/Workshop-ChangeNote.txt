@@ -1,0 +1,11 @@
+v0.9.2 — 2026-10-15
+
+RimWorld 1.7 지원을 추가합니다. 1.6 지원을 유지하며 v0.9.1의 버섯 46종, 재배 가능한 11종의 기본 성장기간 6일, 모든 수확량·무드·독성·향정신성·야생 생태 설정과 그림을 그대로 사용합니다.
+
+기존 .NET Framework 4.7.2 생산 DLL을 1.7의 기존 모드 호환 계층으로 로드합니다. 생산 소스 13개와 DLL을 보관된 v0.9.1과 대조해 동일함을 확인했으며 새 생산 DLL 컴파일을 주장하지 않습니다. 정적 검사 3,441개와 1.7 전용 .NET 10 검사 하네스 빌드(경고·오류 0개)를 통과했습니다.
+
+실제 RimWorld 1.7.4977 rev1248에서 Core 한국어 5,972개·공식 DLC 전체 영어 7,263개 검사를 모두 통과했습니다. 새 1.7 시험 저장의 저장/불러오기와 격리한 1.6 v0.6.5 시험 저장의 유효 식물 137개·성장·생태 플래그·음식 정책 6개 복원을 확인했습니다. 보존 대조 426개 통과, 반복 생성 293파일 동일이며 기존 생산 DLL·소스·게임 수치를 유지합니다. 1.6 게임을 이번에 다시 실행한 결과는 아닙니다.
+
+1.7은 현재 unstable 베타입니다. 전체 사용자 모드 조합·장기 생태 균형·화면 가독성 검수는 별도 미완료 범위입니다. 약용버섯 약효·약 제작은 중단 상태를 유지하고 전용 버섯 요리 시스템은 추가하지 않습니다.
+
+RimWorld 1.7 support added while retaining 1.6 support and all v0.9.1 gameplay: 46 mushroom species and six-day base growth for the 11 cultivable edible mushrooms. The unchanged archived net472 production DLL runs through 1.7's legacy-mod compatibility layer; all 13 production source files match v0.9.1. On actual 1.7.4977 rev1248, Core/Korean passed 5,972 checks and all official DLC/English passed 7,263, including new-save round trips and loading an isolated 1.6 v0.6.5 test save while preserving 137 valid plants, their growth/ecology flags and six food policies. Static checks: 3,441; preservation checks: 426; repeated generation: 293 identical files. The .NET 10 test harness built with zero warnings/errors; no new production compilation is claimed. 1.6 was not rerun. 1.7 remains unstable; personal-modpack, long-term balance and full visual testing remain unverified. Medicinal development remains paused, with no dedicated cooking system added.

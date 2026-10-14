@@ -15,8 +15,25 @@ def package():
     runtime_files += [ROOT / rel for rel in ("Docs/CONTENT-v0.6.4.md", "Docs/QA-v0.6.4.md", "Docs/History/README-v0.6.3.md") if (ROOT / rel).is_file()]
     runtime_files += [p for p in (ROOT / "Docs/Publication/v0.6.4").glob("*") if p.is_file()]
     runtime_files += [p for p in (ROOT / "Docs/TestResults").rglob("*") if p.is_file() and p.relative_to(ROOT / "Docs/TestResults").as_posix().startswith("v0.6.4-")]
+    runtime_files += [ROOT / rel for rel in ("Docs/WILD-ECOLOGY-v0.6.5.md", "Docs/History/README-v0.6.4.md") if (ROOT / rel).is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/TestResults").rglob("*") if p.is_file() and p.relative_to(ROOT / "Docs/TestResults").as_posix().startswith("v0.6.5-")]
+    runtime_files += [ROOT / rel for rel in ("Docs/FOOD-SETTINGS-v0.7.0.md", "Docs/History/README-v0.6.5.md") if (ROOT / rel).is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/TestResults").rglob("*") if p.is_file() and p.relative_to(ROOT / "Docs/TestResults").as_posix().startswith("v0.7.0-")]
+    runtime_files += [ROOT / rel for rel in ("Docs/WILD-HABITATS-v0.8.0.md", "Docs/History/README-v0.7.0.md") if (ROOT / rel).is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/TestResults").rglob("*") if p.is_file() and p.relative_to(ROOT / "Docs/TestResults").as_posix().startswith("v0.8.0-")]
+    runtime_files += [ROOT / rel for rel in ("Docs/WILD-HABITATS-v0.9.0.md", "Docs/History/README-v0.8.0.md") if (ROOT / rel).is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/TestResults").rglob("*") if p.is_file() and p.relative_to(ROOT / "Docs/TestResults").as_posix().startswith("v0.9.0-")]
+    runtime_files += [ROOT / rel for rel in ("Docs/GROWTH-v0.9.1.md", "Docs/History/README-v0.9.0.md") if (ROOT / rel).is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/TestResults").rglob("*") if p.is_file() and p.relative_to(ROOT / "Docs/TestResults").as_posix().startswith("v0.9.1-")]
+    runtime_files += [ROOT / rel for rel in ("Docs/COMPATIBILITY-v0.9.2.md", "Docs/History/README-v0.9.1.md") if (ROOT / rel).is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/Publication/v0.9.2").glob("*") if p.is_file()]
+    runtime_files += [p for p in (ROOT / "Docs/TestResults").rglob("*") if p.is_file() and p.relative_to(ROOT / "Docs/TestResults").as_posix().startswith("v0.9.2-")]
     excluded = {".git","Releases","Backups","obj","__pycache__"}
-    source_files = [p for p in ROOT.rglob("*") if p.is_file() and not any(part in excluded for part in p.relative_to(ROOT).parts) and not p.relative_to(ROOT).as_posix().startswith(("Tests/Runtime/","Tests/Harness/Assemblies/"))]
+    # Paused medicine prototypes stay local; they are not implemented release content.
+    source_only_local = ("Tests/Runtime/", "Tests/Harness/Assemblies/", "Art/Medicinal/",
+                         "Docs/Design/README-v0.10.0-paused.md", "Docs/MUSHROOM-MEDICINE-v0.10.0.md",
+                         "Tests/validate_v0100_preservation.py", "Tests/verify_v0100_install.py")
+    source_files = [p for p in ROOT.rglob("*") if p.is_file() and not any(part in excluded for part in p.relative_to(ROOT).parts) and not p.relative_to(ROOT).as_posix().startswith(source_only_local)]
     dest.mkdir(parents=True)
     manifest = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in runtime_files}
     for suffix, files in (("",runtime_files),("-source",source_files)):

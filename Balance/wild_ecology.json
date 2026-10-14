@@ -1,59 +1,66 @@
 {
-  "contentVersion": "0.6.4",
-  "status": "Game ecology abstraction. Emergence seasons never change sowing, growth days, yield, price, food or medical effects.",
+  "contentVersion": "0.9.2",
+  "status": "Game ecology abstraction. Habitat and rain schedules are provisional until the user-requested combined gameplay review after medicinal and cooking features; this update validates static contracts only. Existing cultivation, food, medical effects and configured native wild weights are unchanged.",
   "scope": [
     "wild diversity",
     "native bioluminescence",
     "fairy rings",
     "seasonal wild emergence",
-    "limited harvest-site mycelium regrowth"
+    "limited harvest-site mycelium regrowth",
+    "small irregular wild clusters",
+    "six nearby-tree habitats",
+    "host and wood habitats",
+    "post-rain wild clusters",
+    "expanded species habitats",
+    "bounded nearby-tree assistance"
   ],
   "excluded": [
     "cultivation facilities",
-    "tree/stump/host/rain/wood substrate rules",
     "gathering quests",
-    "medicinal effects"
+    "medicinal effects",
+    "host infection",
+    "structural damage"
   ],
   "commonality": {
-    "baselineVersion": "0.5.0",
+    "baselineVersion": "0.6.4",
     "baselineBiomes": {
       "Button": {
-        "TemperateForest": 0.018,
-        "TemperateSwamp": 0.012
+        "TemperateForest": 0.01468683,
+        "TemperateSwamp": 0.01131319
       },
       "Shiitake": {
-        "TemperateForest": 0.012,
-        "TropicalRainforest": 0.008
+        "TemperateForest": 0.00979121,
+        "TropicalRainforest": 0.0064
       },
       "Oyster": {
-        "TemperateForest": 0.016,
-        "TemperateSwamp": 0.016,
-        "BorealForest": 0.01
+        "TemperateForest": 0.01305495,
+        "TemperateSwamp": 0.01508426,
+        "BorealForest": 0.00834706
       },
       "KingOyster": {
-        "TemperateForest": 0.01,
-        "AridShrubland": 0.005
+        "TemperateForest": 0.00815934,
+        "AridShrubland": 0.00409
       },
       "Enoki": {
-        "TemperateForest": 0.012,
-        "BorealForest": 0.012
+        "TemperateForest": 0.00979121,
+        "BorealForest": 0.01001647
       },
       "WoodEar": {
-        "TemperateSwamp": 0.014,
-        "TropicalRainforest": 0.014,
-        "TropicalSwamp": 0.014
+        "TemperateSwamp": 0.01319872,
+        "TropicalRainforest": 0.0112,
+        "TropicalSwamp": 0.01207
       },
       "Beech": {
-        "TemperateForest": 0.01,
-        "BorealForest": 0.008
+        "TemperateForest": 0.00815934,
+        "BorealForest": 0.00667765
       },
       "Maitake": {
-        "TemperateForest": 0.007,
-        "TemperateSwamp": 0.005
+        "TemperateForest": 0.00571154,
+        "TemperateSwamp": 0.00471383
       },
       "LionsMane": {
-        "TemperateForest": 0.006,
-        "BorealForest": 0.004
+        "TemperateForest": 0.0048956,
+        "BorealForest": 0.00333882
       },
       "Matsutake": {
         "TemperateForest": 0.003,
@@ -82,216 +89,233 @@
         "TropicalRainforest": 0.002
       },
       "Cauliflower": {
-        "TemperateForest": 0.002,
-        "BorealForest": 0.0015
+        "TemperateForest": 0.00342742,
+        "BorealForest": 0.00255
       },
       "PurpleBlewit": {
-        "TemperateForest": 0.002,
-        "TemperateSwamp": 0.001
+        "TemperateForest": 0.00342742,
+        "TemperateSwamp": 0.0017
       },
       "BlackTruffle": {
-        "TemperateForest": 0.0005
+        "TemperateForest": 0.00070565
       },
       "Porcini": {
-        "TemperateForest": 0.001,
-        "BorealForest": 0.0008
+        "TemperateForest": 0.00141129,
+        "BorealForest": 0.00112
       },
       "Morel": {
-        "TemperateForest": 0.001,
-        "BorealForest": 0.0007
+        "TemperateForest": 0.00141129,
+        "BorealForest": 0.00098
       },
       "BlackTrumpet": {
-        "TemperateForest": 0.001,
-        "TemperateSwamp": 0.0005
+        "TemperateForest": 0.00141129,
+        "TemperateSwamp": 0.0007
       },
       "GiantPuffball": {
-        "TemperateForest": 0.0015,
-        "AridShrubland": 0.0008
+        "TemperateForest": 0.00257056,
+        "AridShrubland": 0.00136
       },
       "IndigoMilkcap": {
-        "TemperateForest": 0.001,
-        "TropicalRainforest": 0.0005
+        "TemperateForest": 0.00171371,
+        "TropicalRainforest": 0.0008
       },
       "VeiledStinkhorn": {
-        "TropicalRainforest": 0.0015,
-        "TropicalSwamp": 0.001
+        "TropicalRainforest": 0.0024,
+        "TropicalSwamp": 0.0017
       },
       "ShaggyInkcap": {
-        "TemperateForest": 0.0015,
-        "AridShrubland": 0.0005
+        "TemperateForest": 0.00257056,
+        "AridShrubland": 0.00085
       },
       "Lobster": {
-        "TemperateForest": 0.0008,
-        "BorealForest": 0.0005
+        "TemperateForest": 0.00137097,
+        "BorealForest": 0.00085
       },
       "Reishi": {
-        "TemperateForest": 0.001,
-        "TropicalRainforest": 0.001
+        "TemperateForest": 0.00191532,
+        "TropicalRainforest": 0.0018
       },
       "TurkeyTail": {
-        "TemperateForest": 0.0015,
-        "BorealForest": 0.001,
-        "TemperateSwamp": 0.0008
+        "TemperateForest": 0.00287298,
+        "BorealForest": 0.0019,
+        "TemperateSwamp": 0.00152
       },
       "Sanghuang": {
-        "TemperateForest": 0.0005
+        "TemperateForest": 0.00095766
       },
       "Cordyceps": {
-        "TemperateForest": 0.0005,
-        "BorealForest": 0.0005
+        "TemperateForest": 0.00095766,
+        "BorealForest": 0.00095
       },
       "Chaga": {
-        "BorealForest": 0.0008,
-        "TemperateForest": 0.0004
+        "BorealForest": 0.00152,
+        "TemperateForest": 0.00076613
       },
       "LibertyCap": {
-        "TemperateForest": 0.001,
-        "BorealForest": 0.0006
+        "TemperateForest": 0.0016129,
+        "BorealForest": 0.00096
       },
       "PantherCap": {
-        "TemperateForest": 0.0008,
-        "BorealForest": 0.0006
+        "TemperateForest": 0.00096774,
+        "BorealForest": 0.00072
       },
       "Cubensis": {
-        "TropicalRainforest": 0.001,
-        "TropicalSwamp": 0.0005
+        "TropicalRainforest": 0.00135,
+        "TropicalSwamp": 0.0008
       },
       "DeathCap": {
-        "TemperateForest": 0.0005
+        "TemperateForest": 0.00055444
       },
       "YellowDapperling": {
-        "TropicalRainforest": 0.0007,
-        "TropicalSwamp": 0.0005
+        "TropicalRainforest": 0.00091,
+        "TropicalSwamp": 0.0008
       },
       "JackOLantern": {
-        "TemperateForest": 0.0008
+        "TemperateForest": 0.00129032
       },
       "DeadlyWebcap": {
-        "BorealForest": 0.0006,
-        "TemperateForest": 0.0004
+        "BorealForest": 0.00066,
+        "TemperateForest": 0.00044355
       },
       "ZombieAntFungus": {
-        "TropicalRainforest": 0.0005,
-        "TropicalSwamp": 0.0003
+        "TropicalRainforest": 0.0009,
+        "TropicalSwamp": 0.00057
       },
       "HoneyFungus": {
-        "TemperateForest": 0.0015,
-        "BorealForest": 0.0008,
-        "TemperateSwamp": 0.0005
+        "TemperateForest": 0.00257056,
+        "BorealForest": 0.00136,
+        "TemperateSwamp": 0.00085
       },
       "DryRot": {
-        "TemperateForest": 0.0003,
-        "TemperateSwamp": 0.0003
+        "TemperateForest": 0.0005746,
+        "TemperateSwamp": 0.00057
       },
       "GhostFungus": {
-        "TemperateForest": 0.0005,
-        "TropicalRainforest": 0.0005
+        "TemperateForest": 0.00095766,
+        "TropicalRainforest": 0.0009
       },
       "YellowBrain": {
-        "TemperateForest": 0.001,
-        "TemperateSwamp": 0.0005
+        "TemperateForest": 0.00191532,
+        "TemperateSwamp": 0.00095
       },
       "DevilsFingers": {
-        "TemperateForest": 0.0005,
-        "TropicalRainforest": 0.0005
+        "TemperateForest": 0.00095766,
+        "TropicalRainforest": 0.0009
       },
       "BirdsNest": {
-        "TemperateForest": 0.001,
-        "BorealForest": 0.0005
+        "TemperateForest": 0.00191532,
+        "BorealForest": 0.00095
       },
       "Chlorophos": {
-        "TropicalRainforest": 0.0008,
-        "TropicalSwamp": 0.0004
+        "TropicalRainforest": 0.00144,
+        "TropicalSwamp": 0.00076
       }
     },
-    "expansionGroupMultipliers": {
-      "cultivated-edible": 1.7,
-      "premium-wild-edible": 1.4,
-      "unusual-wild-edible": 1.7,
-      "medicinal": 1.9,
-      "psychoactive": 1.6,
-      "psychoactive-toxic": 1.2,
-      "toxic": 1.6,
-      "host-environment": 1.9,
-      "ornamental-material": 1.9
-    },
-    "expansionSpeciesOverrides": {
-      "DeathCap": 1.1,
-      "DeadlyWebcap": 1.1,
-      "HoneyFungus": 1.7
-    },
-    "temperateExpansionShareTarget": 0.3,
-    "policy": "Keep every biome aggregate unchanged, preserve Matsutake and all five legacy poisonous species; adjust original cultivated weights only enough to fund expansion diversity. TemperateForest original cultivars fall 15-20%; other biome reductions are relaxed when too few expansion species share that biome. Values are selection weights, not observed map frequencies.",
+    "retention": 0.5,
+    "cultivableShareTarget": 0.2,
+    "cultivableSpecies": [
+      "Button",
+      "Shiitake",
+      "Oyster",
+      "KingOyster",
+      "Enoki",
+      "WoodEar",
+      "Beech",
+      "Maitake",
+      "LionsMane",
+      "Cauliflower",
+      "PurpleBlewit"
+    ],
+    "calibrationSeason": "Spring",
+    "tropicalBiomes": [
+      "TropicalRainforest",
+      "TropicalSwamp"
+    ],
+    "policy": "Match the approved 50% preview: scale each existing native biome/species weight from immutable v0.6.4 data. Spring seasonal-effective total retains50%, with cultivable11 at20% and wild-only35 at80%; tropical biomes use native season factor1. Relative weights within each group and biome registrations are preserved. Raw totals, other seasons and realized plant counts need not have these exact ratios. Existing plants, cultivation and separate fairy-ring/mycelium budgets are unchanged.",
     "biomeAudit": {
       "AridShrubland": {
-        "beforeTotal": 0.0063,
-        "afterTotal": 0.0063,
-        "beforeExpansionTotal": 0.0013,
-        "afterExpansionTotal": 0.00221,
-        "beforeExpansionShare": 0.20634921,
-        "afterExpansionShare": 0.35079365,
-        "originalCultivatedMultiplier": 0.818,
-        "expansionMultiplierNormalization": 1
+        "beforeRawTotal": 0.0063,
+        "afterRawTotal": 0.002938223183,
+        "beforeEffectiveTotal": 0.0051253935219999994,
+        "afterEffectiveTotal": 0.0025626967603320583,
+        "beforeCultivableEffective": 0.0031276470492,
+        "beforeWildOnlyEffective": 0.0019977464727999996,
+        "afterCultivableEffective": 0.0005125393519523675,
+        "afterWildOnlyEffective": 0.0020501574083796907,
+        "cultivableMultiplier": 0.16387378247526332,
+        "wildOnlyMultiplier": 1.0262350286753565,
+        "afterCultivableShare": 0.1999999999554984,
+        "effectiveRetention": 0.49999999986967997
       },
       "BorealForest": {
-        "beforeTotal": 0.0569,
-        "afterTotal": 0.0569,
-        "beforeExpansionTotal": 0.0089,
-        "afterExpansionTotal": 0.01452,
-        "beforeExpansionShare": 0.15641476,
-        "afterExpansionShare": 0.25518453,
-        "originalCultivatedMultiplier": 0.83470588,
-        "expansionMultiplierNormalization": 1
+        "beforeRawTotal": 0.0569,
+        "afterRawTotal": 0.02835525200700001,
+        "beforeEffectiveTotal": 0.0504080037417796,
+        "afterEffectiveTotal": 0.02520400187268023,
+        "beforeCultivableEffective": 0.027278862708979598,
+        "beforeWildOnlyEffective": 0.0231291410328,
+        "afterCultivableEffective": 0.0050408003748217715,
+        "afterWildOnlyEffective": 0.020163201497858458,
+        "cultivableMultiplier": 0.1847877760871109,
+        "wildOnlyMultiplier": 0.871766118253934,
+        "afterCultivableShare": 0.2000000000113365,
+        "effectiveRetention": 0.5000000000355187
       },
       "TemperateForest": {
-        "beforeTotal": 0.1375,
-        "afterTotal": 0.1375,
-        "beforeExpansionTotal": 0.0245,
-        "afterExpansionTotal": 0.04124998,
-        "beforeExpansionShare": 0.17818182,
-        "afterExpansionShare": 0.29999985,
-        "originalCultivatedMultiplier": 0.81593407,
-        "expansionMultiplierNormalization": 1.00806452
+        "beforeRawTotal": 0.13749999999999998,
+        "afterRawTotal": 0.06661815216400002,
+        "beforeEffectiveTotal": 0.1173574644100576,
+        "afterEffectiveTotal": 0.05867873220635905,
+        "beforeCultivableEffective": 0.06680723019326519,
+        "beforeWildOnlyEffective": 0.05055023421679241,
+        "afterCultivableEffective": 0.011735746442353907,
+        "afterWildOnlyEffective": 0.04694298576400514,
+        "cultivableMultiplier": 0.17566581352131608,
+        "wildOnlyMultiplier": 0.9286403216788446,
+        "afterCultivableShare": 0.20000000001844104,
+        "effectiveRetention": 0.500000000011335
       },
       "TemperateSwamp": {
-        "beforeTotal": 0.0626,
-        "afterTotal": 0.0626,
-        "beforeExpansionTotal": 0.0036,
-        "afterExpansionTotal": 0.00629,
-        "beforeExpansionShare": 0.05750799,
-        "afterExpansionShare": 0.10047923,
-        "originalCultivatedMultiplier": 0.94276596,
-        "expansionMultiplierNormalization": 1
+        "beforeRawTotal": 0.0626,
+        "afterRawTotal": 0.030789466268,
+        "beforeEffectiveTotal": 0.0501804371170816,
+        "afterEffectiveTotal": 0.025090218559710567,
+        "beforeCultivableEffective": 0.0365760057966816,
+        "beforeWildOnlyEffective": 0.013604431320400002,
+        "afterCultivableEffective": 0.005018043712248064,
+        "afterWildOnlyEffective": 0.0200721748474625,
+        "cultivableMultiplier": 0.13719496162600206,
+        "wildOnlyMultiplier": 1.475414471513718,
+        "afterCultivableShare": 0.20000000001219403,
+        "effectiveRetention": 0.5000000000233112
       },
       "TropicalRainforest": {
-        "beforeTotal": 0.031,
-        "afterTotal": 0.031,
-        "beforeExpansionTotal": 0.007,
-        "afterExpansionTotal": 0.0114,
-        "beforeExpansionShare": 0.22580645,
-        "afterExpansionShare": 0.36774194,
-        "originalCultivatedMultiplier": 0.8,
-        "expansionMultiplierNormalization": 1
+        "beforeRawTotal": 0.031000000000000003,
+        "afterRawTotal": 0.015499999998999998,
+        "beforeEffectiveTotal": 0.031,
+        "afterEffectiveTotal": 0.015499999999,
+        "beforeCultivableEffective": 0.0176,
+        "beforeWildOnlyEffective": 0.013399999999999999,
+        "afterCultivableEffective": 0.0031,
+        "afterWildOnlyEffective": 0.012399999999,
+        "cultivableMultiplier": 0.17613636363636365,
+        "wildOnlyMultiplier": 0.9253731343283584,
+        "afterCultivableShare": 0.20000000001290322,
+        "effectiveRetention": 0.4999999999677419
       },
       "TropicalSwamp": {
-        "beforeTotal": 0.0167,
-        "afterTotal": 0.0167,
-        "beforeExpansionTotal": 0.0027,
-        "afterExpansionTotal": 0.00463,
-        "beforeExpansionShare": 0.16167665,
-        "afterExpansionShare": 0.27724551,
-        "originalCultivatedMultiplier": 0.86214286,
-        "expansionMultiplierNormalization": 1
-      }
-    },
-    "biomeGroupOverrides": {
-      "TropicalRainforest": {
-        "unusual-wild-edible": 1.6,
-        "medicinal": 1.8,
-        "psychoactive": 1.35,
-        "toxic": 1.3,
-        "host-environment": 1.8,
-        "ornamental-material": 1.8
+        "beforeRawTotal": 0.016700000000000003,
+        "afterRawTotal": 0.00835,
+        "beforeEffectiveTotal": 0.0167,
+        "afterEffectiveTotal": 0.00835,
+        "beforeCultivableEffective": 0.01207,
+        "beforeWildOnlyEffective": 0.0046300000000000004,
+        "afterCultivableEffective": 0.00167,
+        "afterWildOnlyEffective": 0.006679999999999999,
+        "cultivableMultiplier": 0.1383595691797846,
+        "wildOnlyMultiplier": 1.4427645788336931,
+        "afterCultivableShare": 0.2,
+        "effectiveRetention": 0.5
       }
     }
   },
@@ -309,7 +333,25 @@
     "ringMinRadius": 2.5,
     "ringMaxRadius": 4.0,
     "maxPendingRegrowth": 64,
-    "regrowthExpiryDays": 8.0
+    "regrowthExpiryDays": 8.0,
+    "smallClusterMinCount": 2,
+    "smallClusterMaxCount": 5,
+    "smallClusterSearchRadius": 18,
+    "smallClusterCellRadius": 3,
+    "environmentChancePerCheck": 0.03,
+    "environmentCooldownDays": 15.0,
+    "environmentMinCount": 1,
+    "environmentMaxCount": 2,
+    "rainMinHours": 3.0,
+    "rainWindowHours": 48.0,
+    "rainChancePerCheck": 0.035,
+    "rainCooldownDays": 2.0,
+    "rainClusterMinCount": 2,
+    "rainClusterMaxCount": 5,
+    "treeAssistChancePerCheck": 0.015,
+    "treeAssistCooldownDays": 5.0,
+    "treeAssistMinCount": 2,
+    "treeAssistMaxCount": 3
   },
   "seasonProfiles": {
     "autumn": {
@@ -408,31 +450,43 @@
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 8.0
+      "regrowthDelayDays": 8.0,
+      "habitatTree": "pine",
+      "habitatTreeMinGrowth": 0.5,
+      "habitatTreeRadius": 2
     },
     "FlyAgaric": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitatTree": "any",
+      "habitatTreeMinGrowth": 0.5,
+      "habitatTreeRadius": 2
     },
     "DestroyingAngel": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 7.0
+      "regrowthDelayDays": 7.0,
+      "habitat": "treeBase",
+      "habitatRadius": 2
     },
     "SulfurTuft": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 4.0
+      "regrowthDelayDays": 4.0,
+      "habitat": "stump",
+      "habitatRadius": 2
     },
     "Tsukiyotake": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 4.0
+      "regrowthDelayDays": 4.0,
+      "habitat": "stump",
+      "habitatRadius": 2
     },
     "PoisonFireCoral": {
       "seasonProfile": "autumn",
@@ -444,109 +498,149 @@
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 4.0
+      "regrowthDelayDays": 4.0,
+      "habitat": "pineStump",
+      "habitatRadius": 2
     },
     "PurpleBlewit": {
       "seasonProfile": "cool",
       "ringEligible": true,
       "regrowthChance": 0.3,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "forestEdge",
+      "habitatRadius": 2
     },
     "BlackTruffle": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "treeBase",
+      "habitatRadius": 2
     },
     "Porcini": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitatTree": "any",
+      "habitatTreeMinGrowth": 0.5,
+      "habitatTreeRadius": 2
     },
     "Morel": {
       "seasonProfile": "spring",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "forestEdge",
+      "habitatRadius": 2
     },
     "BlackTrumpet": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitatTree": "any",
+      "habitatTreeMinGrowth": 0.5,
+      "habitatTreeRadius": 2
     },
     "GiantPuffball": {
       "seasonProfile": "autumn",
       "ringEligible": true,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "openField",
+      "habitatRadius": 2
     },
     "IndigoMilkcap": {
       "seasonProfile": "summer",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "treeBase",
+      "habitatRadius": 2
     },
     "VeiledStinkhorn": {
       "seasonProfile": "tropical",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "forestEdge",
+      "habitatRadius": 2
     },
     "ShaggyInkcap": {
       "seasonProfile": "cool",
       "ringEligible": true,
       "regrowthChance": 0.3,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "openField",
+      "habitatRadius": 2
     },
     "Lobster": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "mushroomHost",
+      "habitatRadius": 2
     },
     "Reishi": {
       "seasonProfile": "persistent",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 4.0
+      "regrowthDelayDays": 4.0,
+      "habitat": "treeBase",
+      "habitatRadius": 2
     },
     "TurkeyTail": {
       "seasonProfile": "persistent",
       "ringEligible": false,
       "regrowthChance": 0.3,
-      "regrowthDelayDays": 4.0
+      "regrowthDelayDays": 4.0,
+      "habitat": "stump",
+      "habitatRadius": 2
     },
     "Sanghuang": {
       "seasonProfile": "persistent",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "treeBase",
+      "habitatRadius": 2
     },
     "Cordyceps": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "insectHost",
+      "habitatRadius": 2
     },
     "Chaga": {
       "seasonProfile": "persistent",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitatTree": "birch",
+      "habitatTreeMinGrowth": 0.5,
+      "habitatTreeRadius": 2
     },
     "LibertyCap": {
       "seasonProfile": "cool",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "openField",
+      "habitatRadius": 2
     },
     "PantherCap": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitatTree": "any",
+      "habitatTreeMinGrowth": 0.5,
+      "habitatTreeRadius": 2
     },
     "Cubensis": {
       "seasonProfile": "tropical",
@@ -558,43 +652,57 @@
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 7.0
+      "regrowthDelayDays": 7.0,
+      "habitat": "treeBase",
+      "habitatRadius": 2
     },
     "YellowDapperling": {
       "seasonProfile": "summer",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "indoorSoil",
+      "habitatRadius": 2
     },
     "JackOLantern": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "stump",
+      "habitatRadius": 2
     },
     "DeadlyWebcap": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 7.0
+      "regrowthDelayDays": 7.0,
+      "habitat": "treeBase",
+      "habitatRadius": 2
     },
     "ZombieAntFungus": {
       "seasonProfile": "tropical",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "insectHost",
+      "habitatRadius": 2
     },
     "HoneyFungus": {
       "seasonProfile": "autumn",
       "ringEligible": false,
       "regrowthChance": 0.3,
-      "regrowthDelayDays": 4.0
+      "regrowthDelayDays": 4.0,
+      "habitat": "stump",
+      "habitatRadius": 2
     },
     "DryRot": {
       "seasonProfile": "persistent",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "exposedWood",
+      "habitatRadius": 2
     },
     "GhostFungus": {
       "seasonProfile": "summer",
@@ -605,25 +713,33 @@
         "radius": 2.0,
         "color": "(65, 100, 70, 0)",
         "overlightRadius": 0
-      }
+      },
+      "habitat": "stump",
+      "habitatRadius": 2
     },
     "YellowBrain": {
       "seasonProfile": "persistent",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 4.0
+      "regrowthDelayDays": 4.0,
+      "habitat": "stump",
+      "habitatRadius": 2
     },
     "DevilsFingers": {
       "seasonProfile": "tropical",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "forestEdge",
+      "habitatRadius": 2
     },
     "BirdsNest": {
       "seasonProfile": "persistent",
       "ringEligible": false,
       "regrowthChance": 0,
-      "regrowthDelayDays": 6.0
+      "regrowthDelayDays": 6.0,
+      "habitat": "forestEdge",
+      "habitatRadius": 2
     },
     "Chlorophos": {
       "seasonProfile": "tropical",
@@ -634,8 +750,15 @@
         "radius": 2.5,
         "color": "(50, 105, 65, 0)",
         "overlightRadius": 0
-      }
+      },
+      "habitat": "stump",
+      "habitatRadius": 2
     }
   },
-  "seasonPolicy": "Every four-season profile sums to 4 (mean 1). This balances configured annual selection weights only; actual climate, native plant density and site suitability still affect map occurrence."
+  "seasonPolicy": "Every four-season profile sums to 4 (mean 1). This balances configured annual selection weights only; actual climate, native plant density and site suitability still affect map occurrence.",
+  "smallClusterPolicy": "Count-preserving placement of newly generated native wild mushrooms. Initial native generation may rearrange the same new plants into adjacent irregular groups of 2-5; later native emergence joins nearby same-species groups with room. Existing saved plants never move. Unsuitable sites or insufficient members may remain isolated. Rings, mycelium, special-environment emergence, post-rain clusters and nearby-tree assistance share the daily extra budget of 8 and the existing wild population cap.",
+  "habitatPolicy": "Game-readable habitat rules for native emergence and bounded ecology events; existing saved plants are not moved or removed. The six original nearby-tree species retain a matching living tree at least 50 percent grown within Chebyshev distance 1-2. Other assigned species require open grassland (grass within 2, at most 1 living tree within 5), forest edge (1-3 living trees within 5), tree base (50 percent grown within 2), stump or dead tree within 2, an insect or insect corpse within 2, a different wild mushroom within 2, dim roofed fertile unfloored soil or exposed wooden flooring/soil near a wooden building. Core stumps lose tree identity, so Cauliflower accepts ordinary stumps/dead trees or a living half-grown pine. Wood sites must be unroofed or within 2 tiles of a roof opening. Host proximity does not infect insects, and wood habitat does not damage structures. Exact environmental conditions are game abstractions, not biological claims.",
+  "environmentPolicy": "Rare special-environment emergence checks share the existing daily extra budget and wild population cap. A successful special-environment event starts a 15-day map cooldown and places at most 1-2 plants; missing eligible cells produces no new plants. These frequency values are provisional pending the combined gameplay review.",
+  "rainPolicy": "Track real rain duration per map. After at least 3 hours of rain, the 48 hours after rain ends may trigger at most one small 2-5-plant cluster per successful check, with a 2-day cooldown. Spawned plants must meet species habitat, biome and season rules and consume the shared extra budget and wild cap. This is a chance window, not a guaranteed burst after every rain.",
+  "treeAssistPolicy": "A sparse extra emergence route only for the six original nearby-tree species, with 2-3 plants and a minimum 5-day map cooldown after success. Eligible locally native species are weighted by seasonal factor divided by one plus their current wild population, giving underrepresented species more chances. This extra route requires positive native commonality but does not use its magnitude or alter native commonality values. Strict tree requirements, shared extra budget and wild cap still apply. Final rarity tuning is deferred until the combined gameplay review."
 }

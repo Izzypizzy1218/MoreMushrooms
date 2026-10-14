@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -81,13 +82,41 @@ namespace RimMushrooms
             }
         }
 
-        public override float GrowthRate => base.GrowthRate * BrightLightGrowthFactor;
+        private bool UsesWoodSubstrate => Spawned && !sown && MushroomHabitatRules.AllowsFloor(def, Position, Map);
+
+        public override float GrowthRate
+        {
+            get
+            {
+                if (!UsesWoodSubstrate) return base.GrowthRate * BrightLightGrowthFactor;
+                // Core's fertility factor is nonvirtual. Only this wood-fungus
+                // instance substitutes wood substrate for soil fertility; the
+                // terrain and every other plant retain their native behaviour.
+                if (Blighted || !PlantUtility.GrowthSeasonNow(Position, Map, def)) return 0f;
+                return GrowthRateFactor_Temperature * GrowthRateFactor_Light * GrowthRateFactor_NoxiousHaze
+                    * GrowthRateFactor_Drought * BrightLightGrowthFactor;
+            }
+        }
+
+        private string WoodSubstrateGrowthRateCalcDesc()
+        {
+            var result = new StringBuilder();
+            if (GrowthRateFactor_Temperature != 1f)
+                result.AppendInNewLine("StatsReport_MultiplierFor".Translate("TemperatureLower".Translate()) + ": " + GrowthRateFactor_Temperature.ToStringPercent());
+            if (GrowthRateFactor_Light != 1f)
+                result.AppendInNewLine("StatsReport_MultiplierFor".Translate("LightLower".Translate()) + ": " + GrowthRateFactor_Light.ToStringPercent());
+            if (ModsConfig.BiotechActive && Map.gameConditionManager.ConditionIsActive(GameConditionDefOf.NoxiousHaze) && GrowthRateFactor_NoxiousHaze != 1f)
+                result.AppendInNewLine("StatsReport_MultiplierFor".Translate(GameConditionDefOf.NoxiousHaze.label) + ": " + GrowthRateFactor_NoxiousHaze.ToStringPercent());
+            if (ModsConfig.OdysseyActive && Map.gameConditionManager.ConditionIsActive(GameConditionDefOf.Drought) && GrowthRateFactor_Drought != 1f)
+                result.AppendInNewLine("StatsReport_MultiplierFor".Translate(GameConditionDefOf.Drought.label) + ": " + GrowthRateFactor_Drought.ToStringPercent());
+            return result.ToString();
+        }
 
         public override string GrowthRateCalcDesc
         {
             get
             {
-                string result = base.GrowthRateCalcDesc;
+                string result = UsesWoodSubstrate ? WoodSubstrateGrowthRateCalcDesc() : base.GrowthRateCalcDesc;
                 float factor = BrightLightGrowthFactor;
                 if (factor < 1f)
                     result += (result.NullOrEmpty() ? "" : "\n") + "MM_BrightLightGrowthFactor".Translate(factor.ToStringPercent());

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RMush_SettingsAutoPoison>독버섯 자동 섭취 금지</RMush_SettingsAutoPoison>
+  <RMush_SettingsAutoPoisonTip>순수 독성 버섯 9종과 해당 버섯이 들어간 음식의 자동 섭취를 막습니다. 직접 먹기 명령은 사용할 수 있습니다. 향정신성 버섯은 대상에 포함하지 않습니다.</RMush_SettingsAutoPoisonTip>
+  <RMush_SettingsCookingPoison>독버섯 요리 재료 사용 금지</RMush_SettingsCookingPoison>
+  <RMush_SettingsCookingPoisonTip>순수 독성 버섯을 식사 제작 재료와 영양죽 원료에서 제외합니다. 이미 만든 음식의 독성을 제거하지는 않습니다. 향정신성 버섯은 대상에 포함하지 않습니다.</RMush_SettingsCookingPoisonTip>
+  <RMush_SettingsFoodSettingsNote>두 금지 옵션은 기본 OFF입니다. 음식 정책과 요리 재료 목록에서 직접 정한 제한도 계속 적용됩니다. 이전 저장을 업데이트했다면 기존 목록에서 새 식용 버섯을 필요한 만큼 허용하세요. 독버섯은 직접 먹거나 요리에 넣어 먹어도 중독을 일으킵니다.</RMush_SettingsFoodSettingsNote>
+</LanguageData>

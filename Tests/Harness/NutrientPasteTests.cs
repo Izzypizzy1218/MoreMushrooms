@@ -62,8 +62,13 @@ namespace RimMushroomsTests
             var created = new List<Thing>();
             Building_NutrientPasteDispenser dispenser = null;
             bool previousPower = false;
+            var settings = MoreMushroomsMod.Settings;
+            bool previousAuto = settings.forbidAutomaticPoisonousMushrooms;
+            bool previousCooking = settings.forbidPoisonousCookingIngredients;
             try
             {
+                settings.forbidAutomaticPoisonousMushrooms = false;
+                settings.forbidPoisonousCookingIngredients = false;
                 foreach (var original in preserved) original.Thing.DeSpawn();
                 dispenser = (Building_NutrientPasteDispenser)ThingMaker.MakeThing(ThingDef.Named("NutrientPasteDispenser"));
                 dispenser.SetFaction(Faction.OfPlayer);
@@ -158,9 +163,48 @@ namespace RimMushroomsTests
                     && episodes.Length == 1 && Mathf.Abs(episodes[0].TotalDoses - flyCount / 10f) < .00001f
                     && memories.Length == 1 && memories[0].moodOffset == Mathf.RoundToInt(10f * flyCount / 10f),
                     "native paste ingestion delivers fractional neurological poison and hallucination exactly once");
+                patient.Destroy(DestroyMode.Vanish);
+                ClearFeed(created);
+
+                var deathCap = Feed("RMush_RawDeathCap", 10, hopperCells[0], map, created);
+                potatoes = Feed("RawPotatoes", 20, hopperCells[1], map, created);
+                settings.forbidAutomaticPoisonousMushrooms = true;
+                Check(check, MushroomFoodRules.DispenserContainsPurePoisonFeedstock(dispenser)
+                    && MushroomFoodRules.BlocksAutomaticEating(dispenser),
+                    "automatic poison restriction detects actual pure-poison feed in a native hopper");
+                settings.forbidPoisonousCookingIngredients = true;
+                int potatoesBefore = Remaining(potatoes);
+                var safeReplacement = dispenser.TryDispenseFood();
+                if (safeReplacement != null) created.Add(safeReplacement);
+                Check(check, safeReplacement != null && Remaining(deathCap) == 10 && Remaining(potatoes) < potatoesBefore
+                    && !safeReplacement.TryGetComp<CompMushroomMeal>().Doses.Any(),
+                    "cooking restriction selects safe alternate hopper food without consuming any poison");
+                potatoes.Destroy(DestroyMode.Vanish);
+                Check(check, !dispenser.HasEnoughFeedstockInHoppers() && dispenser.TryDispenseFood() == null && Remaining(deathCap) == 10,
+                    "poison-only hopper cannot produce paste while cooking restriction is on");
+                settings.forbidAutomaticPoisonousMushrooms = false;
+                settings.forbidPoisonousCookingIngredients = false;
+                Check(check, dispenser.HasEnoughFeedstockInHoppers(), "the same sufficient poison-only hopper becomes usable immediately when cooking restriction is off");
+                deathCap.Destroy(DestroyMode.Vanish);
+                deathCap = Feed("RMush_RawDeathCap", 1, hopperCells[0], map, created);
+                potatoes = Feed("RawPotatoes", 20, hopperCells[1], map, created);
+                var lethalPaste = dispenser.TryDispenseFood();
+                if (lethalPaste != null) created.Add(lethalPaste);
+                Check(check, lethalPaste != null && Remaining(deathCap) == 0 && SameDose(lethalPaste, "DeathCap", 1f),
+                    "default paste production consumes a pure-poison raw ingredient and conserves its exact dose");
+                patient = Patient(map, center + new IntVec3(3, 0, 3), created);
+                settings.forbidAutomaticPoisonousMushrooms = true;
+                settings.forbidPoisonousCookingIngredients = true;
+                lethalPaste.Ingested(patient, lethalPaste.GetStatValue(StatDefOf.Nutrition));
+                poisons = patient.health.hediffSet.hediffs.OfType<Hediff_MushroomPoisoning>().ToArray();
+                Check(check, poisons.Length == 1 && poisons[0].def.defName == "RMush_PoisonDeathCap"
+                    && Mathf.Abs(poisons[0].ExposureUnits - 1f) < .00001f,
+                    "enabling both options does not detoxify a previously dispensed poisonous paste meal");
             }
             finally
             {
+                settings.forbidAutomaticPoisonousMushrooms = previousAuto;
+                settings.forbidPoisonousCookingIngredients = previousCooking;
                 if (dispenser != null && !dispenser.Destroyed) dispenser.powerComp.PowerOn = previousPower;
                 foreach (var item in created.AsEnumerable().Reverse())
                     if (!item.Destroyed) item.Destroy(DestroyMode.Vanish);
@@ -169,6 +213,8 @@ namespace RimMushroomsTests
                         GenSpawn.Spawn(original.Thing, original.Position, map, original.Rotation);
             }
         }
+
+        private static bool SameDose(Thing meal, string species, float expected) => Mathf.Abs(Dose(meal, species) - expected) < .00001f;
 
         private sealed class PreservedThing
         {

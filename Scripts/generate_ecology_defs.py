@@ -11,6 +11,35 @@ ROOT = Path(__file__).resolve().parents[1]
 EXTENSION = "RimMushrooms.MushroomEcologyExtension"
 DEF_CLASS = "RimMushrooms.WildMushroomEcologyDef"
 
+# These names describe observable game conditions. They are not claims that the
+# simplified RimWorld substrate and host rules reproduce real fungal biology.
+HABITAT_TEXT = {
+    "English": {
+        "openField": "open soil with wild grass within 2 tiles and at most one living tree within 5 tiles",
+        "forestEdge": "soil with 1–3 living trees within 5 tiles",
+        "treeBase": "soil within 2 tiles of a living tree at least 50% grown",
+        "stump": "soil within 2 tiles of a stump or dead tree",
+        "pineStump": "soil within 2 tiles of a stump, dead tree or living pine at least 50% grown",
+        "insectHost": "soil within 2 tiles of a living RimWorld insect or an insect corpse",
+        "mushroomHost": "soil within 2 tiles of an existing wild mushroom of another species",
+        "indoorSoil": "dim, roofed fertile soil without constructed flooring",
+        "exposedWood": "wooden flooring, or suitable soil within 2 tiles of a wooden building, exposed outdoors or beside a roof opening",
+        "wetMargin": "soil within 2 tiles of water or mud",
+    },
+    "Korean": {
+        "openField": "2칸 안에 야생 풀이 있고 5칸 안에 살아 있는 나무가 1그루 이하인 들판의 흙",
+        "forestEdge": "5칸 안에 살아 있는 나무가 1~3그루 있는 숲 가장자리의 흙",
+        "treeBase": "성장률 50% 이상인 살아 있는 나무에서 2칸 이내의 흙",
+        "stump": "그루터기나 죽은 나무에서 2칸 이내의 흙",
+        "pineStump": "그루터기·죽은 나무 또는 성장률 50% 이상인 소나무에서 2칸 이내의 흙",
+        "insectHost": "살아 있는 림월드 곤충이나 곤충 사체에서 2칸 이내의 흙",
+        "mushroomHost": "다른 종류의 야생 버섯에서 2칸 이내의 흙",
+        "indoorSoil": "바닥을 깔지 않은 어두운 지붕 아래의 비옥한 흙",
+        "exposedWood": "야외나 지붕 구멍 주변의 나무바닥, 또는 목조 건물에서 2칸 이내의 적합한 흙",
+        "wetMargin": "물이나 진흙에서 2칸 이내의 흙",
+    },
+}
+
 
 def node(parent, tag, value=None, **attributes):
     result = ET.SubElement(parent, tag, attributes)
@@ -33,6 +62,17 @@ def ecology_description(settings, language):
     }
     if language == "English":
         result = " Wild ecology: Most likely to appear during " + seasons[language][profile] + ". Seasonal emergence does not change cultivated growth."
+        result += " New wild emergence may form irregular same-species clumps of 2–5 plants where space permits."
+        if settings.get("habitatTree"):
+            tree = {"pine": "a pine", "birch": "a birch", "any": "a tree"}[settings["habitatTree"]]
+            result += f" Wild emergence requires suitable soil within {settings['habitatTreeRadius']} tiles of {tree} at least {settings['habitatTreeMinGrowth']:.0%} grown."
+        habitat = settings.get("habitat", "soil")
+        if habitat != "soil":
+            result += " Wild habitat: " + HABITAT_TEXT[language][habitat] + "."
+            if habitat == "insectHost":
+                result += " Host proximity is a game rule and does not infect the insect."
+            elif habitat == "exposedWood":
+                result += " Does not damage the floor or building."
         if settings["ringEligible"]:
             result += " May form a small fairy ring."
         if settings["regrowthChance"] > 0:
@@ -41,6 +81,17 @@ def ecology_description(settings, language):
             result += " Emits a small amount of light."
     else:
         result = " 야생 생태: " + seasons[language][profile] + "에 더 잘 발생합니다. 제철은 재배 성장 속도를 바꾸지 않습니다."
+        result += " 새로 발생하는 야생 버섯은 자리가 적합하면 같은 종 2~5칸의 불규칙한 작은 군락을 이룰 수 있습니다."
+        if settings.get("habitatTree"):
+            tree = {"pine": "소나무", "birch": "자작나무", "any": "나무"}[settings["habitatTree"]]
+            result += f" 야생 발생에는 성장률 {settings['habitatTreeMinGrowth']:.0%} 이상인 {tree}에서 {settings['habitatTreeRadius']}칸 이내의 적합한 흙이 필요합니다."
+        habitat = settings.get("habitat", "soil")
+        if habitat != "soil":
+            result += " 야생 발생 장소: " + HABITAT_TEXT[language][habitat] + "."
+            if habitat == "insectHost":
+                result += " 곤충 주변에서 발생하는 게임 규칙이며 숙주를 감염시키지는 않습니다."
+            elif habitat == "exposedWood":
+                result += " 나무바닥이나 건물을 손상시키지는 않습니다."
         if settings["ringEligible"]:
             result += " 작은 고리 모양 군락을 이룰 수 있습니다."
         if settings["regrowthChance"] > 0:
@@ -82,6 +133,12 @@ def generate():
                 node(ecology, key, value)
             for key in ("ringEligible", "regrowthChance", "regrowthDelayDays"):
                 node(ecology, key, settings[key])
+            if settings.get("habitat", "soil") != "soil":
+                for key in ("habitat", "habitatRadius"):
+                    node(ecology, key, settings[key])
+            if settings.get("habitatTree"):
+                for key in ("habitatTree", "habitatTreeMinGrowth", "habitatTreeRadius"):
+                    node(ecology, key, settings[key])
             if "glow" in settings:
                 comps = plant.find("comps")
                 if comps is None:

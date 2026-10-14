@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib
 import json
+import math
 import re
 import struct
 import xml.etree.ElementTree as ET
@@ -31,14 +32,14 @@ def validate_poison(defs, docs, assorted_choices):
     hediffs = [n for path, doc in docs.items() if "Defs" in path.parts for n in doc.getroot() if n.tag == "HediffDef" and n.findtext("defName", "").startswith("RMush_Poison")]
     categories = [n for path, doc in docs.items() if "Defs" in path.parts for n in doc.getroot() if n.tag == "ThingCategoryDef" and n.findtext("defName") == "RMush_PoisonMushrooms"]
     check(len(hediffs) == 11 and {n.findtext("defName") for n in hediffs} == {"RMush_Poison" + i for i in ids | additional_ids}, "eleven unique poisoning definitions")
-    check(len(categories) == 1 and categories[0].findtext("defName") == "RMush_PoisonMushrooms" and categories[0].findtext("parent") == "ResourcesRaw", "poison stockpile category outside food tree")
+    check(len(categories) == 1 and categories[0].findtext("defName") == "RMush_PoisonMushrooms" and categories[0].findtext("parent") == "PlantFoodRaw", "poison stockpile category belongs to ordinary raw food tree")
     hediff_by_name = {n.findtext("defName"): n for n in hediffs}
     raw_base = ET.parse(ROOT / "Defs/PoisonMushrooms/PoisonMushrooms.xml").find("ThingDef[@Name='RMush_PoisonRawBase']")
-    check(raw_base.get("ParentName") == "OrganicProductBase", "poison resources do not inherit edible-food categories")
-    check(common["nutrition"] == 0 and float(raw_base.findtext("statBases/Nutrition")) == 0, "zero nutrition excludes poison from native food search")
-    check(raw_base.findtext("ingestible/preferability") == "NeverForNutrition" and raw_base.findtext("ingestible/foodType") == "Fungus", "native fungus flag with never-for-nutrition restriction")
+    check(raw_base.get("ParentName") == "RMush_RawBase", "compatible poison parent inherits ordinary mushroom food")
+    check(common["nutrition"] == .05 and float(raw_base.findtext("statBases/Nutrition")) == .05, "poison is nutrition-giving raw food by default")
+    check(raw_base.findtext("ingestible/preferability") == "RawBad" and raw_base.findtext("ingestible/foodType") == "Fungus", "native fungus flag with ordinary raw-food preferability")
     check(raw_base.findtext("ingestible/drugCategory") == "None" and raw_base.find("comps/li[@Class='CompProperties_Drug']") is None, "poison never participates in automatic drug policies")
-    check({n.text for n in raw_base.findall("thingCategories/li")} == {"RMush_PoisonMushrooms"}, "poison excluded from ordinary food recipe category filters")
+    check({n.text for n in raw_base.findall("thingCategories/li")} == {"RMush_PoisonMushrooms"}, "compatible poison subcategory remains available for individual recipe filters")
     check(int(raw_base.findtext("ingestible/maxNumToIngestAtOnce")) == int(raw_base.findtext("ingestible/defaultNumToIngestAtOnce")) == 1, "one mushroom per explicit ingestion")
     check(int(raw_base.findtext("stackLimit")) == common["stackLimit"] == 75, "poison stack limit")
     thresholds = raw_base.find("modExtensions/li[@Class='RimMushrooms.MushroomStackThresholds']")
@@ -74,7 +75,7 @@ def validate_poison(defs, docs, assorted_choices):
         check(foliage is not None and foliage.get("Inherit") == "False" and foliage.get("IsNull") == "True" and len(foliage) == 0, "native null ingestible removes invalid or edible wild foliage " + identity)
         check(float(plant.findtext("plant/growDays")) == mushroom["growDays"] and int(plant.findtext("plant/harvestYield")) == mushroom["yield"] and plant.findtext("plant/harvestedThingDef") == raw_name, "configured poison plant growth and harvest " + identity)
         biomes = {n.tag: float(n.text) for n in plant.findall("plant/wildBiomes/*")}
-        check(biomes == mushroom["biomes"] and all(0.002 <= w <= 0.006 for w in biomes.values()), "conservative native poison wild selection weights " + identity)
+        check(biomes == mushroom["biomes"] and all(math.isfinite(w) and 0 < w <= .01 for w in biomes.values()), "bounded configured native poison wild selection weights " + identity)
         check(hediff.findtext("hediffClass") == "RimMushrooms.Hediff_MushroomPoisoning" and hediff.findtext("tendable") == "true" and float(hediff.findtext("lethalSeverity")) == -1, "native tending with runtime-controlled lethal grace " + identity)
         tend = hediff.find("comps/li[@Class='HediffCompProperties_TendDuration']")
         check(tend is not None and float(tend.findtext("baseTendDurationHours")) == 6 and float(tend.findtext("tendOverlapHours")) == 0 and float(tend.findtext("severityPerDayTended")) == 0 and tend.find("disappearsAtTotalTendQuality") is None, "repeat care without one-tend instant cure " + identity)
@@ -184,21 +185,22 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
     catalog = json.loads((ROOT / config["catalog"]).read_text(encoding="utf-8"))
     registry = {m["id"]: m for m in catalog["species"]}
     species = config["mushrooms"]
-    check(config["contentVersion"] == balance["version"] == "0.6.4", "expansion and release versions match")
+    check(config["contentVersion"] == balance["version"] == "0.9.2", "expansion and release versions match")
     check(len(species) == len(registry) == 31 and {m["id"] for m in species} == set(registry), "all thirty-one approved expansion species represented exactly once")
     check(not set(registry).intersection(catalog["existing_species_excluded"]), "expansion does not redefine existing fifteen species")
     check({m["id"] for m in species if m["cultivable"]} == {"Cauliflower", "PurpleBlewit"}, "exactly two new cultivated varieties")
     check({m["id"] for m in species if m["use"] == "psychoactive"} == {"LibertyCap", "Cubensis", "PantherCap"}, "exact new psychoactive species set")
     check({m["id"] for m in species if m["use"] == "poisonous"} == {"DeathCap", "YellowDapperling", "JackOLantern", "DeadlyWebcap", "GhostFungus"}, "exact new poison species set")
-    check({m["id"] for m in species if m["use"] == "resource"} == {"Reishi", "TurkeyTail", "Sanghuang", "Cordyceps", "Chaga", "ZombieAntFungus", "DryRot", "DevilsFingers", "BirdsNest", "Chlorophos"}, "paused medicinal and nonfood specimen species remain resources")
-    check({use: sum(m["use"] == use for m in species) for use in ("food", "psychoactive", "poisonous", "resource")} == {"food": 13, "psychoactive": 3, "poisonous": 5, "resource": 10}, "all new species assigned approved food and resource uses")
+    promoted_ids = {"Reishi", "TurkeyTail", "Sanghuang", "Cordyceps", "Chaga", "ZombieAntFungus", "DryRot", "DevilsFingers", "BirdsNest", "Chlorophos"}
+    check({m["id"] for m in species if m.get("plantFood") is False} == promoted_ids and all(m["use"] == "food" and m["mood"] == 0 for m in species if m["id"] in promoted_ids), "ten former resource harvests become food without adding mood or changing foliage ecology")
+    check({use: sum(m["use"] == use for m in species) for use in ("food", "psychoactive", "poisonous", "resource")} == {"food": 23, "psychoactive": 3, "poisonous": 5, "resource": 0}, "all expansion harvests have approved food, psychoactive or poisonous uses")
     by_name = {n.findtext("defName"): n for n in defs}
     thought_by_name = {n.findtext("defName"): n for n in thoughts}
     resource_base = ET.parse(ROOT / "Defs/ExpansionMushrooms/Mushrooms.xml").find("ThingDef[@Name='RMush_ExpansionResourceBase']")
-    check(resource_base.get("ParentName") == "OrganicProductBase" and resource_base.findtext("statBases/Nutrition") == "0", "paused medicinal and specimen resources supply no food nutrition")
-    check(resource_base.find("ingestible").attrib == {"Inherit": "False", "IsNull": "True"} and {n.text for n in resource_base.findall("thingCategories/li")} == {"RMush_FungalResources"}, "nonfood fungal resources cannot be eaten or used by food recipes")
+    check(resource_base.get("ParentName") == "OrganicProductBase" and resource_base.findtext("statBases/Nutrition") == "0", "unused legacy resource abstract remains for compatibility")
+    check(resource_base.find("ingestible").attrib == {"Inherit": "False", "IsNull": "True"} and {n.text for n in resource_base.findall("thingCategories/li")} == {"RMush_FungalResources"} and not any(n.get("ParentName") == "RMush_ExpansionResourceBase" for n in defs), "no live harvested species inherits the legacy nonfood resource abstract")
     categories = [n for p, doc in docs.items() if "Defs" in p.parts for n in doc.getroot() if n.tag == "ThingCategoryDef"]
-    check(len(categories) == 2 and {n.findtext("defName") for n in categories} == {"RMush_FungalResources", "RMush_PoisonMushrooms"} and all(n.findtext("parent") == "ResourcesRaw" for n in categories), "fungal and poison resource categories remain outside Foods")
+    check(len(categories) == 2 and {n.findtext("defName"): n.findtext("parent") for n in categories} == {"RMush_FungalResources": "ResourcesRaw", "RMush_PoisonMushrooms": "PlantFoodRaw"}, "legacy resource category survives and poison category moves into raw food")
     expected_text = {"ThingDef": {}, "ThoughtDef": {}, "ThingCategoryDef": {"RMush_FungalResources.label": "fungal resources"}}
     wild_totals = {}
     for mushroom in species:
@@ -208,8 +210,8 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
         raw_name, plant_name = "RMush_Raw" + identity, "RMush_Plant" + identity
         raw, plant = by_name[raw_name], by_name[plant_name]
         use = mushroom["use"]
-        food = use in ("food", "psychoactive")
-        parent = "RMush_RawBase" if food else "RMush_PoisonRawBase" if use == "poisonous" else "RMush_ExpansionResourceBase"
+        food = mushroom.get("plantFood", use in ("food", "psychoactive"))
+        parent = "RMush_PoisonRawBase" if use == "poisonous" else "RMush_RawBase"
         check(raw.get("ParentName") == parent and raw.findtext("label") == mushroom["en"], "correct expansion harvest classification " + identity)
         check(float(raw.findtext("statBases/MarketValue")) == mushroom["value"] and float(raw.findtext("comps/li[@Class='CompProperties_Rottable']/daysToRotStart")) == mushroom["rotDays"], "configured expansion value and spoilage " + identity)
         check(plant.get("ParentName") == "RMush_PlantBase" and plant.findtext("plant/harvestedThingDef") == raw_name, "expansion plant inherits growth renderer and harvests its own species " + identity)
@@ -222,11 +224,11 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
             check(int(plant.findtext("plant/sowMinSkill")) == mushroom["skill"], "configured new cultivation skill " + identity)
         else:
             check(plant.find("plant/sowMinSkill") is None, "wild-only variety has no sow skill " + identity)
-        check(plant.findtext("plant/humanFoodPlant") == str(food).lower() and plant.findtext("plant/purpose") == ("Food" if food else "Misc"), "new plant purpose matches harvest use " + identity)
+        check(plant.findtext("plant/humanFoodPlant") == str(food).lower() and plant.findtext("plant/purpose") == ("Food" if food else "Misc"), "foliage food designation remains independent of promoted harvest " + identity)
         check(plant.findtext("plant/wildClusterWeight") == "1" and plant.findtext("plant/wildClusterRadius") == "2", "small expansion wild clusters " + identity)
         biomes = {n.tag: float(n.text) for n in plant.findall("plant/wildBiomes/*")}
-        check(biomes == mushroom["biomes"] and all(0 < weight <= .004 for weight in biomes.values()), "bounded configured expansion wild-selection weights " + identity)
-        for biome, weight in biomes.items(): wild_totals[biome] = round(wild_totals.get(biome, 0) + weight, 8)
+        check(biomes == mushroom["biomes"] and all(math.isfinite(weight) and 0 < weight <= .004 for weight in biomes.values()), "bounded configured expansion wild-selection weights " + identity)
+        for biome, weight in biomes.items(): wild_totals[biome] = wild_totals.get(biome, 0) + weight
         if use == "psychoactive":
             exposure = raw.find("modExtensions/li[@Class='RimMushrooms.MushroomExposureProperties']")
             check(exposure is not None and exposure.findtext("psychoactive") == "true" and float(exposure.findtext("doseUnitCount")) == 10, "raw and meal psychoactive exposure contract " + identity)
@@ -238,9 +240,9 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
         elif use == "poisonous":
             outcome = raw.find("ingestible/outcomeDoers/li[@Class='RimMushrooms.IngestionOutcomeDoer_MushroomPoison']")
             exposure = raw.find("modExtensions/li[@Class='RimMushrooms.MushroomExposureProperties']")
-            check(outcome is not None and outcome.findtext("hediff") == mushroom["poisonHediff"] and float(outcome.findtext("doseUnitCount")) == 1, "manual-only new poison ingestion link " + identity)
-            check(exposure is not None and exposure.findtext("poisonHediff") == mushroom["poisonHediff"] and float(exposure.findtext("doseUnitCount")) == 1 and exposure.find("psychoactive") is None, "poison provenance available without enabling ordinary cooking " + identity)
-            check(raw.find("thingCategories") is None and raw.find("statBases/Nutrition") is None and raw.find("ingestible/preferability") is None, "new poison cannot override automatic food exclusions " + identity)
+            check(outcome is not None and outcome.findtext("hediff") == mushroom["poisonHediff"] and float(outcome.findtext("doseUnitCount")) == 1, "new poison retains its direct ingestion effect " + identity)
+            check(exposure is not None and exposure.findtext("poisonHediff") == mushroom["poisonHediff"] and float(exposure.findtext("doseUnitCount")) == 1 and exposure.find("psychoactive") is None, "poison provenance remains available for ordinary cooking " + identity)
+            check(raw.find("thingCategories") is None and raw.find("statBases/Nutrition") is None and raw.find("ingestible/preferability") is None, "new poison inherits ordinary food nutrition without a child override " + identity)
         elif use == "food" and mushroom["mood"]:
             thought_name = "RMush_Ate" + identity
             thought = thought_by_name[thought_name]
@@ -256,7 +258,7 @@ def validate_expansion(defs, thoughts, docs, balance, assorted_choices):
             check(raw.find("ingestible/specialThoughtDirect") is None and raw.find("ingestible/outcomeDoers") is None and raw.find("modExtensions") is None, "plain food or paused resource has no unapproved medical effect " + identity)
         for name, definition in ((raw_name, raw), (plant_name, plant)):
             for suffix in ("label", "description"): expected_text["ThingDef"][name + "." + suffix] = definition.findtext(suffix)
-    check(wild_totals == config["newWildCommonalityTotals"], "aggregate expansion wild weights match configured diversity budgets")
+    check(set(wild_totals) == set(config["newWildCommonalityTotals"]) and all(math.isclose(total, config["newWildCommonalityTotals"][biome], rel_tol=0, abs_tol=1e-10) for biome, total in wild_totals.items()), "aggregate expansion wild weights match configured diversity budgets")
     for language in ("English", "Korean"):
         for def_type, expected in expected_text.items():
             entries = list(ET.parse(ROOT / "Languages" / language / "DefInjected" / def_type / "ExpansionMushrooms.xml").getroot())
@@ -299,11 +301,67 @@ def validate_psychoactive(docs, thoughts):
             expected = [identity + ".stages." + str(index) + "." + field for index in range(3) for field in ("label", "description")] if def_type == "ThoughtDef" else [identity + ".label", identity + ".description"] if def_type == "HediffDef" else [identity + ".label", identity + ".beginLetter", identity + ".recoveryMessage", identity + ".baseInspectLine"]
             check(all(key in translated for key in expected), "complete Korean psychoactive effect strings " + identity)
 
+def validate_v065_wild_policy(config, registry, cultivable_ids):
+    """Check the approved Spring-weight policy, independently of realized counts."""
+    policy = config["commonality"]
+    expected_cultivable = {"Button", "Shiitake", "Oyster", "KingOyster", "Enoki", "WoodEar", "Beech", "Maitake", "LionsMane", "Cauliflower", "PurpleBlewit"}
+    expected_biomes = {"TemperateForest", "TemperateSwamp", "BorealForest", "AridShrubland", "TropicalRainforest", "TropicalSwamp"}
+    check(set(policy) == {"baselineVersion", "baselineBiomes", "retention", "cultivableShareTarget", "cultivableSpecies", "calibrationSeason", "tropicalBiomes", "policy", "biomeAudit"}
+          and isinstance(policy["policy"], str) and policy["policy"].strip(), "exact documented v0.6.5 commonality policy schema")
+    check(policy["baselineVersion"] == "0.6.4" and policy["retention"] == .5 and policy["cultivableShareTarget"] == .2,
+          "v0.6.5 halves effective wild weight with a twenty-percent cultivable target relative to v0.6.4")
+    check(policy["calibrationSeason"] == "Spring" and len(policy["tropicalBiomes"]) == 2 and set(policy["tropicalBiomes"]) == {"TropicalRainforest", "TropicalSwamp"},
+          "Spring calibration and the two native tropical season exemptions are explicit")
+    check(len(policy["cultivableSpecies"]) == 11 and set(policy["cultivableSpecies"]) == cultivable_ids == expected_cultivable
+          and len(set(registry) - cultivable_ids) == 35, "wild policy uses the eleven cultivable species and remaining thirty-five, with wild enoki counted as Enoki")
+    baseline = policy["baselineBiomes"]
+    check(set(baseline) == set(registry) and len(registry) == 46, "wild policy baseline covers exactly all forty-six species")
+    check(set(policy["biomeAudit"]) == {b for weights in baseline.values() for b in weights} == expected_biomes,
+          "all six existing registered biomes have policy audits")
+    for identity, mushroom in registry.items():
+        check(set(mushroom["biomes"]) == set(baseline[identity]), "wild biome registration preserved " + identity)
+        check(all(math.isfinite(w) and 0 < w <= .01 for w in mushroom["biomes"].values()), "finite bounded wild weights " + identity)
+        check(all(math.isfinite(w) and w > 0 for w in baseline[identity].values()), "positive immutable baseline weights " + identity)
+    expected_fields = {"beforeRawTotal", "afterRawTotal", "beforeEffectiveTotal", "afterEffectiveTotal", "beforeCultivableEffective",
+                       "beforeWildOnlyEffective", "afterCultivableEffective", "afterWildOnlyEffective", "cultivableMultiplier",
+                       "wildOnlyMultiplier", "afterCultivableShare", "effectiveRetention"}
+    for biome, audit in policy["biomeAudit"].items():
+        check(set(audit) == expected_fields and all(isinstance(v, (int, float)) and math.isfinite(v) for v in audit.values()),
+              "complete finite v0.6.5 biome audit " + biome)
+        def factor(identity):
+            return 1 if biome in policy["tropicalBiomes"] else config["seasonProfiles"][config["species"][identity]["seasonProfile"]]["springFactor"]
+        before_c = sum(baseline[i].get(biome, 0) * factor(i) for i in registry if i in cultivable_ids)
+        before_o = sum(baseline[i].get(biome, 0) * factor(i) for i in registry if i not in cultivable_ids)
+        check(before_c > 0 and before_o > 0, "both groups have positive baseline effective weight " + biome)
+        total = before_c + before_o
+        a, b = .2 * .5 * total / before_c, .8 * .5 * total / before_o
+        for identity, mushroom in registry.items():
+            if biome in baseline[identity]:
+                expected = round(baseline[identity][biome] * (a if identity in cultivable_ids else b), 12)
+                check(math.isclose(mushroom["biomes"][biome], expected, rel_tol=0, abs_tol=1e-13),
+                      "audited group multiplier and twelve-decimal weight " + identity + "." + biome)
+        after_c = sum(registry[i]["biomes"].get(biome, 0) * factor(i) for i in registry if i in cultivable_ids)
+        after_o = sum(registry[i]["biomes"].get(biome, 0) * factor(i) for i in registry if i not in cultivable_ids)
+        observed = {"beforeRawTotal": sum(v.get(biome, 0) for v in baseline.values()),
+                    "afterRawTotal": sum(m["biomes"].get(biome, 0) for m in registry.values()),
+                    "beforeEffectiveTotal": total, "afterEffectiveTotal": after_c + after_o,
+                    "beforeCultivableEffective": before_c, "beforeWildOnlyEffective": before_o,
+                    "afterCultivableEffective": after_c, "afterWildOnlyEffective": after_o,
+                    "cultivableMultiplier": a, "wildOnlyMultiplier": b,
+                    "afterCultivableShare": after_c / (after_c + after_o), "effectiveRetention": (after_c + after_o) / total}
+        for key, value in observed.items():
+            check(math.isclose(audit[key], value, rel_tol=0, abs_tol=1e-10), "recomputed wild policy audit " + biome + "." + key)
+        check(math.isclose(after_c + after_o, total * .5, rel_tol=0, abs_tol=1e-10)
+              and math.isclose(after_c / (after_c + after_o), .2, rel_tol=0, abs_tol=1e-8),
+              "half of Spring effective total and twenty/eighty weight share " + biome)
+
+
 def validate_wild_ecology(defs, docs, balance, expansion, poison):
     """Validate balanced diversity, native glow and bounded opt-in wild features."""
     config = json.loads((ROOT / "Balance/wild_ecology.json").read_text(encoding="utf-8"))
     check(config["contentVersion"] == balance["version"] == expansion["contentVersion"], "ecology and species versions agree")
-    check(set(config["scope"]) == {"wild diversity", "native bioluminescence", "fairy rings", "seasonal wild emergence", "limited harvest-site mycelium regrowth"}, "ecology scope limited to five approved features")
+    check(set(config["scope"]) == {"wild diversity", "native bioluminescence", "fairy rings", "seasonal wild emergence", "limited harvest-site mycelium regrowth", "small irregular wild clusters", "six nearby-tree habitats", "host and wood habitats", "post-rain wild clusters", "expanded species habitats", "bounded nearby-tree assistance"}, "ecology scope matches approved staged features")
+    check(set(config["excluded"]) == {"cultivation facilities", "gathering quests", "medicinal effects", "host infection", "structural damage"}, "deferred effects and destructive substrate behavior remain excluded")
     species = balance["mushrooms"] + poison["mushrooms"] + expansion["mushrooms"]
     registry = {m["id"]: m for m in species}
     check(set(config["species"]) == set(registry) == set(config["commonality"]["baselineBiomes"]), "ecology covers forty-six existing species without new identities")
@@ -316,6 +374,10 @@ def validate_wild_ecology(defs, docs, balance, expansion, poison):
     runtime = runtime_path.read_text(encoding="utf-8")
     check(all(re.search(r"class\s+" + name + r"\b", runtime) for name in ("MushroomEcologyExtension", "WildMushroomEcologyDef", "MapComponent_WildMushrooms", "MushroomMycelium")), "ecology runtime implements settings, species profiles, map lifecycle and saved mycelium")
     settings_source = runtime.split("class WildMushroomEcologyDef", 1)[1].split("class MushroomMycelium", 1)[0]
+    species_source = runtime.split("class MushroomEcologyExtension", 1)[1].split("class WildMushroomEcologyDef", 1)[0]
+    check(re.search(r'public\s+string\s+habitat\s*=\s*"soil"\s*;', species_source) is not None
+          and re.search(r"public\s+int\s+habitatRadius\s*=\s*2\s*;", species_source) is not None,
+          "new habitat XML fields preserve default soil behavior and a bounded radius")
     for key, value in settings.items():
         check(re.search(r"public\s+" + ("int" if isinstance(value, int) else "float") + r"\s+" + key + r"\b", settings_source) is not None, "ecology XML field exists in runtime " + key)
     check(set(n.tag for n in settings_defs[0]) == {"defName"} | set(settings), "ecology XML has exactly the configured settings")
@@ -325,6 +387,41 @@ def validate_wild_ecology(defs, docs, balance, expansion, poison):
     check(1 <= settings["minWildCap"] <= settings["maxWildCap"] <= 1500 and 0 < settings["wildCapPer10000Cells"] <= 80, "bounded wild population cap preserves the measured v0.5 map population")
     check(0 < settings["ringChancePerCheck"] <= .02 and settings["ringCooldownDays"] >= 3 and 4 <= settings["ringMinCount"] <= settings["ringMaxCount"] <= settings["dailyExtraBudget"], "small rare rings cannot exceed the daily emergence budget")
     check(2 <= settings["ringMinRadius"] <= settings["ringMaxRadius"] <= 5 and 1 <= settings["maxPendingRegrowth"] <= 64 and settings["regrowthExpiryDays"] <= 10, "small ring footprints and bounded expiring mycelium records")
+    check((settings["smallClusterMinCount"], settings["smallClusterMaxCount"], settings["smallClusterSearchRadius"], settings["smallClusterCellRadius"]) == (2, 5, 18, 3), "bounded two-to-five irregular wild clump settings")
+    expected_events = {
+        "environmentChancePerCheck": .03, "environmentCooldownDays": 15.0,
+        "environmentMinCount": 1, "environmentMaxCount": 2,
+        "rainMinHours": 3.0, "rainWindowHours": 48.0,
+        "rainChancePerCheck": .035, "rainCooldownDays": 2.0,
+        "rainClusterMinCount": 2, "rainClusterMaxCount": 5,
+        "treeAssistChancePerCheck": .015, "treeAssistCooldownDays": 5.0,
+        "treeAssistMinCount": 2, "treeAssistMaxCount": 3,
+    }
+    check({key: settings[key] for key in expected_events} == expected_events,
+          "provisional environment, post-rain and tree-assistance schedules match the approved bounded draft")
+    check(settings["dailyExtraBudget"] == 8 and all(settings[key] <= settings["dailyExtraBudget"] for key in ("environmentMaxCount", "rainClusterMaxCount", "treeAssistMaxCount")),
+          "new event counts remain below the unchanged shared daily extra budget")
+    habitat_groups = {
+        "openField": {"LibertyCap", "GiantPuffball", "ShaggyInkcap"},
+        "forestEdge": {"PurpleBlewit", "Morel", "VeiledStinkhorn", "DevilsFingers", "BirdsNest"},
+        "treeBase": {"IndigoMilkcap", "BlackTruffle", "Reishi", "Sanghuang", "DeathCap", "DestroyingAngel", "DeadlyWebcap"},
+        "pineStump": {"Cauliflower"},
+        "stump": {"TurkeyTail", "SulfurTuft", "Tsukiyotake", "JackOLantern", "HoneyFungus", "GhostFungus", "YellowBrain", "Chlorophos"},
+        "insectHost": {"ZombieAntFungus", "Cordyceps"},
+        "mushroomHost": {"Lobster"}, "indoorSoil": {"YellowDapperling"}, "exposedWood": {"DryRot"},
+    }
+    expected_habitats = {identity: habitat for habitat, identities in habitat_groups.items() for identity in identities}
+    check({identity: value["habitat"] for identity, value in config["species"].items() if value.get("habitat", "soil") != "soil"} == expected_habitats,
+          "expanded habitat assignments match the approved species without changing other species")
+    allowed_habitats = {"soil", "openField", "forestEdge", "treeBase", "stump", "pineStump", "insectHost", "mushroomHost", "indoorSoil", "exposedWood", "wetMargin"}
+    check(all(value.get("habitat", "soil") in allowed_habitats for value in config["species"].values()), "all substrate rules have a supported runtime habitat name")
+    check(all(value.get("habitatRadius", 2) == 2 for value in config["species"].values()), "expanded habitat searches retain a small two-tile anchor radius")
+    habitats = {"Matsutake": "pine", "Chaga": "birch", "Porcini": "any", "BlackTrumpet": "any", "FlyAgaric": "any", "PantherCap": "any"}
+    check({identity: value["habitatTree"] for identity, value in config["species"].items() if value.get("habitatTree")} == habitats, "nearby-tree habitats restricted to the approved six species")
+    for identity in habitats:
+        value = config["species"][identity]
+        check(value["habitatTreeMinGrowth"] == .5 and value["habitatTreeRadius"] == 2, "half-grown tree within two tiles " + identity)
+        check(value["regrowthChance"] == 0, "no new premium or toxic mycelium farming " + identity)
     for name, profile in config["seasonProfiles"].items():
         check(set(profile) == {"springFactor", "summerFactor", "fallFactor", "winterFactor"} and all(0 < factor <= 3 for factor in profile.values()), "valid four-season emergence factors " + name)
         check(abs(sum(profile.values()) - 4) < 1e-7, "season profile retains an annual configured mean of one " + name)
@@ -344,10 +441,14 @@ def validate_wild_ecology(defs, docs, balance, expansion, poison):
         extension = plant.findall("modExtensions/li[@Class='RimMushrooms.MushroomEcologyExtension']")
         check(len(extension) == 1, "single per-species ecology extension " + name)
         expected = config["seasonProfiles"][value["seasonProfile"]] | {key: value[key] for key in ("ringEligible", "regrowthChance", "regrowthDelayDays")}
+        if value.get("habitat", "soil") != "soil":
+            expected |= {key: value[key] for key in ("habitat", "habitatRadius")}
+        if value.get("habitatTree"):
+            expected |= {key: value[key] for key in ("habitatTree", "habitatTreeMinGrowth", "habitatTreeRadius")}
         check({n.tag for n in extension[0]} == set(expected), "exact ecology extension fields " + name)
         for key, expected_value in expected.items():
             actual = extension[0].findtext(key)
-            check(actual == str(expected_value).lower() if isinstance(expected_value, bool) else actual is not None and float(actual) == expected_value, "configured ecology extension " + name + "." + key)
+            check(actual == str(expected_value).lower() if isinstance(expected_value, bool) else actual == expected_value if isinstance(expected_value, str) else actual is not None and float(actual) == expected_value, "configured ecology extension " + name + "." + key)
         check(0 <= value["regrowthChance"] <= .30 and 4 <= value["regrowthDelayDays"] <= 8, "delayed limited regrowth chance " + name)
         glowers = plant.findall("comps/li[@Class='CompProperties_Glower']")
         if "glow" in value:
@@ -357,36 +458,13 @@ def validate_wild_ecology(defs, docs, balance, expansion, poison):
             check(not glowers, "ordinary species emits no artificial light " + name)
         description = plant.findtext("description")
         check(description.count(" Wild ecology: ") == 1 and "Seasonal emergence does not change cultivated growth." in description, "wild-only ecology is described once " + name)
+        check("clumps of 2–5 plants" in description and ("Wild emergence requires suitable soil" in description) == bool(value.get("habitatTree")), "small clumps and applicable tree habitat described " + name)
+        check((" Wild habitat: " in description) == (value.get("habitat", "soil") != "soil"), "observable substrate habitat described only for assigned species " + name)
         ecology_count += 1
     check(ecology_count == 47 and glow_ids == {"GhostFungus", "Chlorophos"}, "forty-seven plants and exactly two real native glow species")
     check(by_name["RMush_PlantAssorted"].find("modExtensions/li[@Class='RimMushrooms.MushroomEcologyExtension']") is None, "assorted menu proxy does not acquire ecology")
-    baseline = config["commonality"]["baselineBiomes"]
-    old_ids = {m["id"] for m in poison["mushrooms"]} | {"Matsutake"}
-    for identity in old_ids:
-        check(registry[identity]["biomes"] == baseline[identity], "matsutake rarity and legacy poison weights preserved " + identity)
-    audits = config["commonality"]["biomeAudit"]
-    for biome, audit in audits.items():
-        before = round(sum(weights.get(biome, 0) for weights in baseline.values()), 8)
-        after = round(sum(m["biomes"].get(biome, 0) for m in species), 8)
-        old_expansion = round(sum(baseline[m["id"]].get(biome, 0) for m in expansion["mushrooms"]), 8)
-        new_expansion = round(sum(m["biomes"].get(biome, 0) for m in expansion["mushrooms"]), 8)
-        check(before == after == audit["beforeTotal"] == audit["afterTotal"], "exact total selection-weight budget preserved " + biome)
-        check(old_expansion == audit["beforeExpansionTotal"] and new_expansion == audit["afterExpansionTotal"] and new_expansion > old_expansion, "new-species diversity increase matches recorded audit " + biome)
-        check(abs(audit["beforeExpansionShare"] - old_expansion / before) < 1e-7 and abs(audit["afterExpansionShare"] - new_expansion / after) < 1e-7, "recorded before and after expansion shares " + biome)
-        for mushroom in balance["mushrooms"]:
-            if mushroom.get("wildOnly") or biome not in mushroom["biomes"]:
-                continue
-            ratio = mushroom["biomes"][biome] / baseline[mushroom["id"]][biome]
-            check(abs(ratio - audit["originalCultivatedMultiplier"]) < 3e-6 and 0.8 - 1e-7 <= ratio <= 1, "cultivated wild-weight reduction is bounded and audited " + mushroom["id"] + "." + biome)
-        for mushroom in expansion["mushrooms"]:
-            if biome not in mushroom["biomes"]:
-                continue
-            group = mushroom["group"]
-            factor = config["commonality"].get("biomeGroupOverrides", {}).get(biome, {}).get(group, config["commonality"]["expansionSpeciesOverrides"].get(mushroom["id"], config["commonality"]["expansionGroupMultipliers"][group]))
-            expected = round(baseline[mushroom["id"]][biome] * factor * audit["expansionMultiplierNormalization"], 8)
-            check(abs(mushroom["biomes"][biome] - expected) < 1.1e-8, "category-specific diversity scaling matches policy " + mushroom["id"] + "." + biome)
-    temperate = audits["TemperateForest"]
-    check(temperate["afterTotal"] == .1375 and abs(temperate["afterExpansionShare"] - .30) < 1e-6 and .8 <= temperate["originalCultivatedMultiplier"] <= .85, "temperate diversity rises from about eighteen to thirty percent at unchanged total weight")
+    cultivable_ids = {m["id"] for m in balance["mushrooms"] if not m.get("wildOnly", False)} | {m["id"] for m in expansion["mushrooms"] if m["cultivable"]}
+    validate_v065_wild_policy(config, registry, cultivable_ids)
     for mushroom in balance["mushrooms"]:
         name = "RMush_PlantEnokiWild" if mushroom["id"] == "Enoki" else "RMush_Plant" + mushroom["id"]
         check({n.tag: float(n.text) for n in by_name[name].findall("plant/wildBiomes/*")} == mushroom["biomes"], "configured original species wild weights generated " + name)
@@ -406,17 +484,25 @@ def main():
     docs = {p: ET.parse(p) for folder in ("About","Defs","Languages","Patches") for p in (ROOT / folder).rglob("*.xml")}
     balance = json.loads((ROOT / "Balance/mushrooms.json").read_text(encoding="utf-8"))
     preserved_balance = {
-        "Button": (6, 10, 0, 1.1, 20, 3), "Shiitake": (7, 12, 4, 1.5, 25, 5),
-        "Oyster": (5.5, 10, 0, 1, 15, 3), "KingOyster": (6.5, 11, 3, 1.4, 20, 5),
-        "Enoki": (5, 9, 2, 1, 12, 3), "WoodEar": (6.5, 10, 3, 1.3, 30, 7),
-        "Beech": (6.5, 12, 4, 1.3, 20, 5), "Maitake": (8, 14, 6, 1.8, 18, 7),
-        "LionsMane": (8, 12, 6, 2, 15, 7), "Matsutake": (12, 6, 0, 4, 12, 15),
+        "Button": (6, 10, 0, 1.1, 20, 3), "Shiitake": (6, 12, 4, 1.5, 25, 5),
+        "Oyster": (6, 10, 0, 1, 15, 3), "KingOyster": (6, 11, 3, 1.4, 20, 5),
+        "Enoki": (6, 9, 2, 1, 12, 3), "WoodEar": (6, 10, 3, 1.3, 30, 7),
+        "Beech": (6, 12, 4, 1.3, 20, 5), "Maitake": (6, 14, 6, 1.8, 18, 7),
+        "LionsMane": (6, 12, 6, 2, 15, 7), "Matsutake": (12, 6, 0, 4, 12, 15),
     }
-    check({m["id"]: tuple(m[field] for field in ("growDays", "yield", "skill", "value", "rotDays", "mood")) for m in balance["mushrooms"]} == preserved_balance, "original cultivation statistics preserved and matsutake mood updated")
+    check({m["id"]: tuple(m[field] for field in ("growDays", "yield", "skill", "value", "rotDays", "mood")) for m in balance["mushrooms"]} == preserved_balance, "six-day cultivation with preserved yields, skills, prices, shelf lives and moods")
     check(ET.parse(ROOT / "About/About.xml").findtext("modVersion") == balance["version"], "consistent release version")
     about = ET.parse(ROOT / "About/About.xml")
+    check([n.text for n in about.findall("supportedVersions/li")] == ["1.6", "1.7"], "explicit RimWorld 1.6 and 1.7 support")
     check(about.findtext("description") == "46종류의 버섯을 추가합니다.", "concise forty-six species mod description")
     check(about.findtext("packageId") == "izzypizzy.rimmushrooms", "existing save and workshop package identity preserved")
+    food_keys = {"RMush_SettingsAutoPoison", "RMush_SettingsAutoPoisonTip", "RMush_SettingsCookingPoison", "RMush_SettingsCookingPoisonTip", "RMush_SettingsFoodSettingsNote"}
+    for language in ("English", "Korean"):
+        entries = list(ET.parse(ROOT / "Languages" / language / "Keyed/FoodSettings.xml").getroot())
+        check(len(entries) == len({n.tag for n in entries}) == len(food_keys) and {n.tag for n in entries} == food_keys,
+              language + " complete unique food-settings option and behavior keys")
+        check(all(n.text and n.text.strip() and not re.findall(r"\{\d+\}", n.text) for n in entries),
+              language + " nonempty food-settings text without unexpected format placeholders")
     cover_record = json.loads((ROOT / "Art/Covers/v0.3.1/cover-v1-generation.json").read_text(encoding="utf-8"))
     cover = ROOT / "About/Preview.png"
     source_cover = ROOT / "Art/Covers/v0.3.1/MoreMushrooms-cover-v1.jpg"
@@ -439,6 +525,9 @@ def main():
     check(len(choices) == len(set(choices)) == 11 and set(choices) == {"RMush_Plant" + m["id"] for m in cultivable}, "assorted chooses exactly eleven cultivable species")
     check(int(assorted.findtext("plant/sowMinSkill")) == max(m["skill"] for m in cultivable) == 6, "assorted requires skill for all eleven species")
     check(abs(float(assorted.findtext("plant/growDays")) - sum(m["growDays"] for m in cultivable)/11) < 1e-8, "assorted menu average covers all eleven species")
+    check(len(cultivable) == 11 and all(m["growDays"] == 6 for m in cultivable) and float(assorted.findtext("plant/growDays")) == 6, "all eleven cultivars and assorted menu use six base growth days")
+    enoki_wild = next(n for n in defs if n.findtext("defName") == "RMush_PlantEnokiWild")
+    check(float(enoki_wild.findtext("plant/growDays")) == next(m for m in balance["mushrooms"] if m["id"] == "Enoki")["wildGrowDays"] == 5, "wild-only enoki keeps its original five-day growth period")
     check(assorted.find("plant/wildBiomes") is None, "assorted menu selection never spawns wild")
     check({n.text for n in assorted.findall("plant/sowTags/li")} == {"Ground", "Hydroponic"}, "assorted supports soil and hydroponics")
     icon = ROOT / "Textures/UI/Icons/AssortedMushrooms.png"

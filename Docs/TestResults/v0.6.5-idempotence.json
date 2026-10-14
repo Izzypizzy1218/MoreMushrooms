@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checkedFiles": 295,
+  "migrationAndGenerationIdempotent": true,
+  "meaning": "Repeated migration uses immutable v0.6.4 baseline and does not halve an already halved candidate. Generated runtime bytes and Balance JSON remain stable."
+}

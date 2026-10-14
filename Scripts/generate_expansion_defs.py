@@ -127,8 +127,8 @@ def generate():
             node(ingestible, "specialThoughtDirect", thought_id)
             node(ingestible, "specialThoughtAsIngredient", thought_id)
         elif use == "poisonous":
-            description_en += " Excluded from automatic eating and ordinary cooking. Can be eaten only by an explicit order. Poisoning is treated with ordinary doctor care, medicine and rest."
-            description_ko += " 자동 섭취와 일반 요리에서 제외되며, 직접 명령으로만 먹을 수 있습니다. 중독은 의사의 일반 치료와 약품, 휴식으로 관리합니다."
+            description_en += " Can be eaten raw or used in ordinary meals; cooking does not remove the poison. Automatic eating and cooking are allowed by default and can be restricted in the mod settings. Poisoning is treated with ordinary doctor care, medicine and rest."
+            description_ko += " 직접 먹거나 일반 요리에 사용할 수 있으며 요리해도 독성이 유지됩니다. 자동 섭취와 요리 사용은 기본 허용이며 모드 설정에서 금지할 수 있습니다. 중독은 의사의 일반 치료와 약품, 휴식으로 관리합니다."
         node(raw, "description", description_en)
         node(node(raw, "graphicData"), "texPath", "Things/Item/RimMushrooms/" + identifier)
         node(node(raw, "statBases"), "MarketValue", mushroom["value"])
@@ -168,7 +168,8 @@ def generate():
         node(node(plant, "statBases"), "Nutrition", 0)
         node(plant, "ingestible", Inherit="False", IsNull="True")
         properties = node(plant, "plant")
-        for field, value in (("purpose", "Food" if food else "Misc"), ("humanFoodPlant", food), ("growDays", mushroom["growDays"]), ("harvestYield", mushroom["yield"]), ("harvestedThingDef", raw_id), ("wildClusterWeight", 1), ("wildClusterRadius", 2)):
+        plant_food = mushroom.get("plantFood", food)
+        for field, value in (("purpose", "Food" if plant_food else "Misc"), ("humanFoodPlant", plant_food), ("growDays", mushroom["growDays"]), ("harvestYield", mushroom["yield"]), ("harvestedThingDef", raw_id), ("wildClusterWeight", 1), ("wildClusterRadius", 2)):
             node(properties, field, value)
         if mushroom["cultivable"]:
             tags = node(properties, "sowTags")

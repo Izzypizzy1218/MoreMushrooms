@@ -168,9 +168,9 @@ namespace RimMushroomsTests
                 Check(check, condition.stages[0].vomitMtbDays <= 0f && (id == "FlyAgaric"
                     ? condition.stages.All(s => s.vomitMtbDays <= 0f) : condition.stages.Skip(1).Any(s => s.vomitMtbDays > 0f)),
                     "native vomiting stages are absent in latency and species-appropriate after symptoms " + id);
-                Check(check, !raw.IsDrug && (id == "FlyAgaric" ? raw.IsNutritionGivingIngestible
-                    : raw.ingestible.preferability == FoodPreferability.NeverForNutrition && !raw.IsNutritionGivingIngestible),
-                    "fly agaric is normal food; other legacy toxins remain explicit-order resources " + id);
+                Check(check, !raw.IsDrug && raw.IsNutritionGivingIngestible
+                    && Mathf.Abs(raw.GetStatValueAbstract(StatDefOf.Nutrition) - .05f) < .00001f,
+                    "harvested poisonous mushrooms are ordinary nutrition-giving food by default " + id);
                 Check(check, !crop.plant.Sowable && !crop.plant.humanFoodPlant && !crop.IsNutritionGivingIngestible && !selection.varieties.Contains(crop),
                     "wild-only poison excluded from sowing, assorted crop and direct plant food " + id);
                 Check(check, crop.ingestible == null && !crop.IsIngestible,
@@ -184,8 +184,8 @@ namespace RimMushroomsTests
                 foreach (var recipeName in new[] { "CookMealSimple", "CookMealFine", "CookMealLavish", "MakePemmican", "MakeKibble" })
                 {
                     var recipe = DefDatabase<RecipeDef>.GetNamedSilentFail(recipeName);
-                    if (recipe != null) Check(check, recipe.ingredients.Any(i => i.filter.Allows(raw)) == (id == "FlyAgaric"),
-                        "ordinary recipe includes psychedelic fly agaric and excludes other toxins " + recipeName + " " + id);
+                    if (recipe != null) Check(check, recipe.ingredients.Any(i => i.filter.Allows(raw)),
+                        "ordinary recipe category accepts harvested poisonous fungus " + recipeName + " " + id);
                 }
                 var plant = (Plant)ThingMaker.MakeThing(crop);
                 plant.Growth = 1f;
@@ -218,10 +218,13 @@ namespace RimMushroomsTests
             eater.needs.food.CurLevelPercentage = 0.01f;
             var fixtures = new List<Thing>();
             var restrictions = map.listerThings.AllThings.Where(t => t.def.IsNutritionGivingIngestible).ToDictionary(t => t, t => t.IsForbidden(eater));
+            var settings = MoreMushroomsMod.Settings;
+            bool previous = settings.forbidAutomaticPoisonousMushrooms;
             try
             {
+                settings.forbidAutomaticPoisonousMushrooms = true;
                 foreach (var entry in restrictions) entry.Key.SetForbidden(true, false);
-                var excluded = Ids.Where(id => id != "FlyAgaric").ToArray();
+                var excluded = Ids.Concat(ExpansionIds).Where(id => id != "FlyAgaric" && id != "PantherCap").ToArray();
                 for (int i = 0; i < excluded.Length; i++)
                     fixtures.Add(GenSpawn.Spawn(Raw(excluded[i]), eater.Position + new IntVec3(i % 3, 0, 1 + i / 3), map));
                 ThingDef selectedDef;
@@ -229,7 +232,7 @@ namespace RimMushroomsTests
                 {
                     var found = FoodUtility.BestFoodSourceOnMap(eater, eater, desperate, out selectedDef,
                         allowPlant: false, allowCorpse: false, allowDispenserFull: false, allowDispenserEmpty: false, forceScanWholeMap: true);
-                    Check(check, found == null, "native map food search rejects nonpsychedelic poisons even with no safe food desperate=" + desperate);
+                    Check(check, found == null, "automatic poison restriction rejects all nine pure poisons even with no safe food desperate=" + desperate);
                 }
                 var safe = GenSpawn.Spawn(ThingDefOf.MealSimple, eater.Position + new IntVec3(4, 0, 0), map);
                 fixtures.Add(safe);
@@ -237,10 +240,11 @@ namespace RimMushroomsTests
                     allowPlant: false, allowCorpse: false, allowDispenserFull: false, allowDispenserEmpty: false, forceScanWholeMap: true);
                 Check(check, safeFound == safe, "native search finds a safe ordinary meal while nearer poisons are ignored");
                 foreach (var id in excluded) eater.inventory.innerContainer.TryAdd(ThingMaker.MakeThing(Raw(id)));
-                Check(check, FoodUtility.BestFoodInInventory(eater) == null, "native inventory food search excludes poison nutrition");
+                Check(check, FoodUtility.BestFoodInInventory(eater) == null, "automatic poison restriction excludes native inventory food search");
             }
             finally
             {
+                settings.forbidAutomaticPoisonousMushrooms = previous;
                 foreach (var thing in fixtures) if (!thing.Destroyed) thing.Destroy();
                 foreach (var entry in restrictions) if (!entry.Key.Destroyed) entry.Key.SetForbidden(entry.Value, false);
                 eater.Destroy();
@@ -269,7 +273,7 @@ namespace RimMushroomsTests
                         "native explicit-ingest eligibility checks pass " + poisonous.def.defName);
                     int amount = FoodUtility.GetMaxAmountToPickup(poisonous, eater,
                         FoodUtility.WillIngestStackCountOf(eater, poisonous.def, FoodUtility.NutritionForEater(eater, poisonous)));
-                    Check(check, amount == 1, "native explicit-ingest count resolves to one despite zero nutrition " + poisonous.def.defName);
+                    Check(check, amount == 1, "native explicit-ingest count retains one-mushroom poison portion " + poisonous.def.defName);
                     var ingest = JobMaker.MakeJob(JobDefOf.Ingest, poisonous);
                     ingest.count = amount;
                     eater.jobs.TryTakeOrderedJob(ingest, JobTag.Misc);

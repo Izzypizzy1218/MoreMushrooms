@@ -84,9 +84,15 @@ namespace RimMushroomsTests
             var bill = recipeDef.MakeNewBill(); bill.ingredientFilter.CopyAllowancesFrom(recipeDef.fixedIngredientFilter);
             foreach (string id in new[] { "LibertyCap", "Cubensis", "PantherCap" }) bill.ingredientFilter.SetAllow(ThingDef.Named("RMush_Raw" + id), false);
             bill.ingredientFilter.SetAllow(ThingDef.Named("RMush_RawFlyAgaric"), false);
+            string[] promoted = { "DestroyingAngel", "SulfurTuft", "Tsukiyotake", "PoisonFireCoral", "DeathCap", "DeadlyWebcap",
+                "JackOLantern", "YellowDapperling", "GhostFungus", "Reishi", "TurkeyTail", "Sanghuang", "Cordyceps", "Chaga",
+                "ZombieAntFungus", "DryRot", "DevilsFingers", "BirdsNest", "Chlorophos" };
+            foreach (string id in promoted) bill.ingredientFilter.SetAllow(ThingDef.Named("RMush_Raw" + id), false);
             MushroomFoodMigration.MigrateBill(bill);
             Check(check, new[] { "LibertyCap", "Cubensis", "PantherCap" }.All(id => bill.ingredientFilter.Allows(ThingDef.Named("RMush_Raw" + id)))
                 && bill.ingredientFilter.Allows(ThingDef.Named("RMush_RawFlyAgaric")), "old broad vegetable bill adds all four newly food-eligible species");
+            Check(check, promoted.All(id => !bill.ingredientFilter.Allows(ThingDef.Named("RMush_Raw" + id))),
+                "legacy expansion migration preserves all nineteen newly promoted ingredient exclusions");
             bill.ingredientFilter.SetAllow(ThingDef.Named("RMush_RawButton"), false);
             bill.ingredientFilter.SetAllow(ThingDef.Named("RMush_RawCubensis"), false);
             MushroomFoodMigration.MigrateBill(bill);

@@ -1,0 +1,17 @@
+﻿2026-10-11T00:15:13.8871017Z START: 14 installed native maps + one v0.6.4 weight-only TemperateForest A; no longitudinal simulation.
+2026-10-11T00:15:24.9171288Z CENSUS TemperateForest-A-installed-v065 colonies=171 cult11=36 other35=135 season=Spring
+2026-10-11T00:15:35.5736137Z CENSUS TemperateForest-B-installed-v065 colonies=185 cult11=40 other35=145 season=Spring
+2026-10-11T00:15:58.7386852Z CENSUS TemperateSwamp-A-installed-v065 colonies=164 cult11=33 other35=131 season=Spring
+2026-10-11T00:16:21.5174853Z CENSUS TemperateSwamp-B-installed-v065 colonies=175 cult11=39 other35=136 season=Spring
+2026-10-11T00:16:26.0543509Z CENSUS BorealForest-A-installed-v065 colonies=0 cult11=0 other35=0 season=Spring
+2026-10-11T00:16:30.5808096Z CENSUS BorealForest-B-installed-v065 colonies=0 cult11=0 other35=0 season=Spring
+2026-10-11T00:16:33.7690719Z CENSUS AridShrubland-A-installed-v065 colonies=3 cult11=0 other35=3 season=PermanentSummer
+2026-10-11T00:16:36.9959823Z CENSUS AridShrubland-B-installed-v065 colonies=2 cult11=1 other35=1 season=PermanentSummer
+2026-10-11T00:16:50.0507519Z CENSUS TropicalRainforest-A-installed-v065 colonies=59 cult11=11 other35=48 season=PermanentSummer
+2026-10-11T00:17:03.5164898Z CENSUS TropicalRainforest-B-installed-v065 colonies=66 cult11=11 other35=55 season=PermanentSummer
+2026-10-11T00:17:27.5348586Z CENSUS TropicalSwamp-A-installed-v065 colonies=23 cult11=4 other35=19 season=Spring
+2026-10-11T00:17:52.6282532Z CENSUS TropicalSwamp-B-installed-v065 colonies=27 cult11=5 other35=22 season=Spring
+2026-10-11T00:17:56.1566539Z CENSUS Tundra-A-installed-v065 colonies=0 cult11=0 other35=0 season=Spring
+2026-10-11T00:17:59.8628919Z CENSUS Tundra-B-installed-v065 colonies=0 cult11=0 other35=0 season=Spring
+2026-10-11T00:18:11.6862706Z CENSUS TemperateForest-A-v064-weight-only colonies=374 cult11=204 other35=170 season=Spring
+2026-10-11T00:18:12.2416627Z PASS: 15 untouched native initial censuses, paired TemperateForest terrain/roof/snow, restored definitions and original map. No fixed population expectation.

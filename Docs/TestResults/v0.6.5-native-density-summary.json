@@ -1,0 +1,210 @@
+{
+  "status": "PASS",
+  "initialMaps": 15,
+  "installedMaps": 14,
+  "pairedWeightProxyMaps": 1,
+  "metrics": [
+    {
+      "sample": "TemperateForest-A-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "TemperateForest",
+      "season": "Spring",
+      "mushroomColonies": 171,
+      "cultivable11Colonies": 36,
+      "other35Colonies": 135,
+      "detectedSpecies": 40
+    },
+    {
+      "sample": "TemperateForest-B-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "TemperateForest",
+      "season": "Spring",
+      "mushroomColonies": 185,
+      "cultivable11Colonies": 40,
+      "other35Colonies": 145,
+      "detectedSpecies": 40
+    },
+    {
+      "sample": "TemperateSwamp-A-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "TemperateSwamp",
+      "season": "Spring",
+      "mushroomColonies": 164,
+      "cultivable11Colonies": 33,
+      "other35Colonies": 131,
+      "detectedSpecies": 13
+    },
+    {
+      "sample": "TemperateSwamp-B-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "TemperateSwamp",
+      "season": "Spring",
+      "mushroomColonies": 175,
+      "cultivable11Colonies": 39,
+      "other35Colonies": 136,
+      "detectedSpecies": 13
+    },
+    {
+      "sample": "BorealForest-A-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "BorealForest",
+      "season": "Spring",
+      "mushroomColonies": 0,
+      "cultivable11Colonies": 0,
+      "other35Colonies": 0,
+      "detectedSpecies": 0
+    },
+    {
+      "sample": "BorealForest-B-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "BorealForest",
+      "season": "Spring",
+      "mushroomColonies": 0,
+      "cultivable11Colonies": 0,
+      "other35Colonies": 0,
+      "detectedSpecies": 0
+    },
+    {
+      "sample": "AridShrubland-A-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "AridShrubland",
+      "season": "PermanentSummer",
+      "mushroomColonies": 3,
+      "cultivable11Colonies": 0,
+      "other35Colonies": 3,
+      "detectedSpecies": 2
+    },
+    {
+      "sample": "AridShrubland-B-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "AridShrubland",
+      "season": "PermanentSummer",
+      "mushroomColonies": 2,
+      "cultivable11Colonies": 1,
+      "other35Colonies": 1,
+      "detectedSpecies": 2
+    },
+    {
+      "sample": "TropicalRainforest-A-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "TropicalRainforest",
+      "season": "PermanentSummer",
+      "mushroomColonies": 59,
+      "cultivable11Colonies": 11,
+      "other35Colonies": 48,
+      "detectedSpecies": 12
+    },
+    {
+      "sample": "TropicalRainforest-B-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "TropicalRainforest",
+      "season": "PermanentSummer",
+      "mushroomColonies": 66,
+      "cultivable11Colonies": 11,
+      "other35Colonies": 55,
+      "detectedSpecies": 12
+    },
+    {
+      "sample": "TropicalSwamp-A-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "TropicalSwamp",
+      "season": "Spring",
+      "mushroomColonies": 23,
+      "cultivable11Colonies": 4,
+      "other35Colonies": 19,
+      "detectedSpecies": 6
+    },
+    {
+      "sample": "TropicalSwamp-B-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "TropicalSwamp",
+      "season": "Spring",
+      "mushroomColonies": 27,
+      "cultivable11Colonies": 5,
+      "other35Colonies": 22,
+      "detectedSpecies": 6
+    },
+    {
+      "sample": "Tundra-A-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "Tundra",
+      "season": "Spring",
+      "mushroomColonies": 0,
+      "cultivable11Colonies": 0,
+      "other35Colonies": 0,
+      "detectedSpecies": 0
+    },
+    {
+      "sample": "Tundra-B-installed-v065",
+      "mode": "installed-v0.6.5",
+      "biome": "Tundra",
+      "season": "Spring",
+      "mushroomColonies": 0,
+      "cultivable11Colonies": 0,
+      "other35Colonies": 0,
+      "detectedSpecies": 0
+    },
+    {
+      "sample": "TemperateForest-A-v064-weight-only",
+      "mode": "v0.6.4-weight-only-proxy",
+      "biome": "TemperateForest",
+      "season": "Spring",
+      "mushroomColonies": 374,
+      "cultivable11Colonies": 204,
+      "other35Colonies": 170,
+      "detectedSpecies": 40
+    }
+  ],
+  "preserved": {
+    "userModsConfig": true,
+    "userPrefs": true,
+    "productionDll": true
+  },
+  "temperatePair": {
+    "before": 374,
+    "after": 171,
+    "cultivable11": 36,
+    "wildOnly35": 135,
+    "actualReductionPercent": 54.278074866310156,
+    "effectiveRetention": 0.5000002130243968,
+    "effectiveCultivableShare": 0.2
+  },
+  "sourceProfile": "C:\\Users\\집\\Desktop\\codex\\MoreMushrooms\\Tests\\Runtime\\20261011-091438-561-DensityReleaseQA-v065",
+  "longitudinalSimulation": false,
+  "userModCombinationRetested": false,
+  "githubUpdated": false,
+  "steamWorkshopUpdated": false,
+  "preGameStartupDiagnostics": [
+    {
+      "type": "Error",
+      "text": "Created WorkshopItem for 2590957984 but there is no folder for it.",
+      "stack": "UnityEngine.StackTraceUtility:ExtractStackTrace ()\nVerse.Log:Error (string)\nVerse.Steam.WorkshopItem:MakeFrom (Steamworks.PublishedFileId_t)\nVerse.Steam.WorkshopItems:RebuildItemsList ()\nVerse.Steam.WorkshopItems:.cctor ()\nVerse.ModLister:RebuildModList ()\nVerse.ModLister:.cctor ()\nVerse.ModsConfig:.cctor ()\nVerse.LoadedModManager:InitializeMods ()\nVerse.LoadedModManager:LoadAllActiveMods (bool)\nVerse.PlayDataLoader:DoPlayLoad ()\nVerse.PlayDataLoader:LoadAllPlayData (bool)\nVerse.Root/<>c:<Start>b__10_1 ()\nVerse.LongEventHandler:RunEventFromAnotherThread (System.Action)\nVerse.LongEventHandler/<>c:<UpdateCurrentAsynchronousEvent>b__28_0 ()\nSystem.Threading.ThreadHelper:ThreadStart_Context (object)\nSystem.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)\nSystem.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)\nSystem.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object)\nSystem.Threading.ThreadHelper:ThreadStart ()\n",
+      "repeats": 1,
+      "acceptedKnownStartupMetadata": true
+    },
+    {
+      "type": "Warning",
+      "text": "Mod RimTalk - Expand Toddlers dependency (cyanobot.toddlers) needs to have <downloadUrl> and/or <steamWorkshopUrl> specified.",
+      "stack": "UnityEngine.StackTraceUtility:ExtractStackTrace ()\nVerse.Log:Warning (string)\nVerse.ModMetaData/ModMetaDataInternal:ValidateDependencies (bool)\nVerse.ModMetaData:Init ()\nVerse.ModMetaData:.ctor (Verse.Steam.WorkshopItem)\nVerse.ModLister:RebuildModList ()\nVerse.ModLister:.cctor ()\nVerse.ModsConfig:.cctor ()\nVerse.LoadedModManager:InitializeMods ()\nVerse.LoadedModManager:LoadAllActiveMods (bool)\nVerse.PlayDataLoader:DoPlayLoad ()\nVerse.PlayDataLoader:LoadAllPlayData (bool)\nVerse.Root/<>c:<Start>b__10_1 ()\nVerse.LongEventHandler:RunEventFromAnotherThread (System.Action)\nVerse.LongEventHandler/<>c:<UpdateCurrentAsynchronousEvent>b__28_0 ()\nSystem.Threading.ThreadHelper:ThreadStart_Context (object)\nSystem.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)\nSystem.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)\nSystem.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object)\nSystem.Threading.ThreadHelper:ThreadStart ()\n",
+      "repeats": 1,
+      "acceptedKnownStartupMetadata": true
+    },
+    {
+      "type": "Warning",
+      "text": "Mod RimTalk - Expand Toddlers dependency (cj.rimtalk) needs to have <downloadUrl> and/or <steamWorkshopUrl> specified.",
+      "stack": "UnityEngine.StackTraceUtility:ExtractStackTrace ()\nVerse.Log:Warning (string)\nVerse.ModMetaData/ModMetaDataInternal:ValidateDependencies (bool)\nVerse.ModMetaData:Init ()\nVerse.ModMetaData:.ctor (Verse.Steam.WorkshopItem)\nVerse.ModLister:RebuildModList ()\nVerse.ModLister:.cctor ()\nVerse.ModsConfig:.cctor ()\nVerse.LoadedModManager:InitializeMods ()\nVerse.LoadedModManager:LoadAllActiveMods (bool)\nVerse.PlayDataLoader:DoPlayLoad ()\nVerse.PlayDataLoader:LoadAllPlayData (bool)\nVerse.Root/<>c:<Start>b__10_1 ()\nVerse.LongEventHandler:RunEventFromAnotherThread (System.Action)\nVerse.LongEventHandler/<>c:<UpdateCurrentAsynchronousEvent>b__28_0 ()\nSystem.Threading.ThreadHelper:ThreadStart_Context (object)\nSystem.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)\nSystem.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)\nSystem.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object)\nSystem.Threading.ThreadHelper:ThreadStart ()\n",
+      "repeats": 1,
+      "acceptedKnownStartupMetadata": true
+    }
+  ],
+  "startupExceptionPolicy": "Only three exact pre-GameComponent inactive-mod/workshop metadata messages may be separated. Their existing LogMessage object and repeat count must remain unchanged. All later Application error/exception/assert messages and all other Verse errors fail.",
+  "excludedStartupMetadataErrors": [
+    {
+      "type": "Error",
+      "text": "Created WorkshopItem for 2590957984 but there is no folder for it.",
+      "stack": "UnityEngine.StackTraceUtility:ExtractStackTrace ()\nVerse.Log:Error (string)\nVerse.Steam.WorkshopItem:MakeFrom (Steamworks.PublishedFileId_t)\nVerse.Steam.WorkshopItems:RebuildItemsList ()\nVerse.Steam.WorkshopItems:.cctor ()\nVerse.ModLister:RebuildModList ()\nVerse.ModLister:.cctor ()\nVerse.ModsConfig:.cctor ()\nVerse.LoadedModManager:InitializeMods ()\nVerse.LoadedModManager:LoadAllActiveMods (bool)\nVerse.PlayDataLoader:DoPlayLoad ()\nVerse.PlayDataLoader:LoadAllPlayData (bool)\nVerse.Root/<>c:<Start>b__10_1 ()\nVerse.LongEventHandler:RunEventFromAnotherThread (System.Action)\nVerse.LongEventHandler/<>c:<UpdateCurrentAsynchronousEvent>b__28_0 ()\nSystem.Threading.ThreadHelper:ThreadStart_Context (object)\nSystem.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)\nSystem.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)\nSystem.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object)\nSystem.Threading.ThreadHelper:ThreadStart ()\n",
+      "repeats": 1,
+      "acceptedKnownStartupMetadata": true
+    }
+  ]
+}

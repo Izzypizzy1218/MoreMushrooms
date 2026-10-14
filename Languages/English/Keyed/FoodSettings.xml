@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RMush_SettingsAutoPoison>Forbid automatic eating of poisonous mushrooms</RMush_SettingsAutoPoison>
+  <RMush_SettingsAutoPoisonTip>Stops automatic eating of the nine purely poisonous mushrooms and foods containing them. Explicit eating orders remain available. Does not include psychoactive mushrooms.</RMush_SettingsAutoPoisonTip>
+  <RMush_SettingsCookingPoison>Forbid poisonous mushrooms as cooking ingredients</RMush_SettingsCookingPoison>
+  <RMush_SettingsCookingPoisonTip>Excludes purely poisonous mushrooms from food recipes and nutrient paste feedstock. Existing food is not detoxified. Does not include psychoactive mushrooms.</RMush_SettingsCookingPoisonTip>
+  <RMush_SettingsFoodSettingsNote>Both restrictions are off by default. Your food policies and recipe ingredient filters still apply. After updating an old save, enable newly edible mushrooms in existing filters where needed. Poisoning still occurs when poisonous mushrooms are eaten or used in meals.</RMush_SettingsFoodSettingsNote>
+</LanguageData>

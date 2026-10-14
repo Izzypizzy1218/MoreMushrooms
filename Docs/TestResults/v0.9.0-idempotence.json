@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "generatedPayloadFiles": 292,
+  "differentFiles": 0,
+  "scope": "Repeated generation produces identical About/Defs/Languages/Textures/Credits/Patches bytes. No gameplay frequency test."
+}

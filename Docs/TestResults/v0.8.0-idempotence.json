@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "generatedPayloadFiles": 292,
+  "differentFiles": 0,
+  "scope": "Two consecutive generation passes produce identical About/Defs/Languages/Textures/Credits/Patches bytes."
+}

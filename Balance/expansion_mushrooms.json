@@ -1,23 +1,24 @@
 {
-  "contentVersion": "0.6.4",
+  "contentVersion": "0.9.2",
   "status": "Provisional game balance; not real-world health, edibility or cultivation advice.",
   "catalog": "Art/ExpansionMushrooms/v0.1.1-2026-10-09/species.json",
   "assetBase": "Art/ExpansionMushrooms/v0.1-2026-10-09",
   "notes": [
     "Only Cauliflower and PurpleBlewit are newly cultivable; both support Ground and Hydroponic.",
     "v0.6.1: assorted sowing includes Cauliflower and PurpleBlewit (eleven equal-probability cultivars). Premium five foods grant +15 mood for 48 hours; other cultivation and food statistics remain unchanged.",
-    "Medicinal fungi are nonfood collection/trade resources while medicinal gameplay is paused.",
-    "Host, rain, stump, tree and wooden-floor dependent generation remains deferred. v0.6.0 adds limited rings, seasonal emergence and harvest-site regrowth on ordinary fertile wild soil.",
+    "v0.7.0: the ten former medicinal and other fungal resources are edible cooking ingredients; medicinal gameplay and new special effects remain deferred.",
+    "v0.8.0 adds bounded irregular wild clumps and nearby-tree habitats for six species. Host, rain, stump and wooden-floor dependent generation remains deferred.",
     "Biomes and all growth/yield/price/rot values are game abstractions, not claims about exact natural habitats.",
-    "GhostFungus and Chlorophos retain their approved artwork and now emit a small amount of actual native light."
+    "GhostFungus and Chlorophos retain their approved artwork and now emit a small amount of actual native light.",
+    "v0.9.1: the eleven cultivable edible species, including Cauliflower and PurpleBlewit, now share six base growth days. Harvest yields and all other species statistics remain unchanged."
   ],
   "newWildCommonalityTotals": {
-    "AridShrubland": 0.00221,
-    "BorealForest": 0.01452,
-    "TemperateForest": 0.04124998,
-    "TemperateSwamp": 0.00629,
-    "TropicalRainforest": 0.0114,
-    "TropicalSwamp": 0.00463
+    "AridShrubland": 0.002267979413,
+    "BorealForest": 0.010906249265,
+    "TemperateForest": 0.03314487492,
+    "TemperateSwamp": 0.00700538386,
+    "TropicalRainforest": 0.01054925373,
+    "TropicalSwamp": 0.00668
   },
   "mushrooms": [
     {
@@ -27,7 +28,7 @@
       "scientific": "Sparassis latifolia",
       "group": "cultivated-edible",
       "use": "food",
-      "growDays": 7.5,
+      "growDays": 6,
       "yield": 13,
       "skill": 5,
       "value": 1.8,
@@ -35,8 +36,8 @@
       "mood": 7,
       "cultivable": true,
       "biomes": {
-        "TemperateForest": 0.00342742,
-        "BorealForest": 0.00255
+        "BorealForest": 0.000471208829,
+        "TemperateForest": 0.000602080523
       },
       "description": {
         "en": "A pale mushroom with densely folded, ruffled branches.",
@@ -68,8 +69,8 @@
       "mood": 5,
       "cultivable": true,
       "biomes": {
-        "TemperateForest": 0.00342742,
-        "TemperateSwamp": 0.0017
+        "TemperateForest": 0.000602080523,
+        "TemperateSwamp": 0.000233231435
       },
       "description": {
         "en": "A purple-toned mushroom with a firm cap and pleasant mushroom flavor.",
@@ -101,7 +102,7 @@
       "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00070565
+        "TemperateForest": 0.000655295043
       },
       "description": {
         "en": "A dark, knobbly woodland fungus prized for its strong and complex aroma.",
@@ -134,8 +135,8 @@
       "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00141129,
-        "BorealForest": 0.00112
+        "BorealForest": 0.000976378052,
+        "TemperateForest": 0.0013105808
       },
       "description": {
         "en": "A thick-stemmed mushroom with a rounded brown cap and rich, nutty flavor.",
@@ -168,8 +169,8 @@
       "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00141129,
-        "BorealForest": 0.00098
+        "BorealForest": 0.000854330796,
+        "TemperateForest": 0.0013105808
       },
       "description": {
         "en": "A spring woodland mushroom with a honeycomb-like cap and a gentle aroma.",
@@ -202,8 +203,8 @@
       "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00141129,
-        "TemperateSwamp": 0.0007
+        "TemperateForest": 0.0013105808,
+        "TemperateSwamp": 0.00103279013
       },
       "description": {
         "en": "A dark, thin-fleshed mushroom shaped like a small trumpet.",
@@ -236,8 +237,8 @@
       "mood": 3,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00257056,
-        "AridShrubland": 0.00136
+        "AridShrubland": 0.001395679639,
+        "TemperateForest": 0.002387125665
       },
       "description": {
         "en": "A large, pale puffball with a mild flavor. Harvested specimens are represented by their young food stage.",
@@ -269,8 +270,8 @@
       "mood": 5,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00171371,
-        "TropicalRainforest": 0.0008
+        "TemperateForest": 0.001591420206,
+        "TropicalRainforest": 0.000740298507
       },
       "description": {
         "en": "A blue woodland mushroom with zoned caps and a mild, sometimes slightly sharp taste.",
@@ -302,8 +303,8 @@
       "mood": 5,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.0024,
-        "TropicalSwamp": 0.0017
+        "TropicalRainforest": 0.002220895522,
+        "TropicalSwamp": 0.002452699784
       },
       "description": {
         "en": "A mushroom with a delicate white net and sponge-like edible tissue.",
@@ -335,8 +336,8 @@
       "mood": 3,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00257056,
-        "AridShrubland": 0.00085
+        "AridShrubland": 0.000872299774,
+        "TemperateForest": 0.002387125665
       },
       "description": {
         "en": "A mild mushroom with a shaggy white cap. Its fragile tissue spoils quickly.",
@@ -368,8 +369,8 @@
       "mood": 5,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00137097,
-        "BorealForest": 0.00085
+        "BorealForest": 0.000741001201,
+        "TemperateForest": 0.001273138022
       },
       "description": {
         "en": "An orange fungus growing over the fruit body of another mushroom, giving it firm flesh.",
@@ -392,7 +393,7 @@
       "ko": "영지버섯",
       "scientific": "Ganoderma sichuanense (syn. Ganoderma lingzhi)",
       "group": "medicinal",
-      "use": "resource",
+      "use": "food",
       "growDays": 10,
       "yield": 6,
       "skill": 0,
@@ -401,13 +402,14 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00191532,
-        "TropicalRainforest": 0.0018
+        "TemperateForest": 0.001778643381,
+        "TropicalRainforest": 0.001665671642
       },
       "description": {
-        "en": "A tough, bitter bracket fungus collected as a fungal resource and trade good.",
-        "ko": "단단하고 쓴맛이 나는 선반 모양 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
-      }
+        "en": "A tough, bitter bracket fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "단단하고 쓴맛이 나는 선반 모양 버섯입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "TurkeyTail",
@@ -415,7 +417,7 @@
       "ko": "구름버섯",
       "scientific": "Trametes versicolor",
       "group": "medicinal",
-      "use": "resource",
+      "use": "food",
       "growDays": 9,
       "yield": 8,
       "skill": 0,
@@ -424,14 +426,15 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00287298,
-        "BorealForest": 0.0019,
-        "TemperateSwamp": 0.00152
+        "BorealForest": 0.001656355625,
+        "TemperateForest": 0.002667965071,
+        "TemperateSwamp": 0.002242629997
       },
       "description": {
-        "en": "A thin, leathery bracket fungus with concentric colored bands. Collected as a fungal resource and trade good.",
-        "ko": "얇고 질긴 갓에 여러 색의 띠가 있는 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
-      }
+        "en": "A thin, leathery bracket fungus with concentric colored bands. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "얇고 질긴 갓에 여러 색의 띠가 있는 버섯입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "Sanghuang",
@@ -439,7 +442,7 @@
       "ko": "상황버섯",
       "scientific": "Sanghuangporus sanghuang",
       "group": "medicinal",
-      "use": "resource",
+      "use": "food",
       "growDays": 12,
       "yield": 4,
       "skill": 0,
@@ -448,12 +451,13 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00095766
+        "TemperateForest": 0.00088932169
       },
       "description": {
-        "en": "A hard, woody bracket fungus collected as a fungal resource and trade good.",
-        "ko": "단단한 목질의 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
-      }
+        "en": "A hard, woody bracket fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "단단한 목질의 버섯입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "Cordyceps",
@@ -461,7 +465,7 @@
       "ko": "동충하초",
       "scientific": "Cordyceps militaris",
       "group": "medicinal",
-      "use": "resource",
+      "use": "food",
       "growDays": 8,
       "yield": 6,
       "skill": 0,
@@ -470,13 +474,14 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00095766,
-        "BorealForest": 0.00095
+        "BorealForest": 0.000828177812,
+        "TemperateForest": 0.00088932169
       },
       "description": {
-        "en": "A small orange club-shaped fungus collected as a fungal resource and trade good.",
-        "ko": "주황색 곤봉 모양으로 자라는 작은 균류입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
-      }
+        "en": "A small orange club-shaped fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "주황색 곤봉 모양으로 자라는 작은 균류입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "Chaga",
@@ -484,7 +489,7 @@
       "ko": "차가버섯",
       "scientific": "Inonotus obliquus",
       "group": "medicinal",
-      "use": "resource",
+      "use": "food",
       "growDays": 12,
       "yield": 5,
       "skill": 0,
@@ -493,13 +498,14 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "BorealForest": 0.00152,
-        "TemperateForest": 0.00076613
+        "BorealForest": 0.0013250845,
+        "TemperateForest": 0.00071145921
       },
       "description": {
-        "en": "A dark, rough fungal growth collected as a fungal resource and trade good.",
-        "ko": "검고 거친 덩어리 모양의 버섯입니다. 식재료 대신 수집·거래용 버섯 자원으로 이용됩니다."
-      }
+        "en": "A dark, rough fungal growth. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "검고 거친 덩어리 모양의 버섯입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "LibertyCap",
@@ -516,8 +522,8 @@
       "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0016129,
-        "BorealForest": 0.00096
+        "BorealForest": 0.000836895474,
+        "TemperateForest": 0.001497803975
       },
       "description": {
         "en": "A small mushroom with a pointed cap and psychoactive effects.",
@@ -544,8 +550,8 @@
       "mood": 10,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00096774,
-        "BorealForest": 0.00072
+        "BorealForest": 0.000627671605,
+        "TemperateForest": 0.000898682385
       },
       "description": {
         "en": "A brown-capped mushroom with pale warts. Its psychoactive effects are accompanied by neurological poisoning, confusion and impaired consciousness. Severe exposure can lead to coma.",
@@ -573,8 +579,8 @@
       "mood": 15,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.00135,
-        "TropicalSwamp": 0.0008
+        "TropicalRainforest": 0.001249253731,
+        "TropicalSwamp": 0.001154211663
       },
       "description": {
         "en": "A pale-stemmed mushroom with a rounded golden-brown cap and psychoactive effects.",
@@ -601,7 +607,7 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00055444
+        "TemperateForest": 0.00051487534
       },
       "description": {
         "en": "Delayed poisoning can progress to severe liver injury. Symptoms briefly easing do not mean recovery; untreated poisoning can be fatal.",
@@ -624,8 +630,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.00091,
-        "TropicalSwamp": 0.0008
+        "TropicalRainforest": 0.000842089552,
+        "TropicalSwamp": 0.001154211663
       },
       "description": {
         "en": "A small yellow mushroom that causes gastrointestinal poisoning and temporary weakness.",
@@ -648,7 +654,7 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00129032
+        "TemperateForest": 0.00119824318
       },
       "description": {
         "en": "A bright orange mushroom that causes strong vomiting, pain and gastrointestinal poisoning.",
@@ -671,8 +677,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "BorealForest": 0.00066,
-        "TemperateForest": 0.00044355
+        "BorealForest": 0.000575365638,
+        "TemperateForest": 0.000411898415
       },
       "description": {
         "en": "Delayed poisoning can cause progressive kidney injury. Symptoms may appear long after eating; untreated poisoning can be fatal.",
@@ -686,7 +692,7 @@
       "ko": "개미동충하초",
       "scientific": "Ophiocordyceps unilateralis s.l.",
       "group": "host-environment",
-      "use": "resource",
+      "use": "food",
       "growDays": 10,
       "yield": 4,
       "skill": 0,
@@ -695,13 +701,14 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.0009,
-        "TropicalSwamp": 0.00057
+        "TropicalRainforest": 0.000832835821,
+        "TropicalSwamp": 0.00082237581
       },
       "description": {
-        "en": "A slender fungus associated with insect hosts. Collected as a specimen and trade good.",
-        "ko": "곤충 숙주와 연관된 가느다란 균류입니다. 표본 수집과 거래에 이용됩니다."
-      }
+        "en": "A slender fungus associated with insect hosts. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "곤충 숙주와 연관된 가느다란 균류입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "HoneyFungus",
@@ -718,9 +725,9 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00257056,
-        "BorealForest": 0.00136,
-        "TemperateSwamp": 0.00085
+        "BorealForest": 0.001185601921,
+        "TemperateForest": 0.002387125665,
+        "TemperateSwamp": 0.001254102301
       },
       "description": {
         "en": "A woodland mushroom with firm caps and tough stems. Used as an ordinary fungal ingredient.",
@@ -733,7 +740,7 @@
       "ko": "집버섯",
       "scientific": "Serpula lacrymans",
       "group": "host-environment",
-      "use": "resource",
+      "use": "food",
       "growDays": 10,
       "yield": 6,
       "skill": 0,
@@ -742,13 +749,14 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.0005746,
-        "TemperateSwamp": 0.00057
+        "TemperateForest": 0.000533596729,
+        "TemperateSwamp": 0.000840986249
       },
       "description": {
-        "en": "A broad, crust-like fungal growth collected as a specimen and trade good.",
-        "ko": "넓고 납작한 딱지 모양의 균류입니다. 표본 수집과 거래에 이용됩니다."
-      }
+        "en": "A broad, crust-like fungal growth. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "넓고 납작한 딱지 모양의 균류입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "GhostFungus",
@@ -765,8 +773,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00095766,
-        "TropicalRainforest": 0.0009
+        "TemperateForest": 0.00088932169,
+        "TropicalRainforest": 0.000832835821
       },
       "description": {
         "en": "A pale fan-capped fungus that causes vomiting, pain and gastrointestinal poisoning.",
@@ -789,8 +797,8 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00191532,
-        "TemperateSwamp": 0.00095
+        "TemperateForest": 0.001778643381,
+        "TemperateSwamp": 0.001401643748
       },
       "description": {
         "en": "A folded yellow fungus with a jelly-like texture and little distinctive flavor.",
@@ -803,7 +811,7 @@
       "ko": "악마손가락버섯",
       "scientific": "Clathrus archeri",
       "group": "ornamental-material",
-      "use": "resource",
+      "use": "food",
       "growDays": 7,
       "yield": 5,
       "skill": 0,
@@ -812,13 +820,14 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00095766,
-        "TropicalRainforest": 0.0009
+        "TemperateForest": 0.00088932169,
+        "TropicalRainforest": 0.000832835821
       },
       "description": {
-        "en": "A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Collected as a specimen and trade good.",
-        "ko": "붉은 손가락이 펼쳐진 듯한 모습과 강한 악취가 특징인 균류입니다. 표본 수집과 거래에 이용됩니다."
-      }
+        "en": "A striking red fungus shaped like spreading fingers, with a strong unpleasant odor. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "붉은 손가락이 펼쳐진 듯한 모습과 강한 악취가 특징인 균류입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "BirdsNest",
@@ -826,7 +835,7 @@
       "ko": "새둥지버섯",
       "scientific": "Cyathus striatus",
       "group": "ornamental-material",
-      "use": "resource",
+      "use": "food",
       "growDays": 6,
       "yield": 6,
       "skill": 0,
@@ -835,13 +844,14 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TemperateForest": 0.00191532,
-        "BorealForest": 0.00095
+        "BorealForest": 0.000828177812,
+        "TemperateForest": 0.001778643381
       },
       "description": {
-        "en": "A tiny cup-shaped fungus containing small spore packets. Collected as a specimen and trade good.",
-        "ko": "작은 컵 안에 포자 덩어리가 담긴 새둥지 모양 균류입니다. 표본 수집과 거래에 이용됩니다."
-      }
+        "en": "A tiny cup-shaped fungus containing small spore packets. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "작은 컵 안에 포자 덩어리가 담긴 새둥지 모양 균류입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     },
     {
       "id": "Chlorophos",
@@ -849,7 +859,7 @@
       "ko": "받침애주름버섯",
       "scientific": "Mycena chlorophos",
       "group": "ornamental-material",
-      "use": "resource",
+      "use": "food",
       "growDays": 6,
       "yield": 6,
       "skill": 0,
@@ -858,13 +868,14 @@
       "mood": 0,
       "cultivable": false,
       "biomes": {
-        "TropicalRainforest": 0.00144,
-        "TropicalSwamp": 0.00076
+        "TropicalRainforest": 0.001332537313,
+        "TropicalSwamp": 0.00109650108
       },
       "description": {
-        "en": "A tiny, pale-capped fungus collected as a specimen and trade good.",
-        "ko": "작고 연한 갓을 가진 균류입니다. 표본 수집과 거래에 이용됩니다."
-      }
+        "en": "A tiny, pale-capped fungus. Usable as food in this mod. Provides no special medicinal effect or mushroom taste mood bonus.",
+        "ko": "작고 연한 갓을 가진 균류입니다. 이 모드에서는 식재료로 사용할 수 있으며 별도의 약용 효과나 버섯 맛 무드 보너스는 없습니다."
+      },
+      "plantFood": false
     }
   ]
 }

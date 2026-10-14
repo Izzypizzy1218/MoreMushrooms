@@ -1,11 +1,11 @@
 {
-  "status": "v0.6.4 game balance. Fictional exposure units and disease courses; not real medical doses. Existing nonpsychedelic poisons remain excluded from normal cooking.",
+  "status": "v0.7.0 game balance. Fictional exposure units and disease courses; not real medical doses. Pure poisonous harvests are ordinary food by default; mod settings can block automatic eating and cooking independently.",
   "handoff": "Art/PoisonMushrooms/Handoff-2026-10-05",
   "common": {
     "stackLimit": 75,
     "lowMaxCount": 25,
     "mediumMaxCount": 50,
-    "nutrition": 0,
+    "nutrition": 0.05,
     "responseGraceHours": 24,
     "tendDurationHours": 6,
     "lethalSeverity": 0.95,
@@ -23,8 +23,8 @@
       "value": 0.8,
       "rotDays": 15,
       "biomes": {
-        "TemperateForest": 0.006,
-        "BorealForest": 0.005
+        "BorealForest": 0.004358830591,
+        "TemperateForest": 0.00557184193
       },
       "effectEn": "Confusion, drowsiness and impaired consciousness. High or repeated exposure can become life-threatening without sufficient care.",
       "effectKo": "혼란과 졸림, 의식 저하가 나타납니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다.",
@@ -94,8 +94,8 @@
       "value": 1,
       "rotDays": 15,
       "biomes": {
-        "TemperateForest": 0.002,
-        "BorealForest": 0.002
+        "BorealForest": 0.001743532237,
+        "TemperateForest": 0.001857280643
       },
       "effectEn": "Delayed gastrointestinal symptoms followed by progressive liver injury. Symptoms appearing to ease do not mean the poisoning has stopped. Untreated poisoning can be fatal.",
       "effectKo": "잠복 후 위장 증상이 나타나고 간 손상이 진행합니다. 겉으로 증상이 잦아들어도 중독은 계속되며, 치료가 늦으면 치명적일 수 있습니다.",
@@ -171,9 +171,9 @@
       "value": 0.6,
       "rotDays": 15,
       "biomes": {
-        "TemperateForest": 0.005,
-        "TemperateSwamp": 0.006,
-        "BorealForest": 0.003
+        "BorealForest": 0.002615298355,
+        "TemperateForest": 0.004643201608,
+        "TemperateSwamp": 0.008852486829
       },
       "effectEn": "Persistent gastroenteritis, vomiting, pain and weakness. High or repeated exposure can become life-threatening without sufficient care.",
       "effectKo": "위장염과 구토, 통증, 쇠약이 이어집니다. 고노출이나 반복 섭취는 충분한 치료가 없으면 생명을 위협할 수 있습니다.",
@@ -247,8 +247,8 @@
       "value": 0.8,
       "rotDays": 15,
       "biomes": {
-        "TemperateForest": 0.004,
-        "TemperateSwamp": 0.004
+        "TemperateForest": 0.003714561287,
+        "TemperateSwamp": 0.005901657886
       },
       "effectEn": "Rapid, strong vomiting followed by lingering enteritis and weakness. Severe intestinal symptoms, including intestinal bleeding symptoms, are represented in-game as pain and weakness rather than separate blood loss.",
       "effectKo": "빠르고 강한 구토 뒤 장염과 쇠약이 남습니다. 장 출혈을 포함한 중증 위장 증상은 게임에서 별도의 혈액 손실 대신 심한 장염, 통증과 쇠약으로 표현합니다.",
@@ -321,9 +321,9 @@
       "value": 1.2,
       "rotDays": 20,
       "biomes": {
-        "TemperateForest": 0.002,
-        "TemperateSwamp": 0.002,
-        "TropicalRainforest": 0.002
+        "TemperateForest": 0.001857280643,
+        "TemperateSwamp": 0.002950828943,
+        "TropicalRainforest": 0.001850746269
       },
       "effectEn": "Progressive systemic poisoning with vomiting, pain, weakness, reduced immunity gain and impaired consciousness. Untreated or late-treated poisoning can be fatal.",
       "effectKo": "구토와 통증으로 시작해 쇠약, 면역 획득 저하, 의식 저하가 진행하는 전신 중독입니다. 방치하거나 치료가 늦으면 치명적일 수 있습니다.",

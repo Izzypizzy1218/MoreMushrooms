@@ -1,0 +1,24 @@
+{
+  "userConfig": {
+    "matched": 48,
+    "changed": [],
+    "pass": true
+  },
+  "userSaveHashes": {
+    "matched": 45,
+    "changed": [],
+    "pass": true
+  },
+  "installed": {
+    "matched": 373,
+    "changed": [],
+    "pass": true
+  },
+  "releases": {
+    "matched": 68,
+    "changed": [],
+    "pass": true
+  },
+  "testHelpersRemoved": true,
+  "pass": true
+}

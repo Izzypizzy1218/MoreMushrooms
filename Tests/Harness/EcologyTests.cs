@@ -35,10 +35,21 @@ namespace RimMushroomsTests
 
         private static IntVec3 Center(Map map) => map.Center + new IntVec3(-55, 0, -55);
         private static ThingDef Crop(string id) => ThingDef.Named("RMush_Plant" + id);
+        private static bool BareSoilSpecies(ThingDef def)
+        {
+            var profile = def.GetModExtension<MushroomEcologyExtension>();
+            return profile != null && profile.habitatTree.NullOrEmpty()
+                && (profile.habitat.NullOrEmpty() || profile.habitat == "soil");
+        }
+        // These fixtures repeatedly clear their patch to bare soil. Since v0.9,
+        // the first native mushroom may require a stump, tree or other host.
+        // Exercise rings/regrowth with a species whose real habitat is retained;
+        // special host placement has its own explicit native fixtures.
         private static ThingDef NativeRegrowthCrop(Map map) => map.wildPlantSpawner.AllWildPlants.First(d =>
-            d.GetModExtension<MushroomEcologyExtension>()?.regrowthChance > 0f && WildMushroomEcology.NativeCommonality(d, map) > 0f);
+            BareSoilSpecies(d) && d.GetModExtension<MushroomEcologyExtension>()?.regrowthChance > 0f
+            && WildMushroomEcology.NativeCommonality(d, map) > 0f);
         private static ThingDef NativeRingCrop(Map map) => map.wildPlantSpawner.AllWildPlants.FirstOrDefault(d =>
-            d.GetModExtension<MushroomEcologyExtension>()?.ringEligible == true && WildMushroomEcology.NativeCommonality(d, map) > 0f
+            BareSoilSpecies(d) && d.GetModExtension<MushroomEcologyExtension>()?.ringEligible == true && WildMushroomEcology.NativeCommonality(d, map) > 0f
             && d.plant.harvestedThingDef.GetModExtension<MushroomExposureProperties>()?.poisonHediff == null
             && d.plant.harvestedThingDef.GetModExtension<MushroomExposureProperties>()?.psychoactive != true);
 
@@ -48,7 +59,11 @@ namespace RimMushroomsTests
             {
                 if (!cell.InBounds(map)) continue;
                 foreach (var thing in cell.GetThingList(map).ToArray())
-                    if (!(thing is Pawn)) thing.Destroy(DestroyMode.Vanish);
+                    if (!(thing is Pawn))
+                    {
+                        if (thing.def.destroyable) thing.Destroy(DestroyMode.Vanish);
+                        else thing.DeSpawn();
+                    }
                 map.terrainGrid.SetTerrain(cell, TerrainDefOf.Soil);
                 map.roofGrid.SetRoof(cell, null);
                 map.snowGrid.SetDepth(cell, 0f);
@@ -276,14 +291,15 @@ namespace RimMushroomsTests
             Check(check, choice != null, "installed native wild plant selection method is available");
             var ecology = map.GetComponent<MapComponent_WildMushrooms>();
             var settings = ecology.Settings;
-            var def = map.wildPlantSpawner.AllWildPlants.First(d => d.GetModExtension<MushroomEcologyExtension>() != null
-                && WildMushroomEcology.NativeCommonality(d, map) > 0f);
+            var cell = Center(map);
+            var def = map.wildPlantSpawner.AllWildPlants.FirstOrDefault(d => d.GetModExtension<MushroomEcologyExtension>() != null
+                && WildMushroomEcology.NativeCommonality(d, map) > 0f && ecology.IsEligibleCell(cell, d));
+            Check(check, def != null, "native wild selection fixture has an actually eligible local mushroom on its cleared soil");
             var profile = def.GetModExtension<MushroomEcologyExtension>();
             float oldSpring = profile.springFactor, oldSummer = profile.summerFactor,
                 oldFall = profile.fallFactor, oldWinter = profile.winterFactor;
             int oldMin = settings.minWildCap, oldMax = settings.maxWildCap;
             float oldPerArea = settings.wildCapPer10000Cells;
-            var cell = Center(map);
             Func<ThingDef, float> weight = plant => (float)choice.Invoke(map.wildPlantSpawner,
                 new object[] { plant, cell, new Dictionary<ThingDef, float>(), 10000f, 1f });
             try
@@ -291,6 +307,8 @@ namespace RimMushroomsTests
                 settings.minWildCap = settings.maxWildCap = 2000;
                 settings.wildCapPer10000Cells = 100f;
                 profile.springFactor = profile.summerFactor = profile.fallFactor = profile.winterFactor = 1f;
+                Check(check, ecology.IsEligibleCell(cell, def), "native weight fixture preserves actual habitat " + def.defName
+                    + " profile=" + profile.habitat + " commonality=" + WildMushroomEcology.NativeCommonality(def, map));
                 float baseline = weight(def);
                 float grass = weight(ThingDef.Named("Plant_Grass"));
                 Check(check, baseline > 0f && !float.IsNaN(baseline), "actual native selection assigns positive eligible mushroom weight");
@@ -338,13 +356,13 @@ namespace RimMushroomsTests
                 {
                     var originalBiomes = map.Biomes.ToArray();
                     int declaredRings = DefDatabase<ThingDef>.AllDefs.Count(d =>
-                        d.GetModExtension<MushroomEcologyExtension>()?.ringEligible == true
+                        BareSoilSpecies(d) && d.GetModExtension<MushroomEcologyExtension>()?.ringEligible == true
                         && d.plant.wildBiomes != null && d.plant.wildBiomes.Any(record =>
                             originalBiomes.Contains(record.biome) && record.commonality > 0f));
-                    // Boreal and tropical forests legitimately contain mushrooms
-                    // but none of the four ring species. Still fail if definitions
-                    // promise a local ring species and the native cache lost it.
-                    Check(check, declaredRings == 0, "random quicktest biome has no declared ring species biome=" + originalBiome.defName);
+                    // This repeatedly cleared ring fixture needs a bare-soil
+                    // species. Still fail if its biome promises one but the
+                    // native cache lost that species.
+                    Check(check, declaredRings == 0, "random quicktest biome has no declared bare-soil ring species biome=" + originalBiome.defName);
                     map.TileInfo.PrimaryBiome = BiomeDefOf.TemperateForest;
                     map.Biome.constantOutdoorTemperature = 21f;
                     map.wildPlantSpawner = new WildPlantSpawner(map);

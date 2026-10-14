@@ -1,0 +1,349 @@
+﻿v0.8.0 native habitat and count-preserving small-clump QA
+One untouched native TemperateForest 250x250 map, followed by explicitly controlled spawner fixtures.
+No past saves/logs, release archives, or player profile are used. No natural count is forced.
+Whole-map before/after is measured immediately around the production MapGenerated clumping pass.
+Native CheckSpawnWildPlantAt fixtures temporarily use a single selectable species; they test execution, not natural frequency.
+Native SpawnPlant calls must add exactly one plant, preserving every previous mushroom's ID/state/position.
+TRANSLATION active=Korean errors=36 RMushReferences=0; exact native messages are in translation-diagnostics.txt; attribution is not assumed.
+PASS natural single-biome TemperateForest tile available
+PASS natural map has one supported biome and no mutators
+PASS test hooks observed actual native MapGenerated pre/post
+PASS initial clumping preserves all map plant IDs/species/growth/age/health/sown/regrowth flags and total count
+PASS untouched native TemperateForest has mushrooms (no expected count forced)
+PASS native generation clumping leaves all non-mushrooms and cultivated plants in place
+PASS initial candidate count and movement events reconcile with distinct moved native IDs
+NATIVE MAP geographySeed=자치구 mapSeed=MoreMushrooms-Habitat-080-A tile=0,0 mapId=1 gameTick=1 absTick=917501 season=Summer before=179 after=179 allPlants=26473 candidates=179 moveEvents=116 distinctMoved=116 groups=54 annualTemp=11.36484 outdoorTemp=24.29213
+PASS initial actual native tree habitat RMush_PlantJackOLantern25824
+PASS initial actual native tree habitat RMush_PlantButton25827
+PASS initial actual native tree habitat RMush_PlantTsukiyotake25845
+PASS initial actual native tree habitat RMush_PlantPoisonFireCoral25865
+PASS initial actual native tree habitat RMush_PlantBeech25867
+PASS initial actual native tree habitat RMush_PlantGiantPuffball25869
+PASS initial actual native tree habitat RMush_PlantTurkeyTail25884
+PASS initial actual native tree habitat RMush_PlantSulfurTuft25897
+PASS initial actual native tree habitat RMush_PlantSanghuang25931
+PASS initial actual native tree habitat RMush_PlantLobster25935
+PASS initial actual native tree habitat RMush_PlantMaitake26017
+PASS initial actual native tree habitat RMush_PlantYellowBrain26021
+PASS initial actual native tree habitat RMush_PlantLibertyCap26059
+PASS initial actual native tree habitat RMush_PlantBirdsNest26070
+PASS initial actual native tree habitat RMush_PlantEnokiWild26100
+PASS initial actual native tree habitat RMush_PlantDestroyingAngel26191
+PASS initial actual native tree habitat RMush_PlantLionsMane26226
+PASS initial actual native tree habitat RMush_PlantOyster26237
+PASS initial actual native tree habitat RMush_PlantCordyceps26255
+PASS initial actual native tree habitat RMush_PlantDryRot26256
+PASS initial actual native tree habitat RMush_PlantIndigoMilkcap26266
+PASS initial actual native tree habitat RMush_PlantHoneyFungus26436
+PASS initial actual native tree habitat RMush_PlantCauliflower26461
+PASS initial actual native tree habitat RMush_PlantShiitake26699
+PASS initial actual native tree habitat RMush_PlantMorel26764
+PASS initial actual native tree habitat RMush_PlantGhostFungus26776
+PASS initial actual native tree habitat RMush_PlantDevilsFingers26838
+PASS initial actual native tree habitat RMush_PlantShaggyInkcap26854
+PASS initial actual native tree habitat RMush_PlantReishi26941
+PASS initial actual native tree habitat RMush_PlantSulfurTuft27106
+PASS initial actual native tree habitat RMush_PlantBlackTruffle27118
+PASS initial actual native tree habitat RMush_PlantKingOyster28019
+PASS initial actual native tree habitat RMush_PlantTsukiyotake28318
+PASS initial actual native tree habitat RMush_PlantDeadlyWebcap28714
+PASS initial actual native tree habitat RMush_PlantSulfurTuft29123
+PASS initial actual native tree habitat RMush_PlantTsukiyotake29457
+PASS initial actual native tree habitat RMush_PlantPurpleBlewit29861
+PASS initial actual native tree habitat RMush_PlantHoneyFungus30254
+PASS initial actual native tree habitat RMush_PlantDeathCap31389
+PASS initial actual native tree habitat RMush_PlantShiitake31549
+PASS initial actual native tree habitat RMush_PlantButton31621
+PASS initial actual native tree habitat RMush_PlantBeech31644
+PASS initial actual native tree habitat RMush_PlantOyster32130
+PASS initial actual native tree habitat RMush_PlantTurkeyTail32452
+PASS initial actual native tree habitat RMush_PlantYellowBrain32770
+PASS initial actual native tree habitat RMush_PlantBirdsNest32992
+PASS initial actual native tree habitat RMush_PlantTsukiyotake33503
+PASS initial actual native tree habitat RMush_PlantTurkeyTail33985
+PASS initial actual native tree habitat RMush_PlantMaitake34376
+PASS initial actual native tree habitat RMush_PlantShiitake35698
+PASS initial actual native tree habitat RMush_PlantGiantPuffball36886
+PASS initial actual native tree habitat RMush_PlantFlyAgaric40848
+PASS initial actual native tree habitat RMush_PlantPantherCap41611
+PASS initial actual native tree habitat RMush_PlantDestroyingAngel42352
+PASS initial actual native tree habitat RMush_PlantPorcini42594
+PASS initial actual native tree habitat RMush_PlantBlackTrumpet42766
+PASS initial actual native tree habitat RMush_PlantPorcini43158
+PASS initial actual native tree habitat RMush_PlantFlyAgaric45263
+PASS initial actual native tree habitat RMush_PlantShaggyInkcap46963
+PASS initial actual native tree habitat RMush_PlantFlyAgaric48104
+PASS initial actual native tree habitat RMush_PlantLibertyCap48858
+PASS initial actual native tree habitat RMush_PlantPoisonFireCoral52322
+PASS initial actual native tree habitat RMush_PlantGhostFungus52545
+PASS initial actual native tree habitat RMush_PlantBeech47344
+PASS initial actual native tree habitat RMush_PlantBeech50486
+PASS initial actual native tree habitat RMush_PlantBeech43288
+PASS initial actual native tree habitat RMush_PlantBeech39278
+PASS initial actual native tree habitat RMush_PlantBirdsNest49515
+PASS initial actual native tree habitat RMush_PlantBirdsNest31194
+PASS initial actual native tree habitat RMush_PlantBirdsNest52433
+PASS initial actual native tree habitat RMush_PlantBirdsNest48268
+PASS initial actual native tree habitat RMush_PlantBlackTruffle49720
+PASS initial actual native tree habitat RMush_PlantBlackTruffle39695
+PASS initial actual native tree habitat RMush_PlantBlackTrumpet43258
+PASS initial actual native tree habitat RMush_PlantBlackTrumpet49801
+PASS initial actual native tree habitat RMush_PlantButton44765
+PASS initial actual native tree habitat RMush_PlantButton31177
+PASS initial actual native tree habitat RMush_PlantButton46670
+PASS initial actual native tree habitat RMush_PlantButton42415
+PASS initial actual native tree habitat RMush_PlantButton40404
+PASS initial actual native tree habitat RMush_PlantCauliflower40972
+PASS initial actual native tree habitat RMush_PlantCordyceps35483
+PASS initial actual native tree habitat RMush_PlantCordyceps34723
+PASS initial actual native tree habitat RMush_PlantDeadlyWebcap51147
+PASS initial actual native tree habitat RMush_PlantDeathCap46410
+PASS initial actual native tree habitat RMush_PlantDestroyingAngel33247
+PASS initial actual native tree habitat RMush_PlantDestroyingAngel36451
+PASS initial actual native tree habitat RMush_PlantDestroyingAngel43904
+PASS initial actual native tree habitat RMush_PlantDestroyingAngel44954
+PASS initial actual native tree habitat RMush_PlantDevilsFingers47256
+PASS initial actual native tree habitat RMush_PlantDevilsFingers45102
+PASS initial actual native tree habitat RMush_PlantDryRot50511
+PASS initial actual native tree habitat RMush_PlantEnokiWild41453
+PASS initial actual native tree habitat RMush_PlantEnokiWild41563
+PASS initial actual native tree habitat RMush_PlantEnokiWild51282
+PASS initial actual native tree habitat RMush_PlantFlyAgaric52971
+PASS initial actual native tree habitat RMush_PlantFlyAgaric50503
+PASS initial actual native tree habitat RMush_PlantFlyAgaric47591
+PASS initial actual native tree habitat RMush_PlantFlyAgaric42640
+PASS initial actual native tree habitat RMush_PlantFlyAgaric50095
+PASS initial actual native tree habitat RMush_PlantFlyAgaric50129
+PASS initial actual native tree habitat RMush_PlantFlyAgaric50217
+PASS initial actual native tree habitat RMush_PlantGhostFungus36264
+PASS initial actual native tree habitat RMush_PlantGiantPuffball31077
+PASS initial actual native tree habitat RMush_PlantGiantPuffball30170
+PASS initial actual native tree habitat RMush_PlantGiantPuffball47406
+PASS initial actual native tree habitat RMush_PlantGiantPuffball41436
+PASS initial actual native tree habitat RMush_PlantGiantPuffball42438
+PASS initial actual native tree habitat RMush_PlantHoneyFungus28327
+PASS initial actual native tree habitat RMush_PlantHoneyFungus46758
+PASS initial actual native tree habitat RMush_PlantHoneyFungus44190
+PASS initial actual native tree habitat RMush_PlantHoneyFungus50283
+PASS initial actual native tree habitat RMush_PlantHoneyFungus41741
+PASS initial actual native tree habitat RMush_PlantIndigoMilkcap38406
+PASS initial actual native tree habitat RMush_PlantIndigoMilkcap31685
+PASS initial actual native tree habitat RMush_PlantIndigoMilkcap45305
+PASS initial actual native tree habitat RMush_PlantJackOLantern52081
+PASS initial actual native tree habitat RMush_PlantJackOLantern26622
+PASS initial actual native tree habitat RMush_PlantJackOLantern52933
+PASS initial actual native tree habitat RMush_PlantJackOLantern43400
+PASS initial actual native tree habitat RMush_PlantKingOyster40709
+PASS initial actual native tree habitat RMush_PlantKingOyster44756
+PASS initial actual native tree habitat RMush_PlantKingOyster32773
+PASS initial actual native tree habitat RMush_PlantLibertyCap43328
+PASS initial actual native tree habitat RMush_PlantLibertyCap31065
+PASS initial actual native tree habitat RMush_PlantLibertyCap50996
+PASS initial actual native tree habitat RMush_PlantLionsMane35375
+PASS initial actual native tree habitat RMush_PlantLionsMane43871
+PASS initial actual native tree habitat RMush_PlantLobster45804
+PASS initial actual native tree habitat RMush_PlantLobster43483
+PASS initial actual native tree habitat RMush_PlantMaitake46149
+PASS initial actual native tree habitat RMush_PlantMaitake51809
+PASS initial actual native tree habitat RMush_PlantMorel34958
+PASS initial actual native tree habitat RMush_PlantMorel52420
+PASS initial actual native tree habitat RMush_PlantMorel36189
+PASS initial actual native tree habitat RMush_PlantOyster34543
+PASS initial actual native tree habitat RMush_PlantOyster47379
+PASS initial actual native tree habitat RMush_PlantOyster34032
+PASS initial actual native tree habitat RMush_PlantPoisonFireCoral44218
+PASS initial actual native tree habitat RMush_PlantPoisonFireCoral38284
+PASS initial actual native tree habitat RMush_PlantPoisonFireCoral30065
+PASS initial actual native tree habitat RMush_PlantPoisonFireCoral39312
+PASS initial actual native tree habitat RMush_PlantPorcini49974
+PASS initial actual native tree habitat RMush_PlantPorcini43943
+PASS initial actual native tree habitat RMush_PlantPorcini52954
+PASS initial actual native tree habitat RMush_PlantPorcini52987
+PASS initial actual native tree habitat RMush_PlantReishi36561
+PASS initial actual native tree habitat RMush_PlantReishi28063
+PASS initial actual native tree habitat RMush_PlantReishi29786
+PASS initial actual native tree habitat RMush_PlantSanghuang31553
+PASS initial actual native tree habitat RMush_PlantSanghuang44964
+PASS initial actual native tree habitat RMush_PlantShaggyInkcap51159
+PASS initial actual native tree habitat RMush_PlantShaggyInkcap34706
+PASS initial actual native tree habitat RMush_PlantShaggyInkcap31725
+PASS initial actual native tree habitat RMush_PlantShaggyInkcap42672
+PASS initial actual native tree habitat RMush_PlantShaggyInkcap47905
+PASS initial actual native tree habitat RMush_PlantShiitake46831
+PASS initial actual native tree habitat RMush_PlantShiitake51615
+PASS initial actual native tree habitat RMush_PlantShiitake50677
+PASS initial actual native tree habitat RMush_PlantSulfurTuft31667
+PASS initial actual native tree habitat RMush_PlantSulfurTuft32213
+PASS initial actual native tree habitat RMush_PlantSulfurTuft37151
+PASS initial actual native tree habitat RMush_PlantSulfurTuft31714
+PASS initial actual native tree habitat RMush_PlantSulfurTuft42119
+PASS initial actual native tree habitat RMush_PlantSulfurTuft39843
+PASS initial actual native tree habitat RMush_PlantSulfurTuft40382
+PASS initial actual native tree habitat RMush_PlantTsukiyotake44089
+PASS initial actual native tree habitat RMush_PlantTsukiyotake40693
+PASS initial actual native tree habitat RMush_PlantTsukiyotake42241
+PASS initial actual native tree habitat RMush_PlantTsukiyotake30985
+PASS initial actual native tree habitat RMush_PlantTsukiyotake53009
+PASS initial actual native tree habitat RMush_PlantTurkeyTail51801
+PASS initial actual native tree habitat RMush_PlantTurkeyTail34955
+PASS initial actual native tree habitat RMush_PlantTurkeyTail47003
+PASS initial actual native tree habitat RMush_PlantTurkeyTail46513
+PASS initial actual native tree habitat RMush_PlantYellowBrain43637
+PASS initial actual native tree habitat RMush_PlantYellowBrain38367
+PASS initial actual native tree habitat RMush_PlantYellowBrain46115
+PASS initial actual native tree habitat RMush_PlantYellowBrain44916
+CLUSTERS initial singletons=9 pairs=17 compact3to5=37 nativeExcessOver5=0 nativeLines3plus=0; unavoidable singletons and pre-existing/blocked native shapes are diagnostics, not extra spawning
+FRAME 01-native-whole-map-clumps.png bytes=385060 camera=140
+PASS controlled fixture actual room temperature is 21C
+PASS declared tree rule RMush_PlantMatsutake
+PASS native choice rejects missing host RMush_PlantMatsutake
+PASS native choice rejects growth .49 host RMush_PlantMatsutake
+PASS native choice accepts growth .50 at distance2 RMush_PlantMatsutake
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantMatsutake attempts=1
+PASS actual selected mushroom respects host after relocation RMush_PlantMatsutake
+PASS diagonal Chebyshev distance2 accepted RMush_PlantMatsutake
+PASS distance3 rejected RMush_PlantMatsutake
+PASS wrong species/non-tree rejected RMush_PlantMatsutake
+PASS declared tree rule RMush_PlantChaga
+PASS native choice rejects missing host RMush_PlantChaga
+PASS native choice rejects growth .49 host RMush_PlantChaga
+PASS native choice accepts growth .50 at distance2 RMush_PlantChaga
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantChaga attempts=1
+PASS actual selected mushroom respects host after relocation RMush_PlantChaga
+PASS diagonal Chebyshev distance2 accepted RMush_PlantChaga
+PASS distance3 rejected RMush_PlantChaga
+PASS wrong species/non-tree rejected RMush_PlantChaga
+PASS declared tree rule RMush_PlantPorcini
+PASS native choice rejects missing host RMush_PlantPorcini
+PASS native choice rejects growth .49 host RMush_PlantPorcini
+PASS native choice accepts growth .50 at distance2 RMush_PlantPorcini
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantPorcini attempts=1
+PASS actual selected mushroom respects host after relocation RMush_PlantPorcini
+PASS diagonal Chebyshev distance2 accepted RMush_PlantPorcini
+PASS distance3 rejected RMush_PlantPorcini
+PASS wrong species/non-tree rejected RMush_PlantPorcini
+PASS any-tree rule accepts second native tree species RMush_PlantPorcini
+PASS declared tree rule RMush_PlantBlackTrumpet
+PASS native choice rejects missing host RMush_PlantBlackTrumpet
+PASS native choice rejects growth .49 host RMush_PlantBlackTrumpet
+PASS native choice accepts growth .50 at distance2 RMush_PlantBlackTrumpet
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantBlackTrumpet attempts=1
+PASS actual selected mushroom respects host after relocation RMush_PlantBlackTrumpet
+PASS diagonal Chebyshev distance2 accepted RMush_PlantBlackTrumpet
+PASS distance3 rejected RMush_PlantBlackTrumpet
+PASS wrong species/non-tree rejected RMush_PlantBlackTrumpet
+PASS any-tree rule accepts second native tree species RMush_PlantBlackTrumpet
+PASS declared tree rule RMush_PlantFlyAgaric
+PASS native choice rejects missing host RMush_PlantFlyAgaric
+PASS native choice rejects growth .49 host RMush_PlantFlyAgaric
+PASS native choice accepts growth .50 at distance2 RMush_PlantFlyAgaric
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantFlyAgaric attempts=1
+PASS actual selected mushroom respects host after relocation RMush_PlantFlyAgaric
+PASS diagonal Chebyshev distance2 accepted RMush_PlantFlyAgaric
+PASS distance3 rejected RMush_PlantFlyAgaric
+PASS wrong species/non-tree rejected RMush_PlantFlyAgaric
+PASS any-tree rule accepts second native tree species RMush_PlantFlyAgaric
+PASS declared tree rule RMush_PlantPantherCap
+PASS native choice rejects missing host RMush_PlantPantherCap
+PASS native choice rejects growth .49 host RMush_PlantPantherCap
+PASS native choice accepts growth .50 at distance2 RMush_PlantPantherCap
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantPantherCap attempts=1
+PASS actual selected mushroom respects host after relocation RMush_PlantPantherCap
+PASS diagonal Chebyshev distance2 accepted RMush_PlantPantherCap
+PASS distance3 rejected RMush_PlantPantherCap
+PASS wrong species/non-tree rejected RMush_PlantPantherCap
+PASS any-tree rule accepts second native tree species RMush_PlantPantherCap
+PASS native selection rejects roof despite correct host
+PASS native selection rejects zero fertility/floor despite host
+PASS native selection rejects player growing zone
+PASS native selection rejects hydroponics footprint
+PASS correct host and legal outdoor soil restored
+PASS small-clump configured bounds2..5
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=0
+PASS ongoing same-species connected component is bounded index=0
+PASS small cluster remains compact index=0
+PASS cultivated control is never moved index=0
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=1
+PASS ongoing same-species connected component is bounded index=1
+PASS small cluster remains compact index=1
+PASS cultivated control is never moved index=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=2
+PASS ongoing same-species connected component is bounded index=2
+PASS ongoing 3..5 cluster is irregular/non-collinear index=2
+PASS small cluster remains compact index=2
+PASS cultivated control is never moved index=2
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=3
+PASS ongoing same-species connected component is bounded index=3
+PASS ongoing 3..5 cluster is irregular/non-collinear index=3
+PASS small cluster remains compact index=3
+PASS cultivated control is never moved index=3
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=4
+PASS ongoing same-species connected component is bounded index=4
+PASS ongoing 3..5 cluster is irregular/non-collinear index=4
+PASS small cluster remains compact index=4
+PASS cultivated control is never moved index=4
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=5
+PASS ongoing same-species connected component is bounded index=5
+PASS small cluster remains compact index=5
+PASS cultivated control is never moved index=5
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=6
+PASS ongoing same-species connected component is bounded index=6
+PASS small cluster remains compact index=6
+PASS cultivated control is never moved index=6
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=7
+PASS ongoing same-species connected component is bounded index=7
+PASS ongoing 3..5 cluster is irregular/non-collinear index=7
+PASS small cluster remains compact index=7
+PASS cultivated control is never moved index=7
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=8
+PASS ongoing same-species connected component is bounded index=8
+PASS ongoing 3..5 cluster is irregular/non-collinear index=8
+PASS small cluster remains compact index=8
+PASS cultivated control is never moved index=8
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS ongoing native spawn moves only its new plant index=9
+PASS ongoing same-species connected component is bounded index=9
+PASS ongoing 3..5 cluster is irregular/non-collinear index=9
+PASS small cluster remains compact index=9
+PASS cultivated control is never moved index=9
+PASS actual native ongoing path formed at least one irregular3..5 clump
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantMatsutake attempts=1
+PASS explicit temporary Matsutake regrowth fixture queued through normal chance path
+PASS removing host invalidates saved mycelium habitat
+PASS host-removed ticket is discarded without spawning
+PASS temporary regrowth balance restored
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantMatsutake attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantMatsutake attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantMatsutake attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantMatsutake attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantMatsutake attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantChaga attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantChaga attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantChaga attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantChaga attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantChaga attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+PASS actual CheckSpawnWildPlantAt -> SpawnPlant adds exactly one RMush_PlantButton attempts=1
+CLUSTERS fixture singletons=9 pairs=20 compact3to5=37 nativeExcessOver5=0 nativeLines3plus=0; fixture cases are checked individually; natural pre-existing/blocked exceptional shapes are retained
+FIXTURE nativeSpawnCalls=211 redirectedCalls=20; no manual mushroom GenSpawn; direct fixture spawning is restricted to host trees, obstructions and one marked cultivated control.
+FRAME 02-native-spawner-host-fixture.png bytes=903461 camera=20
+SAVE snapshot mushrooms=181 pending=0 random=1280166991 ring=180001 budget=0
+PASS native isolated save exists
+PASS native save/load preserves every mushroom ID/position/growth/age/health/sown/regrowth flag exactly
+PASS native save/load preserves ecology tickets/random/schedule/budget
+PASS load does not rerun initial generation clumping; unsaved diagnostic counters reset
+PASS empty initial candidate set cannot rearrange loaded existing plants
+CLUSTERS loaded singletons=9 pairs=20 compact3to5=37 nativeExcessOver5=0 nativeLines3plus=0; fixture cases are checked individually; natural pre-existing/blocked exceptional shapes are retained
+RESULT PASS checks=332 nativeMushroomSpawnCalls=211 redirectedCalls=20

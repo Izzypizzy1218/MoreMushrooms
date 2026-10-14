@@ -207,7 +207,14 @@ namespace RimMushrooms
             if (bill?.ingredientFilter == null || !anchors.All(n => bill.ingredientFilter.Allows(ThingDef.Named(n)))) return;
             // Fly agaric was outside every native food recipe in v0.4; its old
             // absence on an otherwise broad food bill was an automatic restriction.
-            var legacy = new HashSet<string>(anchors.Concat(new[] { "RMush_RawDestroyingAngel", "RMush_RawSulfurTuft", "RMush_RawTsukiyotake", "RMush_RawPoisonFireCoral" }));
+            // v0.7 changes existing resources into food, rather than adding new
+            // definitions. Their old filter choices must not be overwritten.
+            var legacy = new HashSet<string>(anchors.Concat(new[] {
+                "RMush_RawDestroyingAngel", "RMush_RawSulfurTuft", "RMush_RawTsukiyotake", "RMush_RawPoisonFireCoral",
+                "RMush_RawDeathCap", "RMush_RawDeadlyWebcap", "RMush_RawJackOLantern", "RMush_RawYellowDapperling", "RMush_RawGhostFungus",
+                "RMush_RawReishi", "RMush_RawTurkeyTail", "RMush_RawSanghuang", "RMush_RawCordyceps", "RMush_RawChaga",
+                "RMush_RawZombieAntFungus", "RMush_RawDryRot", "RMush_RawDevilsFingers", "RMush_RawBirdsNest", "RMush_RawChlorophos"
+            }));
             foreach (var food in DefDatabase<ThingDef>.AllDefs.Where(d => d.defName.StartsWith("RMush_Raw") && !legacy.Contains(d.defName) && d.IsNutritionGivingIngestible))
                 if (bill.recipe.fixedIngredientFilter.Allows(food)) bill.ingredientFilter.SetAllow(food, true);
         }

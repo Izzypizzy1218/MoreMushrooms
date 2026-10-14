@@ -42,6 +42,30 @@ namespace RimMushroomsTests
         private string Texture(Thing thing) => thing.Graphic.MatSingleFor(thing).mainTexture.name;
         private int Count(Map map, ThingDef def) => map.listerThings.ThingsOfDef(def).Where(t => t.Position.DistanceTo(workCell) < 5f).Sum(t => t.stackCount);
 
+        private static void ClearFixtureCell(Map map, IntVec3 cell)
+        {
+            foreach (var thing in cell.GetThingList(map).ToList())
+            {
+                if (thing is Pawn) continue;
+                if (thing.def.destroyable) thing.Destroy(DestroyMode.Vanish);
+                else thing.DeSpawn();
+            }
+        }
+
+        private void IsolateAmbientPawns(Map map, string stage)
+        {
+            // AllPawnsSpawned omits dormant pawns. Unfogging can activate an
+            // ancient mech group, even with storyteller incidents disabled.
+            var pawns = map.listerThings.AllThings.OfType<Pawn>()
+                .Where(p => p.Spawned && p.Faction != Faction.OfPlayer
+                    && (p.RaceProps.Animal || p.HostileTo(Faction.OfPlayer))).ToList();
+            if (pawns.Count == 0) return;
+            File.AppendAllText(Report, "DIAGNOSTIC ambient isolation " + stage + ": "
+                + string.Join(";", pawns.Select(p => p.ThingID + ":" + p.def.defName + ":active=" + p.mindState.Active))
+                + Environment.NewLine);
+            foreach (var pawn in pawns) pawn.Destroy(DestroyMode.Vanish);
+        }
+
 
         public override void GameComponentUpdate()
         {
@@ -61,6 +85,7 @@ namespace RimMushroomsTests
                 }
                 if ((phase >= 1 && phase <= 3) || (phase >= 10 && phase <= 13) || phase == 20)
                 {
+                    if (phase != 20) IsolateAmbientPawns(map, "crop phase " + phase);
                     foreach (var window in Find.WindowStack.Windows.ToList()) window.Close(false);
                     Find.TickManager.CurTimeSpeed = TimeSpeed.Superfast;
                     if (farmer != null)
@@ -82,6 +107,7 @@ namespace RimMushroomsTests
                     MoodTests.VerifyLoaded(map, Check, legacyLoaded);
                     AssortedTests.VerifyLoaded(map, Check);
                     HydroponicsTests.VerifyLoaded(map, Check);
+                    FoodSettingsTests.VerifyLoaded(map, Check, legacyLoaded);
                     if (!legacyLoaded)
                     {
                         EcologyTests.VerifyLoaded(map, false, Check);
@@ -201,6 +227,7 @@ namespace RimMushroomsTests
                     ExpansionTests.Run(farmer, map, Check);
                     MealExposureTests.Run(farmer, map, Check);
                     NutrientPasteTests.Run(farmer, map, Check);
+                    FoodSettingsTests.Run(map, Check);
                     MoodTests.Run(farmer, Check);
                     phase = 4; frames = 0;
                     return;
@@ -320,13 +347,28 @@ namespace RimMushroomsTests
             Check(plants.Count(d => d.plant.Sowable) == 11, "exactly eleven cultivable varieties");
             Check(!DefDatabase<ThingDef>.GetNamed("RMush_PlantMatsutake").plant.Sowable, "matsutake wild only");
             foreach (var d in plants.Concat(items)) Check(!d.ConfigErrors().Any(), "resolved def config " + d.defName);
-            farmer = map.mapPawns.FreeColonistsSpawned.First(p => !p.Downed && p.DevelopmentalStage == DevelopmentalStage.Adult
-                && !p.WorkTypeIsDisabled(WorkTypeDefOf.Growing));
+            Predicate<Pawn> canDoFixtureWork = p => !p.Downed && p.DevelopmentalStage == DevelopmentalStage.Adult
+                && !p.WorkTypeIsDisabled(WorkTypeDefOf.Growing) && !p.skills.GetSkill(SkillDefOf.Cooking).TotallyDisabled
+                && !StatDefOf.FoodPoisonChance.Worker.IsDisabledFor(p);
+            farmer = map.mapPawns.FreeColonistsSpawned.FirstOrDefault(p => canDoFixtureWork(p));
+            if (farmer == null)
+            {
+                // Random quicktest backgrounds can make every starter unable to
+                // cook. Generate a capable fixture worker instead of calling a
+                // native cooking recipe with a permanently disabled cook stat.
+                var request = new PawnGenerationRequest(PawnKindDefOf.Colonist, Faction.OfPlayer,
+                    context: PawnGenerationContext.PlayerStarter, forceGenerateNewPawn: true,
+                    validatorPreGear: canDoFixtureWork);
+                farmer = PawnGenerator.GeneratePawn(request);
+                GenSpawn.Spawn(farmer, map.Center, map);
+            }
+            Check(canDoFixtureWork(farmer), "crop/meal fixture worker is natively capable of growing and cooking with enabled food-poison chance stat");
             File.AppendAllText(Report, "DIAGNOSTIC initial worker " + WorkerDiagnostic(map) + Environment.NewLine);
             // Prepare a healthy adult before any test cases, as the medical suites
             // do for their patients. Never heal or revive this worker during jobs.
             foreach (var condition in farmer.health.hediffSet.hediffs.ToList()) farmer.health.RemoveHediff(condition);
-            var ambientWildlife = map.mapPawns.AllPawnsSpawned
+            Find.Storyteller.incidentQueue.Clear();
+            var ambientWildlife = map.listerThings.AllThings.OfType<Pawn>()
                 .Where(p => p.Faction != Faction.OfPlayer && (p.RaceProps.Animal || p.HostileTo(Faction.OfPlayer))).ToList();
             File.AppendAllText(Report, "DIAGNOSTIC initial ambient wildlife isolated: "
                 + string.Join(";", ambientWildlife.Select(p => p.ThingID + ":" + p.def.defName + ":job=" + p.CurJob)) + Environment.NewLine);
@@ -348,20 +390,21 @@ namespace RimMushroomsTests
             farmer.skills.GetSkill(SkillDefOf.Plants).Level = 20;
             farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
             workCell = map.Center + new IntVec3(18, 0, 0);
-            // GenSpawn permits a plant to overlap a natural rock. Clear through
-            // the lowest actual artwork row, so native compressed rocks cannot
-            // correctly wipe an invalid fixture overlap when the save is loaded.
+            // Clear the full artwork patch, including non-destroyable geysers.
+            // Otherwise native loading can wipe a plant that the fixture has
+            // invalidly placed inside an existing building's occupied cells.
             int lowestArtworkRow = Math.Min(-17, 14 - (plants.Length - 1) * 3) - 1;
             var fixtureRect = new CellRect(map.Center.x - 23, map.Center.z + lowestArtworkRow, 47, 18 - lowestArtworkRow);
             Check(fixtureRect.Cells.All(c => c.InBounds(map)), "crop/art fixture clearing covers every initial growth row");
             foreach (var cell in fixtureRect)
             {
-                foreach (var thing in cell.GetThingList(map).ToList())
-                    if (!(thing is Pawn)) thing.Destroy(DestroyMode.Vanish);
+                ClearFixtureCell(map, cell);
                 map.terrainGrid.SetTerrain(cell, TerrainDefOf.Soil);
                 map.roofGrid.SetRoof(cell, null);
                 map.snowGrid.SetDepth(cell, 0f);
             }
+            Check(fixtureRect.Cells.All(c => c.GetThingList(map).All(t => t is Pawn)),
+                "crop/art fixture removes every preexisting object including non-destroyable buildings");
             // Fresh quicktest maps can still cache freezing room temperatures
             // after the biome target is set. Establish the declared warm fixture
             // in the actual native rooms intersecting only this cleared patch.
@@ -373,6 +416,7 @@ namespace RimMushroomsTests
                 "crop/art fixture native room temperatures are 21C; rooms=" + fixtureRooms.Length
                 + " previousWorkCell=" + previousWorkTemperature + " actualWorkCell=" + workCell.GetTemperature(map));
             map.fogGrid.ClearAllFog();
+            IsolateAmbientPawns(map, "after clearing and unfogging");
             farmer.Position = workCell + IntVec3.West;
             farmer.Notify_Teleported();
             growingZone = new Zone_Growing(map.zoneManager);
@@ -430,6 +474,9 @@ namespace RimMushroomsTests
             LightTests.Run(map, workCell, Check);
             AssortedTests.Run(map, farmer, growingZone, workCell, Check);
             EcologyTests.Verify(map, farmer, Check);
+#if RIMWORLD17
+            Port17CompatibilityTests.Run(map, Check);
+#endif
             Check(true, "fixture created; live sow/harvest jobs starting");
         }
 
@@ -440,12 +487,12 @@ namespace RimMushroomsTests
                 growingZone.SetPlantDefToGrow(AssortedTests.Selection);
                 growingZone.allowCut = false;
                 farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
-                foreach (var t in workCell.GetThingList(map).ToList()) if (!(t is Pawn)) t.Destroy(DestroyMode.Vanish);
+                ClearFixtureCell(map, workCell);
                 phase = 10;
                 return;
             }
             var d = plants[cropIndex];
-            foreach (var t in workCell.GetThingList(map).ToList()) if (!(t is Pawn)) t.Destroy(DestroyMode.Vanish);
+            ClearFixtureCell(map, workCell);
             farmer.jobs.EndCurrentJob(JobCondition.InterruptForced, startNewJob: false);
             farmer.pather.StopDead();
             farmer.Position = workCell + IntVec3.West;

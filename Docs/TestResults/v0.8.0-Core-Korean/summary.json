@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "profile": "Tests/Runtime/20261011-201854-HabitatCluster-Core-Korean",
+  "gameVersion": "1.6.4871 rev591",
+  "checks": 332,
+  "nativeMushroomSpawnCalls": 211,
+  "redirectedCalls": 20,
+  "saveLoad": "fresh isolated v0.8.0 save: every mushroom ID/position/growth/age/health/sown/regrowth state preserved; no initial clumping on load",
+  "nondefaultPersistenceLimitation": "Core fixture ecology tickets/budget were zero; DLC run adds nondefault coverage.",
+  "acceptedVisuals": [
+    "02-native-spawner-host-fixture.png"
+  ],
+  "excludedVisuals": {
+    "01-native-whole-map-clumps.png": "Manual review rejected clipped/corrupt wide camera frame; no abundance/appearance claim uses it."
+  },
+  "productionDllSha256": "e28d88b06203395c7c9eaa6b4fcadd292ddc64d9e2ba166f6c65b56f7a84ddee",
+  "files": {
+    "02-native-spawner-host-fixture.png": "dfd2436c41bece2124b9ac55407c6fd366a0bf5425c1b1fb889774650f3bd766",
+    "fixture-clusters.csv": "70c51b53040642ddc472aa11b61ec17e43dd3368b9db040acf2e2bfc334fcfe5",
+    "habitat-cluster-report.txt": "a6ea5e804130aa67007d0b281e5009d94c3585222af0adabd78e4b5f8cf11852",
+    "initial-clusters.csv": "c45cda3961ba4fd3b7b5cdb2abadad14e8832032094ada04baa7553c37a60764",
+    "initial-plants.csv": "283139e57424f71567aa3453ec5efca93cc6e683090e9eb0b6abad3dab14f226",
+    "initial-species.csv": "99f9c2de64e48f5cedb7c54b3f64a46d02c4fa8209c12076f1c63cafe99fba62",
+    "loaded-clusters.csv": "8a3a8b889ea9f89690133a99cbc688ec59c75f92923a8ba23cf657b276b60cab",
+    "ready.flag": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "translation-diagnostics.txt": "a69e59661d3bfba7ccd0c72f79f84afb73bfe85bcd54d80db976bde53eb9a8e4"
+  }
+}

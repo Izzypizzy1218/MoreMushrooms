@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": 730,
+  "preservationChecks": 402,
+  "policyChecks": 328,
+  "baseline": "v0.6.4",
+  "candidate": "v0.6.5",
+  "runtimeFiles": 291,
+  "existingDefinitions": 139,
+  "unchangedProductionSourceAndProjectFiles": 10,
+  "immutableReleaseArchives": 36,
+  "scope": "Existing wildBiomes and their derived Balance policy/audit metadata, release versions and status text only. Production sources/DLL, identities, artwork, mood, growth, yield, food/poison values, descriptions, ecology settings and season/ring/regrowth profiles preserved. Weight arithmetic is not a realized population measurement.",
+  "differences": []
+}

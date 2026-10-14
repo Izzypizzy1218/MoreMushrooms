@@ -47,7 +47,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantButton</defName>
     <label>button mushroom cluster</label>
-    <description>A cluster of button mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. May form a small fairy ring. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 6 days if the site remains suitable.</description>
+    <description>A cluster of button mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. May form a small fairy ring. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 6 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Button</texPath>
     </graphicData>
@@ -61,8 +61,8 @@
       </sowTags>
       <sowMinSkill>0</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.01468683</TemperateForest>
-        <TemperateSwamp>0.01131319</TemperateSwamp>
+        <TemperateForest>0.00257997394</TemperateForest>
+        <TemperateSwamp>0.001552112668</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -80,12 +80,12 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantShiitake</defName>
     <label>shiitake mushroom cluster</label>
-    <description>A cluster of shiitake mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
+    <description>A cluster of shiitake mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Shiitake</texPath>
     </graphicData>
     <plant>
-      <growDays>7</growDays>
+      <growDays>6</growDays>
       <harvestYield>12</harvestYield>
       <harvestedThingDef>RMush_RawShiitake</harvestedThingDef>
       <sowTags>
@@ -94,8 +94,8 @@
       </sowTags>
       <sowMinSkill>4</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.00979121</TemperateForest>
-        <TropicalRainforest>0.0064</TropicalRainforest>
+        <TemperateForest>0.00171998087</TemperateForest>
+        <TropicalRainforest>0.001127272727</TropicalRainforest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -113,12 +113,12 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantOyster</defName>
     <label>oyster mushroom cluster</label>
-    <description>A cluster of oyster mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
+    <description>A cluster of oyster mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Oyster</texPath>
     </graphicData>
     <plant>
-      <growDays>5.5</growDays>
+      <growDays>6</growDays>
       <harvestYield>10</harvestYield>
       <harvestedThingDef>RMush_RawOyster</harvestedThingDef>
       <sowTags>
@@ -127,9 +127,9 @@
       </sowTags>
       <sowMinSkill>0</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.01305495</TemperateForest>
-        <TemperateSwamp>0.01508426</TemperateSwamp>
-        <BorealForest>0.00834706</BorealForest>
+        <BorealForest>0.001542434654</BorealForest>
+        <TemperateForest>0.002293308412</TemperateForest>
+        <TemperateSwamp>0.002069484472</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -147,12 +147,12 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantKingOyster</defName>
     <label>king oyster mushroom cluster</label>
-    <description>A cluster of king oyster mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of king oyster mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/KingOyster</texPath>
     </graphicData>
     <plant>
-      <growDays>6.5</growDays>
+      <growDays>6</growDays>
       <harvestYield>11</harvestYield>
       <harvestedThingDef>RMush_RawKingOyster</harvestedThingDef>
       <sowTags>
@@ -161,8 +161,8 @@
       </sowTags>
       <sowMinSkill>3</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.00815934</TemperateForest>
-        <AridShrubland>0.00409</AridShrubland>
+        <AridShrubland>0.00067024377</AridShrubland>
+        <TemperateForest>0.001433317099</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -180,12 +180,12 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantEnoki</defName>
     <label>enoki mushroom cluster</label>
-    <description>A cluster of enoki mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
+    <description>A cluster of enoki mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Enoki</texPath>
     </graphicData>
     <plant>
-      <growDays>5</growDays>
+      <growDays>6</growDays>
       <harvestYield>9</harvestYield>
       <harvestedThingDef>RMush_RawEnoki</harvestedThingDef>
       <sowTags>
@@ -209,7 +209,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantEnokiWild</defName>
     <label>wild enoki mushroom cluster</label>
-    <description>A cluster of enoki mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Gathered in the wild; cannot be sown. Its golden caps differ from cultivated white enoki. Both yield the same enoki ingredient. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
+    <description>A cluster of enoki mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Gathered in the wild; cannot be sown. Its golden caps differ from cultivated white enoki. Both yield the same enoki ingredient. Wild ecology: Most likely to appear during cool spring and autumn weather. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/EnokiWild</texPath>
     </graphicData>
@@ -218,8 +218,8 @@
       <harvestYield>9</harvestYield>
       <harvestedThingDef>RMush_RawEnoki</harvestedThingDef>
       <wildBiomes>
-        <TemperateForest>0.00979121</TemperateForest>
-        <BorealForest>0.01001647</BorealForest>
+        <BorealForest>0.001850921216</BorealForest>
+        <TemperateForest>0.00171998087</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -237,12 +237,12 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantWoodEar</defName>
     <label>wood ear mushroom cluster</label>
-    <description>A cluster of wood ear mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during summer. Seasonal emergence does not change cultivated growth. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
+    <description>A cluster of wood ear mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during summer. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/WoodEar</texPath>
     </graphicData>
     <plant>
-      <growDays>6.5</growDays>
+      <growDays>6</growDays>
       <harvestYield>10</harvestYield>
       <harvestedThingDef>RMush_RawWoodEar</harvestedThingDef>
       <sowTags>
@@ -251,9 +251,9 @@
       </sowTags>
       <sowMinSkill>3</sowMinSkill>
       <wildBiomes>
-        <TemperateSwamp>0.01319872</TemperateSwamp>
-        <TropicalRainforest>0.0112</TropicalRainforest>
-        <TropicalSwamp>0.01207</TropicalSwamp>
+        <TemperateSwamp>0.001810797884</TemperateSwamp>
+        <TropicalRainforest>0.001972727273</TropicalRainforest>
+        <TropicalSwamp>0.00167</TropicalSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -271,12 +271,12 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantBeech</defName>
     <label>beech mushroom cluster</label>
-    <description>A cluster of beech mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
+    <description>A cluster of beech mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. After harvesting in the wild, surviving mycelium has a 30% chance to fruit again after 4 days if the site remains suitable.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Beech</texPath>
     </graphicData>
     <plant>
-      <growDays>6.5</growDays>
+      <growDays>6</growDays>
       <harvestYield>12</harvestYield>
       <harvestedThingDef>RMush_RawBeech</harvestedThingDef>
       <sowTags>
@@ -285,8 +285,8 @@
       </sowTags>
       <sowMinSkill>4</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.00815934</TemperateForest>
-        <BorealForest>0.00667765</BorealForest>
+        <BorealForest>0.001233948093</BorealForest>
+        <TemperateForest>0.001433317099</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -304,12 +304,12 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantMaitake</defName>
     <label>maitake mushroom cluster</label>
-    <description>A cluster of maitake mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of maitake mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Maitake</texPath>
     </graphicData>
     <plant>
-      <growDays>8</growDays>
+      <growDays>6</growDays>
       <harvestYield>14</harvestYield>
       <harvestedThingDef>RMush_RawMaitake</harvestedThingDef>
       <sowTags>
@@ -318,8 +318,8 @@
       </sowTags>
       <sowMinSkill>6</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.00571154</TemperateForest>
-        <TemperateSwamp>0.00471383</TemperateSwamp>
+        <TemperateForest>0.001003322321</TemperateForest>
+        <TemperateSwamp>0.000646713726</TemperateSwamp>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -337,12 +337,12 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantLionsMane</defName>
     <label>lion's mane mushroom cluster</label>
-    <description>A cluster of lion's mane mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of lion's mane mushrooms grown in soil or a hydroponics basin. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Can be sown in growing zones and hydroponics basins. Native hydroponics power requirements apply. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/LionsMane</texPath>
     </graphicData>
     <plant>
-      <growDays>8</growDays>
+      <growDays>6</growDays>
       <harvestYield>12</harvestYield>
       <harvestedThingDef>RMush_RawLionsMane</harvestedThingDef>
       <sowTags>
@@ -351,8 +351,8 @@
       </sowTags>
       <sowMinSkill>6</sowMinSkill>
       <wildBiomes>
-        <TemperateForest>0.0048956</TemperateForest>
-        <BorealForest>0.00333882</BorealForest>
+        <BorealForest>0.000616973123</BorealForest>
+        <TemperateForest>0.000859989557</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -370,7 +370,7 @@
   <ThingDef ParentName="RMush_PlantBase">
     <defName>RMush_PlantMatsutake</defName>
     <label>matsutake mushroom cluster</label>
-    <description>A cluster of matsutake mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Gathered in the wild; cannot be sown. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth.</description>
+    <description>A cluster of matsutake mushrooms growing directly from the soil. Grows normally at light levels up to 50%. Stronger light gradually slows growth to 50% speed at 100% light, without direct light damage. Gathered in the wild; cannot be sown. Wild ecology: Most likely to appear during autumn. Seasonal emergence does not change cultivated growth. New wild emergence may form irregular same-species clumps of 2–5 plants where space permits. Wild emergence requires suitable soil within 2 tiles of a pine at least 50% grown.</description>
     <graphicData>
       <texPath>Things/Plant/RimMushrooms/Matsutake</texPath>
     </graphicData>
@@ -379,8 +379,8 @@
       <harvestYield>6</harvestYield>
       <harvestedThingDef>RMush_RawMatsutake</harvestedThingDef>
       <wildBiomes>
-        <TemperateForest>0.003</TemperateForest>
-        <BorealForest>0.004</BorealForest>
+        <BorealForest>0.003487064473</BorealForest>
+        <TemperateForest>0.002785920965</TemperateForest>
       </wildBiomes>
     </plant>
     <modExtensions>
@@ -392,6 +392,9 @@
         <ringEligible>false</ringEligible>
         <regrowthChance>0</regrowthChance>
         <regrowthDelayDays>8.0</regrowthDelayDays>
+        <habitatTree>pine</habitatTree>
+        <habitatTreeMinGrowth>0.5</habitatTreeMinGrowth>
+        <habitatTreeRadius>2</habitatTreeRadius>
       </li>
     </modExtensions>
   </ThingDef>
@@ -426,7 +429,7 @@
         <li>Hydroponic</li>
       </sowTags>
       <sowMinSkill>6</sowMinSkill>
-      <growDays>6.590909090909091</growDays>
+      <growDays>6.0</growDays>
       <harvestYield>0</harvestYield>
       <harvestTag>None</harvestTag>
     </plant>

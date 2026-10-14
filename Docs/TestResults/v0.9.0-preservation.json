@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 615,
+  "baselineVersion": "0.8.0",
+  "existingDefinitions": 139,
+  "gameplayPayloadFiles": 293,
+  "priorReleaseFilesPreserved": 72,
+  "userConfigFilesPreserved": 48,
+  "userSaveFilesPreserved": 45,
+  "scope": "Only bounded special-emergence settings, assigned habitats, ecology descriptions, version, wild ecology and scoped wood-substrate growth may change."
+}

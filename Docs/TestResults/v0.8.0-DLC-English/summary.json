@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "profile": "Tests/Runtime/20261011-202513-HabitatCluster-DLC-English",
+  "gameVersion": "1.6.4871 rev591",
+  "checks": 337,
+  "nativeMushroomSpawnCalls": 339,
+  "redirectedCalls": 20,
+  "naturalMap": {
+    "biome": "TemperateForest",
+    "size": [
+      250,
+      250
+    ],
+    "mushroomsBefore": 168,
+    "mushroomsAfter": 168,
+    "allPlants": 26865,
+    "distinctMoved": 110,
+    "smallClusters": 52,
+    "pairs": 18,
+    "irregularThreeToFive": 34,
+    "singletons": 6,
+    "groupsOverFive": 0,
+    "straightGroupsThreePlus": 0
+  },
+  "saveLoad": "Fresh isolated v0.8.0 native save/load preserves every mushroom ID, position, growth, age, health, sown and regrowth flag; ecology tickets, random state, schedule and budget remain exact; loaded plants are not rearranged.",
+  "persistenceFixture": {
+    "actualRegrowthGeneration": 1,
+    "pendingTickets": 1,
+    "sameDayExtraBudget": 1,
+    "spentSourcePresent": true,
+    "chanceBypassExplicitlyScopedToFixture": true,
+    "fullWorldTimeSimulation": false
+  },
+  "translationErrors": 0,
+  "knownNativeDiagnostics": "The controlled fixture despawned five Anomaly pawns without removing their Lord ownedPawns references; the native save/load reports five unresolved pawn references. Mushroom persistence assertions all pass. This is not a zero-warning run.",
+  "acceptedVisuals": [
+    "01-native-whole-map-clumps.png",
+    "02-native-spawner-host-fixture.png"
+  ],
+  "visualReview": "Both images manually reviewed by root and independent test agent. Whole-map markers highlight existing mushrooms after count-preserving arrangement. Close-up is an explicitly controlled native-spawner fixture, not natural abundance.",
+  "limits": [
+    "No existing v0.7 player save was loaded.",
+    "No long-duration natural frequency or full user mod-combination test was performed.",
+    "Map totals are one sampled native map, not a promised density."
+  ],
+  "productionDllSha256": "e28d88b06203395c7c9eaa6b4fcadd292ddc64d9e2ba166f6c65b56f7a84ddee",
+  "files": {
+    "01-native-whole-map-clumps.png": "819c71ce5f2b68e366a02dca23aa1d62e6f23f4f4429f5b54200c86fdefe12a7",
+    "02-native-spawner-host-fixture.png": "2c323e13a0313f7f81da239e48e1ab3f0f9b6202523e3e0c917c4f38cd5dbb45",
+    "fixture-clusters.csv": "a345bcc544943f63076107098da610716dce66ae989078ebd4bd9dae74ef3e23",
+    "habitat-cluster-report.txt": "a5a26675fe1b90243ec2f9d850fa574d726907df8c6a211c3a36d0b10aa60309",
+    "initial-clusters.csv": "b2ac6b6c99912a1bb7592f9b3ef273f0c492cc4ecf14bc6946288d7c94f3e9c0",
+    "initial-plants.csv": "6672a388f8c872d24c3c9c7090ce9153ad1be0e543066f07446b71177505791d",
+    "initial-species.csv": "f06e46ab504cebf084919e2f642bf26bb34673d3e709abe419b89faf3f2045fc",
+    "loaded-clusters.csv": "97a85c455bba9aa367ce82b7a5c124375acb54794e41e42d1910201814749da7",
+    "native-player.log": "662f6bb21572e9b4b872c6d003d002ae945080b63bf4cd68b56136a55d3eb778",
+    "ready.flag": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "translation-diagnostics.txt": "1ed3c2fa2daef9d6f02530ac7b877eee25ddb2e698533cc67de44bb6913121ae"
+  }
+}

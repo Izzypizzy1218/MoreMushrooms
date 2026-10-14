@@ -1,0 +1,82 @@
+{
+  "version": "0.8.0",
+  "scope": "Only fresh isolated native runs created for the current habitat and small-clump task. Failed raw profiles remain outside release payload.",
+  "productionDllSha256": "e28d88b06203395c7c9eaa6b4fcadd292ddc64d9e2ba166f6c65b56f7a84ddee",
+  "attempts": [
+    {
+      "profile": "Tests/Runtime/20261011-201441-HabitatCluster-Core-Korean",
+      "status": "FAIL",
+      "note": "Native habitat/count/clump cases passed; controlled screenshot fixture reused an occupied positive spawn request cell. Fixed only the test request selection; production unchanged.",
+      "artifacts": {
+        "Player.log": {
+          "sha256": "b22af10274d999c8e6f17c914878ca5e52ff8ebfc298d6cecc6b91c10d8da0e6",
+          "bytes": 15832
+        },
+        "HabitatCluster/habitat-cluster-report.txt": {
+          "sha256": "af6ef89941b9437d6bcbf0329ecbc65d5fee1dd3e16bfaabda25415c4eddbd18",
+          "bytes": 22096
+        }
+      }
+    },
+    {
+      "profile": "Tests/Runtime/20261011-201755-HabitatCluster-Core-Korean",
+      "status": "FAIL",
+      "note": "Native gameplay cases passed; both hidden-window ScreenCapture and explicit Camera.Render were black, rejected by image-quality gate. Production unchanged.",
+      "artifacts": {
+        "Player.log": {
+          "sha256": "f0ec11f383aa54e2ac924d75ff91622c74951f0f4dff3152b51a3055765d13ea",
+          "bytes": 15720
+        },
+        "HabitatCluster/habitat-cluster-report.txt": {
+          "sha256": "6ecaedcaf98a762cbf3fb5e1427bf3e8d545d9dc5e27118fd1c5e2095b3f2387",
+          "bytes": 13811
+        }
+      }
+    },
+    {
+      "profile": "Tests/Runtime/20261011-201854-HabitatCluster-Core-Korean",
+      "status": "PASS_GAMEPLAY_SAVE_WITH_VISUAL_EXCLUSION",
+      "note": "332 native assertions and fresh save/load passed. Close-up approved; wide frame manually rejected as clipped/corrupt. Later test camera max size was corrected; production unchanged.",
+      "artifacts": {
+        "Player.log": {
+          "sha256": "6b3c75d475ad76e4f1750ec7228bf369e46f53b3af2741bfb9ce689070bf4ed4",
+          "bytes": 16825
+        },
+        "HabitatCluster/habitat-cluster-report.txt": {
+          "sha256": "a6ea5e804130aa67007d0b281e5009d94c3585222af0adabd78e4b5f8cf11852",
+          "bytes": 24346
+        }
+      }
+    },
+    {
+      "profile": "Tests/Runtime/20261011-202258-HabitatCluster-DLC-English",
+      "status": "FAIL",
+      "note": "Corrected whole-map camera frame approved, but ongoing positive fixture reused an occupied request cell. Fixed all repeated positive request selection; production unchanged.",
+      "artifacts": {
+        "Player.log": {
+          "sha256": "f02920034ec9077f15389e62cd45c924e03f02daaf3261110dcc00db39df4887",
+          "bytes": 16486
+        },
+        "HabitatCluster/habitat-cluster-report.txt": {
+          "sha256": "1f58919e13b8e56cc9ca42bab772022d9b55372e28f9844d63a18f510bc22f34",
+          "bytes": 20394
+        }
+      }
+    },
+    {
+      "profile": "Tests/Runtime/20261011-202513-HabitatCluster-DLC-English",
+      "status": "PASS",
+      "note": "337 assertions, nondefault ecology save/load and both manually reviewed images passed. Five isolated Anomaly fixture pawn references produce native save/load warnings, explicitly retained in native-player.log.",
+      "artifacts": {
+        "Player.log": {
+          "sha256": "662f6bb21572e9b4b872c6d003d002ae945080b63bf4cd68b56136a55d3eb778",
+          "bytes": 19876
+        },
+        "HabitatCluster/habitat-cluster-report.txt": {
+          "sha256": "a5a26675fe1b90243ec2f9d850fa574d726907df8c6a211c3a36d0b10aa60309",
+          "bytes": 26174
+        }
+      }
+    }
+  ]
+}
